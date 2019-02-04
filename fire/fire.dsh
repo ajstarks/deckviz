@@ -1,0 +1,69 @@
+deck
+	slide
+		chartop=70
+		chartbottom=30
+		chartleft=10
+		chartheight=35
+		chartwidth=10
+		shift=chartwidth+2
+	
+		tx=chartleft+5
+		ty=chartop+12
+		ny=chartop+5
+		bigsize=3
+		notesize=bigsize*0.4
+		opts="-min=0 -max=500 -yrange=0,500,100 -fulldeck=f -vol -val=f -xlabel=6 -textsize=1.2"
+		color="red"
+
+		text "German Wildfires 2012-2018" chartleft ty bigsize
+		textblock "2014 saw a record number of fires in March, although 2015 had the most fires per year" 35 ny 15 notesize "serif"
+		textblock "The record was broken in April 2018 (502 fires)" 85 ny 10 notesize "serif"
+	
+		color="orange"
+		right=chartleft+chartwidth
+		ax=chartleft+2
+		dchart opts -left chartleft -right right -top chartop -bottom chartbottom -color color -yaxis fire2012.d
+		textfile "ft2012.d" ax chartbottom bigsize
+
+ 		chartleft+=shift
+ 		right=chartleft+chartwidth
+ 		ax=chartleft+2
+ 		dchart opts -left chartleft -right right -top chartop -bottom chartbottom -color color fire2013.d
+ 		textfile "ft2013.d" ax chartbottom bigsize
+ 		
+ 		chartleft+=shift
+ 		right=chartleft+chartwidth
+ 		ax=chartleft+2
+ 		dchart opts -left chartleft -right right -top chartop -bottom chartbottom -color color fire2014.d
+ 		textfile "ft2014.d" ax chartbottom bigsize
+ 		
+ 		chartleft+=shift
+ 		right=chartleft+chartwidth
+ 		ax=chartleft+2
+ 		dchart opts -left chartleft -right right -top chartop -bottom chartbottom -color color fire2015.d
+ 		textfile "ft2015.d" ax chartbottom bigsize
+ 		
+ 		chartleft+=shift
+ 		right=chartleft+chartwidth
+ 		ax=chartleft+2
+ 		dchart opts -left chartleft -right right -top chartop -bottom chartbottom -color color fire2016.d
+ 		textfile "ft2016.d" ax chartbottom bigsize
+ 		
+ 		chartleft+=shift
+ 		right=chartleft+chartwidth
+ 		ax=chartleft+2
+ 		dchart opts -left chartleft -right right -top chartop -bottom chartbottom -color color fire2017.d
+ 		textfile "ft2017.d" ax chartbottom bigsize
+ 		
+ 		chartleft+=shift
+ 		right=chartleft+chartwidth
+ 		ax=chartleft+0.5
+ 		color="red"
+ 		dchart opts -left chartleft -right right -top chartop -bottom chartbottom -color color fire2018.d
+ 		textfile "ft2018.d" ax chartbottom bigsize
+	eslide
+edeck
+
+
+
+	
