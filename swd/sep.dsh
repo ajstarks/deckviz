@@ -1,0 +1,50 @@
+deck
+    left=30
+    right=65
+    labeleft=25
+    lineleft=10
+    typecolor="slategray"
+    title="Types of non-profits supported by area funders"
+    units="(% funders)" 
+    opts="-min=0 -max=100 -yrange=0,100,50 -fulldeck=f -line -textsize=2.5 -linewidth=0.3 -vol -bar=f -val=f"
+    slide
+        text title                  lineleft 90 2.5
+        text  units                 lineleft 87 1.5 "sans" typecolor
+        etext "Health"              labeleft 75 2 "sans" typecolor
+        etext "Education"           labeleft 60 2 "sans" typecolor
+        etext "Human Services"      labeleft 45 2 "sans" typecolor
+        etext "Arts & Culture"      labeleft 30 2 "sans" typecolor
+        etext "Other"               labeleft 15 2 "sans" typecolor
+
+        for x=10 85 15
+            line lineleft x right x 0.3 "lightgray"
+        efor
+       
+        dchart opts -top 80 -bottom 70 -left left -right right -xlabel 0 health.d
+        dchart opts -top 65 -bottom 55 -left left -right right -xlabel 0 edu.d
+        dchart opts -top 50 -bottom 40 -left left -right right -xlabel 0 human.d
+        dchart opts -top 35 -bottom 25 -left left -right right -xlabel 0 arts.d
+        dchart opts -top 20 -bottom 10 -left left -right right other.d
+    eslide
+    
+    
+    opts="-min=0 -max=100 -yrange=0,100,25 -fulldeck=f -line -bar=f -val=f -vol=f -xlabel=2"
+    labely=75
+    gtop=70
+    gbot=60
+    slide
+    	text title                 lineleft 90 2.5
+    	text units                 lineleft 87 1.5 "sans" typecolor
+    	text "Health"              15 labely 1.5 "sans" typecolor
+        text "Education"           30 labely 1.5 "sans" typecolor
+        text "Human Services"      45 labely 1.5 "sans" typecolor
+        text "Arts & Culture"      60 labely 1.5 "sans" typecolor
+        text "Other"               75 labely 1.5 "sans" typecolor
+
+    	dchart opts -top gtop -bottom gbot -left 15 -right 25  -yaxis health.d
+    	dchart opts -top gtop -bottom gbot -left 30 -right 40  edu.d
+    	dchart opts -top gtop -bottom gbot -left 45 -right 55  human.d
+    	dchart opts -top gtop -bottom gbot -left 60 -right 70  arts.d
+    	dchart opts -top gtop -bottom gbot -left 75 -right 85  other.d
+    eslide
+edeck

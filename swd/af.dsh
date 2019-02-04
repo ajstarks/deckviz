@@ -1,0 +1,31 @@
+deck
+    top=85
+    yy=80
+    yt=77
+    notey=35
+    notesize=1.2
+    acolor="steelblue"
+    fcolor="maroon"
+    ncolor="gray"
+    opts="-fulldeck=f -min=0 -max=180 -yrange=0,180,20 -line -vol -bar=f -top=75 -bottom=30"
+    
+    slide
+        text        "Sales over time"		15   top   3
+        ctext       "(Billions USD)"  		45   top   2 "sans" ncolor
+        ctext       "Actual"          		35   notey 2 "sans" acolor
+        ctext       "Forecast"        		67.5 notey 2 "sans" fcolor
+
+        text        "2006-09"				15 yy notesize 
+        text        "2010"					30 yy notesize 
+        text        "2011-14"				45 yy notesize 
+        text        "2015 and beyond"		62 yy notesize 
+
+        textblock   "annual sales growth 7-8%"               15 yt  5 notesize "serif" ncolor
+        textblock   "marked increase of 22% driven by ...."  30 yt  5 notesize "serif" ncolor
+        textblock   "steady annual growth: 8-9%"             45 yt  7 notesize "serif" ncolor
+        textblock   "assumed 10% year over year growth"      62 yt 10 notesize "serif" ncolor
+
+        dchart opts  -left=15 -right=55 -volop=20 -color acolor -vcolor acolor actual.d
+        dchart opts  -left=60 -right=75 -volop=20 -color fcolor -vcolor fcolor forecast.d
+    eslide
+edeck
