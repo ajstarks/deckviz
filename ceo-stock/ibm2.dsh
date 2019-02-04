@@ -1,0 +1,122 @@
+deck
+	imy=90
+	imw=90
+	imh=90
+	ims=50
+
+	opts="-fulldeck=f -color=green -bar=f -note=f -val=f -line -linewidth=0.02 -vol -volop=20 -yaxis -xlabel=6000 -xlast -textsize=1"
+	w=28
+	tw=w+4
+	h=12
+	left=20
+	right=left+w
+	ix=left-10
+	h2=h/2
+	h3=h*0.75
+	interval=h*2
+	tx=right+5
+	tsize=1.5
+	notex=right+10
+	notefont="serif"
+	notecolor="rgb(70,70,70)"
+	notesize=1.2
+	romettyq="The first woman to lead IBM, Rometty shifted IBM away from shrinking businesses such as computers and operating system software, and into higher-growth areas like artificial intelligence. Her tenure has also been met by fierce criticism relating to executive compensation bonuses, layoffs, outsourcing, and presiding over 24 consecutive quarters of revenue decline."
+	palmisanoq="Palmisano's mandate was to move into new unique businesses with high profit margins and potential for innovation. This included purchasing PWC Consulting in 2002, so that IBM could go beyond selling computers and software and help customers use technology to solve business challenges in areas such as marketing, procurement and manufacturing."
+	gerstnerq="Gerstner's choice to keep the company together was the defining decision of his tenure, as these gave IBM the capabilities to deliver complete IT solutions to customers. Services could be sold as an add-on to companies that had already bought IBM computers, while barely profitable pieces of hardware were used to open the door to more profitable deals."
+	akersq="Akers was credited with simplifying the company's bureaucracy to focus more on profits. In a restructuring intended to reverse three years of disappointing performance, he created five new, autonomous organizations responsible for the company's innovation, design and manufacturing. Akers was forced to resign, after the company posted an unprecedented $5 billion annual loss." 
+	opelq="Opel’s years at IBM coincided with the company’s rise from a modest sized maker of accounting devices to become the leader of a burgeoning computer industry and a trend-setter for the Information Age. He navigating the company safely through a number of minefields, including the advent of the personal computer and a long US antitrust investigation." 
+	caryq="Cary presided over a period of rapid growth in product, revenue and profit. His most notable accomplishment was recognizing that the personal computer was going to be an emerging product category that could ultimately be a threat to IBM. Consequently, he created a small dedicated group to spearhead an answer to Apple, protected from internal bureaucracy."
+	learsonq="Both the previous chairman Thomas Watson, Jr. and senior project manager Fred Brooks regarded Learson as the driving force behind the System/360 project, which was huge and risky but whose success ensured IBM's dominance of the mainframe computer market."
+	watsonq="In the early 1960s Watson oversaw the IBM System/360 project, which produced an entire line of computers that ran the same software and used the same peripherals. Since the 360 line was incompatible with IBM's previous products, it represented an enormous risk for the company (IBM's $5 Billion Gamble). Despite delays in shipment, the products were well-received following their launch in 1964. The gamble paid off."
+	slide
+		top=95
+		bottom=top-h
+		iy=bottom+h2
+		py=bottom-tsize
+		notey=top+0.5
+		dchart opts -yrange 0,220,110 -top top -bottom bottom -left left -right right -color red rometty.d
+		image "ginni.jpg" ix iy imw imh ims
+		ctext "Rometty" ix py tsize
+		ctext "-60.47%" tx iy tsize "sans" "red"
+		textblock romettyq notex notey tw notesize notefont notecolor
+	
+		top-=interval
+		bottom=top-h
+		iy=bottom+h2
+		py=bottom-tsize
+		notey=top+0.5
+		dchart opts -yrange 0,200,100 -top top -bottom bottom -left left -right right palmisano.d
+		image "palmisano.jpg" ix iy imw imh ims
+		ctext "Palmisano" ix py tsize
+		ctext "43.97%" tx iy tsize "sans" "green"
+		textblock palmisanoq notex notey tw notesize notefont notecolor
+
+		top-=interval
+		bottom=top-h
+		iy=bottom+h2
+		py=bottom-tsize
+		notey=top+0.5
+		dchart opts -yrange 0,140,70 -top top -bottom bottom -left left -right right gerstner.d
+		image "gerstner.jpg"  ix iy imw imh ims
+		ctext "Gerstner" ix py tsize
+		ctext "86.78%" tx iy tsize "sans" "green"
+		textblock gerstnerq notex notey tw notesize notefont notecolor
+		
+		top-=interval
+		bottom=top-h
+		iy=bottom+h2
+		py=bottom-tsize
+		notey=top+0.5
+		dchart opts -yrange 0,44,22 -top top -bottom bottom -left left -right right -color red akers.d
+		image "akers.jpg" ix iy imw imh ims
+		ctext "Akers" ix py tsize
+		ctext "-166.59%" tx iy tsize "sans" "red"
+		textblock akersq notex notey tw notesize notefont notecolor
+	eslide
+	
+	slide
+		top=95
+		bottom=top-h
+		iy=bottom+h2
+		py=bottom-tsize
+		notey=top+0.5
+		dchart opts -yrange 0,36,18 -top top -bottom bottom -left left -right right opel.d
+		image "opel.jpg" ix iy imw imh ims
+		ctext "Opel" ix py tsize
+		ctext "49.31%" tx iy tsize "sans" "green"
+		textblock opelq notex notey tw notesize notefont notecolor
+		
+		top-=interval
+		bottom=top-h
+		iy=bottom+h2
+		py=bottom-tsize
+		notey=top+0.5
+		dchart opts -yrange 0,24,12 -top top -bottom bottom -left left -right right -color red cary.d
+		image "cary.jpg" ix iy imw imh ims
+		ctext "Cary" ix py tsize
+		ctext "-20.52%" tx iy tsize "sans" "red"
+		textblock caryq notex notey tw notesize notefont notecolor
+		
+		top-=interval
+		bottom=top-h
+		iy=bottom+h2
+		py=bottom-tsize
+		notey=top+0.5
+		dchart opts -yrange 0,22,11 -top top -bottom bottom -left left -right right learson.d
+		image "learson.jpg" ix iy imw imh ims
+		ctext "Learson" ix py tsize
+		ctext "18.22%" tx iy tsize "sans" "green"
+		textblock learsonq notex notey tw notesize notefont notecolor
+		
+		top-=interval
+		bottom=top-h
+		iy=bottom+h2
+		py=bottom-tsize
+		notey=top+0.5
+		dchart opts -yrange 0,20,10 -top top -bottom bottom -left left -right right watson.d
+		image "watsonjr.jpg" ix iy imw imh ims
+		ctext "Watson, Jr" ix py tsize
+		ctext "53.35%" tx iy tsize "sans" "green"
+		textblock watsonq notex notey tw notesize notefont notecolor
+	eslide
+edeck

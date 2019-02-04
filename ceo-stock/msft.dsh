@@ -1,0 +1,35 @@
+deck
+	top=80
+	bottom=30
+	nsize=2
+	nsize2=1.5
+	ny=60
+	ny2=57
+	height=50
+	width=80
+	bcolor="rgb(240,240,240)"
+	opts="-fulldeck=f -yaxis -bar=f -line=f -vol -val=f"
+	
+	slide
+		rect	50 55 width 50 bcolor 20
+		dchart opts -bottom bottom -top top -xlabel 1200 -yrange=0,120,20 -chartitle="MSFT" MSFT.d
+		line	44 bottom 44 top 0.1 "gray"
+		line	77 bottom 77 top 0.1 "gray"
+		ctext	"Gates"							25 ny nsize "serif"
+		ctext	"(build up to a tech behemoth)"	25 ny2 nsize2 "serif" "gray"
+		ctext	"Ballmer"						60 ny nsize "serif"
+		ctext	"(stagnation)"					60 ny2 nsize2 "serif" "gray"
+		ctext	"Nadella"						85 ny nsize "serif"
+		ctext	"(powered by services)"			85 ny2 nsize2 "serif" "gray"
+	eslide
+	
+	slide
+		rect	50 55 80 50 bcolor 20
+		dchart opts -bottom bottom -top top -xlabel=1200 -yrange=0,220,40 -chartitle="APPL" -csv=f  AAPL.d
+	eslide
+	
+	slide
+		rect	50 55 80 50 bcolor 20
+		dchart opts -bottom bottom -top top -xlabel=1200 -yrange=0,60,10 -chartitle="SNY"  SNY.d
+	eslide
+edeck

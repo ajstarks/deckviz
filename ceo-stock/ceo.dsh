@@ -1,0 +1,160 @@
+deck
+	top=80
+	bottom=30
+	nsize=2.0
+	boxop=10
+	nsize2=nsize*0.75
+	iy=top-5
+	ny=iy-7
+	ny2=ny-nsize
+	height=50
+	width=80
+	lsize=0.05
+	lcolor="lightgray"
+	bcolor="rgb(240,240,240)"
+	opts="-fulldeck=f -yaxis -bar=f -line=f -vol -volop=30 -val=f -note=f -line -linewidth=0.05"
+	
+	slide
+	
+		rect	50 55 width 50 bcolor boxop
+		dchart opts -bottom bottom -top top -xlabel 1200 -yrange=0,120,20 MSFT.d
+		line	44 bottom 44 top lsize lcolor 
+		line	78 bottom 78 top lsize lcolor
+		image "gates.jpg"	25 iy 357 502 10
+		image "ballmer.jpg"	60 iy 416 416 10
+		image "nadella.jpg" 85 iy 357 502 10
+		ctext "Gates"							25 ny nsize "serif"
+		ctext "(build up to a tech behemoth)"	25 ny2 nsize2 "serif" "gray"
+		ctext "Ballmer"							60 ny nsize "serif"
+		ctext "(steady but stagnant)"			60 ny2 nsize2 "serif" "gray"
+		ctext "Nadella"							85 ny nsize "serif"
+		ctext "(powered by services)"			85 ny2 nsize2 "serif" "gray"
+		text  "MICROSOFT Stock Price and Leadership" 10 10 3
+	eslide
+	
+	slide
+		dchart opts -bottom bottom -top top -xlabel=1200 -yrange=0,220,40  -csv=f  AAPL.d
+		rect	50 55 80 50 bcolor boxop
+		line 45 bottom 45 top lsize lcolor
+		line 75 bottom 75 top lsize lcolor
+		image "jobs.jpg"		60 iy 220 332 12
+		image "cook.png"		83 iy 575 657 8
+		image "scully.jpg"		25 iy 200 250 15
+		image "spindler.jpg"	30 iy 217 303 15
+		image "amelio.jpg"		35 iy 150 212 20
+		ctext "Scully, Spindler, Amelio"		30 ny nsize "serif"
+		ctext "(early management)" 				30 ny2 nsize2 "serif" "gray"
+		ctext "Jobs"							60 ny nsize "serif"
+		ctext "(return of the founder)" 		60 ny2 nsize2 "serif" "gray"
+		ctext "Cook"							83 ny nsize "serif"
+		ctext "(post-Jobs, high value)" 		83 ny2 nsize2 "serif" "gray"
+		text  "APPLE Stock Price and Leadership" 10 10 3
+	eslide
+		
+	slide
+		dchart opts -bottom bottom -top top -xlabel=1500 -yrange=0,60,10  GE.d
+		rect	50 55 80 50 bcolor boxop
+		line 24 bottom 24 top lsize lcolor 
+		line 37 bottom 37 top lsize lcolor 
+		line 66 bottom 66 top lsize lcolor 
+		line 88 bottom 88 top lsize lcolor 
+		image "borch.jpg"		17 iy 220 208 20
+		image "jones.jpg"		30 iy 220 208 20
+		image "welch.jpg"		51 iy 220 208 20
+		image "immelt.jpg"		77 iy 220 208 20
+		image "flannery.jpg"	91 iy 220 208 20
+		image "culp.jpg"		96 iy 216 208 20
+		ctext "Borch"						17 ny nsize "serif"
+		ctext "(growth)"					17 ny2 nsize2 "serif" "gray"
+		ctext "Jones"						30 ny nsize "serif"
+		ctext "(strategic focus)"			30 ny2 nsize2 "serif" "gray"
+		ctext "Welch"						51 ny nsize "serif"
+		ctext "(consummate 80s management)"	51 ny2 nsize2 "serif" "gray"
+		ctext "Immelt"						77 ny nsize "serif"
+		ctext "(decline)"					77 ny2 nsize2 "serif" "gray"
+		ctext "Flannery, Culp"				94 ny nsize "serif"
+		ctext "(fall)"						94 ny2 nsize2 "serif" "gray"
+		text  "GE Stock Price and Leadership" 10 10 3
+	eslide
+	
+	slide
+		dchart opts -bottom bottom -top top -xlabel=600 -yrange=0,1400,200  GOOG.d
+		rect	50 55 80 50 bcolor boxop
+		line 47 bottom 47 top lsize lcolor 
+		line 72 bottom 72 top lsize lcolor
+		image "pichai.jpg"		80 iy 40 40
+		image "page.png"		60 iy 500 728 6
+		image "schmidt.jpg"		27 iy 440 589 8
+		ctext "Schmidt"						27 ny nsize "serif"
+		ctext "(adult supervision)"			27 ny2 nsize2 "serif" "gray"
+		ctext "Page"						60 ny nsize "serif"
+		ctext "(re-organization and focus)"	60 ny2 nsize2 "serif" "gray"
+		ctext "Pichai"						80 ny nsize "serif"
+		ctext "(new challenges)"			80 ny2 nsize2 "serif" "gray"
+		text  "GOOGLE Stock Price and Leadership" 10 10 3
+	eslide
+	
+	slide
+		dchart opts -bottom bottom -top top -xlabel=800 -yrange=0,60,10 SNY.d
+		rect	50 55 80 50 bcolor boxop
+		line	41.5 bottom 41.5 top lsize lcolor
+		line	72.5 bottom 72.5 top lsize lcolor
+		image "dehecq.jpg"		25 iy    232 349 15
+		image "viehbacher.jpg"	57 iy    217 309 15
+		image "brandicourt.jpg" 81.25 iy 220 329 15
+		ctext "Dehecq"						25 ny nsize "serif"
+		ctext "(up and down)"				25 ny2 nsize2 "serif" "gray"
+		ctext "Viehbacher"					57 ny nsize "serif"
+		ctext "(Increase in value)"			57 ny2 nsize2 "serif" "gray"
+		ctext "Brandicourt"					81.25 ny nsize "serif"
+		ctext "(restore confidence)"		81.25 ny2 nsize2 "serif" "gray"
+		text  "SANOFI Stock Price and Leadership" 10 10 3
+	eslide
+	
+	slide
+		dchart opts -bottom bottom -top top -xlabel=1500 -yrange=0,60,10  GE.d
+		rect	50 55 80 50 bcolor boxop
+		line 24 bottom 24 top lsize lcolor 
+		line 37 bottom 37 top lsize lcolor 
+		line 66 bottom 66 top lsize lcolor 
+		line 88 bottom 88 top lsize lcolor
+		
+		iy-=30
+		ny-=30
+		ny2-=30
+		image "borch.jpg"		17 iy 220 208 20
+		image "jones.jpg"		30 iy 220 208 20
+		ctext "Borch"						17 ny nsize "serif"
+		ctext "(growth)"					17 ny2 nsize2 "serif" "gray"
+		ctext "Jones"						30 ny nsize "serif"
+		ctext "(strategic focus)"			30 ny2 nsize2 "serif" "gray"
+		
+		iy+=40
+		ny+=40
+		ny2+=40
+		image "welch.jpg"		51 iy 220 208 20
+		ctext "Welch"						51 ny nsize "serif"
+		ctext "(consummate 80s management)"	51 ny2 nsize2 "serif" "gray"
+		
+		iy-=30
+		ny-=30
+		ny2-=30
+		image "immelt.jpg"		77 iy 220 208 20
+		ctext "Immelt"						77 ny nsize "serif"
+		ctext "(decline)"					77 ny2 nsize2 "serif" "gray"
+		
+		iy-=30
+		ny-=30
+		ny2-=30
+		image "flannery.jpg"	91 iy 220 208 20
+		image "culp.jpg"		96 iy 216 208 20
+		ctext "Flannery, Culp"				94 ny nsize "serif"
+		ctext "(fall)"						94 ny2 nsize2 "serif" "gray"
+		text  "GE Stock Price and Leadership" 10 10 3
+	eslide
+	
+	
+	
+	
+	
+edeck
