@@ -1,0 +1,130 @@
+deck
+	opts="-fulldeck=f  -top=70 -bottom=30 -title=f  -line -val=f -xlabel=0 -bar=f -min=0 -max=1800000 -yaxis -yrange=0,1800000,400000"
+	popts="-fulldeck=f -top=70 -bottom=30   -val=f -barwidth=0.2 -xlabel=0 -color lightgray -min=0 -max=1800000"
+	
+	chtop=70
+	imy=chtop+15
+	ty=chtop-55
+	suby=ty-3
+	imx=10
+	slide
+		etext "Prisoners" 9 70 1.5
+		text "Prisoners under the jurisdiction of state or federal correctional authorities" 10 ty 2
+		text "Bureau of Justice Statistics" 10 suby 1 "sans" "gray" 100 "https://www.bjs.gov/content/keystatistics/csv/Total_correctional_population_counts_by_status.csv"
+		text "State Prisoners"   90.5 34 1.2 "sans" "gray"
+		text "Federal Prisoners" 90.5 59 1.2 "sans" "blue"
+		text "Total Prisoners"   90.5 63 1.2 "sans" "maroon"
+		image "rr.png" imx imy 36 0
+		imx+=18
+		image "gb.png" imx imy 36 0
+		imx+=8.75
+		image "bc.png" imx imy 36 0
+		imx+=17.5
+		image "gbj.png" imx imy 36 0
+		imx+=18
+		image "bo.png" imx imy 36 0
+		imx+=18
+		image "dt.png" imx imy 36 0
+
+		rect 50 52 80 45 "gray" 5
+		dchart opts -csv -csvcol=Date,Federal -xlabel=2 -color black  prison.csv
+		dchart opts -csv -csvcol=Date,State             -color blue   prison.csv
+		dchart opts -csv -csvcol=Date,Total             -color maroon prison.csv
+		dchart popts late-presidents.d
+		
+		notex=12
+		notew=7
+		ns=1.2
+		textblock "Rates rise under Reagan" notex 45 notew ns "serif"
+		notex+=17
+		textblock "Sharp increase under Bush"  notex 55 5 ns "serif"
+		notex+=9
+		textblock "Sustained increase during the Clinton years"  notex 65 notew ns "serif"
+		notex+=18
+		textblock "Rates increase but slightly flatten under Bush, Jr"  notex 70 notew ns "serif"
+		notex+=18
+		textblock "After peaking in 2009, rates decline under Obama"  notex 72 notew ns "serif"
+	eslide
+	
+	slide
+		chwidth=15
+		sep=chwidth+2
+		chheight=40
+		
+		chleft=15
+		chright=chleft+chwidth
+		chtop=70
+		chbot=chtop-chheight
+		
+		opts="-fulldeck=f -title=f -xlabel=4 -csv -csvcol=Date,Total -textsize 1.8 -bar -barwidth=0.2 -val=f -vol -volop=10 -min=0 -max=1800000 -yrange=0,1800000,400000"
+		
+		dchart opts -left chleft -right chright -top chtop -bottom chbot -yaxis -color red reagan.csv
+		chleft+=sep
+		chright+=sep
+		
+		chwidth=7.5
+		chright=chleft+chwidth
+		sep=chwidth+2
+		dchart opts -left chleft -right chright -top chtop -bottom chbot -color red bush.csv
+		chleft+=sep
+		chright+=sep
+		
+		chwidth=15
+		chright=chleft+chwidth
+		sep=chwidth+2
+		dchart opts -left chleft -right chright -top chtop -bottom chbot -color blue clinton.csv
+		chleft+=sep
+		chright+=sep
+		
+		dchart opts -left chleft -right chright -top chtop -bottom chbot -color red bushjr.csv
+		chleft+=sep
+		chright+=sep
+		
+		dchart opts -left chleft -right chright -top chtop -bottom chbot -color blue -xlast obama.csv
+		chleft+=sep
+		chright+=sep
+	
+		imx=22
+		imy=55
+		image "rr.png" imx imy 32 0 0
+		imx+=12
+		imy+=7
+		image "gb.png" imx imy 32 0 0
+		imx+=13
+		imy+=9
+		image "bc.png" imx imy 32 0 0
+		imx+=18
+		imy+=8
+		image "gbj.png" imx imy 32 0 0
+		imx+=17
+		imy+=2
+		image "bo.png" imx imy 32 0 0
+		
+		textblock "Prisoners under State and Federal Jurisdiction: Reagan to Obama" 10 90 70 2.5
+		text "Data Source: Bureau of Justice Statistics" 10 87 1.5 "sans" "gray" 100 "https://www.bjs.gov/content/keystatistics/csv/Total_correctional_population_counts_by_status.csv"
+		ctext "State and Federal Prisoners" 10 73 1.2
+		
+		notex=16
+		notew=8
+		ns=1.2
+		textblock "Rates rise under Reagan" notex 45 notew ns "serif"
+		notex+=16
+		textblock "Sharp increase under Bush"  notex 52 5 ns "serif"
+		notex+=9
+		textblock "Greatest rate of increase during the Clinton years"  notex 62 notew ns "serif"
+		notex+=18
+		textblock "Rates increase but slightly flatten under Bush, Jr"  notex 70 notew ns "serif"
+		notex+=18
+		textblock "After peaking in 2009, rates decline under Obama"  notex 72 notew ns "serif"
+		
+		
+		ratenote="Using the incareration rate (based on the slope of the data) using the Reagan administra- tion as a baseline, the rate increased over 1 and one-half times under George Bush, with the greatest increase during Clinton's term, at almost 1.7 times that of Reagan. The rate declines under George W. Bush, with the slope going negative under Obama."
+		dchart -fulldeck=f -frame -top 15 -left 15 -bottom 5 -right 30 -barwidth=2 -textsize 1 -color rgb(170,170,170) rate.d
+		textfile "incarnote.txt" 35 18 1.5 "serif"
+	eslide
+	
+	slide
+		dchart -frame -right 90 -fulldeck=f -bar=f -line -vol=f -val=f -xlabel=5  -yaxis -yrange=0,1600000,320000 prison.d
+		dchart        -right 90 -fulldeck=f -bar -val=f -barwidth=0.2 -xlabel=0 -color lightgray -min=0 -max=1600000 -noteloc=c president.d
+	eslide
+edeck
