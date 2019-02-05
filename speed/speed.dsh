@@ -1,0 +1,7 @@
+deck
+	opts="-left=20 -right=80 -line -bar=f -val=f -xlabel=10 -yaxis -grid -xlast -fulldeck=f"
+	slide
+		dchart  opts -top=90 -bottom=60 -yrange=120,240,40 -min=100 -max=250  -color=red   lap1.d
+		dchart  opts -top=40 -bottom=10 -yrange=30,70,10    -min=30  -max=70  -color=green lap2.d
+	eslide
+edeck
