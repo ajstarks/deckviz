@@ -1,0 +1,83 @@
+deck
+	// Aggregated on one chart
+	slide
+		top=90
+		bntitle="Evolution of Baby Names in the US: 1880-2015"
+		opt="-max=100000 -title=f -fulldeck=f -vol -val=f -bar=f -xlabel=0 -yrange=0,100000,25000"
+		lsize=1.25
+		ctext bntitle 50 93 2 "sans"
+		dchart -color=red		opt  -xlabel=20 -grid -yaxis Amanda.d
+		dchart -color=green		opt   Ashley.d
+		dchart -color=blue		opt   Betty.d
+		dchart -color=orange	opt   Deborah.d
+		dchart -color=purple	opt   Dorothy.d
+		dchart -color=steelblue	opt   Helen.d
+		dchart -color=gray		opt   Jessica.d
+		dchart -color=brown		opt   Linda.d
+		dchart -color=salmon	opt   Patricia.d
+
+		ly=20
+		legend "Amanda"		10 ly lsize "sans" "red"
+		legend "Ashley"		20 ly lsize "sans" "green"
+		legend "Betty"		30 ly lsize "sans" "blue"
+		legend "Deborah"	40 ly lsize "sans" "orange"
+		legend "Dorothy"	50 ly lsize "sans" "purple"
+		legend "Helen"		60 ly lsize "sans" "steelblue"
+		legend "Jessica"	70 ly lsize "sans" "gray"
+		legend "Linda"		80 ly lsize "sans" "brown"
+		legend "Patricia"	90 ly lsize "sans" "salmon"
+	eslide
+	
+	// Chart Grid
+	slide
+		chartop=88
+		chartbottom=68
+		boxw=20
+		boxh=20
+		boxop=15
+		ctext bntitle 50 93 2 "sans"
+
+		ctext "Amanda"		20 top lsize
+		ctext "Ashley"		50 top lsize
+		ctext "Betty"		80 top lsize
+
+		rect 20 78 boxw boxh "red"		boxop
+		rect 50 78 boxw boxh "green"	boxop
+		rect 80 78 boxw boxh "blue"		boxop
+
+		dchart -color=red		-top chartop -bottom chartbottom -left=10 -right=30 opt  -yaxis  Amanda.d
+		dchart -color=green 	-top chartop -bottom chartbottom -left=40 -right=60 opt   Ashley.d
+		dchart -color=blue 		-top chartop -bottom chartbottom -left=70 -right=90 opt   Betty.d
+
+		chartop-=30
+		chartbottom-=30
+
+		ctext "Deborah" 	20 chartop lsize
+		ctext "Dorothy" 	50 chartop lsize
+		ctext "Helen"   	80 chartop lsize
+
+		rect 20 48 boxw boxh "orange"		boxop
+		rect 50 48 boxw boxh "purple"		boxop
+		rect 80 48 boxw boxh "steelblue" 	boxop
+
+
+		dchart -color=orange	-top chartop -bottom chartbottom -left=10 -right=30 opt  -yaxis Deborah.d
+		dchart -color=purple	-top chartop -bottom chartbottom -left=40 -right=60 opt  Dorothy.d
+		dchart -color=steelblue -top chartop -bottom chartbottom -left=70 -right=90 opt  Helen.d
+
+		chartop-=30
+		chartbottom-=30
+
+		ctext "Jessica"		20 chartop lsize
+		ctext "Linda"		50 chartop lsize
+		ctext "Patricia"	80 chartop lsize
+
+		rect 20 18 boxw boxh "gray"		boxop
+		rect 50 18 boxw boxh "brown"	boxop
+		rect 80 18 boxw boxh "salmon"	boxop
+
+		dchart -color=gray		-top chartop -bottom chartbottom -left=10 -right=30 opt -xlabel=40 -yaxis  Jessica.d
+		dchart -color=brown		-top chartop -bottom chartbottom -left=40 -right=60 opt -xlabel=40 Linda.d
+		dchart -color=salmon	-top chartop -bottom chartbottom -left=70 -right=90 opt -xlabel=40 Patricia.d
+	eslide
+edeck

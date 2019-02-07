@@ -1,0 +1,63 @@
+deck
+	// Go module information flows
+	slide
+		ts=3
+		gts=ts*1.5
+		ns=ts*0.65
+		gy=80
+		my=gy-20
+		dy=gy
+		iy=20
+		ny=iy+20
+		cy=iy
+		lw=0.2
+		aw=2
+		ah=2
+		modcolor="steelblue"
+		metacolor="gray"
+		
+		col1=25
+		col2=50
+		col3=75
+		ctext "Go Module Information Flows" 50 90 gts "sans" "black" 100 "https://blog.golang.org/modules2019"
+		ctext "go command"	col1 gy ts
+		ctext "mirror"		col2 my ts
+		ctext "godoc.org"	col3 dy ts
+		ctext "index"		col3 iy ts
+		ctext "notary"		col2 ny ts
+		ctext "code hosts"	col1 cy ts
+		ctext "(bitbucket, github, ...)" col1 15 ts
+		
+		ctext "fetches, verifies and builds Go code"			col1 75 ns "serif" "gray"
+		ctext "helps users find and choose modules"				col3 75 ns "serif" "gray"
+		ctext "serves cached module code"						col2 55 ns "serif" "gray"
+		ctext "and notarized hashes"							col2 51.5 ns "serif" "gray"
+		ctext "signs and publishes module hashes"				col2 35 ns "serif" "gray"
+		ctext "serves module source code"						col1 10 ns "serif" "gray"
+		ctext "serves feed listing of Go modules & versions"	col3 15 ns "serif" "gray"
+		ctext "answer queries for goimports"					col3 11 ns "serif" "gray"
+
+		
+		cx1=col1+10
+		cx3=col3-10
+		ccx=col1-5
+		rcarrow	col1 25   col1 col2  45 my   lw aw ah modcolor		// code -> mirror
+		arrow	cx1 21    cx3 21 lw aw ah metacolor				// code -> index
+		rcarrow	col1 25   col1 40 45 ny lw aw ah modcolor			// code -> notary
+		
+		icx=col3
+		lcarrow	col3 25 col3 col2 55 my lw aw ah metacolor		// index -> mirror
+		arrow	col3 25 col3 75 lw aw ah metacolor				// index -> godoc.org
+		lcarrow	col3 25 col3 40 55 ny lw aw ah metacolor		// index -> notary
+		
+		arrow	col2 45 col2 col2 lw aw ah						// notary -> mirror
+		
+		gx3=col3-10
+		gx2=col1+10
+		rcarrow	col2 65 col2 col3 gx3 gy lw aw ah modcolor		// mirror -> godoc.org
+		lcarrow	col2 65 col2 col3 gx2 dy lw aw ah modcolor		// mirror -> go command
+		
+		legend "modules/code"	col1 5 1 "sans" modcolor
+		legend "metadata"		col3 5 1 "sans" metacolor
+	eslide
+edeck
