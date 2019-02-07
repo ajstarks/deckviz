@@ -1,0 +1,32 @@
+deck
+	tsize=1.6
+	tleft=17
+	vc="maroon"
+	slide
+		dopts="-fulldeck=f -textsize 1.5 -vcolor maroon -pmap -right 95"
+		ctext "Apple Fiscal 4Q 2018 Results" 50 90 3
+		etext "Revenue by region" tleft 80 tsize
+		etext "(Billion USD)" tleft 78 1 "sans" vc
+		etext "Revenue by product" tleft 50 tsize
+		etext "(Billion USD)" tleft 48 1 "sans" vc
+		etext "Units" tleft 20 tsize
+		etext "(thousands)" tleft 18 1 "sans" vc
+		dchart -top=80 dopts -color peru aapl3q2018-region.d
+		dchart -top=50 dopts -color green aapl3q2018.d
+		dchart -top=20 dopts -color steelblue aapl3q2018-units.d
+	eslide
+
+	slide
+		bopts="-fulldeck=f -hbar -pct -vcolor maroon"
+		ctext "Apple Fiscal 4Q 2018 Results" 50 90 3
+		etext "Revenue by region" tleft 80 tsize
+		etext "(Billion USD)" tleft 78 1 "sans" vc
+		etext "Revenue by product" tleft 50 tsize
+		etext "(Billion USD)" tleft 48 1 "sans" vc
+		etext "Units" tleft 20 tsize
+		etext "(thousands)" tleft 18 1 "sans" vc
+		dchart -top=80 -left=30 -right=60 bopts -color peru aapl3q2018-region.d
+		dchart -top=50 -left=30 -right=60 bopts -color green aapl3q2018.d
+		dchart -top=20 -left=30 -right=60 bopts -color steelblue aapl3q2018-units.d
+	eslide
+edeck

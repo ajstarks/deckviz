@@ -1,4 +1,5 @@
 deck
+	canvas 692 712
 	opts="-fulldeck=f -val=f -bar=f -xlabel=4000 -line=f -linewidth 0.1 -vol -xlast -yaxis -yrange 0,220,40 -textsize 2"
 	imy=90
 	imw=90

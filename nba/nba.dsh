@@ -1,0 +1,47 @@
+opts="-fulldeck=f -scatter -xlabel=0 -title=f -vol -bar=f -min=0 -max=1000 -yrange=0,1000,250 -textsize=2 -color=rgb(160,70,30)"
+imw=40
+ts=1.5
+width=30
+w2=width/2
+deck
+	slide
+		left=10
+		right=left+width
+		mid=left+w2
+		
+		ctext "NBA Standings: 2019-01-28" 50 95 2.5
+		
+		ctext "Atlantic"	mid   75 ts
+		image "tor.jpg" 	left  70 imw 0
+		image "nyk.png"  	right 70 imw 0
+		dchart opts -left left -right right -top 90 -bottom 70 atlantic.d
+
+		ctext "Central"		mid   45 ts
+		image "mil.jpg"		left  40 imw 0
+		image "cle.png"		right 40 imw 0
+		dchart opts -left left -right right -top 60 -bottom 40 central.d
+		
+		ctext "Southeast"	mid   15 ts
+		image "mia.jpg"		left  10 imw 0
+		image "atl.jpg"		right 10 imw 0
+		dchart opts -left left -right right -top 30 -bottom 10 southeast.d
+		
+		left=60
+		right=left+width
+		mid=left+w2
+		ctext "Pacific"		mid 75 ts
+		image "gsw.png"		left 70 imw 0
+		image "pho.jpg"		right 70 imw 0
+		dchart opts -left left -right right -top 90 -bottom 70 pacific.d
+
+		ctext "Northwest"	mid 45 ts
+		image "den.png"		left 40 imw 0
+		image "min.png"		right 40 imw 0
+		dchart opts -left left -right right -top 60 -bottom 40 northwest.d
+		
+		ctext "Southwest"	mid 15 ts
+		image "hou.jpg"		left 10 imw 0
+		image "mem.png"		right 10 imw 0
+		dchart opts -left left -right right -top 30 -bottom 10 southwest.d
+	eslide
+edeck
