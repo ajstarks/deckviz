@@ -1,0 +1,47 @@
+deck
+	opts="-fulldeck=f -csv -textsize=1.4 -yrange=50,150,25 -min=50 -max=150 -left=20 -right=80 -yaxis -line -scatter=f -dot=f -val=f -bar=f -title=f"
+	bpfile="bp.csv"
+	scolor="red"
+	dcolor="blue"
+	bcolor="black"
+	slabel="Blood Pressure"
+	blabel="Heart Rate"
+	
+	chtop=80
+	chbot=60
+	chleft=25
+	chright=80
+	boxop=5
+	headtop=chtop+10
+	
+	chw=chright-chleft
+	chh=chtop-chbot
+	spacing=chh*1.5
+	
+	w2=chw/2
+	h2=chh/2
+	
+	rx=chleft+w2
+	ry=chbot+h2
+	labelx=chleft-15
+	labely=chtop
+	labely2=labely-3
+
+	slide
+		text "Jane Doe" chleft headtop 3
+		ctext slabel rx ry 2 "sans" "gray" 50
+		legend "Systolic"   labelx labely 1 "sans" scolor
+		legend "Diastolic"  labelx labely2 1 "sans" dcolor
+		dchart opts -xlabel=7 -csvcol=Date,SYS -left chleft -right chright -top chtop -bottom chbot -color scolor -hline 120,Normal -frame -framecolor "blue" bpfile
+		dchart opts -xlabel=0 -csvcol=Date,DIA -left chleft -right chright -top chtop -bottom chbot -color dcolor -hline 80,Normal bpfile
+		
+		chtop-=spacing
+		chbot-=spacing
+		ry-=spacing
+		
+		ctext blabel rx ry 2 "sans" "gray" 50
+		legend "Beats/Min"  labelx chtop 1 "sans" bcolor
+		dchart opts -xlabel=7 -csvcol=Date,BPM  -left chleft -right chright -top chtop -bottom chbot -min=40 -max=120 -yrange=40,120,20 -hline 70,Avg. -color bcolor -frame -framecolor "red" bpfile
+	
+	eslide
+edeck
