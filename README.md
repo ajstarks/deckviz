@@ -3,10 +3,11 @@
 ### Contents
 
 * aapl -- Apple financial results
-* babyname -- Baby names through the decades
+* bp -- Blood Pressure and Heart Rate
+* babynames -- Baby names through the decades
 * ceo-stock -- The relationship of CEO tenure to stock price
-* gomod -- Go module flows
 * fire -- German wildfires
+* gomod -- Go module flows
 * multigen -- Multi-generational households
 * nba -- NBA standings
 * prison -- Comparing the rate of incarceration vs. US presidential terms
