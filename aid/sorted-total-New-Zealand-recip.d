@@ -1,0 +1,7 @@
+South Africa	0.0181563
+India	0.0179733
+Thailand	0.00821158
+Chile	0.00782759
+Brazil	0.00305553
+Colombia	0.00137192
+Kuwait	0.000153669

@@ -1,0 +1,7 @@
+Brazil	204472350
+Chile	43598915
+Colombia	85662550
+India	838979022
+Saudi Arabia	167923
+South Africa	20345015
+Thailand	105821945

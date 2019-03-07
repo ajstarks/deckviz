@@ -1,0 +1,276 @@
+deck
+	slide
+		text "Top Donors (USD Billions)" 15 85 1.5
+		text "Top Recipients (USD Billions)" 60 85 1.5
+		dchart -hbar -min=0 -max=150 -left=15 -right=40 -top=80 -textsize 1.5 -datafmt=$%.2f -fulldeck=f td.d
+		dchart -hbar -min=0 -max=150 -left=60 -right=85 -top=80 -textsize 1.5 -datafmt=$%.2f -color orange  -fulldeck=f tr.d
+	eslide
+	
+	
+	// United States
+	slide
+		ls=0.3
+		lcolor="orange"
+		lop=50
+		text "United States" 5 90 2
+		donorsize=2
+
+		image "ww.png" 36 50 3200 1800 40
+		circle 18 54 donorsize "steelblue" 60
+		line 18 54 58 30	ls lcolor lop // Australia
+		line 18 54 37 58	ls lcolor lop // Austria
+		line 18 54 35 60	ls lcolor lop // Belgium
+		line 18 54 24 36	ls lcolor lop // Brazil
+		line 18 54 14 62	ls lcolor lop // Canada
+		line 18 54 21 31	ls lcolor lop // Chile
+		line 18 54 20 42	ls lcolor lop // Colombia
+		line 18 54 40 51	ls lcolor lop // Cyprus
+		line 18 54 37 59	ls lcolor lop // Czech Republic
+		line 18 54 37 62	ls lcolor lop // Denmark
+		line 18 54 37 63	ls lcolor lop // Estonia
+		line 18 54 39 66	ls lcolor lop // Finland
+		line 18 54 35 58	ls lcolor lop // France
+		line 18 54 38 54	ls lcolor lop // Greece
+		line 18 54 37 57	ls lcolor lop // Hungary
+		line 18 54 31 66	ls lcolor lop // Iceland
+		line 18 54 48 48	ls lcolor lop // India
+		line 18 54 31 60	ls lcolor lop // Ireland
+		line 18 54 36 56	ls lcolor lop // Italy
+		line 18 54 59 53	ls lcolor lop // Japan
+		line 18 54 57 55	ls lcolor lop // Korea
+		line 18 54 41 51	ls lcolor lop // Kuwait
+		line 18 54 39 62	ls lcolor lop // Latvia
+		line 18 54 35.8 58.5 	ls lcolor lop // Liechtenstein
+		line 18 54 38.5 61.5	ls lcolor lop // Lithuania
+		line 18 54 35 59	ls lcolor lop // Luxembourg
+		line 18 54 66 24	ls lcolor lop // New Zealand
+		line 18 54 35 64	ls lcolor lop // Norway
+		line 18 54 37 60	ls lcolor lop // Poland
+		line 18 54 31 55	ls lcolor lop // Portugal
+		line 18 54 43 49	ls lcolor lop // Qatar
+		line 18 54 39 57	ls lcolor lop // Romania
+		line 18 54 42 48	ls lcolor lop // Saudi Arabia
+		line 18 54 37 59	ls lcolor lop // Slovak Republic
+		line 18 54 36.5 49.5 	ls lcolor lop // Slovenia
+		line 18 54 38 28	ls lcolor lop // South Africa
+		line 18 54 33 55	ls lcolor lop // Spain
+		line 18 54 36 55	ls lcolor lop // Sweden
+		line 18 54 56.5 48.5	ls lcolor lop // Taiwan
+		line 18 54 53 45	ls lcolor lop // Thailand
+		line 18 54 44 48	ls lcolor lop // United Arab Emirates
+		line 18 54 33 60	ls lcolor lop // United Kingdom
+		line 18 54 18 54	ls lcolor lop // United States
+		line 18 54 44 48	ls lcolor lop // United Arab Emirates
+		line 18 54 33 60	ls lcolor lop // United Kingdom
+
+		dchart -hbar -left=78 -right=95 -top=90 -datafmt=$%.3f -textsize 0.9 -color orange -fulldeck=f sorted-total-United-States-recip.d
+	eslide
+	
+	// Japan
+	slide
+		text "Japan" 5 90 2
+		image "ww.png" 36 50 3200 1800 40
+		circle 59 53 donorsize "steelblue" 50
+		line 59 53  24 36	ls lcolor lop //  Brazil
+		line 59 53  21 31	ls lcolor lop //  Chile
+		line 59 53  20 42	ls lcolor lop //  Colombia
+		line 59 53  40 51	ls lcolor lop //  Cyprus
+		line 59 53  37 59	ls lcolor lop //  Czech Republic
+		line 59 53  37 63	ls lcolor lop //  Estonia
+		line 59 53  37 57	ls lcolor lop //  Hungary
+		line 59 53  48 48	ls lcolor lop //  India
+		line 59 53  57 55	ls lcolor lop //  Korea
+		line 59 53  41 51	ls lcolor lop //  Kuwait
+		line 59 53  39 62	ls lcolor lop //  Latvia
+		line 59 53  38.5 61.5	ls lcolor lop //  Lithuania
+		line 59 53  37 60	ls lcolor lop //  Poland
+		line 59 53  43 49	ls lcolor lop //  Qatar
+		line 59 53  39 57	ls lcolor lop //  Romania
+		line 59 53  42 48	ls lcolor lop //  Saudi Arabia
+		line 59 53  37 59	ls lcolor lop //  Slovak Republic
+		line 59 53  36.5 49.5 	ls lcolor lop //  Slovenia
+		line 59 53  38 28	ls lcolor lop //  South Africa
+		line 59 53  56.5 48.5	ls lcolor lop //  Taiwan
+		line 59 53  53 45	ls lcolor lop //  Thailand
+		line 59 53  44 48	ls lcolor lop //  United Arab Emirates
+		line 59 53  33 60	ls lcolor lop //  United Kingdom
+		line 59 53  18 54	ls lcolor lop //  United States
+				dchart -hbar -left=78 -right=95 -top=90 -datafmt=$%.3f -textsize 0.9 -color orange -fulldeck=f sorted-total-Japan-recip.d
+
+	eslide
+	
+	slide
+		text "Germany" 5 90 2
+		image "ww.png" 36 50 3200 1800 40
+		circle 36 59 donorsize "steelblue" 50
+		line 36 59  24 36	ls lcolor lop //  Brazil
+		line 36 59  21 31	ls lcolor lop //  Chile
+		line 36 59  20 42	ls lcolor lop //  Colombia
+		line 36 59  40 51	ls lcolor lop //  Cyprus
+		line 36 59  37 59	ls lcolor lop //  Czech Republic
+		line 36 59  37 63	ls lcolor lop //  Estonia
+		line 36 59  37 57	ls lcolor lop //  Hungary
+		line 36 59  48 48	ls lcolor lop //  India
+		line 36 59  57 55	ls lcolor lop //  Korea
+		line 36 59  41 51	ls lcolor lop //  Kuwait
+		line 36 59  39 62	ls lcolor lop //  Latvia
+		line 36 59  38.5 61.5	ls lcolor lop //  Lithuania
+		line 36 59  37 60	ls lcolor lop //  Poland
+		line 36 59  43 49	ls lcolor lop //  Qatar
+		line 36 59  39 57	ls lcolor lop //  Romania
+		line 36 59  42 48	ls lcolor lop //  Saudi Arabia
+		line 36 59  37 59	ls lcolor lop //  Slovak Republic
+		line 36 59  36.5 49.5 	ls lcolor lop //  Slovenia
+		line 36 59  38 28	ls lcolor lop //  South Africa
+		line 36 59  56.5 48.5	ls lcolor lop //  Taiwan
+		line 36 59  53 45	ls lcolor lop //  Thailand
+		line 36 59  44 48	ls lcolor lop //  United Arab Emirates
+		line 36 59  33 60	ls lcolor lop //  United Kingdom
+		line 36 59  18 54	ls lcolor lop //  United States
+				dchart -hbar -left=78 -right=95 -top=90 -datafmt=$%.3f -textsize 0.9 -color orange -fulldeck=f sorted-total-Germany-recip.d
+
+	eslide
+	
+	slide
+		text "France" 5 90 2
+		image "ww.png" 36 50 3200 1800 40
+		circle 34 58 donorsize "steelblue" 50
+		line 34 58  24 36 ls lcolor lop	// Brazil
+		line 34 58  21 31 ls lcolor lop	// Chile
+		line 34 58  20 42 ls lcolor lop	// Colombia
+		line 34 58  40 51 ls lcolor lop	// Cyprus
+		line 34 58  37 59 ls lcolor lop	// Czech Republic
+		line 34 58  37 63 ls lcolor lop	// Estonia
+		line 34 58  37 57 ls lcolor lop	// Hungary
+		line 34 58  48 48 ls lcolor lop	// India
+		line 34 58  57 55 ls lcolor lop	// Korea
+		line 34 58  41 51 ls lcolor lop	// Kuwait
+		line 34 58  39 62 ls lcolor lop	// Latvia
+		line 34 58  38.5 61.5 ls lcolor lop	// Lithuania
+		line 34 58  37 60 ls lcolor lop	// Poland
+		line 34 58  43 49 ls lcolor lop	// Qatar
+		line 34 58  39 57 ls lcolor lop	// Romania
+		line 34 58  42 48 ls lcolor lop	// Saudi Arabia
+		line 34 58  37 59 ls lcolor lop	// Slovak Republic
+		line 34 58  36.5 49.5  ls lcolor lop	// Slovenia
+		line 34 58  38 28 ls lcolor lop	// South Africa
+		line 34 58  56.5 48.5 ls lcolor lop	// Taiwan
+		line 34 58  53 45 ls lcolor lop	// Thailand
+		line 34 58  44 48 ls lcolor lop	// United Arab Emirates
+		line 34 58  33 60 ls lcolor lop	// United Kingdom
+		line 34 58  18 54 ls lcolor lop	// United States
+				dchart -hbar -left=78 -right=95 -top=90 -datafmt=$%.3f -textsize 0.9 -color orange -fulldeck=f sorted-total-France-recip.d
+
+	eslide
+
+	slide
+		text "Canada" 5 90 2
+		image "ww.png" 36 50 3200 1800 40
+		circle 14 62 donorsize "steelblue" 50
+		line 14 62  24 36 ls lcolor lop	// Brazil
+		line 14 62  21 31 ls lcolor lop	// Chile
+		line 14 62  20 42 ls lcolor lop	// Colombia
+		line 14 62  40 51 ls lcolor lop	// Cyprus
+		line 14 62  37 59 ls lcolor lop	// Czech Republic
+		line 14 62  37 63 ls lcolor lop	// Estonia
+		line 14 62  37 57 ls lcolor lop	// Hungary
+		line 14 62  48 48 ls lcolor lop	// India
+		line 14 62  57 55 ls lcolor lop	// Korea
+		line 14 62  41 51 ls lcolor lop	// Kuwait
+		line 14 62  39 62 ls lcolor lop	// Latvia
+		line 14 62  38.5 61.5 ls lcolor lop	// Lithuania
+		line 14 62  37 60 ls lcolor lop	// Poland
+		line 14 62  39 57 ls lcolor lop	// Romania
+		line 14 62  42 48 ls lcolor lop	// Saudi Arabia
+		line 14 62  37 59 ls lcolor lop	// Slovak Republic
+		line 14 62  36.5 49.5  ls lcolor lop	// Slovenia
+		line 14 62  38 28 ls lcolor lop	// South Africa
+		line 14 62  53 45 ls lcolor lop	// Thailand
+				dchart -hbar -left=78 -right=95 -top=90 -datafmt=$%.3f -textsize 0.9 -color orange -fulldeck=f sorted-total-Canada-recip.d
+
+	eslide
+	
+	slide
+		text "Sweden" 5 90 2
+		image "ww.png" 36 50 3200 1800 40
+		circle 36.5 65 donorsize "steelblue" 50
+		line 36.5 65  24 36 ls lcolor lop	// Brazil
+		line 36.5 65  21 31 ls lcolor lop	// Chile
+		line 36.5 65  20 42 ls lcolor lop	// Colombia
+		line 36.5 65  37 59 ls lcolor lop	// Czech Republic
+		line 36.5 65  37 63 ls lcolor lop	// Estonia
+		line 36.5 65  37 57 ls lcolor lop	// Hungary
+		line 36.5 65  48 48 ls lcolor lop	// India
+		line 36.5 65  41 51 ls lcolor lop	// Kuwait
+		line 36.5 65  39 62 ls lcolor lop	// Latvia
+		line 36.5 65  38.5 61.5 ls lcolor lop	// Lithuania
+		line 36.5 65  37 60 ls lcolor lop	// Poland
+		line 36.5 65  39 57 ls lcolor lop	// Romania
+		line 36.5 65  37 59 ls lcolor lop	// Slovak Republic
+		line 36.5 65  36.5 49.5  ls lcolor lop	// Slovenia
+		line 36.5 65  38 28 ls lcolor lop	// South Africa
+		line 36.5 65  56.5 48.5 ls lcolor lop	// Taiwan
+		line 36.5 65  53 45 ls lcolor lop	// Thailand
+				dchart -hbar -left=78 -right=95 -top=90 -datafmt=$%.3f -textsize 0.9 -color orange -fulldeck=f sorted-total-Sweden-recip.d
+
+	eslide
+	
+	slide
+	text "Norway" 5 90 2
+	image "ww.png" 36 50 3200 1800 40
+		circle 35 64 donorsize "steelblue" 50
+		line 35 64  24 36 ls lcolor lop	// Brazil
+		line 35 64  21 31 ls lcolor lop	// Chile
+		line 35 64  20 42 ls lcolor lop	// Colombia
+		line 35 64  40 51 ls lcolor lop	// Cyprus
+		line 35 64  37 59 ls lcolor lop	// Czech Republic
+		line 35 64  37 63 ls lcolor lop	// Estonia
+		line 35 64  37 57 ls lcolor lop	// Hungary
+		line 35 64  48 48 ls lcolor lop	// India
+		line 35 64  39 62 ls lcolor lop	// Latvia
+		line 35 64  38.5 61.5 ls lcolor lop	// Lithuania
+		line 35 64  37 60 ls lcolor lop	// Poland
+		line 35 64  39 57 ls lcolor lop	// Romania
+		line 35 64  42 48 ls lcolor lop	// Saudi Arabia
+		line 35 64  37 59 ls lcolor lop	// Slovak Republic
+		line 35 64  36.5 49.5  ls lcolor lop	// Slovenia
+		line 35 64  38 28 ls lcolor lop	// South Africa
+		line 35 64  53 45 ls lcolor lop	// Thailand
+				dchart -hbar -left=78 -right=95 -top=90 -datafmt=$%.3f -textsize 0.9 -color orange -fulldeck=f sorted-total-Norway-recip.d
+
+	eslide
+	
+	slide
+		text "Italy" 5 90 2
+		image "ww.png" 36 50 3200 1800 40
+		circle 36 56 donorsize "steelblue" 50
+		line 36 56  24 36 ls lcolor lop	// Brazil
+		line 36 56  21 31 ls lcolor lop	// Chile
+		line 36 56  20 42 ls lcolor lop	// Colombia
+		line 36 56  40 51 ls lcolor lop	// Cyprus
+		line 36 56  37 59 ls lcolor lop	// Czech Republic
+		line 36 56  37 63 ls lcolor lop	// Estonia
+		line 36 56  37 57 ls lcolor lop	// Hungary
+		line 36 56  48 48 ls lcolor lop	// India
+		line 36 56  57 55 ls lcolor lop	// Korea
+		line 36 56  41 51 ls lcolor lop	// Kuwait
+		line 36 56  39 62 ls lcolor lop	// Latvia
+		line 36 56  38.5 61.5 ls lcolor lop	// Lithuania
+		line 36 56  37 60 ls lcolor lop	// Poland
+		line 36 56  39 57 ls lcolor lop	// Romania
+		line 36 56  42 48 ls lcolor lop	// Saudi Arabia
+		line 36 56  37 59 ls lcolor lop	// Slovak Republic
+		line 36 56  36.5 49.5  ls lcolor lop	// Slovenia
+		line 36 56  38 28 ls lcolor lop	// South Africa
+		line 36 56  56.5 48.5 ls lcolor lop	// Taiwan
+		line 36 56  53 45 ls lcolor lop	// Thailand
+		line 36 56  44 48 ls lcolor lop	// United Arab Emirates
+		line 36 56  33 60 ls lcolor lop	// United Kingdom
+		line 36 56  18 54 ls lcolor lop	// United States
+				dchart -hbar -left=78 -right=95 -top=90 -datafmt=$%.3f -textsize 0.9 -color orange -fulldeck=f sorted-total-Italy-recip.d
+
+	eslide
+
+
+	
+edeck

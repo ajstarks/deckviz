@@ -1,0 +1,22 @@
+Brazil	4063216247
+Chile	1365472828
+Colombia	1238911524
+Cyprus	112651716
+Czech Republic	88260457
+Estonia	18124997
+Hungary	105587476
+India	18017983208
+Korea	691327750
+Kuwait	5859569
+Latvia	28041049
+Lithuania	46788768
+Poland	17230746024
+Qatar	432959
+Romania	222430428
+Saudi Arabia	14096654
+Slovak Republic	47343284
+Slovenia	109892941
+South Africa	1784147995
+Taiwan	53175422
+Thailand	1702275036
+United Arab Emirates	271672489

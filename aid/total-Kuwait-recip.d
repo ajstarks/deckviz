@@ -1,0 +1,5 @@
+Cyprus	192431763
+India	893157410
+Lithuania	21381183
+Slovak Republic	1219994
+Thailand	260887969

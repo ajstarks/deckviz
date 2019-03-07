@@ -1,0 +1,42 @@
+Australia	2446616312
+Austria	784068952
+Belgium	2144445270
+Brazil	1134440
+Canada	7466338200
+Chile	564349
+Colombia	190795
+Cyprus	5599
+Czech Republic	8930435
+Denmark	2952416405
+Estonia	278942
+Finland	665953415
+France	15456459635
+Germany	47218438821
+Greece	32667185
+Hungary	324552
+Iceland	172501
+Ireland	295144458
+Italy	3835655974
+Japan	114182254172
+Korea	1299047720
+Kuwait	1369078319
+Liechtenstein	4370700
+Luxembourg	111554022
+Monaco	941387
+Netherlands	8939647189
+New Zealand	56749885
+Norway	4416814418
+Poland	403184
+Portugal	68900866
+Qatar	104519053
+Saudi Arabia	1698410689
+Slovak Republic	395574
+Slovenia	150028
+Spain	2014695904
+Sweden	6364045876
+Switzerland	2844087953
+Taiwan	83737498
+Thailand	25461
+United Arab Emirates	67636986
+United Kingdom	23690539376
+United States	116176338066
