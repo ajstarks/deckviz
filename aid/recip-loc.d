@@ -3,7 +3,7 @@ Australia	58	30
 Austria	37	58
 Belgium	35	60
 Brazil	24	36
-Canada	14	62
+Canada	20	62
 Chile	21	31
 Colombia	20	42
 Cyprus	40	51
@@ -26,6 +26,7 @@ Latvia	39	62
 Liechtenstein	35.8 58.5
 Lithuania	38.5	61.5
 Luxembourg	35	59
+Netherlands	35	60
 New Zealand	66	24
 Norway	35	64
 Poland	37	60
@@ -43,4 +44,4 @@ Taiwan	56.5	48.5
 Thailand	53	45
 United Arab Emirates	44	48
 United Kingdom	33	60
-United States	18	54
+United States	14	54
