@@ -1,334 +1,1017 @@
 deck
+	
+	recipcolor="orange"
 	slide
 		topts="-hbar -min=0 -max=150 -textsize 1.5 -datafmt=$%.2f -fulldeck=f"
 		image "wo.png" 50 50 3200 1800 60
 		text "Foreign Aid: Donors and Recipients: 1973-2013" 15 90 3
 		text "Top Donors (USD Billions)" 15 80 1.5
 		text "Top Recipients (USD Billions)" 60 80 1.5
-		dchart topts -left=15 -right=40 -top=75 -textsize 1.5  td.d
-		dchart topts -left=60 -right=85 -top=75 -textsize 1.5 -color orange  tr.d
+		dchart topts -left=15 -right=40 -top=75                    td.d
+		dchart topts -left=60 -right=85 -top=75 -color recipcolor  tr.d
 	eslide
 	
-	
-	// United States
-	slide
-		opts="-hbar -left=78 -right=95 -top=90 -datafmt=$%.3f -textsize 0.9 -color orange -fulldeck=f"
-		ls=0.3
-		lcolor="orange"
-		lop=50
-		text "United States" 5 90 4 "sans" "steelblue"
-		donorsize=2
+	opts="-hbar  -left=78 -right=95 -top=95 -datafmt=$%.5f -textsize 0.9 -color orange -fulldeck=f"
+	dopts="-hbar -left=55 -right=65 -top=95 -textsize 0.9 -fulldeck=f"
+	ls=0.25
+	lcolor=recipcolor
+	donorcolor="steelblue"
+	dtop=90
+	dleft=5
+	dsize=4
+	dcrad=dsize/2
+	dtsize=dsize*0.75
+	donorts=4
+	lop=50
+	dotcolor="red"
+	dotsize=ls
+	mapimage="ww.png"
+	iconw=48
+	iconh=48
+	icony=85
 
-		image "ww.png" 36 50 3200 1800 40
-		circle 14 54 donorsize "steelblue" 60
-		ctext "$ 116.2 Billion" 14 54 3
-		line 14 54 58 30	ls lcolor lop // Australia
-		line 14 54 37 58	ls lcolor lop // Austria
-		line 14 54 35 60	ls lcolor lop // Belgium
-		line 14 54 24 36	ls lcolor lop // Brazil
-		line 14 54 20 62	ls lcolor lop // Canada
-		line 14 54 21 31	ls lcolor lop // Chile
-		line 14 54 20 42	ls lcolor lop // Colombia
-		line 14 54 40 51	ls lcolor lop // Cyprus
-		line 14 54 37 59	ls lcolor lop // Czech Republic
-		line 14 54 37 62	ls lcolor lop // Denmark
-		line 14 54 37 63	ls lcolor lop // Estonia
-		line 14 54 39 66	ls lcolor lop // Finland
-		line 14 54 35 58	ls lcolor lop // France
-		line 14 54 38 54	ls lcolor lop // Greece
-		line 14 54 37 57	ls lcolor lop // Hungary
-		line 14 54 31 66	ls lcolor lop // Iceland
-		line 14 54 48 48	ls lcolor lop // India
-		line 14 54 31 60	ls lcolor lop // Ireland
-		line 14 54 36 56	ls lcolor lop // Italy
-		line 14 54 59 53	ls lcolor lop // Japan
-		line 14 54 57 55	ls lcolor lop // Korea
-		line 14 54 41 51	ls lcolor lop // Kuwait
-		line 14 54 39 62	ls lcolor lop // Latvia
-		line 14 54 35.8 58.5 	ls lcolor lop // Liechtenstein
-		line 14 54 38.5 61.5	ls lcolor lop // Lithuania
-		line 14 54 35 59	ls lcolor lop // Luxembourg
-		line 14 54 66 24	ls lcolor lop // New Zealand
-		line 14 54 35 64	ls lcolor lop // Norway
-		line 14 54 37 60	ls lcolor lop // Poland
-		line 14 54 31 55	ls lcolor lop // Portugal
-		line 14 54 43 49	ls lcolor lop // Qatar
-		line 14 54 39 57	ls lcolor lop // Romania
-		line 14 54 42 48	ls lcolor lop // Saudi Arabia
-		line 14 54 37 59	ls lcolor lop // Slovak Republic
-		line 14 54 36.5 49.5 	ls lcolor lop // Slovenia
-		line 14 54 38 28	ls lcolor lop // South Africa
-		line 14 54 33 55	ls lcolor lop // Spain
-		line 14 54 36 55	ls lcolor lop // Sweden
-		line 14 54 56.5 48.5	ls lcolor lop // Taiwan
-		line 14 54 53 45	ls lcolor lop // Thailand
-		line 14 54 44 48	ls lcolor lop // United Arab Emirates
-		line 14 54 33 60	ls lcolor lop // United Kingdom
-		line 14 54 14 54	ls lcolor lop // United States
-		line 14 54 44 48	ls lcolor lop // United Arab Emirates
-		line 14 54 33 60	ls lcolor lop // United Kingdom
-	dchart opts sorted-total-United-States-recip.d
-	eslide
-	
-	// Japan
 	slide
-		text "Japan" 5 90 4 "sans" "steelblue"
-		image "ww.png" 36 50 3200 1800 40
-		circle 59 53 donorsize "steelblue" 50
-		ctext "$ 114.2 Billion" 59 53 3
-		line 59 53  24 36	ls lcolor lop //  Brazil
-		line 59 53  21 31	ls lcolor lop //  Chile
-		line 59 53  20 42	ls lcolor lop //  Colombia
-		line 59 53  40 51	ls lcolor lop //  Cyprus
-		line 59 53  37 59	ls lcolor lop //  Czech Republic
-		line 59 53  37 63	ls lcolor lop //  Estonia
-		line 59 53  37 57	ls lcolor lop //  Hungary
-		line 59 53  48 48	ls lcolor lop //  India
-		line 59 53  57 55	ls lcolor lop //  Korea
-		line 59 53  41 51	ls lcolor lop //  Kuwait
-		line 59 53  39 62	ls lcolor lop //  Latvia
-		line 59 53  38.5 61.5	ls lcolor lop //  Lithuania
-		line 59 53  37 60	ls lcolor lop //  Poland
-		line 59 53  43 49	ls lcolor lop //  Qatar
-		line 59 53  39 57	ls lcolor lop //  Romania
-		line 59 53  42 48	ls lcolor lop //  Saudi Arabia
-		line 59 53  37 59	ls lcolor lop //  Slovak Republic
-		line 59 53  36.5 49.5 	ls lcolor lop //  Slovenia
-		line 59 53  38 28	ls lcolor lop //  South Africa
-		line 59 53  56.5 48.5	ls lcolor lop //  Taiwan
-		line 59 53  53 45	ls lcolor lop //  Thailand
-		line 59 53  44 48	ls lcolor lop //  United Arab Emirates
-		line 59 53  33 60	ls lcolor lop //  United Kingdom
-		line 59 53  14 54	ls lcolor lop //  United States
-		dchart opts sorted-total-Japan-recip.d
-	eslide
-	
-	slide
-		text "United Kingdom" 5 90 4 "sans" "steelblue"
-		image "ww.png" 36 50 3200 1800 40
-		circle 33 60 donorsize "steelblue" 50
-		ctext "$ 23.7 Billion" 33 60 3
-		line 33 60    24 36 ls lcolor lop	// Brazil
-		line 33 60    21 31 ls lcolor lop	// Chile
-		line 33 60    20 42 ls lcolor lop	// Colombia
-		line 33 60    40 51 ls lcolor lop	// Cyprus
-		line 33 60    37 59 ls lcolor lop	// Czech Republic
-		line 33 60    37 63 ls lcolor lop	// Estonia
-		line 33 60    37 57 ls lcolor lop	// Hungary
-		line 33 60    48 48 ls lcolor lop	// India
-		line 33 60    57 55 ls lcolor lop	// Korea
-		line 33 60    39 62 ls lcolor lop	// Latvia
-		line 33 60    38.5 61.5 ls lcolor lop	// Lithuania
-		line 33 60    37 60 ls lcolor lop	// Poland
-		line 33 60    39 57 ls lcolor lop	// Romania
-		line 33 60    42 48 ls lcolor lop	// Saudi Arabia
-		line 33 60    37 59 ls lcolor lop	// Slovak Republic
-		line 33 60    36.5 49.5  ls lcolor lop	// Slovenia
-		line 33 60  38 28 ls lcolor lop	// South Africa
-		line 33 60  56.5 48.5 ls lcolor lop	// Taiwan
-		line 33 60  53 45 ls lcolor lop	// Thailand
-		dchart opts sorted-total-United-Kingdom-recip.d
-	eslide
-	
-	slide
-		text "Germany" 5 90 4 "sans" "steelblue"
-		image "ww.png" 36 50 3200 1800 40
-		circle 36 59 donorsize "steelblue" 50
-		ctext "$ 47.2 Billion" 36 59 3
-		line 36 59  24 36	ls lcolor lop //  Brazil
-		line 36 59  21 31	ls lcolor lop //  Chile
-		line 36 59  20 42	ls lcolor lop //  Colombia
-		line 36 59  40 51	ls lcolor lop //  Cyprus
-		line 36 59  37 59	ls lcolor lop //  Czech Republic
-		line 36 59  37 63	ls lcolor lop //  Estonia
-		line 36 59  37 57	ls lcolor lop //  Hungary
-		line 36 59  48 48	ls lcolor lop //  India
-		line 36 59  57 55	ls lcolor lop //  Korea
-		line 36 59  41 51	ls lcolor lop //  Kuwait
-		line 36 59  39 62	ls lcolor lop //  Latvia
-		line 36 59  38.5 61.5	ls lcolor lop //  Lithuania
-		line 36 59  37 60	ls lcolor lop //  Poland
-		line 36 59  43 49	ls lcolor lop //  Qatar
-		line 36 59  39 57	ls lcolor lop //  Romania
-		line 36 59  42 48	ls lcolor lop //  Saudi Arabia
-		line 36 59  37 59	ls lcolor lop //  Slovak Republic
-		line 36 59  36.5 49.5 	ls lcolor lop //  Slovenia
-		line 36 59  38 28	ls lcolor lop //  South Africa
-		line 36 59  56.5 48.5	ls lcolor lop //  Taiwan
-		line 36 59  53 45	ls lcolor lop //  Thailand
-		line 36 59  44 48	ls lcolor lop //  United Arab Emirates
-		line 36 59  33 60	ls lcolor lop //  United Kingdom
-		line 36 59  14 54	ls lcolor lop //  United States
-		dchart opts sorted-total-Germany-recip.d
-	eslide
-	
-	slide
-		text "France" 5 90 4 "sans" "steelblue"
-		image "ww.png" 36 50 3200 1800 40
-		circle 34 58 donorsize "steelblue" 50
-		ctext "$ 15.46 Billion" 34 58 3
-		line 34 58  24 36 ls lcolor lop	// Brazil
-		line 34 58  21 31 ls lcolor lop	// Chile
-		line 34 58  20 42 ls lcolor lop	// Colombia
-		line 34 58  40 51 ls lcolor lop	// Cyprus
-		line 34 58  37 59 ls lcolor lop	// Czech Republic
-		line 34 58  37 63 ls lcolor lop	// Estonia
-		line 34 58  37 57 ls lcolor lop	// Hungary
-		line 34 58  48 48 ls lcolor lop	// India
-		line 34 58  57 55 ls lcolor lop	// Korea
-		line 34 58  41 51 ls lcolor lop	// Kuwait
-		line 34 58  39 62 ls lcolor lop	// Latvia
-		line 34 58  38.5 61.5 ls lcolor lop	// Lithuania
-		line 34 58  37 60 ls lcolor lop	// Poland
-		line 34 58  43 49 ls lcolor lop	// Qatar
-		line 34 58  39 57 ls lcolor lop	// Romania
-		line 34 58  42 48 ls lcolor lop	// Saudi Arabia
-		line 34 58  37 59 ls lcolor lop	// Slovak Republic
-		line 34 58  36.5 49.5  ls lcolor lop	// Slovenia
-		line 34 58  38 28 ls lcolor lop	// South Africa
-		line 34 58  56.5 48.5 ls lcolor lop	// Taiwan
-		line 34 58  53 45 ls lcolor lop	// Thailand
-		line 34 58  44 48 ls lcolor lop	// United Arab Emirates
-		line 34 58  33 60 ls lcolor lop	// United Kingdom
-		line 34 58  14 54 ls lcolor lop	// United States
-		dchart opts sorted-total-France-recip.d
-	eslide
-	
-	slide
-		text "Netherlands" 5 90 4 "sans" "steelblue"
-		image "ww.png" 36 50 3200 1800 40
-		circle 35 60 donorsize "steelblue" 50
-		ctext "$ 8.9 Billion" 35 60 3
-		line 35 60  24 36 ls lcolor lop	// Brazil
-		line 35 60  21 31 ls lcolor lop	// Chile
-		line 35 60  20 42 ls lcolor lop	// Colombia
-		line 35 60  40 51 ls lcolor lop	// Cyprus
-		line 35 60  37 59 ls lcolor lop	// Czech Republic
-		line 35 60  37 63 ls lcolor lop	// Estonia
-		line 35 60  37 57 ls lcolor lop	// Hungary
-		line 35 60  48 48 ls lcolor lop	// India
-		line 35 60  57 55 ls lcolor lop	// Korea
-		line 35 60  41 51 ls lcolor lop	// Kuwait
-		line 35 60  39 62 ls lcolor lop	// Latvia
-		line 35 60  38.5 61.5 ls lcolor lop	// Lithuania
-		line 35 60  37 60 ls lcolor lop	// Poland
-		line 35 60  39 57 ls lcolor lop	// Romania
-		line 35 60  42 48 ls lcolor lop	// Saudi Arabia
-		line 35 60  37 59 ls lcolor lop	// Slovak Republic
-		line 35 60  36.5 49.5  ls lcolor lop	// Slovenia
-		line 35 60  38 28 ls lcolor lop	// South Africa
-		line 35 60  53 45 ls lcolor lop	// Thailand
-		dchart opts sorted-total-Netherlands-recip.d
+		text "United States" dleft dtop dsize "sans" donorcolor
+		image mapimage 36 50 3200 1800 40
+		circle 15 54 dcrad donorcolor 50
+		ctext "$ 116.18 Billion" 15 54 dtsize
+		image "admin.png"	7 icony iconw iconh
+		image "multi.png"	12 icony iconw iconh
+		image "std.png"	17 icony iconw iconh
+		image "bio.png"	22 icony iconw iconh
+		image "industrial.png"	27 icony iconw iconh
+		line 15 54 58 30	ls lcolor lop	// Australia
+		circle 58 30		dotsize dotcolor 30
+		line 15 54 36.5 58	ls lcolor lop	// Austria
+		circle 36.5 58		dotsize dotcolor 30
+		line 15 54 34.75 59.25	ls lcolor lop	// Belgium
+		circle 34.75 59.25		dotsize dotcolor 30
+		line 15 54 24 36	ls lcolor lop	// Brazil
+		circle 24 36		dotsize dotcolor 30
+		line 15 54 21 61	ls lcolor lop	// Canada
+		circle 21 61		dotsize dotcolor 30
+		line 15 54 21 31	ls lcolor lop	// Chile
+		circle 21 31		dotsize dotcolor 30
+		line 15 54 20 42	ls lcolor lop	// Colombia
+		circle 20 42		dotsize dotcolor 30
+		line 15 54 40 52.75	ls lcolor lop	// Cyprus
+		circle 40 52.75		dotsize dotcolor 30
+		line 15 54 36.5 59	ls lcolor lop	// Czech Republic
+		circle 36.5 59		dotsize dotcolor 30
+		line 15 54 35.5 61.5	ls lcolor lop	// Denmark
+		circle 35.5 61.5		dotsize dotcolor 30
+		line 15 54 37 63	ls lcolor lop	// Estonia
+		circle 37 63		dotsize dotcolor 30
+		line 15 54 39 66	ls lcolor lop	// Finland
+		circle 39 66		dotsize dotcolor 30
+		line 15 54 34 58	ls lcolor lop	// France
+		circle 34 58		dotsize dotcolor 30
+		line 15 54 38 54	ls lcolor lop	// Greece
+		circle 38 54		dotsize dotcolor 30
+		line 15 54 37 57	ls lcolor lop	// Hungary
+		circle 37 57		dotsize dotcolor 30
+		line 15 54 30.5 66	ls lcolor lop	// Iceland
+		circle 30.5 66		dotsize dotcolor 30
+		line 15 54 48.5 48	ls lcolor lop	// India
+		circle 48.5 48		dotsize dotcolor 30
+		line 15 54 32.4 60.5	ls lcolor lop	// Ireland
+		circle 32.4 60.5		dotsize dotcolor 30
+		line 15 54 36 56	ls lcolor lop	// Italy
+		circle 36 56		dotsize dotcolor 30
+		line 15 54 59.5 53.5	ls lcolor lop	// Japan
+		circle 59.5 53.5		dotsize dotcolor 30
+		line 15 54 57.1 54.5	ls lcolor lop	// Korea
+		circle 57.1 54.5		dotsize dotcolor 30
+		line 15 54 40.5 51	ls lcolor lop	// Kuwait
+		circle 40.5 51		dotsize dotcolor 30
+		line 15 54 38.5 62	ls lcolor lop	// Latvia
+		circle 38.5 62		dotsize dotcolor 30
+		line 15 54 35.5 57.5 	ls lcolor lop	// Liechtenstein
+		circle 35.5 57.5 		dotsize dotcolor 30
+		line 15 54 38.25 61.5	ls lcolor lop	// Lithuania
+		circle 38.25 61.5		dotsize dotcolor 30
+		line 15 54 35 59	ls lcolor lop	// Luxembourg
+		circle 35 59		dotsize dotcolor 30
+		line 15 54 66 24	ls lcolor lop	// New Zealand
+		circle 66 24		dotsize dotcolor 30
+		line 15 54 35.5 64	ls lcolor lop	// Norway
+		circle 35.5 64		dotsize dotcolor 30
+		line 15 54 37 60	ls lcolor lop	// Poland
+		circle 37 60		dotsize dotcolor 30
+		line 15 54 32.4 55	ls lcolor lop	// Portugal
+		circle 32.4 55		dotsize dotcolor 30
+		line 15 54 43.25 49	ls lcolor lop	// Qatar
+		circle 43.25 49		dotsize dotcolor 30
+		line 15 54 38.5 57	ls lcolor lop	// Romania
+		circle 38.5 57		dotsize dotcolor 30
+		line 15 54 42 48	ls lcolor lop	// Saudi Arabia
+		circle 42 48		dotsize dotcolor 30
+		line 15 54 37.5 58.5	ls lcolor lop	// Slovak Republic
+		circle 37.5 58.5		dotsize dotcolor 30
+		line 15 54 36.5 57.2 	ls lcolor lop	// Slovenia
+		circle 36.5 57.2 		dotsize dotcolor 30
+		line 15 54 38 28	ls lcolor lop	// South Africa
+		circle 38 28		dotsize dotcolor 30
+		line 15 54 33 55	ls lcolor lop	// Spain
+		circle 33 55		dotsize dotcolor 30
+		line 15 54 36.5 65	ls lcolor lop	// Sweden
+		circle 36.5 65		dotsize dotcolor 30
+		line 15 54 56.1 48.5	ls lcolor lop	// Taiwan
+		circle 56.1 48.5		dotsize dotcolor 30
+		line 15 54 52.5 45	ls lcolor lop	// Thailand
+		circle 52.5 45		dotsize dotcolor 30
+		line 15 54 43.75 48.25	ls lcolor lop	// United Arab Emirates
+		circle 43.75 48.25		dotsize dotcolor 30
+		line 15 54 33.5 60	ls lcolor lop	// United Kingdom
+		circle 33.5 60		dotsize dotcolor 30
+		dchart opts  sorted-total-United-States-recip.d
+		dchart dopts sorted-United-States-aid.d
 	eslide
 
 	slide
-		text "Canada" 5 90 4 "sans" "steelblue"
-		image "ww.png" 36 50 3200 1800 40
-		circle 20 62 donorsize "steelblue" 50
-		ctext "$ 7.5 Billion" 20 62 3
-		line 20 62  24 36 ls lcolor lop	// Brazil
-		line 20 62  21 31 ls lcolor lop	// Chile
-		line 20 62  20 42 ls lcolor lop	// Colombia
-		line 20 62  40 51 ls lcolor lop	// Cyprus
-		line 20 62  37 59 ls lcolor lop	// Czech Republic
-		line 20 62  37 63 ls lcolor lop	// Estonia
-		line 20 62  37 57 ls lcolor lop	// Hungary
-		line 20 62  48 48 ls lcolor lop	// India
-		line 20 62  57 55 ls lcolor lop	// Korea
-		line 20 62  41 51 ls lcolor lop	// Kuwait
-		line 20 62  39 62 ls lcolor lop	// Latvia
-		line 20 62  38.5 61.5 ls lcolor lop	// Lithuania
-		line 20 62  37 60 ls lcolor lop	// Poland
-		line 20 62  39 57 ls lcolor lop	// Romania
-		line 20 62  42 48 ls lcolor lop	// Saudi Arabia
-		line 20 62  37 59 ls lcolor lop	// Slovak Republic
-		line 20 62  36.5 49.5  ls lcolor lop	// Slovenia
-		line 20 62  38 28 ls lcolor lop	// South Africa
-		line 20 62  53 45 ls lcolor lop	// Thailand
-		dchart opts sorted-total-Canada-recip.d
+		text "Japan" dleft dtop dsize "sans" donorcolor
+		image mapimage 36 50 3200 1800 40
+		circle 59.5 53.5 dcrad donorcolor 50
+		ctext "$ 114.18 Billion" 59.5 53.5 dtsize
+		image "question.png"	7 icony iconw iconh
+		image "transport.png"	12 icony iconw iconh
+		image "welfare.png"	17 icony iconw iconh
+		image "education.png"	22 icony iconw iconh
+		image "industrial.png"	27 icony iconw iconh
+		line 59.5 53.5 24 36	ls lcolor lop	// Brazil
+		circle 24 36		dotsize dotcolor 30
+		line 59.5 53.5 21 31	ls lcolor lop	// Chile
+		circle 21 31		dotsize dotcolor 30
+		line 59.5 53.5 20 42	ls lcolor lop	// Colombia
+		circle 20 42		dotsize dotcolor 30
+		line 59.5 53.5 40 52.75	ls lcolor lop	// Cyprus
+		circle 40 52.75		dotsize dotcolor 30
+		line 59.5 53.5 36.5 59	ls lcolor lop	// Czech Republic
+		circle 36.5 59		dotsize dotcolor 30
+		line 59.5 53.5 37 63	ls lcolor lop	// Estonia
+		circle 37 63		dotsize dotcolor 30
+		line 59.5 53.5 37 57	ls lcolor lop	// Hungary
+		circle 37 57		dotsize dotcolor 30
+		line 59.5 53.5 48.5 48	ls lcolor lop	// India
+		circle 48.5 48		dotsize dotcolor 30
+		line 59.5 53.5 57.1 54.5	ls lcolor lop	// Korea
+		circle 57.1 54.5		dotsize dotcolor 30
+		line 59.5 53.5 40.5 51	ls lcolor lop	// Kuwait
+		circle 40.5 51		dotsize dotcolor 30
+		line 59.5 53.5 38.5 62	ls lcolor lop	// Latvia
+		circle 38.5 62		dotsize dotcolor 30
+		line 59.5 53.5 38.25 61.5	ls lcolor lop	// Lithuania
+		circle 38.25 61.5		dotsize dotcolor 30
+		line 59.5 53.5 37 60	ls lcolor lop	// Poland
+		circle 37 60		dotsize dotcolor 30
+		line 59.5 53.5 43.25 49	ls lcolor lop	// Qatar
+		circle 43.25 49		dotsize dotcolor 30
+		line 59.5 53.5 38.5 57	ls lcolor lop	// Romania
+		circle 38.5 57		dotsize dotcolor 30
+		line 59.5 53.5 42 48	ls lcolor lop	// Saudi Arabia
+		circle 42 48		dotsize dotcolor 30
+		line 59.5 53.5 37.5 58.5	ls lcolor lop	// Slovak Republic
+		circle 37.5 58.5		dotsize dotcolor 30
+		line 59.5 53.5 36.5 57.2 	ls lcolor lop	// Slovenia
+		circle 36.5 57.2 		dotsize dotcolor 30
+		line 59.5 53.5 38 28	ls lcolor lop	// South Africa
+		circle 38 28		dotsize dotcolor 30
+		line 59.5 53.5 56.1 48.5	ls lcolor lop	// Taiwan
+		circle 56.1 48.5		dotsize dotcolor 30
+		line 59.5 53.5 52.5 45	ls lcolor lop	// Thailand
+		circle 52.5 45		dotsize dotcolor 30
+		line 59.5 53.5 43.75 48.25	ls lcolor lop	// United Arab Emirates
+		circle 43.75 48.25		dotsize dotcolor 30
+		dchart opts  sorted-total-Japan-recip.d
+		dchart dopts sorted-Japan-aid.d
 	eslide
-	
+
 	slide
-		text "Sweden" 5 90 4 "sans" "steelblue"
-		image "ww.png" 36 50 3200 1800 40
-		circle 36.5 65 donorsize "steelblue" 50
-		ctext "$ 6.4 Billion" 36.6 65 3
-		line 36.5 65  24 36 ls lcolor lop	// Brazil
-		line 36.5 65  21 31 ls lcolor lop	// Chile
-		line 36.5 65  20 42 ls lcolor lop	// Colombia
-		line 36.5 65  37 59 ls lcolor lop	// Czech Republic
-		line 36.5 65  37 63 ls lcolor lop	// Estonia
-		line 36.5 65  37 57 ls lcolor lop	// Hungary
-		line 36.5 65  48 48 ls lcolor lop	// India
-		line 36.5 65  41 51 ls lcolor lop	// Kuwait
-		line 36.5 65  39 62 ls lcolor lop	// Latvia
-		line 36.5 65  38.5 61.5 ls lcolor lop	// Lithuania
-		line 36.5 65  37 60 ls lcolor lop	// Poland
-		line 36.5 65  39 57 ls lcolor lop	// Romania
-		line 36.5 65  37 59 ls lcolor lop	// Slovak Republic
-		line 36.5 65  36.5 49.5  ls lcolor lop	// Slovenia
-		line 36.5 65  38 28 ls lcolor lop	// South Africa
-		line 36.5 65  56.5 48.5 ls lcolor lop	// Taiwan
-		line 36.5 65  53 45 ls lcolor lop	// Thailand
-		dchart opts sorted-total-Sweden-recip.d
+		text "Germany" dleft dtop dsize "sans" donorcolor
+		image mapimage 36 50 3200 1800 40
+		circle 36 60 dcrad donorcolor 50
+		ctext "$ 47.22 Billion" 36 60 dtsize
+		image "civil.png"	7 icony iconw iconh
+		image "education.png"	12 icony iconw iconh
+		image "question.png"	17 icony iconw iconh
+		image "welfare.png"	22 icony iconw iconh
+		image "multi.png"	27 icony iconw iconh
+		line 36 60 24 36	ls lcolor lop	// Brazil
+		circle 24 36		dotsize dotcolor 30
+		line 36 60 21 31	ls lcolor lop	// Chile
+		circle 21 31		dotsize dotcolor 30
+		line 36 60 20 42	ls lcolor lop	// Colombia
+		circle 20 42		dotsize dotcolor 30
+		line 36 60 40 52.75	ls lcolor lop	// Cyprus
+		circle 40 52.75		dotsize dotcolor 30
+		line 36 60 36.5 59	ls lcolor lop	// Czech Republic
+		circle 36.5 59		dotsize dotcolor 30
+		line 36 60 37 63	ls lcolor lop	// Estonia
+		circle 37 63		dotsize dotcolor 30
+		line 36 60 37 57	ls lcolor lop	// Hungary
+		circle 37 57		dotsize dotcolor 30
+		line 36 60 48.5 48	ls lcolor lop	// India
+		circle 48.5 48		dotsize dotcolor 30
+		line 36 60 57.1 54.5	ls lcolor lop	// Korea
+		circle 57.1 54.5		dotsize dotcolor 30
+		line 36 60 40.5 51	ls lcolor lop	// Kuwait
+		circle 40.5 51		dotsize dotcolor 30
+		line 36 60 38.5 62	ls lcolor lop	// Latvia
+		circle 38.5 62		dotsize dotcolor 30
+		line 36 60 38.25 61.5	ls lcolor lop	// Lithuania
+		circle 38.25 61.5		dotsize dotcolor 30
+		line 36 60 37 60	ls lcolor lop	// Poland
+		circle 37 60		dotsize dotcolor 30
+		line 36 60 43.25 49	ls lcolor lop	// Qatar
+		circle 43.25 49		dotsize dotcolor 30
+		line 36 60 38.5 57	ls lcolor lop	// Romania
+		circle 38.5 57		dotsize dotcolor 30
+		line 36 60 42 48	ls lcolor lop	// Saudi Arabia
+		circle 42 48		dotsize dotcolor 30
+		line 36 60 37.5 58.5	ls lcolor lop	// Slovak Republic
+		circle 37.5 58.5		dotsize dotcolor 30
+		line 36 60 36.5 57.2 	ls lcolor lop	// Slovenia
+		circle 36.5 57.2 		dotsize dotcolor 30
+		line 36 60 38 28	ls lcolor lop	// South Africa
+		circle 38 28		dotsize dotcolor 30
+		line 36 60 56.1 48.5	ls lcolor lop	// Taiwan
+		circle 56.1 48.5		dotsize dotcolor 30
+		line 36 60 52.5 45	ls lcolor lop	// Thailand
+		circle 52.5 45		dotsize dotcolor 30
+		line 36 60 43.75 48.25	ls lcolor lop	// United Arab Emirates
+		circle 43.75 48.25		dotsize dotcolor 30
+		dchart opts  sorted-total-Germany-recip.d
+		dchart dopts sorted-Germany-aid.d
 	eslide
-	
+
 	slide
-	text "Norway" 5 90 4 "sans" "steelblue"
-	image "ww.png" 36 50 3200 1800 40
-		circle 35 64 donorsize "steelblue" 50
-		ctext "$ 4.4 Billion" 35 64 3
-		line 35 64  24 36 ls lcolor lop	// Brazil
-		line 35 64  21 31 ls lcolor lop	// Chile
-		line 35 64  20 42 ls lcolor lop	// Colombia
-		line 35 64  40 51 ls lcolor lop	// Cyprus
-		line 35 64  37 59 ls lcolor lop	// Czech Republic
-		line 35 64  37 63 ls lcolor lop	// Estonia
-		line 35 64  37 57 ls lcolor lop	// Hungary
-		line 35 64  48 48 ls lcolor lop	// India
-		line 35 64  39 62 ls lcolor lop	// Latvia
-		line 35 64  38.5 61.5 ls lcolor lop	// Lithuania
-		line 35 64  37 60 ls lcolor lop	// Poland
-		line 35 64  39 57 ls lcolor lop	// Romania
-		line 35 64  42 48 ls lcolor lop	// Saudi Arabia
-		line 35 64  37 59 ls lcolor lop	// Slovak Republic
-		line 35 64  36.5 49.5  ls lcolor lop	// Slovenia
-		line 35 64  38 28 ls lcolor lop	// South Africa
-		line 35 64  53 45 ls lcolor lop	// Thailand
-		dchart opts sorted-total-Norway-recip.d
+		text "United Kingdom" dleft dtop dsize "sans" donorcolor
+		image "civil.png"		7  icony iconw iconh
+		image "environment.png"	12 icony iconw iconh
+		image "welfare.png"		17 icony iconw iconh
+		image "economic.png"	22 icony iconw iconh
+		image "government.png"	27 icony iconw iconh
+		image mapimage 36 50 3200 1800 40
+		circle 33.5 60 dcrad donorcolor 50
+		ctext "$ 23.69 Billion" 33.5 60 dtsize
+		line 33.5 60 24 36	ls lcolor lop	// Brazil
+		circle 24 36		dotsize dotcolor 30
+		line 33.5 60 21 31	ls lcolor lop	// Chile
+		circle 21 31		dotsize dotcolor 30
+		line 33.5 60 20 42	ls lcolor lop	// Colombia
+		circle 20 42		dotsize dotcolor 30
+		line 33.5 60 40 52.75	ls lcolor lop	// Cyprus
+		circle 40 52.75		dotsize dotcolor 30
+		line 33.5 60 36.5 59	ls lcolor lop	// Czech Republic
+		circle 36.5 59		dotsize dotcolor 30
+		line 33.5 60 37 63	ls lcolor lop	// Estonia
+		circle 37 63		dotsize dotcolor 30
+		line 33.5 60 37 57	ls lcolor lop	// Hungary
+		circle 37 57		dotsize dotcolor 30
+		line 33.5 60 48.5 48	ls lcolor lop	// India
+		circle 48.5 48		dotsize dotcolor 30
+		line 33.5 60 57.1 54.5	ls lcolor lop	// Korea
+		circle 57.1 54.5		dotsize dotcolor 30
+		line 33.5 60 38.5 62	ls lcolor lop	// Latvia
+		circle 38.5 62		dotsize dotcolor 30
+		line 33.5 60 38.25 61.5	ls lcolor lop	// Lithuania
+		circle 38.25 61.5		dotsize dotcolor 30
+		line 33.5 60 37 60	ls lcolor lop	// Poland
+		circle 37 60		dotsize dotcolor 30
+		line 33.5 60 38.5 57	ls lcolor lop	// Romania
+		circle 38.5 57		dotsize dotcolor 30
+		line 33.5 60 42 48	ls lcolor lop	// Saudi Arabia
+		circle 42 48		dotsize dotcolor 30
+		line 33.5 60 37.5 58.5	ls lcolor lop	// Slovak Republic
+		circle 37.5 58.5		dotsize dotcolor 30
+		line 33.5 60 36.5 57.2 	ls lcolor lop	// Slovenia
+		circle 36.5 57.2 		dotsize dotcolor 30
+		line 33.5 60 38 28	ls lcolor lop	// South Africa
+		circle 38 28		dotsize dotcolor 30
+		line 33.5 60 56.1 48.5	ls lcolor lop	// Taiwan
+		circle 56.1 48.5		dotsize dotcolor 30
+		line 33.5 60 52.5 45	ls lcolor lop	// Thailand
+		circle 52.5 45		dotsize dotcolor 30
+		dchart opts  sorted-total-United-Kingdom-recip.d
+		dchart dopts sorted-United-Kingdom-aid.d
 	eslide
-	
+
 	slide
-		text "Italy" 5 90 4 "sans" "steelblue"
-		image "ww.png" 36 50 3200 1800 40
-		circle 36 56 donorsize "steelblue" 50
-		ctext "$ 3.8 Billion" 36 56 3
-		line 36 56  24 36 ls lcolor lop	// Brazil
-		line 36 56  21 31 ls lcolor lop	// Chile
-		line 36 56  20 42 ls lcolor lop	// Colombia
-		line 36 56  40 51 ls lcolor lop	// Cyprus
-		line 36 56  37 59 ls lcolor lop	// Czech Republic
-		line 36 56  37 63 ls lcolor lop	// Estonia
-		line 36 56  37 57 ls lcolor lop	// Hungary
-		line 36 56  48 48 ls lcolor lop	// India
-		line 36 56  57 55 ls lcolor lop	// Korea
-		line 36 56  41 51 ls lcolor lop	// Kuwait
-		line 36 56  39 62 ls lcolor lop	// Latvia
-		line 36 56  38.5 61.5 ls lcolor lop	// Lithuania
-		line 36 56  37 60 ls lcolor lop	// Poland
-		line 36 56  39 57 ls lcolor lop	// Romania
-		line 36 56  42 48 ls lcolor lop	// Saudi Arabia
-		line 36 56  37 59 ls lcolor lop	// Slovak Republic
-		line 36 56  36.5 49.5  ls lcolor lop	// Slovenia
-		line 36 56  38 28 ls lcolor lop	// South Africa
-		line 36 56  56.5 48.5 ls lcolor lop	// Taiwan
-		line 36 56  53 45 ls lcolor lop	// Thailand
-		line 36 56  44 48 ls lcolor lop	// United Arab Emirates
-		line 36 56  33 60 ls lcolor lop	// United Kingdom
-		line 36 56  14 54 ls lcolor lop	// United States
-		dchart opts sorted-total-Italy-recip.d
+		text "France" dleft dtop dsize "sans" donorcolor
+		image mapimage 36 50 3200 1800 40
+		circle 34 58 dcrad donorcolor 50
+		ctext "$ 15.46 Billion" 34 58 dtsize
+		image "welfare.png"	7 icony iconw iconh
+		image "education.png"	12 icony iconw iconh
+		image "research.png"	17 icony iconw iconh
+		image "question.png"	22 icony iconw iconh
+		image "multi.png"	27 icony iconw iconh
+		line 34 58 24 36	ls lcolor lop	// Brazil
+		circle 24 36		dotsize dotcolor 30
+		line 34 58 21 31	ls lcolor lop	// Chile
+		circle 21 31		dotsize dotcolor 30
+		line 34 58 20 42	ls lcolor lop	// Colombia
+		circle 20 42		dotsize dotcolor 30
+		line 34 58 40 52.75	ls lcolor lop	// Cyprus
+		circle 40 52.75		dotsize dotcolor 30
+		line 34 58 36.5 59	ls lcolor lop	// Czech Republic
+		circle 36.5 59		dotsize dotcolor 30
+		line 34 58 37 63	ls lcolor lop	// Estonia
+		circle 37 63		dotsize dotcolor 30
+		line 34 58 37 57	ls lcolor lop	// Hungary
+		circle 37 57		dotsize dotcolor 30
+		line 34 58 48.5 48	ls lcolor lop	// India
+		circle 48.5 48		dotsize dotcolor 30
+		line 34 58 57.1 54.5	ls lcolor lop	// Korea
+		circle 57.1 54.5		dotsize dotcolor 30
+		line 34 58 40.5 51	ls lcolor lop	// Kuwait
+		circle 40.5 51		dotsize dotcolor 30
+		line 34 58 38.5 62	ls lcolor lop	// Latvia
+		circle 38.5 62		dotsize dotcolor 30
+		line 34 58 38.25 61.5	ls lcolor lop	// Lithuania
+		circle 38.25 61.5		dotsize dotcolor 30
+		line 34 58 37 60	ls lcolor lop	// Poland
+		circle 37 60		dotsize dotcolor 30
+		line 34 58 43.25 49	ls lcolor lop	// Qatar
+		circle 43.25 49		dotsize dotcolor 30
+		line 34 58 38.5 57	ls lcolor lop	// Romania
+		circle 38.5 57		dotsize dotcolor 30
+		line 34 58 42 48	ls lcolor lop	// Saudi Arabia
+		circle 42 48		dotsize dotcolor 30
+		line 34 58 37.5 58.5	ls lcolor lop	// Slovak Republic
+		circle 37.5 58.5		dotsize dotcolor 30
+		line 34 58 36.5 57.2 	ls lcolor lop	// Slovenia
+		circle 36.5 57.2 		dotsize dotcolor 30
+		line 34 58 38 28	ls lcolor lop	// South Africa
+		circle 38 28		dotsize dotcolor 30
+		line 34 58 56.1 48.5	ls lcolor lop	// Taiwan
+		circle 56.1 48.5		dotsize dotcolor 30
+		line 34 58 52.5 45	ls lcolor lop	// Thailand
+		circle 52.5 45		dotsize dotcolor 30
+		line 34 58 43.75 48.25	ls lcolor lop	// United Arab Emirates
+		circle 43.75 48.25		dotsize dotcolor 30
+		dchart opts  sorted-total-France-recip.d
+		dchart dopts sorted-France-aid.d
+	eslide
+
+	slide
+		text "Netherlands" dleft dtop dsize "sans" donorcolor
+		image mapimage 36 50 3200 1800 40
+		circle 35 60 dcrad donorcolor 50
+		ctext "$ 8.94 Billion" 35 60 dtsize
+		image "welfare.png"	7 icony iconw iconh
+		image "civil.png"	12 icony iconw iconh
+		image "question.png"	17 icony iconw iconh
+		image "relief.png"	22 icony iconw iconh
+		image "environment.png"	27 icony iconw iconh
+		line 35 60 24 36	ls lcolor lop	// Brazil
+		circle 24 36		dotsize dotcolor 30
+		line 35 60 21 31	ls lcolor lop	// Chile
+		circle 21 31		dotsize dotcolor 30
+		line 35 60 20 42	ls lcolor lop	// Colombia
+		circle 20 42		dotsize dotcolor 30
+		line 35 60 40 52.75	ls lcolor lop	// Cyprus
+		circle 40 52.75		dotsize dotcolor 30
+		line 35 60 36.5 59	ls lcolor lop	// Czech Republic
+		circle 36.5 59		dotsize dotcolor 30
+		line 35 60 37 63	ls lcolor lop	// Estonia
+		circle 37 63		dotsize dotcolor 30
+		line 35 60 37 57	ls lcolor lop	// Hungary
+		circle 37 57		dotsize dotcolor 30
+		line 35 60 48.5 48	ls lcolor lop	// India
+		circle 48.5 48		dotsize dotcolor 30
+		line 35 60 57.1 54.5	ls lcolor lop	// Korea
+		circle 57.1 54.5		dotsize dotcolor 30
+		line 35 60 40.5 51	ls lcolor lop	// Kuwait
+		circle 40.5 51		dotsize dotcolor 30
+		line 35 60 38.5 62	ls lcolor lop	// Latvia
+		circle 38.5 62		dotsize dotcolor 30
+		line 35 60 38.25 61.5	ls lcolor lop	// Lithuania
+		circle 38.25 61.5		dotsize dotcolor 30
+		line 35 60 37 60	ls lcolor lop	// Poland
+		circle 37 60		dotsize dotcolor 30
+		line 35 60 38.5 57	ls lcolor lop	// Romania
+		circle 38.5 57		dotsize dotcolor 30
+		line 35 60 42 48	ls lcolor lop	// Saudi Arabia
+		circle 42 48		dotsize dotcolor 30
+		line 35 60 37.5 58.5	ls lcolor lop	// Slovak Republic
+		circle 37.5 58.5		dotsize dotcolor 30
+		line 35 60 36.5 57.2 	ls lcolor lop	// Slovenia
+		circle 36.5 57.2 		dotsize dotcolor 30
+		line 35 60 38 28	ls lcolor lop	// South Africa
+		circle 38 28		dotsize dotcolor 30
+		line 35 60 52.5 45	ls lcolor lop	// Thailand
+		circle 52.5 45		dotsize dotcolor 30
+		dchart opts  sorted-total-Netherlands-recip.d
+		dchart dopts sorted-Netherlands-aid.d
+	eslide
+
+	slide
+		text "Canada" dleft dtop dsize "sans" donorcolor
+		image mapimage 36 50 3200 1800 40
+		circle 21 61 dcrad donorcolor 50
+		ctext "$ 7.47 Billion" 21 61 dtsize
+		image "civil.png"	7 icony iconw iconh
+		image "multi.png"	12 icony iconw iconh
+		image "industrial.png"	17 icony iconw iconh
+		image "question.png"	22 icony iconw iconh
+		image "economic.png"	27 icony iconw iconh
+		line 21 61 24 36	ls lcolor lop	// Brazil
+		circle 24 36		dotsize dotcolor 30
+		line 21 61 21 31	ls lcolor lop	// Chile
+		circle 21 31		dotsize dotcolor 30
+		line 21 61 20 42	ls lcolor lop	// Colombia
+		circle 20 42		dotsize dotcolor 30
+		line 21 61 40 52.75	ls lcolor lop	// Cyprus
+		circle 40 52.75		dotsize dotcolor 30
+		line 21 61 36.5 59	ls lcolor lop	// Czech Republic
+		circle 36.5 59		dotsize dotcolor 30
+		line 21 61 37 63	ls lcolor lop	// Estonia
+		circle 37 63		dotsize dotcolor 30
+		line 21 61 37 57	ls lcolor lop	// Hungary
+		circle 37 57		dotsize dotcolor 30
+		line 21 61 48.5 48	ls lcolor lop	// India
+		circle 48.5 48		dotsize dotcolor 30
+		line 21 61 57.1 54.5	ls lcolor lop	// Korea
+		circle 57.1 54.5		dotsize dotcolor 30
+		line 21 61 40.5 51	ls lcolor lop	// Kuwait
+		circle 40.5 51		dotsize dotcolor 30
+		line 21 61 38.5 62	ls lcolor lop	// Latvia
+		circle 38.5 62		dotsize dotcolor 30
+		line 21 61 38.25 61.5	ls lcolor lop	// Lithuania
+		circle 38.25 61.5		dotsize dotcolor 30
+		line 21 61 37 60	ls lcolor lop	// Poland
+		circle 37 60		dotsize dotcolor 30
+		line 21 61 38.5 57	ls lcolor lop	// Romania
+		circle 38.5 57		dotsize dotcolor 30
+		line 21 61 42 48	ls lcolor lop	// Saudi Arabia
+		circle 42 48		dotsize dotcolor 30
+		line 21 61 37.5 58.5	ls lcolor lop	// Slovak Republic
+		circle 37.5 58.5		dotsize dotcolor 30
+		line 21 61 36.5 57.2 	ls lcolor lop	// Slovenia
+		circle 36.5 57.2 		dotsize dotcolor 30
+		line 21 61 38 28	ls lcolor lop	// South Africa
+		circle 38 28		dotsize dotcolor 30
+		line 21 61 52.5 45	ls lcolor lop	// Thailand
+		circle 52.5 45		dotsize dotcolor 30
+		dchart opts  sorted-total-Canada-recip.d
+		dchart dopts sorted-Canada-aid.d
+	eslide
+
+	slide
+		text "Sweden" dleft dtop dsize "sans" donorcolor
+		image mapimage 36 50 3200 1800 40
+		circle 36.5 65 dcrad donorcolor 50
+		ctext "$ 6.36 Billion" 36.5 65 dtsize
+		image "civil.png"	7 icony iconw iconh
+		image "question.png"	12 icony iconw iconh
+		image "welfare.png"	17 icony iconw iconh
+		image "education.png"	22 icony iconw iconh
+		image "legal.png"	27 icony iconw iconh
+		line 36.5 65 24 36	ls lcolor lop	// Brazil
+		circle 24 36		dotsize dotcolor 30
+		line 36.5 65 21 31	ls lcolor lop	// Chile
+		circle 21 31		dotsize dotcolor 30
+		line 36.5 65 20 42	ls lcolor lop	// Colombia
+		circle 20 42		dotsize dotcolor 30
+		line 36.5 65 36.5 59	ls lcolor lop	// Czech Republic
+		circle 36.5 59		dotsize dotcolor 30
+		line 36.5 65 37 63	ls lcolor lop	// Estonia
+		circle 37 63		dotsize dotcolor 30
+		line 36.5 65 37 57	ls lcolor lop	// Hungary
+		circle 37 57		dotsize dotcolor 30
+		line 36.5 65 48.5 48	ls lcolor lop	// India
+		circle 48.5 48		dotsize dotcolor 30
+		line 36.5 65 40.5 51	ls lcolor lop	// Kuwait
+		circle 40.5 51		dotsize dotcolor 30
+		line 36.5 65 38.5 62	ls lcolor lop	// Latvia
+		circle 38.5 62		dotsize dotcolor 30
+		line 36.5 65 38.25 61.5	ls lcolor lop	// Lithuania
+		circle 38.25 61.5		dotsize dotcolor 30
+		line 36.5 65 37 60	ls lcolor lop	// Poland
+		circle 37 60		dotsize dotcolor 30
+		line 36.5 65 38.5 57	ls lcolor lop	// Romania
+		circle 38.5 57		dotsize dotcolor 30
+		line 36.5 65 37.5 58.5	ls lcolor lop	// Slovak Republic
+		circle 37.5 58.5		dotsize dotcolor 30
+		line 36.5 65 36.5 57.2 	ls lcolor lop	// Slovenia
+		circle 36.5 57.2 		dotsize dotcolor 30
+		line 36.5 65 38 28	ls lcolor lop	// South Africa
+		circle 38 28		dotsize dotcolor 30
+		line 36.5 65 56.1 48.5	ls lcolor lop	// Taiwan
+		circle 56.1 48.5		dotsize dotcolor 30
+		line 36.5 65 52.5 45	ls lcolor lop	// Thailand
+		circle 52.5 45		dotsize dotcolor 30
+		dchart opts  sorted-total-Sweden-recip.d
+		dchart dopts sorted-Sweden-aid.d
+	eslide
+
+	slide
+		text "Norway" dleft dtop dsize "sans" donorcolor
+		image mapimage 36 50 3200 1800 40
+		circle 35.5 64 dcrad donorcolor 50
+		ctext "$ 4.42 Billion" 35.5 64 dtsize
+		image "civil.png"	7 icony iconw iconh
+		image "welfare.png"	12 icony iconw iconh
+		image "question.png"	17 icony iconw iconh
+		image "relief.png"	22 icony iconw iconh
+		image "peace.png"	27 icony iconw iconh
+		line 35.5 64 24 36	ls lcolor lop	// Brazil
+		circle 24 36		dotsize dotcolor 30
+		line 35.5 64 21 31	ls lcolor lop	// Chile
+		circle 21 31		dotsize dotcolor 30
+		line 35.5 64 20 42	ls lcolor lop	// Colombia
+		circle 20 42		dotsize dotcolor 30
+		line 35.5 64 40 52.75	ls lcolor lop	// Cyprus
+		circle 40 52.75		dotsize dotcolor 30
+		line 35.5 64 36.5 59	ls lcolor lop	// Czech Republic
+		circle 36.5 59		dotsize dotcolor 30
+		line 35.5 64 37 63	ls lcolor lop	// Estonia
+		circle 37 63		dotsize dotcolor 30
+		line 35.5 64 37 57	ls lcolor lop	// Hungary
+		circle 37 57		dotsize dotcolor 30
+		line 35.5 64 48.5 48	ls lcolor lop	// India
+		circle 48.5 48		dotsize dotcolor 30
+		line 35.5 64 38.5 62	ls lcolor lop	// Latvia
+		circle 38.5 62		dotsize dotcolor 30
+		line 35.5 64 38.25 61.5	ls lcolor lop	// Lithuania
+		circle 38.25 61.5		dotsize dotcolor 30
+		line 35.5 64 37 60	ls lcolor lop	// Poland
+		circle 37 60		dotsize dotcolor 30
+		line 35.5 64 38.5 57	ls lcolor lop	// Romania
+		circle 38.5 57		dotsize dotcolor 30
+		line 35.5 64 42 48	ls lcolor lop	// Saudi Arabia
+		circle 42 48		dotsize dotcolor 30
+		line 35.5 64 37.5 58.5	ls lcolor lop	// Slovak Republic
+		circle 37.5 58.5		dotsize dotcolor 30
+		line 35.5 64 36.5 57.2 	ls lcolor lop	// Slovenia
+		circle 36.5 57.2 		dotsize dotcolor 30
+		line 35.5 64 38 28	ls lcolor lop	// South Africa
+		circle 38 28		dotsize dotcolor 30
+		line 35.5 64 52.5 45	ls lcolor lop	// Thailand
+		circle 52.5 45		dotsize dotcolor 30
+		dchart opts  sorted-total-Norway-recip.d
+		dchart dopts sorted-Norway-aid.d
+	eslide
+
+	slide
+		text "Italy" dleft dtop dsize "sans" donorcolor
+		image mapimage 36 50 3200 1800 40
+		circle 36 56 dcrad donorcolor 50
+		ctext "$ 3.84 Billion" 36 56 dtsize
+		image "welfare.png"	7 icony iconw iconh
+		image "education.png"	12 icony iconw iconh
+		image "civil.png"	17 icony iconw iconh
+		image "ngo.png"	22 icony iconw iconh
+		image "multi.png"	27 icony iconw iconh
+		line 36 56 24 36	ls lcolor lop	// Brazil
+		circle 24 36		dotsize dotcolor 30
+		line 36 56 21 31	ls lcolor lop	// Chile
+		circle 21 31		dotsize dotcolor 30
+		line 36 56 20 42	ls lcolor lop	// Colombia
+		circle 20 42		dotsize dotcolor 30
+		line 36 56 40 52.75	ls lcolor lop	// Cyprus
+		circle 40 52.75		dotsize dotcolor 30
+		line 36 56 36.5 59	ls lcolor lop	// Czech Republic
+		circle 36.5 59		dotsize dotcolor 30
+		line 36 56 37 63	ls lcolor lop	// Estonia
+		circle 37 63		dotsize dotcolor 30
+		line 36 56 37 57	ls lcolor lop	// Hungary
+		circle 37 57		dotsize dotcolor 30
+		line 36 56 48.5 48	ls lcolor lop	// India
+		circle 48.5 48		dotsize dotcolor 30
+		line 36 56 57.1 54.5	ls lcolor lop	// Korea
+		circle 57.1 54.5		dotsize dotcolor 30
+		line 36 56 40.5 51	ls lcolor lop	// Kuwait
+		circle 40.5 51		dotsize dotcolor 30
+		line 36 56 38.5 62	ls lcolor lop	// Latvia
+		circle 38.5 62		dotsize dotcolor 30
+		line 36 56 38.25 61.5	ls lcolor lop	// Lithuania
+		circle 38.25 61.5		dotsize dotcolor 30
+		line 36 56 37 60	ls lcolor lop	// Poland
+		circle 37 60		dotsize dotcolor 30
+		line 36 56 38.5 57	ls lcolor lop	// Romania
+		circle 38.5 57		dotsize dotcolor 30
+		line 36 56 42 48	ls lcolor lop	// Saudi Arabia
+		circle 42 48		dotsize dotcolor 30
+		line 36 56 37.5 58.5	ls lcolor lop	// Slovak Republic
+		circle 37.5 58.5		dotsize dotcolor 30
+		line 36 56 36.5 57.2 	ls lcolor lop	// Slovenia
+		circle 36.5 57.2 		dotsize dotcolor 30
+		line 36 56 38 28	ls lcolor lop	// South Africa
+		circle 38 28		dotsize dotcolor 30
+		line 36 56 56.1 48.5	ls lcolor lop	// Taiwan
+		circle 56.1 48.5		dotsize dotcolor 30
+		line 36 56 52.5 45	ls lcolor lop	// Thailand
+		circle 52.5 45		dotsize dotcolor 30
+		line 36 56 43.75 48.25	ls lcolor lop	// United Arab Emirates
+		circle 43.75 48.25		dotsize dotcolor 30
+		dchart opts  sorted-total-Italy-recip.d
+		dchart dopts sorted-Italy-aid.d
+	eslide
+
+	slide
+		text "Denmark" dleft dtop dsize "sans" donorcolor
+		image mapimage 36 50 3200 1800 40
+		circle 35.5 61.5 dcrad donorcolor 50
+		ctext "$ 2.95 Billion" 35.5 61.5 dtsize
+		image "question.png"	7 icony iconw iconh
+		image "civil.png"	12 icony iconw iconh
+		image "environment.png"	17 icony iconw iconh
+		image "multi.png"	22 icony iconw iconh
+		image "industrial.png"	27 icony iconw iconh
+		line 35.5 61.5 24 36	ls lcolor lop	// Brazil
+		circle 24 36		dotsize dotcolor 30
+		line 35.5 61.5 21 31	ls lcolor lop	// Chile
+		circle 21 31		dotsize dotcolor 30
+		line 35.5 61.5 20 42	ls lcolor lop	// Colombia
+		circle 20 42		dotsize dotcolor 30
+		line 35.5 61.5 48.5 48	ls lcolor lop	// India
+		circle 48.5 48		dotsize dotcolor 30
+		line 35.5 61.5 38 28	ls lcolor lop	// South Africa
+		circle 38 28		dotsize dotcolor 30
+		line 35.5 61.5 52.5 45	ls lcolor lop	// Thailand
+		circle 52.5 45		dotsize dotcolor 30
+		line 35.5 61.5 43.75 48.25	ls lcolor lop	// United Arab Emirates
+		circle 43.75 48.25		dotsize dotcolor 30
+		dchart opts  sorted-total-Denmark-recip.d
+		dchart dopts sorted-Denmark-aid.d
+	eslide
+
+	slide
+		text "Switzerland" dleft dtop dsize "sans" donorcolor
+		image mapimage 36 50 3200 1800 40
+		circle 35.5 57.5 dcrad donorcolor 50
+		ctext "$ 2.84 Billion" 35.5 57.5 dtsize
+		image "relief.png"	7 icony iconw iconh
+		image "multi.png"	12 icony iconw iconh
+		image "question.png"	17 icony iconw iconh
+		image "peace.png"	22 icony iconw iconh
+		image "food.png"	27 icony iconw iconh
+		line 35.5 57.5 24 36	ls lcolor lop	// Brazil
+		circle 24 36		dotsize dotcolor 30
+		line 35.5 57.5 21 31	ls lcolor lop	// Chile
+		circle 21 31		dotsize dotcolor 30
+		line 35.5 57.5 20 42	ls lcolor lop	// Colombia
+		circle 20 42		dotsize dotcolor 30
+		line 35.5 57.5 40 52.75	ls lcolor lop	// Cyprus
+		circle 40 52.75		dotsize dotcolor 30
+		line 35.5 57.5 36.5 59	ls lcolor lop	// Czech Republic
+		circle 36.5 59		dotsize dotcolor 30
+		line 35.5 57.5 37 63	ls lcolor lop	// Estonia
+		circle 37 63		dotsize dotcolor 30
+		line 35.5 57.5 37 57	ls lcolor lop	// Hungary
+		circle 37 57		dotsize dotcolor 30
+		line 35.5 57.5 48.5 48	ls lcolor lop	// India
+		circle 48.5 48		dotsize dotcolor 30
+		line 35.5 57.5 57.1 54.5	ls lcolor lop	// Korea
+		circle 57.1 54.5		dotsize dotcolor 30
+		line 35.5 57.5 38.5 62	ls lcolor lop	// Latvia
+		circle 38.5 62		dotsize dotcolor 30
+		line 35.5 57.5 38.25 61.5	ls lcolor lop	// Lithuania
+		circle 38.25 61.5		dotsize dotcolor 30
+		line 35.5 57.5 37 60	ls lcolor lop	// Poland
+		circle 37 60		dotsize dotcolor 30
+		line 35.5 57.5 38.5 57	ls lcolor lop	// Romania
+		circle 38.5 57		dotsize dotcolor 30
+		line 35.5 57.5 37.5 58.5	ls lcolor lop	// Slovak Republic
+		circle 37.5 58.5		dotsize dotcolor 30
+		line 35.5 57.5 36.5 57.2 	ls lcolor lop	// Slovenia
+		circle 36.5 57.2 		dotsize dotcolor 30
+		line 35.5 57.5 38 28	ls lcolor lop	// South Africa
+		circle 38 28		dotsize dotcolor 30
+		line 35.5 57.5 56.1 48.5	ls lcolor lop	// Taiwan
+		circle 56.1 48.5		dotsize dotcolor 30
+		line 35.5 57.5 52.5 45	ls lcolor lop	// Thailand
+		circle 52.5 45		dotsize dotcolor 30
+		dchart opts  sorted-total-Switzerland-recip.d
+		dchart dopts sorted-Switzerland-aid.d
+	eslide
+
+	slide
+		text "Australia" dleft dtop dsize "sans" donorcolor
+		image mapimage 36 50 3200 1800 40
+		circle 58 30 dcrad donorcolor 50
+		ctext "$ 2.45 Billion" 58 30 dtsize
+		image "education.png"	7 icony iconw iconh
+		image "agriculture.png"	12 icony iconw iconh
+		image "multi.png"	17 icony iconw iconh
+		image "economic.png"	22 icony iconw iconh
+		image "legal.png"	27 icony iconw iconh
+		line 58 30 24 36	ls lcolor lop	// Brazil
+		circle 24 36		dotsize dotcolor 30
+		line 58 30 21 31	ls lcolor lop	// Chile
+		circle 21 31		dotsize dotcolor 30
+		line 58 30 20 42	ls lcolor lop	// Colombia
+		circle 20 42		dotsize dotcolor 30
+		line 58 30 40 52.75	ls lcolor lop	// Cyprus
+		circle 40 52.75		dotsize dotcolor 30
+		line 58 30 36.5 59	ls lcolor lop	// Czech Republic
+		circle 36.5 59		dotsize dotcolor 30
+		line 58 30 37 57	ls lcolor lop	// Hungary
+		circle 37 57		dotsize dotcolor 30
+		line 58 30 48.5 48	ls lcolor lop	// India
+		circle 48.5 48		dotsize dotcolor 30
+		line 58 30 57.1 54.5	ls lcolor lop	// Korea
+		circle 57.1 54.5		dotsize dotcolor 30
+		line 58 30 37 60	ls lcolor lop	// Poland
+		circle 37 60		dotsize dotcolor 30
+		line 58 30 42 48	ls lcolor lop	// Saudi Arabia
+		circle 42 48		dotsize dotcolor 30
+		line 58 30 36.5 57.2 	ls lcolor lop	// Slovenia
+		circle 36.5 57.2 		dotsize dotcolor 30
+		line 58 30 38 28	ls lcolor lop	// South Africa
+		circle 38 28		dotsize dotcolor 30
+		line 58 30 56.1 48.5	ls lcolor lop	// Taiwan
+		circle 56.1 48.5		dotsize dotcolor 30
+		line 58 30 52.5 45	ls lcolor lop	// Thailand
+		circle 52.5 45		dotsize dotcolor 30
+		dchart opts  sorted-total-Australia-recip.d
+		dchart dopts sorted-Australia-aid.d
+	eslide
+
+	slide
+		text "Belgium" dleft dtop dsize "sans" donorcolor
+		image mapimage 36 50 3200 1800 40
+		circle 34.75 59.25 dcrad donorcolor 50
+		ctext "$ 2.14 Billion" 34.75 59.25 dtsize
+		image "welfare.png"	7 icony iconw iconh
+		image "civil.png"	12 icony iconw iconh
+		image "education.png"	17 icony iconw iconh
+		image "employment.png"	22 icony iconw iconh
+		image "question.png"	27 icony iconw iconh
+		line 34.75 59.25 24 36	ls lcolor lop	// Brazil
+		circle 24 36		dotsize dotcolor 30
+		line 34.75 59.25 21 31	ls lcolor lop	// Chile
+		circle 21 31		dotsize dotcolor 30
+		line 34.75 59.25 20 42	ls lcolor lop	// Colombia
+		circle 20 42		dotsize dotcolor 30
+		line 34.75 59.25 40 52.75	ls lcolor lop	// Cyprus
+		circle 40 52.75		dotsize dotcolor 30
+		line 34.75 59.25 36.5 59	ls lcolor lop	// Czech Republic
+		circle 36.5 59		dotsize dotcolor 30
+		line 34.75 59.25 37 63	ls lcolor lop	// Estonia
+		circle 37 63		dotsize dotcolor 30
+		line 34.75 59.25 37 57	ls lcolor lop	// Hungary
+		circle 37 57		dotsize dotcolor 30
+		line 34.75 59.25 48.5 48	ls lcolor lop	// India
+		circle 48.5 48		dotsize dotcolor 30
+		line 34.75 59.25 57.1 54.5	ls lcolor lop	// Korea
+		circle 57.1 54.5		dotsize dotcolor 30
+		line 34.75 59.25 38.5 62	ls lcolor lop	// Latvia
+		circle 38.5 62		dotsize dotcolor 30
+		line 34.75 59.25 38.25 61.5	ls lcolor lop	// Lithuania
+		circle 38.25 61.5		dotsize dotcolor 30
+		line 34.75 59.25 37 60	ls lcolor lop	// Poland
+		circle 37 60		dotsize dotcolor 30
+		line 34.75 59.25 38.5 57	ls lcolor lop	// Romania
+		circle 38.5 57		dotsize dotcolor 30
+		line 34.75 59.25 42 48	ls lcolor lop	// Saudi Arabia
+		circle 42 48		dotsize dotcolor 30
+		line 34.75 59.25 37.5 58.5	ls lcolor lop	// Slovak Republic
+		circle 37.5 58.5		dotsize dotcolor 30
+		line 34.75 59.25 36.5 57.2 	ls lcolor lop	// Slovenia
+		circle 36.5 57.2 		dotsize dotcolor 30
+		line 34.75 59.25 38 28	ls lcolor lop	// South Africa
+		circle 38 28		dotsize dotcolor 30
+		line 34.75 59.25 56.1 48.5	ls lcolor lop	// Taiwan
+		circle 56.1 48.5		dotsize dotcolor 30
+		line 34.75 59.25 52.5 45	ls lcolor lop	// Thailand
+		circle 52.5 45		dotsize dotcolor 30
+		dchart opts  sorted-total-Belgium-recip.d
+		dchart dopts sorted-Belgium-aid.d
+	eslide
+
+	slide
+		text "Spain" dleft dtop dsize "sans" donorcolor
+		image mapimage 36 50 3200 1800 40
+		circle 33 55 dcrad donorcolor 50
+		ctext "$ 2.01 Billion" 33 55 dtsize
+		image "civil.png"	7 icony iconw iconh
+		image "welfare.png"	12 icony iconw iconh
+		image "education.png"	17 icony iconw iconh
+		image "question.png"	22 icony iconw iconh
+		image "multi.png"	27 icony iconw iconh
+		line 33 55 24 36	ls lcolor lop	// Brazil
+		circle 24 36		dotsize dotcolor 30
+		line 33 55 21 31	ls lcolor lop	// Chile
+		circle 21 31		dotsize dotcolor 30
+		line 33 55 20 42	ls lcolor lop	// Colombia
+		circle 20 42		dotsize dotcolor 30
+		line 33 55 40 52.75	ls lcolor lop	// Cyprus
+		circle 40 52.75		dotsize dotcolor 30
+		line 33 55 36.5 59	ls lcolor lop	// Czech Republic
+		circle 36.5 59		dotsize dotcolor 30
+		line 33 55 37 63	ls lcolor lop	// Estonia
+		circle 37 63		dotsize dotcolor 30
+		line 33 55 37 57	ls lcolor lop	// Hungary
+		circle 37 57		dotsize dotcolor 30
+		line 33 55 48.5 48	ls lcolor lop	// India
+		circle 48.5 48		dotsize dotcolor 30
+		line 33 55 57.1 54.5	ls lcolor lop	// Korea
+		circle 57.1 54.5		dotsize dotcolor 30
+		line 33 55 40.5 51	ls lcolor lop	// Kuwait
+		circle 40.5 51		dotsize dotcolor 30
+		line 33 55 38.5 62	ls lcolor lop	// Latvia
+		circle 38.5 62		dotsize dotcolor 30
+		line 33 55 38.25 61.5	ls lcolor lop	// Lithuania
+		circle 38.25 61.5		dotsize dotcolor 30
+		line 33 55 37 60	ls lcolor lop	// Poland
+		circle 37 60		dotsize dotcolor 30
+		line 33 55 38.5 57	ls lcolor lop	// Romania
+		circle 38.5 57		dotsize dotcolor 30
+		line 33 55 42 48	ls lcolor lop	// Saudi Arabia
+		circle 42 48		dotsize dotcolor 30
+		line 33 55 37.5 58.5	ls lcolor lop	// Slovak Republic
+		circle 37.5 58.5		dotsize dotcolor 30
+		line 33 55 36.5 57.2 	ls lcolor lop	// Slovenia
+		circle 36.5 57.2 		dotsize dotcolor 30
+		line 33 55 38 28	ls lcolor lop	// South Africa
+		circle 38 28		dotsize dotcolor 30
+		line 33 55 56.1 48.5	ls lcolor lop	// Taiwan
+		circle 56.1 48.5		dotsize dotcolor 30
+		line 33 55 52.5 45	ls lcolor lop	// Thailand
+		circle 52.5 45		dotsize dotcolor 30
+		line 33 55 43.75 48.25	ls lcolor lop	// United Arab Emirates
+		circle 43.75 48.25		dotsize dotcolor 30
+		dchart opts  sorted-total-Spain-recip.d
+		dchart dopts sorted-Spain-aid.d
+	eslide
+
+	slide
+		text "Saudi Arabia" dleft dtop dsize "sans" donorcolor
+		image mapimage 36 50 3200 1800 40
+		circle 42 48 dcrad donorcolor 50
+		ctext "$ 1.70 Billion" 42 48 dtsize
+		image "electricity.png"	7 icony iconw iconh
+		image "water.png"	12 icony iconw iconh
+		image "rail.png"	17 icony iconw iconh
+		image "telecom.png"	22 icony iconw iconh
+		image "health.png"	27 icony iconw iconh
+		line 42 48 24 36	ls lcolor lop	// Brazil
+		circle 24 36		dotsize dotcolor 30
+		line 42 48 48.5 48	ls lcolor lop	// India
+		circle 48.5 48		dotsize dotcolor 30
+		line 42 48 57.1 54.5	ls lcolor lop	// Korea
+		circle 57.1 54.5		dotsize dotcolor 30
+		line 42 48 56.1 48.5	ls lcolor lop	// Taiwan
+		circle 56.1 48.5		dotsize dotcolor 30
+		line 42 48 52.5 45	ls lcolor lop	// Thailand
+		circle 52.5 45		dotsize dotcolor 30
+		dchart opts  sorted-total-Saudi-Arabia-recip.d
+		dchart dopts sorted-Saudi-Arabia-aid.d
+	eslide
+
+	slide
+		text "Kuwait" dleft dtop dsize "sans" donorcolor
+		image mapimage 36 50 3200 1800 40
+		circle 40.5 51 dcrad donorcolor 50
+		ctext "$ 1.37 Billion" 40.5 51 dtsize
+		image "road.png"	7 icony iconw iconh
+		image "power.png"	12 icony iconw iconh
+		image "water.png"	17 icony iconw iconh
+		image "river.png"	22 icony iconw iconh
+		image "multi.png"	27 icony iconw iconh
+		line 40.5 51 40 52.75	ls lcolor lop	// Cyprus
+		circle 40 52.75		dotsize dotcolor 30
+		line 40.5 51 48.5 48	ls lcolor lop	// India
+		circle 48.5 48		dotsize dotcolor 30
+		line 40.5 51 38.25 61.5	ls lcolor lop	// Lithuania
+		circle 38.25 61.5		dotsize dotcolor 30
+		line 40.5 51 37.5 58.5	ls lcolor lop	// Slovak Republic
+		circle 37.5 58.5		dotsize dotcolor 30
+		line 40.5 51 52.5 45	ls lcolor lop	// Thailand
+		circle 52.5 45		dotsize dotcolor 30
+		dchart opts  sorted-total-Kuwait-recip.d
+		dchart dopts sorted-Kuwait-aid.d
+	eslide
+
+	slide
+		text "Korea" dleft dtop dsize "sans" donorcolor
+		image mapimage 36 50 3200 1800 40
+		circle 57.1 54.5 dcrad donorcolor 50
+		ctext "$ 1.30 Billion" 57.1 54.5 dtsize
+		image "education.png"	7 icony iconw iconh
+		image "technology.png"	12 icony iconw iconh
+		image "economic.png"	17 icony iconw iconh
+		image "agriculture.png"	22 icony iconw iconh
+		line 57.1 54.5 24 36	ls lcolor lop	// Brazil
+		circle 24 36		dotsize dotcolor 30
+		line 57.1 54.5 21 31	ls lcolor lop	// Chile
+		circle 21 31		dotsize dotcolor 30
+		line 57.1 54.5 20 42	ls lcolor lop	// Colombia
+		circle 20 42		dotsize dotcolor 30
+		line 57.1 54.5 48.5 48	ls lcolor lop	// India
+		circle 48.5 48		dotsize dotcolor 30
+		line 57.1 54.5 42 48	ls lcolor lop	// Saudi Arabia
+		circle 42 48		dotsize dotcolor 30
+		line 57.1 54.5 38 28	ls lcolor lop	// South Africa
+		circle 38 28		dotsize dotcolor 30
+		line 57.1 54.5 52.5 45	ls lcolor lop	// Thailand
+		circle 52.5 45		dotsize dotcolor 30
+		dchart opts  sorted-total-Korea-recip.d
+		dchart dopts sorted-Korea-aid.d
+	eslide
+
+	slide
+		text "Austria" dleft dtop dsize "sans" donorcolor
+		image mapimage 36 50 3200 1800 40
+		circle 36.5 58 dcrad donorcolor 50
+		ctext "$ 0.78 Billion" 36.5 58 dtsize
+		image "question.png"	7 icony iconw iconh
+		image "education.png"	12 icony iconw iconh
+		image "welfare.png"	17 icony iconw iconh
+		image "bio.png"	22 icony iconw iconh
+		image "civil.png"	27 icony iconw iconh
+		line 36.5 58 24 36	ls lcolor lop	// Brazil
+		circle 24 36		dotsize dotcolor 30
+		line 36.5 58 21 31	ls lcolor lop	// Chile
+		circle 21 31		dotsize dotcolor 30
+		line 36.5 58 20 42	ls lcolor lop	// Colombia
+		circle 20 42		dotsize dotcolor 30
+		line 36.5 58 40 52.75	ls lcolor lop	// Cyprus
+		circle 40 52.75		dotsize dotcolor 30
+		line 36.5 58 36.5 59	ls lcolor lop	// Czech Republic
+		circle 36.5 59		dotsize dotcolor 30
+		line 36.5 58 37 63	ls lcolor lop	// Estonia
+		circle 37 63		dotsize dotcolor 30
+		line 36.5 58 37 57	ls lcolor lop	// Hungary
+		circle 37 57		dotsize dotcolor 30
+		line 36.5 58 48.5 48	ls lcolor lop	// India
+		circle 48.5 48		dotsize dotcolor 30
+		line 36.5 58 57.1 54.5	ls lcolor lop	// Korea
+		circle 57.1 54.5		dotsize dotcolor 30
+		line 36.5 58 40.5 51	ls lcolor lop	// Kuwait
+		circle 40.5 51		dotsize dotcolor 30
+		line 36.5 58 38.5 62	ls lcolor lop	// Latvia
+		circle 38.5 62		dotsize dotcolor 30
+		line 36.5 58 38.25 61.5	ls lcolor lop	// Lithuania
+		circle 38.25 61.5		dotsize dotcolor 30
+		line 36.5 58 37 60	ls lcolor lop	// Poland
+		circle 37 60		dotsize dotcolor 30
+		line 36.5 58 38.5 57	ls lcolor lop	// Romania
+		circle 38.5 57		dotsize dotcolor 30
+		line 36.5 58 42 48	ls lcolor lop	// Saudi Arabia
+		circle 42 48		dotsize dotcolor 30
+		line 36.5 58 37.5 58.5	ls lcolor lop	// Slovak Republic
+		circle 37.5 58.5		dotsize dotcolor 30
+		line 36.5 58 36.5 57.2 	ls lcolor lop	// Slovenia
+		circle 36.5 57.2 		dotsize dotcolor 30
+		line 36.5 58 38 28	ls lcolor lop	// South Africa
+		circle 38 28		dotsize dotcolor 30
+		line 36.5 58 56.1 48.5	ls lcolor lop	// Taiwan
+		circle 56.1 48.5		dotsize dotcolor 30
+		line 36.5 58 52.5 45	ls lcolor lop	// Thailand
+		circle 52.5 45		dotsize dotcolor 30
+		line 36.5 58 43.75 48.25	ls lcolor lop	// United Arab Emirates
+		circle 43.75 48.25		dotsize dotcolor 30
+		dchart opts  sorted-total-Austria-recip.d
+		dchart dopts sorted-Austria-aid.d
+	eslide
+
+	slide
+		text "Finland" dleft dtop dsize "sans" donorcolor
+		image mapimage 36 50 3200 1800 40
+		circle 39 66 dcrad donorcolor 50
+		ctext "$ 0.67 Billion" 39 66 dtsize
+		image "civil.png"	7 icony iconw iconh
+		image "multi.png"	12 icony iconw iconh
+		image "welfare.png"	17 icony iconw iconh
+		image "admin.png"	22 icony iconw iconh
+		image "employment.png"	27 icony iconw iconh
+		line 39 66 24 36	ls lcolor lop	// Brazil
+		circle 24 36		dotsize dotcolor 30
+		line 39 66 21 31	ls lcolor lop	// Chile
+		circle 21 31		dotsize dotcolor 30
+		line 39 66 20 42	ls lcolor lop	// Colombia
+		circle 20 42		dotsize dotcolor 30
+		line 39 66 36.5 59	ls lcolor lop	// Czech Republic
+		circle 36.5 59		dotsize dotcolor 30
+		line 39 66 37 63	ls lcolor lop	// Estonia
+		circle 37 63		dotsize dotcolor 30
+		line 39 66 37 57	ls lcolor lop	// Hungary
+		circle 37 57		dotsize dotcolor 30
+		line 39 66 48.5 48	ls lcolor lop	// India
+		circle 48.5 48		dotsize dotcolor 30
+		line 39 66 38.5 62	ls lcolor lop	// Latvia
+		circle 38.5 62		dotsize dotcolor 30
+		line 39 66 38.25 61.5	ls lcolor lop	// Lithuania
+		circle 38.25 61.5		dotsize dotcolor 30
+		line 39 66 37 60	ls lcolor lop	// Poland
+		circle 37 60		dotsize dotcolor 30
+		line 39 66 38.5 57	ls lcolor lop	// Romania
+		circle 38.5 57		dotsize dotcolor 30
+		line 39 66 42 48	ls lcolor lop	// Saudi Arabia
+		circle 42 48		dotsize dotcolor 30
+		line 39 66 37.5 58.5	ls lcolor lop	// Slovak Republic
+		circle 37.5 58.5		dotsize dotcolor 30
+		line 39 66 38 28	ls lcolor lop	// South Africa
+		circle 38 28		dotsize dotcolor 30
+		line 39 66 52.5 45	ls lcolor lop	// Thailand
+		circle 52.5 45		dotsize dotcolor 30
+		dchart opts  sorted-total-Finland-recip.d
+		dchart dopts sorted-Finland-aid.d
 	eslide
 
 
-	
 edeck

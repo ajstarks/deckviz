@@ -1,0 +1,14 @@
+#!/bin/sh
+awk -F\t '
+	BEGIN {
+		print "deck\nslide\nimage \"ww.png\" 36 50 3200 1800 40"
+	}
+	NR > 1  { # skip comment
+		printf "circle %s %s 0.2 \"red\" 50\n", $2, $3
+		printf "etext \"%s\" %s %s 0.2\n", $1, $2, $3
+	}
+	END {
+		print "eslide\nedeck"
+	}' $*
+
+		
