@@ -1,10 +1,28 @@
 deck
 	
 	recipcolor="orange"
+	
+	// title
+	slide
+		image "wo.png" 50 50 3200 1800 60
+		blist 10 80 4 "sans" "steelblue"
+			li "Who Donates?"
+			li "How Much Do They Donate?"
+			li "Why Do They Donate?"
+		elist
+		text "#SWDchallenge, March 2019" 10 20 2 "sans" "black" 100 "http://www.storytellingwithdata.com/blog/2019/3/1/swdchallenge-visualize-this-data"
+		text "Data Source: AidDdata Core Research" 10  15 1.5 "sans" "gray" 100 "https://www.aiddata.org/data/aiddata-core-research-release-level-1-3-1"
+		list 85 20 1.2 "sans" "gray" 100 1.2
+			li "Anthony Starks"
+			li "@ajstarks"
+		elist
+	eslide
+	
+
 	slide
 		topts="-hbar -min=0 -max=150 -textsize 1.5 -datafmt=$%.2f -fulldeck=f"
 		image "wo.png" 50 50 3200 1800 60
-		text "Foreign Aid: Donors and Recipients: 1973-2013" 15 90 3
+		text "Foreign Aid: Donors and Recipients" 15 90 3
 		text "Top Donors (USD Billions)" 15 80 1.5
 		text "Top Recipients (USD Billions)" 60 80 1.5
 		dchart topts -left=15 -right=40 -top=75                    td.d
@@ -12,7 +30,7 @@ deck
 	eslide
 	
 	opts="-hbar  -left=78 -right=95 -top=95 -datafmt=$%.5f -textsize 0.9 -color orange -fulldeck=f"
-	dopts="-hbar -left=55 -right=65 -top=95 -textsize 0.9 -fulldeck=f"
+	dopts="-hbar -left=60 -right=70 -top=95 -textsize 0.9 -fulldeck=f"
 	ls=0.25
 	lcolor=recipcolor
 	donorcolor="steelblue"
@@ -29,9 +47,12 @@ deck
 	iconw=48
 	iconh=48
 	icony=85
+	laby=97
 
 	slide
 		text "United States" dleft dtop dsize "sans" donorcolor
+		text "Donation Frequency" 60 laby 1 "sans" "gray"
+		text "Amount Received"    78 laby 1 "sans" "gray"
 		image mapimage 36 50 3200 1800 40
 		circle 15 54 dcrad donorcolor 50
 		ctext "$ 116.18 Billion" 15 54 dtsize
@@ -130,6 +151,8 @@ deck
 
 	slide
 		text "Japan" dleft dtop dsize "sans" donorcolor
+		text "Donation Frequency" 60 laby 1 "sans" "gray"
+		text "Amount Received"    78 laby 1 "sans" "gray"
 		image mapimage 36 50 3200 1800 40
 		circle 59.5 53.5 dcrad donorcolor 50
 		ctext "$ 114.18 Billion" 59.5 53.5 dtsize
@@ -188,6 +211,8 @@ deck
 
 	slide
 		text "Germany" dleft dtop dsize "sans" donorcolor
+		text "Donation Frequency" 60 laby 1 "sans" "gray"
+		text "Amount Received"    78 laby 1 "sans" "gray"
 		image mapimage 36 50 3200 1800 40
 		circle 36 60 dcrad donorcolor 50
 		ctext "$ 47.22 Billion" 36 60 dtsize
@@ -246,14 +271,16 @@ deck
 
 	slide
 		text "United Kingdom" dleft dtop dsize "sans" donorcolor
-		image "civil.png"		7  icony iconw iconh
-		image "environment.png"	12 icony iconw iconh
-		image "welfare.png"		17 icony iconw iconh
-		image "economic.png"	22 icony iconw iconh
-		image "government.png"	27 icony iconw iconh
+		text "Donation Frequency" 60 laby 1 "sans" "gray"
+		text "Amount Received"    78 laby 1 "sans" "gray"
 		image mapimage 36 50 3200 1800 40
 		circle 33.5 60 dcrad donorcolor 50
 		ctext "$ 23.69 Billion" 33.5 60 dtsize
+		image "civil.png"	7 icony iconw iconh
+		image "environment.png"	12 icony iconw iconh
+		image "welfare.png"	17 icony iconw iconh
+		image "economic.png"	22 icony iconw iconh
+		image "government.png"	27 icony iconw iconh
 		line 33.5 60 24 36	ls lcolor lop	// Brazil
 		circle 24 36		dotsize dotcolor 30
 		line 33.5 60 21 31	ls lcolor lop	// Chile
@@ -298,6 +325,8 @@ deck
 
 	slide
 		text "France" dleft dtop dsize "sans" donorcolor
+		text "Donation Frequency" 60 laby 1 "sans" "gray"
+		text "Amount Received"    78 laby 1 "sans" "gray"
 		image mapimage 36 50 3200 1800 40
 		circle 34 58 dcrad donorcolor 50
 		ctext "$ 15.46 Billion" 34 58 dtsize
@@ -356,6 +385,8 @@ deck
 
 	slide
 		text "Netherlands" dleft dtop dsize "sans" donorcolor
+		text "Donation Frequency" 60 laby 1 "sans" "gray"
+		text "Amount Received"    78 laby 1 "sans" "gray"
 		image mapimage 36 50 3200 1800 40
 		circle 35 60 dcrad donorcolor 50
 		ctext "$ 8.94 Billion" 35 60 dtsize
@@ -408,6 +439,8 @@ deck
 
 	slide
 		text "Canada" dleft dtop dsize "sans" donorcolor
+		text "Donation Frequency" 60 laby 1 "sans" "gray"
+		text "Amount Received"    78 laby 1 "sans" "gray"
 		image mapimage 36 50 3200 1800 40
 		circle 21 61 dcrad donorcolor 50
 		ctext "$ 7.47 Billion" 21 61 dtsize
@@ -460,6 +493,8 @@ deck
 
 	slide
 		text "Sweden" dleft dtop dsize "sans" donorcolor
+		text "Donation Frequency" 60 laby 1 "sans" "gray"
+		text "Amount Received"    78 laby 1 "sans" "gray"
 		image mapimage 36 50 3200 1800 40
 		circle 36.5 65 dcrad donorcolor 50
 		ctext "$ 6.36 Billion" 36.5 65 dtsize
@@ -508,6 +543,8 @@ deck
 
 	slide
 		text "Norway" dleft dtop dsize "sans" donorcolor
+		text "Donation Frequency" 60 laby 1 "sans" "gray"
+		text "Amount Received"    78 laby 1 "sans" "gray"
 		image mapimage 36 50 3200 1800 40
 		circle 35.5 64 dcrad donorcolor 50
 		ctext "$ 4.42 Billion" 35.5 64 dtsize
@@ -556,6 +593,8 @@ deck
 
 	slide
 		text "Italy" dleft dtop dsize "sans" donorcolor
+		text "Donation Frequency" 60 laby 1 "sans" "gray"
+		text "Amount Received"    78 laby 1 "sans" "gray"
 		image mapimage 36 50 3200 1800 40
 		circle 36 56 dcrad donorcolor 50
 		ctext "$ 3.84 Billion" 36 56 dtsize
@@ -612,6 +651,8 @@ deck
 
 	slide
 		text "Denmark" dleft dtop dsize "sans" donorcolor
+		text "Donation Frequency" 60 laby 1 "sans" "gray"
+		text "Amount Received"    78 laby 1 "sans" "gray"
 		image mapimage 36 50 3200 1800 40
 		circle 35.5 61.5 dcrad donorcolor 50
 		ctext "$ 2.95 Billion" 35.5 61.5 dtsize
@@ -640,6 +681,8 @@ deck
 
 	slide
 		text "Switzerland" dleft dtop dsize "sans" donorcolor
+		text "Donation Frequency" 60 laby 1 "sans" "gray"
+		text "Amount Received"    78 laby 1 "sans" "gray"
 		image mapimage 36 50 3200 1800 40
 		circle 35.5 57.5 dcrad donorcolor 50
 		ctext "$ 2.84 Billion" 35.5 57.5 dtsize
@@ -690,6 +733,8 @@ deck
 
 	slide
 		text "Australia" dleft dtop dsize "sans" donorcolor
+		text "Donation Frequency" 60 laby 1 "sans" "gray"
+		text "Amount Received"    78 laby 1 "sans" "gray"
 		image mapimage 36 50 3200 1800 40
 		circle 58 30 dcrad donorcolor 50
 		ctext "$ 2.45 Billion" 58 30 dtsize
@@ -732,6 +777,8 @@ deck
 
 	slide
 		text "Belgium" dleft dtop dsize "sans" donorcolor
+		text "Donation Frequency" 60 laby 1 "sans" "gray"
+		text "Amount Received"    78 laby 1 "sans" "gray"
 		image mapimage 36 50 3200 1800 40
 		circle 34.75 59.25 dcrad donorcolor 50
 		ctext "$ 2.14 Billion" 34.75 59.25 dtsize
@@ -784,6 +831,8 @@ deck
 
 	slide
 		text "Spain" dleft dtop dsize "sans" donorcolor
+		text "Donation Frequency" 60 laby 1 "sans" "gray"
+		text "Amount Received"    78 laby 1 "sans" "gray"
 		image mapimage 36 50 3200 1800 40
 		circle 33 55 dcrad donorcolor 50
 		ctext "$ 2.01 Billion" 33 55 dtsize
@@ -840,6 +889,8 @@ deck
 
 	slide
 		text "Saudi Arabia" dleft dtop dsize "sans" donorcolor
+		text "Donation Frequency" 60 laby 1 "sans" "gray"
+		text "Amount Received"    78 laby 1 "sans" "gray"
 		image mapimage 36 50 3200 1800 40
 		circle 42 48 dcrad donorcolor 50
 		ctext "$ 1.70 Billion" 42 48 dtsize
@@ -864,6 +915,8 @@ deck
 
 	slide
 		text "Kuwait" dleft dtop dsize "sans" donorcolor
+		text "Donation Frequency" 60 laby 1 "sans" "gray"
+		text "Amount Received"    78 laby 1 "sans" "gray"
 		image mapimage 36 50 3200 1800 40
 		circle 40.5 51 dcrad donorcolor 50
 		ctext "$ 1.37 Billion" 40.5 51 dtsize
@@ -888,6 +941,8 @@ deck
 
 	slide
 		text "Korea" dleft dtop dsize "sans" donorcolor
+		text "Donation Frequency" 60 laby 1 "sans" "gray"
+		text "Amount Received"    78 laby 1 "sans" "gray"
 		image mapimage 36 50 3200 1800 40
 		circle 57.1 54.5 dcrad donorcolor 50
 		ctext "$ 1.30 Billion" 57.1 54.5 dtsize
@@ -895,6 +950,7 @@ deck
 		image "technology.png"	12 icony iconw iconh
 		image "economic.png"	17 icony iconw iconh
 		image "agriculture.png"	22 icony iconw iconh
+		image "government.png"	27 icony iconw iconh
 		line 57.1 54.5 24 36	ls lcolor lop	// Brazil
 		circle 24 36		dotsize dotcolor 30
 		line 57.1 54.5 21 31	ls lcolor lop	// Chile
@@ -915,6 +971,8 @@ deck
 
 	slide
 		text "Austria" dleft dtop dsize "sans" donorcolor
+		text "Donation Frequency" 60 laby 1 "sans" "gray"
+		text "Amount Received"    78 laby 1 "sans" "gray"
 		image mapimage 36 50 3200 1800 40
 		circle 36.5 58 dcrad donorcolor 50
 		ctext "$ 0.78 Billion" 36.5 58 dtsize
@@ -971,6 +1029,8 @@ deck
 
 	slide
 		text "Finland" dleft dtop dsize "sans" donorcolor
+		text "Donation Frequency" 60 laby 1 "sans" "gray"
+		text "Amount Received"    78 laby 1 "sans" "gray"
 		image mapimage 36 50 3200 1800 40
 		circle 39 66 dcrad donorcolor 50
 		ctext "$ 0.67 Billion" 39 66 dtsize
@@ -1012,6 +1072,5 @@ deck
 		dchart opts  sorted-total-Finland-recip.d
 		dchart dopts sorted-Finland-aid.d
 	eslide
-
 
 edeck

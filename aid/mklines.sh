@@ -14,6 +14,8 @@ donation=$(grep "$1" td.d | awk -F\t '{printf "%.2f", $2}')
 awk -F\t -v begin=$begin -v country="$1" -v donation=$donation '
 BEGIN { 
 	printf "\n\tslide\n\t\ttext \"%s\" dleft dtop dsize \"sans\" donorcolor\n", country
+	printf "\t\ttext \"Donation Frequency\" 60 laby 1 \"sans\" \"gray\"\n"
+	printf "\t\ttext \"Amount Received\"    78 laby 1 \"sans\" \"gray\"\n"
 	printf "\t\timage mapimage 36 50 3200 1800 40\n"
 	printf "\t\tcircle %s dcrad donorcolor 50\n", begin
 	printf "\t\tctext \"$ %s Billion\" %s dtsize\n", donation, begin

@@ -7,4 +7,4 @@ Multisector aid 	338
 Vocational training 	318
 Agricultural development 	304
 Rural development 	292
-Transport and Storage, purpose unspecified or does not fit under any other applicable codes 	282
+Transport and Storage, purpose unspecified 	282
