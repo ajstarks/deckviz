@@ -2,6 +2,7 @@
 
 ### Contents
 
+* aid -- International aid as defined in the #SWDchallenge
 * aapl -- Apple financial results
 * bp -- Blood Pressure and Heart Rate
 * babynames -- Baby names through the decades
