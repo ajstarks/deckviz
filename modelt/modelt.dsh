@@ -1,0 +1,19 @@
+deck
+	slide
+		left=25
+		ctext  "Manufacturing and Marketing of Model T Fords, 1908-1916"       50 93 3
+		text  "Production and Sales (Units)" left 87 2
+		text  "Price (USD)"                  left 42 2
+		legend "Production"  60 87 1.2 "sans" "maroon"
+		legend "Sales"       72 87 1.2 "sans" "gray"
+		rbrace 80 70 30 2 2 0.1
+		textblock "40x production increase"         82 70 10 1.5 "serif"
+
+		rbrace 80 30 20 2 2 0.1
+		textblock "More than 50% price reduction"   82 30 10 1.5 "serif"
+		opts="-frame -dot -left=25 -right=75  -max=600000 -yrange=0,600000,100000 -fulldeck=f -bar=f -line -val=f -yaxis -title=f"
+		dchart -csv -csvcol=Year,Production  opts -top=85 -bottom=55 -color=maroon                            modelt.csv
+		dchart -csv -csvcol=Year,Sales       opts -top=85 -bottom=55 -color=gray                              modelt.csv
+		dchart -csv -csvcol=Year,Price       opts -top=40 -bottom=10 -color=gray -max=1000 -yrange=0,1000,200 modelt.csv
+	eslide
+edeck
