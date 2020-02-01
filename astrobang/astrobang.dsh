@@ -1,11 +1,12 @@
 // astrobang: plot the use of sign-stealing "bangs" during the 2017 season
 // see: http://signstealingscandal.com/
+//
 // awk -F$'\t' '$3 != "-" {if ($5 == "Astros won") { printf "%s\t%s\t%s\n", $4,$3,"Win" } else {printf "%s\t%s\n", $4,$3}}' astrobang.d > ab.d
 // awk -F$'\t' '$3 > 0 {print $4}' astrobang.d | sort | uniq -c | sort -nr | awk '{printf "%s\t%s\n", substr($0,9), $1}' > banghist.d
 deck
 	astrosorange="rgb(235,110,31)"
 	astrosblue="rgb(0,45,98)"
-	lc="black" // for dark mode ""rgb(200,200,200)" 
+	lc="rgb(200,200,200)" // for dark mode ""rgb(200,200,200)", "black" when using light mode
 	top=65
 	bottom=top-45
 	yy=top
@@ -13,23 +14,26 @@ deck
 	by=dy+1.5
 	ss=0.75
 	pss=ss*0.8
-	slide // "black" "white" // dark mode!
+	slide "black" "white" // dark mode!
 
 		// top label
-		ctext `2017 Houston Astros Sign-Stealing via Bangs` 50 92 2
-		etext "Data Source: http://signstealingscandal.com/"  95 92 ss "sans" lc 100 "http://signstealingscandal.com/"
+		ctext "2017 Houston Astros Sign-Stealing via Bangs"		50 92 2
+		etext "Data Source: http://signstealingscandal.com/"	95 92 ss "sans" lc 100 "http://signstealingscandal.com/"
 		
 		// pmaps with labels
 		etext "Games with/without Bangs (55/9)"				19  85 ss
 		etext "Pitches with/without Bangs (1,143/7,141)"	19  82 ss
 		etext "Win/Loss with Bangs (30/34)"					19  79 ss
 		etext "Bang Use by Opponent"						74  85 ss		
-		dchart -fulldeck=f -left=20 -top=85 -right=35            -textsize pss -pwidth ss  -val=f -solidpmap -pmap  bangfreq.d
-		dchart -fulldeck=f -left=20 -top=82 -right=35            -textsize pss -pwidth ss  -val=f -solidpmap -pmap  bangpitches.d
-		dchart -fulldeck=f -left=20 -top=79 -right=35            -textsize pss -pwidth ss  -val=f -solidpmap -pmap  wl.d
-		dchart -fulldeck=f -left=75 -top=85 -right=95 -bottom=78 -textsize ss  -lcolor lc -vcolor lc -xlabrot=270  -color astrosorange  banghist.d
+		dchart -fulldeck=f -left=20 -top=85 -right=35 -textsize pss -pwidth ss  -val=f -solidpmap -pmap  bangfreq.d
+		dchart -fulldeck=f -left=20 -top=82 -right=35 -textsize pss -pwidth ss  -val=f -solidpmap -pmap  bangpitches.d
+		dchart -fulldeck=f -left=20 -top=79 -right=35 -textsize pss -pwidth ss  -val=f -solidpmap -pmap  wl.d
 
-		dchart -fulldeck=f -left=5  -top=65 -right=95 -bottom=20 -textsize=1   -lcolor lc -xlabrot=270 -val=f -yrange=0,60,10 -yaxis -color astrosorange  ab.d
+		// Opponent histogram
+		dchart -fulldeck=f -left=75 -top=85 -right=95 -bottom=78 -textsize ss -lcolor lc -vcolor lc -xlabrot=270  -color astrosorange  banghist.d
+
+		// Main bar chart
+		dchart -fulldeck=f -left=5  -top=65 -right=95 -bottom=20 -textsize=1  -lcolor lc -xlabrot=270 -val=f -yrange=0,60,10 -yaxis -color astrosorange  ab.d
 		ctext "Total Astros Bangs/Game (W=win)"	10 70 ss
 
 		// Additional x axis labels
@@ -41,7 +45,6 @@ deck
 		ctext "September"	90 dy ss
 
 		// Annotations
-
 		ubrace 64 69 28 1 1 0.05
 		ctext "Prime Banging Time" 64 70 pss "serif"
 
@@ -52,12 +55,11 @@ deck
 		elist
 
 		// x-axis decorations
-		//hline 4.5 15 92 5.5 astrosblue 50 // remove when using light mode
+		hline 4.5 15 92 5.5 astrosblue 50 // add when for dark mode
 		vline 21.5 10 10 0.05 lc 50
 		vline 37.2 10 10 0.05 lc 50
 		vline 51.5 10 10 0.05 lc 50
 		vline 61.5 10 10 0.05 lc 50
 		vline 83   10 10 0.05 lc 50
-
 	eslide
 edeck
