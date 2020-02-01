@@ -4,17 +4,19 @@
 
 * aid -- International aid as defined in the #SWDchallenge
 * aapl -- Apple financial results
-* bp -- Blood Pressure and Heart Rate
+* astrobang -- Houston Astros 2017 sign-stealing
 * babynames -- Baby names through the decades
+* bp -- Blood Pressure and Heart Rate
 * ceo-stock -- The relationship of CEO tenure to stock price
 * fire -- German wildfires
 * gomod -- Go module flows
+* modelt -- Manufacturing and Marketing the Model T - 1908-1916
 * multigen -- Multi-generational households
 * nba -- NBA standings
-* modelt -- Manufacturing and Marketing the Model T - 1908-1916
 * prison -- Comparing the rate of incarceration vs. US presidential terms
 * speed -- Comparison of Indy 500 speed data
 * swd -- Examples from "Storytelling with Data"
+* warlife -- How much of your life has the U.S. been at war
 * weather -- Weather trends
 
 Each directory has the '.dsh' scripts, associated data files, and rendered output in PDF and PNG formats.
