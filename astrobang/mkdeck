@@ -1,0 +1,2 @@
+#!/bin/sh
+decksh astrobang.dsh|pdf -pagesize $fhd -serif NotoSerif-Italic -sans NotoSans-Regular $*

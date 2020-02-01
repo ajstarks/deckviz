@@ -11,6 +11,7 @@
 * gomod -- Go module flows
 * multigen -- Multi-generational households
 * nba -- NBA standings
+* modelt -- Manufacturing and Marketing the Model T - 1908-1916
 * prison -- Comparing the rate of incarceration vs. US presidential terms
 * speed -- Comparison of Indy 500 speed data
 * swd -- Examples from "Storytelling with Data"
