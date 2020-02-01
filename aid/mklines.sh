@@ -36,7 +36,7 @@ do
 	grep $i recip-loc.d | 
 	awk -F\t -v begin=$begin -v country=$1 '{
 		printf "\t\tline %s %s %s\tls lcolor lop\t// %s\n", begin, $2, $3, $1
-		printf "\t\tcircle %s %s\t\tdotsize dotcolor 30\n", $2, $3
+		printf "\t\tcircle %s %s\t\tdotsize dotcolor dotop\n", $2, $3
 	}'
 
 done

@@ -23,7 +23,7 @@ Japan	59.5	53.5
 Korea	57.1	54.5
 Kuwait	40.5	51
 Latvia	38.5	62
-Liechtenstein	35.5 57.5
+Liechtenstein	35.5	57.5
 Lithuania	38.25	61.5
 Luxembourg	35	59
 Netherlands	35	60
@@ -33,9 +33,9 @@ Poland	37	60
 Portugal	32.4	55
 Qatar	43.25	49
 Romania	38.5	57
-Saudi Arabia	42	48	
+Saudi Arabia	42	48
 Slovak Republic	37.5	58.5
-Slovenia	36.5 57.2
+Slovenia	36.5	57.2
 South Africa	38	28
 Spain	33	55
 Sweden	36.5	65
