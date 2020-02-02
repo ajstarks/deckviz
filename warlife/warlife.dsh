@@ -13,14 +13,15 @@ deck
 	cw=d*2		// grid column width
 	rh=cw		// grid row height
 	mid=50		// midpoint
-	op=40		// opacity
+	op=50		// opacity
 
 	title="How much of your life the U.S. has been at war"
 	ref="https://twitter.com/ianbremmer/status/1215389030013132800"
+	reft="Source: Washington Post, https://twitter.com/ianbremmer/status/121538903001313280"
 	slide "black" "white"
 		// header and footer
 		ctext  title mid tt ts
-		ctext  ref   mid bt ss "sans" "white" 100 ref
+		ctext  reft  mid bt ss "sans" "white" 100 ref
 
 		// legend
 		circle edge tt 4.4 "white"
