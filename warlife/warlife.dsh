@@ -1,0 +1,37 @@
+deck
+	ts=3		// title font size
+	ss=ts*0.4	// subtitle font size
+	tt=95		// title top
+	bt=100-tt	// bottom
+	top=tt-10	// grid top
+	left=10		// grid left
+	ly=top+3	// label
+	py=top-0.25	// % location
+	edge=90		// grid edge
+	d=4			// circle diameter
+	r=d/2		// circle radius
+	cw=d*2		// grid column width
+	rh=cw		// grid row height
+	mid=50		// midpoint
+	op=40		// opacity
+
+	title="How much of your life the U.S. has been at war"
+	ref="https://twitter.com/ianbremmer/status/1215389030013132800"
+	slide "black" "white"
+		// header and footer
+		ctext  title mid tt ts
+		ctext  ref   mid bt ss "sans" "white" 100 ref
+
+		// legend
+		circle edge tt 4.4 "white"
+		arc    edge tt r r 0 250 r "maroon" op
+		ctext  "birth year" edge 98 1
+		ctext  "% at war" edge tt 1 "serif" "black"
+
+		// data grid
+		grid   "c.dsh"   10 top cw rh edge // circles
+		grid   "y.dsh"   10 ly  cw rh edge // year labels
+		grid   "p.dsh"   10 py  cw rh edge // percentages
+		grid   "a.dsh"   10 top cw rh edge // arcs
+	eslide
+edeck
