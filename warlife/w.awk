@@ -54,7 +54,7 @@ $0 ~! /^#/ && NF == 2  {
 		if ($2 == 100.0) {
 			printf "circle %.2f %.2f %.2f \"%s\" %g\n", x, y, d, dcolor, op
 		} else {
-			printf "arc %.2f %.2f %.2f %.2f %.2f %.2f %.2f \"%s\" %g\n", x, y, r, r, 0, (($2/100)*360), r, dcolor, op
+			printf "arc %.2f %.2f %.2f %.2f 0 %.2f %.2f \"%s\" %g\n", x, y, r, r, (($2/100)*360), r, dcolor, op
 		}
 	} else {
 		printf "text \"%s\" %.2f %.2f 1\n", $1, x, y+3
