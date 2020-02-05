@@ -8,7 +8,7 @@ BEGIN {
 	dcolor="maroon"
 	d=4
 	r=d/2
-	op=40
+	op=50
 }  
 $0 ~! /^#/ && NF == 2  {
 	if (layer == "year") {
