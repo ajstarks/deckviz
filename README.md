@@ -25,24 +25,31 @@ Each directory has the '.dsh' scripts, associated data files, and rendered outpu
 
 ### get the deck tools
 
-	$ go get github.com/ajstarks/deck/cmd/decksh		# get decksh
-	$ go get github.com/ajstarks/deck/cmd/pdfdeck		# get pdfdeck to render PDFs
-	$ go get github.com/ajstarks/deck/cmd/pngdeck		# get pngdeck to render PNGs
+	go get github.com/ajstarks/deck/cmd/decksh		# get decksh
+	go get github.com/ajstarks/deck/cmd/pdfdeck		# get pdfdeck to render PDFs
+	go get github.com/ajstarks/deck/cmd/pngdeck		# get pngdeck to render PNGs
+	# assume the DECKFONTS environment variable is set to $HOME/deckfonts
+	cd $HOME
+	git clone https://github.com/ajstarks/deckfonts
 	
 ### clone the repo
 	
-	$ git clone https://github.com/ajstarks/deckviz	# clone this repo
+	git clone https://github.com/ajstarks/deckviz	# clone this repo
 	Cloning into 'deckviz'...
 	...
-	$ cd deckviz
+	cd deckviz
 	
-### move the a directory, execute and render, for example
+### move the a directory, execute and render
 
+	cd fire
+	decksh fire.dsh > fire.xml
+	pdfdeck fire.xml  # produces fire.pdf
+	pngdeck fire.xml  # produces fire-00001.png
 
-	$ cd fire
-	$ decksh fire.dsh > fire.xml
-	$ pdfdeck fire.xml  # produces fire.pdf
-	$ pngdeck fire.xml  # produces fire-00001.png
+Note that some directories require more scripting, and will have a script called ```mkdeck```
+
+	cd astrobang
+	./mkdeck
 	
 
 	
