@@ -6,3 +6,4 @@ awk -f wgrid.awk -F$'\t' -v layer=pct    warlife1909.d > p.dsh  # %
 awk -f wgrid.awk -F$'\t' -v layer=arc    warlife1909.d > a.dsh  # arc
 # make the viz
 decksh warlife.dsh | pdfdeck -pagesize 1000,1000 -sans NotoSans-Regular -serif Charter-Regular $* -stdout - > warlife.pdf
+decksh warlife.dsh | pngdeck -pagesize 1000,1000 -sans NotoSans-Regular -serif Charter-Regular $* /dev/stdin && mv stdin-00001.png  warlife.png
