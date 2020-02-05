@@ -28,6 +28,7 @@ Each directory has the '.dsh' scripts, associated data files, and rendered outpu
 	go get github.com/ajstarks/deck/cmd/decksh		# get decksh
 	go get github.com/ajstarks/deck/cmd/pdfdeck		# get pdfdeck to render PDFs
 	go get github.com/ajstarks/deck/cmd/pngdeck		# get pngdeck to render PNGs
+	go get github.com/ajstarks/deck/cmd/dchart      # get the dchart command
 	# assume the DECKFONTS environment variable is set to $HOME/deckfonts
 	cd $HOME
 	git clone https://github.com/ajstarks/deckfonts
