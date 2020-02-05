@@ -1,2 +1,2 @@
 #!/bin/sh
-awk -f w.awk -F$'\t' warlife1909.d  | decksh | pdf -pagesize 1000,1000 -sans GillSans -serif Charter-Regular
+awk -f w.awk -F$'\t' warlife1909.d  | decksh | pdfdeck -pagesize 1000,1000 -sans GillSans -serif Charter-Regular $* -stdout - > warlife.pdf
