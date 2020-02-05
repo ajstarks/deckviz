@@ -1,8 +1,0 @@
-#!/bin/sh
-# generate layers in grids
-awk -f wgrid.awk -F$'\t' -v layer=circle warlife1909.d > c.dsh  # circles
-awk -f wgrid.awk -F$'\t' -v layer=year   warlife1909.d > y.dsh  # years
-awk -f wgrid.awk -F$'\t' -v layer=pct    warlife1909.d > p.dsh  # %
-awk -f wgrid.awk -F$'\t' -v layer=arc    warlife1909.d > a.dsh  # arc
-# make the viz
-decksh warlife.dsh | pdfdeck -pagesize 1000,1000 -sans NotoSans-Regular -serif Charter-Regular $* -stdout - > warlife.pdf
