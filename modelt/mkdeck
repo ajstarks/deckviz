@@ -1,2 +1,2 @@
 #!/bin/bash
-decksh modelt.dsh|pdfdeck -stdout -sans GillSans -serif NotoSerif-Italic - > modelt.pdf
+decksh modelt.dsh|pdfdeck -stdout -sans NotoSans-Regular -serif NotoSerif-Italic - > modelt.pdf
