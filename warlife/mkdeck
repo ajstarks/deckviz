@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 # generate layers in grids
 awk -f wgrid.awk -F$'\t' -v layer=circle warlife1909.d > c.dsh  # circles
 awk -f wgrid.awk -F$'\t' -v layer=year   warlife1909.d > y.dsh  # years
