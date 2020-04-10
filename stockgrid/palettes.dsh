@@ -1,0 +1,43 @@
+// month colors: (Northern Hemisphere seasons)
+	season1="rgb(230,230,230)"
+	season2="rgb(180,180,180)"
+	season3="rgb(100,100,100)"
+	season4="rgb(147,229,168)"
+	season5="rgb(66,204,95)"
+	season6="rgb(79,188,65)"
+	season7="rgb(111,156,60)"
+	season8="rgb(72,126,82)"
+	season9="rgb(238,159,58)"
+	season10="rgb(233,139,80)"
+	season11="rgb(195,123,102)"
+	season12="rgb(255,208,208)"
+
+
+	// complementary color wheel
+	// https://upload.wikimedia.org/wikipedia/commons/a/ab/RBG_color_wheel.svg
+	comp1="red"
+	comp2="orange"
+	comp3="yellow"
+	comp4="rgb(132,255,67)"
+	comp5="rgb(46,255,65)"
+	comp6="rgb(48,255,137)"
+	comp7="cyan"
+	comp8="rgb(0,127,255)"
+	comp9="blue"
+	comp10="violet"
+	comp11="magenta"
+	comp12="rgb(255,0,127)"
+
+	// https://www.istockphoto.com/vector/clock-calendar-vector-of-a-clock-that-indicates-the-month-of-the-year-and-the-gm1053907490-281593222
+	cc1="rgb(94,206,218)"
+	cc2="rgb(148,202,210)"
+	cc3="rgb(147,229,168)"
+	cc4="rgb(106,220,128)"
+	cc5="rgb(66,204,95)"
+	cc6="rgb(248,237,67)"
+	cc7="rgb(241,230,89)"
+	cc8="rgb(242,225,128)"
+	cc9="rgb(236,195,125)"
+	cc10="rgb(230,178,102)"
+	cc11="rgb(223,147,60)"
+	cc12="rgb(46,190,228)"

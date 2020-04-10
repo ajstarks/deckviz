@@ -1,0 +1,24 @@
+deck
+	include "palettes.dsh"
+
+	jancolor=season1
+	febcolor=season2
+	marcolor=season3
+	aprcolor=season4
+	maycolor=season5
+	juncolor=season6
+	julcolor=season7
+	augcolor=season8
+	sepcolor=season9
+	octcolor=season10
+	novcolor=season11
+	deccolor=season12
+
+	opts="-fulldeck=f -lcolor=gray -xlabel=0 -bar=f -vol -volop=80 -title=f -val=f -csv  -csvcol=Date,Close"
+	include "fb.dsh"
+	include "aapl.dsh"
+	include "amzn.dsh"
+	include "nflx.dsh"
+	include "goog.dsh"
+	include "msft.dsh"
+edeck

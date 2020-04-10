@@ -1,0 +1,91 @@
+	// AAPL
+	slide "black" "white"
+		h=30
+ 		top=65
+ 		bot=top-h
+
+		w=7.5
+		w2=w/2
+		left=5
+		tx=left+w2
+		ty=bot-5
+
+		ts=1.5
+		tts=ts*1.5
+		tt=top+5
+		right=left+w
+
+		text "Apple Computer (AAPL) Closing Price, 2019" left tt tts
+		limits="-min=140 -max=300"
+
+		//dchart opts -left left -right 95 -yaxis -yrange=140,300,40 -top top -bottom bot -grid dummy.d
+
+		dchart opts limits  -left left -right right -top top -bottom bot -color jancolor -yaxis -yrange=140,300,40  aapl-2019-01.csv
+		ctext "JAN" tx ty ts "sans" jancolor
+		left+=w
+		right+=w
+		tx+=w
+
+		dchart opts limits  -left left -right right -top top -bottom bot -color febcolor  aapl-2019-02.csv
+		ctext "FEB" tx ty ts "sans" febcolor
+		left+=w
+		right+=w
+		tx+=w
+
+		dchart opts limits  -left left -right right -top top -bottom bot -color marcolor  aapl-2019-03.csv
+		ctext "MAR" tx ty ts "sans" marcolor
+
+		left+=w
+		right+=w
+		tx+=w
+		dchart opts limits  -left left -right right -top top -bottom  bot -color aprcolor  aapl-2019-04.csv
+		ctext "APR" tx ty ts "sans" aprcolor
+
+		left+=w
+		right+=w
+		tx+=w
+		dchart opts limits  -left left -right right -top top -bottom  bot -color maycolor  aapl-2019-05.csv
+		ctext "MAY" tx ty ts "sans" maycolor
+
+		left+=w
+		right+=w
+		tx+=w
+		dchart opts limits  -left left -right right -top top -bottom  bot -color juncolor  aapl-2019-06.csv
+		ctext "JUN" tx ty ts "sans" juncolor
+
+		left+=w
+		right+=w
+		tx+=w
+		dchart opts limits  -left left -right right -top top -bottom  bot  -color julcolor  aapl-2019-07.csv
+		ctext "JUL" tx ty ts "sans" julcolor
+
+		left+=w
+		right+=w
+		tx+=w
+		dchart opts limits  -left left -right right -top top -bottom  bot -color augcolor  aapl-2019-08.csv
+		ctext "AUG" tx ty ts "sans" augcolor
+
+		left+=w
+		right+=w
+		tx+=w
+		dchart opts limits  -left left -right right -top top -bottom  bot -color sepcolor  aapl-2019-09.csv
+		ctext "SEP" tx ty ts "sans" sepcolor
+
+		left+=w
+		right+=w
+		tx+=w
+		dchart opts limits  -left left -right right -top top -bottom  bot -color octcolor  aapl-2019-10.csv
+		ctext "OCT" tx ty ts "sans" octcolor
+
+		left+=w
+		right+=w
+		tx+=w
+		dchart opts limits  -left left -right right -top top -bottom  bot -color novcolor  aapl-2019-11.csv
+		ctext "NOV" tx ty ts "sans" novcolor
+
+		left+=w
+		right+=w
+		tx+=w
+		dchart opts limits  -left left -right right -top top -bottom  bot -color deccolor aapl-2019-12.csv
+		ctext "DEC" tx ty ts "sans" deccolor
+	eslide
