@@ -1,0 +1,25 @@
+#!/bin/bash
+url="https://coronavirus.projectpage.app/.json?period=0"
+curl --silent $url | ./j2csv > c19.csv
+tail -2 c19.csv | csvread | awk -F$'\t'  '
+NR == 1 {
+	pdeath=$2
+	pcases=$3
+}
+NR == 2{
+	date=$1
+	deaths=$2
+	cases=$3
+	rate=(deaths/cases) * 100
+	dchange=(deaths-pdeath)/deaths
+	cchange=(cases-pcases)/cases
+	printf "text  \"COVID-19 Pandemic: %s\" 10 95 2.5\n", date
+	printf "etext \"Fatality Rate: %.2f%%\" 90 95 labelsize \"sans\" labelcolor\n", rate
+	printf "text \"Cases\" 20 86 labelsize \"sans\" casecolor\n"
+	printf "text \"Deaths\"20 56 labelsize \"sans\" deathcolor\n"
+	printf "text \"%'"'"'d\" 20 80 bigsize\n",cases
+	printf "text \"%'"'"'d\" 20 50 bigsize\n",deaths
+	printf "etext \"(%.3f%% change)\" 57 80 labelsize \"sans\" labelcolor\n", cchange
+	printf "etext \"(%.3f%% change)\" 57 50 labelsize \"sans\" labelcolor\n", dchange
+}' > data.dsh
+decksh c19.dsh | pdfr $*

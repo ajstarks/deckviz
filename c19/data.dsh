@@ -1,0 +1,8 @@
+text  "COVID-19 Pandemic: Apr 15" 10 95 2.5
+etext "Fatality Rate: 6.38%" 90 95 labelsize "sans" labelcolor
+text "Cases" 20 86 labelsize "sans" casecolor
+text "Deaths"20 56 labelsize "sans" deathcolor
+text "2,022,642" 20 80 bigsize
+text "128,946" 20 50 bigsize
+etext "(0.016% change)" 57 80 labelsize "sans" labelcolor
+etext "(0.023% change)" 57 50 labelsize "sans" labelcolor

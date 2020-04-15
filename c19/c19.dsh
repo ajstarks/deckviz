@@ -1,0 +1,28 @@
+deck
+	// C19 json data returned by https://coronavirus.projectpage.app/.json?period=0
+	// curl --silent https://coronavirus.projectpage.app/.json?period=0 | ./j2csv > c19.csv
+	opts="-right=90 -csv -fulldeck=f -val=f -textsize=1.5 -grid=f -bar -title=f -vol -yaxis -xlabel=5 -line -linewidth=0.1 -note=f"
+	crange="-max=2000000 -yrange=0,2000000,500000"
+	drange="-max=120000 -yrange=0,120000,40000"
+	casecolor="gray"
+	deathcolor="orangered"
+	labelcolor="rgb(80,80,80)"
+	bigsize=4
+	labelsize=bigsize/2
+	titlesize=bigsize*0.75
+	slide
+		t1=90
+		t2=60
+		b1=t1-20
+		b2=t2-20
+		include "data.dsh"
+		ctext "Source: John Hopkins University, CSSE" 50 3 1 "sans" "gray" 100 "https://github.com/CSSEGISandData/COVID-19"
+		
+		text "Cases"       92 30 labelsize "sans" casecolor
+		text "Deaths"      92 25 labelsize "sans" deathcolor
+		dchart opts -csvcol=date,confirmed        -color casecolor   -top t1 -bottom b1 crange c19.csv
+		dchart opts -csvcol=date,deaths           -color deathcolor  -top t2 -bottom b2 drange c19.csv
+		dchart opts -bar=f -csvcol=date,confirmed -color casecolor                      crange   -vol -top=30 -bottom=10 c19.csv
+		dchart opts -bar=f -csvcol=date,deaths    -color deathcolor  -yaxis=f -xlabel=0 crange   -vol -top=30 -bottom=10 c19.csv
+	eslide
+edeck
