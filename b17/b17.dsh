@@ -1,0 +1,25 @@
+deck
+	slide
+		ls=1.5
+		kcolor="rgb(255,0,0)"
+		wcolor="rgb(0,0,255)"
+		opts="-pmap -left=5 -right=95 -val=f"
+		text "B-17 Casuality Rates by Position" 5 92 3
+
+		text "Wounded in Action" 5 85 2 "sans" "gray"
+		dchart opts -top=75  -color wcolor wia.d
+
+		text "Killed in Action" 5 60 2 "sans" "gray"
+		dchart opts -top=50 -color kcolor kia.d
+		image "iza-vailable.png" 50 25 825 254 80
+
+		ctext "Bombardier"		90 13 ls
+		ctext "Navigator"		83 10 ls
+		ctext "Pilot/Co-Pilot"	80 25 ls
+		ctext "Top Turret"		71 27 ls
+		ctext "Radio Op."		55 25 ls
+		ctext "Ball Turret"		52 8 ls
+		ctext "Waist Gunner"	42 12 ls
+		ctext "Tail Gunner"		17 15 ls
+	eslide
+edeck
