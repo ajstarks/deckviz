@@ -1,0 +1,54 @@
+deck
+	opts="-csv -textsize=1.7 -fulldeck=f -bar=f -line -min=10 -max=20 -xlabel=0 -title=f -val=f -linewidth=0.4 -right=85"
+	right=85.5
+	ls=2
+	slide
+		text "Revenue in thousands by event type (2015-current forecast)"        10 90 3
+		text "Wedding"             right 73 ls "sans" "blue"
+		text "Fundraiser"          right 79 ls "sans" "green"
+		text "Offsite"             right 58 ls "sans" "orangered"
+		text "Holiday"             right 51 ls "sans" "gray"
+		text "Prom"                right 43 ls "sans" "purple"
+		dchart opts -csvcol=Date,Wedding     -xlabel=1 -yaxis -yrange=10,20,2 -color=blue    table.d
+		dchart opts -csvcol=Date,Fundraiser                                   -color=green   table.d
+		dchart opts -csvcol=Date,Prom                                         -color=purple  table.d
+		dchart opts -csvcol=Date,Offsite                                      -color=orange  table.d
+		dchart opts -csvcol=Date,Holiday                                      -color=gray    table.d
+
+
+		cx=10
+		cy=20
+		
+		ls=1.2
+		cs=ls*6
+		ts=ls*1.5
+		listspacing=1.4
+		include "tableview.dsh"
+	eslide
+
+
+	slide
+		ls=2
+		plaincolor="rgb(170,170,170)"
+		hilightcolor="rgb(0,0,127)"
+		text "Revenue in thousands by event type (2015-current forecast)"        10 90 3
+		text "Wedding"             right 73 ls "sans" plaincolor
+		text "Fundraiser"          right 79 ls "sans" hilightcolor
+		text "Offsite"             right 58 ls "sans" plaincolor
+		text "Holiday"             right 51 ls "sans" plaincolor
+		text "Prom"                right 43 ls "sans" plaincolor
+		dchart opts -csvcol=Date,Wedding     -xlabel=1 -yaxis -yrange=10,20,2  -color plaincolor    table.d
+		dchart opts -csvcol=Date,Fundraiser                                    -color hilightcolor  table.d
+		dchart opts -csvcol=Date,Prom                                          -color plaincolor  table.d
+		dchart opts -csvcol=Date,Offsite                                       -color plaincolor  table.d
+		dchart opts -csvcol=Date,Holiday                                       -color plaincolor  table.d
+	eslide
+
+	slide
+		cx=10
+		cy=80
+		ls=2
+		cs=ls*6		
+		include "tableview.dsh"
+	eslide
+edeck

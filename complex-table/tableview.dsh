@@ -1,0 +1,68 @@
+		tspacing=ts*2
+		c1=cs*1.5
+		text "Revenue (USDx1000) by event (2015-current forecast)" cx cy ts
+		cy-=tspacing
+		list cx cy ls "sans" "black" 100 listspacing
+			li "Date"
+			li "December 2015"
+			li "December 2016"
+			li "December 2017"
+			li "December 2018"
+			li "December 2019"
+			li "December 2020"
+		elist
+
+		cx+=c1
+		list cx cy ls "mono" "blue" 100 listspacing
+			li "Wedding" "sans"
+			li "19.0"
+			li "18.6"
+			li "18.7"
+			li "18.9"
+			li "18.8"
+			li "18.8"
+		elist
+
+		cx+=cs
+		list cx cy ls "mono" "green" 100 listspacing
+			li "Fundraiser" "sans"
+			li "13.4"
+			li "13.9"
+			li "15.1"
+			li "15.8"
+			li "16.4"
+			li "19.7"
+		elist
+
+		cx+=cs
+		list cx cy ls "mono" "purple" 100 listspacing
+			li "Prom" "sans"
+			li "11.7"
+			li "11.7"
+			li "12.6"
+			li "11.4"
+			li "13.2"
+			li "12.8"
+		elist
+
+		cx+=cs
+		list cx cy ls "mono" "orangered" 100 listspacing
+			li "Offsite" "sans"
+			li "11.5"
+			li "12.4"
+			li "12.6"
+			li "12.5"
+			li "13.2"
+			li "15.7"
+		elist
+
+		cx+=cs
+		list cx cy ls "mono" "gray" 100 listspacing
+			li "Holiday" "sans"
+			li "16.4"
+			li "16.5"
+			li "16.2"
+			li "15.6"
+			li "14.8"
+			li "14.4"
+		elist
