@@ -1,0 +1,326 @@
+// use stateface as symbol font
+deck
+	// State population (2019)
+	AL=4903185
+	AK=731545
+	AZ=7278717
+	AR=3017804
+	CA=39512223
+	CO=5758736
+	CT=3565287
+	DE=973764
+	DC=705749
+	FL=21477737
+	GA=10617423
+	HI=1415872
+	ID=1787065
+	IL=12671821
+	IN=6732219
+	IA=3155070
+	KS=2913314
+	KY=4467673
+	LA=4648794
+	ME=1344212
+	MD=6045680
+	MA=6892503
+	MI=9986857
+	MN=5639632
+	MS=2976149
+	MO=6137428
+	MT=1068778
+	NE=1934408
+	NV=3080156
+	NH=1359711
+	NJ=8882190
+	NM=2096829
+	NY=19453561
+	NC=10488084
+	ND=762062
+	OH=11689100
+	OK=3956971
+	OR=4217737
+	PA=12801989
+	RI=1059361
+	SC=5148714
+	SD=884659
+	TN=6829174
+	TX=28995881
+	UT=3205958
+	VT=623989
+	VA=8535519
+	WA=7614893
+	WV=1792147
+	WI=5822434
+	WY=578759
+
+
+	// vmap population to canvas
+	min1=WY
+	max1=CA
+	min2=2.5
+	max2=15
+
+	ALSize=vmap AL min1 max1 min2 max2
+	AKSize=vmap AK min1 max1 min2 max2
+	AZSize=vmap AZ min1 max1 min2 max2
+	ARSize=vmap AR min1 max1 min2 max2
+	CASize=vmap CA min1 max1 min2 max2
+	COSize=vmap CO min1 max1 min2 max2
+	CTSize=vmap CT min1 max1 min2 max2
+	DESize=vmap DE min1 max1 min2 max2
+	DCSize=vmap DC min1 max1 min2 max2
+	FLSize=vmap FL min1 max1 min2 max2
+	GASize=vmap GA min1 max1 min2 max2
+	HISize=vmap HI min1 max1 min2 max2
+	IDSize=vmap ID min1 max1 min2 max2
+	ILSize=vmap IL min1 max1 min2 max2
+	INSize=vmap IN min1 max1 min2 max2
+	IASize=vmap IA min1 max1 min2 max2
+	KSSize=vmap KS min1 max1 min2 max2
+	KYSize=vmap KY min1 max1 min2 max2
+	LASize=vmap LA min1 max1 min2 max2
+	MESize=vmap ME min1 max1 min2 max2
+	MDSize=vmap MD min1 max1 min2 max2
+	MASize=vmap MA min1 max1 min2 max2
+	MISize=vmap MI min1 max1 min2 max2
+	MNSize=vmap MN min1 max1 min2 max2
+	MSSize=vmap MS min1 max1 min2 max2
+	MOSize=vmap MO min1 max1 min2 max2
+	MTSize=vmap MT min1 max1 min2 max2
+	NESize=vmap NE min1 max1 min2 max2
+	NVSize=vmap NV min1 max1 min2 max2
+	NHSize=vmap NH min1 max1 min2 max2
+	NJSize=vmap NJ min1 max1 min2 max2
+	NMSize=vmap NM min1 max1 min2 max2
+	NYSize=vmap NY min1 max1 min2 max2
+	NCSize=vmap NC min1 max1 min2 max2
+	NDSize=vmap ND min1 max1 min2 max2
+	OHSize=vmap OH min1 max1 min2 max2
+	OKSize=vmap OK min1 max1 min2 max2
+	ORSize=vmap OR min1 max1 min2 max2
+	PASize=vmap PA min1 max1 min2 max2
+	RISize=vmap RI min1 max1 min2 max2
+	SCSize=vmap SC min1 max1 min2 max2
+	SDSize=vmap SD min1 max1 min2 max2
+	TNSize=vmap TN min1 max1 min2 max2
+	TXSize=vmap TX min1 max1 min2 max2
+	UTSize=vmap UT min1 max1 min2 max2
+	VTSize=vmap VT min1 max1 min2 max2
+	VASize=vmap VA min1 max1 min2 max2
+	WASize=vmap WA min1 max1 min2 max2
+	WVSize=vmap WV min1 max1 min2 max2
+	WISize=vmap WI min1 max1 min2 max2
+	WYSize=vmap WY min1 max1 min2 max2
+
+	// vmap of stateface font to character
+	ALchar="B"
+	AKchar="A"
+	AZchar="D"
+	ARchar="C"
+	CAchar="E"
+	COchar="F"
+	CTchar="G"
+	DEchar="H"
+	FLchar="I"
+	GAchar="J"
+	HIchar="K"
+	IDchar="M"
+	ILchar="N"
+	INchar="O"
+	IAchar="L"
+	KSchar="P"
+	KYchar="Q"
+	LAchar="R"
+	MEchar="U"
+	MDchar="T"
+	MAchar="S"
+	MIchar="V"
+	MNchar="W"
+	MSchar="Y"
+	MOchar="X"
+	MTchar="Z"
+	NEchar="c"
+	NVchar="g"
+	NHchar="d"
+	NJchar="e"
+	NMchar="f"
+	NYchar="h"
+	NCchar="a"
+	NDchar="b"
+	OHchar="i"
+	OKchar="j"
+	ORchar="k"
+	PAchar="l"
+	RIchar="m"
+	SCchar="n"
+	SDchar="o"
+	TNchar="p"
+	TXchar="q"
+	UTchar="r"
+	VTchar="t"
+	VAchar="s"
+	WAchar="u"
+	WVchar="w"
+	WIchar="v"
+	WYchar="x"
+
+	gopcolor="red"
+	demcolor="blue"
+	tossupcolor="gray"
+
+
+	slide
+		y=65
+		cy=y+5
+		ty=y-2
+		ls=1
+		vskip=13
+		lc="rgb(100,100,100)"
+		cop=20
+
+		ctext "2020 US Presidential Election" 50 92 3
+		ctext "states ordered by population (US census data, 2019 estimate)"  50 88 2 "sans" "gray"
+		legend "Republican" 40 83 1 "sans" gopcolor
+		legend "Democratic" 55 83 1 "sans" demcolor
+
+		ctext CAchar 11 y CASize "symbol" demcolor
+		ctext TXchar 25 y TXSize "symbol" gopcolor
+		ctext FLchar 36 y FLSize "symbol" gopcolor
+		ctext NYchar 47 y NYSize "symbol" demcolor
+		ctext PAchar 56 y PASize "symbol" demcolor
+		ctext ILchar 63 y ILSize "symbol" demcolor
+		ctext OHchar 70 y OHSize "symbol" gopcolor
+		ctext GAchar 77 y GASize "symbol" demcolor cop
+		ctext NCchar 84 y NCSize "symbol" gopcolor cop
+		ctext MIchar 92 y MISize "symbol" demcolor
+
+		ctext "CA"   11 ty ls "sans" lc
+		ctext "TX"   25 ty ls "sans" lc
+		ctext "FL"   36 ty ls "sans" lc
+		ctext "NY"   47 ty ls "sans" lc
+		ctext "PA"   56 ty ls "sans" lc
+		ctext "IL"   63 ty ls "sans" lc
+		ctext "OH"   70 ty ls "sans" lc
+		ctext "GA"   77 ty ls "sans" lc
+		ctext "NC"   84 ty ls "sans" lc
+		ctext "MI"   92 ty ls "sans" lc
+
+		// circle 11 cy CASize demcolor   cop
+		// circle 25 cy TXSize gopcolor   cop
+		// circle 36 cy FLSize gopcolor   cop
+		// circle 47 cy NYSize demcolor   cop
+		// circle 56 cy PASize demcolor   cop
+		// circle 63 cy ILSize demcolor   cop
+		// circle 70 cy OHSize gopcolor   cop
+		// circle 77 cy GASize demcolor   cop
+		// circle 84 cy NCSize gopcolor   cop
+		// circle 92 cy MISize demcolor   cop
+
+		y-=vskip
+		ty-=vskip
+		ctext NJchar 11 y NJSize "symbol" demcolor
+		ctext VAchar 25 y VASize "symbol" demcolor
+		ctext WAchar 36 y WASize "symbol" demcolor
+		ctext AZchar 47 y AZSize "symbol" demcolor cop
+		ctext MAchar 56 y MASize "symbol" demcolor
+		ctext TNchar 63 y TNSize "symbol" gopcolor
+		ctext INchar 70 y INSize "symbol" gopcolor
+		ctext MOchar 77 y MOSize "symbol" gopcolor
+		ctext MDchar 84 y MDSize "symbol" demcolor
+		ctext WIchar 92 y WISize "symbol" demcolor
+
+		ctext "NJ"   11 ty ls "sans" lc
+		ctext "VA"   25 ty ls "sans" lc
+		ctext "WA"   36 ty ls "sans" lc
+		ctext "AZ"   47 ty ls "sans" lc
+		ctext "MA"   56 ty ls "sans" lc
+		ctext "TN"   63 ty ls "sans" lc
+		ctext "IN"   70 ty ls "sans" lc
+		ctext "MO"   77 ty ls "sans" lc
+		ctext "MD"   84 ty ls "sans" lc
+		ctext "WI"   92 ty ls "sans" lc
+
+		y-=vskip
+		ty-=vskip
+		ctext COchar 11 y COSize "symbol" demcolor
+		ctext MNchar 25 y MNSize "symbol" demcolor
+		ctext SCchar 36 y SCSize "symbol" gopcolor
+		ctext ALchar 47 y ALSize "symbol" gopcolor
+		ctext LAchar 56 y LASize "symbol" gopcolor
+		ctext KYchar 63 y KYSize "symbol" gopcolor
+		ctext ORchar 70 y ORSize "symbol" demcolor
+		ctext OKchar 77 y OKSize "symbol" gopcolor
+		ctext CTchar 84 y CTSize "symbol" demcolor
+		ctext UTchar 92 y UTSize "symbol" gopcolor
+
+		ctext "CO"   11 ty ls "sans" lc
+		ctext "MN"   25 ty ls "sans" lc
+		ctext "SC"   36 ty ls "sans" lc
+		ctext "AL"   47 ty ls "sans" lc
+		ctext "LA"   56 ty ls "sans" lc
+		ctext "KY"   63 ty ls "sans" lc
+		ctext "OR"   70 ty ls "sans" lc
+		ctext "OK"   77 ty ls "sans" lc
+		ctext "CT"   84 ty ls "sans" lc
+		ctext "UT"   92 ty ls "sans" lc
+
+		y-=vskip
+		ty-=vskip
+		ctext IAchar 11 y IASize "symbol" gopcolor
+		ctext NVchar 25 y NVSize "symbol" demcolor
+		ctext ARchar 36 y ARSize "symbol" gopcolor
+		ctext MSchar 47 y MSSize "symbol" gopcolor
+		ctext KSchar 56 y KSSize "symbol" gopcolor
+		ctext NMchar 63 y NMSize "symbol" demcolor
+		ctext NEchar 70 y NESize "symbol" gopcolor
+		ctext WVchar 77 y WVSize "symbol" gopcolor
+		ctext IDchar 84 y IDSize "symbol" gopcolor
+		ctext HIchar 92 y HISize "symbol" demcolor
+
+		ctext "IA"   11 ty ls "sans" lc
+		ctext "NV"   25 ty ls "sans" lc
+		ctext "AR"   36 ty ls "sans" lc
+		ctext "MS"   47 ty ls "sans" lc
+		ctext "KS"   56 ty ls "sans" lc
+		ctext "NM"   63 ty ls "sans" lc
+		ctext "NE"   70 ty ls "sans" lc
+		ctext "WV"   77 ty ls "sans" lc
+		ctext "ID"   84 ty ls "sans" lc
+		ctext "HI"   92 ty ls "sans" lc
+
+		y-=vskip
+		ty-=vskip
+		ctext NHchar 11 y NHSize "symbol" demcolor
+		ctext MEchar 25 y MESize "symbol" demcolor
+		ctext MTchar 36 y MTSize "symbol" gopcolor
+		ctext RIchar 47 y RISize "symbol" demcolor
+		ctext DEchar 56 y DESize "symbol" demcolor
+		ctext SDchar 63 y SDSize "symbol" gopcolor
+		ctext NDchar 70 y NDSize "symbol" gopcolor
+		ctext AKchar 77 y AKSize "symbol" gopcolor cop
+		ctext VTchar 84 y VTSize "symbol" demcolor
+		ctext WYchar 92 y WYSize "symbol" gopcolor
+
+		ctext "NH"   11 ty ls "sans" lc
+		ctext "ME"   25 ty ls "sans" lc
+		ctext "MT"   36 ty ls "sans" lc
+		ctext "RI"   47 ty ls "sans" lc
+		ctext "DE"   56 ty ls "sans" lc
+		ctext "SD"   63 ty ls "sans" lc
+		ctext "ND"   70 ty ls "sans" lc
+		ctext "AK"   77 ty ls "sans" lc
+		ctext "VT"   84 ty ls "sans" lc
+		ctext "WY"   92 ty ls "sans" lc
+	eslide
+
+//	slide
+//		text "J" 10 50 10 "symbol" gopcolor
+//		text "J" 20 50 10 "symbol" gopcolor  50
+//		text "J" 30 50 10 "symbol" gopcolor  40
+//		text "J" 40 50 10 "symbol" gopcolor  30
+//		text "J" 50 50 10 "symbol" demcolor 30
+//		text "J" 60 50 10 "symbol" demcolor 40
+//		text "J" 70 50 10 "symbol" demcolor 50
+//		text "J" 80 50 10 "symbol" demcolor
+//	eslide
+edeck

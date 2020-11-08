@@ -1,0 +1,4 @@
+#!/bin/sh
+decksh usmap.dsh > 2020election.xml
+decksh usmap.dsh | pdfdeck -symbol stateface -pagesize 1600,900 2020election.xml
+decksh usmap.dsh | pngdeck -symbol stateface -pagesize 1600,900 2020election.xml 

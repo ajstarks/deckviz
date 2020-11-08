@@ -1,0 +1,110 @@
+<deck>
+<slide>
+<text align="c" xp="50" yp="92" sp="3" >2020 US Presidential Election</text>
+<text align="c" xp="50" yp="88" sp="2" font="sans" color="gray">states ordered by population (US census data, 2019 estimate)</text>
+<text xp="42" yp="83" sp="1" font="sans" color="red">Republican</text>
+<ellipse xp="40" yp="83.5" wp="1" hr="100" color="red"/>
+<text xp="57" yp="83" sp="1" font="sans" color="blue">Democratic</text>
+<ellipse xp="55" yp="83.5" wp="1" hr="100" color="blue"/>
+<text align="c" xp="11" yp="65" sp="15" font="symbol" color="blue">E</text>
+<text align="c" xp="25" yp="65" sp="11.62361728203789" font="symbol" color="red">q</text>
+<text align="c" xp="36" yp="65" sp="9.209837711846035" font="symbol" color="red">I</text>
+<text align="c" xp="47" yp="65" sp="8.559954618987923" font="symbol" color="blue">h</text>
+<text align="c" xp="56" yp="65" sp="6.424397145858894" font="symbol" color="blue">l</text>
+<text align="c" xp="63" yp="65" sp="6.38260533406429" font="symbol" color="blue">N</text>
+<text align="c" xp="70" yp="65" sp="6.06709237328587" font="symbol" color="red">i</text>
+<text align="c" xp="77" yp="65" sp="5.72301914877135" font="symbol" color="blue" opacity="20">J</text>
+<text align="c" xp="84" yp="65" sp="5.681493496186212" font="symbol" color="red" opacity="20">a</text>
+<text align="c" xp="92" yp="65" sp="5.520569271719568" font="symbol" color="blue">V</text>
+<text align="c" xp="11" yp="63" sp="1" font="sans" color="rgb(100,100,100)">CA</text>
+<text align="c" xp="25" yp="63" sp="1" font="sans" color="rgb(100,100,100)">TX</text>
+<text align="c" xp="36" yp="63" sp="1" font="sans" color="rgb(100,100,100)">FL</text>
+<text align="c" xp="47" yp="63" sp="1" font="sans" color="rgb(100,100,100)">NY</text>
+<text align="c" xp="56" yp="63" sp="1" font="sans" color="rgb(100,100,100)">PA</text>
+<text align="c" xp="63" yp="63" sp="1" font="sans" color="rgb(100,100,100)">IL</text>
+<text align="c" xp="70" yp="63" sp="1" font="sans" color="rgb(100,100,100)">OH</text>
+<text align="c" xp="77" yp="63" sp="1" font="sans" color="rgb(100,100,100)">GA</text>
+<text align="c" xp="84" yp="63" sp="1" font="sans" color="rgb(100,100,100)">NC</text>
+<text align="c" xp="92" yp="63" sp="1" font="sans" color="rgb(100,100,100)">MI</text>
+<text align="c" xp="11" yp="52" sp="5.1659042591226925" font="symbol" color="blue">e</text>
+<text align="c" xp="25" yp="52" sp="5.054601871541664" font="symbol" color="blue">s</text>
+<text align="c" xp="36" yp="52" sp="4.759025166627866" font="symbol" color="blue">u</text>
+<text align="c" xp="47" yp="52" sp="4.651092309690194" font="symbol" color="blue" opacity="20">D</text>
+<text align="c" xp="56" yp="52" sp="4.527094224135823" font="symbol" color="blue">S</text>
+<text align="c" xp="63" yp="52" sp="4.5067617795323835" font="symbol" color="red">p</text>
+<text align="c" xp="70" yp="52" sp="4.475633352326421" font="symbol" color="red">O</text>
+<text align="c" xp="77" yp="52" sp="4.284669417034149" font="symbol" color="red">X</text>
+<text align="c" xp="84" yp="52" sp="4.255212752196927" font="symbol" color="blue">T</text>
+<text align="c" xp="92" yp="52" sp="4.1835372650119185" font="symbol" color="blue">v</text>
+<text align="c" xp="11" yp="50" sp="1" font="sans" color="rgb(100,100,100)">NJ</text>
+<text align="c" xp="25" yp="50" sp="1" font="sans" color="rgb(100,100,100)">VA</text>
+<text align="c" xp="36" yp="50" sp="1" font="sans" color="rgb(100,100,100)">WA</text>
+<text align="c" xp="47" yp="50" sp="1" font="sans" color="rgb(100,100,100)">AZ</text>
+<text align="c" xp="56" yp="50" sp="1" font="sans" color="rgb(100,100,100)">MA</text>
+<text align="c" xp="63" yp="50" sp="1" font="sans" color="rgb(100,100,100)">TN</text>
+<text align="c" xp="70" yp="50" sp="1" font="sans" color="rgb(100,100,100)">IN</text>
+<text align="c" xp="77" yp="50" sp="1" font="sans" color="rgb(100,100,100)">MO</text>
+<text align="c" xp="84" yp="50" sp="1" font="sans" color="rgb(100,100,100)">MD</text>
+<text align="c" xp="92" yp="50" sp="1" font="sans" color="rgb(100,100,100)">WI</text>
+<text align="c" xp="11" yp="39" sp="4.163086349059514" font="symbol" color="blue">F</text>
+<text align="c" xp="25" yp="39" sp="4.124846751370492" font="symbol" color="blue">W</text>
+<text align="c" xp="36" yp="39" sp="3.9672323402818717" font="symbol" color="red">n</text>
+<text align="c" xp="47" yp="39" sp="3.8884026604979205" font="symbol" color="red">B</text>
+<text align="c" xp="56" yp="39" sp="3.8067277419753864" font="symbol" color="red">R</text>
+<text align="c" xp="63" yp="39" sp="3.748576931145916" font="symbol" color="red">Q</text>
+<text align="c" xp="70" yp="39" sp="3.6683323374462646" font="symbol" color="blue">k</text>
+<text align="c" xp="77" yp="39" sp="3.5846106578135455" font="symbol" color="red">j</text>
+<text align="c" xp="84" yp="39" sp="3.458856370961495" font="symbol" color="blue">G</text>
+<text align="c" xp="92" yp="39" sp="3.343489998732196" font="symbol" color="red">r</text>
+<text align="c" xp="11" yp="37" sp="1" font="sans" color="rgb(100,100,100)">CO</text>
+<text align="c" xp="25" yp="37" sp="1" font="sans" color="rgb(100,100,100)">MN</text>
+<text align="c" xp="36" yp="37" sp="1" font="sans" color="rgb(100,100,100)">SC</text>
+<text align="c" xp="47" yp="37" sp="1" font="sans" color="rgb(100,100,100)">AL</text>
+<text align="c" xp="56" yp="37" sp="1" font="sans" color="rgb(100,100,100)">LA</text>
+<text align="c" xp="63" yp="37" sp="1" font="sans" color="rgb(100,100,100)">KY</text>
+<text align="c" xp="70" yp="37" sp="1" font="sans" color="rgb(100,100,100)">OR</text>
+<text align="c" xp="77" yp="37" sp="1" font="sans" color="rgb(100,100,100)">OK</text>
+<text align="c" xp="84" yp="37" sp="1" font="sans" color="rgb(100,100,100)">CT</text>
+<text align="c" xp="92" yp="37" sp="1" font="sans" color="rgb(100,100,100)">UT</text>
+<text align="c" xp="11" yp="26" sp="3.3271518686341395" font="symbol" color="red">L</text>
+<text align="c" xp="25" yp="26" sp="3.303099937370073" font="symbol" color="blue">g</text>
+<text align="c" xp="36" yp="26" sp="3.2830811689399124" font="symbol" color="red">C</text>
+<text align="c" xp="47" yp="26" sp="3.2697073910505368" font="symbol" color="red">Y</text>
+<text align="c" xp="56" yp="26" sp="3.2495335503668517" font="symbol" color="red">P</text>
+<text align="c" xp="63" yp="26" sp="2.987392413888474" font="symbol" color="blue">f</text>
+<text align="c" xp="70" yp="26" sp="2.93524543564888" font="symbol" color="red">c</text>
+<text align="c" xp="77" yp="26" sp="2.889571038425967" font="symbol" color="red">w</text>
+<text align="c" xp="84" yp="26" sp="2.887939408628012" font="symbol" color="red">M</text>
+<text align="c" xp="92" yp="26" sp="2.768763973840088" font="symbol" color="blue">K</text>
+<text align="c" xp="11" yp="24" sp="1" font="sans" color="rgb(100,100,100)">IA</text>
+<text align="c" xp="25" yp="24" sp="1" font="sans" color="rgb(100,100,100)">NV</text>
+<text align="c" xp="36" yp="24" sp="1" font="sans" color="rgb(100,100,100)">AR</text>
+<text align="c" xp="47" yp="24" sp="1" font="sans" color="rgb(100,100,100)">MS</text>
+<text align="c" xp="56" yp="24" sp="1" font="sans" color="rgb(100,100,100)">KS</text>
+<text align="c" xp="63" yp="24" sp="1" font="sans" color="rgb(100,100,100)">NM</text>
+<text align="c" xp="70" yp="24" sp="1" font="sans" color="rgb(100,100,100)">NE</text>
+<text align="c" xp="77" yp="24" sp="1" font="sans" color="rgb(100,100,100)">WV</text>
+<text align="c" xp="84" yp="24" sp="1" font="sans" color="rgb(100,100,100)">ID</text>
+<text align="c" xp="92" yp="24" sp="1" font="sans" color="rgb(100,100,100)">HI</text>
+<text align="c" xp="11" yp="13" sp="2.7507328913759124" font="symbol" color="blue">d</text>
+<text align="c" xp="25" yp="13" sp="2.745756773658773" font="symbol" color="blue">U</text>
+<text align="c" xp="36" yp="13" sp="2.6573257776395134" font="symbol" color="red">Z</text>
+<text align="c" xp="47" yp="13" sp="2.6543023502866325" font="symbol" color="blue">m</text>
+<text align="c" xp="56" yp="13" sp="2.626820528992745" font="symbol" color="blue">H</text>
+<text align="c" xp="63" yp="13" sp="2.598212427232265" font="symbol" color="red">o</text>
+<text align="c" xp="70" yp="13" sp="2.558851364985145" font="symbol" color="red">b</text>
+<text align="c" xp="77" yp="13" sp="2.5490535596832586" font="symbol" color="red" opacity="20">A</text>
+<text align="c" xp="84" yp="13" sp="2.514521569413911" font="symbol" color="blue">t</text>
+<text align="c" xp="92" yp="13" sp="2.5" font="symbol" color="red">x</text>
+<text align="c" xp="11" yp="11" sp="1" font="sans" color="rgb(100,100,100)">NH</text>
+<text align="c" xp="25" yp="11" sp="1" font="sans" color="rgb(100,100,100)">ME</text>
+<text align="c" xp="36" yp="11" sp="1" font="sans" color="rgb(100,100,100)">MT</text>
+<text align="c" xp="47" yp="11" sp="1" font="sans" color="rgb(100,100,100)">RI</text>
+<text align="c" xp="56" yp="11" sp="1" font="sans" color="rgb(100,100,100)">DE</text>
+<text align="c" xp="63" yp="11" sp="1" font="sans" color="rgb(100,100,100)">SD</text>
+<text align="c" xp="70" yp="11" sp="1" font="sans" color="rgb(100,100,100)">ND</text>
+<text align="c" xp="77" yp="11" sp="1" font="sans" color="rgb(100,100,100)">AK</text>
+<text align="c" xp="84" yp="11" sp="1" font="sans" color="rgb(100,100,100)">VT</text>
+<text align="c" xp="92" yp="11" sp="1" font="sans" color="rgb(100,100,100)">WY</text>
+</slide>
+</deck>
