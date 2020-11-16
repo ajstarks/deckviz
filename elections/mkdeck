@@ -1,0 +1,2 @@
+#!/bin/sh
+decksh elections.dsh | pdfdeck -sans NotoSans-Regular -pagesize 1200,900 -stdout - > elections.pdf

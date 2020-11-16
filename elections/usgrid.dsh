@@ -1,0 +1,70 @@
+// US states in a grid
+startcol=20
+colsize=5
+ts=4.5
+
+col=startcol
+ctext AKchar col 50 ts "symbol"
+ctext HIchar col 10 ts "symbol"
+col+=colsize
+ctext WAchar col 40 ts "symbol"
+ctext ORchar col 35 ts "symbol"
+ctext CAchar col 30 ts "symbol"
+col+=colsize
+ctext IDchar col 35 ts "symbol"
+ctext NVchar col 30 ts "symbol"
+col+=colsize
+ctext MTchar col 40 ts "symbol"
+ctext WYchar col 35 ts "symbol"
+ctext UTchar col 30 ts "symbol"
+ctext AZchar col 25 ts "symbol"
+col+=colsize
+ctext NEchar col 35 ts "symbol"
+ctext COchar col 30 ts "symbol"
+ctext NMchar col 25 ts "symbol"
+col+=colsize
+ctext NDchar col 40 ts "symbol"
+ctext SDchar col 35 ts "symbol"
+ctext IAchar col 30 ts "symbol"
+ctext KSchar col 25 ts "symbol"
+ctext OKchar col 20 ts "symbol"
+ctext TXchar col 15 ts "symbol"
+col+=colsize
+ctext MNchar col 40 ts "symbol"
+ctext WIchar col 35 ts "symbol"
+ctext MOchar col 30 ts "symbol"
+ctext ARchar col 25 ts "symbol"
+ctext LAchar col 20 ts "symbol"
+col+=colsize
+ctext MIchar col 35 ts "symbol"
+ctext ILchar col 30 ts "symbol"
+ctext KYchar col 25 ts "symbol"
+ctext TNchar col 20 ts "symbol"
+ctext MSchar col 15 ts "symbol"
+col+=colsize
+ctext INchar col 30 ts "symbol"
+ctext WVchar col 25 ts "symbol"
+ctext NCchar col 20 ts "symbol"
+ctext ALchar col 15 ts "symbol"
+col+=colsize
+ctext OHchar col 30 ts "symbol"
+ctext VAchar col 25 ts "symbol"
+ctext SCchar col 20 ts "symbol"
+ctext GAchar col 15 ts "symbol"
+ctext FLchar col 10 ts "symbol"
+col+=colsize
+ctext NYchar col 35 ts "symbol"
+ctext PAchar col 30 ts "symbol"
+ctext MDchar col 25 ts "symbol"
+col+=colsize
+ctext VTchar col 45 ts "symbol"
+ctext MAchar col 40 ts "symbol"
+ctext CTchar col 35 ts "symbol"
+ctext NJchar col 30 ts "symbol"
+ctext DEchar col 25 ts "symbol"
+col+=colsize
+ctext NHchar col 45 ts "symbol"
+ctext RIchar col 35 ts "symbol"
+col+=colsize
+ctext MEchar col 50 ts "symbol"
+

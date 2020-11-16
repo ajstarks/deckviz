@@ -1,0 +1,70 @@
+// US states in a grid
+startcol=20
+colsize=5
+ts=colsize/2
+
+col=startcol
+ctext "AK" col 50 ts
+ctext "HI" col 10 ts
+col+=colsize
+ctext "WA" col 40 ts
+ctext "OR" col 35 ts
+ctext "CA" col 30 ts
+col+=colsize
+ctext "ID" col 35 ts
+ctext "NV" col 30 ts
+col+=colsize
+ctext "MT" col 40 ts
+ctext "WY" col 35 ts
+ctext "UT" col 30 ts
+ctext "AZ" col 25 ts
+col+=colsize
+ctext "NE" col 35 ts
+ctext "CO" col 30 ts
+ctext "NM" col 25 ts
+col+=colsize
+ctext "ND" col 40 ts
+ctext "SD" col 35 ts
+ctext "IA" col 30 ts
+ctext "KS" col 25 ts
+ctext "OK" col 20 ts
+ctext "TX" col 15 ts
+col+=colsize
+ctext "MN" col 40 ts
+ctext "WI" col 35 ts
+ctext "MO" col 30 ts
+ctext "AR" col 25 ts
+ctext "LA" col 20 ts
+col+=colsize
+ctext "MI" col 35 ts
+ctext "IL" col 30 ts
+ctext "KY" col 25 ts
+ctext "TN" col 20 ts
+ctext "MS" col 15 ts
+col+=colsize
+ctext "IN" col 30 ts
+ctext "WV" col 25 ts
+ctext "NC" col 20 ts
+ctext "AL" col 15 ts
+col+=colsize
+ctext "OH" col 30 ts
+ctext "VA" col 25 ts
+ctext "SC" col 20 ts
+ctext "GA" col 15 ts
+ctext "FL" col 10 ts
+col+=colsize
+ctext "NY" col 35 ts
+ctext "PA" col 30 ts
+ctext "MD" col 25 ts
+col+=colsize
+ctext "VT" col 45 ts
+ctext "MA" col 40 ts
+ctext "CT" col 35 ts
+ctext "NJ" col 30 ts
+ctext "DE" col 25 ts
+col+=colsize
+ctext "NH" col 45 ts
+ctext "RI" col 35 ts
+col+=colsize
+ctext "ME" col 50 ts
+

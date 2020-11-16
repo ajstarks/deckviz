@@ -1,0 +1,70 @@
+// US states in a grid
+startcol=20
+colsize=5
+ts=colsize*0.75
+
+col=startcol
+square col 50 ts "red" 20
+square col 10 ts "red" 20
+col+=colsize
+square col 40 ts "red" 20
+square col 35 ts "red" 20
+square col 30 ts "red" 20
+col+=colsize
+square col 35 ts "red" 20
+square col 30 ts "red" 20
+col+=colsize
+square col 40 ts "red" 20
+square col 35 ts "red" 20
+square col 30 ts "red" 20
+square col 25 ts "red" 20
+col+=colsize
+square col 35 ts "red" 20
+square col 30 ts "red" 20
+square col 25 ts "red" 20
+col+=colsize
+square col 40 ts "red" 20
+square col 35 ts "red" 20
+square col 30 ts "red" 20
+square col 25 ts "red" 20
+square col 20 ts "red" 20
+square col 15 ts "red" 20
+col+=colsize
+square col 40 ts "red" 20
+square col 35 ts "red" 20
+square col 30 ts "red" 20
+square col 25 ts "red" 20
+square col 20 ts "red" 20
+col+=colsize
+square col 35 ts "red" 20
+square col 30 ts "red" 20
+square col 25 ts "red" 20
+square col 20 ts "red" 20
+square col 15 ts "red" 20
+col+=colsize
+square col 30 ts "red" 20
+square col 25 ts "red" 20
+square col 20 ts "red" 20
+square col 15 ts "red" 20
+col+=colsize
+square col 30 ts "red" 20
+square col 25 ts "red" 20
+square col 20 ts "red" 20
+square col 15 ts "red" 20
+square col 10 ts "red" 20
+col+=colsize
+square col 35 ts "red" 20
+square col 30 ts "red" 20
+square col 25 ts "red" 20
+col+=colsize
+square col 45 ts "red" 20
+square col 40 ts "red" 20
+square col 35 ts "red" 20
+square col 30 ts "red" 20
+square col 25 ts "red" 20
+col+=colsize
+square col 45 ts "red" 20
+square col 35 ts "red" 20
+col+=colsize
+square col 50 ts "red" 20
+

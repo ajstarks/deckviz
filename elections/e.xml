@@ -1,0 +1,222 @@
+<deck>
+<slide>
+<text align="c" xp="10" yp="69.75" sp="1.2" >AK</text>
+<text align="c" xp="10" yp="24.75" sp="1.2" >HI</text>
+<ellipse xp="10" yp="66" wp="1.1696897372266137" hr="100" color="rgb(255,0,0)" opacity="100"/>
+<ellipse xp="10" yp="21" wp="1.3391732310157187" hr="100" color="rgb(0,0,255)" opacity="100"/>
+<text align="c" xp="17" yp="60.75" sp="1.2" >WA</text>
+<text align="c" xp="17" yp="51.75" sp="1.2" >OR</text>
+<text align="c" xp="17" yp="42.75" sp="1.2" >NV</text>
+<text align="c" xp="17" yp="33.75" sp="1.2" >CA</text>
+<ellipse xp="17" yp="57" wp="2.3759598923978116" hr="100" color="rgb(0,0,255)" opacity="100"/>
+<ellipse xp="17" yp="48" wp="1.8799843838574637" hr="100" color="rgb(0,0,255)" opacity="100"/>
+<ellipse xp="17" yp="39" wp="1.6815166412077833" hr="100" color="rgb(0,0,255)" opacity="100"/>
+<ellipse xp="17" yp="30" wp="5.046265044040321" hr="100" color="rgb(0,0,255)" opacity="100"/>
+<text align="c" xp="24" yp="60.75" sp="1.2" >MT</text>
+<text align="c" xp="24" yp="51.75" sp="1.2" >ID</text>
+<text align="c" xp="24" yp="42.75" sp="1.2" >UT</text>
+<text align="c" xp="24" yp="33.75" sp="1.2" >AZ</text>
+<ellipse xp="24" yp="57" wp="1.256071620175521" hr="100" color="rgb(255,0,0)" opacity="100"/>
+<ellipse xp="24" yp="48" wp="1.4226833922891022" hr="100" color="rgb(255,0,0)" opacity="100"/>
+<ellipse xp="24" yp="39" wp="1.7046014414332513" hr="100" color="rgb(255,0,0)" opacity="100"/>
+<ellipse xp="24" yp="30" wp="2.33158751716647" hr="100" color="rgb(0,0,255)" opacity="100"/>
+<text align="c" xp="31" yp="60.75" sp="1.2" >ND</text>
+<text align="c" xp="31" yp="51.75" sp="1.2" >WY</text>
+<text align="c" xp="31" yp="42.75" sp="1.2" >CO</text>
+<text align="c" xp="31" yp="33.75" sp="1.2" >NM</text>
+<ellipse xp="31" yp="57" wp="1.1777673837305354" hr="100" color="rgb(255,0,0)" opacity="100"/>
+<ellipse xp="31" yp="48" wp="1.1283791670955126" hr="100" color="rgb(255,0,0)" opacity="100"/>
+<ellipse xp="31" yp="39" wp="2.119398652861584" hr="100" color="rgb(0,0,255)" opacity="100"/>
+<ellipse xp="31" yp="30" wp="1.4887920719121917" hr="100" color="rgb(0,0,255)" opacity="100"/>
+<text align="c" xp="38" yp="60.75" sp="1.2" >SD</text>
+<text align="c" xp="38" yp="51.75" sp="1.2" >NE</text>
+<text align="c" xp="38" yp="42.75" sp="1.2" >KS</text>
+<text align="c" xp="38" yp="33.75" sp="1.2" >OK</text>
+<text align="c" xp="38" yp="24.75" sp="1.2" >TX</text>
+<ellipse xp="38" yp="57" wp="1.2096745111238434" hr="100" color="rgb(255,0,0)" opacity="100"/>
+<ellipse xp="38" yp="48" wp="1.4545035335956706" hr="100" color="rgb(255,0,0)" opacity="100"/>
+<ellipse xp="38" yp="39" wp="1.6504029491348617" hr="100" color="rgb(255,0,0)" opacity="100"/>
+<ellipse xp="38" yp="30" wp="1.8363857706355404" hr="100" color="rgb(255,0,0)" opacity="100"/>
+<ellipse xp="38" yp="21" wp="4.350907494167767" hr="100" color="rgb(255,0,0)" opacity="100"/>
+<text align="c" xp="45" yp="60.75" sp="1.2" >MN</text>
+<text align="c" xp="45" yp="51.75" sp="1.2" >IA</text>
+<text align="c" xp="45" yp="42.75" sp="1.2" >MO</text>
+<text align="c" xp="45" yp="33.75" sp="1.2" >AR</text>
+<text align="c" xp="45" yp="24.75" sp="1.2" >LA</text>
+<ellipse xp="45" yp="57" wp="2.1018669402376093" hr="100" color="rgb(0,0,255)" opacity="100"/>
+<ellipse xp="45" yp="48" wp="1.6953012997924444" hr="100" color="rgb(255,0,0)" opacity="100"/>
+<ellipse xp="45" yp="39" wp="2.174201759802227" hr="100" color="rgb(255,0,0)" opacity="100"/>
+<ellipse xp="45" yp="30" wp="1.6699567088710405" hr="100" color="rgb(255,0,0)" opacity="100"/>
+<ellipse xp="45" yp="21" wp="1.9499182665868833" hr="100" color="rgb(255,0,0)" opacity="100"/>
+<text align="c" xp="52" yp="60.75" sp="1.2" >WI</text>
+<text align="c" xp="52" yp="51.75" sp="1.2" >IL</text>
+<text align="c" xp="52" yp="42.75" sp="1.2" >TN</text>
+<text align="c" xp="52" yp="33.75" sp="1.2" >MS</text>
+<ellipse xp="52" yp="57" wp="2.128715528299828" hr="100" color="rgb(0,0,255)" opacity="100"/>
+<ellipse xp="52" yp="48" wp="2.964344657692365" hr="100" color="rgb(0,0,255)" opacity="100"/>
+<ellipse xp="52" yp="39" wp="2.2708971785776746" hr="100" color="rgb(255,0,0)" opacity="100"/>
+<ellipse xp="52" yp="30" wp="1.6621891633442583" hr="100" color="rgb(255,0,0)" opacity="100"/>
+<text align="c" xp="59" yp="60.75" sp="1.2" >MI</text>
+<text align="c" xp="59" yp="51.75" sp="1.2" >IN</text>
+<text align="c" xp="59" yp="42.75" sp="1.2" >KY</text>
+<text align="c" xp="59" yp="33.75" sp="1.2" >AL</text>
+<ellipse xp="59" yp="57" wp="2.66814918551612" hr="100" color="rgb(0,0,255)" opacity="100"/>
+<ellipse xp="59" yp="48" wp="2.25759394047209" hr="100" color="rgb(255,0,0)" opacity="100"/>
+<ellipse xp="59" yp="39" wp="1.9208437157330949" hr="100" color="rgb(255,0,0)" opacity="100"/>
+<ellipse xp="59" yp="30" wp="1.9900373577409505" hr="100" color="rgb(255,0,0)" opacity="100"/>
+<text align="c" xp="66" yp="51.75" sp="1.2" >OH</text>
+<text align="c" xp="66" yp="42.75" sp="1.2" >WV</text>
+<text align="c" xp="66" yp="33.75" sp="1.2" >GA</text>
+<ellipse xp="66" yp="48" wp="2.859496356040542" hr="100" color="rgb(255,0,0)" opacity="100"/>
+<ellipse xp="66" yp="39" wp="1.4237927402464645" hr="100" color="rgb(255,0,0)" opacity="100"/>
+<ellipse xp="66" yp="30" wp="2.740588660103841" hr="100" color="rgb(0,0,255)" opacity="100"/>
+<text align="c" xp="73" yp="69.75" sp="1.2" >NY</text>
+<text align="c" xp="73" yp="60.75" sp="1.2" >PA</text>
+<text align="c" xp="73" yp="51.75" sp="1.2" >VA</text>
+<text align="c" xp="73" yp="42.75" sp="1.2" >NC</text>
+<text align="c" xp="73" yp="33.75" sp="1.2" >SC</text>
+<text align="c" xp="73" yp="24.75" sp="1.2" >FL</text>
+<ellipse xp="73" yp="66" wp="3.6057198743431216" hr="100" color="rgb(0,0,255)" opacity="100"/>
+<ellipse xp="73" yp="57" wp="2.977955666304026" hr="100" color="rgb(0,0,255)" opacity="100"/>
+<ellipse xp="73" yp="48" wp="2.4934358088920483" hr="100" color="rgb(0,0,255)" opacity="100"/>
+<ellipse xp="73" yp="39" wp="2.7258871230007715" hr="100" color="rgb(255,0,0)" opacity="100"/>
+<ellipse xp="73" yp="30" wp="2.0280063276321854" hr="100" color="rgb(255,0,0)" opacity="100"/>
+<ellipse xp="73" yp="21" wp="3.77610251836748" hr="100" color="rgb(255,0,0)" opacity="100"/>
+<text align="c" xp="80" yp="78.75" sp="1.2" >VT</text>
+<text align="c" xp="80" yp="69.75" sp="1.2" >CT</text>
+<text align="c" xp="80" yp="60.75" sp="1.2" >NJ</text>
+<text align="c" xp="80" yp="51.75" sp="1.2" >DC</text>
+<text align="c" xp="80" yp="42.75" sp="1.2" >MD</text>
+<ellipse xp="80" yp="75" wp="1.1407644314703465" hr="100" color="rgb(0,0,255)" opacity="100"/>
+<ellipse xp="80" yp="66" wp="1.7688802660338225" hr="100" color="rgb(0,0,255)" opacity="100"/>
+<ellipse xp="80" yp="57" wp="2.5362626691706014" hr="100" color="rgb(0,0,255)" opacity="100"/>
+<ellipse xp="80" yp="48" wp="1.1628179459582826" hr="100" color="rgb(0,0,255)" opacity="100"/>
+<ellipse xp="80" yp="39" wp="2.1610518500782034" hr="100" color="rgb(0,0,255)" opacity="100"/>
+<text align="c" xp="87" yp="78.75" sp="1.2" >NH</text>
+<text align="c" xp="87" yp="69.75" sp="1.2" >MA</text>
+<text align="c" xp="87" yp="60.75" sp="1.2" >RI</text>
+<text align="c" xp="87" yp="51.75" sp="1.2" >DE</text>
+<ellipse xp="87" yp="75" wp="1.3260802969967058" hr="100" color="rgb(0,0,255)" opacity="100"/>
+<ellipse xp="87" yp="66" wp="2.2795446619637887" hr="100" color="rgb(0,0,255)" opacity="100"/>
+<ellipse xp="87" yp="57" wp="1.2537402454916846" hr="100" color="rgb(0,0,255)" opacity="100"/>
+<ellipse xp="87" yp="48" wp="1.2323466930550881" hr="100" color="rgb(0,0,255)" opacity="100"/>
+<text align="c" xp="94" yp="78.75" sp="1.2" >ME</text>
+<ellipse xp="94" yp="75" wp="1.3224441589347578" hr="100" color="rgb(0,0,255)" opacity="100"/>
+<text align="c" xp="50" yp="90" sp="4" >2020 US Presidential Election</text>
+<text align="c" xp="35" yp="87" sp="1" font="sans" color="rgb(0,0,255)">Biden (DEM)</text>
+<text align="c" xp="65" yp="87" sp="1" font="sans" color="rgb(255,0,0)">Trump (REP)</text>
+<ellipse xp="30" yp="87.5" wp="1" hr="100" color="rgb(0,0,255)"/>
+<ellipse xp="60" yp="87.5" wp="1" hr="100" color="rgb(255,0,0)"/>
+<text align="c" xp="50" yp="5" sp="1" font="sans" color="gray">Area of circles indicate state populations</text>
+</slide>
+<slide>
+<text align="c" xp="10" yp="69.75" sp="1.2" >AK</text>
+<text align="c" xp="10" yp="24.75" sp="1.2" >HI</text>
+<ellipse xp="10" yp="66" wp="1.1723192155755173" hr="100" color="rgb(255,0,0)" opacity="100"/>
+<ellipse xp="10" yp="21" wp="1.3418817880911433" hr="100" color="rgb(0,0,255)" opacity="100"/>
+<text align="c" xp="17" yp="60.75" sp="1.2" >WA</text>
+<text align="c" xp="17" yp="51.75" sp="1.2" >OR</text>
+<text align="c" xp="17" yp="42.75" sp="1.2" >NV</text>
+<text align="c" xp="17" yp="33.75" sp="1.2" >CA</text>
+<ellipse xp="17" yp="57" wp="2.3337256915733993" hr="100" color="rgb(0,0,255)" opacity="100"/>
+<ellipse xp="17" yp="48" wp="1.858751244026092" hr="100" color="rgb(0,0,255)" opacity="100"/>
+<ellipse xp="17" yp="39" wp="1.6512026033278586" hr="100" color="rgb(0,0,255)" opacity="100"/>
+<ellipse xp="17" yp="30" wp="5.024973345529076" hr="100" color="rgb(0,0,255)" opacity="100"/>
+<text align="c" xp="24" yp="60.75" sp="1.2" >MT</text>
+<text align="c" xp="24" yp="51.75" sp="1.2" >ID</text>
+<text align="c" xp="24" yp="42.75" sp="1.2" >UT</text>
+<text align="c" xp="24" yp="33.75" sp="1.2" >AZ</text>
+<ellipse xp="24" yp="57" wp="1.2491470168688275" hr="100" color="rgb(255,0,0)" opacity="100"/>
+<ellipse xp="24" yp="48" wp="1.399636151017589" hr="100" color="rgb(255,0,0)" opacity="100"/>
+<ellipse xp="24" yp="39" wp="1.6744275817132046" hr="100" color="rgb(255,0,0)" opacity="100"/>
+<ellipse xp="24" yp="30" wp="2.28615452622799" hr="100" color="rgb(255,0,0)" opacity="100"/>
+<text align="c" xp="31" yp="60.75" sp="1.2" >ND</text>
+<text align="c" xp="31" yp="51.75" sp="1.2" >WY</text>
+<text align="c" xp="31" yp="42.75" sp="1.2" >CO</text>
+<text align="c" xp="31" yp="33.75" sp="1.2" >NM</text>
+<ellipse xp="31" yp="57" wp="1.1757535050652568" hr="100" color="rgb(255,0,0)" opacity="100"/>
+<ellipse xp="31" yp="48" wp="1.1298803761715233" hr="100" color="rgb(255,0,0)" opacity="100"/>
+<ellipse xp="31" yp="39" wp="2.086971466862063" hr="100" color="rgb(0,0,255)" opacity="100"/>
+<ellipse xp="31" yp="30" wp="1.4877067594870832" hr="100" color="rgb(0,0,255)" opacity="100"/>
+<text align="c" xp="38" yp="60.75" sp="1.2" >SD</text>
+<text align="c" xp="38" yp="51.75" sp="1.2" >NE</text>
+<text align="c" xp="38" yp="42.75" sp="1.2" >KS</text>
+<text align="c" xp="38" yp="33.75" sp="1.2" >OK</text>
+<text align="c" xp="38" yp="24.75" sp="1.2" >TX</text>
+<ellipse xp="38" yp="57" wp="1.2040979953185944" hr="100" color="rgb(255,0,0)" opacity="100"/>
+<ellipse xp="38" yp="48" wp="1.4483405814843413" hr="100" color="rgb(255,0,0)" opacity="100"/>
+<ellipse xp="38" yp="39" wp="1.6499379214277838" hr="100" color="rgb(255,0,0)" opacity="100"/>
+<ellipse xp="38" yp="30" wp="1.8311947856433046" hr="100" color="rgb(255,0,0)" opacity="100"/>
+<ellipse xp="38" yp="21" wp="4.272986924077029" hr="100" color="rgb(255,0,0)" opacity="100"/>
+<text align="c" xp="45" yp="60.75" sp="1.2" >MN</text>
+<text align="c" xp="45" yp="51.75" sp="1.2" >IA</text>
+<text align="c" xp="45" yp="42.75" sp="1.2" >MO</text>
+<text align="c" xp="45" yp="33.75" sp="1.2" >AR</text>
+<text align="c" xp="45" yp="24.75" sp="1.2" >LA</text>
+<ellipse xp="45" yp="57" wp="2.084518060520272" hr="100" color="rgb(0,0,255)" opacity="100"/>
+<ellipse xp="45" yp="48" wp="1.6909526827241979" hr="100" color="rgb(255,0,0)" opacity="100"/>
+<ellipse xp="45" yp="39" wp="2.1670033276947036" hr="100" color="rgb(255,0,0)" opacity="100"/>
+<ellipse xp="45" yp="30" wp="1.6647607242488978" hr="100" color="rgb(255,0,0)" opacity="100"/>
+<ellipse xp="45" yp="21" wp="1.9545875422248518" hr="100" color="rgb(255,0,0)" opacity="100"/>
+<text align="c" xp="52" yp="60.75" sp="1.2" >WI</text>
+<text align="c" xp="52" yp="51.75" sp="1.2" >IL</text>
+<text align="c" xp="52" yp="42.75" sp="1.2" >TN</text>
+<text align="c" xp="52" yp="33.75" sp="1.2" >MS</text>
+<ellipse xp="52" yp="57" wp="2.121434074119057" hr="100" color="rgb(255,0,0)" opacity="100"/>
+<ellipse xp="52" yp="48" wp="2.979889033623679" hr="100" color="rgb(0,0,255)" opacity="100"/>
+<ellipse xp="52" yp="39" wp="2.245698977767736" hr="100" color="rgb(255,0,0)" opacity="100"/>
+<ellipse xp="52" yp="30" wp="1.6643911750603002" hr="100" color="rgb(255,0,0)" opacity="100"/>
+<text align="c" xp="59" yp="60.75" sp="1.2" >MI</text>
+<text align="c" xp="59" yp="51.75" sp="1.2" >IN</text>
+<text align="c" xp="59" yp="42.75" sp="1.2" >KY</text>
+<text align="c" xp="59" yp="33.75" sp="1.2" >AL</text>
+<ellipse xp="59" yp="57" wp="2.6639207088677126" hr="100" color="rgb(255,0,0)" opacity="100"/>
+<ellipse xp="59" yp="48" wp="2.2440789430045953" hr="100" color="rgb(255,0,0)" opacity="100"/>
+<ellipse xp="59" yp="39" wp="1.9160678910158215" hr="100" color="rgb(255,0,0)" opacity="100"/>
+<ellipse xp="59" yp="30" wp="1.9838361061759084" hr="100" color="rgb(255,0,0)" opacity="100"/>
+<text align="c" xp="66" yp="51.75" sp="1.2" >OH</text>
+<text align="c" xp="66" yp="42.75" sp="1.2" >WV</text>
+<text align="c" xp="66" yp="33.75" sp="1.2" >GA</text>
+<ellipse xp="66" yp="48" wp="2.8535438637635373" hr="100" color="rgb(255,0,0)" opacity="100"/>
+<ellipse xp="66" yp="39" wp="1.4322505412506288" hr="100" color="rgb(255,0,0)" opacity="100"/>
+<ellipse xp="66" yp="30" wp="2.7045827406397698" hr="100" color="rgb(255,0,0)" opacity="100"/>
+<text align="c" xp="73" yp="69.75" sp="1.2" >NY</text>
+<text align="c" xp="73" yp="60.75" sp="1.2" >PA</text>
+<text align="c" xp="73" yp="51.75" sp="1.2" >VA</text>
+<text align="c" xp="73" yp="42.75" sp="1.2" >NC</text>
+<text align="c" xp="73" yp="33.75" sp="1.2" >SC</text>
+<text align="c" xp="73" yp="24.75" sp="1.2" >FL</text>
+<ellipse xp="73" yp="66" wp="3.621184515816367" hr="100" color="rgb(0,0,255)" opacity="100"/>
+<ellipse xp="73" yp="57" wp="2.975898273341855" hr="100" color="rgb(255,0,0)" opacity="100"/>
+<ellipse xp="73" yp="48" wp="2.4777602751619" hr="100" color="rgb(0,0,255)" opacity="100"/>
+<ellipse xp="73" yp="39" wp="2.687631867141908" hr="100" color="rgb(255,0,0)" opacity="100"/>
+<ellipse xp="73" yp="30" wp="1.9985716011373347" hr="100" color="rgb(255,0,0)" opacity="100"/>
+<ellipse xp="73" yp="21" wp="3.7043132795509344" hr="100" color="rgb(255,0,0)" opacity="100"/>
+<text align="c" xp="80" yp="78.75" sp="1.2" >VT</text>
+<text align="c" xp="80" yp="69.75" sp="1.2" >CT</text>
+<text align="c" xp="80" yp="60.75" sp="1.2" >NJ</text>
+<text align="c" xp="80" yp="51.75" sp="1.2" >DC</text>
+<text align="c" xp="80" yp="42.75" sp="1.2" >MD</text>
+<ellipse xp="80" yp="75" wp="1.1406740103252566" hr="100" color="rgb(0,0,255)" opacity="100"/>
+<ellipse xp="80" yp="66" wp="1.7711364455778158" hr="100" color="rgb(0,0,255)" opacity="100"/>
+<ellipse xp="80" yp="57" wp="2.534870382467929" hr="100" color="rgb(0,0,255)" opacity="100"/>
+<ellipse xp="80" yp="48" wp="1.15747978810583" hr="100" color="rgb(0,0,255)" opacity="100"/>
+<ellipse xp="80" yp="39" wp="2.1549539001732123" hr="100" color="rgb(0,0,255)" opacity="100"/>
+<text align="c" xp="87" yp="78.75" sp="1.2" >NH</text>
+<text align="c" xp="87" yp="69.75" sp="1.2" >MA</text>
+<text align="c" xp="87" yp="60.75" sp="1.2" >RI</text>
+<text align="c" xp="87" yp="51.75" sp="1.2" >DE</text>
+<ellipse xp="87" yp="75" wp="1.3219965468323314" hr="100" color="rgb(0,0,255)" opacity="100"/>
+<ellipse xp="87" yp="66" wp="2.2701355745333256" hr="100" color="rgb(0,0,255)" opacity="100"/>
+<ellipse xp="87" yp="57" wp="1.2530980285321618" hr="100" color="rgb(0,0,255)" opacity="100"/>
+<ellipse xp="87" yp="48" wp="1.2260677054972693" hr="100" color="rgb(0,0,255)" opacity="100"/>
+<text align="c" xp="94" yp="78.75" sp="1.2" >ME</text>
+<ellipse xp="94" yp="75" wp="1.3194112947084047" hr="100" color="rgb(0,0,255)" opacity="100"/>
+<text align="c" xp="50" yp="90" sp="4" >2016 US Presidential Election</text>
+<text align="c" xp="35" yp="87" sp="1" font="sans" color="rgb(0,0,255)">Clinton (DEM)</text>
+<text align="c" xp="65" yp="87" sp="1" font="sans" color="rgb(255,0,0)">Trump (REP)</text>
+<ellipse xp="30" yp="87.5" wp="1" hr="100" color="rgb(0,0,255)"/>
+<ellipse xp="60" yp="87.5" wp="1" hr="100" color="rgb(255,0,0)"/>
+<text align="c" xp="50" yp="5" sp="1" font="sans" color="gray">Area of circles indicate state populations</text>
+</slide>
+</deck>

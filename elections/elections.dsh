@@ -1,0 +1,87 @@
+deck
+	include "2019pop.dsh"
+	min1=WY
+	max1=CA
+	min2=1
+	mid=50
+	max2=20
+	titley=90
+	titlesize=4
+	subsize=titlesize/2
+	suby=titley-5
+	subcy=suby+0.9
+	include "statescale.dsh"
+	slide
+		include "2020grid.dsh"
+		ctext "2020 US Presidential Election" mid titley titlesize
+		ctext "Biden (DEM)" 35 suby subsize "sans" demcolor
+		ctext "Trump (REP)" 65 suby subsize "sans" repcolor
+		circle 27 subcy 1 demcolor
+		circle 57 subcy 1 repcolor
+		ctext "Area of circles indicate state populations" 50 5 1 "sans" "gray"
+	eslide
+
+
+	include "2016pop.dsh"
+	include "statescale.dsh"
+	slide
+		include "2016grid.dsh"
+		ctext "2016 US Presidential Election" mid titley titlesize
+		ctext "Clinton (DEM)" 35 suby subsize "sans" demcolor
+		ctext "Trump (REP)" 65 suby subsize "sans" repcolor
+		circle 27 subcy 1 demcolor
+		circle 57 subcy 1 repcolor
+		ctext "Area of circles indicate state populations" 50 5 1 "sans" "gray"
+ 	eslide
+
+
+
+	include "2012pop.dsh"
+	include "statescale.dsh"
+	slide
+		include "2012grid.dsh"
+		ctext "2012 US Presidential Election" mid titley titlesize
+		ctext "Obama (DEM)" 35 suby subsize "sans" demcolor
+		ctext "Romney (REP)" 65 suby subsize "sans" repcolor
+		circle 27 subcy 1 demcolor
+		circle 57 subcy 1 repcolor
+		ctext "Area of circles indicate state populations" 50 5 1 "sans" "gray"
+ 	eslide
+
+
+	include "2008pop.dsh"
+	include "statescale.dsh"
+	slide
+		include "2008grid.dsh"
+		ctext "2008 US Presidential Election" mid titley titlesize
+		ctext "Obama (DEM)" 35 suby subsize "sans" demcolor
+		ctext "McCain (REP)" 65 suby subsize "sans" repcolor
+		circle 27 subcy 1 demcolor
+		circle 57 subcy 1 repcolor
+		ctext "Area of circles indicate state populations" 50 5 1 "sans" "gray"
+ 	eslide
+
+	include "2004pop.dsh"
+	include "statescale.dsh"
+	slide
+		include "2004grid.dsh"
+		ctext "2004 US Presidential Election" mid titley titlesize
+		ctext "Kerry (DEM)" 35 suby subsize "sans" demcolor
+		ctext "Bush (REP)" 65 suby subsize "sans" repcolor
+		circle 27 subcy 1 demcolor
+		circle 57 subcy 1 repcolor
+		ctext "Area of circles indicate state populations" 50 5 1 "sans" "gray"
+ 	eslide
+
+	include "2000pop.dsh"
+	include "statescale.dsh"
+	slide
+		include "2000grid.dsh"
+		ctext "2000 US Presidential Election" mid titley titlesize
+		ctext "Gore (DEM)" 35 suby subsize "sans" demcolor
+		ctext "Bush (REP)" 65 suby subsize "sans" repcolor
+		circle 27 subcy 1 demcolor
+		circle 57 subcy 1 repcolor
+		ctext "Area of circles indicate state populations" 50 5 1 "sans" "gray"
+ 	eslide
+edeck

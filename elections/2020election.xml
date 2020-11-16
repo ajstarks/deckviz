@@ -1,0 +1,120 @@
+<deck>
+<slide>
+<text align="c" xp="50" yp="92" sp="3" >2020 US Presidential Election</text>
+<text align="c" xp="50" yp="88" sp="2" font="sans" color="gray">states ordered by population (US census data, 2019 estimate)</text>
+<text xp="42" yp="83" sp="1" font="sans" color="red">Republican</text>
+<ellipse xp="40" yp="83.5" wp="1" hr="100" color="red"/>
+<text xp="57" yp="83" sp="1" font="sans" color="blue">Democratic</text>
+<ellipse xp="55" yp="83.5" wp="1" hr="100" color="blue"/>
+<text align="c" xp="11" yp="65" sp="CASize" font="symbol" color="blue">E</text>
+<text align="c" xp="25" yp="65" sp="TXSize" font="symbol" color="red">q</text>
+<text align="c" xp="36" yp="65" sp="FLSize" font="symbol" color="red">I</text>
+<text align="c" xp="47" yp="65" sp="NYSize" font="symbol" color="blue">h</text>
+<text align="c" xp="56" yp="65" sp="PASize" font="symbol" color="blue">l</text>
+<text align="c" xp="63" yp="65" sp="ILSize" font="symbol" color="blue">N</text>
+<text align="c" xp="70" yp="65" sp="OHSize" font="symbol" color="red">i</text>
+<text align="c" xp="77" yp="65" sp="GASize" font="symbol" color="blue" opacity="20">J</text>
+<text align="c" xp="84" yp="65" sp="NCSize" font="symbol" color="red" opacity="20">a</text>
+<text align="c" xp="92" yp="65" sp="MISize" font="symbol" color="blue">V</text>
+<text align="c" xp="11" yp="63" sp="1" font="sans" color="rgb(100,100,100)">CA</text>
+<text align="c" xp="25" yp="63" sp="1" font="sans" color="rgb(100,100,100)">TX</text>
+<text align="c" xp="36" yp="63" sp="1" font="sans" color="rgb(100,100,100)">FL</text>
+<text align="c" xp="47" yp="63" sp="1" font="sans" color="rgb(100,100,100)">NY</text>
+<text align="c" xp="56" yp="63" sp="1" font="sans" color="rgb(100,100,100)">PA</text>
+<text align="c" xp="63" yp="63" sp="1" font="sans" color="rgb(100,100,100)">IL</text>
+<text align="c" xp="70" yp="63" sp="1" font="sans" color="rgb(100,100,100)">OH</text>
+<text align="c" xp="77" yp="63" sp="1" font="sans" color="rgb(100,100,100)">GA</text>
+<text align="c" xp="84" yp="63" sp="1" font="sans" color="rgb(100,100,100)">NC</text>
+<text align="c" xp="92" yp="63" sp="1" font="sans" color="rgb(100,100,100)">MI</text>
+<ellipse xp="11" yp="70" wp="CASize" hr="100" color="blue" opacity="20"/>
+<ellipse xp="25" yp="70" wp="TXSize" hr="100" color="red" opacity="20"/>
+<ellipse xp="36" yp="70" wp="FLSize" hr="100" color="red" opacity="20"/>
+<ellipse xp="47" yp="70" wp="NYSize" hr="100" color="blue" opacity="20"/>
+<ellipse xp="56" yp="70" wp="PASize" hr="100" color="blue" opacity="20"/>
+<ellipse xp="63" yp="70" wp="ILSize" hr="100" color="blue" opacity="20"/>
+<ellipse xp="70" yp="70" wp="OHSize" hr="100" color="red" opacity="20"/>
+<ellipse xp="77" yp="70" wp="GASize" hr="100" color="blue" opacity="20"/>
+<ellipse xp="84" yp="70" wp="NCSize" hr="100" color="red" opacity="20"/>
+<ellipse xp="92" yp="70" wp="MISize" hr="100" color="blue" opacity="20"/>
+<text align="c" xp="11" yp="52" sp="NJSize" font="symbol" color="blue">e</text>
+<text align="c" xp="25" yp="52" sp="VASize" font="symbol" color="blue">s</text>
+<text align="c" xp="36" yp="52" sp="WASize" font="symbol" color="blue">u</text>
+<text align="c" xp="47" yp="52" sp="AZSize" font="symbol" color="blue" opacity="20">D</text>
+<text align="c" xp="56" yp="52" sp="MASize" font="symbol" color="blue">S</text>
+<text align="c" xp="63" yp="52" sp="TNSize" font="symbol" color="red">p</text>
+<text align="c" xp="70" yp="52" sp="INSize" font="symbol" color="red">O</text>
+<text align="c" xp="77" yp="52" sp="MOSize" font="symbol" color="red">X</text>
+<text align="c" xp="84" yp="52" sp="MDSize" font="symbol" color="blue">T</text>
+<text align="c" xp="92" yp="52" sp="WISize" font="symbol" color="blue">v</text>
+<text align="c" xp="11" yp="50" sp="1" font="sans" color="rgb(100,100,100)">NJ</text>
+<text align="c" xp="25" yp="50" sp="1" font="sans" color="rgb(100,100,100)">VA</text>
+<text align="c" xp="36" yp="50" sp="1" font="sans" color="rgb(100,100,100)">WA</text>
+<text align="c" xp="47" yp="50" sp="1" font="sans" color="rgb(100,100,100)">AZ</text>
+<text align="c" xp="56" yp="50" sp="1" font="sans" color="rgb(100,100,100)">MA</text>
+<text align="c" xp="63" yp="50" sp="1" font="sans" color="rgb(100,100,100)">TN</text>
+<text align="c" xp="70" yp="50" sp="1" font="sans" color="rgb(100,100,100)">IN</text>
+<text align="c" xp="77" yp="50" sp="1" font="sans" color="rgb(100,100,100)">MO</text>
+<text align="c" xp="84" yp="50" sp="1" font="sans" color="rgb(100,100,100)">MD</text>
+<text align="c" xp="92" yp="50" sp="1" font="sans" color="rgb(100,100,100)">WI</text>
+<text align="c" xp="11" yp="39" sp="COSize" font="symbol" color="blue">F</text>
+<text align="c" xp="25" yp="39" sp="MNSize" font="symbol" color="blue">W</text>
+<text align="c" xp="36" yp="39" sp="SCSize" font="symbol" color="red">n</text>
+<text align="c" xp="47" yp="39" sp="ALSize" font="symbol" color="red">B</text>
+<text align="c" xp="56" yp="39" sp="LASize" font="symbol" color="red">R</text>
+<text align="c" xp="63" yp="39" sp="KYSize" font="symbol" color="red">Q</text>
+<text align="c" xp="70" yp="39" sp="ORSize" font="symbol" color="blue">k</text>
+<text align="c" xp="77" yp="39" sp="OKSize" font="symbol" color="red">j</text>
+<text align="c" xp="84" yp="39" sp="CTSize" font="symbol" color="blue">G</text>
+<text align="c" xp="92" yp="39" sp="UTSize" font="symbol" color="red">r</text>
+<text align="c" xp="11" yp="37" sp="1" font="sans" color="rgb(100,100,100)">CO</text>
+<text align="c" xp="25" yp="37" sp="1" font="sans" color="rgb(100,100,100)">MN</text>
+<text align="c" xp="36" yp="37" sp="1" font="sans" color="rgb(100,100,100)">SC</text>
+<text align="c" xp="47" yp="37" sp="1" font="sans" color="rgb(100,100,100)">AL</text>
+<text align="c" xp="56" yp="37" sp="1" font="sans" color="rgb(100,100,100)">LA</text>
+<text align="c" xp="63" yp="37" sp="1" font="sans" color="rgb(100,100,100)">KY</text>
+<text align="c" xp="70" yp="37" sp="1" font="sans" color="rgb(100,100,100)">OR</text>
+<text align="c" xp="77" yp="37" sp="1" font="sans" color="rgb(100,100,100)">OK</text>
+<text align="c" xp="84" yp="37" sp="1" font="sans" color="rgb(100,100,100)">CT</text>
+<text align="c" xp="92" yp="37" sp="1" font="sans" color="rgb(100,100,100)">UT</text>
+<text align="c" xp="11" yp="26" sp="IASize" font="symbol" color="red">L</text>
+<text align="c" xp="25" yp="26" sp="NVSize" font="symbol" color="blue">g</text>
+<text align="c" xp="36" yp="26" sp="ARSize" font="symbol" color="red">C</text>
+<text align="c" xp="47" yp="26" sp="MSSize" font="symbol" color="red">Y</text>
+<text align="c" xp="56" yp="26" sp="KSSize" font="symbol" color="red">P</text>
+<text align="c" xp="63" yp="26" sp="NMSize" font="symbol" color="blue">f</text>
+<text align="c" xp="70" yp="26" sp="NESize" font="symbol" color="red">c</text>
+<text align="c" xp="77" yp="26" sp="WVSize" font="symbol" color="red">w</text>
+<text align="c" xp="84" yp="26" sp="IDSize" font="symbol" color="red">M</text>
+<text align="c" xp="92" yp="26" sp="HISize" font="symbol" color="blue">K</text>
+<text align="c" xp="11" yp="24" sp="1" font="sans" color="rgb(100,100,100)">IA</text>
+<text align="c" xp="25" yp="24" sp="1" font="sans" color="rgb(100,100,100)">NV</text>
+<text align="c" xp="36" yp="24" sp="1" font="sans" color="rgb(100,100,100)">AR</text>
+<text align="c" xp="47" yp="24" sp="1" font="sans" color="rgb(100,100,100)">MS</text>
+<text align="c" xp="56" yp="24" sp="1" font="sans" color="rgb(100,100,100)">KS</text>
+<text align="c" xp="63" yp="24" sp="1" font="sans" color="rgb(100,100,100)">NM</text>
+<text align="c" xp="70" yp="24" sp="1" font="sans" color="rgb(100,100,100)">NE</text>
+<text align="c" xp="77" yp="24" sp="1" font="sans" color="rgb(100,100,100)">WV</text>
+<text align="c" xp="84" yp="24" sp="1" font="sans" color="rgb(100,100,100)">ID</text>
+<text align="c" xp="92" yp="24" sp="1" font="sans" color="rgb(100,100,100)">HI</text>
+<text align="c" xp="11" yp="13" sp="NHSize" font="symbol" color="blue">d</text>
+<text align="c" xp="25" yp="13" sp="MESize" font="symbol" color="blue">U</text>
+<text align="c" xp="36" yp="13" sp="MTSize" font="symbol" color="red">Z</text>
+<text align="c" xp="47" yp="13" sp="RISize" font="symbol" color="blue">m</text>
+<text align="c" xp="56" yp="13" sp="DESize" font="symbol" color="blue">H</text>
+<text align="c" xp="63" yp="13" sp="SDSize" font="symbol" color="red">o</text>
+<text align="c" xp="70" yp="13" sp="NDSize" font="symbol" color="red">b</text>
+<text align="c" xp="77" yp="13" sp="AKSize" font="symbol" color="red" opacity="20">A</text>
+<text align="c" xp="84" yp="13" sp="VTSize" font="symbol" color="blue">t</text>
+<text align="c" xp="92" yp="13" sp="WYSize" font="symbol" color="red">x</text>
+<text align="c" xp="11" yp="11" sp="1" font="sans" color="rgb(100,100,100)">NH</text>
+<text align="c" xp="25" yp="11" sp="1" font="sans" color="rgb(100,100,100)">ME</text>
+<text align="c" xp="36" yp="11" sp="1" font="sans" color="rgb(100,100,100)">MT</text>
+<text align="c" xp="47" yp="11" sp="1" font="sans" color="rgb(100,100,100)">RI</text>
+<text align="c" xp="56" yp="11" sp="1" font="sans" color="rgb(100,100,100)">DE</text>
+<text align="c" xp="63" yp="11" sp="1" font="sans" color="rgb(100,100,100)">SD</text>
+<text align="c" xp="70" yp="11" sp="1" font="sans" color="rgb(100,100,100)">ND</text>
+<text align="c" xp="77" yp="11" sp="1" font="sans" color="rgb(100,100,100)">AK</text>
+<text align="c" xp="84" yp="11" sp="1" font="sans" color="rgb(100,100,100)">VT</text>
+<text align="c" xp="92" yp="11" sp="1" font="sans" color="rgb(100,100,100)">WY</text>
+</slide>
+</deck>

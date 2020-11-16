@@ -1,0 +1,156 @@
+// US states in a grid
+// acircle denote population
+startcol=10
+toprow=75
+colsize=7
+rowsize=9
+tysize=9
+ts=1.2
+op=100
+demcolor="rgb(0,0,255)"
+repcolor="rgb(255,0,0)"
+
+row1=toprow
+row2=row1-rowsize
+row3=row2-rowsize
+row4=row3-rowsize
+row5=row4-rowsize
+row6=row5-rowsize
+row7=row6-rowsize
+
+ty1=row1+3.75
+ty2=ty1-tysize
+ty3=ty2-tysize
+ty4=ty3-tysize
+ty5=ty4-tysize
+ty6=ty5-tysize
+ty7=ty6-tysize
+
+col=startcol
+ctext "AK" col ty2 ts
+ctext "HI" col ty7 ts
+acircle col row2 AKSize repcolor op
+acircle col row7 HISize demcolor op
+
+col+=colsize
+ctext "WA" col ty3 ts
+ctext "OR" col ty4 ts
+ctext "NV" col ty5 ts
+ctext "CA" col ty6 ts
+acircle col row3 WASize demcolor op
+acircle col row4 ORSize demcolor op
+acircle col row5 NVSize demcolor op
+acircle col row6 CASize demcolor op
+
+col+=colsize
+ctext "MT" col ty3 ts
+ctext "ID" col ty4 ts
+ctext "UT" col ty5 ts
+ctext "AZ" col ty6 ts
+acircle col row3 MTSize repcolor op
+acircle col row4 IDSize repcolor op
+acircle col row5 UTSize repcolor op
+acircle col row6 AZSize demcolor op
+
+col+=colsize
+ctext "ND" col ty3 ts
+ctext "WY" col ty4 ts
+ctext "CO" col ty5 ts
+ctext "NM" col ty6 ts
+acircle col row3 NDSize repcolor op
+acircle col row4 WYSize repcolor op
+acircle col row5 COSize demcolor op
+acircle col row6 NMSize demcolor op
+
+col+=colsize
+ctext "SD" col ty3 ts
+ctext "NE" col ty4 ts
+ctext "KS" col ty5 ts
+ctext "OK" col ty6 ts
+ctext "TX" col ty7 ts
+acircle col row3 SDSize repcolor op
+acircle col row4 NESize repcolor op
+acircle col row5 KSSize repcolor op
+acircle col row6 OKSize repcolor op
+acircle col row7 TXSize repcolor op
+
+col+=colsize
+ctext "MN" col ty3 ts
+ctext "IA" col ty4 ts
+ctext "MO" col ty5 ts
+ctext "AR" col ty6 ts
+ctext "LA" col ty7 ts
+acircle col row3 MNSize demcolor op
+acircle col row4 IASize repcolor op
+acircle col row5 MOSize repcolor op
+acircle col row6 ARSize repcolor op
+acircle col row7 LASize repcolor op
+
+col+=colsize
+ctext "WI" col ty3 ts
+ctext "IL" col ty4 ts
+ctext "TN" col ty5 ts
+ctext "MS" col ty6 ts
+acircle col row3 WISize demcolor op
+acircle col row4 ILSize demcolor op
+acircle col row5 TNSize repcolor op
+acircle col row6 MSSize repcolor op
+
+col+=colsize
+ctext "MI" col ty3 ts
+ctext "IN" col ty4 ts
+ctext "KY" col ty5 ts
+ctext "AL" col ty6 ts
+acircle col row3 MISize demcolor op
+acircle col row4 INSize repcolor op
+acircle col row5 KYSize repcolor op
+acircle col row6 ALSize repcolor op
+
+col+=colsize
+ctext "OH" col ty4 ts
+ctext "WV" col ty5 ts
+ctext "GA" col ty6 ts
+acircle col row4 OHSize repcolor op
+acircle col row5 WVSize repcolor op
+acircle col row6 GASize demcolor op
+
+col+=colsize
+ctext "NY" col ty2 ts
+ctext "PA" col ty3 ts
+ctext "VA" col ty4 ts
+ctext "NC" col ty5 ts
+ctext "SC" col ty6 ts
+ctext "FL" col ty7 ts
+acircle col row2 NYSize demcolor op
+acircle col row3 PASize demcolor op
+acircle col row4 VASize demcolor op
+acircle col row5 NCSize repcolor op
+acircle col row6 SCSize repcolor op
+acircle col row7 FLSize repcolor op
+
+col+=colsize
+ctext "VT" col ty1 ts
+ctext "CT" col ty2 ts
+ctext "NJ" col ty3 ts
+ctext "DC" col ty4 ts
+ctext "MD" col ty5 ts
+acircle col row1 VTSize demcolor op
+acircle col row2 CTSize demcolor op
+acircle col row3 NJSize demcolor op
+acircle col row4 DCSize demcolor op
+acircle col row5 MDSize demcolor op
+
+col+=colsize
+ctext "NH" col ty1 ts
+ctext "MA" col ty2 ts
+ctext "RI" col ty3 ts
+ctext "DE" col ty4 ts
+acircle col row1 NHSize demcolor op
+acircle col row2 MASize demcolor op
+acircle col row3 RISize demcolor op
+acircle col row4 DESize demcolor op
+
+col+=colsize
+ctext "ME" col ty1 ts
+acircle col row1 MESize demcolor op
+

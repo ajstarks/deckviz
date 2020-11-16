@@ -1,0 +1,8 @@
+deck
+	slide
+		demcolor="blue"
+		repcolor="red"
+		include "mapchar.dsh"
+		include "usa.dsh"
+	eslide
+edeck
