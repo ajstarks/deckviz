@@ -22,8 +22,8 @@ type egrid struct {
 
 var partymap = map[string]string{"r": "red", "d": "blue", "i": "gray"}
 
-// vmap maps one range into another
-func vmap(value, low1, high1, low2, high2 float64) float64 {
+// maprange maps one range into another
+func maprange(value, low1, high1, low2, high2 float64) float64 {
 	return low2 + (high2-low2)*(value-low1)/(high1-low1)
 }
 
@@ -61,12 +61,14 @@ func readData(r io.Reader) ([]egrid, int, int, string, error) {
 		if len(fields) < 5 { // skip incomplete records
 			continue
 		}
+		// name,col,row,party,population
 		d.name = fields[0]
 		d.col = atoi(fields[1])
 		d.row = atoi(fields[2])
 		d.party = fields[3]
 		d.population = atoi(fields[4])
 		data = append(data, d)
+		// compute min, max
 		if d.population > max {
 			max = d.population
 		}
@@ -86,7 +88,7 @@ func process(startx, starty, rowsize, colsize float64, data []egrid, min, max in
 	for _, d := range data {
 		x := startx + (float64(d.row) * colsize)
 		y := starty - (float64(d.col) * rowsize)
-		r := vmap(area(float64(d.population)), amin, amax, 2, colsize)
+		r := maprange(area(float64(d.population)), amin, amax, 2, colsize)
 		circle(x, y, r, partymap[d.party])
 		ctext(x, y-0.5, 1.2, d.name, "white")
 	}
@@ -95,13 +97,17 @@ func process(startx, starty, rowsize, colsize float64, data []egrid, min, max in
 
 // showtitle shows the title and subhead
 func showtitle(s string, top float64) {
-	fields := strings.Fields(s)
-	if len(fields) != 3 {
+	fields := strings.Fields(s) // year, democratic, republican, third-party (optional)
+	if len(fields) < 3 {
 		return
 	}
+	suby := top - 7
 	ctext(50, top, 3.6, fields[0]+" US Presidential Election", "")
-	legend(20, top-5, 2.0, fields[1], partymap["d"])
-	legend(80, top-5, 2.0, fields[2], partymap["r"])
+	legend(20, suby, 2.0, fields[1], partymap["d"])
+	legend(80, suby, 2.0, fields[2], partymap["r"])
+	if len(fields) > 3 {
+		legend(50, suby, 2.0, fields[3], partymap["i"])
+	}
 }
 
 // circle makes a circle
@@ -132,7 +138,7 @@ func beginPage(bgcolor, textcolor string) {
 
 // endPage ends a page
 func endPage() {
-	ctext(50, 5, 1.5, "Area of circle denotes state population: source U.S. Census", "gray")
+	ctext(50, 5, 1.5, "The area of a circle denotes state population: source U.S. Census", "gray")
 	fmt.Println("eslide")
 }
 
@@ -148,7 +154,7 @@ func endDoc() {
 
 func main() {
 	beginDoc()
-	for _, f := range os.Args[1:] {
+	for _, f := range os.Args[1:] { // for every file, make a page
 		r, err := os.Open(f)
 		if err != nil {
 			fmt.Fprintf(os.Stderr, "%v\n", err)
