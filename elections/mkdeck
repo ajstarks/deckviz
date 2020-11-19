@@ -1,4 +1,4 @@
 #!/bin/sh
-decksh elections.dsh | pdfdeck -sans NotoSans-Regular -pagesize 1200,900 -stdout - > elections0.pdf
-go run elections.go 2000.d 2004.d 2008.d 2012.d 2016.d 2020.d|decksh|pdfdeck -pagesize 1200,900 -sans NotoSans-Regular -stdout - > elections1.pdf
+# decksh elections.dsh | pdfdeck -sans PublicSans-Regular -pagesize 1200,900 -stdout - > elections0.pdf
+go run elections.go 1920.d 1924.d 1928.d 1932.d 1936.d 1940.d 1944.d 1948.d 1952.d 1956.d 1960.d 1964.d 1968.d 1972.d 1976.d 1980.d 1984.d 1988.d 1992.d 1996.d 2000.d 2004.d 2008.d 2012.d 2016.d 2020.d|decksh|pdfdeck -pagesize 1200,900 -sans PublicSans-Regular -stdout - > elections.pdf
 

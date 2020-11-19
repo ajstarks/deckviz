@@ -166,6 +166,7 @@ func main() {
 			continue
 		}
 		process(10, 75, 9, 7, data, min, max, title)
+		r.Close()
 	}
 	endDoc()
 }
