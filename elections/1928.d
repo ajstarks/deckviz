@@ -1,4 +1,4 @@
-# 1928 Smrth Hoover
+# 1928 Smith Hoover
 AL	5	7	d	2640000
 AZ	5	2	r	422000
 AR	5	5	d	1847000
