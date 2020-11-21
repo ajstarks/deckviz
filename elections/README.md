@@ -29,7 +29,7 @@ For the election of 2000, the official 2000 census data is used.
 
 ## Data from US Census: 
 
-https://www.census.gov/search-results.html?q=State+Intercensal+Tables&page=1&stateGeo=none&searchtype=web&cssp=SERP&_charset_=UTF-8
-https://www.census.gov/data/tables/time-series/demo/popest/intercensal-2000-2010-state.html
-https://www.census.gov/data/tables/time-series/demo/popest/pre-1980-state.html
-https://www.census.gov/data/tables/time-series/demo/popest/pre-1980-state.html
+* https://www.census.gov/search-results.html?q=State+Intercensal+Tables&page=1&stateGeo=none&searchtype=web&cssp=SERP&_charset_=UTF-8
+* https://www.census.gov/data/tables/time-series/demo/popest/intercensal-2000-2010-state.html
+* https://www.census.gov/data/tables/time-series/demo/popest/pre-1980-state.html
+* https://www.census.gov/data/tables/time-series/demo/popest/pre-1980-state.html

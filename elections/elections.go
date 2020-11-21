@@ -3,6 +3,7 @@ package main
 
 import (
 	"bufio"
+	"flag"
 	"fmt"
 	"io"
 	"math"
@@ -20,7 +21,13 @@ type egrid struct {
 	population int
 }
 
-var partymap = map[string]string{"r": "red", "d": "blue", "i": "gray"}
+// command line options
+type options struct {
+	top, left, rowsize, colsize float64
+	bgcolor, textcolor          string
+}
+
+var partyColors = map[string]string{"r": "red", "d": "blue", "i": "gray"}
 
 // maprange maps one range into another
 func maprange(value, low1, high1, low2, high2 float64) float64 {
@@ -80,16 +87,16 @@ func readData(r io.Reader) ([]egrid, int, int, string, error) {
 }
 
 // process walks the data, making the visualization
-func process(startx, starty, rowsize, colsize float64, data []egrid, min, max int, title string) {
+func process(opts options, data []egrid, min, max int, title string) {
 	amin := area(float64(min))
 	amax := area(float64(max))
-	beginPage("black", "white")
-	showtitle(title, starty+15)
+	beginPage(opts.bgcolor, opts.textcolor)
+	showtitle(title, opts.top+15)
 	for _, d := range data {
-		x := startx + (float64(d.row) * colsize)
-		y := starty - (float64(d.col) * rowsize)
-		r := maprange(area(float64(d.population)), amin, amax, 2, colsize)
-		circle(x, y, r, partymap[d.party])
+		x := opts.left + (float64(d.row) * opts.colsize)
+		y := opts.top - (float64(d.col) * opts.rowsize)
+		r := maprange(area(float64(d.population)), amin, amax, 2, opts.colsize)
+		circle(x, y, r, partyColors[d.party])
 		ctext(x, y-0.5, 1.2, d.name, "white")
 	}
 	endPage()
@@ -103,10 +110,10 @@ func showtitle(s string, top float64) {
 	}
 	suby := top - 7
 	ctext(50, top, 3.6, fields[0]+" US Presidential Election", "")
-	legend(20, suby, 2.0, fields[1], partymap["d"])
-	legend(80, suby, 2.0, fields[2], partymap["r"])
+	legend(20, suby, 2.0, fields[1], partyColors["d"])
+	legend(80, suby, 2.0, fields[2], partyColors["r"])
 	if len(fields) > 3 {
-		legend(50, suby, 2.0, fields[3], partymap["i"])
+		legend(50, suby, 2.0, fields[3], partyColors["i"])
 	}
 }
 
@@ -138,7 +145,7 @@ func beginPage(bgcolor, textcolor string) {
 
 // endPage ends a page
 func endPage() {
-	ctext(50, 5, 1.5, "The area of a circle denotes state population: source U.S. Census", "gray")
+	ctext(50, 5, 1.2, "The area of a circle denotes state population: source U.S. Census", "gray")
 	fmt.Println("eslide")
 }
 
@@ -153,8 +160,17 @@ func endDoc() {
 }
 
 func main() {
+	var opts options
+	flag.Float64Var(&opts.top, "top", 75, "top")
+	flag.Float64Var(&opts.left, "left", 7, "left")
+	flag.Float64Var(&opts.rowsize, "rowsize", 9, "rowsize")
+	flag.Float64Var(&opts.colsize, "colsize", 7, "colsize")
+	flag.StringVar(&opts.bgcolor, "bgcolor", "black", "background color")
+	flag.StringVar(&opts.textcolor, "textcolor", "white", "textcolor")
+	flag.Parse()
+
 	beginDoc()
-	for _, f := range os.Args[1:] { // for every file, make a page
+	for _, f := range flag.Args() { // for every file, make a page
 		r, err := os.Open(f)
 		if err != nil {
 			fmt.Fprintf(os.Stderr, "%v\n", err)
@@ -165,7 +181,7 @@ func main() {
 			fmt.Fprintf(os.Stderr, "%v\n", err)
 			continue
 		}
-		process(10, 75, 9, 7, data, min, max, title)
+		process(opts, data, min, max, title)
 		r.Close()
 	}
 	endDoc()
