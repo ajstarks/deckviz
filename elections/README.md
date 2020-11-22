@@ -32,7 +32,25 @@ Files named with the nyt prefix, like ```nyt-2008.d``` use the layout from the N
 
 ![538-layout](5.png)
 
-## Running 
+## Running
+
+here are the command line options:
+```
+ -bgcolor string
+    	background color (default "black")
+  -colsize float
+    	colsize (default 7)
+  -left float
+    	left (default 7)
+  -rowsize float
+    	rowsize (default 9)
+  -textcolor string
+    	textcolor (default "white")
+  -top float
+    	top (default 75)
+```
+
+This command will make a PDF showing the elections from 1920-2020 using 538 layout style:
 
 	go run elections.go 1920.d 1924.d 1928.d 1932.d 1936.d 1940.d 1944.d 1948.d 1952.d 1956.d 1960.d 1964.d 1968.d 1972.d 1976.d 1980.d 1984.d 1988.d 1992.d 1996.d 2000.d 2004.d 2008.d 2012.d 2016.d 2020.d|decksh|pdfdeck -pagesize 1200,900 -sans PublicSans-Regular -stdout - > elections.pdf
 
