@@ -11,16 +11,26 @@ Input data file format (tab-separated), with columns in this order:
 
 A record that begis with the '#' is treated as a comment, and is used to build the header
 
-	# Year Dem Candidate Rep Candidate
+	# Year Democratic-Candidate Republican-Candidate Third-Party-Candidate
 
-The states are arranged in a grid with rows numbered 0-6 west to east, and and columns numbered 0-12 north
+The states are arranged in a grid with rows numbered 0-n west to east, and and columns numbered 0-n north
 to south.
 
-The party is designated as 'd' for the Democratic Party, and 'r' for Republican. 
+The party is designated as 'd' for the Democratic Party, and 'r' for Republican, 'i' for independent or third-party.
 
-The population is from the US Census State Intercensal tables, using the  data closest 
+The population is from the US Census State Intercensal tables, using the data closest 
 to the election year. For example, for election year 2020, the data estimated from 2019 is used. 
 For the election of 2000, the official 2000 census data is used.
+
+This repository has data files for two layout schemes: files named for year like ```2008.d``` use the layout shown on the Five-Thirty Eight
+website. 
+
+![nyt-layout](n.png)
+
+
+Files named with the nyt prefix, like ```nyt-2008.d``` use the layout from the New York Times.
+
+![538-layout](5.png)
 
 ## Running 
 
