@@ -25,12 +25,11 @@ For the election of 2000, the official 2000 census data is used.
 This repository has data files for two layout schemes: files named for year like ```2008.d``` use the layout shown on the Five-Thirty Eight
 website. 
 
-![nyt-layout](n.png)
-
+![538-layout](5.png)
 
 Files named with the nyt prefix, like ```nyt-2008.d``` use the layout from the New York Times.
 
-![538-layout](5.png)
+![nyt-layout](n.png)
 
 ## Running
 
