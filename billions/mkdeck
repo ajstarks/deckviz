@@ -1,0 +1,2 @@
+#!/bin/sh
+decksh billions.dsh|pdfdeck -sans PublicSans-Regular -pagesize 1200,900 -stdout - > billions.pdf

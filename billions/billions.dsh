@@ -1,0 +1,336 @@
+// Top US Billionares, August 2020
+deck
+	canvas 1200 900
+	bezoscolor="rgb(255,153,0)"
+		gatescolor="rgb(242,80,34)"
+		zuckcolor="rgb(59, 89, 152)"
+		muskcolor="rgb(232, 33, 39)"
+		buffettcolor="rgb(0,0,128)"
+		ballmercolor="rgb(213,0,50)"
+		ellisoncolor="rgb(248, 1, 2)"
+		pagecolor="rgb(15,157,88)"
+		brincolor="rgb(244,160,0)"
+		waltoncolor="rgb(0,0,128)"
+
+	slide // "black" "white"
+
+		text "Top 10 US Billionaires Net Worth (December 2020)" 5 97 1.7
+		cmin=0.1
+		cmax=200
+		bc=vmap  186.7e9 0 200e9 cmin cmax 
+		gc=vmap  120.1e9 0 200e9 cmin cmax
+		zc=vmap  101.5e9 0 200e9 cmin cmax
+		muc=vmap 153.5e9 0 200e9 cmin cmax 
+		buc=vmap  85.0e9 0 200e9 cmin cmax
+		bac=vmap  74.1e9 0 200e9 cmin cmax
+		elc=vmap  71.2e9 0 200e9 cmin cmax
+		pc=vmap   76.3e9 0 200e9 cmin cmax
+		brc=vmap  74.1e9 0 200e9 cmin cmax
+		wac=vmap  68.1e9 0 200e9 cmin cmax
+
+		us=vmap   97300 0 200e9 cmin cmax
+
+		// build a dot grid representing US Median net worth
+		// for v=5 95 5
+		// 	acircle v 5 us
+		// 	acircle 5 v us
+		// 	acircle v 10 us
+		// 	acircle 10 v us
+		// 	acircle v 15 us
+		// 	acircle 15 v us
+		// 	acircle v 20 us
+		// 	acircle 20 v us
+		// 	acircle v 25 us
+		// 	acircle 25 v us
+		// 	acircle v 30 us
+		// 	acircle 30 v us
+		// 	acircle v 35 us
+		// 	acircle 35 v us
+		// 	acircle v 40 us
+		// 	acircle 40 v us
+		// 	acircle v 45 us
+		// 	acircle 45 v us
+		// 	acircle v 50 us
+		// 	acircle 50 v us
+		// 	acircle v 55 us
+		// 	acircle 55 v us
+		// 	acircle v 60 us
+		// 	acircle 60 v us
+		// 	acircle v 65 us
+		// 	acircle 65 v us
+		// 	acircle v 70 us
+		// 	acircle 70 v us
+		// 	acircle v 75 us
+		// 	acircle 75 v us
+		// 	acircle v 80 us
+		// 	acircle 80 v us
+		// 	acircle v 85 us
+		// 	acircle 85 v us
+		// 	acircle v 90 us
+		// 	acircle 90 v us
+		// 	acircle v 95 us
+		// 	acircle 95 v us
+		// efor 
+
+		// scale for height
+		boty=5
+		topy=90
+		by=vmap   186.7e9 0 200e9 boty topy
+		gy=vmap   120.1e9 0 200e9 boty topy
+		zy=vmap   101.5e9 0 200e9 boty topy
+		my=vmap   153.5e9 0 200e9 boty topy
+		buy=vmap   85.0e9 0 200e9 boty topy
+		bay=vmap   74.1e9 0 200e9 boty topy
+		ely=vmap   88.5e9 0 200e9 boty topy
+		py=vmap    76.3e9 0 200e9 boty topy
+		bry=vmap   74.1e9 0 200e9 boty topy
+		wacy=vmap  68.1e9 0 200e9 boty topy
+
+		l100=vmap 100e9 0 200e9 boty topy
+		l150=vmap 150e9 0 200e9 boty topy
+		l200=vmap 200e9 0 200e9 boty topy
+		l50=vmap  50e9  0 200e9 boty topy
+
+		hline 92 l100  95 0.025
+		hline 92 l150  95 0.025
+		hline 92 l200  95 0.025
+		hline 92 l50   95 0.025
+
+		etext "$50 Billion"  95 l50 0.7  "sans" "rgb(100,100,100)"
+		etext "$100 Billion" 95 l100 0.7 "sans" "rgb(100,100,100)"
+		etext "$150 Billion" 95 l150 0.7 "sans" "rgb(100,100,100)"
+		etext "$200 Billion" 95 l200 0.7 "sans" "rgb(100,100,100)"
+
+		lskip=2.5
+		by1=by-lskip
+		gy1=gy-lskip
+		zy1=zy-lskip
+		my1=my-lskip
+		buy1=buy-lskip
+		bay1=bay-lskip
+		ely1=ely-lskip
+		py1=py-lskip
+		bry1=bry-lskip
+		wacy1=wacy-lskip
+
+		imby=by-5
+
+		medx=5
+		medy=5
+
+		// scale for circle area
+		aop=100
+		acircle 50 by bc    bezoscolor aop
+		acircle 10 my muc   muskcolor aop
+		acircle 20 gy gc    gatescolor aop
+		acircle 30 zy zc    zuckcolor aop
+		acircle 40 ely elc  ellisoncolor aop
+		acircle 50 buy buc  buffettcolor  aop
+		acircle 60 py pc    pagecolor aop
+		acircle 70 bay bac  ballmercolor  aop
+		acircle 80 bry brc  brincolor aop
+		acircle 90 wacy wac waltoncolor aop
+
+		// US Median net worth for comparison
+		acircle medx medy us   "maroon" 
+
+		ts=2
+		ctext "Bezos"        50 by  ts "sans" "white"
+		ctext "Musk"         10 my  ts "sans" "white"
+		ctext "Gates"        20 gy  ts "sans" "white"
+		ctext "Zuckerberg"   30 zy  ts "sans" "white"
+		ctext "Ellison"      40 ely ts "sans" "white"
+		ctext "Buffett"      50 buy ts "sans" "white"
+		ctext "Page"         60 py  ts "sans" "white"
+		ctext "Ballmer"      70 bay ts "sans" "white"
+		ctext "Brin"         80 bry ts "sans" "white"
+		ctext "Walton"       90 wacy ts "sans" "white"
+		text "US Median Net Worth ($97,300)" 5 2 1 "sans" "maroon"
+		// arrow 5 2.5 5 5 0.1 1 1
+
+		ts*=0.75
+		ctext "$186.7 Billion"     50 by1  ts "sans" "white"
+		ctext "$153.5B"       10 my1  ts "sans" "white"
+		ctext "$120.1B"       20 gy1  ts "sans" "white"
+		ctext "$101.5B"       30 zy1  ts "sans" "white"
+		ctext "$88.5B"        40 ely1 ts "sans" "white"
+		ctext "$85.0B"        50 buy1 ts "sans" "white"
+		ctext "$76.3B"        60 py1  ts "sans" "white"
+		ctext "$74.1B"        70 bay1 ts "sans" "white"
+		ctext "$74.1B"        80 bry1 ts "sans" "white"
+		ctext "$68.1B"        90 wacy1 ts "sans" "white"
+
+
+		ls=0.4
+		aop=20
+		medx+=1
+		curve medx medy 50 0 50 by  ls bezoscolor aop
+		curve medx medy 50 0 20 gy  ls gatescolor aop
+		curve medx medy 50 0 30 zy  ls zuckcolor aop
+		curve medx medy 50 0 10 my  ls muskcolor aop
+		curve medx medy 50 0 50 buy ls buffettcolor aop
+		curve medx medy 50 0 70 bay ls ballmercolor aop
+		curve medx medy 50 0 40 ely ls ellisoncolor aop
+		curve medx medy 50 0 60 py  ls pagecolor aop
+		curve medx medy 50 0 80 bry ls brincolor aop
+		curve medx medy 50 0 90 wacy ls waltoncolor aop
+	eslide
+
+
+	slide "black" "white"
+
+		maxx=75
+		imleft=7
+		bleft=imleft+3
+		nleft=imleft+5
+		lleft=bleft+15
+		bsize=3
+		csize=bsize
+		imscale=12
+		bcolor="steelblue"
+		bop=100
+		lsize=1.8
+
+		
+
+		text "Top 10 US Billionaires Net Worth (December 2020)" imleft 90 3
+		text "Source: Forbes: The world's real-time billionaires" imleft 5 1.5 "sans" "" 100 "https://www.forbes.com/real-time-billionaires/#40597f363d78"
+
+		# 2020-12-18 17:00:00 EST:
+		#
+		# Bezos:		186.7
+		# Musk:			153.5
+		# Gates:		120.1
+		# Zuckerberg:	101.5
+		# Ellison:		88.5
+		# Buffett:		85.0
+		# Page:			76.3
+		# Ballmer:		74.1
+		# Brin:			74.1
+		# Walton:		68.1
+
+		bezos=vmap    186.7 0 200 0 maxx
+		musk=vmap     153.5 0 200 0 maxx
+		gates=vmap    120.1 0 200 0 maxx
+		zuck=vmap     101.5 0 200 0 maxx
+		ellison=vmap   88.5 0 200 0 maxx
+		buffett=vmap   85.0 0 200 0 maxx
+		page=vmap      76.3 0 200 0 maxx
+		ballmer=vmap   74.1 0 200 0 maxx
+		brin=vmap      74.1 0 200 0 maxx
+		walton=vmap    68.1 0 200 0 maxx
+
+		y=80
+		ly=y-1
+		vskip=7
+		imw=299
+		imh=299
+
+		image "4x3-jeff-bezos-mask.png" imleft y imw imh imscale
+		text "Bezos"  nleft  ly lsize "sans" "white"
+		lleft=bleft+bezos
+		etext "186.7"  lleft ly lsize "sans" "white"
+		bcolor=bezoscolor
+		hline bleft y bezos bsize bcolor bop
+		circle lleft y bsize bcolor bop
+
+		y-=vskip
+		ly-=vskip
+
+		image "4x3-elon-musk-mask.png"  imleft y imw imh imscale
+		text "Musk" nleft  ly lsize "sans" "white"
+		lleft=bleft+musk
+		etext "153.5" lleft  ly lsize "sans" "white"
+		bcolor=muskcolor
+		hline bleft y musk bsize bcolor bop
+		circle lleft y bsize bcolor bop
+
+		y-=vskip
+		ly-=vskip
+
+		image "4x3-bill-gates-mask.png" imleft y imw imh imscale
+		text "Gates"  nleft  ly lsize "sans" "white"
+		lleft=bleft+gates
+		etext "120.1"  lleft ly lsize "sans" "white"
+		bcolor=gatescolor
+		hline bleft y gates bsize bcolor bop
+		circle lleft y bsize bcolor bop
+
+		y-=vskip
+		ly-=vskip
+
+		image "4x3-mark-zuckerberg-mask.png"  imleft y imw imh imscale
+		text "Zuckerberg" nleft  ly lsize "sans" "white"
+		lleft=bleft+zuck
+		etext "101.5" lleft ly lsize "sans" "white"
+		bcolor=zuckcolor
+		hline bleft y zuck bsize bcolor bop
+		circle lleft y bsize bcolor bop
+
+		y-=vskip
+		ly-=vskip
+
+		image "4x3-larry-ellison-mask.png" imleft y imw imh imscale
+		lleft=bleft+ellison
+		etext "88.5" lleft  ly lsize "sans" "white"
+		text "Ellison"  nleft  ly lsize "sans" "white"
+		bcolor=ellisoncolor
+		hline bleft y ellison bsize bcolor bop
+		circle lleft y bsize bcolor bop
+
+		y-=vskip
+		ly-=vskip
+
+		image "4x3-warren-buffett-mask.png" imleft y imw imh imscale
+		lleft=bleft+buffett
+		etext "85.0" lleft  ly lsize "sans" "white"
+		text "Buffett"  nleft  ly lsize "sans" "white"
+		bcolor=waltoncolor
+		hline bleft y buffett bsize bcolor bop
+		circle lleft y bsize bcolor bop
+
+		y-=vskip
+		ly-=vskip
+
+		image "4x3-larry-page-mask.png"  imleft y imw imh imscale
+		bcolor=pagecolor
+		hline bleft y page bsize bcolor bop
+		lleft=bleft+page
+		etext "76.3" lleft  ly lsize "sans" "white"
+		text "Page" nleft  ly lsize "sans" "white"
+		circle lleft y bsize bcolor bop
+
+		y-=vskip
+		ly-=vskip
+
+		image "4x3-steve-ballmer-mask.png" imleft y imw imh imscale
+		text "Ballmer"  nleft  ly lsize "sans" "white"
+		lleft=bleft+ballmer
+		etext "71.4" lleft  ly lsize "sans" "white"
+		bcolor=ballmercolor
+		hline bleft y ballmer bsize bcolor bop
+		circle lleft y bsize bcolor bop
+
+		y-=vskip
+		ly-=vskip
+
+		image "4x3-sergey-brin-mask.png"  imleft y imw imh imscale
+		bcolor=brincolor
+		hline bleft y brin bsize bcolor bop
+		lleft=bleft+brin
+		etext "74.1" lleft  ly lsize "sans" "white"
+		text "Brin"  nleft  ly lsize "sans" "white"
+		circle lleft y bsize bcolor bop
+
+		y-=vskip
+		ly-=vskip
+
+		image "4x3-alice-walton-mask.png"  imleft y imw imh imscale
+		bcolor=waltoncolor		
+		hline bleft y walton bsize bcolor bop
+		lleft=bleft+walton
+		etext "68.1" lleft  ly lsize "sans" "white"
+		text "Walton" nleft  ly lsize "sans" "white"
+		circle lleft y bsize bcolor bop
+	eslide
+edeck
