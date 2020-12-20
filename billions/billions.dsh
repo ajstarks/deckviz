@@ -2,15 +2,15 @@
 deck
 	canvas 1200 900
 	bezoscolor="rgb(255,153,0)"
-		gatescolor="rgb(242,80,34)"
-		zuckcolor="rgb(59, 89, 152)"
-		muskcolor="rgb(232, 33, 39)"
-		buffettcolor="rgb(0,0,128)"
-		ballmercolor="rgb(213,0,50)"
-		ellisoncolor="rgb(248, 1, 2)"
-		pagecolor="rgb(15,157,88)"
-		brincolor="rgb(244,160,0)"
-		waltoncolor="rgb(0,0,128)"
+	gatescolor="rgb(242,80,34)"
+	zuckcolor="rgb(59, 89, 152)"
+	muskcolor="rgb(232, 33, 39)"
+	buffettcolor="rgb(0,0,128)"
+	ballmercolor="rgb(213,0,50)"
+	ellisoncolor="rgb(248, 1, 2)"
+	pagecolor="rgb(15,157,88)"
+	brincolor="rgb(244,160,0)"
+	waltoncolor="rgb(0,0,128)"
 
 	slide // "black" "white"
 
@@ -176,6 +176,97 @@ deck
 		curve medx medy 50 0 90 wacy ls waltoncolor aop
 	eslide
 
+	slide
+		imx=5
+		hskip=10
+		imscale=20
+		imw=299
+		imh=299
+		lw=4
+		bcolor="rgb(70,70,70)"
+		ctext "Top 10 US Billionaires (December 2020)" 50 93 3
+		ctext "Net worth ($ Billion)" imx 93 1 "sans" bcolor
+		image "4x3-jeff-bezos-mask.png" imx by imw imh imscale
+		ly=by-3
+		amy=by+5
+		line imx boty imx ly lw bezoscolor 10
+		ctext "Bezos" imx boty 2
+		ctext "186.7" imx amy 2 "sans" bcolor
+		imx += hskip
+
+		image "4x3-elon-musk-mask.png"  imx my imw imh imscale
+		ly=my-3
+		amy=my+5
+		line imx boty imx ly lw muskcolor 10
+		ctext "Musk" imx boty 2
+		ctext "153.5" imx amy 2  "sans" bcolor
+		imx += hskip
+
+		image "4x3-bill-gates-mask.png"  imx gy imw imh imscale
+		ly=gy-3
+		amy=gy+5
+		line imx boty imx ly lw gatescolor 10
+		ctext "Gates" imx boty 2
+		ctext "120.1" imx amy 2  "sans" bcolor
+		imx += hskip
+
+		image "4x3-mark-zuckerberg-mask.png"  imx zy imw imh imscale
+		ly=zy-3
+		amy=zy+5
+		line imx boty imx ly lw zuckcolor 10
+		ctext "Zuckerberg" imx boty 2
+		ctext "101.5" imx amy 2  "sans" bcolor
+		imx += hskip
+
+		image "4x3-larry-ellison-mask.png"  imx ely imw imh imscale
+		ly=ely-3
+		amy=ely+5
+		line imx boty imx ly lw ellisoncolor 10
+		ctext "Ellison" imx boty 2
+		ctext "88.5" imx amy 2  "sans" bcolor
+		imx += hskip
+
+		image "4x3-warren-buffett-mask.png"  imx buy imw imh imscale
+		ly=buy-3
+		amy=buy+5
+		line imx boty imx ly lw buffettcolor 10
+		ctext "Buffett" imx boty 2
+		ctext "85.0" imx amy 2  "sans" bcolor
+		imx += hskip
+
+		image "4x3-larry-page-mask.png"  imx py imw imh imscale
+		ly=py-3
+		amy=py+5
+		line imx boty imx ly lw pagecolor 10
+		ctext "Page" imx boty 2
+		ctext "76.3" imx amy 2  "sans" bcolor
+		imx += hskip
+
+		image "4x3-steve-ballmer-mask.png"  imx bay imw imh imscale
+		ly=bay-3
+		amy=bay+5
+		line imx boty imx ly lw ballmercolor 10
+		ctext "Ballmer" imx boty 2
+		ctext "74.1" imx amy 2  "sans" bcolor
+		imx += hskip
+
+		image "4x3-sergey-brin-mask.png"  imx bry imw imh imscale
+		ly=bry-3
+		amy=bry+5
+		line imx boty imx ly lw brincolor 10
+		ctext "Brin" imx boty 2
+		ctext "74.1" imx amy 2  "sans" bcolor
+		imx += hskip
+
+		image "4x3-alice-walton-mask.png"  imx wacy imw imh imscale
+		ly=wacy-3
+		amy=wacy+5
+		ctext "Walton" imx boty 2
+		ctext "68.1" imx amy 2  "sans" bcolor
+		line imx boty imx ly lw waltoncolor 10
+		
+	eslide
+
 
 	slide "black" "white"
 
@@ -190,9 +281,7 @@ deck
 		bcolor="steelblue"
 		bop=100
 		lsize=1.8
-
-		
-
+	
 		text "Top 10 US Billionaires Net Worth (December 2020)" imleft 90 3
 		text "Source: Forbes: The world's real-time billionaires" imleft 5 1.5 "sans" "" 100 "https://www.forbes.com/real-time-billionaires/#40597f363d78"
 
@@ -223,8 +312,7 @@ deck
 		y=80
 		ly=y-1
 		vskip=7
-		imw=299
-		imh=299
+		
 
 		image "4x3-jeff-bezos-mask.png" imleft y imw imh imscale
 		text "Bezos"  nleft  ly lsize "sans" "white"

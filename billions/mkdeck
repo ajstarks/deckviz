@@ -1,2 +1,5 @@
 #!/bin/sh
-decksh billions.dsh|pdfdeck -sans PublicSans-Regular -pagesize 1200,900 -stdout - > billions.pdf
+decksh billions.dsh > billions.xml
+pdfdeck -sans PublicSans-Regular -pagesize 1200,900 billions.xml
+pngdeck -sans PublicSans-Regular -pagesize 1200,900 billions.xml
+
