@@ -5,9 +5,14 @@
 * aid -- International aid as defined in the #SWDchallenge
 * aapl -- Apple financial results
 * astrobang -- Houston Astros 2017 sign-stealing
+* b17 -- Bomber casuality rates
 * babynames -- Baby names through the decades
+* billions -- top 10 US billionaires
 * bp -- Blood Pressure and Heart Rate
+* c19 -- COVID-19
 * ceo-stock -- The relationship of CEO tenure to stock price
+* complex-table -- charts and tables
+* elections -- elections through the years
 * fire -- German wildfires
 * gomod -- Go module flows
 * modelt -- Manufacturing and Marketing the Model T - 1908-1916

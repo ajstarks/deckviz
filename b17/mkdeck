@@ -1,0 +1,4 @@
+#!/bin/sh
+decksh b17.dsh > b17.xml
+pdfdeck b17.xml
+pngdeck b17.xml
