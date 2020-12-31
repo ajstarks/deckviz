@@ -1,2 +1,4 @@
 #!/bin/sh
-decksh nat.dsh | pdfdeck -pagesize 600,600 -sans NotoSans-Medium -stdout - > nat.pdf
+decksh nat.dsh > nat.xml
+pdfdeck -pagesize 600,600 -sans NotoSans-Medium nat.xml
+pngdeck -pagesize 600,600 -sans NotoSans-Medium nat.xml
