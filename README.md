@@ -21,6 +21,7 @@
 * prison -- Comparing the rate of incarceration vs. US presidential terms
 * speed -- Comparison of Indy 500 speed data
 * swd -- Examples from "Storytelling with Data"
+* tailscale -- TailScale style diagrams
 * warlife -- How much of your life has the U.S. been at war
 * weather -- Weather trends
 
