@@ -1,0 +1,115 @@
+deck
+	canvas 600 600
+	slide
+		framecolor="rgb(240,240,240)"
+		natcolor="rgb(226,235,243)"
+		natborder="rgb(75,100,146)"
+		arrcolor="rgb(198,99,72)"
+		laptopcolor="gray"
+		lacolor="black"
+
+		// Left and right frames
+		frw=35
+		frh=frw*0.9
+		frhalf=frh/2
+		frc=2
+		fry=50
+		frx1=20
+		frx2=100-frx1
+		roundrect frx1 fry frw frh frc framecolor
+		roundrect frx2 fry frw frh frc framecolor
+
+		// Left and right laptop frames
+		law=frw*0.25
+		lawhalf=law/2
+		lah=law
+		lac=frc/2
+		roundrect frx1 fry law lah lac lacolor
+		roundrect frx2 fry law lah lac lacolor
+
+
+		// left and right laptop elements
+		lawq=lawhalf/2
+		cx1=frx1-lawq
+		cx2=frx2-lawq
+		cy=fry+lawq
+		ay=cy-2.5
+		cr=3
+		crhalf=cr/2
+		ax1=cx1+crhalf
+		aw=cr
+		ah=aw
+		hy=ay-crhalf
+		cx3=ax1+aw
+		circle cx1 cy cr "white"
+		circle cx2 cy cr "white"
+		// left
+		arc    ax1 ay aw ah 180 271 aw laptopcolor
+		hline  ax1 hy aw aw laptopcolor
+		circle cx3 hy aw laptopcolor
+
+		// right
+		frdiff=frx2-frx1
+		ax1+=frdiff
+		cx3+=frdiff
+		arc    ax1 ay aw ah 180 271 aw laptopcolor
+		hline  ax1 hy aw aw laptopcolor
+		circle cx3 hy aw laptopcolor
+
+		// Left and right NAT bodies
+		natw=frw*0.25
+		nath=frh*0.75
+		natx1=frx1+18.5
+		natx2=frx2-18.5
+		natc=frc
+		roundrect natx1 fry natw nath natc natcolor
+		roundrect natx2 fry natw nath natc natcolor
+
+		// left and right NAT borders
+		borx1=natx1+5
+		borx2=natx2-5
+		bory=37.2
+		borh=nath+frc
+		borw=3
+		vline borx1 bory borh borw natborder
+		vline borx2 bory borh borw natborder
+
+		// funnels
+		polygon "42 45 45 42" "47.5 49 51 52.5" "white" 50
+		polygon "55 58 58 55" "51 52.5 47.5 49" "white" 50
+
+		// arrows
+		a1x1=frx1+lawhalf
+		a1x2=frx2-lawhalf
+		arrow a1x1 50.5 48   50.5  0.1 1 1 arrcolor
+		arrow 48   50.5 a1x2 50.5  0.1 1 1 arrcolor
+		arrow a1x2 49.5 52   49.5  0.1 1 1 arrcolor
+		arrow 52   49.5 a1x1 49.5  0.1 1 1 arrcolor
+		circle a1x1 50.5 0.75 arrcolor
+		circle a1x2 49.5 0.75 arrcolor
+
+		// directions
+		diry=68
+		circle borx1 diry 3.5 natborder
+		circle borx1 diry 3.1 "white"
+		circle borx2 diry 3.5 natborder
+		circle borx2 diry 3.1 "white"
+
+		dirx1=borx1-1
+		dirx2=borx1+1
+		arrow  dirx1 diry dirx2 diry 0.1 1 2 natborder
+		dirx1=borx2-1
+		dirx2=borx2+1
+		arrow  dirx2 diry dirx1 diry 0.1 1 2 natborder
+
+		// Labels
+		nlabx1=borx1-5
+		nlabx2=borx2+5
+		nlaby=fry+10
+		ctext "NAT" nlabx1 nlaby 2 "sans" natborder
+		ctext "NAT" nlabx2 nlaby 2 "sans" natborder
+		nlaby-=24
+		ctext "Laptop" frx1 nlaby 2
+		ctext "Laptop" frx2 nlaby 2
+	eslide
+edeck

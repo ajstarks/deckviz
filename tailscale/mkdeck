@@ -1,0 +1,2 @@
+#!/bin/sh
+decksh nat.dsh | pdfdeck -pagesize 600,600 -sans NotoSans-Medium -stdout - > nat.pdf
