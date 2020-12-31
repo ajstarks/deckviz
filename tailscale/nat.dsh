@@ -75,32 +75,48 @@ deck
 		vline borx2 bory borh borw natborder
 
 		// funnels
-		polygon "42 45 45 42" "47.5 49 51 52.5" "white" 50
-		polygon "55 58 58 55" "51 52.5 47.5 49" "white" 50
+		midy=50
+		px1=midy-8
+		px2=midy-5
+		px3=midy+5
+		px4=midy+8
+
+		py1=midy-2.5
+		py2=midy-1
+		py3=midy+1
+		py4=midy+2.5
+		polygon "px1 px2 px2 px1"  "py1 py2 py3 py4" "white" 50
+		polygon "px3 px4 px4 px3"  "py3 py4 py1 py2" "white" 50
 
 		// arrows
 		a1x1=frx1+lawhalf
 		a1x2=frx2-lawhalf
-		arrow a1x1 50.5 48   50.5  0.1 1 1 arrcolor
-		arrow 48   50.5 a1x2 50.5  0.1 1 1 arrcolor
-		arrow a1x2 49.5 52   49.5  0.1 1 1 arrcolor
-		arrow 52   49.5 a1x1 49.5  0.1 1 1 arrcolor
-		circle a1x1 50.5 0.75 arrcolor
-		circle a1x2 49.5 0.75 arrcolor
+		ary1=fry+0.5
+		ary2=fry-0.5
+		arx1=fry-2
+		arx2=fry+2
+		arrow a1x1 ary1 arx1 ary1 0.1 1 1 arrcolor
+		arrow arx1 ary1 a1x2 ary1 0.1 1 1 arrcolor
+		arrow a1x2 ary2 arx2 ary2 0.1 1 1 arrcolor
+		arrow arx2 ary2 a1x1 ary2 0.1 1 1 arrcolor
+		circle a1x1 ary1 0.75 arrcolor
+		circle a1x2 ary2 0.75 arrcolor
 
 		// directions
 		diry=68
-		circle borx1 diry 3.5 natborder
-		circle borx1 diry 3.1 "white"
-		circle borx2 diry 3.5 natborder
-		circle borx2 diry 3.1 "white"
+		dcr1=3.5
+		dcr2=dcr1-0.4
+		circle borx1 diry dcr1 natborder
+		circle borx1 diry dcr2 "white"
+		circle borx2 diry dcr1 natborder
+		circle borx2 diry dcr2 "white"
 
 		dirx1=borx1-1
 		dirx2=borx1+1
-		arrow  dirx1 diry dirx2 diry 0.1 1 2 natborder
+		arrow dirx1 diry dirx2 diry 0.1 1 2 natborder
 		dirx1=borx2-1
 		dirx2=borx2+1
-		arrow  dirx2 diry dirx1 diry 0.1 1 2 natborder
+		arrow dirx2 diry dirx1 diry 0.1 1 2 natborder
 
 		// Labels
 		nlabx1=borx1-5
