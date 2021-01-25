@@ -1,0 +1,4 @@
+#!/bin/sh
+decksh iam.dsh > iam.xml
+pdfdeck -sans VTC-Martin-Regular -pagesize 2200,2800 iam.xml
+pngdeck -sans VTC-Martin-Regular -pagesize 2200,2800 iam.xml

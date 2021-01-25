@@ -1,0 +1,11 @@
+deck
+	canvas 650 950
+	mid=50
+	ts=32
+	ts2=ts*1.2
+	slide "black" "white"
+		ctext "A MAN WAS" mid 70 ts
+		ctext "LYNCHED"   mid 45 ts2
+		ctext "YESTERDAY" mid 25 ts
+	eslide
+edeck

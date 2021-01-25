@@ -1,0 +1,8 @@
+<deck>
+<canvas width="650" height="950"/>
+<slide bg="black" fg="white">
+<text align="c" xp="50" yp="70" sp="32" >A MAN WAS</text>
+<text align="c" xp="50" yp="45" sp="38.4" >LYNCHED</text>
+<text align="c" xp="50" yp="25" sp="32" >YESTERDAY</text>
+</slide>
+</deck>

@@ -1,0 +1,9 @@
+<deck>
+<canvas width="2200" height="2800"/>
+<slide>
+<line xp1="48" yp1="73" xp2="72" yp2="73" sp="2" color="black"/>
+<text align="c" xp="50" yp="75" sp="30" >I     AM</text>
+<text align="c" xp="50" yp="45" sp="30" >A</text>
+<text align="c" xp="50" yp="15" sp="30" >MAN</text>
+</slide>
+</deck>

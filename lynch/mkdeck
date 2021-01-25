@@ -1,0 +1,4 @@
+#!/bin/sh
+decksh lynch.dsh > lynch.xml
+pdfdeck -sans VTC-Martin-Regular -pagesize 650,950 lynch.xml
+pngdeck -sans VTC-Martin-Regular -pagesize 650,950 lynch.xml

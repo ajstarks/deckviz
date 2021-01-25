@@ -1,0 +1,21 @@
+deck
+	slide
+		mid=25
+		ts=16
+		ts2=ts*1.2
+		rect mid 50 50 100 "black"
+		ctext "A MAN WAS" mid 70 ts    "sans" "white"
+		ctext "LYNCHED"   mid 46 ts2   "sans" "white"
+		ctext "YESTERDAY" mid 25 ts    "sans" "white"
+
+		ts=15
+		mid+=50
+		lx=mid-1
+		rect mid 50 50 100 "white"
+		hline lx 73 12 1 "black"
+		ctext "I     AM" mid 75 ts
+		ctext "A"        mid 45 ts
+		ctext "MAN"      mid 15 ts
+
+	eslide
+edeck

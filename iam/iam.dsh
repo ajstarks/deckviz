@@ -1,0 +1,13 @@
+// I am a man -- from civil rights era posters
+// Uses Vocal Type Martin
+deck
+	canvas 2200 2800
+	mid=50
+	ts=30
+	slide
+		hline 48 73 24 2 "black"
+		ctext "I     AM" mid 75 ts
+		ctext "A"    mid 45 ts
+		ctext "MAN"  mid 15 ts
+	eslide
+edeck

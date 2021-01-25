@@ -1,0 +1,20 @@
+# (Chicago Tribune - from Mob Rule in New Orleans, by Ida B. Wells-Barnett, 1900)
+# Negroes lynched by mobs 
+1882	52
+1883	39
+1884	53
+1885	164
+1886	136
+1887	128
+1888	143
+1889	127
+1890	171
+1891	192
+1892	241
+1893	200
+1894	190
+1895	171
+1896	131
+1897	156
+1898	127
+1899	107

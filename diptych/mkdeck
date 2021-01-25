@@ -1,0 +1,4 @@
+#!/bin/sh
+decksh diptych.dsh > diptych.xml
+pdfdeck -sans VTC-Martin-Regular diptych.xml
+pngdeck -sans VTC-Martin-Regular diptych.xml
