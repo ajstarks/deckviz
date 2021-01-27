@@ -1,10 +1,11 @@
 <deck>
 <slide>
-<rect xp="25" yp="50" wp="50" hp="100" color="black"/>
+<rect xp="50" yp="50" wp="100" hp="100" color="crimson"/>
+<rect xp="25" yp="50" wp="49" hp="98" color="black"/>
 <text align="c" xp="25" yp="70" sp="16" font="sans" color="white">A MAN WAS</text>
 <text align="c" xp="25" yp="46" sp="19.2" font="sans" color="white">LYNCHED</text>
 <text align="c" xp="25" yp="25" sp="16" font="sans" color="white">YESTERDAY</text>
-<rect xp="75" yp="50" wp="50" hp="100" color="white"/>
+<rect xp="75" yp="50" wp="49" hp="98" color="white"/>
 <line xp1="74" yp1="73" xp2="86" yp2="73" sp="1" color="black"/>
 <text align="c" xp="75" yp="75" sp="15" >I     AM</text>
 <text align="c" xp="75" yp="45" sp="15" >A</text>
