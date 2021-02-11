@@ -1,0 +1,64 @@
+deck
+	imw=3800
+	imh=2130
+	imx=10
+	imy=85
+	imscale=6
+	vskip=24
+	tw=50
+	ts=1.8
+	tx=imx+20
+	ty=imy+7
+	t1="Do we have the capacity to be great makers in the absence of light"
+	t2="if blackness has something to do with the absence of light, does black art mean that sometimes I’m making when no one’s looking?"
+	t3="Until we’ve figured out a way of becoming masters of the world, then I’d rather work in darkness"
+	t4="Are you willing to make in the absence of light?"
+
+	slide "black" "white"
+		image "theaster01.png" imx imy imw imh imscale
+		textblock t1 tx ty tw ts
+		imy-=vskip
+		ty-=vskip
+
+		image "theaster02.png" imx imy imw imh imscale
+		textblock t2 tx ty tw ts
+		imy-=vskip
+		ty-=vskip
+
+		image "theaster04.png" imx imy imw imh imscale
+		textblock t3 tx ty tw ts
+		imy-=vskip
+		ty-=vskip
+
+		image "theaster03.png" imx imy imw imh imscale
+		textblock t4 tx ty tw ts
+	eslide
+
+	slide "black" "white"
+		imx=2
+		imscale=7
+		imy=50
+		tx=imx-5
+		ty=imy-15
+		ts=1.2
+		tw=10
+		hskip=40
+		image "theaster01.png" imx imy imw imh imscale
+		textblock t1 tx ty tw ts
+		imx+=hskip
+		tx+=hskip
+
+		image "theaster02.png" imx imy imw imh imscale
+		textblock t2 tx ty tw ts
+		imx+=hskip
+		tx+=hskip
+		
+		image "theaster04.png" imx imy imw imh imscale
+		textblock t3 tx ty tw ts
+		imx+=hskip
+		tx+=hskip
+
+		image "theaster03.png" imx imy imw imh imscale
+		textblock t4 tx ty tw ts
+	eslide
+edeck
