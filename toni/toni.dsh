@@ -1,0 +1,83 @@
+// Illustration of Toni Morrison's interview on "Charlie Rose", May 7, 1993.
+// https://charlierose.com/videos/18778
+deck
+	imw=650
+	imh=430
+	ims=25
+	imx=30
+	tx=imx+10
+	tw=30
+	ts=1.8
+	imy=88
+	ty=imy+1
+	vskip=19
+	bgcolor="rgb(48,44,46)" 
+	tcolor="white"
+	t1="What are you without racism? are you any good? are you still strong? still smart?"
+	t2="If you can only be tall because somebody's on their knees, then you have a serious problem"
+	t3="And my feeling is white people, have a very, very serious problem"
+	t4="And THEY should start thinking about what THEY can do about it"
+	t5="Take me out of it"
+
+	slide bgcolor tcolor
+		image     "images/t05.png"    imx imy imw imh ims
+		textblock t1 tx ty tw ts
+		imy-=vskip
+		ty-=vskip
+
+		image     "images/t12.png"    imx imy imw imh ims
+		textblock t2 tx ty tw ts
+		imy-=vskip
+		ty-=vskip
+
+		image     "images/t13.png"    imx imy imw imh ims
+		textblock t3 tx ty tw ts
+		imy-=vskip
+		ty-=vskip
+
+		image     "images/t14.png"    imx imy imw imh ims
+		textblock t4 tx ty tw ts
+		imy-=vskip
+		ty-=vskip
+
+		image     "images/t15.png"    imx imy imw imh ims
+		textblock t5 tx ty tw ts
+	eslide
+
+	slide bgcolor tcolor
+		imx=10
+		imy=60
+		tx=imx-6
+		ty=imy-10
+		hskip=20
+		vskip=25
+		ims=20
+		ts=1
+		tw=10
+
+		image     "images/t05.png"    imx imy imw imh ims
+		textblock t1 tx ty tw ts
+		imx+=hskip
+		tx+=hskip
+
+		image     "images/t12.png"    imx imy imw imh ims
+		textblock t2 tx ty tw ts
+		imx+=hskip
+		tx+=hskip
+
+		image     "images/t13.png"    imx imy imw imh ims
+		textblock t3 tx ty tw ts
+		imx+=hskip
+		tx+=hskip
+
+		image     "images/t14.png"    imx imy imw imh ims
+		textblock t4 tx ty tw ts
+		imx+=hskip
+		tx+=hskip
+	
+		image     "images/t15.png"    imx imy imw imh ims
+		ctext t5 imx ty ts
+
+
+	eslide
+edeck

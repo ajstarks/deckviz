@@ -1,0 +1,4 @@
+#!/bin/sh
+decksh toni.dsh > toni.xml
+pdfdeck -sans NotoSans-Light toni.xml
+pngdeck -sans NotoSans-Light toni.xml

@@ -2,6 +2,7 @@
 
 ### Contents
 
+* absense -- Theaster Gates from "Black Art: Absence of Light"
 * aid -- International aid as defined in the #SWDchallenge
 * aapl -- Apple financial results
 * astrobang -- Houston Astros 2017 sign-stealing
@@ -22,6 +23,7 @@
 * speed -- Comparison of Indy 500 speed data
 * swd -- Examples from "Storytelling with Data"
 * tailscale -- TailScale style diagrams
+* toni -- Toni Morrison quote from Charlie Rose Interview, 1993
 * warlife -- How much of your life has the U.S. been at war
 * weather -- Weather trends
 

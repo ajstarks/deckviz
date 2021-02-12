@@ -1,0 +1,4 @@
+#!/bin/sh
+decksh absense.dsh > absense.xml
+pdfdeck -sans NotoSans-Light absense.xml
+pngdeck -sans NotoSans-Light absense.xml

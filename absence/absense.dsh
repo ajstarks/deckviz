@@ -1,17 +1,17 @@
 deck
 	imw=3800
 	imh=2130
-	imx=10
+	imx=15
 	imy=85
 	imscale=6
 	vskip=24
 	tw=50
-	ts=1.8
+	ts=2
 	tx=imx+20
-	ty=imy+7
-	t1="Do we have the capacity to be great makers in the absence of light"
-	t2="if blackness has something to do with the absence of light, does black art mean that sometimes I’m making when no one’s looking?"
-	t3="Until we’ve figured out a way of becoming masters of the world, then I’d rather work in darkness"
+	ty=imy+5
+	t1="Do we have the capacity to be great makers in the absence of light?"
+	t2="If blackness has something to do with the absence of light, does black art mean that sometimes I’m making when no one is looking?"
+	t3="Until we’ve figured out a way to be masters of the world, then I’d rather work in darkness."
 	t4="Are you willing to make in the absence of light?"
 
 	slide "black" "white"
@@ -35,14 +35,14 @@ deck
 	eslide
 
 	slide "black" "white"
-		imx=2
-		imscale=7
+		imx=12
+		imscale=5
 		imy=50
-		tx=imx-5
-		ty=imy-15
+		tx=imx-10
+		ty=imy-12
 		ts=1.2
-		tw=10
-		hskip=40
+		tw=15
+		hskip=25
 		image "theaster01.png" imx imy imw imh imscale
 		textblock t1 tx ty tw ts
 		imx+=hskip
