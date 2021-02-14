@@ -1,19 +1,20 @@
 // The Middle Passage
 deck
 	slide
-		sailcolor="rgb(255,255,255)"
-		hullcolor="black"
-		seacolor="rgb(138,158,174)"
-		skycolor="rgb(163,199,244)"
-		bloodcolor="rgb(102,0,0)"
-		rect 50 25 100 50 seacolor 70
-		rect 50 75 100 50 skycolor 100
+		// The ship is modeled on La Amistad as shown in 
+		// https://mysticknotwork.com/blogs/news/amistad
+		//
+		// The ship is made of 
+		// Polygons: hull, s0 (jib), s1 (flying jib), s2 (foresail), s3 (main sail)
+		// Lines:    mast0 (foremast), mast1 (main mast), bs (bowsprit), jl (jib line)
+		//
+		// The ship may be scaled and positioned via the scale and x, y variables
 
 		scale=0.3
-		x=65
+		x=70
 		y=50
+		ls=0.1*scale
 		ms=0.4*scale
-		
 
 		// hull
 		hullx0=7*scale
@@ -45,7 +46,7 @@ deck
 		s0y0=5*scale
 		s0y1=6*scale
 		s0y2=10*scale
-		s0y3=14*scale
+		s0y3=15*scale
 
 		s0x0+=x
 		s0x1+=x
@@ -150,18 +151,37 @@ deck
 		bsy1+=y
 		bsy2+=y
 
+		// jib line
+		jl0x1=15*scale
+		jl0y1=15*scale
+
+		jl0x2=18*scale
+		jl0y2=17*scale
+
+		jl0x1+=x
+		jl0x2+=x
+		jl0y1+=y
+		jl0y2+=y
+
 		bloody=hully2-5
 
+		sailcolor="rgb(255,255,255)"
+		hullcolor="black"
+		seacolor="rgb(138,158,174)" // "rgb(17,34,91)"
+		skycolor="rgb(163,199,244)"
+		bloodcolor="rgb(102,0,0)"
+		rect 50 25 100 50 seacolor 70                                                 // sea
+		rect 50 75 100 50 skycolor 100                                                // sky
 		polygon "hullx0 hullx1 hullx2 hullx3" "hully0 hully1 hully2 hully3" hullcolor // hull
 		polygon "s0x0 s0x1 s0x2 s0x3" "s0y0 s0y1 s0y2 s0y3" sailcolor                 // flying jib
 		polygon "s1x0 s1x1 s1x2" "s1y0 s1y1 s1y2" sailcolor                           // jib
+		line     jl0x1 jl0y1 jl0x2 jl0y2 ls                                           // jib line
 		polygon "s2x0 s2x1 s2x2 s2x3" "s2y0 s2y1 s2y2 s2y3" sailcolor                 // foresail
 		polygon "s3x0 s3x1 s3x2 s3x3" "s3y0 s3y1 s3y2 s3y3" sailcolor                 // main sail
 		line    mast0x1 mast0y1 mast0x2 mast0y2 ms                                    // foremast
 		line    mast1x1 mast1y1 mast1x2 mast1y2 ms                                    // main mast
 		line    bsx1 bsy1 bsx2 bsy2             ms hullcolor                          // bowsprit
-		
-		polygon "hullx1 100 100"  "hully1 hully2 bloody" bloodcolor 50                    // blood trail
+		polygon "hullx1 100 100"  "hully1 hully2 bloody" bloodcolor 50                // blood trail
 
 	eslide
 edeck
