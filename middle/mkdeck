@@ -1,0 +1,4 @@
+#!/bin/sh
+decksh middle.dsh > middle.xml
+pdfdeck middle.xml
+pngdeck middle.xml

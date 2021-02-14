@@ -1,0 +1,15 @@
+<deck>
+<slide>
+<rect xp="50" yp="25" wp="100" hp="50" color="rgb(138,158,174)" opacity="70"/>
+<rect xp="50" yp="75" wp="100" hp="50" color="rgb(163,199,244)" opacity="100"/>
+<polygon xc="67.1 67.7 74.6 75.2" yc="50.9 50 50 50.9" color="black"/>
+<polygon xc="65.6 67.7 68.9 69.5" yc="51.5 51.8 53 54.2" color="rgb(255,255,255)"/>
+<polygon xc="67.1 69.5 69.8" yc="51.5 51.5 54.2" color="rgb(255,255,255)"/>
+<polygon xc="69.8 71.9 71.9 70.4" yc="50.9 51.2 54.8 53.9" color="rgb(255,255,255)"/>
+<polygon xc="71.9 75.2 74.3 72.5" yc="50.9 51.5 55.4 54.2" color="rgb(255,255,255)"/>
+<line xp1="69.8" yp1="50.9" xp2="70.4" yp2="55.4" sp="0.12"/>
+<line xp1="71.9" yp1="50.9" xp2="73.1" yp2="56.6" sp="0.12"/>
+<line xp1="65" yp1="51.8" xp2="67.4" yp2="50.75" sp="0.12" color="black"/>
+<polygon xc="67.7 100 100" yc="50 50 45" color="rgb(102,0,0)" opacity="50"/>
+</slide>
+</deck>
