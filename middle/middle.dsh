@@ -167,10 +167,10 @@ deck
 
 		sailcolor="rgb(255,255,255)"
 		hullcolor="black"
-		seacolor="rgb(138,158,174)" // "rgb(17,34,91)"
-		skycolor="rgb(163,199,244)"
+		skycolor="lightsteelblue"
+		seacolor="steelblue"
 		bloodcolor="rgb(102,0,0)"
-		rect 50 25 100 50 seacolor 70                                                 // sea
+		rect 50 25 100 50 seacolor 60                                                 // sea
 		rect 50 75 100 50 skycolor 100                                                // sky
 		polygon "hullx0 hullx1 hullx2 hullx3" "hully0 hully1 hully2 hully3" hullcolor // hull
 		polygon "s0x0 s0x1 s0x2 s0x3" "s0y0 s0y1 s0y2 s0y3" sailcolor                 // flying jib
@@ -181,7 +181,7 @@ deck
 		line    mast0x1 mast0y1 mast0x2 mast0y2 ms                                    // foremast
 		line    mast1x1 mast1y1 mast1x2 mast1y2 ms                                    // main mast
 		line    bsx1 bsy1 bsx2 bsy2             ms hullcolor                          // bowsprit
-		polygon "hullx1 100 100"  "hully1 hully2 bloody" bloodcolor 50                // blood trail
+		polygon "hullx1 100 100"  "hully1 hully2 bloody" bloodcolor 60                // blood trail
 
 	eslide
 edeck

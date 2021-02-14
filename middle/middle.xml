@@ -1,7 +1,7 @@
 <deck>
 <slide>
-<rect xp="50" yp="25" wp="100" hp="50" color="rgb(138,158,174)" opacity="70"/>
-<rect xp="50" yp="75" wp="100" hp="50" color="rgb(163,199,244)" opacity="100"/>
+<rect xp="50" yp="25" wp="100" hp="50" color="steelblue" opacity="60"/>
+<rect xp="50" yp="75" wp="100" hp="50" color="lightsteelblue" opacity="100"/>
 <polygon xc="72.1 72.7 79.6 80.2" yc="50.9 50 50 50.9" color="black"/>
 <polygon xc="70.6 72.7 73.9 74.5" yc="51.5 51.8 53 54.5" color="rgb(255,255,255)"/>
 <polygon xc="72.1 74.5 74.8" yc="51.5 51.5 54.2" color="rgb(255,255,255)"/>
@@ -11,6 +11,6 @@
 <line xp1="74.8" yp1="50.9" xp2="75.4" yp2="55.4" sp="0.12"/>
 <line xp1="76.9" yp1="50.9" xp2="78.1" yp2="56.6" sp="0.12"/>
 <line xp1="70" yp1="51.8" xp2="72.4" yp2="50.75" sp="0.12" color="black"/>
-<polygon xc="72.7 100 100" yc="50 50 45" color="rgb(102,0,0)" opacity="50"/>
+<polygon xc="72.7 100 100" yc="50 50 45" color="rgb(102,0,0)" opacity="60"/>
 </slide>
 </deck>
