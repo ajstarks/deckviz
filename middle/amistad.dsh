@@ -1,0 +1,158 @@
+
+		// The ship is modeled on La Amistad as shown in 
+		// https://mysticknotwork.com/blogs/news/amistad
+		//
+		// The ship is made of 
+		// Polygons: hull, s0 (jib), s1 (flying jib), s2 (foresail), s3 (main sail)
+		// Lines:    mast0 (foremast), mast1 (main mast), bs (bowsprit), jl (jib line)
+		//
+		// The ship may be scaled and positioned via the scale and x, y variables
+		
+		// hull
+		hullx0=7*scale
+		hullx1=9*scale
+		hullx2=32*scale
+		hullx3=34*scale
+
+		hully0=3*scale
+		hully1=0*scale
+		hully2=0*scale
+		hully3=3*scale
+
+		hullx0+=x
+		hullx1+=x
+		hullx2+=x
+		hullx3+=x
+
+		hully0+=y
+		hully1+=y
+		hully2+=y
+		hully3+=y
+
+		// First sail
+		s0x0=2*scale
+		s0x1=9*scale
+		s0x2=13*scale
+		s0x3=15*scale
+
+		s0y0=5*scale
+		s0y1=6*scale
+		s0y2=10*scale
+		s0y3=15*scale
+
+		s0x0+=x
+		s0x1+=x
+		s0x2+=x
+		s0x3+=x
+
+		s0y0+=y
+		s0y1+=y
+		s0y2+=y
+		s0y3+=y
+
+
+		// Second sail
+		s1x0=7*scale
+		s1x1=15*scale
+		s1x2=16*scale
+
+		s1y0=5*scale
+		s1y1=5*scale
+		s1y2=14*scale
+
+		s1x0+=x
+		s1x1+=x
+		s1x2+=x
+
+		s1y0+=y
+		s1y1+=y
+		s1y2+=y
+
+		// Third sail
+		s2x0=16*scale
+		s2x1=23*scale
+		s2x2=23*scale
+		s2x3=18*scale
+
+		s2y0=3*scale
+		s2y1=4*scale
+		s2y2=16*scale
+		s2y3=13*scale
+
+		s2x0+=x
+		s2x1+=x
+		s2x2+=x
+		s2x3+=x
+
+		s2y0+=y
+		s2y1+=y
+		s2y2+=y
+		s2y3+=y
+
+		// Fourth sail
+		s3x0=23*scale
+		s3x1=34*scale
+		s3x2=31*scale
+		s3x3=25*scale
+
+		s3y0=3*scale
+		s3y1=5*scale
+		s3y2=18*scale
+		s3y3=14*scale
+
+		s3x0+=x
+		s3x1+=x
+		s3x2+=x
+		s3x3+=x
+
+		s3y0+=y
+		s3y1+=y
+		s3y2+=y
+		s3y3+=y
+
+		// First mast
+		mast0x1=16*scale
+		mast0y1=3*scale
+		mast0x2=18*scale
+		mast0y2=18*scale
+
+		mast0x1+=x
+		mast0x2+=x
+		mast0y1+=y
+		mast0y2+=y
+
+		// Second Mast
+		mast1x1=23*scale
+		mast1y1=3*scale
+		mast1x2=27*scale
+		mast1y2=22*scale
+
+		mast1x1+=x
+		mast1x2+=x
+		mast1y1+=y
+		mast1y2+=y
+
+		// Bowsprit
+		bsx1=0*scale
+		bsy1=6*scale
+		bsx2=8*scale
+		bsy2=2.5*scale
+
+		bsx1+=x
+		bsx2+=x
+		bsy1+=y
+		bsy2+=y
+
+		// jib line
+		jl0x1=15*scale
+		jl0y1=15*scale
+
+		jl0x2=18*scale
+		jl0y2=17*scale
+
+		jl0x1+=x
+		jl0x2+=x
+		jl0y1+=y
+		jl0y2+=y
+
+		bloody=hully2-5
