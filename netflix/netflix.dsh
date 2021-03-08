@@ -1,0 +1,49 @@
+// Netflix frequency: 2012-2020
+// Grid of monthly histograms, followed by yearly counts.
+//
+// histograms made with:
+// grep '^2012-' netflix-iso.d | ./datehist > netflix-2012-hist.d
+//
+// Yearly counts made with:
+// ./yearhist netflix-iso.d > netflix-yearly.d
+// 
+// netflix-iso.d is a conversion of the CSV file from netflix 
+// to be tab-separated and use ISO dates, with the format <date>\t<title>
+deck
+	opts="-textsize=1.2 -vcolor=#c8c8c8 -lcolor=#c8c8c8 -color=orange"
+	mopts="-min=0 -max=100"
+	slide "black" "rgb(200,200,200)"
+
+		ts=3
+		image "Netflix_Logo_RGB.png" 32 95 1800 756 7
+		text "Viewing Frequency 2012-2020" 40 93.5 ts "sans" "orange"
+
+		lr="-left 15 -right 40"
+		dchart opts mopts lr -top 90 -bottom 80 netflix-2012-hist.d
+		dchart opts mopts lr -top 72 -bottom 62 netflix-2013-hist.d
+		dchart opts mopts lr -top 54 -bottom 44 netflix-2014-hist.d
+		dchart opts mopts lr -top 36 -bottom 26 netflix-2015-hist.d
+		dchart opts mopts lr -top 18 -bottom  8 netflix-2016-hist.d
+
+		lr="-left 65 -right 90"
+		dchart opts mopts lr -top 90 -bottom 80 netflix-2017-hist.d
+		dchart opts mopts lr -top 72 -bottom 62 netflix-2018-hist.d
+		dchart opts mopts lr -top 54 -bottom 44 netflix-2019-hist.d
+		dchart opts mopts lr -top 36 -bottom 26 netflix-2020-hist.d
+		dchart opts       lr -top 18 -bottom  8 -dot -bar=f -xlabel=2  netflix-yearly.d
+
+		ts=2.5
+		lx=7
+		ctext "2012" lx 80 ts "sans"
+		ctext "2013" lx 62 ts "sans"
+		ctext "2014" lx 44 ts "sans"
+		ctext "2015" lx 26 ts "sans"
+		ctext "2016" lx 8 ts "sans"
+		lx+=50
+		ctext "2017" lx 80 ts "sans"
+		ctext "2018" lx 62 ts "sans"
+		ctext "2019" lx 44 ts "sans"
+		ctext "2020" lx 26 ts "sans"
+		ctext "Views/Year" lx 8 ts "sans"
+	eslide
+edeck
