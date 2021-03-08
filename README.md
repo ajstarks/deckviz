@@ -16,9 +16,11 @@
 * elections -- elections through the years
 * fire -- German wildfires
 * gomod -- Go module flows
+* middle -- the Middle Passage
 * modelt -- Manufacturing and Marketing the Model T - 1908-1916
 * multigen -- Multi-generational households
 * nba -- NBA standings
+* netflix -- Netflix viewing frequency
 * prison -- Comparing the rate of incarceration vs. US presidential terms
 * speed -- Comparison of Indy 500 speed data
 * swd -- Examples from "Storytelling with Data"
