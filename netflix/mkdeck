@@ -1,0 +1,4 @@
+#!/bin/bash
+decksh netflix.dsh > netflix.xml
+pdfdeck netflix.xml
+pngdeck netflix.xml
