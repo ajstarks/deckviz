@@ -1,0 +1,2 @@
+#!/bin/bash
+awk '{print substr($1,1,4)}' netflix-iso.d | sort | uniq -c | awk '{printf "%4d\t%d\n", $2, $1}'

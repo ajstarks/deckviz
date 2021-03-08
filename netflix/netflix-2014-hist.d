@@ -1,0 +1,12 @@
+Jan	14
+Feb	18
+Mar	10
+Apr	15
+May	7
+Jun	2
+Jul	0
+Aug	25
+Sep	16
+Oct	30
+Nov	6
+Dec	9

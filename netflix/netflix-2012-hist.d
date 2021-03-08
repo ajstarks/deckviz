@@ -1,0 +1,12 @@
+Jan	0
+Feb	41
+Mar	32
+Apr	33
+May	12
+Jun	7
+Jul	13
+Aug	6
+Sep	40
+Oct	44
+Nov	31
+Dec	51

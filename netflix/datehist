@@ -1,0 +1,54 @@
+#!/bin/bash
+awk '
+{
+	split($1,d,"-")
+	year=d[1]
+	month=d[2]
+	day=d[3]
+	if (month == "01") {
+		jan++
+	}
+	if (month == "02") {
+		feb++
+	}
+
+	if (month == "03") {
+		mar++
+	}
+	if (month == "04") {
+		apr++
+	}
+
+	if (month == "05") {
+		may++
+	}
+	if (month == "06") {
+		jun++
+	}
+
+	if (month == "07") {
+		jul++
+	}
+	if (month == "08") {
+		aug++
+	}
+
+	if (month == "09") {
+		sep++
+	}
+	if (month == "10") {
+		oct++
+	}
+
+	if (month == "11") {
+		nov++
+	}
+	if (month == "12") {
+		dec++
+	}
+}
+
+END {
+	printf "Jan\t%d\nFeb\t%d\nMar\t%d\nApr\t%d\nMay\t%d\nJun\t%d\nJul\t%d\nAug\t%d\nSep\t%d\nOct\t%d\nNov\t%d\nDec\t%d\n", jan,feb,mar,apr,may,jun,jul,aug,sep,oct,nov,dec
+}
+' $*
