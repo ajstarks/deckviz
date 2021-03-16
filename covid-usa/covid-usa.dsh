@@ -1,0 +1,19 @@
+deck
+	slide
+		opts="-line  -bar -val=f -xlabel=180"
+		loc="-left=5 -right=20"
+		dchart -top=85 -bottom=75  loc  opts New-Jersey.d
+		dchart -top=55 -bottom=45  loc opts New-York.d
+		dchart -top=25 -bottom=15  loc opts Connecticut.d
+
+		loc="-left=35 -right=50"
+		dchart -top=85 -bottom=75 loc opts California.d
+		dchart -top=55 -bottom=45 loc opts Washington.d
+		dchart -top=25 -bottom=15 loc opts Oregon.d
+
+		loc="-left=65 -right=80"
+		dchart -top=85 -bottom=75 loc opts Mississippi.d
+		dchart -top=55 -bottom=45 loc opts Texas.d
+		dchart -top=25 -bottom=15 loc opts Alabama.d
+	eslide
+edeck
