@@ -1,0 +1,101 @@
+deck
+	slide "black" "white"
+		bits="0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1"
+		ts=3
+		ls=ts*0.75
+		ls2=ls*0.4
+		col1=20
+		col2=31.2
+		col3=40
+		col4=70
+		midx=50
+		top=90
+
+		dotsize=0.75
+
+		row1=70
+		row2=62.75
+		row3=45.75
+		row4=28.75
+		row5=21
+
+		lrow1=row1-ls2
+		lrow2=row2-ls2
+		lrow3=row3-ls2
+		lrow4=row4-ls2
+		lrow5=row5-ls2
+
+		left=10
+
+		bit8=8/32
+		bit1=1/32
+		bit7=7/32
+		bit16=16/32
+		bit20=20/32
+		bit10=10/32
+		bit30=30/32
+
+
+		len=80
+		l1=len*bit8
+		l2=len*bit1
+		l3=len*bit7
+		l4=len*bit16
+
+		l10=len*bit10
+
+		bx=col1
+		by=82
+		bly=by+ls2
+		bsize=len/4
+		ctext "Octet 0" bx bly 2 "sans" "gray"
+		ubrace bx by bsize 1 1 0.2
+		bx+=l1
+		ctext "Octet 1" bx bly 2 "sans" "gray"
+		ubrace bx by bsize 1 1 0.2
+		bx+=l1
+		ctext "Octet 2" bx bly 2 "sans" "gray"
+		ubrace bx by bsize 1 1 0.2
+		bx+=l1
+		ctext "Octet 3" bx bly 2 "sans" "gray"
+		ubrace bx by bsize 1 1 0.2
+
+		ctext "bits" 5 75 2.12 "sans" "gray"
+		bl10=36
+		ctext "1" bl10 78 2.12 "mono"  "gray"
+		bl10+=25.5
+		ctext "2" bl10 78 2.12 "mono"  "gray"
+		bl10+=25.5
+		ctext "3" bl10 78 2.12 "mono"  "gray"
+		ctext bits midx 75 2.12 "mono" "gray"
+	
+		// first row
+		l=left
+		hline l row1 l1 5 "steelblue" 80
+		l+=l1
+		hline l row1 l2 5 "red" 50
+		l+=l2
+		hline l row1 l3 5 "red"
+		l+=l3
+		hline l row1 l4 5 "gray"
+		
+		// rows 2-5
+		hline left row2 len 5 "orange"
+		hline left row3 len 20 "green"
+		hline left row4 len 5 "gray" 50
+		hline left row5 len 5 "gray" 50
+
+
+		// labels
+		ctext "Common Request Packet Format" midx top ts
+		ctext "Version = 2" col1 lrow1 ls
+		ctext "R" col2 lrow1 ls
+		ctext "Opcode" col3 lrow1 ls
+		ctext "Reserved" col4 lrow1 ls
+		ctext "Requested Lifetime (32 bits)" midx lrow2 ls
+		ctext "PCP Client's IP Address (128 bits)" midx lrow3 ls
+		ctext "(optional) Opcode-specific information" midx lrow4 ls
+		ctext "(optional) PCP Options" midx lrow5 ls
+
+	eslide
+edeck
