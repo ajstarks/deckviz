@@ -1,19 +1,28 @@
 deck
 	slide
-		opts="-line  -bar -val=f -xlabel=180"
-		loc="-left=5 -right=20"
-		dchart -top=85 -bottom=75  loc  opts New-Jersey.d
-		dchart -top=55 -bottom=45  loc opts New-York.d
-		dchart -top=25 -bottom=15  loc opts Connecticut.d
+		opts="-line -textsize=1 -bar=f -val=f -xlabel=120 -linewidth=0.1 -vol"
+		tb1="-top=85 -bottom=75"
+		tb2="-top=55 -bottom=45"
+		tb3="-top=25 -bottom=15"
 
-		loc="-left=35 -right=50"
-		dchart -top=85 -bottom=75 loc opts California.d
-		dchart -top=55 -bottom=45 loc opts Washington.d
-		dchart -top=25 -bottom=15 loc opts Oregon.d
+		loc="-left=2 -right=22"
+		dchart tb1 loc opts California.d
+		dchart tb2 loc opts Oregon.d
+		dchart tb3 loc opts Washington.d
 
-		loc="-left=65 -right=80"
-		dchart -top=85 -bottom=75 loc opts Mississippi.d
-		dchart -top=55 -bottom=45 loc opts Texas.d
-		dchart -top=25 -bottom=15 loc opts Alabama.d
+		loc="-left=27 -right=47"
+		dchart tb1 loc opts North-Dakota.d
+		dchart tb2 loc opts South-Dakota.d
+		dchart tb3 loc opts Missouri.d
+
+		loc="-left=77 -right=97"
+		dchart tb1 loc opts New-York.d
+		dchart tb2 loc opts New-Jersey.d
+		dchart tb3 loc opts Connecticut.d
+
+		loc="-left=52 -right=72"
+		dchart tb1 loc opts Alabama.d
+		dchart tb2 loc opts Texas.d
+		dchart tb3 loc opts Florida.d
 	eslide
 edeck
