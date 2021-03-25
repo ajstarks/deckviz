@@ -117,15 +117,16 @@ const (
 	grandSize         = 1.2
 	grandSpacing      = grandSize * 1.8
 	ggrandSize        = grandSize * 0.75
-	treeMinX          = 7
+	treeMinX          = 7.0
 	treeMaxX          = 100 - treeMinX
-	minFanAngle       = 30
-	maxFanAngle       = 150
-	fanRadius         = 5
+	minFanAngle       = 30.0
+	maxFanAngle       = 150.0
+	fanRadius         = 4.0
 	trunkStroke       = 0.2
+	lineOpacity       = 25.0
 	branchStroke      = trunkStroke / 2
-	timeX             = 98
-	timeY             = 2
+	timeX             = 98.0
+	timeY             = 2.0
 	timeSize          = 0.6
 	yearcolor         = "rgb(100,100,100)"
 	grandcolor        = "maroon"
@@ -182,20 +183,6 @@ func polar(cx, cy, r, theta, cw, ch float64) (float64, float64) {
 	return cx + (r * math.Cos(t)), cy + (ry * math.Sin(t))
 }
 
-func fan(w io.Writer, cx, cy, r float64, n int) ([]float64, []float64) {
-	fn := float64(n - 1)
-	div := (maxFanAngle - minFanAngle) / fn
-	var a float64
-	px := make([]float64, n)
-	py := make([]float64, n)
-	i := 0
-	for a = maxFanAngle; a >= minFanAngle; a -= div {
-		px[i], py[i] = polar(cx, cy, r, a, canvasWidth, canvasHeight)
-		i++
-	}
-	return px, py
-}
-
 func scale(w io.Writer, x, y float64, min, max, interval int) {
 	fmin, fmax := float64(min), float64(max)
 	line(w, treeMinX, y+3, treeMaxX, y+3, 0.1, yearcolor, 100)
@@ -208,13 +195,13 @@ func scale(w io.Writer, x, y float64, min, max, interval int) {
 }
 
 func famtree(w io.Writer, data Family) {
-	var gencolors = map[string]string{"m": "blue", "f": "pink"}
+	var gencolors = map[string]string{"m": "blue", "f": "#FF69B4"}
 	ctext(w, midx, parentFooterY, familySize, data.Name, "sans", "")
 	text(w, treeMinX, 100-parentFooterY, parentSize, data.Parent.Husband, "sans", "")
 	etext(w, treeMaxX, 100-parentFooterY, parentSize, data.Parent.Wife, "sans", "")
 	children := data.Parent.Children
 	cy := 50.0
-	cr := 2.0
+	cr := 1.5
 	bmin, bmax := bminmax(children)
 	posx := make([]float64, len(children))
 	scale(w, treeMinX, cy-7, bmin, bmax, 1)
@@ -230,19 +217,24 @@ func famtree(w io.Writer, data Family) {
 			sep = posx[i] - posx[i-1]
 		}
 		circle(w, cx, cy, cr, color, 100)
-		ctext(w, cx, cy-3, childSize*0.7, c.Name, "sans", "")
+		ctext(w, cx, cy-3, childSize*0.75, c.Name, "sans", "")
 		fy = cy + sep // trunkHeight
 		if len(c.Grands) > 0 {
-			px, py := fan(w, cx, fy, fanRadius, len(c.Grands))
-			line(w, cx, cy, cx, fy, 0.2, color, 100)
-			for j, g := range c.Grands {
-				line(w, cx, fy, px[j], py[j], 0.1, color, 100)
-				rtext(w, px[j], py[j], 270, 0.75, g.Name, "sans", "")
+			div := (maxFanAngle - minFanAngle) / float64(len(c.Grands)-1)
+			//px, py := fan(w, cx, fy, fanRadius, len(c.Grands))
+			line(w, cx, cy, cx, fy, 1, color, lineOpacity)
+			angle := maxFanAngle
+			for _, g := range c.Grands {
+				gcolor := gencolors[g.Gender]
+				ax, ay := polar(cx, fy, fanRadius, angle, canvasWidth, canvasHeight)
+				line(w, cx, fy, ax, ay, 0.3, gcolor, 50)
+				rtext(w, ax, ay, angle-minFanAngle, grandSize*0.7, g.Name, "sans", "")
+				angle -= div
 			}
 		}
-		circle(w, midx, 12, 2, gencolors["m"], 20)
-		circle(w, midx, 12, 2, gencolors["f"], 20)
-		line(w, midx, 12, cx, cy, cr/2, color, 20)
+		circle(w, midx, 12, 2, gencolors["m"], lineOpacity)
+		circle(w, midx, 12, 2, gencolors["f"], lineOpacity)
+		line(w, midx, 12, cx, cy, cr/2, color, lineOpacity)
 		counts(w, data)
 	}
 }
@@ -272,9 +264,9 @@ func counts(w io.Writer, data Family) {
 	tnc := "Children: " + strconv.Itoa(nc)
 	tng := "Grand Children: " + strconv.Itoa(ng)
 	tngg := "Great Grand Children: " + strconv.Itoa(ngg)
-	etext(w, footerX, 15, footerSize, tnc, "sans", yearcolor)
-	etext(w, footerX, 12, footerSize, tng, "sans", yearcolor)
-	etext(w, footerX, 9, footerSize, tngg, "sans", yearcolor)
+	etext(w, footerX, parentFooterY+6, footerSize, tnc, "sans", yearcolor)
+	etext(w, footerX, parentFooterY+3, footerSize, tng, "sans", yearcolor)
+	etext(w, footerX, parentFooterY, footerSize, tngg, "sans", yearcolor)
 }
 
 func drawChildren(w io.Writer, data Family) {
