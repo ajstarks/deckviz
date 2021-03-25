@@ -67,6 +67,10 @@ func ctext(w io.Writer, x, y, fs float64, s, font, color string) {
 	fmt.Fprintf(w, "ctext \"%s\" %.2f %.2f %.2f %q %q\n", s, x, y, fs, font, color)
 }
 
+func rtext(w io.Writer, x, y, fs, angle float64, s, font, color string) {
+	fmt.Fprintf(w, "rtext \"%s\" %.2f %.2f %.3f %.2f %q %q\n", s, x, y, fs, angle, font, color)
+}
+
 func brace(w io.Writer, x, y, height, bw, bh, strokeWidth float64, color string) {
 	fmt.Fprintf(w, "lbrace %.2f %.2f %.2f %.2f %.2f %.2f\n", x, y, height, bw, bh, strokeWidth)
 }
@@ -113,11 +117,11 @@ const (
 	grandSize         = 1.2
 	grandSpacing      = grandSize * 1.8
 	ggrandSize        = grandSize * 0.75
-	treeMinX          = 10
+	treeMinX          = 7
 	treeMaxX          = 100 - treeMinX
 	minFanAngle       = 30
 	maxFanAngle       = 150
-	fanRadius         = 4
+	fanRadius         = 5
 	trunkStroke       = 0.2
 	branchStroke      = trunkStroke / 2
 	timeX             = 98
@@ -205,15 +209,15 @@ func scale(w io.Writer, x, y float64, min, max, interval int) {
 
 func famtree(w io.Writer, data Family) {
 	var gencolors = map[string]string{"m": "blue", "f": "pink"}
-	ctext(w, midx, 5, familySize, data.Name, "sans", "")
-	ctext(w, husbandFooterX, parentFooterY, parentSize, data.Parent.Husband, "sans", "")
-	ctext(w, wifeFooterX, parentFooterY, parentSize, data.Parent.Wife, "sans", "")
+	ctext(w, midx, parentFooterY, familySize, data.Name, "sans", "")
+	text(w, treeMinX, 100-parentFooterY, parentSize, data.Parent.Husband, "sans", "")
+	etext(w, treeMaxX, 100-parentFooterY, parentSize, data.Parent.Wife, "sans", "")
 	children := data.Parent.Children
 	cy := 50.0
 	cr := 2.0
 	bmin, bmax := bminmax(children)
 	posx := make([]float64, len(children))
-	scale(w, treeMinX, 40, bmin, bmax, 2)
+	scale(w, treeMinX, cy-7, bmin, bmax, 1)
 	var sep float64
 	var fy float64
 	sep = 10
@@ -225,18 +229,21 @@ func famtree(w io.Writer, data Family) {
 		if i > 0 {
 			sep = posx[i] - posx[i-1]
 		}
-		fy = cy + sep // trunkHeight
-		px, py := fan(w, cx, fy, fanRadius, len(c.Grands))
 		circle(w, cx, cy, cr, color, 100)
-		ctext(w, cx, cy-5, childSize*0.7, c.Name, "sans", "")
-		line(w, cx, cy, cx, fy, 0.2, color, 100)
-		for j, g := range c.Grands {
-			line(w, cx, fy, px[j], py[j], 0.1, color, 100)
-			ctext(w, px[j], py[j], 0.75, g.Name, "sans", "")
+		ctext(w, cx, cy-3, childSize*0.7, c.Name, "sans", "")
+		fy = cy + sep // trunkHeight
+		if len(c.Grands) > 0 {
+			px, py := fan(w, cx, fy, fanRadius, len(c.Grands))
+			line(w, cx, cy, cx, fy, 0.2, color, 100)
+			for j, g := range c.Grands {
+				line(w, cx, fy, px[j], py[j], 0.1, color, 100)
+				rtext(w, px[j], py[j], 270, 0.75, g.Name, "sans", "")
+			}
 		}
 		circle(w, midx, 12, 2, gencolors["m"], 20)
 		circle(w, midx, 12, 2, gencolors["f"], 20)
 		line(w, midx, 12, cx, cy, cr/2, color, 20)
+		counts(w, data)
 	}
 }
 
@@ -265,9 +272,9 @@ func counts(w io.Writer, data Family) {
 	tnc := "Children: " + strconv.Itoa(nc)
 	tng := "Grand Children: " + strconv.Itoa(ng)
 	tngg := "Great Grand Children: " + strconv.Itoa(ngg)
-	etext(w, footerX, 15, footerSize, tnc, "sans", "")
-	etext(w, footerX, 12, footerSize, tng, "sans", "")
-	etext(w, footerX, 9, footerSize, tngg, "sans", "")
+	etext(w, footerX, 15, footerSize, tnc, "sans", yearcolor)
+	etext(w, footerX, 12, footerSize, tng, "sans", yearcolor)
+	etext(w, footerX, 9, footerSize, tngg, "sans", yearcolor)
 }
 
 func drawChildren(w io.Writer, data Family) {
