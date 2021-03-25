@@ -4,6 +4,7 @@ import (
 	"encoding/xml"
 	"fmt"
 	"io"
+	"math"
 	"os"
 	"strconv"
 	"time"
@@ -27,6 +28,7 @@ type child struct {
 	Name       string  `xml:"name,attr"`
 	Birth      string  `xml:"birth,attr"`
 	Death      string  `xml:"death,attr"`
+	Gender     string  `xml:"gender,attr"`
 	Image      string  `xml:"image,attr"`
 	Grands     []child `xml:"child"`
 }
@@ -61,19 +63,30 @@ func etext(w io.Writer, x, y, fs float64, s, font, color string) {
 	fmt.Fprintf(w, "etext \"%s\" %.2f %.2f %.2f %q %q\n", s, x, y, fs, font, color)
 }
 
+func ctext(w io.Writer, x, y, fs float64, s, font, color string) {
+	fmt.Fprintf(w, "ctext \"%s\" %.2f %.2f %.2f %q %q\n", s, x, y, fs, font, color)
+}
+
 func brace(w io.Writer, x, y, height, bw, bh, strokeWidth float64, color string) {
 	fmt.Fprintf(w, "lbrace %.2f %.2f %.2f %.2f %.2f %.2f\n", x, y, height, bw, bh, strokeWidth)
 }
 
-//func line(w io.Writer, x1, y1, x2, y2, strokeWidth float64, color string) {
-//	fmt.Fprintf(w, "line %v %v %v %v %v %q\n", x1, y1, x2, y2, strokeWidth, color)
-//}
+func circle(w io.Writer, x, y, r float64, color string, opacity float64) {
+	fmt.Fprintf(w, "circle %.2f %.2f %.2f %q %.2f\n", x, y, r, color, opacity)
+}
+
+func line(w io.Writer, x1, y1, x2, y2, strokeWidth float64, color string, opacity float64) {
+	fmt.Fprintf(w, "line %v %v %v %v %v %q %.2f\n", x1, y1, x2, y2, strokeWidth, color, opacity)
+}
 
 func image(w io.Writer, s string, x, y float64, width, height int, scale float64) {
 	fmt.Fprintf(w, "image %q %v %v %v %v %v\n", s, x, y, width, height, scale)
 }
 
 const (
+	canvasWidth       = 792
+	canvasHeight      = 612
+	midx              = 50.0
 	midy              = 50.0
 	familySize        = 5.0
 	familyHeight      = 95.0
@@ -83,6 +96,9 @@ const (
 	parentSize        = familySize * 0.6
 	parentSpacing     = 5.0
 	parentBraceHeight = 95.0
+	parentFooterY     = 5.0
+	husbandFooterX    = midx - 25
+	wifeFooterX       = midx + 25
 	parentStroke      = 0.2
 	footerX           = parentBraceX - 5
 	footerSize        = 1.5
@@ -97,15 +113,30 @@ const (
 	grandSize         = 1.2
 	grandSpacing      = grandSize * 1.8
 	ggrandSize        = grandSize * 0.75
+	treeMinX          = 10
+	treeMaxX          = 100 - treeMinX
+	minFanAngle       = 30
+	maxFanAngle       = 150
+	fanRadius         = 4
+	trunkStroke       = 0.2
+	branchStroke      = trunkStroke / 2
+	timeX             = 98
+	timeY             = 2
+	timeSize          = 0.6
 	yearcolor         = "rgb(100,100,100)"
 	grandcolor        = "maroon"
 	ggcolor           = "steelblue"
 	linecolor         = yearcolor
 )
 
+//vmap maps one interval to another
+func vmap(value float64, low1 float64, high1 float64, low2 float64, high2 float64) float64 {
+	return low2 + (high2-low2)*(value-low1)/(high1-low1)
+}
+
 func timestamp(w io.Writer) {
 	now := time.Now().Format("Jan _2, 2006 3:04 PM")
-	etext(w, 95, 2, 1, now, "sans", yearcolor)
+	etext(w, timeX, timeY, timeSize, now, "sans", yearcolor)
 }
 
 func drawParent(w io.Writer, data Family) {
@@ -121,6 +152,92 @@ func drawParent(w io.Writer, data Family) {
 	py -= parentSpacing
 	text(w, parentX, py, parentSize, "(married "+data.Parent.Married+")", "sans", yearcolor)
 	brace(w, parentBraceX, midy, parentBraceHeight, parentSize, parentSize, parentStroke, "")
+}
+
+func bminmax(children []child) (int, int) {
+	min, max := 99999, 0
+	for _, c := range children {
+		birth, err := strconv.Atoi(c.Birth)
+		if err != nil {
+			return 0, 0
+		}
+		if birth < min {
+			min = birth
+		}
+		if birth > max {
+			max = birth
+		}
+	}
+	return min, max
+}
+
+// polar to Cartesian coordinates, corrected for aspect ratio
+func polar(cx, cy, r, theta, cw, ch float64) (float64, float64) {
+	ry := r * (cw / ch)
+	t := theta * (math.Pi / 180)
+	return cx + (r * math.Cos(t)), cy + (ry * math.Sin(t))
+}
+
+func fan(w io.Writer, cx, cy, r float64, n int) ([]float64, []float64) {
+	fn := float64(n - 1)
+	div := (maxFanAngle - minFanAngle) / fn
+	var a float64
+	px := make([]float64, n)
+	py := make([]float64, n)
+	i := 0
+	for a = maxFanAngle; a >= minFanAngle; a -= div {
+		px[i], py[i] = polar(cx, cy, r, a, canvasWidth, canvasHeight)
+		i++
+	}
+	return px, py
+}
+
+func scale(w io.Writer, x, y float64, min, max, interval int) {
+	fmin, fmax := float64(min), float64(max)
+	line(w, treeMinX, y+3, treeMaxX, y+3, 0.1, yearcolor, 100)
+	for v := min; v <= max; v += interval {
+		label := strconv.Itoa(int(v))
+		lx := vmap(float64(v), fmin, fmax, treeMinX, treeMaxX)
+		ctext(w, lx, y, 1, label, "sans", yearcolor)
+		line(w, lx, y+2, lx, y+3, 0.1, yearcolor, 100)
+	}
+}
+
+func famtree(w io.Writer, data Family) {
+	var gencolors = map[string]string{"m": "blue", "f": "pink"}
+	ctext(w, midx, 5, familySize, data.Name, "sans", "")
+	ctext(w, husbandFooterX, parentFooterY, parentSize, data.Parent.Husband, "sans", "")
+	ctext(w, wifeFooterX, parentFooterY, parentSize, data.Parent.Wife, "sans", "")
+	children := data.Parent.Children
+	cy := 50.0
+	cr := 2.0
+	bmin, bmax := bminmax(children)
+	posx := make([]float64, len(children))
+	scale(w, treeMinX, 40, bmin, bmax, 2)
+	var sep float64
+	var fy float64
+	sep = 10
+	for i, c := range children {
+		color := gencolors[c.Gender]
+		birthdate, _ := strconv.Atoi(c.Birth)
+		posx[i] = vmap(float64(birthdate), float64(bmin), float64(bmax), treeMinX, treeMaxX)
+		cx := posx[i]
+		if i > 0 {
+			sep = posx[i] - posx[i-1]
+		}
+		fy = cy + sep // trunkHeight
+		px, py := fan(w, cx, fy, fanRadius, len(c.Grands))
+		circle(w, cx, cy, cr, color, 100)
+		ctext(w, cx, cy-5, childSize*0.7, c.Name, "sans", "")
+		line(w, cx, cy, cx, fy, 0.2, color, 100)
+		for j, g := range c.Grands {
+			line(w, cx, fy, px[j], py[j], 0.1, color, 100)
+			ctext(w, px[j], py[j], 0.75, g.Name, "sans", "")
+		}
+		circle(w, midx, 12, 2, gencolors["m"], 20)
+		circle(w, midx, 12, 2, gencolors["f"], 20)
+		line(w, midx, 12, cx, cy, cr/2, color, 20)
+	}
 }
 
 func ggstring(c []child) string {
@@ -185,18 +302,23 @@ func drawChildren(w io.Writer, data Family) {
 }
 
 func draw(w io.Writer, data Family) {
-	timestamp(w)
 	drawParent(w, data)
 	drawChildren(w, data)
 }
 
-func process(w io.Writer, r io.Reader) error {
+func process(w io.Writer, r io.Reader, style string) error {
 	data, err := readData(r)
 	if err != nil {
 		return err
 	}
 	beginSlide(w)
-	draw(w, data)
+	timestamp(w)
+	switch style {
+	case "tree":
+		famtree(w, data)
+	case "text":
+		draw(w, data)
+	}
 	endSlide(w)
 	return err
 }
@@ -209,7 +331,7 @@ func main() {
 			fmt.Fprintf(os.Stderr, "%v\n", err)
 			continue
 		}
-		err = process(os.Stdout, r)
+		err = process(os.Stdout, r, "tree")
 		if err != nil {
 			fmt.Fprintf(os.Stderr, "%v\n", err)
 			continue
