@@ -2,6 +2,7 @@ package main
 
 import (
 	"encoding/xml"
+	"flag"
 	"fmt"
 	"io"
 	"math"
@@ -228,7 +229,7 @@ func famtree(w io.Writer, data Family) {
 				gcolor := gencolors[g.Gender]
 				ax, ay := polar(cx, fy, fanRadius, angle, canvasWidth, canvasHeight)
 				line(w, cx, fy, ax, ay, 0.3, gcolor, 50)
-				rtext(w, ax, ay, angle-minFanAngle, grandSize*0.7, g.Name, "sans", "")
+				rtext(w, ax, ay, angle-minFanAngle, grandSize*0.7, g.Name, "sans", grandcolor)
 				angle -= div
 			}
 		}
@@ -323,14 +324,18 @@ func process(w io.Writer, r io.Reader, style string) error {
 }
 
 func main() {
+	var style string
+	flag.StringVar(&style, "style", "tree", "style (tree or text)")
+	flag.Parse()
+
 	beginDeck(os.Stdout)
-	for _, f := range os.Args[1:] {
+	for _, f := range flag.Args() {
 		r, err := os.Open(f)
 		if err != nil {
 			fmt.Fprintf(os.Stderr, "%v\n", err)
 			continue
 		}
-		err = process(os.Stdout, r, "tree")
+		err = process(os.Stdout, r, style)
 		if err != nil {
 			fmt.Fprintf(os.Stderr, "%v\n", err)
 			continue
