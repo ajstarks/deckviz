@@ -222,14 +222,19 @@ func famtree(w io.Writer, data Family) {
 		fy = cy + sep // trunkHeight
 		if len(c.Grands) > 0 {
 			div := (maxFanAngle - minFanAngle) / float64(len(c.Grands)-1)
-			//px, py := fan(w, cx, fy, fanRadius, len(c.Grands))
 			line(w, cx, cy, cx, fy, 1, color, lineOpacity)
 			angle := maxFanAngle
 			for _, g := range c.Grands {
 				gcolor := gencolors[g.Gender]
 				ax, ay := polar(cx, fy, fanRadius, angle, canvasWidth, canvasHeight)
 				line(w, cx, fy, ax, ay, 0.3, gcolor, 50)
-				rtext(w, ax, ay, angle-minFanAngle, grandSize*0.7, g.Name, "sans", grandcolor)
+				rtext(w, ax, ay, angle, grandSize*0.7, g.Name, "sans", grandcolor)
+
+				if len(g.Grands) > 0 {
+					ggadjust := float64(len(g.Name)) * (grandSize * 0.35)
+					gx, gy := polar(cx, fy, fanRadius+ggadjust, angle, canvasWidth, canvasHeight)
+					rtext(w, gx, gy, angle-minFanAngle, grandSize*0.5, ggstringName(g.Grands), "sans", ggcolor)
+				}
 				angle -= div
 			}
 		}
@@ -242,11 +247,27 @@ func famtree(w io.Writer, data Family) {
 
 func ggstring(c []child) string {
 	s := ""
+	if len(c) < 1 {
+		return s
+	}
 	l := len(c)
 	for i := 0; i < l-1; i++ {
 		s = s + c[i].Name + " (" + c[i].Birth + "), "
 	}
 	s = s + c[l-1].Name + " (" + c[l-1].Birth + ")"
+	return s
+}
+
+func ggstringName(c []child) string {
+	s := ""
+	if len(c) < 1 {
+		return s
+	}
+	l := len(c)
+	for i := 0; i < l-1; i++ {
+		s = s + c[i].Name + ", "
+	}
+	s = s + c[l-1].Name
 	return s
 }
 
