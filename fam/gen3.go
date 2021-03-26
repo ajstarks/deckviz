@@ -224,13 +224,14 @@ func famtree(w io.Writer, data Family) {
 			div := (maxFanAngle - minFanAngle) / float64(len(c.Grands)-1)
 			line(w, cx, cy, cx, fy, 1, color, lineOpacity)
 			angle := maxFanAngle
+			// for each grand child, render radiating from their parents
 			for _, g := range c.Grands {
 				gcolor := gencolors[g.Gender]
 				ax, ay := polar(cx, fy, fanRadius, angle, canvasWidth, canvasHeight)
 				line(w, cx, fy, ax, ay, 0.3, gcolor, 50)
 				rtext(w, ax, ay, angle, grandSize*0.7, g.Name, "sans", grandcolor)
 
-				if len(g.Grands) > 0 {
+				if len(g.Grands) > 0 { // add great-grandchildren, following grandchildren, with a slight angle change
 					ggadjust := float64(len(g.Name)) * (grandSize * 0.35)
 					gx, gy := polar(cx, fy, fanRadius+ggadjust, angle, canvasWidth, canvasHeight)
 					rtext(w, gx, gy, angle-minFanAngle, grandSize*0.5, ggstringName(g.Grands), "sans", ggcolor)
