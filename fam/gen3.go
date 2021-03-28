@@ -219,7 +219,7 @@ func famtree(w io.Writer, data Family) {
 		}
 		circle(w, cx, cy, cr, color, 100)
 		ctext(w, cx, cy-3, childSize*0.75, c.Name, "sans", "")
-		fy = cy + sep // trunkHeight
+		fy = cy + (sep / 2) // trunkHeight
 		if len(c.Grands) > 0 {
 			div := (maxFanAngle - minFanAngle) / float64(len(c.Grands)-1)
 			line(w, cx, cy, cx, fy, 1, color, lineOpacity)
