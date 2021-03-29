@@ -204,22 +204,14 @@ func famtree(w io.Writer, data Family) {
 	cy := 50.0
 	cr := 1.5
 	bmin, bmax := bminmax(children)
-	posx := make([]float64, len(children))
 	scale(w, treeMinX, cy-7, bmin, bmax, 1)
-	var sep float64
-	var fy float64
-	sep = 10
-	for i, c := range children {
+	for _, c := range children {
 		color := gencolors[c.Gender]
 		birthdate, _ := strconv.Atoi(c.Birth)
-		posx[i] = vmap(float64(birthdate), float64(bmin), float64(bmax), treeMinX, treeMaxX)
-		cx := posx[i]
-		if i > 0 {
-			sep = posx[i] - posx[i-1]
-		}
+		cx := vmap(float64(birthdate), float64(bmin), float64(bmax), treeMinX, treeMaxX)
 		circle(w, cx, cy, cr, color, 100)
-		ctext(w, cx, cy-3, childSize*0.75, c.Name, "sans", "")
-		fy = cy + (sep / 2) // trunkHeight
+		ctext(w, cx, cy-3, childSize*0.6, c.Name, "sans", "")
+		fy := cy + float64(len(c.Grands))*3 // trunkHeight
 		if len(c.Grands) > 0 {
 			div := (maxFanAngle - minFanAngle) / float64(len(c.Grands)-1)
 			line(w, cx, cy, cx, fy, 1, color, lineOpacity)
