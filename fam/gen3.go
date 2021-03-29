@@ -95,6 +95,7 @@ const (
 	midy              = 50.0
 	familySize        = 5.0
 	familyHeight      = 95.0
+	trunkStroke       = 1.5
 	parentX           = 3.0
 	parentY           = 60.0
 	parentBraceX      = 30.0
@@ -113,6 +114,7 @@ const (
 	childDateX        = childX + 7
 	childBraceX       = childX + 9
 	childStroke       = parentStroke / 2
+	childDotSize      = 1.2
 	childImageX       = parentBraceX + 4
 	grandX            = childX + 10.5
 	grandSize         = 1.2
@@ -123,9 +125,8 @@ const (
 	minFanAngle       = 30.0
 	maxFanAngle       = 150.0
 	fanRadius         = 4.0
-	trunkStroke       = 0.2
 	lineOpacity       = 25.0
-	branchStroke      = trunkStroke / 2
+	branchStroke      = trunkStroke * 0.15
 	timeX             = 98.0
 	timeY             = 2.0
 	timeSize          = 0.6
@@ -199,30 +200,29 @@ func famtree(w io.Writer, data Family) {
 	var gencolors = map[string]string{"m": "blue", "f": "#FF69B4"}
 	ctext(w, midx, parentFooterY, familySize, data.Name, "sans", "")
 	text(w, treeMinX, 100-parentFooterY, parentSize, data.Parent.Husband, "sans", "")
+	ctext(w, midx, 100-parentFooterY, parentSize*0.75, "m. "+data.Parent.Married, "sans", yearcolor)
 	etext(w, treeMaxX, 100-parentFooterY, parentSize, data.Parent.Wife, "sans", "")
 	children := data.Parent.Children
-	cy := 50.0
-	cr := 1.5
+	cy := 40.0
 	bmin, bmax := bminmax(children)
 	scale(w, treeMinX, cy-7, bmin, bmax, 1)
 	for _, c := range children {
 		color := gencolors[c.Gender]
 		birthdate, _ := strconv.Atoi(c.Birth)
 		cx := vmap(float64(birthdate), float64(bmin), float64(bmax), treeMinX, treeMaxX)
-		circle(w, cx, cy, cr, color, 100)
-		ctext(w, cx, cy-3, childSize*0.6, c.Name, "sans", "")
 		fy := cy + float64(len(c.Grands))*3 // trunkHeight
+		circle(w, cx, cy-4, childDotSize, color, 100)
+		rtext(w, cx+(childDotSize/3), cy-3, 90, childSize*0.8, c.Name, "sans", "")
 		if len(c.Grands) > 0 {
 			div := (maxFanAngle - minFanAngle) / float64(len(c.Grands)-1)
-			line(w, cx, cy, cx, fy, 1, color, lineOpacity)
+			line(w, cx, cy-4, cx, fy, trunkStroke, color, lineOpacity)
 			angle := maxFanAngle
 			// for each grand child, render radiating from their parents
 			for _, g := range c.Grands {
 				gcolor := gencolors[g.Gender]
 				ax, ay := polar(cx, fy, fanRadius, angle, canvasWidth, canvasHeight)
-				line(w, cx, fy, ax, ay, 0.3, gcolor, 50)
+				line(w, cx, fy, ax, ay, branchStroke, gcolor, 50)
 				rtext(w, ax, ay, angle, grandSize*0.7, g.Name, "sans", grandcolor)
-
 				if len(g.Grands) > 0 { // add great-grandchildren, following grandchildren, with a slight angle change
 					ggadjust := float64(len(g.Name)) * (grandSize * 0.35)
 					gx, gy := polar(cx, fy, fanRadius+ggadjust, angle, canvasWidth, canvasHeight)
@@ -233,7 +233,7 @@ func famtree(w io.Writer, data Family) {
 		}
 		circle(w, midx, 12, 2, gencolors["m"], lineOpacity)
 		circle(w, midx, 12, 2, gencolors["f"], lineOpacity)
-		line(w, midx, 12, cx, cy, cr/2, color, lineOpacity)
+		line(w, midx, 12, cx, cy-4, childDotSize/2, color, lineOpacity)
 		counts(w, data)
 	}
 }
