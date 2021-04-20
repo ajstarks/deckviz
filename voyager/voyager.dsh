@@ -25,17 +25,12 @@ deck
 		line 51.5 44 54 34 0.5
 
 		// dish
-		
-		//curve 40 66 45.5 64 45.5 56
-		//curve 46 46 45.5 40 40 36
-		//vline 40 36 30 
-
 		vline 46.2 44 12 2
 		polygon "40 45 45 40"  "65 55 45 35" "white"
 		polygon "40 37 37 40" "53 51 49 47" 
 		polygon "40 38.5 38.5 40" "52 51 49 48" spotcolor
 
-		
+		// radio waves
 		for x=5 30 6
 			arc x 50 3 5 0 180 0.1
 		efor

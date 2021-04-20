@@ -1,0 +1,32 @@
+<deck>
+<slide bg="black">
+<rect xp="50" yp="50" wp="4" hp="6"/>
+<ellipse xp="50" yp="50" wp="2" hr="100" color="orange"/>
+<line xp1="52.5" yp1="47" xp2="56.5" yp2="47" sp="0.5"/>
+<line xp1="52.5" yp1="53" xp2="56.5" yp2="53" sp="0.5"/>
+<line xp1="52.5" yp1="47" xp2="56" yp2="50" sp="0.5"/>
+<line xp1="56" yp1="50" xp2="52.5" yp2="53" sp="0.5"/>
+<line xp1="48" yp1="45" xp2="52" yp2="45" sp="2"/>
+<line xp1="48" yp1="55" xp2="52" yp2="55" sp="1.5"/>
+<line xp1="48.5" yp1="55" xp2="48.5" yp2="68" sp="1"/>
+<line xp1="48" yp1="68" xp2="52" yp2="68" sp="1.5"/>
+<line xp1="32" yp1="12" xp2="49" yp2="45" sp="0.5"/>
+<line xp1="50" yp1="44" xp2="51" yp2="34" sp="0.5"/>
+<line xp1="51.5" yp1="44" xp2="54" yp2="34" sp="0.5"/>
+<line xp1="46.2" yp1="44" xp2="46.2" yp2="56" sp="2"/>
+<polygon xc="40 45 45 40" yc="65 55 45 35" color="white"/>
+<polygon xc="40 37 37 40" yc="53 51 49 47"/>
+<polygon xc="40 38.5 38.5 40" yc="52 51 49 48" color="orange"/>
+<arc xp="5" yp="50" wp="3" hp="5" a1="0" a2="180" sp="0.1"/>
+<arc xp="11" yp="50" wp="3" hp="5" a1="0" a2="180" sp="0.1"/>
+<arc xp="17" yp="50" wp="3" hp="5" a1="0" a2="180" sp="0.1"/>
+<arc xp="23" yp="50" wp="3" hp="5" a1="0" a2="180" sp="0.1"/>
+<arc xp="29" yp="50" wp="3" hp="5" a1="0" a2="180" sp="0.1"/>
+<arc xp="2" yp="50" wp="3" hp="5" a1="180" a2="360" sp="0.1"/>
+<arc xp="8" yp="50" wp="3" hp="5" a1="180" a2="360" sp="0.1"/>
+<arc xp="14" yp="50" wp="3" hp="5" a1="180" a2="360" sp="0.1"/>
+<arc xp="20" yp="50" wp="3" hp="5" a1="180" a2="360" sp="0.1"/>
+<arc xp="26" yp="50" wp="3" hp="5" a1="180" a2="360" sp="0.1"/>
+<arc xp="32" yp="50" wp="3" hp="5" a1="180" a2="360" sp="0.1"/>
+</slide>
+</deck>
