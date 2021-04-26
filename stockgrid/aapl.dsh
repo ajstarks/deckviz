@@ -16,7 +16,6 @@
 		right=left+w
 
 		text "Apple Computer (AAPL) Closing Price, 2019" left tt tts
-		limits="-min=140 -max=300"
 
 		//dchart opts -left left -right 95 -yaxis -yrange=140,300,40 -top top -bottom bot -grid dummy.d
 

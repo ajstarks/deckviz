@@ -21,15 +21,4 @@ deck
 	include "nflx.dsh"
 	include "goog.dsh"
 	include "msft.dsh"
-
-	// yrange="-yrange=0,2100,300"
-	// limits="-min=0 -max=2100"
-	// include "s-fb.dsh"
-	// include "s-aapl.dsh"
-	// include "s-amzn.dsh"
-	// include "s-nflx.dsh"
-	// include "s-goog.dsh"
-	// include "s-msft.dsh"
-
-
 edeck

@@ -1,0 +1,26 @@
+deck
+	x=40
+	y=50
+	y2=y-15
+	w=20
+	
+	ll=w+10
+	xl=x+10
+	xo=x+25
+	op=100
+	lw=4
+
+	ta1=0
+	ta2=180
+	ba1=180
+	ba2=360
+
+	slide
+		arc     x  y w w  ta1 ta2 lw  "blue"   op
+		arc     x  y w w  ba1 ba2 lw  "red"    op
+		vline  xl y2 ll lw            "green"  op
+		arc     x y2 w w  ba1 ba2 lw  "orange" op
+		arc    xo  y w w  ta1 ta2 lw  "red"    op
+		arc    xo  y w w  ba1 ba2 lw  "blue"   op
+	eslide
+edeck

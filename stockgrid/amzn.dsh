@@ -16,7 +16,6 @@
 		right=left+w
 
 		text "Amazon (AMZN) Closing Price, 2019" left tt tts
-		limits="-min=1500 -max=2020"
 
 		//dchart opts -left left -right 95 -yaxis -yrange=140,300,40 -top top -bottom bot -grid dummy.d
 

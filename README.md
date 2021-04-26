@@ -15,6 +15,7 @@
 * complex-table -- charts and tables
 * elections -- elections through the years
 * fire -- German wildfires
+* go -- go built from arcs and lines
 * gomod -- Go module flows
 * middle -- the Middle Passage
 * modelt -- Manufacturing and Marketing the Model T - 1908-1916
@@ -25,6 +26,7 @@
 * speed -- Comparison of Indy 500 speed data
 * swd -- Examples from "Storytelling with Data"
 * tailscale -- TailScale style diagrams
+* voyager -- the Voyager spacecraft
 * toni -- Toni Morrison quote from Charlie Rose Interview, 1993
 * warlife -- How much of your life has the U.S. been at war
 * weather -- Weather trends

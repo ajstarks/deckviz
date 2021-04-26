@@ -1,0 +1,131 @@
+deck
+	include "palettes.dsh"
+	slide "black" "white"
+		
+		ts=2
+		left=15
+	
+		w=5
+		g=w*1.2
+
+		y=50
+		ty=y+5
+		x=left
+		ctext "JAN" x ty ts "sans" cc1
+		square x y w cc1
+		x+=g
+		ctext "FEB" x ty ts "sans" cc2
+		square x y w cc2
+		x+=g
+		ctext "MAR" x ty ts "sans" cc3
+		square x y w cc3
+		x+=g
+		ctext "APR" x ty ts "sans" cc4
+		square x y w cc4
+		x+=g
+		ctext "MAY" x ty ts "sans" cc5
+		square x y w cc5
+		x+=g
+		ctext "JUN" x ty ts "sans" cc6
+		square x y w cc6
+		x+=g
+		ctext "JUL" x ty ts "sans" cc7
+		square x y w cc7
+		x+=g
+		ctext "AUG" x ty ts "sans" cc8
+		square x y w cc8
+		x+=g
+		ctext "SEP" x ty ts "sans" cc9
+		square x y w cc9
+		x+=g
+		ctext "OCT" x ty ts "sans" cc10
+		square x y w cc10
+		x+=g
+		ctext "NOV" x ty ts "sans" cc11
+		square x y w cc11
+		x+=g
+		ctext "DEC" x ty ts "sans" cc12
+		square x y w cc12
+
+		y=30
+		ty=y+5
+		x=left
+		ctext "JAN" x ty ts "sans" comp1
+		square x y w comp1
+		x+=g
+		ctext "FEB" x ty ts "sans" comp2
+		square x y w comp2
+		x+=g
+		ctext "MAR" x ty ts "sans" comp3
+		square x y w comp3
+		x+=g
+		ctext "APR" x ty ts "sans" comp4
+		square x y w comp4
+		x+=g
+		ctext "MAY" x ty ts "sans" comp5
+		square x y w comp5
+		x+=g
+		ctext "JUN" x ty ts "sans" comp6
+		square x y w comp6
+		x+=g
+		ctext "JUL" x ty ts "sans" comp7
+		square x y w comp7
+		x+=g
+		ctext "AUG" x ty ts "sans" comp8
+		square x y w comp8
+		x+=g
+		ctext "SEP" x ty ts "sans" comp9
+		square x y w comp9
+		x+=g
+		ctext "OCT" x ty ts "sans" comp10
+		square x y w comp10
+		x+=g
+		ctext "NOV" x ty ts "sans" comp11
+		square x y w comp11
+		x+=g
+		ctext "DEC" x ty ts "sans" comp12
+		square x y w comp12
+
+
+		y=70
+		ty=y+5
+		x=left
+		ctext "JAN" x ty ts "sans" season1
+		square x y w season1
+		x+=g
+		ctext "FEB" x ty ts "sans" season2
+		square x y w season2
+		x+=g
+		ctext "MAR" x ty ts "sans" season3
+		square x y w season3
+		x+=g
+		ctext "APR" x ty ts "sans" season4
+		square x y w season4
+		x+=g
+		ctext "MAY" x ty ts "sans" season5
+		square x y w season5
+		x+=g
+		ctext "JUN" x ty ts "sans" season6
+		square x y w season6
+		x+=g
+		ctext "JUL" x ty ts "sans" season7
+		square x y w season7
+		x+=g
+		ctext "AUG" x ty ts "sans" season8
+		square x y w season8
+		x+=g
+		ctext "SEP" x ty ts "sans" season9
+		square x y w season9
+		x+=g
+		ctext "OCT" x ty ts "sans" season10
+		square x y w season10
+		x+=g
+		ctext "NOV" x ty ts "sans" season11
+		square x y w season11
+		x+=g
+		ctext "DEC" x ty ts "sans" season12
+		square x y w season12
+	
+
+	eslide
+edeck
