@@ -1,0 +1,33 @@
+deck
+	canvas 1000 1000 // 1969 1969 to mimic the original 70.5x70.5 cm dimensions
+	llen=9
+	lx1=24
+	lx2=66
+	ls=0.5
+
+	green="#80a43a"
+	blue="#0d4081"
+	yellow="#beb260"
+	red="#c8584c"
+	gray="#675d5c"
+	black="#000000"
+
+	slide "#e2dbcb"
+		hline lx1 57 llen ls green
+		hline lx1 52 llen ls red
+		hline lx1 50 llen ls blue
+		hline lx1 48 llen ls gray
+
+		hline lx1 25 llen ls red
+
+		hline lx2 67 llen ls gray
+		hline lx2 65 llen ls blue
+		hline lx2 63 llen ls green
+		hline lx2 57 llen ls red
+
+		line 43 57 lx2 34 ls black
+
+		curve 43 100 67 67 33 33 ls yellow
+		curve 50 50  34 34 50 17 ls blue
+	eslide
+edeck
