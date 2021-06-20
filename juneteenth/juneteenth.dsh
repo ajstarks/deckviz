@@ -1,0 +1,202 @@
+// Juneteenth Flag
+deck
+	canvas 1950 1200
+	bcolor="#1c3160"
+	acolor="#d0202a"
+	tcolor="white"
+	slide bcolor tcolor
+		// horizon
+		ellipse 50 0 120 100 acolor
+		//rtext "June 19, 1865" 95 5 450 8
+
+		// central star
+		np=5
+		starsize=10
+		startangle=90
+
+		angle=startangle
+		ai=360/np
+
+		sx1=polarx 50 50 starsize angle
+		sy1=polary 50 50 starsize angle
+		angle+=ai
+
+		sx3=polarx 50 50 starsize angle
+		sy3=polary 50 50 starsize angle
+		angle+=ai
+
+		sx5=polarx 50 50 starsize angle
+		sy5=polary 50 50 starsize angle
+		angle+=ai
+
+		sx7=polarx 50 50 starsize angle
+		sy7=polary 50 50 starsize angle
+		angle+=ai
+
+		sx9=polarx 50 50 starsize angle
+		sy9=polary 50 50 starsize angle
+
+		starsize-=5
+		angle=270
+
+		sx2=polarx 50 50 starsize angle
+		sy2=polary 50 50 starsize angle
+		angle+=ai
+
+		sx4=polarx 50 50 starsize angle
+		sy4=polary 50 50 starsize angle
+		angle+=ai
+
+		sx6=polarx 50 50 starsize angle
+		sy6=polary 50 50 starsize angle
+		angle+=ai
+
+		sx8=polarx 50 50 starsize angle
+		sy8=polary 50 50 starsize angle
+		angle+=ai
+
+		sx10=polarx 50 50 starsize angle
+		sy10=polary 50 50 starsize angle
+		angle+=ai
+
+		polygon "sx1 sx6 sx9 sx4 sx7 sx2 sx5 sx10 sx3 sx8" "sy1 sy6 sy9 sy4 sy7 sy2 sy5 sy10 sy3 sy8" tcolor
+
+
+		// outer nova
+		angle=90
+		ai=360/12
+		nsize=25
+
+		nx1=polarx 50 50 nsize angle
+		ny1=polary 50 50 nsize angle
+		angle += ai
+		nx2=polarx 50 50 nsize angle
+		ny2=polary 50 50 nsize angle
+		angle += ai
+		nx3=polarx 50 50 nsize angle
+		ny3=polary 50 50 nsize angle
+		angle += ai
+		nx4=polarx 50 50 nsize angle
+		ny4=polary 50 50 nsize angle
+		angle += ai
+		nx5=polarx 50 50 nsize angle
+		ny5=polary 50 50 nsize angle
+		angle += ai
+		nx6=polarx 50 50 nsize angle
+		ny6=polary 50 50 nsize angle
+		angle += ai
+		nx7=polarx 50 50 nsize angle
+		ny7=polary 50 50 nsize angle
+		angle += ai
+		nx8=polarx 50 50 nsize angle
+		ny8=polary 50 50 nsize angle
+		angle += ai
+		nx9=polarx 50 50 nsize angle
+		ny9=polary 50 50 nsize angle
+		angle += ai
+		nx10=polarx 50 50 nsize angle
+		ny10=polary 50 50 nsize angle
+		angle += ai
+		nx11=polarx 50 50 nsize angle
+		ny11=polary 50 50 nsize angle
+		angle += ai
+		nx12=polarx 50 50 nsize angle
+		ny12=polary 50 50 nsize angle
+		angle += ai
+
+		// inner nova
+		angle=45
+		nsize-=10
+
+		inx1=polarx 50 50 nsize angle
+		iny1=polary 50 50 nsize angle
+		angle += ai
+		inx2=polarx 50 50 nsize angle
+		iny2=polary 50 50 nsize angle
+		angle += ai
+		inx3=polarx 50 50 nsize angle
+		iny3=polary 50 50 nsize angle
+		angle += ai
+		inx4=polarx 50 50 nsize angle
+		iny4=polary 50 50 nsize angle
+		angle += ai
+		inx5=polarx 50 50 nsize angle
+		iny5=polary 50 50 nsize angle
+		angle += ai
+		inx6=polarx 50 50 nsize angle
+		iny6=polary 50 50 nsize angle
+		angle += ai
+		inx7=polarx 50 50 nsize angle
+		iny7=polary 50 50 nsize angle
+		angle += ai
+		inx8=polarx 50 50 nsize angle
+		iny8=polary 50 50 nsize angle
+		angle += ai
+		inx9=polarx 50 50 nsize angle
+		iny9=polary 50 50 nsize angle
+		angle += ai
+		inx10=polarx 50 50 nsize angle
+		iny10=polary 50 50 nsize angle
+		angle += ai
+		inx11=polarx 50 50 nsize angle
+		iny11=polary 50 50 nsize angle
+		angle += ai
+		inx12=polarx 50 50 nsize angle
+		iny12=polary 50 50 nsize angle
+		angle += ai
+
+		// trace outer/inner nova
+		novastroke=1
+		line nx1 ny1 inx2 iny2 novastroke tcolor
+		line inx2 iny2 nx12 ny12 novastroke tcolor
+		line nx12 ny12 inx1 iny1 novastroke tcolor
+		line inx1 iny1 nx11 ny11 novastroke tcolor
+		line nx11 ny11 inx12 iny12 novastroke tcolor
+		line inx12 iny12 nx10 ny10 novastroke tcolor
+		line nx10 ny10 inx11 iny11 novastroke tcolor
+		line inx11 iny11 nx9 ny9 novastroke tcolor
+		line nx9 ny9 inx10 iny10 novastroke tcolor
+		line inx10 iny10 nx8 ny8 novastroke tcolor
+		line nx8 ny8 inx9 iny9 novastroke tcolor
+		line inx9 iny9 nx7 ny7 novastroke tcolor
+		line nx7 ny7 inx8 iny8 novastroke tcolor
+		line inx8 iny8 nx6 ny6 novastroke tcolor
+		line nx6 ny6 inx7 iny7 novastroke tcolor
+		line inx7 iny7 nx5 ny5 novastroke tcolor
+		line nx5 ny5 inx6 iny6 novastroke tcolor
+		line inx6 iny6 nx4 ny4 novastroke tcolor
+		line nx4 ny4 inx5 iny5 novastroke tcolor
+		line inx5 iny5 nx3 ny3 novastroke tcolor
+		line nx3 ny3 inx4 iny4 novastroke tcolor
+		line inx4 iny4 nx2 ny2 novastroke tcolor
+		line nx2 ny2 inx3 iny3 novastroke tcolor
+		line inx3 iny3 nx1 ny1 novastroke tcolor
+
+		// fill in the points
+		circle inx1 iny1 novastroke tcolor
+		circle inx2 iny2 novastroke tcolor
+		circle inx3 iny3 novastroke tcolor
+		circle inx4 iny4 novastroke tcolor
+		circle inx5 iny5 novastroke tcolor
+		circle inx6 iny6 novastroke tcolor
+		circle inx7 iny7 novastroke tcolor
+		circle inx8 iny8 novastroke tcolor
+		circle inx9 iny9 novastroke tcolor
+		circle inx10 iny10 novastroke tcolor
+		circle inx11 iny11 novastroke tcolor
+		circle inx12 iny12 novastroke tcolor
+
+		circle nx1 ny1 novastroke tcolor
+		circle nx2 ny2 novastroke tcolor
+		circle nx3 ny3 novastroke tcolor
+		circle nx4 ny4 novastroke tcolor
+		circle nx5 ny5 novastroke tcolor
+		circle nx6 ny6 novastroke tcolor
+		circle nx7 ny7 novastroke tcolor
+		circle nx8 ny8 novastroke tcolor
+		circle nx9 ny9 novastroke tcolor
+		circle nx10 ny10 novastroke tcolor
+		circle nx11 ny11 novastroke tcolor
+		circle nx12 ny12 novastroke tcolor
+	eslide
+edeck
