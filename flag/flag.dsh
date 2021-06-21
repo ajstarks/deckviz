@@ -1,0 +1,105 @@
+deck
+	// US colors
+	rcolor="#b22234"
+	wcolor="#ffffff"
+	ccolor="#3c3b6e"
+	scolor="#ffffff"
+
+	// African-American colors
+	// rcolor="#b22234"
+	// wcolor="#000000"
+	// ccolor="#00863d"
+	// scolor="#000000"
+
+	l1=50
+	l2=50
+	ss=2
+
+	A=50
+	B=A*1.9
+	C=A*0.5385
+	D=A*0.76
+	L=A/13
+	tl=B-D
+	L2=10
+	left=3
+	top=80
+
+	slide "black"
+		// background
+		hline 3 65 95 50 wcolor
+
+		// canton
+		hline left top D C ccolor
+
+		// stripes
+		x=left+38
+		for y=65 95 L2
+			hline x y tl L rcolor
+		efor
+
+		for y=35 55 L2
+			hline left y B L rcolor
+		efor
+
+		// stars
+		inner=0.5
+		outer=inner*3
+		sincr=3.5
+
+		sy=94
+
+		// star row 1
+		for x=7 40 6
+			star x sy 5 inner outer scolor
+		efor
+		sy-=sincr
+
+		// star row 2
+		for x=10 35 6
+			star x sy 5 inner outer scolor
+		efor
+		sy-=sincr
+
+		// star row 3
+		for x=7 40 6
+			star x sy 5 inner outer scolor
+		efor
+		sy-=sincr
+
+		// star row 4
+		for x=10 35 6
+			star x sy 5 inner outer scolor
+		efor
+		sy-=sincr
+
+		// star row 5
+		for x=7 40 6
+			star x sy 5 inner outer scolor
+		efor
+		sy-=sincr
+
+		// star row 6
+		for x=10 35 6
+			star x sy 5 inner outer scolor
+		efor
+		sy-=sincr
+
+		// star row 7
+		for x=7 40 6
+			star x sy 5 inner outer scolor
+		efor
+		sy-=sincr
+
+		// star row 8
+		for x=10 35 6
+			star x sy 5 inner outer scolor
+		efor
+		sy-=sincr
+
+		// star row 9
+		for x=7 40 6
+			star x sy 5 inner outer scolor
+		efor
+	eslide
+edeck
