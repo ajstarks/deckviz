@@ -46,60 +46,30 @@ deck
 		inner=0.5
 		outer=inner*3
 		sincr=3.5
-
 		sy=94
 
-		// star row 1
+		for i=1 4
+			include "starow.dsh"
+		efor
 		for x=7 40 6
 			star x sy 5 inner outer scolor
 		efor
-		sy-=sincr
+	eslide
 
-		// star row 2
-		for x=10 35 6
-			star x sy 5 inner outer scolor
-		efor
-		sy-=sincr
+	cx=50
+	cy=50
+	ns=5
+	si=1
+	so=si*3
+	r=25
+	nstars=13
+	ai=360/nstars
+	a=90
+	scolor="white"
 
-		// star row 3
-		for x=7 40 6
-			star x sy 5 inner outer scolor
-		efor
-		sy-=sincr
-
-		// star row 4
-		for x=10 35 6
-			star x sy 5 inner outer scolor
-		efor
-		sy-=sincr
-
-		// star row 5
-		for x=7 40 6
-			star x sy 5 inner outer scolor
-		efor
-		sy-=sincr
-
-		// star row 6
-		for x=10 35 6
-			star x sy 5 inner outer scolor
-		efor
-		sy-=sincr
-
-		// star row 7
-		for x=7 40 6
-			star x sy 5 inner outer scolor
-		efor
-		sy-=sincr
-
-		// star row 8
-		for x=10 35 6
-			star x sy 5 inner outer scolor
-		efor
-		sy-=sincr
-
-		// star row 9
-		for x=7 40 6
-			star x sy 5 inner outer scolor
+	slide "blue"
+		for z=1 nstars
+			include "cs.dsh"
 		efor
 	eslide
 edeck

@@ -1,0 +1,4 @@
+x=polarx cx cy r a
+y=polary cx cy r a
+star x y ns si so scolor
+a+=ai
