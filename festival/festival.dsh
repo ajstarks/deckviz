@@ -1,0 +1,94 @@
+// The "Festival" backdrop from the 1969 Harlem Cultural Festival
+deck
+	bgcolor="#9a7a49"   // "#a9843e"
+	yellow="#dbdc5c"
+	red="#c82e2c"
+	orange= "#eda344" // "#ebb84d"
+	lorange="#dab968"
+	green="#4c6d2c"
+	lgreen="#b8c887"
+	blue="#95a2d6"
+	tan="#cc9c5a"
+	lcolor="white"
+	lop=100
+	cw=1600
+	ch=900
+	
+	canvas cw ch // same ratio as 32 x 18 feet of the original
+	slide bgcolor
+		//image "i.png" 50 50 1600 900
+
+		// The FESTIVAL word is generally a series of polygons for each letter
+		polygon "26 28 30 30 32 32 30 30 33.2 34"                  "72 50 50 58 58 62.5 62.5 67 67.5 73"         lcolor lop // F
+		polygon "32 39.5 39.1 35 35 37 37 34.5 34.6 37.2 36.6 33"  "48 50 54 53 55 56 59.1 59 62 62.5 66 65"     lcolor lop // E
+		curve    38 59  48 55  42 66 2.1                                                                         lcolor lop // S
+		curve    42.2 65.8  35 76  44 72 2.1                                                                     lcolor lop
+		polygon "46 49.3 49 51 51 45 44.5 47"                       "55 54 68 68 72 72 67 67"                    lcolor lop // T
+		polygon "51 51 53 54"                                       "52 66 67 52"                                lcolor lop // I
+		circle   51.6 76 3.2 lcolor lop
+		polygon "53 56.5 62.5 60 57 56.5"                           "72.5 48 76 78 60 73"                        lcolor lop // V
+		polygon "62 58.5 60.2 63.5"                                 "70 52 51 70"                                lcolor lop // A
+		polygon "62 64.5 67 64"                                     "70 52 53 70"                                lcolor lop
+		hline    61 60 3 1.5 lcolor lop
+		polygon "66 68 73 74.5 70 70"                               "71 51 49 54 55.5 72"                        lcolor lop // L
+
+		// A series of shapes (rects and polygons, numbered 1 - 57, counting roughly row-wise
+		vline 3.6 85.5 11.3 3.2  orange                            // 1
+		vline 4.4 56.0 27 4.5 yellow                               // 2
+		vline 4.4 41.5 10.2 5.3 red                                // 3
+		polygon "2 2 10 10 15.3 15.3" "39 18 18 29 29 39" blue     // 4
+		hline 2 15 8.4 2  red                                      // 5
+		hline 4 6 8.5 6   lgreen                                         // 6
+		vline 10 84 12.5 7 yellow                                  // 7
+		vline 11 70 10.6 5.5 lorange                               // 8
+		vline 11 44 22.0 5.5 tan                                   // 9
+		vline 17 85.5 10 5.5 blue                                  // 10
+		polygon "16 16 29 29 25 25" "56 84 84 74 74 56" green      // 11
+		vline 19.5 31 22 6.2 orange                                // 12
+		hline 12 21.5  11 6 lorange                                // 13
+		vline 15.5 1 12.5 4  yellow                                      // 14
+		vline 22.9 0 14 7 orange                                   // 15
+		polygon "21 21 37 37 30 30" "86 97 97 76 76 86" lgreen     // 16
+		polygon "24 24 30 30 38 38" "16 46 46 28 28 16" lgreen     // 17
+		vline 32 3 11 8 blue                                       // 18
+		hline 38 93 7 3 orange                                     // 19
+		hline 38 82 6 5 yellow                                     // 20
+		vline 47.3 75 14 3.2 green                                 // 25
+		vline 41.5 18 11 5.5 yellow                                // 23
+		hline 32 38.5 12 8 blue                                    // 21
+		vline 40 0 14 5.5 orange                                   // 23
+		vline 46 0 11 4 red                                        // 29
+		polygon "46 49 49 46" "92 92 97 97" blue                   // 24
+		vline 47.5 39.5 11 5.5 yellow                              // 26
+		polygon "50 50 59 59 54 54" "83 94 94 78 78 83" orange     // 30
+		vline 53.5 39.5 10 3 red                                   // 31
+		vline 60.1 32.0 16 5 lorange                               // 34
+		vline 67.1 36.0 11 5 green                                 // 37
+		polygon "72 83 83 77 77 72" "34 34 62 62 48 48" orange     // 40
+		hline 45 31 11 6 lgreen                                    // 27
+		hline 71 67 13 4 lgreen                                    // 39
+		vline 61 18 11 5.5 tan                                     // 35
+		polygon "46 46 49 49 57 57" "24 14 14 2 2 24" lorange      // 28
+		hline 64 78 6 6 red                                        // 33
+		polygon "58.5 58.5 64 64 72 72" "0 16 16 12 12 0" blue     // 36
+		hline 66 26.5 11 5.5 lorange // 41
+		hline 66 17 12 3.5 lgreen // 42
+		vline 75 2 11 4.5 orange // 43
+		hline 85 42 6 6 lgreen   // 46
+		vline 82.5 0 10 6 red // 49
+		polygon "86 86 93 93 98 98" "52 72 72 62 62 52" lorange // 52
+		vline 95.5 36 12 6 blue // 54
+		hline 80 28 11 5.5 yellow // 47
+		vline 95.5 14 18 6 green // 55
+		vline 97 66 9 5.5 lgreen // 5?
+		hline 79 17 7 6 blue // 48
+		polygon "87 87 90 90 98 98" "0 22 22 12 12 0" tan          // 50
+		vline 92 78 9 8 blue // 51
+		vline 75 74 20 6 lorange // 38
+		vline 83 76 10 6 orange // 45
+		polygon "60 71 71 63 63 60"  "86 86 97 97 92 92" green // 32
+		vline 97 90 7 2.5 red // 56
+		hline 80 94 5 4 lgreen // 44
+		hline 86 93 8 4 yellow // 50
+	eslide
+edeck
