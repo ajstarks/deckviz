@@ -2,8 +2,8 @@
 // for recreation Thursday
 deck	
 	canvas 2000 2000
-	ocolor="#ffffff" // "black"
-	bcolor="#000000"
+	ocolor="#000000" // "black"
+	bcolor="#ffffff"
 	lw=1.3
 	slide bcolor
 		//image "qs.png" 50 50 2193 1903
