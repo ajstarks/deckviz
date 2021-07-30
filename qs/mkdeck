@@ -1,0 +1,2 @@
+#!/bin/bash
+decksh qs.dsh | pdfdeck -pagesize 2000,2000 -stdout - > qs.pdf

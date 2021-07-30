@@ -1,0 +1,74 @@
+// Quadratspirale schwarz, 1952, 50x50in
+// for recreation Thursday
+deck	
+	canvas 2000 2000
+	ocolor="#ffffff" // "black"
+	bcolor="#000000"
+	lw=1.3
+	slide bcolor
+		//image "qs.png" 50 50 2193 1903
+	
+		// top row
+		hline 55.0 77.0 16.3 lw ocolor
+		hline 26.8 79.0 14.0 lw ocolor
+		hline 41.0 79.5 14.0 lw ocolor
+
+		vline 41.0 66 14.1 lw ocolor
+
+		hline 55 62 17 lw ocolor
+		vline 70.7 62 15 lw ocolor
+
+		hline 23.4 65.4 32 lw ocolor
+
+		vline 37.0 19.0 47 lw ocolor
+		vline 71.5 29.6 33 lw ocolor
+
+		vline 55.5 45.4 34.7 lw ocolor
+
+		// left column
+		hline 25 40.6 12 lw ocolor
+		hline 24.6 52.5 12 lw ocolor
+
+		// mid row
+		hline 37 47 18 lw ocolor
+		hline 55 46 17 lw ocolor
+		vline 54.6 29 18 lw ocolor
+
+		// left side
+		llen=11
+		vline 26.5 19 llen lw ocolor
+		vline 25.6 29 llen lw ocolor
+		vline 24.8 40 12 lw ocolor
+		vline 24.0 52 13 lw ocolor
+		vline 27.4 65 14 lw ocolor
+
+		// bottom row
+		hline 26.0 29.6 52.5 lw ocolor
+		vline 46.6 19.4 10.0 lw ocolor
+		vline 55.2 20.2 10.0 lw ocolor
+		vline 63.4 20.7  9.5 lw ocolor
+		vline 70.9 21.6  8.7 lw ocolor
+		vline 78.0 22.2  8.0 lw ocolor
+
+		hline 27.0 19.6 10.0 lw ocolor
+		hline 37.0 20.0 10.0 lw ocolor
+		hline 47.0 20.8  8.8 lw ocolor
+		hline 55.0 21.3  8.0 lw ocolor
+		hline 64.0 22.2  7.4 lw ocolor
+		hline 71.0 22.8  7.0 lw ocolor
+
+		// right column
+		rx=71
+		hline rx 35.0 6 lw ocolor
+		hline rx 40.0 6 lw ocolor
+		hline rx 44.0 5 lw ocolor
+		hline rx 47.6 5 lw ocolor
+		hline rx 50.5 4 lw ocolor
+
+		vline 77.4 29   6.6 lw ocolor
+		vline 76.6 35   5.6 lw ocolor
+		vline 75.8 40   4.6 lw ocolor
+		vline 75.4 44   4.2 lw ocolor 
+		vline 74.5 47   4.0 lw ocolor
+	eslide
+edeck
