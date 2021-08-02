@@ -3,15 +3,16 @@
 deck	
 	canvas 2000 2000
 	ocolor="#000000" // "black"
+	vcolor="#aa0000"
 	bcolor="#ffffff"
-	lw=1.3
+	lw=1.2
 	slide bcolor
 		//image "qs.png" 50 50 2193 1903
 	
 		// top row
-		hline 55.0 77.0 16.3 lw ocolor
-		hline 26.8 79.0 14.0 lw ocolor
-		hline 41.0 79.5 14.0 lw ocolor
+		hline 26.8 79.0 13.7 lw ocolor
+		hline 40.4 80.0 15.7 lw ocolor
+		hline 55.4 77.0 15.9 lw ocolor
 
 		vline 41.0 66 14.1 lw ocolor
 
@@ -47,7 +48,7 @@ deck
 		vline 46.6 19.4 10.0 lw ocolor
 		vline 55.2 20.2 10.0 lw ocolor
 		vline 63.4 20.7  9.5 lw ocolor
-		vline 70.9 21.6  8.7 lw ocolor
+		vline 70.9 21.6  8.6 lw ocolor
 		vline 78.0 22.2  8.0 lw ocolor
 
 		hline 27.0 19.6 10.0 lw ocolor
