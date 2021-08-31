@@ -17,16 +17,10 @@
 <polygon xc="40 45 45 40" yc="65 55 45 35" color="white"/>
 <polygon xc="40 37 37 40" yc="53 51 49 47"/>
 <polygon xc="40 38.5 38.5 40" yc="52 51 49 48" color="orange"/>
-<arc xp="5" yp="50" wp="3" hp="5" a1="0" a2="180" sp="0.1"/>
-<arc xp="11" yp="50" wp="3" hp="5" a1="0" a2="180" sp="0.1"/>
-<arc xp="17" yp="50" wp="3" hp="5" a1="0" a2="180" sp="0.1"/>
-<arc xp="23" yp="50" wp="3" hp="5" a1="0" a2="180" sp="0.1"/>
-<arc xp="29" yp="50" wp="3" hp="5" a1="0" a2="180" sp="0.1"/>
-<arc xp="2" yp="50" wp="3" hp="5" a1="180" a2="360" sp="0.1"/>
-<arc xp="8" yp="50" wp="3" hp="5" a1="180" a2="360" sp="0.1"/>
-<arc xp="14" yp="50" wp="3" hp="5" a1="180" a2="360" sp="0.1"/>
-<arc xp="20" yp="50" wp="3" hp="5" a1="180" a2="360" sp="0.1"/>
-<arc xp="26" yp="50" wp="3" hp="5" a1="180" a2="360" sp="0.1"/>
-<arc xp="32" yp="50" wp="3" hp="5" a1="180" a2="360" sp="0.1"/>
+<line xp1="0" yp1="45" xp2="40" yp2="45" sp="0.5" color="orange" opacity="75"/>
+<line xp1="0" yp1="47.5" xp2="40" yp2="47.5" sp="0.5" color="orange" opacity="75"/>
+<line xp1="0" yp1="50" xp2="40" yp2="50" sp="0.5" color="orange" opacity="75"/>
+<line xp1="0" yp1="52.5" xp2="40" yp2="52.5" sp="0.5" color="orange" opacity="75"/>
+<line xp1="0" yp1="55" xp2="40" yp2="55" sp="0.5" color="orange" opacity="75"/>
 </slide>
 </deck>
