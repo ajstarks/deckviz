@@ -1,0 +1,6 @@
+IFS=""
+for i in $(cat top-gdp)
+do
+	echo "# $i"
+	./getem "$i"
+done

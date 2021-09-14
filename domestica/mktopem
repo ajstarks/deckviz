@@ -1,0 +1,2 @@
+#!/bin/bash
+awk '{c=$0; gsub(" ", "-"); printf "./getem \"%s\" 1970 2019 > %s.d\n", c, $0}' top-gdp

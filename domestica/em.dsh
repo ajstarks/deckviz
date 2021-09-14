@@ -1,0 +1,478 @@
+// Carbon dioxide emissions, compared with GDP and population
+deck
+	ts=1.5
+	gdpcolor="#c3c6a8"
+	popcolor="tan"
+	emcolor="steelblue"
+	emdotcolor="maroon"
+	opts="-textsize=1.2 -color emcolor -title=f -val=f -bar=f -vol -line=f -linewidth=0.075  -volop=15 -min=0 -max=10 -grid -yrange=0,10,2 -left=15 -right=85 -bottom 30 -top=90"
+	slide
+		ctext "Top Countries' CO2 Emissions (Billion Tonnes), 1970-2019" 50 92 ts
+		dchart opts -color emcolor -xlabel=5 -xlast -yaxis -noteloc=c United-States.d
+		dchart opts -color emcolor -xlabel=0 -noteloc=c China.d
+		dchart opts -color emcolor -xlabel=0 -noteloc=c Japan.d
+		dchart opts -color emcolor -xlabel=0 -noteloc=c Germany.d
+		dchart opts -color emcolor -xlabel=0 -noteloc=c United-Kingdom.d
+		dchart opts -color emcolor -xlabel=0 -noteloc=c India.d
+		dchart opts -color emcolor -xlabel=0 -noteloc=r France.d
+		dchart opts -color emcolor -xlabel=0 -noteloc=l Italy.d
+		dchart opts -color emcolor -xlabel=0 -noteloc=r Canada.d
+		dchart opts -color emcolor -xlabel=0 -noteloc=l South-Korea.d
+
+		baropt="-textsize=1.0 -title=f -hbar -ls 1.9 -vcolor black -datafmt=%.3f -top 20 -bottom 15"
+		text "2020 GDP (Billions USD)"   15 22 ts
+		dchart baropt -left 15 -right 35 -color gdpcolor gdp-billion.d
+
+		text "2020 Population (Billions)" 65 22  ts
+		dchart baropt -left 65 -right 85 -color popcolor pop-billions.d
+	eslide
+
+	slide
+		// Population (billions)
+		CHNPopVal=1.439323776
+		USAPopVal=0.331002651
+		JPNPopVal=0.126476461
+		DEUPopVal=0.083783942
+		GBRPopVal=0.067886011 
+		INDPopVal=1.3800043 
+		FRAPopVal=0.06527 
+		ITAPopVal=0.06046
+		CANPopVal=0.03774 
+		SKRPopVal=0.05127
+
+		// Order by population
+		CHNpop=1
+		INDpop=2
+		USApop=3
+		JPNpop=4
+		DEUpop=5
+		GBRpop=6
+		FRApop=7
+		ITApop=8
+		SKRpop=9
+		CANpop=10
+
+		// GDP (billions USD)
+		CHNGDPVal=14722.70
+		USAGDPVal=20936.6 
+		JPNGDPVal=5064.87 
+		DEUGDPVal=3806.06
+		GBRGDPVal=2707.74
+		INDGDPVal=2622.98
+		FRAGDPVal=2603.0
+		ITAGDPVal=1886.45
+		CANGDPVal=1643.41
+		SKRGDPVal=1630.53
+
+		// Order by GDP
+		USAgdp=1
+		CHNgdp=2
+		JPNgdp=3
+		DEUgdp=4
+		GBRgdp=5
+		INDgdp=6
+		FRAgdp=7
+		ITAgdp=8
+		CANgdp=9
+		SKRgdp=10
+
+		// Summary Emissions 1970-2019 (billion tonnes)
+		USAem=260.40
+		CHNem=210.57
+		JPNem=55.06
+		GBRem=27.64
+		DEUem=47.21
+		INDem=47.74
+		FRAem=20.76
+		ITAem=20.17
+		CANem=24.61
+		SKRem=16.74
+
+		// Emissions labels
+		labfmt="%.1f"
+		USAemlabel=format labfmt USAem
+		CHNemlabel=format labfmt CHNem
+		JPNemlabel=format labfmt JPNem
+		GBRemlabel=format labfmt GBRem
+		DEUemlabel=format labfmt DEUem
+		INDemlabel=format labfmt INDem
+		ITAemlabel=format labfmt ITAem
+		FRAemlabel=format labfmt FRAem
+		CANemlabel=format labfmt CANem
+		SKRemlabel=format labfmt SKRem
+
+		// GDP labels
+		labfmt="%.2f"
+		USAGDPLabel=format labfmt USAGDPVal
+		CHNGDPLabel=format labfmt CHNGDPVal
+		JPNGDPLabel=format labfmt JPNGDPVal
+		GBRGDPLabel=format labfmt GBRGDPVal
+		DEUGDPLabel=format labfmt DEUGDPVal
+		INDGDPLabel=format labfmt INDGDPVal
+		ITAGDPLabel=format labfmt ITAGDPVal
+		FRAGDPLabel=format labfmt FRAGDPVal
+		CANGDPLabel=format labfmt CANGDPVal
+		SKRGDPLabel=format labfmt SKRGDPVal
+
+		// Population labels
+		labfmt="%.3f"
+		USAPopLabel=format labfmt USAPopVal
+		CHNPopLabel=format labfmt CHNPopVal
+		JPNPopLabel=format labfmt JPNPopVal
+		GBRPopLabel=format labfmt GBRPopVal
+		DEUPopLabel=format labfmt DEUPopVal
+		INDPopLabel=format labfmt INDPopVal
+		ITAPopLabel=format labfmt ITAPopVal
+		FRAPopLabel=format labfmt FRAPopVal
+		CANPopLabel=format labfmt CANPopVal
+		SKRPopLabel=format labfmt SKRPopVal
+
+		// Emissions
+		emmin=0
+		emmax=300
+		sizemin=0.5
+		sizemax=100
+		emop=25
+
+		// Populations
+		popmin=10
+		popmax=0
+		xmin=15
+		xmax=90
+		xlab=xmin-1
+		xlen=xmax-xmin
+
+		// GDPs
+		gdpmin=10
+		gdpmax=0
+		ymin=15
+		ymax=75
+		ylab=ymin-5
+		ylen=ymax-ymin
+
+		CHNx=vmap CHNpop popmin popmax xmin xmax
+		USAx=vmap USApop popmin popmax xmin xmax
+		JPNx=vmap JPNpop popmin popmax xmin xmax
+		DEUx=vmap DEUpop popmin popmax xmin xmax
+		GBRx=vmap GBRpop popmin popmax xmin xmax
+		INDx=vmap INDpop popmin popmax xmin xmax
+		FRAx=vmap FRApop popmin popmax xmin xmax
+		ITAx=vmap ITApop popmin popmax xmin xmax
+		CANx=vmap CANpop popmin popmax xmin xmax
+		SKRx=vmap SKRpop popmin popmax xmin xmax
+
+		CHNy=vmap CHNgdp gdpmin gdpmax ymin ymax
+		USAy=vmap USAgdp gdpmin gdpmax ymin ymax
+		JPNy=vmap JPNgdp gdpmin gdpmax ymin ymax
+		DEUy=vmap DEUgdp gdpmin gdpmax ymin ymax
+		GBRy=vmap GBRgdp gdpmin gdpmax ymin ymax
+		INDy=vmap INDgdp gdpmin gdpmax ymin ymax
+		FRAy=vmap FRAgdp gdpmin gdpmax ymin ymax
+		ITAy=vmap ITAgdp gdpmin gdpmax ymin ymax
+		CANy=vmap CANgdp gdpmin gdpmax ymin ymax
+		SKRy=vmap SKRgdp gdpmin gdpmax ymin ymax
+
+		CHNsize=vmap CHNem emmin emmax sizemin sizemax
+		USAsize=vmap USAem emmin emmax sizemin sizemax
+		JPNsize=vmap JPNem emmin emmax sizemin sizemax
+		GBRsize=vmap GBRem emmin emmax sizemin sizemax
+		DEUsize=vmap DEUem emmin emmax sizemin sizemax
+		INDsize=vmap INDem emmin emmax sizemin sizemax
+		FRAsize=vmap FRAem emmin emmax sizemin sizemax
+		ITAsize=vmap ITAem emmin emmax sizemin sizemax
+		CANsize=vmap CANem emmin emmax sizemin sizemax
+		SKRsize=vmap SKRem emmin emmax sizemin sizemax
+		
+		CHNar=area CHNsize
+		USAar=area USAsize
+		JPNar=area JPNsize
+		DEUar=area DEUsize
+		GBRar=area GBRsize
+		INDar=area INDsize
+		ITAar=area ITAsize
+		FRAar=area FRAsize
+		CANar=area CANsize
+		SKRar=area SKRsize
+
+		circle CHNx CHNy CHNar emdotcolor emop
+		circle USAx USAy USAar emdotcolor emop
+		circle JPNx JPNy JPNar emdotcolor emop
+		circle GBRx GBRy GBRar emdotcolor emop
+		circle DEUx DEUy DEUar emdotcolor emop
+		circle INDx INDy INDar emdotcolor emop
+		circle ITAx ITAy ITAar emdotcolor emop
+		circle FRAx FRAy FRAar emdotcolor emop
+		circle CANx CANy CANar emdotcolor emop
+		circle SKRx SKRy SKRar emdotcolor emop
+
+		// Sparklines
+		sparkw=4
+		sparkw2=sparkw/2
+		sparkh=3
+		ls=1
+
+		bigopt="-yrange=0,10,5"
+		medopt="-yrange=0,1.5,0.5"
+		smallopt="-yrange=0,0.5,0.25"
+		sparkopt="-color steelblue -linewidth=0.05 -textsize=0.5 -bar=f -volop=50  -vol -line -val=f -xlabel=0 -title -note=f -yaxis -datafmt=%.2f"
+		
+		// China
+		dl=CHNx-sparkw2
+		dr=dl+sparkw
+		db=CHNy+CHNar
+		dt=db+sparkh
+		ly=CHNy-1
+		dchart sparkopt bigopt -top dt -bottom db -left dl -right dr China.d
+		ctext CHNemlabel  CHNx ly ls "serif"
+
+		// USA
+		dl=USAx-sparkw2
+		dr=dl+sparkw
+		db=USAy+USAar
+		dt=db+sparkh
+		ly=USAy-1
+		dchart sparkopt bigopt -top dt -bottom db -left dl -right dr United-States.d
+		ctext USAemlabel USAx ly ls "serif"
+
+		// Japan
+		dl=JPNx-sparkw2
+		dr=dl+sparkw
+		db=JPNy+JPNar
+		dt=db+sparkh
+		ly=JPNy-1
+		dchart sparkopt -yrange=0,1,0.5 -top dt -bottom db -left dl -right dr Japan.d
+		ctext JPNemlabel JPNx ly ls "serif"
+
+		// Germany
+		dl=DEUx-sparkw2
+		dr=dl+sparkw
+		db=DEUy+DEUar
+		dt=db+sparkh
+		ly=DEUy-1
+		dchart sparkopt -yrange=0,1,0.5 -top dt -bottom db -left dl -right dr Germany.d
+		ctext DEUemlabel DEUx ly ls "serif"
+
+		// UK
+		dl=GBRx-sparkw2
+		dr=dl+sparkw
+		db=GBRy+GBRar
+		dt=db+sparkh
+		ly=GBRy-1
+		dchart sparkopt smallopt -top dt -bottom db -left dl -right dr United-Kingdom.d
+		ctext GBRemlabel GBRx ly ls "serif"
+
+		// India
+		dl=INDx-sparkw2
+		dr=dl+sparkw
+		db=INDy+INDar
+		dt=db+sparkh
+		ly=INDy-1
+		dchart sparkopt -yrange=0,3,1.5 -top dt -bottom db -left dl -right dr India.d
+		ctext INDemlabel INDx ly ls "serif"
+
+		// FRAnce
+		dl=FRAx-sparkw2
+		dr=dl+sparkw
+		db=FRAy+FRAar
+		dt=db+sparkh
+		ly=FRAy-1
+		dchart sparkopt smallopt -top dt -bottom db -left dl -right dr France.d
+		ctext FRAemlabel FRAx ly ls "serif"
+
+		// Canada
+		dl=CANx-sparkw2
+		dr=dl+sparkw
+		db=CANy+CANar
+		dt=db+sparkh
+		ly=CANy-1
+		dchart sparkopt smallopt -top dt -bottom db -left dl -right dr Canada.d
+		ctext CANemlabel CANx ly ls "serif"
+
+		// Italy
+		dl=ITAx-sparkw2
+		dr=dl+sparkw
+		db=ITAy+ITAar
+		dt=db+sparkh
+		ly=ITAy-1
+		dchart sparkopt smallopt -top dt -bottom db -left dl -right dr Italy.d
+		ctext ITAemlabel ITAx ly ls "serif"
+
+		// S. Korea
+		dl=SKRx-sparkw2
+		dr=dl+sparkw
+		db=SKRy+SKRar
+		dt=db+sparkh
+		ly=SKRy-1
+		dchart sparkopt smallopt -top dt -bottom db -left dl -right dr South-Korea.d
+		ctext SKRemlabel SKRx ly ls "serif"
+
+		// Axis Titles
+		xmid=xlen/2
+		xmid+=xmin
+		ylab2=ylab-4
+		xax=xmin-5
+		etext "GDP (billions USD)"     xax  ymax  ls
+		ctext "Population (billions)"  xmid ylab2 ls
+
+		// Label Axes
+		axlw=0.1
+		axlabsize=0.75
+		axisop=15
+		axiscolor="black"
+
+		// Canada
+		lx1=CANx
+		ly1=CANy
+		CANar2=CANar/2
+		lx=lx1-CANar2
+		ly=ly1-CANar
+		xlabs=CANPopLabel
+		ylabs=CANGDPLabel
+		line lx1 ly  lx1 ylab axlw axiscolor axisop
+		line xax ly1 lx  ly1  axlw axiscolor axisop
+		ctext xlabs lx1 ylab axlabsize
+		etext ylabs xax ly1  axlabsize
+		
+		// Italy
+		lx1=ITAx
+		ly1=ITAy
+		ITAar2=ITAar/2
+		lx=lx1-ITAar2
+		ly=ly1-ITAar
+		xlabs=ITAPopLabel
+		ylabs=ITAGDPLabel
+		line lx1 ly  lx1 ylab axlw axiscolor axisop
+		line xax ly1 lx  ly1  axlw axiscolor axisop
+		ctext xlabs lx1 ylab axlabsize
+		etext ylabs xax ly1  axlabsize
+
+		// South Korea
+		lx1=SKRx
+		ly1=SKRy
+		SKRar2=SKRar/2
+		lx=lx1-SKRar2
+		ly=ly1-SKRar
+		xlabs=SKRPopLabel
+		ylabs=SKRGDPLabel
+		line lx1 ly  lx1 ylab axlw axiscolor axisop
+		line xax ly1 lx  ly1  axlw axiscolor axisop
+		ctext xlabs lx1 ylab axlabsize
+		etext ylabs xax ly1  axlabsize
+	
+		// France
+		lx1=FRAx
+		ly1=FRAy
+		FRAar2=FRAar/2
+		lx=lx1-FRAar2
+		ly=ly1-FRAar
+		xlabs=FRAPopLabel
+		ylabs=FRAGDPLabel
+		line lx1 ly  lx1 ylab axlw axiscolor axisop
+		line xax ly1 lx  ly1  axlw axiscolor axisop
+		ctext xlabs lx1 ylab axlabsize
+		etext ylabs xax ly1  axlabsize
+
+		// Great BrITAin
+		lx1=GBRx
+		ly1=GBRy
+		GBRar2=GBRar/2
+		lx=lx1-GBRar2
+		ly=ly1-GBRar
+		xlabs=GBRPopLabel
+		ylabs=GBRGDPLabel
+		line lx1 ly  lx1 ylab axlw axiscolor axisop
+		line xax ly1 lx  ly1  axlw axiscolor axisop
+		ctext xlabs lx1 ylab axlabsize
+		etext ylabs xax ly1  axlabsize
+
+		// Germany
+		lx1=DEUx
+		ly1=DEUy
+		DEUar2=DEUar/2
+		lx=lx1-DEUar2
+		ly=ly1-DEUar
+		xlabs=DEUPopLabel
+		ylabs=DEUGDPLabel
+		line lx1 ly  lx1 ylab axlw axiscolor axisop
+		line xax ly1 lx  ly1  axlw axiscolor axisop
+		ctext xlabs lx1 ylab axlabsize
+		etext ylabs xax ly1  axlabsize
+
+		// Japan
+		lx1=JPNx
+		ly1=JPNy
+		JPNar2=JPNar/2
+		lx=lx1-JPNar2
+		ly=ly1-JPNar
+		xlabs=JPNPopLabel
+		ylabs=JPNGDPLabel
+		line lx1 ly  lx1 ylab axlw axiscolor axisop
+		line xax ly1 lx  ly1  axlw axiscolor axisop
+		ctext xlabs lx1 ylab axlabsize
+		etext ylabs xax ly1  axlabsize
+
+		// USA
+		lx1=USAx
+		ly1=USAy
+		USAar2=USAar/2
+		lx=lx1-USAar2
+		ly=ly1-USAar
+		xlabs=USAPopLabel
+		ylabs=USAGDPLabel
+		line lx1 ly  lx1 ylab axlw axiscolor axisop
+		line xax ly1 lx  ly1  axlw axiscolor axisop
+		ctext xlabs lx1 ylab axlabsize
+		etext ylabs xax ly1  axlabsize
+
+		// India
+		lx1=INDx
+		ly1=INDy
+		INDar2=INDar/2
+		lx=lx1-INDar2
+		ly=ly1-INDar
+		xlabs=INDPopLabel
+		ylabs=INDGDPLabel
+		line lx1 ly  lx1 ylab axlw axiscolor axisop
+		line xax ly1 lx  ly1  axlw axiscolor axisop
+		ctext xlabs lx1 ylab axlabsize
+		etext ylabs xax ly1  axlabsize
+
+		// China
+		lx1=CHNx
+		ly1=CHNy
+		CHNar2=CHNar/2
+		lx=lx1-CHNar2
+		ly=ly1-CHNar
+		xlabs=CHNPopLabel
+		ylabs=CHNGDPLabel
+		line lx1 ly  lx1 ylab axlw axiscolor axisop
+		line xax ly1 lx  ly1  axlw axiscolor axisop
+		ctext xlabs lx1 ylab axlabsize
+		etext ylabs xax ly1  axlabsize
+
+
+		// Legend
+		legx=CANx
+		legy=ymax+10
+		legly=legy-1
+		circle legx legy CANar emdotcolor emop
+		ctext CANemlabel legx legly 1 "serif"
+
+		dl=legx-sparkw2
+		dr=dl+sparkw
+		db=legy+CANar
+		dt=db+sparkh
+		ly=legy-1
+		dchart sparkopt smallopt -top dt -bottom db -left dl -right dr Canada.d
+		brx=legx-5
+		brh=CANar+2
+
+		nx=legx-12
+		ny=legy+1
+		textblock "Area of the circle denotes the cumluative emissions" nx ny 5 0.65 "serif"
+		ny+=4.2
+		textblock "Emissions (billions of tonnes) 1970-2019" nx ny 7 0.65 "serif"
+		ny+=3
+		text "Country" nx ny 0.65 "serif"
+	eslide
+edeck

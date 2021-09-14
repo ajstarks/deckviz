@@ -1,0 +1,7 @@
+#!/bin/sh
+if test $# -ne 3
+then
+	echo "specify country begin-date end-date" >&2 
+	exit 1
+fi
+awk -F, -v c="$1" -v b=$2 -v e=$3 'BEGIN { print "#", c} $1 == c && $3 <= e && $3 >= b {print $3 "\t" $4/1e9}' annual-co2-emissions-per-country.csv

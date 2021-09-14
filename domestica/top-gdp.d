@@ -1,0 +1,10 @@
+United States	20936600.00
+China	14722730.70
+Japan	5064872.88
+Germany	3806060.14
+United Kingdom	2707743.78
+India	2622983.73
+France	2603004.40
+Italy	1886445.27
+Canada	1643407.98
+South Korea	1630525.01

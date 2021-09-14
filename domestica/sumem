@@ -1,0 +1,2 @@
+#!/bin/sh
+awk -F$'\t' '{sum+=$2} END {print sum}' $*
