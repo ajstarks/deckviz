@@ -1,23 +1,23 @@
 // Carbon dioxide emissions, compared with GDP and population
 deck
 	ts=1.5
-	gdpcolor="#c3c6a8"
+	gdpcolor="#c3c6a8" // color of the US Dollar
 	popcolor="tan"
 	emcolor="steelblue"
 	emdotcolor="maroon"
 	opts="-textsize=1.2 -color emcolor -title=f -val=f -bar=f -vol -line=f -linewidth=0.075  -volop=15 -min=0 -max=10 -grid -yrange=0,10,2 -left=15 -right=85 -bottom 30 -top=90"
 	slide
-		ctext "Top Countries' CO2 Emissions (Billion Tonnes), 1970-2019" 50 92 ts
+		ctext "CO₂ Emissions (Billion Tonnes), 1970-2019" 50 95 ts
 		dchart opts -color emcolor -xlabel=5 -xlast -yaxis -noteloc=c United-States.d
 		dchart opts -color emcolor -xlabel=0 -noteloc=c China.d
 		dchart opts -color emcolor -xlabel=0 -noteloc=c Japan.d
 		dchart opts -color emcolor -xlabel=0 -noteloc=c Germany.d
 		dchart opts -color emcolor -xlabel=0 -noteloc=c United-Kingdom.d
 		dchart opts -color emcolor -xlabel=0 -noteloc=c India.d
-		dchart opts -color emcolor -xlabel=0 -noteloc=r France.d
-		dchart opts -color emcolor -xlabel=0 -noteloc=l Italy.d
-		dchart opts -color emcolor -xlabel=0 -noteloc=r Canada.d
-		dchart opts -color emcolor -xlabel=0 -noteloc=l South-Korea.d
+		// dchart opts -color emcolor -xlabel=0 -noteloc=r France.d
+		// dchart opts -color emcolor -xlabel=0 -noteloc=l Italy.d
+		// dchart opts -color emcolor -xlabel=0 -noteloc=r Canada.d
+		// dchart opts -color emcolor -xlabel=0 -noteloc=l South-Korea.d
 
 		baropt="-textsize=1.0 -title=f -hbar -ls 1.9 -vcolor black -datafmt=%.3f -top 20 -bottom 15"
 		text "2020 GDP (Billions USD)"   15 22 ts
@@ -138,7 +138,7 @@ deck
 		popmin=10
 		popmax=0
 		xmin=15
-		xmax=90
+		xmax=95
 		xlab=xmin-1
 		xlen=xmax-xmin
 
@@ -215,6 +215,13 @@ deck
 		medopt="-yrange=0,1.5,0.5"
 		smallopt="-yrange=0,0.5,0.25"
 		sparkopt="-color steelblue -linewidth=0.05 -textsize=0.5 -bar=f -volop=50  -vol -line -val=f -xlabel=0 -title -note=f -yaxis -datafmt=%.2f"
+
+		// DataX=GBRx
+		// DataY=GBRy
+		// DataSize=GBRar
+		// DataLabel=GBRemlabel
+		// DataFile="United-Kingdom.d"
+		// include "dataplot.dsh"
 		
 		// China
 		dl=CHNx-sparkw2
@@ -312,12 +319,12 @@ deck
 		ylab2=ylab-4
 		xax=xmin-5
 		etext "GDP (billions USD)"     xax  ymax  ls
-		ctext "Population (billions)"  xmid ylab2 ls
+		etext "Population (billions)"  xmax ylab2 ls
 
 		// Label Axes
-		axlw=0.1
+		axlw=0.075
 		axlabsize=0.75
-		axisop=15
+		axisop=80
 		axiscolor="black"
 
 		// Canada
@@ -328,8 +335,8 @@ deck
 		ly=ly1-CANar
 		xlabs=CANPopLabel
 		ylabs=CANGDPLabel
-		line lx1 ly  lx1 ylab axlw axiscolor axisop
-		line xax ly1 lx  ly1  axlw axiscolor axisop
+		line lx1 ly  lx1 ylab axlw popcolor axisop
+		line xax ly1 lx  ly1  axlw gdpcolor axisop
 		ctext xlabs lx1 ylab axlabsize
 		etext ylabs xax ly1  axlabsize
 		
@@ -341,8 +348,8 @@ deck
 		ly=ly1-ITAar
 		xlabs=ITAPopLabel
 		ylabs=ITAGDPLabel
-		line lx1 ly  lx1 ylab axlw axiscolor axisop
-		line xax ly1 lx  ly1  axlw axiscolor axisop
+		line lx1 ly  lx1 ylab axlw popcolor axisop
+		line xax ly1 lx  ly1  axlw gdpcolor axisop
 		ctext xlabs lx1 ylab axlabsize
 		etext ylabs xax ly1  axlabsize
 
@@ -354,8 +361,8 @@ deck
 		ly=ly1-SKRar
 		xlabs=SKRPopLabel
 		ylabs=SKRGDPLabel
-		line lx1 ly  lx1 ylab axlw axiscolor axisop
-		line xax ly1 lx  ly1  axlw axiscolor axisop
+		line lx1 ly  lx1 ylab axlw popcolor axisop
+		line xax ly1 lx  ly1  axlw gdpcolor axisop
 		ctext xlabs lx1 ylab axlabsize
 		etext ylabs xax ly1  axlabsize
 	
@@ -367,8 +374,8 @@ deck
 		ly=ly1-FRAar
 		xlabs=FRAPopLabel
 		ylabs=FRAGDPLabel
-		line lx1 ly  lx1 ylab axlw axiscolor axisop
-		line xax ly1 lx  ly1  axlw axiscolor axisop
+		line lx1 ly  lx1 ylab axlw popcolor axisop
+		line xax ly1 lx  ly1  axlw gdpcolor axisop
 		ctext xlabs lx1 ylab axlabsize
 		etext ylabs xax ly1  axlabsize
 
@@ -380,8 +387,8 @@ deck
 		ly=ly1-GBRar
 		xlabs=GBRPopLabel
 		ylabs=GBRGDPLabel
-		line lx1 ly  lx1 ylab axlw axiscolor axisop
-		line xax ly1 lx  ly1  axlw axiscolor axisop
+		line lx1 ly  lx1 ylab axlw popcolor axisop
+		line xax ly1 lx  ly1  axlw gdpcolor axisop
 		ctext xlabs lx1 ylab axlabsize
 		etext ylabs xax ly1  axlabsize
 
@@ -393,8 +400,8 @@ deck
 		ly=ly1-DEUar
 		xlabs=DEUPopLabel
 		ylabs=DEUGDPLabel
-		line lx1 ly  lx1 ylab axlw axiscolor axisop
-		line xax ly1 lx  ly1  axlw axiscolor axisop
+		line lx1 ly  lx1 ylab axlw popcolor axisop
+		line xax ly1 lx  ly1  axlw gdpcolor axisop
 		ctext xlabs lx1 ylab axlabsize
 		etext ylabs xax ly1  axlabsize
 
@@ -406,8 +413,8 @@ deck
 		ly=ly1-JPNar
 		xlabs=JPNPopLabel
 		ylabs=JPNGDPLabel
-		line lx1 ly  lx1 ylab axlw axiscolor axisop
-		line xax ly1 lx  ly1  axlw axiscolor axisop
+		line lx1 ly  lx1 ylab axlw popcolor axisop
+		line xax ly1 lx  ly1  axlw gdpcolor axisop
 		ctext xlabs lx1 ylab axlabsize
 		etext ylabs xax ly1  axlabsize
 
@@ -419,8 +426,8 @@ deck
 		ly=ly1-USAar
 		xlabs=USAPopLabel
 		ylabs=USAGDPLabel
-		line lx1 ly  lx1 ylab axlw axiscolor axisop
-		line xax ly1 lx  ly1  axlw axiscolor axisop
+		line lx1 ly  lx1 ylab axlw popcolor axisop
+		line xax ly1 lx  ly1  axlw gdpcolor axisop
 		ctext xlabs lx1 ylab axlabsize
 		etext ylabs xax ly1  axlabsize
 
@@ -432,8 +439,8 @@ deck
 		ly=ly1-INDar
 		xlabs=INDPopLabel
 		ylabs=INDGDPLabel
-		line lx1 ly  lx1 ylab axlw axiscolor axisop
-		line xax ly1 lx  ly1  axlw axiscolor axisop
+		line lx1 ly  lx1 ylab axlw popcolor axisop
+		line xax ly1 lx  ly1  axlw gdpcolor axisop
 		ctext xlabs lx1 ylab axlabsize
 		etext ylabs xax ly1  axlabsize
 
@@ -445,11 +452,10 @@ deck
 		ly=ly1-CHNar
 		xlabs=CHNPopLabel
 		ylabs=CHNGDPLabel
-		line lx1 ly  lx1 ylab axlw axiscolor axisop
-		line xax ly1 lx  ly1  axlw axiscolor axisop
+		line lx1 ly  lx1 ylab axlw popcolor axisop
+		line xax ly1 lx  ly1  axlw gdpcolor axisop
 		ctext xlabs lx1 ylab axlabsize
 		etext ylabs xax ly1  axlabsize
-
 
 		// Legend
 		legx=CANx
@@ -464,15 +470,21 @@ deck
 		dt=db+sparkh
 		ly=legy-1
 		dchart sparkopt smallopt -top dt -bottom db -left dl -right dr Canada.d
-		brx=legx-5
-		brh=CANar+2
 
-		nx=legx-12
+		nx=legx-11
 		ny=legy+1
-		textblock "Area of the circle denotes the cumluative emissions" nx ny 5 0.65 "serif"
+		textblock "Area of the circle denotes cumluative emissions" nx ny 5 0.65 "serif" emdotcolor
 		ny+=4.2
-		textblock "Emissions (billions of tonnes) 1970-2019" nx ny 7 0.65 "serif"
+		textblock "Emissions (billions of tonnes) 1970-2019" nx ny 4 0.65 "serif" emcolor
 		ny+=3
 		text "Country" nx ny 0.65 "serif"
+
+
+		topx=legx+7
+		topy=ny-2
+		topblurb="Explores the relationship of three sets of data: GDP (billions of USD), Population (billions of people), and CO₂ emissions from 1970-2019 (billion tonnes)."
+		text      "Billions: GDP, Population and CO₂ Emissions"  topx topy 2
+		topy-=4
+		textblock topblurb topx topy 40 1.2 "serif"
 	eslide
 edeck
