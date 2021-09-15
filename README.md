@@ -17,6 +17,7 @@
 * complex-table -- charts and tables
 * diptych -- American Diptych
 * elections -- elections through the years
+* em -- CO2 Emissions (from Domesitica Data Visualization course)
 * fam -- family trees
 * festival -- Stage from the 1969 Harlem Cultural Festival
 * fire -- German wildfires
