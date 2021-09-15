@@ -1,4 +1,4 @@
 #!/bin/sh
 decksh em.dsh > em.xml
-pdfdeck -sans NotoSans-Medium -serif Charter-Italic -grid 0 -pagesize 1920,1080 em.xml
-pngdeck -sans NotoSans-Medium -serif Charter-Italic -grid 0 -pagesize 1920,1080 em.xml
+pdfdeck -sans NotoSans-Regular -serif NotoSerif-Italic -grid 0 -pagesize 1920,1080 em.xml
+pngdeck -sans NotoSans-Regular -serif NotoSerif-Italic -grid 0 -pagesize 1920,1080 em.xml
