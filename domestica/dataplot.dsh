@@ -1,0 +1,7 @@
+dl=DataX-sparkw2
+dr=dl+sparkw
+db=DataY+DataSize
+dt=db+sparkh
+ly=DataY-1
+dchart sparkopt rangeopt -top dt -bottom db -left dl -right dr DataFile
+ctext DataLabel DataX ly ls "serif"

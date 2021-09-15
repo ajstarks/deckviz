@@ -212,107 +212,84 @@ deck
 		ls=1
 
 		bigopt="-yrange=0,10,5"
-		medopt="-yrange=0,1.5,0.5"
+		medopt="-yrange=0,1,0.5"
 		smallopt="-yrange=0,0.5,0.25"
 		sparkopt="-color steelblue -linewidth=0.05 -textsize=0.5 -bar=f -volop=50  -vol -line -val=f -xlabel=0 -title -note=f -yaxis -datafmt=%.2f"
 
-		// DataX=GBRx
-		// DataY=GBRy
-		// DataSize=GBRar
-		// DataLabel=GBRemlabel
-		// DataFile="United-Kingdom.d"
-		// include "dataplot.dsh"
+		rangeopt=smallopt
+		DataX=CANx
+		DataY=CANy
+		DataSize=CANar
+		DataLabel=CANemlabel
+		DataFile="Canada.d"
+		include "dataplot.dsh"
+
+		DataX=SKRx
+		DataY=SKRy
+		DataSize=SKRar
+		DataLabel=SKRemlabel
+		DataFile="South-Korea.d"
+		include "dataplot.dsh"
+
+		DataX=GBRx
+		DataY=GBRy
+		DataSize=GBRar
+		DataLabel=GBRemlabel
+		DataFile="United-Kingdom.d"
+		include "dataplot.dsh"
+
+		DataX=ITAx
+		DataY=ITAy
+		DataSize=ITAar
+		DataLabel=ITAemlabel
+		DataFile="Italy.d"
+		include "dataplot.dsh"
+
+		DataX=FRAx
+		DataY=FRAy
+		DataSize=FRAar
+		DataLabel=FRAemlabel
+		DataFile="France.d"
+		include "dataplot.dsh"
+
+		rangeopt=medopt
+		DataX=DEUx
+		DataY=DEUy
+		DataSize=DEUar
+		DataLabel=DEUemlabel
+		DataFile="Germany.d"
+		include "dataplot.dsh"
+
+		DataX=JPNx
+		DataY=JPNy
+		DataSize=JPNar
+		DataLabel=JPNemlabel
+		DataFile="Japan.d"
+		include "dataplot.dsh"
+
+		rangeopt="-yrange 0,3,1"
+		DataX=INDx
+		DataY=INDy
+		DataSize=INDar
+		DataLabel=INDemlabel
+		DataFile="India.d"
+		include "dataplot.dsh"
+
+		rangeopt=bigopt
+		DataX=USAx
+		DataY=USAy
+		DataSize=USAar
+		DataLabel=USAemlabel
+		DataFile="United-States.d"
+		include "dataplot.dsh"
+
+		DataX=CHNx
+		DataY=CHNy
+		DataSize=CHNar
+		DataLabel=CHNemlabel
+		DataFile="China.d"
+		include "dataplot.dsh"
 		
-		// China
-		dl=CHNx-sparkw2
-		dr=dl+sparkw
-		db=CHNy+CHNar
-		dt=db+sparkh
-		ly=CHNy-1
-		dchart sparkopt bigopt -top dt -bottom db -left dl -right dr China.d
-		ctext CHNemlabel  CHNx ly ls "serif"
-
-		// USA
-		dl=USAx-sparkw2
-		dr=dl+sparkw
-		db=USAy+USAar
-		dt=db+sparkh
-		ly=USAy-1
-		dchart sparkopt bigopt -top dt -bottom db -left dl -right dr United-States.d
-		ctext USAemlabel USAx ly ls "serif"
-
-		// Japan
-		dl=JPNx-sparkw2
-		dr=dl+sparkw
-		db=JPNy+JPNar
-		dt=db+sparkh
-		ly=JPNy-1
-		dchart sparkopt -yrange=0,1,0.5 -top dt -bottom db -left dl -right dr Japan.d
-		ctext JPNemlabel JPNx ly ls "serif"
-
-		// Germany
-		dl=DEUx-sparkw2
-		dr=dl+sparkw
-		db=DEUy+DEUar
-		dt=db+sparkh
-		ly=DEUy-1
-		dchart sparkopt -yrange=0,1,0.5 -top dt -bottom db -left dl -right dr Germany.d
-		ctext DEUemlabel DEUx ly ls "serif"
-
-		// UK
-		dl=GBRx-sparkw2
-		dr=dl+sparkw
-		db=GBRy+GBRar
-		dt=db+sparkh
-		ly=GBRy-1
-		dchart sparkopt smallopt -top dt -bottom db -left dl -right dr United-Kingdom.d
-		ctext GBRemlabel GBRx ly ls "serif"
-
-		// India
-		dl=INDx-sparkw2
-		dr=dl+sparkw
-		db=INDy+INDar
-		dt=db+sparkh
-		ly=INDy-1
-		dchart sparkopt -yrange=0,3,1.5 -top dt -bottom db -left dl -right dr India.d
-		ctext INDemlabel INDx ly ls "serif"
-
-		// FRAnce
-		dl=FRAx-sparkw2
-		dr=dl+sparkw
-		db=FRAy+FRAar
-		dt=db+sparkh
-		ly=FRAy-1
-		dchart sparkopt smallopt -top dt -bottom db -left dl -right dr France.d
-		ctext FRAemlabel FRAx ly ls "serif"
-
-		// Canada
-		dl=CANx-sparkw2
-		dr=dl+sparkw
-		db=CANy+CANar
-		dt=db+sparkh
-		ly=CANy-1
-		dchart sparkopt smallopt -top dt -bottom db -left dl -right dr Canada.d
-		ctext CANemlabel CANx ly ls "serif"
-
-		// Italy
-		dl=ITAx-sparkw2
-		dr=dl+sparkw
-		db=ITAy+ITAar
-		dt=db+sparkh
-		ly=ITAy-1
-		dchart sparkopt smallopt -top dt -bottom db -left dl -right dr Italy.d
-		ctext ITAemlabel ITAx ly ls "serif"
-
-		// S. Korea
-		dl=SKRx-sparkw2
-		dr=dl+sparkw
-		db=SKRy+SKRar
-		dt=db+sparkh
-		ly=SKRy-1
-		dchart sparkopt smallopt -top dt -bottom db -left dl -right dr South-Korea.d
-		ctext SKRemlabel SKRx ly ls "serif"
-
 		// Axis Titles
 		xmid=xlen/2
 		xmid+=xmin
@@ -325,137 +302,76 @@ deck
 		axlw=0.075
 		axlabsize=0.75
 		axisop=80
-		axiscolor="black"
 
-		// Canada
-		lx1=CANx
-		ly1=CANy
-		CANar2=CANar/2
-		lx=lx1-CANar2
-		ly=ly1-CANar
-		xlabs=CANPopLabel
-		ylabs=CANGDPLabel
-		line lx1 ly  lx1 ylab axlw popcolor axisop
-		line xax ly1 lx  ly1  axlw gdpcolor axisop
-		ctext xlabs lx1 ylab axlabsize
-		etext ylabs xax ly1  axlabsize
-		
-		// Italy
-		lx1=ITAx
-		ly1=ITAy
-		ITAar2=ITAar/2
-		lx=lx1-ITAar2
-		ly=ly1-ITAar
-		xlabs=ITAPopLabel
-		ylabs=ITAGDPLabel
-		line lx1 ly  lx1 ylab axlw popcolor axisop
-		line xax ly1 lx  ly1  axlw gdpcolor axisop
-		ctext xlabs lx1 ylab axlabsize
-		etext ylabs xax ly1  axlabsize
+		DataX=CANx
+		DataY=CANy
+		DataSize=CANar
+		XLabel=CANPopLabel
+		YLabel=CANGDPLabel
+		include "axes.dsh"
 
-		// South Korea
-		lx1=SKRx
-		ly1=SKRy
-		SKRar2=SKRar/2
-		lx=lx1-SKRar2
-		ly=ly1-SKRar
-		xlabs=SKRPopLabel
-		ylabs=SKRGDPLabel
-		line lx1 ly  lx1 ylab axlw popcolor axisop
-		line xax ly1 lx  ly1  axlw gdpcolor axisop
-		ctext xlabs lx1 ylab axlabsize
-		etext ylabs xax ly1  axlabsize
-	
-		// France
-		lx1=FRAx
-		ly1=FRAy
-		FRAar2=FRAar/2
-		lx=lx1-FRAar2
-		ly=ly1-FRAar
-		xlabs=FRAPopLabel
-		ylabs=FRAGDPLabel
-		line lx1 ly  lx1 ylab axlw popcolor axisop
-		line xax ly1 lx  ly1  axlw gdpcolor axisop
-		ctext xlabs lx1 ylab axlabsize
-		etext ylabs xax ly1  axlabsize
+		DataX=SKRx
+		DataY=SKRy
+		DataSize=SKRar
+		XLabel=SKRPopLabel
+		YLabel=SKRGDPLabel
+		include "axes.dsh"
 
-		// Great BrITAin
-		lx1=GBRx
-		ly1=GBRy
-		GBRar2=GBRar/2
-		lx=lx1-GBRar2
-		ly=ly1-GBRar
-		xlabs=GBRPopLabel
-		ylabs=GBRGDPLabel
-		line lx1 ly  lx1 ylab axlw popcolor axisop
-		line xax ly1 lx  ly1  axlw gdpcolor axisop
-		ctext xlabs lx1 ylab axlabsize
-		etext ylabs xax ly1  axlabsize
+		DataX=ITAx
+		DataY=ITAy
+		DataSize=ITAar
+		XLabel=ITAPopLabel
+		YLabel=ITAGDPLabel
+		include "axes.dsh"
 
-		// Germany
-		lx1=DEUx
-		ly1=DEUy
-		DEUar2=DEUar/2
-		lx=lx1-DEUar2
-		ly=ly1-DEUar
-		xlabs=DEUPopLabel
-		ylabs=DEUGDPLabel
-		line lx1 ly  lx1 ylab axlw popcolor axisop
-		line xax ly1 lx  ly1  axlw gdpcolor axisop
-		ctext xlabs lx1 ylab axlabsize
-		etext ylabs xax ly1  axlabsize
+		DataX=FRAx
+		DataY=FRAy
+		DataSize=FRAar
+		XLabel=FRAPopLabel
+		YLabel=FRAGDPLabel
+		include "axes.dsh"
 
-		// Japan
-		lx1=JPNx
-		ly1=JPNy
-		JPNar2=JPNar/2
-		lx=lx1-JPNar2
-		ly=ly1-JPNar
-		xlabs=JPNPopLabel
-		ylabs=JPNGDPLabel
-		line lx1 ly  lx1 ylab axlw popcolor axisop
-		line xax ly1 lx  ly1  axlw gdpcolor axisop
-		ctext xlabs lx1 ylab axlabsize
-		etext ylabs xax ly1  axlabsize
+		DataX=GBRx
+		DataY=GBRy
+		DataSize=GBRar
+		XLabel=GBRPopLabel
+		YLabel=GBRGDPLabel
+		include "axes.dsh"
 
-		// USA
-		lx1=USAx
-		ly1=USAy
-		USAar2=USAar/2
-		lx=lx1-USAar2
-		ly=ly1-USAar
-		xlabs=USAPopLabel
-		ylabs=USAGDPLabel
-		line lx1 ly  lx1 ylab axlw popcolor axisop
-		line xax ly1 lx  ly1  axlw gdpcolor axisop
-		ctext xlabs lx1 ylab axlabsize
-		etext ylabs xax ly1  axlabsize
+		DataX=DEUx
+		DataY=DEUy
+		DataSize=DEUar
+		XLabel=DEUPopLabel
+		YLabel=DEUGDPLabel
+		include "axes.dsh"
 
-		// India
-		lx1=INDx
-		ly1=INDy
-		INDar2=INDar/2
-		lx=lx1-INDar2
-		ly=ly1-INDar
-		xlabs=INDPopLabel
-		ylabs=INDGDPLabel
-		line lx1 ly  lx1 ylab axlw popcolor axisop
-		line xax ly1 lx  ly1  axlw gdpcolor axisop
-		ctext xlabs lx1 ylab axlabsize
-		etext ylabs xax ly1  axlabsize
+		DataX=JPNx
+		DataY=JPNy
+		DataSize=JPNar
+		XLabel=JPNPopLabel
+		YLabel=JPNGDPLabel
+		include "axes.dsh"
 
-		// China
-		lx1=CHNx
-		ly1=CHNy
-		CHNar2=CHNar/2
-		lx=lx1-CHNar2
-		ly=ly1-CHNar
-		xlabs=CHNPopLabel
-		ylabs=CHNGDPLabel
-		line lx1 ly  lx1 ylab axlw popcolor axisop
-		line xax ly1 lx  ly1  axlw gdpcolor axisop
-		ctext xlabs lx1 ylab axlabsize
-		etext ylabs xax ly1  axlabsize
+		DataX=USAx
+		DataY=USAy
+		DataSize=USAar
+		XLabel=USAPopLabel
+		YLabel=USAGDPLabel
+		include "axes.dsh"
+
+		DataX=INDx
+		DataY=INDy
+		DataSize=INDar
+		XLabel=INDPopLabel
+		YLabel=INDGDPLabel
+		include "axes.dsh"
+
+		DataX=CHNx
+		DataY=CHNy
+		DataSize=CHNar
+		XLabel=CHNPopLabel
+		YLabel=CHNGDPLabel
+		include "axes.dsh"
 
 		// Legend
 		legx=CANx
