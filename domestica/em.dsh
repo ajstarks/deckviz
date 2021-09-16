@@ -213,83 +213,22 @@ deck
 
 		bigopt="-yrange=0,10,5"
 		medopt="-yrange=0,1,0.5"
+		med2opt="-yrange=0,3,1"
 		smallopt="-yrange=0,0.5,0.25"
 		sparkopt="-color steelblue -linewidth=0.05 -textsize=0.5 -bar=f -volop=50  -vol -line -val=f -xlabel=0 -title -note=f -yaxis -datafmt=%.2f"
 
-		rangeopt=smallopt
-		DataX=CANx
-		DataY=CANy
-		DataSize=CANar
-		DataLabel=CANemlabel
-		DataFile="Canada.d"
-		include "dataplot.dsh"
-
-		DataX=SKRx
-		DataY=SKRy
-		DataSize=SKRar
-		DataLabel=SKRemlabel
-		DataFile="South-Korea.d"
-		include "dataplot.dsh"
-
-		DataX=GBRx
-		DataY=GBRy
-		DataSize=GBRar
-		DataLabel=GBRemlabel
-		DataFile="United-Kingdom.d"
-		include "dataplot.dsh"
-
-		DataX=ITAx
-		DataY=ITAy
-		DataSize=ITAar
-		DataLabel=ITAemlabel
-		DataFile="Italy.d"
-		include "dataplot.dsh"
-
-		DataX=FRAx
-		DataY=FRAy
-		DataSize=FRAar
-		DataLabel=FRAemlabel
-		DataFile="France.d"
-		include "dataplot.dsh"
-
-		rangeopt=medopt
-		DataX=DEUx
-		DataY=DEUy
-		DataSize=DEUar
-		DataLabel=DEUemlabel
-		DataFile="Germany.d"
-		include "dataplot.dsh"
-
-		DataX=JPNx
-		DataY=JPNy
-		DataSize=JPNar
-		DataLabel=JPNemlabel
-		DataFile="Japan.d"
-		include "dataplot.dsh"
-
-		rangeopt="-yrange 0,3,1"
-		DataX=INDx
-		DataY=INDy
-		DataSize=INDar
-		DataLabel=INDemlabel
-		DataFile="India.d"
-		include "dataplot.dsh"
-
-		rangeopt=bigopt
-		DataX=USAx
-		DataY=USAy
-		DataSize=USAar
-		DataLabel=USAemlabel
-		DataFile="United-States.d"
-		include "dataplot.dsh"
-
-		DataX=CHNx
-		DataY=CHNy
-		DataSize=CHNar
-		DataLabel=CHNemlabel
-		DataFile="China.d"
-		include "dataplot.dsh"
 		
+		func "dpfunc.dsh" CANx CANy CANar CANemlabel "CAN.d" smallopt
+		func "dpfunc.dsh" SKRx SKRy SKRar SKRemlabel "SKR.d" smallopt
+		func "dpfunc.dsh" ITAx ITAy ITAar ITAemlabel "ITA.d" smallopt
+		func "dpfunc.dsh" FRAx FRAy FRAar FRAemlabel "FRA.d" smallopt
+		func "dpfunc.dsh" GBRx GBRy GBRar GBRemlabel "GBR.d" smallopt
+		func "dpfunc.dsh" DEUx DEUy DEUar DEUemlabel "DEU.d" medopt
+		func "dpfunc.dsh" JPNx JPNy JPNar JPNemlabel "JPN.d" medopt
+		func "dpfunc.dsh" USAx USAy USAar USAemlabel "USA.d" bigopt
+		func "dpfunc.dsh" INDx INDy INDar INDemlabel "IND.d" med2opt 
+		func "dpfunc.dsh" CHNx CHNy CHNar CHNemlabel "CHN.d" bigopt
+	
 		// Axis Titles
 		xmid=xlen/2
 		xmid+=xmin
@@ -303,75 +242,16 @@ deck
 		axlabsize=0.75
 		axisop=80
 
-		DataX=CANx
-		DataY=CANy
-		DataSize=CANar
-		XLabel=CANPopLabel
-		YLabel=CANGDPLabel
-		include "axes.dsh"
-
-		DataX=SKRx
-		DataY=SKRy
-		DataSize=SKRar
-		XLabel=SKRPopLabel
-		YLabel=SKRGDPLabel
-		include "axes.dsh"
-
-		DataX=ITAx
-		DataY=ITAy
-		DataSize=ITAar
-		XLabel=ITAPopLabel
-		YLabel=ITAGDPLabel
-		include "axes.dsh"
-
-		DataX=FRAx
-		DataY=FRAy
-		DataSize=FRAar
-		XLabel=FRAPopLabel
-		YLabel=FRAGDPLabel
-		include "axes.dsh"
-
-		DataX=GBRx
-		DataY=GBRy
-		DataSize=GBRar
-		XLabel=GBRPopLabel
-		YLabel=GBRGDPLabel
-		include "axes.dsh"
-
-		DataX=DEUx
-		DataY=DEUy
-		DataSize=DEUar
-		XLabel=DEUPopLabel
-		YLabel=DEUGDPLabel
-		include "axes.dsh"
-
-		DataX=JPNx
-		DataY=JPNy
-		DataSize=JPNar
-		XLabel=JPNPopLabel
-		YLabel=JPNGDPLabel
-		include "axes.dsh"
-
-		DataX=USAx
-		DataY=USAy
-		DataSize=USAar
-		XLabel=USAPopLabel
-		YLabel=USAGDPLabel
-		include "axes.dsh"
-
-		DataX=INDx
-		DataY=INDy
-		DataSize=INDar
-		XLabel=INDPopLabel
-		YLabel=INDGDPLabel
-		include "axes.dsh"
-
-		DataX=CHNx
-		DataY=CHNy
-		DataSize=CHNar
-		XLabel=CHNPopLabel
-		YLabel=CHNGDPLabel
-		include "axes.dsh"
+		func "axfunc.dsh" CANx CANy CANar CANPopLabel CANGDPLabel
+		func "axfunc.dsh" SKRx SKRy SKRar SKRPopLabel SKRGDPLabel
+		func "axfunc.dsh" ITAx ITAy ITAar ITAPopLabel ITAGDPLabel
+		func "axfunc.dsh" FRAx FRAy FRAar FRAPopLabel FRAGDPLabel
+		func "axfunc.dsh" GBRx GBRy GBRar GBRPopLabel GBRGDPLabel
+		func "axfunc.dsh" DEUx DEUy DEUar DEUPopLabel DEUGDPLabel
+		func "axfunc.dsh" JPNx JPNy JPNar JPNPopLabel JPNGDPLabel
+		func "axfunc.dsh" USAx USAy USAar USAPopLabel USAGDPLabel
+		func "axfunc.dsh" INDx INDy INDar INDPopLabel INDGDPLabel
+		func "axfunc.dsh" CHNx CHNy CHNar CHNPopLabel CHNGDPLabel
 
 		// Legend
 		legx=CANx

@@ -1,0 +1,16 @@
+DataX=_0
+DataY=_1
+DataSize=_2
+XLabel=_3
+YLabel=_4
+
+
+lx1=DataX
+ly1=DataY
+size2=DataSize/2
+lx=lx1-size2
+ly=ly1-DataSize
+line lx1 ly  lx1 ylab axlw popcolor axisop
+line xax ly1 lx  ly1  axlw gdpcolor axisop
+ctext XLabel lx1 ylab axlabsize
+etext YLabel xax ly1  axlabsize

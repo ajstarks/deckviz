@@ -1,0 +1,14 @@
+DataX=_0
+DataY=_1
+DataSize=_2
+DataLabel=_3
+DataFile=_4
+Ropt=_5
+
+dl=DataX - sparkw2
+dr=dl + sparkw
+db=DataY + DataSize
+dt=db + sparkh
+ly=DataY-1
+dchart sparkopt Ropt -top dt -bottom db -left dl -right dr DataFile
+ctext DataLabel DataX ly ls "serif"
