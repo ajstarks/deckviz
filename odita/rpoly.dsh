@@ -1,0 +1,14 @@
+def right X Y W H Color
+	w75=W*0.75
+	x1=X
+	x2=X
+	x3=X+w75
+	x4=X+W
+
+	h75=H*0.75
+	y1=Y
+	y2=Y+H
+	y3=Y+h75
+	y4=Y
+	polygon "x1 x2 x3 x4" "y1 y2 y3 y4" Color
+edef

@@ -34,6 +34,7 @@
 * multigen -- Multi-generational households
 * nba -- NBA standings
 * netflix -- Netflix viewing frequency
+* odita -- #recreationthursday from Odili Donald Odita 
 * prison -- Comparing the rate of incarceration vs. US presidential terms
 * qs --  Quadratspirale schwarz, 1952 (#RecreationThursday)
 * reqheader -- Request headers diagram

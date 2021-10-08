@@ -1,0 +1,103 @@
+deck
+	canvas 1200 1200
+
+	blue="#1254a8"
+	green="#288a97"
+	yellow="#efa504"
+	pink="#db8974"
+	neutral="#929688"
+	pw=10
+	ph=10
+
+	slide
+		rect 50 50 80 80 neutral
+		// row 1
+		ry=80
+		func "rpoly.dsh" 10 ry pw ph yellow
+		func "upoly.dsh" 20 ry pw ph green
+		func "dpoly.dsh" 30 ry pw ph yellow
+		func "lpoly.dsh" 40 ry pw ph blue
+		func "dpoly.dsh" 50 ry pw ph green
+		func "lpoly.dsh" 60 ry pw ph pink
+		func "rpoly.dsh" 70 ry pw ph green
+		func "upoly.dsh" 80 ry pw ph yellow
+
+		// row 2
+		ry-=ph
+		func "lpoly.dsh" 10 ry pw ph blue
+		func "dpoly.dsh" 20 ry pw ph pink
+		func "upoly.dsh" 30 ry pw ph green
+		func "rpoly.dsh" 40 ry pw ph pink
+		func "upoly.dsh" 50 ry pw ph yellow
+		func "rpoly.dsh" 60 ry pw ph blue
+		func "lpoly.dsh" 70 ry pw ph pink
+		func "dpoly.dsh" 80 ry pw ph blue
+
+		// row 3
+		ry-=ph
+		func "dpoly.dsh" 10 ry pw ph green
+		func "lpoly.dsh" 20 ry pw ph yellow
+		func "rpoly.dsh" 30 ry pw ph pink
+		func "upoly.dsh" 40 ry pw ph blue
+		func "rpoly.dsh" 50 ry pw ph pink
+		func "upoly.dsh" 60 ry pw ph green
+		func "dpoly.dsh" 70 ry pw ph blue
+		func "lpoly.dsh" 80 ry pw ph yellow
+	
+		// row 4
+		ry-=ph
+		func "upoly.dsh" 10 ry pw ph pink
+		func "rpoly.dsh" 20 ry pw ph blue
+		func "lpoly.dsh" 30 ry pw ph green
+		func "dpoly.dsh" 40 ry pw ph yellow
+		func "lpoly.dsh" 50 ry pw ph blue
+		func "dpoly.dsh" 60 ry pw ph yellow
+		func "upoly.dsh" 70 ry pw ph pink
+		func "rpoly.dsh" 80 ry pw ph green
+
+		// row 5
+		ry-=ph
+		func "dpoly.dsh" 10 ry pw ph blue
+		func "lpoly.dsh" 20 ry pw ph yellow
+		func "rpoly.dsh" 30 ry pw ph blue
+		func "upoly.dsh" 40 ry pw ph pink
+		func "rpoly.dsh" 50 ry pw ph yellow
+		func "upoly.dsh" 60 ry pw ph green
+		func "dpoly.dsh" 70 ry pw ph yellow
+		func "lpoly.dsh" 80 ry pw ph blue
+
+		// row 6
+		ry-=ph
+		func "upoly.dsh" 10 ry pw ph pink
+		func "rpoly.dsh" 20 ry pw ph green
+		func "lpoly.dsh" 30 ry pw ph yellow
+		func "dpoly.dsh" 40 ry pw ph green
+		func "lpoly.dsh" 50 ry pw ph blue
+		func "dpoly.dsh" 60 ry pw ph pink
+		func "upoly.dsh" 70 ry pw ph green
+		func "rpoly.dsh" 80 ry pw ph pink
+
+		// row 7
+		ry-=ph
+		func "rpoly.dsh" 10 ry pw ph yellow
+		func "upoly.dsh" 20 ry pw ph blue
+		func "dpoly.dsh" 30 ry pw ph green
+		func "lpoly.dsh" 40 ry pw ph pink
+		func "dpoly.dsh" 50 ry pw ph green
+		func "lpoly.dsh" 60 ry pw ph yellow
+		func "rpoly.dsh" 70 ry pw ph pink
+		func "upoly.dsh" 80 ry pw ph blue
+
+		// row 8
+		ry-=ph
+		func "lpoly.dsh" 10 ry pw ph green
+		func "dpoly.dsh" 20 ry pw ph pink
+		func "upoly.dsh" 30 ry pw ph yellow
+		func "rpoly.dsh" 40 ry pw ph blue
+		func "upoly.dsh" 50 ry pw ph pink
+		func "rpoly.dsh" 60 ry pw ph blue
+		func "lpoly.dsh" 70 ry pw ph green
+		func "dpoly.dsh" 80 ry pw ph yellow
+
+	eslide
+edeck

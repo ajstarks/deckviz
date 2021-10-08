@@ -1,0 +1,4 @@
+#!/bin/sh
+decksh odita.dsh > odita.xml
+pdfdeck -pagesize 1200x1200 odita.xml
+pngdeck -pagesize 1200x1200 odita.xml
