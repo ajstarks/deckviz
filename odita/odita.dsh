@@ -9,7 +9,7 @@ deck
 	pw=10
 	ph=10
 
-	slide
+	slide "black"
 		rect 50 50 80 80 neutral
 		// row 1
 		ry=80
@@ -100,4 +100,207 @@ deck
 		func "dpoly.dsh" 80 ry pw ph yellow
 
 	eslide
+
+	slide  "black" "white"
+
+		ry=85
+		ew=pw
+		eh=ph
+		ey=87
+		ts=2
+		
+
+		func "rpoly.dsh" 10 ey ew eh "slategray"
+		func "lpoly.dsh" 25 ey ew eh "slategray"
+		func "dpoly.dsh" 40 ey ew eh "slategray"
+		func "upoly.dsh" 55 ey ew eh "slategray"
+
+		ly=ey+5
+		ctext "right"   15 ly ts
+		ctext "left"    30 ly ts
+		ctext "down"    45 ly ts
+		ctext "up"      60 ly ts
+
+		rbrace 70 92 10 2 2 0.1 "white"
+		text  "chips" 72 92 ts
+
+		rbrace 93 45 80 2 2 0.1 "white"
+		text   "grid" 94 45 ts
+
+		ry=80
+		rect  15 ry pw ph yellow
+		rect  25 ry pw ph green
+		rect  35 ry pw ph yellow
+		rect  45 ry pw ph blue
+		rect  55 ry pw ph green
+		rect  65 ry pw ph pink
+		rect  75 ry pw ph green
+		rect  85 ry pw ph yellow
+
+		// row 2
+		ry-=ph
+		rect  15 ry pw ph blue
+		rect  25 ry pw ph pink
+		rect  35 ry pw ph green
+		rect  45 ry pw ph pink
+		rect  55 ry pw ph yellow
+		rect  65 ry pw ph blue
+		rect  75 ry pw ph pink
+		rect  85 ry pw ph blue
+
+		// row 3
+		ry-=ph
+		rect  15 ry pw ph green
+		rect  25 ry pw ph yellow
+		rect  35 ry pw ph pink
+		rect  45 ry pw ph blue
+		rect  55 ry pw ph pink
+		rect  65 ry pw ph green
+		rect  75 ry pw ph blue
+		rect  85 ry pw ph yellow
+	
+		// row 4
+		ry-=ph
+		rect  15 ry pw ph pink
+		rect  25 ry pw ph blue
+		rect  35 ry pw ph green
+		rect  45 ry pw ph yellow
+		rect  55 ry pw ph blue
+		rect  65 ry pw ph yellow
+		rect  75 ry pw ph pink
+		rect  85 ry pw ph green
+
+		// row 5
+		ry-=ph
+		rect  15 ry pw ph blue
+		rect  25 ry pw ph yellow
+		rect  35 ry pw ph blue
+		rect  45 ry pw ph pink
+		rect  55 ry pw ph yellow
+		rect  65 ry pw ph green
+		rect  75 ry pw ph yellow
+		rect  85 ry pw ph blue
+
+		// row 6
+		ry-=ph
+		rect  15 ry pw ph pink
+		rect  25 ry pw ph green
+		rect  35 ry pw ph yellow
+		rect  45 ry pw ph green
+		rect  55 ry pw ph blue
+		rect  65 ry pw ph pink
+		rect  75 ry pw ph green
+		rect  85 ry pw ph pink
+
+		// row 7
+		ry-=ph
+		rect  15 ry pw ph yellow
+		rect  25 ry pw ph blue
+		rect  35 ry pw ph green
+		rect  45 ry pw ph pink
+		rect  55 ry pw ph green
+		rect  65 ry pw ph yellow
+		rect  75 ry pw ph pink
+		rect  85 ry pw ph blue
+
+		// row 8
+		ry-=ph
+		rect  15 ry pw ph green
+		rect  25 ry pw ph pink
+		rect  35 ry pw ph yellow
+		rect  45 ry pw ph blue
+		rect  55 ry pw ph pink
+		rect  65 ry pw ph blue
+		rect  75 ry pw ph green
+		rect  85 ry pw ph yellow
+
+
+		ry=80
+		ctext "right" 15 ry ts
+		ctext "up" 25 ry ts
+		ctext "down" 35 ry ts
+		ctext "left" 45 ry ts
+		ctext "down" 55 ry ts
+		ctext "left" 65 ry ts
+		ctext "right" 75 ry ts
+		ctext "up" 85 ry ts
+
+		// row 2
+		ry-=ph
+		ctext "left" 15 ry ts
+		ctext "down" 25 ry ts
+		ctext "up" 35 ry ts
+		ctext "right" 45 ry ts
+		ctext "up" 55 ry ts
+		ctext "right" 65 ry ts
+		ctext "left" 75 ry ts
+		ctext "down" 85 ry ts
+
+		// row 3
+		ry-=ph
+		ctext "down" 15 ry ts
+		ctext "left" 25 ry ts
+		ctext "right" 35 ry ts
+		ctext "up" 45 ry ts
+		ctext "right" 55 ry ts
+		ctext "up" 65 ry ts
+		ctext "down" 75 ry ts
+		ctext "left" 85 ry ts
+	
+		// row 4
+		ry-=ph
+		ctext "up" 15 ry ts
+		ctext "right" 25 ry ts
+		ctext "left" 35 ry ts
+		ctext "down" 45 ry ts
+		ctext "left" 55 ry ts
+		ctext "down" 65 ry ts
+		ctext "up" 75 ry ts
+		ctext "right" 85 ry ts
+
+		// row 5
+		ry-=ph
+		ctext "down" 15 ry ts
+		ctext "left" 25 ry ts
+		ctext "right" 35 ry ts
+		ctext "up" 45 ry ts
+		ctext "right" 55 ry ts
+		ctext "up" 65 ry ts
+		ctext "down" 75 ry ts
+		ctext "left" 85 ry ts
+
+		// row 6
+		ry-=ph
+		ctext "up" 15 ry ts
+		ctext "right" 25 ry ts
+		ctext "left" 35 ry ts
+		ctext "down" 45 ry ts
+		ctext "left" 55 ry ts
+		ctext "down" 65 ry ts
+		ctext "up" 75 ry ts
+		ctext "right" 85 ry ts
+
+		// row 7
+		ry-=ph
+		ctext "right" 15 ry ts
+		ctext "up" 25 ry ts
+		ctext "down" 35 ry ts
+		ctext "left" 45 ry ts
+		ctext "down" 55 ry ts
+		ctext "left" 65 ry ts
+		ctext "right" 75 ry ts
+		ctext "up" 85 ry ts
+
+		// row 8
+		ry-=ph
+		ctext "left" 15 ry ts
+		ctext "down" 25 ry ts
+		ctext "up" 35 ry ts
+		ctext "right" 45 ry ts
+		ctext "up" 55 ry ts
+		ctext "right" 65 ry ts
+		ctext "lleft" 75 ry ts
+		ctext "down" 85 ry ts
+	eslide
+
 edeck
