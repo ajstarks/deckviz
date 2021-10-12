@@ -1,0 +1,79 @@
+		iw=843
+		ih=547
+		is=10
+		brw=2
+		brh=2
+		brlw=0.1
+
+		cskip=16
+		bskip=8
+		
+		top=80
+		left=10
+		ly=90
+		ly2=72
+		tis=is*2.0
+		lyis=is*0.75
+
+		image "mlb-post.png" 50 90 iw ih tis
+
+		// American League (left)
+		col=left
+		dsy=top
+
+		brx=col+bskip
+		dsy2=dsy-10
+		bry=dsy-5
+		bry2=bry-30
+		brs=20
+		brs2=brs*2
+
+		// ALDS
+		image "alds.png"    col ly iw ih lyis
+		image alds1 col dsy iw ih is
+		image alds2  col dsy2 iw ih is
+		rbrace brx bry brs brw brh brlw fg
+
+		image alds3 col 50 iw ih is
+		image alds4 col 40 iw ih is
+		rbrace brx bry2 brs brw brh brlw fg
+
+		// ALCS
+		col+=cskip
+		brx=col+bskip
+		dsy-=5
+		dsy2-=25
+		image "alcs.png"    col ly iw ih lyis
+		image alcs1 col dsy iw ih is
+		image alcs2 col dsy2 iw ih is
+		rbrace brx 60 brs2 brw brh brlw fg
+
+		// National League (right)
+		col=90
+		brx=col-bskip
+
+		// NLDS
+		image "nlds.png"    col ly iw ih lyis
+		image nlds1 col 80 iw ih is
+		image nlds2 col 70 iw ih is
+		lbrace brx bry brs brw brh brlw fg
+		
+		image nlds3 col 50 iw ih is
+		image nlds4 col 40 iw ih is
+		lbrace brx bry2 brs brw brh brlw fg
+
+		col-=cskip
+		brx=col-bskip
+		// NLCS
+		image "nlcs.png"    col ly iw ih lyis
+		image nlcs1 col 75 iw ih is
+		image nlcs2 col 45 iw ih is
+		lbrace brx 60 40 brw brh brlw fg
+
+		// World Series
+		image "ws.png"      50 ly2 iw ih lyis
+		image alws  45 60 iw ih is
+		image nlws  55 60 iw ih is
+
+		dbrace 50 50 brs 2 2 0.1 fg
+		image wschamp 50 40 iw ih tis
