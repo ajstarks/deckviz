@@ -15,6 +15,7 @@
 * ceo-stock -- The relationship of CEO tenure to stock price
 * covid-usa -- Covid data
 * complex-table -- charts and tables
+* cyano -- #RecreationThursday -- Will Creech grid
 * diptych -- American Diptych
 * elections -- elections through the years
 * em -- CO2 Emissions (from Domesitica Data Visualization course)

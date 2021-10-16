@@ -1,0 +1,78 @@
+<deck>
+<canvas width="1000" height="1000"/>
+<slide bg="#012d5e">
+<rect xp="20" yp="80" wp="25" hr="100" color="#ffffff" opacity="40"/>
+<rect xp="22.5" yp="77.5" wp="20" hr="100" color="#ffffff" opacity="40"/>
+<rect xp="25" yp="75" wp="15" hr="100" color="#ffffff" opacity="40"/>
+<rect xp="27.5" yp="72.5" wp="10" hr="100" color="#ffffff" opacity="40"/>
+<rect xp="50" yp="80" wp="25" hr="100" color="#ffffff" opacity="40"/>
+<rect xp="50" yp="77.5" wp="20" hr="100" color="#ffffff" opacity="40"/>
+<rect xp="50" yp="75" wp="15" hr="100" color="#ffffff" opacity="40"/>
+<rect xp="50" yp="72.5" wp="10" hr="100" color="#ffffff" opacity="40"/>
+<rect xp="80" yp="80" wp="25" hr="100" color="#ffffff" opacity="40"/>
+<rect xp="77.5" yp="77.5" wp="20" hr="100" color="#ffffff" opacity="40"/>
+<rect xp="75" yp="75" wp="15" hr="100" color="#ffffff" opacity="40"/>
+<rect xp="72.5" yp="72.5" wp="10" hr="100" color="#ffffff" opacity="40"/>
+<rect xp="20" yp="50" wp="25" hr="100" color="#ffffff" opacity="40"/>
+<rect xp="22.5" yp="50" wp="20" hr="100" color="#ffffff" opacity="40"/>
+<rect xp="25" yp="50" wp="15" hr="100" color="#ffffff" opacity="40"/>
+<rect xp="27.5" yp="50" wp="10" hr="100" color="#ffffff" opacity="40"/>
+<rect xp="50" yp="50" wp="25" hr="100" color="#ffffff" opacity="40"/>
+<rect xp="50" yp="50" wp="20" hr="100" color="#ffffff" opacity="40"/>
+<rect xp="50" yp="50" wp="15" hr="100" color="#ffffff" opacity="40"/>
+<rect xp="50" yp="50" wp="10" hr="100" color="#ffffff" opacity="40"/>
+<rect xp="80" yp="50" wp="25" hr="100" color="#ffffff" opacity="40"/>
+<rect xp="77.5" yp="50" wp="20" hr="100" color="#ffffff" opacity="40"/>
+<rect xp="75" yp="50" wp="15" hr="100" color="#ffffff" opacity="40"/>
+<rect xp="72.5" yp="50" wp="10" hr="100" color="#ffffff" opacity="40"/>
+<rect xp="20" yp="20" wp="25" hr="100" color="#ffffff" opacity="40"/>
+<rect xp="22.5" yp="22.5" wp="20" hr="100" color="#ffffff" opacity="40"/>
+<rect xp="25" yp="25" wp="15" hr="100" color="#ffffff" opacity="40"/>
+<rect xp="27.5" yp="27.5" wp="10" hr="100" color="#ffffff" opacity="40"/>
+<rect xp="50" yp="20" wp="25" hr="100" color="#ffffff" opacity="40"/>
+<rect xp="50" yp="22.5" wp="20" hr="100" color="#ffffff" opacity="40"/>
+<rect xp="50" yp="25" wp="15" hr="100" color="#ffffff" opacity="40"/>
+<rect xp="50" yp="27.5" wp="10" hr="100" color="#ffffff" opacity="40"/>
+<rect xp="80" yp="20" wp="25" hr="100" color="#ffffff" opacity="40"/>
+<rect xp="77.5" yp="22.5" wp="20" hr="100" color="#ffffff" opacity="40"/>
+<rect xp="75" yp="25" wp="15" hr="100" color="#ffffff" opacity="40"/>
+<rect xp="72.5" yp="27.5" wp="10" hr="100" color="#ffffff" opacity="40"/>
+</slide>
+<slide bg="#012d5e" fg="#ffffff">
+<line xp1="10" yp1="90" xp2="28.93933982822018" yp2="71.06066017177983" sp="0.1" color="#ffffff" opacity="100"/>
+<polygon xc="30.000000000000004 29.266269960980747 28.93933982822018 27.8794227200087" yc="70 72.1205772799913 71.06066017177983 70.73373003901926" color="#ffffff" opacity="100"/>
+<text align="c" xp="20" yp="90" sp="3.0" font="mono">(+x, -y)</text>
+<rect xp="20" yp="80" wp="25" hr="100" color="#ffffff" opacity="40"/>
+<line xp1="50" yp1="90" xp2="50" yp2="71.5" sp="0.1" color="#ffffff" opacity="100"/>
+<polygon xc="50 50.97155464427001 50 49.02844535572999" yc="70 72.02623908100485 71.5 72.02623908100485" color="#ffffff" opacity="100"/>
+<text align="c" xp="50" yp="90" sp="3.0" font="mono">(x, -y)</text>
+<rect xp="50" yp="80" wp="25" hr="100" color="#ffffff" opacity="40"/>
+<line xp1="90" yp1="90" xp2="71.06066017177983" yp2="71.06066017177982" sp="0.1" color="#ffffff" opacity="100"/>
+<polygon xc="70 72.1205772799913 71.06066017177983 70.73373003901926" yc="70 70.73373003901925 71.06066017177982 72.1205772799913" color="#ffffff" opacity="100"/>
+<text align="c" xp="80" yp="90" sp="3.0" font="mono">(-x, -y)</text>
+<rect xp="80" yp="80" wp="25" hr="100" color="#ffffff" opacity="40"/>
+<line xp1="10" yp1="50" xp2="28.5" yp2="50" sp="0.1" color="#ffffff" opacity="100"/>
+<polygon xc="30 27.97376091899515 28.5 27.97376091899515" yc="50 50.97155464427001 50 49.02844535572999" color="#ffffff" opacity="100"/>
+<text align="c" xp="20" yp="60" sp="3.0" font="mono">(+x, y)</text>
+<rect xp="20" yp="50" wp="25" hr="100" color="#ffffff" opacity="40"/>
+<ellipse xp="50" yp="50" wp="2" hr="100" color="#ffffff"/>
+<text align="c" xp="50" yp="60" sp="3.0" font="mono">(x, y)</text>
+<rect xp="50" yp="50" wp="25" hr="100" color="#ffffff" opacity="40"/>
+<line xp1="90" yp1="50" xp2="71.5" yp2="50" sp="0.1" color="#ffffff" opacity="100"/>
+<polygon xc="70 72.02623908100485 71.5 72.02623908100485" yc="50 49.02844535573 50 50.97155464427001" color="#ffffff" opacity="100"/>
+<text align="c" xp="80" yp="60" sp="3.0" font="mono">(-x, y)</text>
+<rect xp="80" yp="50" wp="25" hr="100" color="#ffffff" opacity="40"/>
+<line xp1="10" yp1="10" xp2="28.93933982822018" yp2="28.939339828220177" sp="0.1" color="#ffffff" opacity="100"/>
+<polygon xc="30.000000000000004 27.8794227200087 28.93933982822018 29.266269960980747" yc="30 29.266269960980743 28.939339828220177 27.8794227200087" color="#ffffff" opacity="100"/>
+<text align="c" xp="20" yp="30" sp="3.0" font="mono" color="white">(+x, +y)</text>
+<rect xp="20" yp="20" wp="25" hr="100" color="#ffffff" opacity="40"/>
+<line xp1="50" yp1="10" xp2="50" yp2="28.5" sp="0.1" color="#ffffff" opacity="100"/>
+<polygon xc="50 49.02844535572999 50 50.97155464427001" yc="30 27.97376091899515 28.5 27.97376091899515" color="#ffffff" opacity="100"/>
+<text align="c" xp="50" yp="30" sp="3.0" font="mono" color="white">(x, +y)</text>
+<rect xp="50" yp="20" wp="25" hr="100" color="#ffffff" opacity="40"/>
+<line xp1="90" yp1="10" xp2="71.06066017177983" yp2="28.93933982822018" sp="0.1" color="#ffffff" opacity="100"/>
+<polygon xc="70 70.73373003901926 71.06066017177983 72.1205772799913" yc="30.000000000000004 27.8794227200087 28.93933982822018 29.26626996098075" color="#ffffff" opacity="100"/>
+<text align="c" xp="80" yp="30" sp="3.0" font="mono" color="white">(-x, +y)</text>
+<rect xp="80" yp="20" wp="25" hr="100" color="#ffffff" opacity="40"/>
+</slide>
+</deck>

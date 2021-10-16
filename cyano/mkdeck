@@ -1,0 +1,4 @@
+#!/bin/sh
+decksh cyano.dsh > cyano.xml
+pdfdeck -pagesize 815x815 cyano.xml
+pngdeck -pagesize 815x815 cyano.xml

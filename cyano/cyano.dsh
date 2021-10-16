@@ -1,0 +1,223 @@
+deck
+	canvas 1000 1000
+	bg="#012d5e"
+	sqcolor="#ffffff"
+	op=40
+
+	slide bg
+		sdiff=5
+		sd=sdiff/2
+		sqsize=25
+
+		// Row 1
+
+		// upper left
+		x=20
+		y=80
+		size=sqsize
+		square x y size sqcolor op
+		x+=sd
+		y-=sd
+		size-=sdiff
+		square x y size sqcolor op
+		x+=sd
+		y-=sd
+		size-=sdiff
+		square x y size sqcolor op
+		x+=sd
+		y-=sd
+		size-=sdiff
+		square x y size sqcolor op
+
+		// upper middle
+		x=50
+		y=80
+		size=sqsize
+		square x y size sqcolor op
+		y-=sd
+		size-=sdiff
+		square x y size sqcolor op
+		y-=sd
+		size-=sdiff
+		square x y size sqcolor op
+		y-=sd
+		size-=sdiff
+		square x y size sqcolor op
+		
+		// upper right
+		x=80
+		y=80
+		size=sqsize
+		square x y size sqcolor op
+		x-=sd
+		y-=sd
+		size-=sdiff
+		square x y size sqcolor op
+		x-=sd
+		y-=sd
+		size-=sdiff
+		square x y size sqcolor op
+		x-=sd
+		y-=sd
+		size-=sdiff
+		square x y size sqcolor op
+
+
+		// Row 2
+
+
+		// middle left
+		x=20
+		y=50
+		size=sqsize
+		square x y size sqcolor op
+		x+=sd
+		size-=sdiff
+		square x y size sqcolor op
+		x+=sd
+		size-=sdiff
+		square x y size sqcolor op
+		x+=sd
+		size-=sdiff
+		square x y size sqcolor op
+
+		// middle middle
+		x=50
+		y=50
+		size=sqsize
+		square x y size sqcolor op
+		size-=sdiff
+		square x y size sqcolor op
+		size-=sdiff
+		square x y size sqcolor op
+		size-=sdiff
+		square x y size sqcolor op
+
+		// middle right
+		x=80
+		y=50
+		size=sqsize
+		square x y size sqcolor op
+		x-=sd
+		size-=sdiff
+		square x y size sqcolor op
+		x-=sd
+		size-=sdiff
+		square x y size sqcolor op
+		x-=sd
+		size-=sdiff
+		square x y size sqcolor op
+
+
+		// Row 3
+
+		// lower left
+		x=20
+		y=20
+		size=sqsize
+		square x y size sqcolor op
+		x+=sd
+		y+=sd
+		size-=sdiff
+		square x y size sqcolor op
+		x+=sd
+		y+=sd
+		size-=sdiff
+		square x y size sqcolor op
+		x+=sd
+		y+=sd
+		size-=sdiff
+		square x y size sqcolor op
+
+		// lower middle
+		x=50
+		y=20
+		size=sqsize
+		square x y size sqcolor op
+		y+=sd
+		size-=sdiff
+		square x y size sqcolor op
+		y+=sd
+		size-=sdiff
+		square x y size sqcolor op
+		y+=sd
+		size-=sdiff
+		square x y size sqcolor op
+
+		// lower right
+		x=80
+		y=20
+		size=sqsize
+		square x y size sqcolor op
+		x-=sd
+		y+=sd
+		size-=sdiff
+		square x y size sqcolor op
+		x-=sd
+		y+=sd
+		size-=sdiff
+		square x y size sqcolor op
+		x-=sd
+		y+=sd
+		size-=sdiff
+		square x y size sqcolor op
+	eslide
+
+	slide bg sqcolor
+		x=20
+		y=80
+		size=25
+		gutter=5
+		g2=gutter*2
+		skip=size+gutter
+		ls=3.0
+		ly=y+g2
+		ary=ly
+		ary2=ary-20
+		arrow 10 ary 30 ary2 0.1 2 2 sqcolor
+		ctext "(+x, -y)" x ly ls "mono"
+		square x y size sqcolor op
+		x+=skip
+		arrow 50 ary 50 ary2 0.1 2 2 sqcolor
+		ctext "(x, -y)" x ly ls "mono"
+		square x y size sqcolor op
+		x+=skip
+		arrow 90 ary 70 ary2 0.1 2 2 sqcolor
+		ctext "(-x, -y)" x ly ls "mono"
+		square x y size sqcolor op
+
+		x=20
+		y-=skip
+		ly=y+g2
+		ary-=40
+		ary2-=20
+		arrow 10 ary 30 ary2 0.1 2 2 sqcolor
+		ctext "(+x, y)" x ly ls "mono"
+		square x y size sqcolor op
+		x+=skip
+		circle ary ary 2  sqcolor
+		ctext "(x, y)" x ly ls "mono"
+		square x y size sqcolor op
+		x+=skip
+		arrow 90 ary 70 ary2 0.1 2 2 sqcolor
+		ctext "(-x, y)" x ly ls "mono"
+		square x y size sqcolor op
+
+		x=20
+		y-=skip
+		ly=y+g2
+		ary-=40
+		ary2-=20
+		arrow 10 ary 30 ary2 0.1 2 2 sqcolor
+		ctext "(+x, +y)" x ly ls "mono" "white"
+		square x y size sqcolor op
+		x+=skip
+		arrow 50 ary 50 ary2 0.1 2 2 sqcolor
+		ctext "(x, +y)" x ly ls "mono" "white"
+		square x y size sqcolor op
+		x+=skip
+		arrow 90 ary 70 ary2 0.1 2 2 sqcolor
+		ctext "(-x, +y)" x ly ls "mono" "white"
+		square x y size sqcolor op
+	eslide
+edeck
