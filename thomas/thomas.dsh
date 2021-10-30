@@ -1,0 +1,442 @@
+// Iris, Tulips, Jonquils, and Crocuses, 1969, Alma Thomas
+// Acrylic on canvas
+// 60 × 50 in
+// 152.4 × 127 cm
+// RecreationThursday 2021-10-28
+
+// palette
+red1="#9b524e"
+red2="#8a2a1b"
+blue1="#204271"
+blue2="#68a8b2"
+blue3="#5c8bb9"
+blue4="#9dcbd3"
+pink="#c5abb0"
+yellow1="#e7d367"
+yellow2="#cba842"
+yellow3="#d3d9b3"
+orange="#b36735"
+violet1="#4b4b7a"
+violet2="#904561"
+violet3="#908eba"
+green1="#376769"
+green2="#c2cfbb"
+green3="#759899"
+bluegreen="#62a5ab"
+
+deck
+	canvas 500 500
+
+	// reference image: https://www.artsy.net/artwork/alma-thomas-iris-tulips-jonquils-and-crocuses
+	slide
+		image "thomas.png" 50 50 2013 1908 25
+	eslide
+
+
+	slide
+		
+		left=10
+		bottom=3
+		top=97
+
+		cs=1.3
+		hspace=1.65
+		vspace=1
+	
+		// 49 columns of color
+
+		// col 1
+		x=left
+
+		for y=bottom 10 vspace
+			square x y cs green2
+		efor
+		for y=11 top vspace
+			square x y cs blue1
+		efor
+
+		// col 2
+		x+=hspace
+		for y=bottom 20 vspace
+			square x y cs green2
+		efor
+		for y=21 58 vspace
+			square x y cs green1
+		efor
+		for y=59 top vspace
+			square x y cs blue3
+		efor
+
+		// col 3
+		x+=hspace
+		for y=bottom 26 vspace
+			square x y cs green2
+		efor
+		for y=27 top vspace
+			square x y cs blue1
+		efor
+
+		// col 4
+		x+=hspace
+		for y=bottom 24 vspace
+			square x y cs green2
+		efor
+		for y=25 65 vspace
+			square x y cs blue1
+		efor
+		for y=66 84 vspace
+			square x y cs blue3
+		efor
+		for y=85 top vspace
+			square x y cs blue1
+		efor
+
+		// col 5
+		x+=hspace
+		for y=bottom 24 vspace
+			square x y cs green2
+		efor
+		for y=25 top vspace
+			square x y cs blue1
+		efor
+
+		// col 6
+		x+=hspace
+		for y=bottom 20 vspace
+			square x y cs green2
+		efor
+		for y=21 top vspace
+			square x y cs violet1
+		efor
+
+		// col 7
+		x+=hspace
+		for y=bottom 62 vspace
+			square x y cs yellow1
+		efor
+		for y=63 top vspace
+			square x y cs blue1
+		efor
+
+		// col 8
+		x+=hspace
+		for y=bottom 55 vspace
+			square x y cs yellow1
+		efor
+		for y=56 top vspace
+			square x y cs green2
+		efor
+
+		// col 9
+		x+=hspace
+		for y=bottom top vspace
+			square x y cs yellow2
+		efor
+
+		// col 10
+		x+=hspace
+		for y=bottom top vspace
+			square x y cs orange
+		efor
+
+		// col 11
+		x+=hspace
+		for y=bottom top vspace
+			square x y cs red2
+		efor
+
+		// col 12
+		x+=hspace
+		for y=bottom top vspace
+			square x y cs violet1
+		efor
+
+		// col 13
+		x+=hspace
+		for y=bottom 9 vspace
+			square x y cs yellow1
+		efor
+		for y=10 22 vspace
+			square x y cs green2
+		efor
+		for y=23 42 vspace
+			square x y cs violet1
+		efor
+		for y=43 80 vspace
+			square x y cs blue1
+		efor
+		for y=81 top vspace
+			square x y cs violet1
+		efor
+
+		// col 14
+		x+=hspace
+		for y=bottom 9 vspace
+			square x y cs yellow1
+		efor
+		for y=10 26 vspace
+			square x y cs green2
+		efor
+		for y=27 86 vspace
+			square x y cs blue1
+		efor
+		for y=87 top vspace
+			square x y cs green1
+		efor
+
+		// col 15
+		x+=hspace
+		for y=bottom 89 vspace
+			square x y cs blue1
+		efor
+		for y=90 top vspace
+			square x y cs blue2
+		efor
+
+		// col 16
+		x+=hspace
+		for y=bottom 90 vspace
+			square x y cs blue1
+		efor
+		for y=91 top vspace
+			square x y cs blue2
+		efor
+
+		// col 17
+		x+=hspace
+		for y=bottom 20 vspace
+			square x y cs red1
+		efor
+		for y=21 top vspace
+			square x y cs blue1
+		efor
+
+		// col 18
+		x+=hspace
+		for y=bottom 22 vspace
+			square x y cs yellow1
+		efor
+		for y=23 top vspace
+			square x y cs blue1
+		efor
+
+		// col 19
+		x+=hspace
+		for y=bottom 10 vspace
+			square x y cs yellow1
+		efor
+		for y=11 top vspace
+			square x y cs blue1
+		efor
+
+		// col 20
+		x+=hspace
+		for y=bottom 13 vspace
+			square x y cs yellow1
+		efor
+		for y=14 top vspace
+			square x y cs green1
+		efor
+
+		// col 21
+		x+=hspace
+		for y=bottom top vspace
+			square x y cs yellow1
+		efor
+
+		// col 22
+		x+=hspace
+		for y=bottom top vspace
+			square x y cs red1
+		efor
+
+		// col 23
+		x+=hspace
+		for y=bottom top vspace
+			square x y cs red1
+		efor
+
+		// col 24
+		x+=hspace
+		for y=bottom top vspace
+			square x y cs blue2
+		efor
+
+		// col 25
+		x+=hspace
+		for y=bottom top vspace
+			square x y cs red1
+		efor
+
+		// col 26
+		x+=hspace
+		for y=bottom top vspace
+			square x y cs red1
+		efor
+
+		// col 27
+		x+=hspace
+		for y=bottom top vspace
+			square x y cs orange
+		efor
+
+		// col 28
+		x+=hspace
+		for y=bottom top vspace
+			square x y cs green1
+		efor
+
+		// col 29
+		x+=hspace
+		for y=bottom top vspace
+			square x y cs blue1
+		efor
+
+		// col 30
+		x+=hspace
+		for y=bottom top vspace
+			square x y cs blue1
+		efor
+
+		// col 31
+		x+=hspace
+		for y=bottom top vspace
+			square x y cs blue1
+		efor
+
+		// col 32
+		x+=hspace
+		for y=bottom 82 vspace
+			square x y cs violet2
+		efor
+		for y=83 top vspace
+			square x y cs blue1
+		efor
+
+		// col 33
+		x+=hspace
+		for y=bottom 35 vspace
+			square x y cs orange
+		efor
+		for y=36 top vspace
+			square x y cs blue1
+		efor
+
+		// col 34
+		x+=hspace
+		for y=bottom 50 vspace
+			square x y cs green2
+		efor
+		for y=51 top vspace
+			square x y cs blue1
+		efor
+
+		// col 35
+		x+=hspace
+		for y=bottom top vspace
+			square x y cs green2
+		efor
+
+		// col 36
+		x+=hspace
+		for y=bottom top vspace
+			square x y cs yellow1
+		efor
+
+		// col 37
+		x+=hspace
+		for y=bottom top vspace
+			square x y cs red1
+		efor
+
+		// col 38
+		x+=hspace
+		for y=bottom top vspace
+			square x y cs pink
+		efor
+
+		// col 39
+		x+=hspace
+		for y=bottom top vspace
+			square x y cs blue1
+		efor
+
+		// col 40
+		x+=hspace
+		for y=bottom top vspace
+			square x y cs blue1
+		efor
+
+		// col 41
+		x+=hspace
+		for y=bottom top vspace
+			square x y cs blue4
+		efor
+
+		// col 42
+		x+=hspace
+		for y=bottom top vspace
+			square x y cs yellow3
+		efor
+
+		// col 43
+		x+=hspace
+		for y=bottom top vspace
+			square x y cs blue1
+		efor
+
+		// col 44
+		x+=hspace
+		for y=bottom 20 vspace
+			square x y cs red1
+		efor
+		for y=21 top vspace
+			square x y cs blue1
+		efor
+
+		// col 45
+		x+=hspace
+		for y=bottom 40 vspace
+			square x y cs red1
+		efor
+		for y=41 top vspace
+			square x y cs blue1
+		efor
+
+		// col 46
+		x+=hspace
+		for y=bottom 45 vspace
+			square x y cs red1
+		efor
+		for y=46 top vspace
+			square x y cs violet3
+		efor
+
+		// col 47
+		x+=hspace
+		for y=bottom 50 vspace
+			square x y cs red1
+		efor
+		for y=51 top vspace
+			square x y cs bluegreen
+		efor
+
+		// col 48
+		x+=hspace
+		for y=bottom 47 vspace
+			square x y cs pink
+		efor
+		for y=48 top vspace
+			square x y cs blue1
+		efor
+
+		// col 49
+		x+=hspace
+		for y=bottom 49 vspace
+			square x y cs pink
+		efor
+		for y=50 top vspace
+			square x y cs green3
+		efor		
+	eslide
+edeck
