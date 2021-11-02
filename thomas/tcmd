@@ -1,0 +1,50 @@
+./thomas  
+./thomas -n 3 -o=20 
+./thomas -o=20 
+./thomas -o=100
+./thomas -n 1 
+./thomas -n 6 
+./thomas -n 6 -o 20 
+./thomas -n 6 -o 50 
+./thomas -n 2 -o 60 
+./thomas -n 2 -o 60 -bg "black" 
+./thomas -bg "black" 
+./thomas -bg "orange" 
+./thomas -bg "skyblue" 
+./thomas -d 1 
+./thomas -d 0.5 
+./thomas -d 2 
+./thomas -d 1.5 
+./thomas -d 1.5 -n 5 
+./thomas -d 2 -n 5 
+./thomas -d 2 -n 5 -o=20 
+./thomas -d 2 -n 5 -o=50 
+./thomas -d 2  
+./thomas -d 3  
+./thomas -d 0.01  
+./thomas -d 1  
+./thomas -d 0.5  
+./thomas -d 0.05  
+./thomas -d 0.0  
+./thomas -d 1.0  
+./thomas -d 2.0  
+./thomas -d 3.0  
+./thomas -d 5.0  
+./thomas -d 3.0 -o=20 
+./thomas -d 3.0 -o=30 
+./thomas -d 3.0 -o=50 
+./thomas -d 3.0 -o=30 
+./thomas -d 3.0 -o=25 
+./thomas -d 3.0 -o=25 
+./thomas -d 3.0 -o=25 -note=t  
+./thomas -d 3.0 -o=25 
+./thomas -d 3.0 -o=25 -brush=b  
+./thomas -d 1 -o=25 -brush=b  
+./thomas -d 0.5 -o=25 -brush=b  
+./thomas -d 0.5  -brush=b  
+./thomas -d 0.5  -brush=b -o=10  
+./thomas -d 0.5 -n 5 -brush=b -o=10  
+./thomas -d 0.5 -n 5 -brush=b -o=90  
+./thomas -d 0.5 -n 5 -brush=b -o=50  
+./thomas -d 5 -n 5 -brush=b -o=50  
+./thomas -d 1 -n 5 -brush=b -o=50  
