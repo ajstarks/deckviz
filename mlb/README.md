@@ -1,2 +1,2 @@
 # MLB Postseason
-![Boston](bos-win.png)
+![Atlanta Wins](atl-win.png)
