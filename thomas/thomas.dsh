@@ -29,7 +29,7 @@ deck
 
 	// reference image: https://www.artsy.net/artwork/alma-thomas-iris-tulips-jonquils-and-crocuses
 	slide
-		image "thomas.png" 50 50 2013 1908 25
+		image "thomas-ref.png" 50 50 2013 1908 25
 	eslide
 
 
@@ -39,7 +39,7 @@ deck
 		bottom=3
 		top=97
 
-		cs=1.3
+		cs=0.9
 		hspace=1.65
 		vspace=1
 	

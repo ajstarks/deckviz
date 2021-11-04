@@ -1,4 +1,8 @@
 // Iris, Tulips, Jonquils, and Crocuses, 1969, Alma Thomas
+// Acrylic on canvas
+// 60 × 50 in
+// 152.4 × 127 cm
+// RecreationThursday 2021-10-28
 package main
 
 import (
@@ -261,7 +265,6 @@ func chip(x, y, w, h, wd, hd float64, color string, opacity float64) {
 func blob(x, y, w, h, wd, hd float64, n int, color string, opacity float64) {
 	l := x - (w / 2)
 	b := y - (h / 2)
-	//fmt.Printf("rect %.2f %.2f %.2f %.2f \"%s\" %.2f\n", x, y, w, h, "black", 10.0)
 	for i := 0; i < n; i++ {
 		xp, yp := l+(w*rand.Float64()), b+(h*rand.Float64())
 		ew, eh := w*wd, h*hd
@@ -269,7 +272,8 @@ func blob(x, y, w, h, wd, hd float64, n int, color string, opacity float64) {
 	}
 }
 
-func tower(data brushStacks, x, y, w, h, wd, hd float64, nb int, opacity float64) {
+// ctower makes a column of brush strokes, using the "chip" brush stroke
+func ctower(data brushStacks, x, y, w, h, wd, hd float64, nb int, opacity float64) {
 	yp := y
 	for i := 0; i < len(data); i++ {
 		d := data[i]
@@ -282,7 +286,8 @@ func tower(data brushStacks, x, y, w, h, wd, hd float64, nb int, opacity float64
 	}
 }
 
-func blobtower(data brushStacks, x, y, w, h, wd, hd float64, nb int, opacity float64) {
+// btower makes a colum of brush strokes using the "blob" brush stroke
+func btower(data brushStacks, x, y, w, h, wd, hd float64, nb int, opacity float64) {
 	yp := y
 	for i := 0; i < len(data); i++ {
 		d := data[i]
@@ -293,22 +298,27 @@ func blobtower(data brushStacks, x, y, w, h, wd, hd float64, nb int, opacity flo
 	}
 }
 
-func alltower(data []brushStacks, x, y, w, h, wd, hd float64, nb int, op float64) {
+// allctower makes a series of columns beginning at (x,y) using the chip brush stroke
+// the data that defines the columns is in "data"
+func allctower(data []brushStacks, x, y, w, h, wd, hd float64, nb int, op float64) {
 	xp := x
 	for _, f := range data {
-		tower(f, xp, y, w, h, wd, hd, nb, op)
+		ctower(f, xp, y, w, h, wd, hd, nb, op)
 		xp += w
 	}
 }
 
+// allbtower makes a series of columns beginning at (x,y) using the blob brush stroke
+// the data that defines the columns is in "data"
 func allbtower(data []brushStacks, x, y, w, h, wd, hd float64, nb int, op float64) {
 	xp := x
 	for _, f := range data {
-		blobtower(f, xp, y, w, h, wd, hd, nb, op)
+		btower(f, xp, y, w, h, wd, hd, nb, op)
 		xp += w
 	}
 }
 
+// grid makes a 2-D grid of brush strokes
 func grid(x1, x2, y1, y2, w, h, wd, hd float64, nb int, palette []string) {
 	for x := x1; x <= x2; x += w {
 		for y := y1; y <= y2; y += h {
@@ -351,9 +361,11 @@ func main() {
 	}
 	switch brushtype {
 	case "c":
-		alltower(alldata, sx, sy, w, h, wd, hd, nc, opacity)
+		allctower(alldata, sx, sy, w, h, wd, hd, nc, opacity)
 	case "b":
 		allbtower(alldata, sx, sy, w, h, wd, hd, nc, opacity)
+	default:
+		allctower(alldata, sx, sy, w, h, wd, hd, nc, opacity)
 	}
 
 	fmt.Println("eslide")
