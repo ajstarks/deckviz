@@ -1,0 +1,40 @@
+def chip X Y W H Wd Hd Color Opacity
+	w2=W/2
+	h2=H/2
+
+	l=X-w2
+	r=X+w2
+	t=Y+h2
+	b=Y-h2
+
+	rw=random 0 1
+	rh=random 0 1
+	wf=W*rw
+	hf=Hd*rh
+	xp1=l + wf
+	yp1=t - hf
+
+	rw=random 0 1
+	rh=random 0 1
+	wf=Wd*rw
+	hf=H*rh
+	xp2=r - wf
+	yp2=b + hf
+
+	rw=random 0 1
+	rh=random 0 1
+	wf=W*rw
+	hf=Hd*rh
+	xp3=l + wf
+	yp3=b + hf
+
+	rw=random 0 1
+	rh=random 0 1
+	wf=Wd*rw
+	hf=H*rh
+	xp4=l + wf
+	yp4=b + hf
+
+	polygon "xp1 xp2 xp3 xp4" "yp1 yp2 yp3 yp4" Color Opacity
+
+edef

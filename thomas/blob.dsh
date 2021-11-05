@@ -1,0 +1,21 @@
+def blob X Y W H Wd Hd Color Opacity
+	w2=W/2
+	h2=H/2
+
+	l=X-w2
+	b=Y-h2
+
+	rw=random 0 1
+	rh=random 0 1
+
+	wf=W*rw
+	hf=H*rh
+
+	xp = l + wf
+	yp = b + hf
+
+	ew=W*Wd
+	eh=H*Hd
+	circle xp yp 1
+	ellipse xp yp ew eh Color Opacity
+edef

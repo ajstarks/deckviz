@@ -32,6 +32,41 @@ deck
 		image "thomas-ref.png" 50 50 2013 1908 25
 	eslide
 
+	slide
+		bottom=10
+		width=1.5
+		wincr=width*1.2
+		height=width*1.5
+		hincr=height*1.2
+
+
+		df=0.05
+		wfactor=width*df
+		hfactor=height*df
+
+		wincr2=wincr*0.75
+		x=10
+		op=100
+		yy=bottom
+		for y=yy 50 hincr
+			func "chip.dsh" x y width height wfactor hfactor red1 op
+			yy+=hincr
+		efor
+		for y=yy 90 hincr
+			func "chip.dsh" x y width height wfactor hfactor green1 op
+		efor
+
+		x+=wincr
+		yy=bottom
+		for y=yy 30 hincr
+			func "chip.dsh" x y width height wfactor hfactor yellow1 op
+			yy+=hincr
+		efor
+		for y=yy 75 hincr
+			func "chip.dsh" x y width height wfactor hfactor green2 op
+		efor
+	eslide
+
 
 	slide
 		
