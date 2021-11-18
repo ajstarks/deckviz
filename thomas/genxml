@@ -1,0 +1,2 @@
+#!/bin/sh
+awk '{printf "%s  > thomas%02d.xml\n", $0, ++n}' tcmd

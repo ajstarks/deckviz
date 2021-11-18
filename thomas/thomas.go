@@ -23,25 +23,33 @@ type brushStack struct {
 type brushStacks []brushStack
 
 const (
-	red1      = "#9b524e"
-	red2      = "#8a2a1b"
-	blue1     = "#204271"
-	blue2     = "#68a8b2"
-	blue3     = "#5c8bb9"
-	blue4     = "#9dcbd3"
-	pink      = "#c5abb0"
-	yellow1   = "#e7d367"
-	yellow2   = "#cba842"
-	yellow3   = "#d3d9b3"
-	orange    = "#b36735"
-	violet1   = "#4b4b7a"
-	violet2   = "#904561"
-	violet3   = "#908eba"
-	green1    = "#376769"
-	green2    = "#c2cfbb"
-	green3    = "#759899"
-	bluegreen = "#62a5ab"
-	defop     = 100.0
+	red1       = "#9b524e"
+	red2       = "#8a2a1b"
+	blue1      = "#204271"
+	blue2      = "#68a8b2"
+	blue3      = "#5c8bb9"
+	blue4      = "#9dcbd3"
+	pink       = "#c5abb0"
+	yellow1    = "#e7d367"
+	yellow2    = "#cba842"
+	yellow3    = "#d3d9b3"
+	orange     = "#b36735"
+	violet1    = "#4b4b7a"
+	violet2    = "#904561"
+	violet3    = "#908eba"
+	green1     = "#376769"
+	green2     = "#c2cfbb"
+	green3     = "#759899"
+	bluegreen  = "#62a5ab"
+	defop      = 100.0
+	nleft      = 5.0
+	nbottom    = 2.0
+	nright     = 95.0
+	nsize      = 1.0
+	ellipsefmt = `<ellipse xp="%.3f" yp="%.3f" wp="%.3f" hp="%.3f" color=%q opacity="%.3f"/>`
+	polyfmt    = `<polygon xc="%.3f %.3f %.3f %.3f" yc="%.3f %.3f %.3f %.3f" color=%q opacity="%.3f"/>`
+	textfmt    = `<text xp="%.3f" yp="%.3f" sp="%.3f" align=%q>%s</text>`
+	notefmt    = `brush=%s n=%d w=%.2f h=%.2f d=%.2f x=%g y=%g o=%.2f`
 )
 
 var alldata = []brushStacks{
@@ -254,8 +262,7 @@ func chip(x, y, w, h, wd, hd float64, color string, opacity float64) {
 	xp[3] = l + (wd * rand.Float64())
 	yp[3] = b + (h * rand.Float64())
 
-	fmt.Printf("polygon \"%.2f %.2f %.2f %.2f\" \"%.2f %.2f %.2f %.2f\" \"%s\" %.2f\n",
-		xp[0], xp[1], xp[2], xp[3], yp[0], yp[1], yp[2], yp[3], color, opacity)
+	fmt.Printf(polyfmt, xp[0], xp[1], xp[2], xp[3], yp[0], yp[1], yp[2], yp[3], color, opacity)
 }
 
 // blob makes n number of ellipses bounded by the rectangle
@@ -268,7 +275,7 @@ func blob(x, y, w, h, wd, hd float64, n int, color string, opacity float64) {
 	for i := 0; i < n; i++ {
 		xp, yp := l+(w*rand.Float64()), b+(h*rand.Float64())
 		ew, eh := w*wd, h*hd
-		fmt.Printf("ellipse %.2f %.2f %.2f %.2f \"%s\" %.2f\n", xp, yp, ew, eh, color, opacity)
+		fmt.Printf(ellipsefmt, xp, yp, ew, eh, color, opacity)
 	}
 }
 
@@ -348,16 +355,15 @@ func main() {
 	flag.Parse()
 
 	rand.Seed(int64(time.Now().Unix()))
-	fmt.Println("deck")
-	fmt.Printf("slide \"%s\"\n", bgcolor)
+	fmt.Println("<deck>")
+	fmt.Printf("<slide bg=\"%s\">\n", bgcolor)
 	wd := w * dfactor
 	hd := h * dfactor
 
 	if note {
-		fmt.Printf("text \"%s\" 5 2 1\n",
-			fmt.Sprintf("brush=%s n=%d w=%.2f h=%.2f d=%.2f x=%g y=%g o=%.2f",
-				brushtype, nc, w, h, dfactor, sx, sy, opacity))
-		fmt.Printf("etext \"%s\" 95 2 1\n", time.Now().Format(time.RFC3339))
+		ntext := fmt.Sprintf(notefmt, brushtype, nc, w, h, dfactor, sx, sy, opacity)
+		fmt.Printf(textfmt, nleft, nbottom, nsize, "l", ntext)
+		fmt.Printf(textfmt, nright, nbottom, nsize, "e", time.Now().Format(time.RFC3339))
 	}
 	switch brushtype {
 	case "c":
@@ -368,7 +374,7 @@ func main() {
 		allctower(alldata, sx, sy, w, h, wd, hd, nc, opacity)
 	}
 
-	fmt.Println("eslide")
+	fmt.Println("</slide>")
 
 	// fmt.Printf("slide \"%s\"\n", bgcolor)
 	// blob(50, 50, 10, 15, 1, 1, 10, red1, 60)
@@ -378,5 +384,5 @@ func main() {
 	// grid(20, 80, 20, 80, w, h, 1, 1, 10, []string{"red", "green", "blue", "pink", "violet", "yellow", "orange"})
 	// fmt.Println("eslide")
 
-	fmt.Println("edeck")
+	fmt.Println("</deck>")
 }

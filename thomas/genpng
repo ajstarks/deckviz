@@ -1,0 +1,8 @@
+#!/bin/sh
+for i in thomas??.pdf
+do
+	f=`basename $i .pdf`
+	echo $f
+	mutool convert -o f.png $i
+	mv f1.png $f.png
+done

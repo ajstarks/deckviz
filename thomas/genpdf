@@ -1,0 +1,2 @@
+#!/bin/sh
+awk '{printf "%s | pdfdeck -pagesize 6000x6000 -stdout - > thomas%02d.pdf\n", $0, ++n}' tcmd
