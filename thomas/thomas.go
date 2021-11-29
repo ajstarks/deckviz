@@ -355,8 +355,7 @@ func main() {
 	flag.Parse()
 
 	rand.Seed(int64(time.Now().Unix()))
-	fmt.Println("<deck>")
-	fmt.Printf("<slide bg=\"%s\">\n", bgcolor)
+	fmt.Printf("<deck>\n<slide bg=\"%s\">\n", bgcolor)
 	wd := w * dfactor
 	hd := h * dfactor
 
@@ -373,8 +372,7 @@ func main() {
 	default:
 		allctower(alldata, sx, sy, w, h, wd, hd, nc, opacity)
 	}
-
-	fmt.Println("</slide>")
+	fmt.Println("</slide></deck>")
 
 	// fmt.Printf("slide \"%s\"\n", bgcolor)
 	// blob(50, 50, 10, 15, 1, 1, 10, red1, 60)
@@ -383,6 +381,4 @@ func main() {
 	// fmt.Printf("slide \"%s\"\n", bgcolor)
 	// grid(20, 80, 20, 80, w, h, 1, 1, 10, []string{"red", "green", "blue", "pink", "violet", "yellow", "orange"})
 	// fmt.Println("eslide")
-
-	fmt.Println("</deck>")
 }
