@@ -1,0 +1,34 @@
+<deck>
+<canvas width="700" height="1400"/>
+<slide bg="white" fg="black">
+<line xp1="0" yp1="0" xp2="100" yp2="0" sp="1"/>
+<line xp1="0" yp1="100" xp2="100" yp2="100" sp="1"/>
+<line xp1="0" yp1="0" xp2="0" yp2="100" sp="1"/>
+<line xp1="100" yp1="0" xp2="100" yp2="100" sp="1"/>
+<line xp1="20.00" yp1="70.10" xp2="21.71" yp2="70.01" sp="0.25" opacity="100.00" color="black"/><line xp1="21.71" yp1="70.01" xp2="23.43" yp2="70.02" sp="0.25" opacity="100.00" color="black"/><line xp1="23.43" yp1="70.02" xp2="25.14" yp2="70.12" sp="0.25" opacity="100.00" color="black"/><line xp1="25.14" yp1="70.12" xp2="26.86" yp2="70.33" sp="0.25" opacity="100.00" color="black"/><line xp1="26.86" yp1="70.33" xp2="28.57" yp2="70.63" sp="0.25" opacity="100.00" color="black"/><line xp1="28.57" yp1="70.63" xp2="30.29" yp2="71.03" sp="0.25" opacity="100.00" color="black"/><line xp1="30.29" yp1="71.03" xp2="32.00" yp2="71.52" sp="0.25" opacity="100.00" color="black"/><line xp1="32.00" yp1="71.52" xp2="33.71" yp2="72.09" sp="0.25" opacity="100.00" color="black"/><line xp1="33.71" yp1="72.09" xp2="35.43" yp2="72.74" sp="0.25" opacity="100.00" color="black"/><line xp1="35.43" yp1="72.74" xp2="37.14" yp2="73.46" sp="0.25" opacity="100.00" color="black"/><line xp1="37.14" yp1="73.46" xp2="38.86" yp2="74.25" sp="0.25" opacity="100.00" color="black"/><line xp1="38.86" yp1="74.25" xp2="40.57" yp2="75.10" sp="0.25" opacity="100.00" color="black"/><line xp1="40.57" yp1="75.10" xp2="42.29" yp2="75.99" sp="0.25" opacity="100.00" color="black"/><line xp1="42.29" yp1="75.99" xp2="44.00" yp2="76.93" sp="0.25" opacity="100.00" color="black"/><line xp1="44.00" yp1="76.93" xp2="45.71" yp2="77.89" sp="0.25" opacity="100.00" color="black"/><line xp1="45.71" yp1="77.89" xp2="47.43" yp2="78.88" sp="0.25" opacity="100.00" color="black"/><line xp1="47.43" yp1="78.88" xp2="49.14" yp2="79.88" sp="0.25" opacity="100.00" color="black"/><line xp1="49.14" yp1="79.88" xp2="50.86" yp2="80.88" sp="0.25" opacity="100.00" color="black"/><line xp1="50.86" yp1="80.88" xp2="52.57" yp2="81.87" sp="0.25" opacity="100.00" color="black"/><line xp1="52.57" yp1="81.87" xp2="54.29" yp2="82.84" sp="0.25" opacity="100.00" color="black"/><line xp1="54.29" yp1="82.84" xp2="56.00" yp2="83.78" sp="0.25" opacity="100.00" color="black"/><line xp1="56.00" yp1="83.78" xp2="57.71" yp2="84.69" sp="0.25" opacity="100.00" color="black"/><line xp1="57.71" yp1="84.69" xp2="59.43" yp2="85.54" sp="0.25" opacity="100.00" color="black"/><line xp1="59.43" yp1="85.54" xp2="61.14" yp2="86.35" sp="0.25" opacity="100.00" color="black"/><line xp1="61.14" yp1="86.35" xp2="62.86" yp2="87.09" sp="0.25" opacity="100.00" color="black"/><line xp1="62.86" yp1="87.09" xp2="64.57" yp2="87.76" sp="0.25" opacity="100.00" color="black"/><line xp1="64.57" yp1="87.76" xp2="66.29" yp2="88.35" sp="0.25" opacity="100.00" color="black"/><line xp1="66.29" yp1="88.35" xp2="68.00" yp2="88.86" sp="0.25" opacity="100.00" color="black"/><line xp1="68.00" yp1="88.86" xp2="69.71" yp2="89.28" sp="0.25" opacity="100.00" color="black"/><line xp1="69.71" yp1="89.28" xp2="71.43" yp2="89.60" sp="0.25" opacity="100.00" color="black"/><line xp1="71.43" yp1="89.60" xp2="73.14" yp2="89.83" sp="0.25" opacity="100.00" color="black"/><line xp1="73.14" yp1="89.83" xp2="74.86" yp2="89.97" sp="0.25" opacity="100.00" color="black"/><line xp1="74.86" yp1="89.97" xp2="76.57" yp2="90.00" sp="0.25" opacity="100.00" color="black"/><line xp1="76.57" yp1="90.00" xp2="78.29" yp2="89.93" sp="0.25" opacity="100.00" color="black"/><line xp1="78.29" yp1="89.93" xp2="80.00" yp2="89.77" sp="0.25" opacity="100.00" color="black"/><text align="c" xp="25" yp="74" sp="3" font="serif">every valley</text>
+<text align="c" xp="75" yp="92" sp="3" font="serif">shall be exalted</text>
+<text align="c" xp="50" yp="47" sp="3" font="serif">the crooked</text>
+<text align="c" xp="50" yp="32" sp="3" font="serif">straight</text>
+<line xp1="20" yp1="55" xp2="25" yp2="50" sp="0.25" color="black"/>
+<line xp1="25" yp1="50" xp2="30" yp2="52" sp="0.25" color="black"/>
+<line xp1="30" yp1="52" xp2="35" yp2="51" sp="0.25" color="black"/>
+<line xp1="35" yp1="51" xp2="45" yp2="55" sp="0.25" color="black"/>
+<line xp1="45" yp1="55" xp2="55" yp2="50" sp="0.25" color="black"/>
+<line xp1="55" yp1="50" xp2="65" yp2="53" sp="0.25" color="black"/>
+<line xp1="65" yp1="53" xp2="75" yp2="52" sp="0.25" color="black"/>
+<line xp1="75" yp1="52" xp2="80" yp2="55" sp="0.25" color="black"/>
+<line xp1="20" yp1="35" xp2="80" yp2="35" sp="0.25" color="black"/>
+<text align="c" xp="25" yp="7" sp="3" font="serif">rough places</text>
+<text align="c" xp="75" yp="7" sp="3" font="serif">plain</text>
+<line xp1="10" yp1="10" xp2="20" yp2="15" sp="0.25" color="black"/>
+<line xp1="20" yp1="15" xp2="30" yp2="10" sp="0.25" color="black"/>
+<line xp1="26" yp1="12" xp2="31" yp2="14" sp="0.25" color="black"/>
+<line xp1="31" yp1="14" xp2="36" yp2="12" sp="0.25" color="black"/>
+<line xp1="30" yp1="10" xp2="38" yp2="12.5" sp="0.25" color="black"/>
+<line xp1="38" yp1="12.5" xp2="46" yp2="10" sp="0.25" color="black"/>
+<line xp1="10" yp1="10" xp2="46" yp2="10" sp="0.25" color="black"/>
+<line xp1="70" yp1="10" xp2="80" yp2="10" sp="0.25" color="black"/>
+<line xp1="65" yp1="11" xp2="85" yp2="11" sp="0.25" color="black"/>
+<line xp1="55" yp1="12" xp2="95" yp2="12" sp="0.25" color="black"/>
+</slide>
+</deck>

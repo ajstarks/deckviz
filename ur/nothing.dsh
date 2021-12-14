@@ -1,0 +1,6 @@
+deck
+	slide
+		image "nothing01.png" 50 50 1920 1080
+		textblock "Ain’t nothing in this world Black folk can’t do."  70 70 20 3 "serif" "white"
+	eslide
+edeck

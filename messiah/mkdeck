@@ -1,0 +1,4 @@
+#!/bin/sh
+decksh messiah.dsh > messiah.xml
+pdfdeck -pagesize 700x1400 -serif Charter-Italic messiah.xml
+pngdeck -pagesize 700x1400 -serif Charter-Italic messiah.xml

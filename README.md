@@ -30,6 +30,7 @@
 * juneteenth -- Juneteenth flag
 * gomod -- Go module flows
 * lynch -- "A Man eas Lynched" poster
+* messiah -- A passage from Handel's Messiah
 * middle -- the Middle Passage
 * modelt -- Manufacturing and Marketing the Model T - 1908-1916
 * multigen -- Multi-generational households
@@ -43,7 +44,9 @@
 * stockgrid -- stocks using seasonal palette
 * swd -- Examples from "Storytelling with Data"
 * tailscale -- TailScale style diagrams
+* thomas -- Iris, Tulips, Jonquils, and Crocuses, 1969, Alma Thomas
 * toni -- Toni Morrison quote from Charlie Rose Interview, 1993
+* ur -- quote from Jenkins' "Underground Railroad"
 * voyager -- the Voyager spacecraft
 * warlife -- How much of your life has the U.S. been at war
 * weather -- Weather trends

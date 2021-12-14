@@ -1,0 +1,4 @@
+#!/bin/sh
+decksh nothing.dsh > nothing.xml
+pdfdeck -pagesize 1920,1080 nothing.xml
+pngdeck -pagesize 1920,1080 nothing.xml

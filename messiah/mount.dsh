@@ -1,0 +1,9 @@
+def mount X Y W H Lw LColor
+	w2=W/2
+	x1=X-w2
+	x2=X+w2
+	y2=Y+H
+
+	line x1 Y X y2 Lw LColor
+	line X y2 x2 Y Lw LColor
+edef

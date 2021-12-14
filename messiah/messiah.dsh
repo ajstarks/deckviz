@@ -1,0 +1,48 @@
+deck
+	canvas 700 1400
+	ts=3
+	lw=0.25
+	lcolor="black"
+	opts="-left=20 -title=f -right=80 -volop=90 -bottom=80 -top=90 --line -val=f -bar=f -xlabel=0"
+	slide "white" lcolor
+
+		hline 0 0 100 1
+		hline 0 100 100 1
+		vline 0 0 100 1
+		vline 100 0 100 1
+		dchart opts -linewidth lw -color lcolor cos2.d
+		ctext "every valley"     25 74 ts "serif"
+		ctext "shall be exalted" 75 92 ts "serif"
+	
+		//ctext "the"              50 60 ts "serif"
+		ctext "the crooked"      50 47 ts "serif"
+		ctext "straight"         50 32 ts "serif"
+
+		// crooked
+		line 20 55 25 50 lw lcolor
+		line 25 50 30 52 lw lcolor
+		line 30 52 35 51 lw lcolor
+		line 35 51 45 55 lw lcolor
+		line 45 55 55 50 lw lcolor
+		line 55 50 65 53 lw lcolor
+		line 65 53 75 52 lw lcolor
+		line 75 52 80 55 lw lcolor
+
+		// straight
+		hline 20 35 60 lw lcolor
+
+		ctext "rough places"     25 7  ts "serif"
+		ctext "plain"            75 7  ts "serif"
+
+		func "mount.dsh" 20 10 20 5.0 lw lcolor
+		func "mount.dsh" 31 12 10 2.0 lw lcolor
+		func "mount.dsh" 38 10 16 2.5 lw lcolor
+
+		hline 10 10 36 lw lcolor
+		line 70 10 80 10 lw lcolor
+		line 65 11 85 11 lw lcolor
+		line 55 12 95 12 lw lcolor
+		//polygon "10 20 30" "10 15 10" "rgb(180,180,180)"
+
+	eslide
+edeck
