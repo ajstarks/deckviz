@@ -1,0 +1,126 @@
+deck
+	
+	dmin=0
+	unit=1000000
+	dmax=1700000000/unit
+	smin=0
+	smax=60
+
+	// Source: Need Something to Binge-Watch? Try Netflix's Most-Watched Shows of All Time
+	// https://www.popsugar.co.uk/entertainment/most-watched-netflix-shows-48646190
+
+	d01=1650450000/unit
+	d02=625490000/unit
+	d03=619010000/unit
+	d04=582100000/unit
+	d05=541010000/unit
+	d06=496120000/unit
+	d07=475570000/unit
+	d08=469090000/unit
+	d09=467830000/unit
+	d10=457370000/unit
+	d11=427440000/unit
+	d12=426400000/unit
+	d13=418760000/unit
+	d14=395130000/unit
+	d15=316830000/unit
+	d16=275300000/unit
+	d17=266430000/unit
+	d18=257090000/unit
+	d19=214070000/unit
+	d20=213790000/unit
+
+	v00=vmap dmax dmin dmax smin smax
+	v01=vmap d01 dmin dmax smin smax
+	v02=vmap d02 dmin dmax smin smax
+	v03=vmap d03 dmin dmax smin smax
+	v04=vmap d04 dmin dmax smin smax
+	v05=vmap d05 dmin dmax smin smax
+	v06=vmap d06 dmin dmax smin smax
+	v07=vmap d07 dmin dmax smin smax
+	v08=vmap d08 dmin dmax smin smax
+	v09=vmap d09 dmin dmax smin smax
+	v10=vmap d10 dmin dmax smin smax
+	v11=vmap d11 dmin dmax smin smax
+	v12=vmap d12 dmin dmax smin smax
+	v13=vmap d13 dmin dmax smin smax
+	v14=vmap d14 dmin dmax smin smax
+	v15=vmap d15 dmin dmax smin smax
+	v16=vmap d16 dmin dmax smin smax
+	v17=vmap d17 dmin dmax smin smax
+	v18=vmap d18 dmin dmax smin smax
+	v19=vmap d19 dmin dmax smin smax
+	v20=vmap d20 dmin dmax smin smax
+
+
+
+	slide "black" "white"
+
+		titlesize=2.6
+		subsize=titlesize/2
+
+		left=35
+		top=90
+		ts=1.6
+		lw=3
+		vskip=lw*2.2
+		lcolor="white"
+		ims=4.5
+		y=top-10
+
+		text "Netflix's most watched shows (1-10) — view count, millions, first 28 days" 5 top titlesize
+		text "source: PopSugar: Need Something to Binge-Watch? Try Netflix's Most-Watched Shows of All Time" 5 5 subsize"sans" "" 100 "https://www.popsugar.co.uk/entertainment/most-watched-netflix-shows-48646190"
+		func "imdata.dsh" "Squid Game (2021)"                   left y ts d01 v01 lcolor "squid-game.jpg" 1024 683 ims lw lcolor
+		y-=vskip
+		func "imdata.dsh" "Bridgerton (2020)"                   left y ts d02 v02 lcolor "bridgerton.jpg" 1024 684 ims lw lcolor
+		y-=vskip
+		func "imdata.dsh" "Money Heist, Part 4 (2020)"          left y ts d03 v03 lcolor "money-heist.jpg" 1024 576 ims lw lcolor
+		y-=vskip
+		func "imdata.dsh" "Stranger Things 3 (2019)"            left y ts d04 v04 lcolor "stranger-things.jpg" 1024 512 ims lw lcolor
+		y-=vskip
+		func "imdata.dsh" "The Witcher, Season 1 (2019)"        left y ts d05 v05 lcolor "witcher.jpg" 1024 684 ims lw lcolor
+		y-=vskip
+		func "imdata.dsh" "13 Reasons Why, Season 2 (2018)"     left y ts d06 v06 lcolor "13-reasons2.jpg" 1024 683 ims lw lcolor
+		y-=vskip
+		func "imdata.dsh" "13 Reasons Why, Season 1 (2017)"     left y ts d07 v07 lcolor "13-reasons.jpg" 1024 683 ims lw lcolor
+		y-=vskip
+		func "imdata.dsh" "Maid (2021)"                         left y ts d08 v08 lcolor "maid.jpg" 1024 683 ims lw lcolor
+		y-=vskip
+		func "imdata.dsh" "You, Season 3 (2021)"                left y ts d09 v09 lcolor "you3.jpg" 1024 682 ims lw lcolor
+		y-=vskip
+		func "imdata.dsh" "You, Season 2 (2019)"                left y ts d10 v10 lcolor "you2.jpg" 1024 683 ims lw lcolor
+	eslide
+
+	slide "black" "white"
+		left=35
+		top=90
+		ts=1.6
+		lw=3
+		vskip=lw*2.2
+		lcolor="white"
+		ims=4.5
+		y=top-10
+
+		text "Netflix's most watched shows (15-20) — view count, millions, first 28 days" 5 top titlesize
+		text "source: PopSugar: Need Something to Binge-Watch? Try Netflix's Most-Watched Shows of All Time" 5 5 subsize "sans" "" 100 "https://www.popsugar.co.uk/entertainment/most-watched-netflix-shows-48646190"
+		func "imdata.dsh" "Stranger Things 2 (2017)"            left y ts d11 v11 lcolor "stranger-things2.jpg" 1024 683 ims lw lcolor
+		y-=vskip
+		func "imdata.dsh" "Money Heist, Part 3 (2019)"          left y ts d12 v12 lcolor "money-heist3.jpg" 1024 683 ims lw lcolor
+		y-=vskip
+		func "imdata.dsh" "Sex Education, Season 3 (2021)"      left y ts d13 v13 lcolor "sex-education.jpg" 1024 683 ims lw lcolor
+		y-=vskip
+		func "imdata.dsh" "Money Heist, Part 5 (2021)"          left y ts d14 v14 lcolor "money-heist5.jpg" 1024 683 ims lw lcolor
+		y-=vskip
+		func "imdata.dsh" "Lupin, Part 1 (2021)"                left y ts d15 v15 lcolor "lupin.jpg" 1024 683 ims lw lcolor
+		y-=vskip
+		func "imdata.dsh" "Elite, Season 3 (2020)"              left y ts d16 v16 lcolor "elite3.jpg" 1024 598 ims lw lcolor
+		y-=vskip
+		func "imdata.dsh" "Who Killed Sara? Season 1 (2021)"    left y ts d17 v17 lcolor "who-killed-sara1.jpg" 1024 541 ims lw lcolor
+		y-=vskip
+		func "imdata.dsh" "Elite, Season 4 (2021)"              left y ts d18 v18 lcolor "elite4.jpg" 1024 683 ims lw lcolor
+		y-=vskip
+		func "imdata.dsh" "Lupin, Part 2 (2021)"                left y ts d19 v19 lcolor "lupin2.jpg" 1024 726 ims lw lcolor
+		y-=vskip
+		func "imdata.dsh" "Dark Desire, Season 1 (2020)"        left y ts d20 v20 lcolor "dark-desire1.jpg" 1024 512 ims lw lcolor
+	eslide
+edeck

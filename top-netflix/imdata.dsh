@@ -1,0 +1,15 @@
+def imdata Label X Y ts DValue Value LColor imfile imw imh ims lw lcolor
+	ty=Y-0.5
+	imx=X-4
+	imy=Y
+	tx=X-8
+	etext Label tx ty ts
+	image imfile imx imy imw imh ims
+	//hline X Y v00 lw "orange" 10
+	hline X Y Value lw LColor 30
+	vlabel=format "%.2f" DValue
+	lx=X+1
+	text vlabel lx ty ts
+	cx=X+Value
+	circle cx Y lw
+edef
