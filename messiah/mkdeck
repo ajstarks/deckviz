@@ -1,4 +1,5 @@
 #!/bin/sh
 decksh messiah.dsh > messiah.xml
-pdfdeck -pagesize 700x1400 -serif Charter-Italic messiah.xml
+serif=CharterBlackItalicBT
+pdfdeck -pagesize 700x1400 -serif $serif messiah.xml
 pngdeck -pagesize 700x1400 -serif Charter-Italic messiah.xml
