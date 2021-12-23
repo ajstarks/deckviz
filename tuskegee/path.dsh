@@ -1,0 +1,9 @@
+def path Bx By Cx Cy Ex Ey Lw Color Location
+	ty=By+0.1
+	tx=Bx
+	cs=0.5
+	ts=cs/2
+	curve Bx By Cx Cy Ex Ey Lw Color
+	circle Bx By 0.75 Color 20
+	//ctext Location tx ty ts
+edef

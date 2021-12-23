@@ -46,6 +46,7 @@
 * tailscale -- TailScale style diagrams
 * thomas -- Iris, Tulips, Jonquils, and Crocuses, 1969, Alma Thomas
 * toni -- Toni Morrison quote from Charlie Rose Interview, 1993
+* tuskegee -- The Tuskegee Airmen
 * ur -- quote from Jenkins' "Underground Railroad"
 * voyager -- the Voyager spacecraft
 * warlife -- How much of your life has the U.S. been at war
