@@ -199,9 +199,11 @@ deck
 		caption2="Stationed in Ramitelli, Italy, the 332nd Fighter Group of the 15th Air Force, amassed an enviable record, flying P-51s, P-47s and other aircraft with the distinctive “Red Tail” markings"
 
 		// title
-		text "THE TUSKEGEE AIRMEN"   5 92 4 "serif"
-		hline 0 90 77 3 curvecolor 20 // red trail
-		image "images/p-51.jpg"       87 88 344 146
+		etext "THE TUSKEGEE AIRMEN"   95 93 4 "serif"
+		//hline 0 90 77 3 curvecolor 20 // red trail
+		//image "images/p-51.jpg"       87 88 344 146
+		image "images/creamers-dream.jpg" 15 93 331 152
+		hline 23 94 80 3 curvecolor 20 // red trail
 
 		// hemispheres
 		image "images/west-brown.png" 30 55 1200 1200 90
@@ -213,11 +215,11 @@ deck
 		textblock eastcap 15 33 70 1.8
 
 		// Portraits over the US
-		cimage "images/edward-gleed.jpg"   "Edward C. Gleed, Kansas"           ksx 52 1003 1024 10 "https://en.wikipedia.org/wiki/Edward_C._Gleed" 1
-		cimage "images/benjamin-davis.jpg" "Benjamin O. Davis Jr., Alabama"    40  54 1024 1001 10 "https://cafriseabove.org/benjamin-o-davis-jr/" 1
-		cimage "images/et.jpg"             "Edward M. Thomas, Illinois"        ilx 68 1000 770 12 "https://pioneersofflight.si.edu/content/lt-edward-m-thomas" 1
-		cimage "images/lee-archer.jpg"     "Lee Archer, New York"              40 70 1057 819 10 "https://en.wikipedia.org/wiki/Lee_Archer_(pilot)" 1
-		cimage "images/alton-ballard.jpg"  "Alton Ballard, California"         11 cay 1800 1917 5 "https://stanstokes.art/blog/stan-stokes-painting-of-tuskegee-airman-alton-ballard/" 1
+		cimage "images/edward-gleed.jpg"   "Edward C. Gleed, Kansas"           ksx 52 870 925    12 "https://en.wikipedia.org/wiki/Edward_C._Gleed" 1
+		cimage "images/benjamin-davis.jpg" "Benjamin O. Davis Jr., Alabama"    40  54 870 925    12 "https://cafriseabove.org/benjamin-o-davis-jr/" 1
+		cimage "images/et.jpg"             "Edward M. Thomas, Illinois"        ilx 68 1000 770   12 "https://pioneersofflight.si.edu/content/lt-edward-m-thomas" 1
+		cimage "images/lee-archer.jpg"     "Lee Archer, New York"              40 70 1057 819    12 "https://en.wikipedia.org/wiki/Lee_Archer_(pilot)" 1
+		cimage "images/alton-ballard.jpg"  "Alton Ballard, California"         11 cay 1800 1917   5 "https://stanstokes.art/blog/stan-stokes-painting-of-tuskegee-airman-alton-ballard/" 1
 
 		polygon "ksx 24 26"    "ksy 54.5 54.5" curvecolor 20 // Gleed
 		polygon "alx 37 37"    "aly 52 56"     curvecolor 20 // Davis

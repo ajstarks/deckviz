@@ -81,17 +81,17 @@
 <ellipse xp="34" yp="51.5" wp="0.75" hr="100" color="#cc252c" opacity="20"/>
 <curve xp1="35" yp1="53.5" xp2="50" yp2="70" xp3="66" yp3="60.5" sp="0.100" color="#cc252c"/>
 <ellipse xp="35" yp="53.5" wp="0.75" hr="100" color="#cc252c" opacity="20"/>
-<text xp="5" yp="92" sp="4" font="serif">THE TUSKEGEE AIRMEN</text>
-<line xp1="0" yp1="90" xp2="77" yp2="90" sp="3" color="#cc252c" opacity="20"/>
-<image name="images/p-51.jpg" xp="87" yp="88" width="344" height="146"/>
+<text align="e" xp="95" yp="93" sp="4" font="serif">THE TUSKEGEE AIRMEN</text>
+<image name="images/creamers-dream.jpg" xp="15" yp="93" width="331" height="152"/>
+<line xp1="23" yp1="94" xp2="103" yp2="94" sp="3" color="#cc252c" opacity="20"/>
 <image name="images/west-brown.png" xp="30" yp="55" width="1200" height="1200" scale="90"/>
 <image name="images/east-brown.png" xp="70" yp="55" width="1200" height="1200" scale="90"/>
 <text type="block" xp="10" yp="80" wp="30" sp="1.5" >The Tuskegee Airmen came from all over the country (Over 80% of the states sent representatives).</text>
 <text type="block" xp="15" yp="33" wp="70" sp="1.8" >Stationed in Ramitelli, Italy and Sicily, the Tuskegee Airmen amassed an enviable record, flying P-51s, P-47s and other aircraft with the distinctive “Red Tail” markings</text>
-<image name="images/edward-gleed.jpg" caption="Edward C. Gleed, Kansas" xp="25" yp="52" width="1003" height="1024" scale="10" link="https://en.wikipedia.org/wiki/Edward_C._Gleed" sp="1"/>
-<image name="images/benjamin-davis.jpg" caption="Benjamin O. Davis Jr., Alabama" xp="40" yp="54" width="1024" height="1001" scale="10" link="https://cafriseabove.org/benjamin-o-davis-jr/" sp="1"/>
+<image name="images/edward-gleed.jpg" caption="Edward C. Gleed, Kansas" xp="25" yp="52" width="870" height="925" scale="12" link="https://en.wikipedia.org/wiki/Edward_C._Gleed" sp="1"/>
+<image name="images/benjamin-davis.jpg" caption="Benjamin O. Davis Jr., Alabama" xp="40" yp="54" width="870" height="925" scale="12" link="https://cafriseabove.org/benjamin-o-davis-jr/" sp="1"/>
 <image name="images/et.jpg" caption="Edward M. Thomas, Illinois" xp="28" yp="68" width="1000" height="770" scale="12" link="https://pioneersofflight.si.edu/content/lt-edward-m-thomas" sp="1"/>
-<image name="images/lee-archer.jpg" caption="Lee Archer, New York" xp="40" yp="70" width="1057" height="819" scale="10" link="https://en.wikipedia.org/wiki/Lee_Archer_(pilot)" sp="1"/>
+<image name="images/lee-archer.jpg" caption="Lee Archer, New York" xp="40" yp="70" width="1057" height="819" scale="12" link="https://en.wikipedia.org/wiki/Lee_Archer_(pilot)" sp="1"/>
 <image name="images/alton-ballard.jpg" caption="Alton Ballard, California" xp="11" yp="58" width="1800" height="1917" scale="5" link="https://stanstokes.art/blog/stan-stokes-painting-of-tuskegee-airman-alton-ballard/" sp="1"/>
 <polygon xc="25 24 26" yc="59 54.5 54.5" color="#cc252c" opacity="20"/>
 <polygon xc="27 37 37" yc="57 52 56" color="#cc252c" opacity="20"/>
