@@ -2,6 +2,7 @@ deck
 	// Tuskegee Airmen
 	// Data: https://docs.google.com/spreadsheets/d/1LdyphRt2-CAPCVuk1YbpywkiMH82iVAmogxSa4WCpqU/edit#gid=1871050828
 	// photo source: https://www.loc.gov/search/?fa=partof:lot+12447
+	// http://ghostgrey.gaetanmarie.com/articles/2012/Nine%20Myths/Nine%20Myths%20about%20the%20Tuskegee%20Airmen.htm
 	// standard crop for photos: gift -crop 35,35,935,990 
 	canvas 1584 2016
 	slide
@@ -212,11 +213,11 @@ deck
 		textblock eastcap 15 33 70 1.8
 
 		// Portraits over the US
-		cimage "images/edward-gleed.jpg"   "Edward C. Gleed, Kansas"           ksx 52 1003 1024 10 "foo" 1
+		cimage "images/edward-gleed.jpg"   "Edward C. Gleed, Kansas"           ksx 52 1003 1024 10 "https://en.wikipedia.org/wiki/Edward_C._Gleed" 1
 		cimage "images/benjamin-davis.jpg" "Benjamin O. Davis Jr., Alabama"    40  54 1024 1001 10 "https://cafriseabove.org/benjamin-o-davis-jr/" 1
-		cimage "images/edward-thomas.jpg"  "Edward M. Thomas, Illinois"        ilx 68 994 1024 10 "ed" 1
-		cimage "images/lee-archer.jpg"     "Lee Archer, New York"              40 70 1057 819 10 "archer" 1
-		cimage "images/alton-ballard.jpg"  "Alton Ballard, California"         11 cay 1800 1917 5 "ballard" 1
+		cimage "images/et.jpg"             "Edward M. Thomas, Illinois"        ilx 68 1000 770 12 "https://pioneersofflight.si.edu/content/lt-edward-m-thomas" 1
+		cimage "images/lee-archer.jpg"     "Lee Archer, New York"              40 70 1057 819 10 "https://en.wikipedia.org/wiki/Lee_Archer_(pilot)" 1
+		cimage "images/alton-ballard.jpg"  "Alton Ballard, California"         11 cay 1800 1917 5 "https://stanstokes.art/blog/stan-stokes-painting-of-tuskegee-airman-alton-ballard/" 1
 
 		polygon "ksx 24 26"    "ksy 54.5 54.5" curvecolor 20 // Gleed
 		polygon "alx 37 37"    "aly 52 56"     curvecolor 20 // Davis
@@ -227,9 +228,9 @@ deck
 
 		circle ramx ramy 3 curvecolor 20
 		etext "Ramitelli, Italy," ramx ramy 1.5
-		image "images/rg.jpg" ramx 72 900 955 25
+		image "images/rg.jpg" ramx 72 900 955 25 "https://www.loc.gov/item/2007675004/"
 		polygon "ramx 64 68" "ramy 66 66" curvecolor 30
-		image "images/rs.jpg" 84.5 55 900 955 30
+		image "images/rs.jpg" 84.5 55 900 955 30 "https://www.loc.gov/item/2017650168/"
 		polygon "ramx 76 76" "ramy 57 55" curvecolor 30
 
 		// Group of fighters
@@ -252,10 +253,10 @@ deck
 		p6y=p5y-2
 		cimage "images/lollipoop.jpg" "Lollipoop, P-51D"          p1x p1y planew 239 planescale "http://www.americanairmuseum.com/aircraft/21444" 1
 		cimage "images/daisy-mae.jpg" "Daisy Mae, P-51C"          p2x p2y planew 239 planescale "https://www.aviationgraphic.com/aviation-lithographs/966-p-47d-thunderbolt-39-red-tails-gm-56.html" 1
-		cimage "images/ina.jpg" "Ina the Macon Belle, P-51C"      p3x p3y planew 239 planescale "ina" 1
-		cimage "images/my-buddy.jpg" "My Buddy, P51C"             p4x p4y planew 239 planescale "buddy" 1
-		cimage "images/peirson-p-47.jpg" "Lt. Peirson P-47D"      p5x p5y planew 250 planescale "peirson" 1
-		cimage "images/nona.jpg" "Nona, P-40"                     p6x p6y planew 229 planescale "Nona, P-40" 1
+		cimage "images/ina.jpg" "Ina the Macon Belle, P-51C"      p3x p3y planew 239 planescale "https://en.wikipedia.org/wiki/Lee_Archer_(pilot)" 1
+		cimage "images/my-buddy.jpg" "My Buddy, P51C"             p4x p4y planew 239 planescale "https://www.starduststudios.com/charles-p-bailey.html" 1
+		cimage "images/peirson-p-47.jpg" "Lt. Peirson P-47D"      p5x p5y planew 250 planescale "https://www.bravobravoaviation.com/en/republic-p-47-thunderbolt/252-p-47d-thunderbolt-1lt-gwynne-peirson-302nd-fs-332nd-fg-tuskegee-airmen-italy-1944.html" 1
+		cimage "images/nona.jpg" "Nona II, P-40"                  p6x p6y planew 229 planescale "" 1
 		// tails
 		ptx1=p1x+5
 		ptx2=p2x+5
@@ -325,10 +326,10 @@ deck
 		// 112 enemy aircraft destroyed in the air, another 150 on the ground[47] and 148 damaged. 
 		// This included three Messerschmidt Me 262 jet fighters shot down
 		// 950 rail cars, trucks and other motor vehicles destroyed (over 600 rail cars[47])
-		image "images/b17-483.png" 28 5 1288 364 20
+		image "images/b17-483.png" 28 5 1288 364 20 "https://www.483bg.org/"
 		ctext "179 bomber escort missions, low 3.9% mission loss rate" 28 2 1.2
 
-		image "images/fw-190-a.jpg" 55 5 650 230 20
+		image "images/fw-190-a.jpg" 55 5 650 230 20 "https://en.wikipedia.org/wiki/Focke-Wulf_Fw_190"
 		ctext "112 enemy aircraft destroyed in the air, 150 on the ground" 65 2 1.2
 		line 50 7 60 3 0.5 curvecolor 20
 		line 50 3 60 7 0.5 curvecolor 20
