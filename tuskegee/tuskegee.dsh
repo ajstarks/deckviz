@@ -221,11 +221,11 @@ deck
 		cimage "images/lee-archer.jpg"     "Lee Archer, New York"              40 70 1057 819    12 "https://en.wikipedia.org/wiki/Lee_Archer_(pilot)" 1
 		cimage "images/alton-ballard.jpg"  "Alton Ballard, California"         11 cay 1800 1917   5 "https://stanstokes.art/blog/stan-stokes-painting-of-tuskegee-airman-alton-ballard/" 1
 
-		polygon "ksx 24 26"    "ksy 54.5 54.5" curvecolor 20 // Gleed
-		polygon "alx 37 37"    "aly 52 56"     curvecolor 20 // Davis
-		polygon "ilx 25 31"    "ily 65.5 65.5" curvecolor 20 // Thomas
-		polygon "nyx 36.5 43"  "nyy 68 68"     curvecolor 20 // Archer
-		polygon "cax 14 14"    "cay 59 57"     curvecolor 20 // Ballard
+		polygon "ksx 24 26"      "ksy 54.7 54.7" curvecolor 20 // Gleed
+		polygon "alx 36.5 36.5"  "aly 55 53"     curvecolor 20 // Davis
+		polygon "ilx 27 29"      "ily 65.5 65.5" curvecolor 20 // Thomas
+		polygon "nyx 38 41"      "nyy 67.5 67.5" curvecolor 20 // Archer
+		polygon "cax 14 14"      "cay 59 57"     curvecolor 20 // Ballard
 
 
 		circle ramx ramy 3 curvecolor 20
