@@ -224,9 +224,12 @@ deck
 // 		polygon "cax 14 14"      "cay 59 57"     curvecolor 20 // Ballard
 // 
 
-		circle ramx ramy 3 curvecolor 20
+		//circle ramx ramy 3 curvecolor 20
 		//star ramx ramy 5 1 3 curvecolor 50
-		etext "Ramitelli, Italy," ramx ramy 1.5
+		square ramx ramy 1.5 "black"
+		star ramx ramy 5 0.20 0.60 "white"
+		rlx=ramx-2
+		etext "Ramitelli, Italy," rlx ramy 1.5
 //		image "images/rg.jpg" 60 50 900 955 25 "https://www.loc.gov/item/2007675004/"
 // 		polygon "ramx 65 67" "ramy 66.5 66.5" curvecolor 30
 // 		image "images/rs.jpg" 84.5 55 900 955 25 "https://www.loc.gov/item/2017650168/"
