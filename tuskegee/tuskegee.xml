@@ -86,24 +86,26 @@
 <line xp1="23" yp1="94" xp2="103" yp2="94" sp="3" color="#cc252c" opacity="20"/>
 <image name="images/west-brown.png" xp="30" yp="55" width="1200" height="1200" scale="90"/>
 <image name="images/east-brown.png" xp="70" yp="55" width="1200" height="1200" scale="90"/>
-<text type="block" xp="10" yp="80" wp="30" sp="1.5" >The Tuskegee Airmen came from all over the country (Over 80% of the states sent representatives).</text>
-<text type="block" xp="15" yp="33" wp="70" sp="1.8" >Stationed in Ramitelli, Italy and Sicily, the Tuskegee Airmen amassed an enviable record, flying P-51s, P-47s and other aircraft with the distinctive “Red Tail” markings</text>
+<text type="block" xp="10" yp="82" wp="30" sp="1.8" >The Tuskegee Airmen came from all over the country—forty of forty-eight states plus the District of Columbia (Over 85%) were represented.</text>
+<text type="block" xp="15" yp="34" wp="70" sp="1.8" >Stationed in Ramitelli, Italy and Sicily, the Tuskegee Airmen amassed an enviable record, flying P-51s, P-47s and other aircraft with the distinctive “Red Tail” markings</text>
 <image name="images/edward-gleed.jpg" caption="Edward C. Gleed, Kansas" xp="25" yp="52" width="870" height="925" scale="12" link="https://en.wikipedia.org/wiki/Edward_C._Gleed" sp="1"/>
 <image name="images/benjamin-davis.jpg" caption="Benjamin O. Davis Jr., Alabama" xp="40" yp="54" width="870" height="925" scale="12" link="https://cafriseabove.org/benjamin-o-davis-jr/" sp="1"/>
 <image name="images/et.jpg" caption="Edward M. Thomas, Illinois" xp="28" yp="68" width="1000" height="770" scale="12" link="https://pioneersofflight.si.edu/content/lt-edward-m-thomas" sp="1"/>
-<image name="images/lee-archer.jpg" caption="Lee Archer, New York" xp="40" yp="70" width="1057" height="819" scale="12" link="https://en.wikipedia.org/wiki/Lee_Archer_(pilot)" sp="1"/>
-<image name="images/alton-ballard.jpg" caption="Alton Ballard, California" xp="11" yp="58" width="1800" height="1917" scale="5" link="https://stanstokes.art/blog/stan-stokes-painting-of-tuskegee-airman-alton-ballard/" sp="1"/>
+<image name="images/lee-archer.jpg" caption="Lee A. Archer, New York" xp="40" yp="70" width="1057" height="819" scale="12" link="https://en.wikipedia.org/wiki/Lee_Archer_(pilot)" sp="1"/>
+<image name="images/alton-ballard.jpg" caption="Alton F. Ballard, California" xp="11" yp="58" width="1800" height="1917" scale="5" link="https://stanstokes.art/blog/stan-stokes-painting-of-tuskegee-airman-alton-ballard/" sp="1"/>
 <polygon xc="25 24 26" yc="59 54.7 54.7" color="#cc252c" opacity="20"/>
 <polygon xc="27 36.5 36.5" yc="57 55 53" color="#cc252c" opacity="20"/>
 <polygon xc="28 27 29" yc="60 65.5 65.5" color="#cc252c" opacity="20"/>
 <polygon xc="31 38 41" yc="60.5 67.5 67.5" color="#cc252c" opacity="20"/>
 <polygon xc="18.5 14 14" yc="58 59 57" color="#cc252c" opacity="20"/>
-<ellipse xp="66" yp="60.5" wp="3" hr="100" color="#cc252c" opacity="20"/>
+<polygon xc="66.00 65.52 65.12 66.29 67.43 66.00 64.57 65.71 66.88 66.48" yc="61.68 60.62 59.55 60.18 60.86 60.89 60.86 60.18 59.55 60.62" color="#cc252c" opacity="30"/>
 <text align="e" xp="66" yp="60.5" sp="1.5" >Ramitelli, Italy,</text>
 <image name="images/rg.jpg" xp="66" yp="72" width="900" height="955" scale="25" link="https://www.loc.gov/item/2007675004/"/>
-<polygon xc="66 64 68" yc="60.5 66 66" color="#cc252c" opacity="30"/>
-<image name="images/rs.jpg" xp="84.5" yp="55" width="900" height="955" scale="30" link="https://www.loc.gov/item/2017650168/"/>
-<polygon xc="66 76 76" yc="60.5 57 55" color="#cc252c" opacity="30"/>
+<polygon xc="66 65 67" yc="60.5 66 66" color="#cc252c" opacity="30"/>
+<image name="images/rs.jpg" xp="84.5" yp="55" width="900" height="955" scale="25" link="https://www.loc.gov/item/2017650168/"/>
+<polygon xc="66 77.5 77.5" yc="60.5 57 55" color="#cc252c" opacity="30"/>
+<image name="images/spurgeon-ellington.jpg" xp="60" yp="50" width="650" height="550" scale="40" link="https://cafriseabove.org/spurgeon-neal-ellington/"/>
+<polygon xc="66 60 62" yc="60.5 55.5 55.5" color="#cc252c" opacity="30"/>
 <image name="images/lollipoop.jpg" caption="Lollipoop, P-51D" xp="55" yp="20" width="600" height="239" scale="30" link="http://www.americanairmuseum.com/aircraft/21444" sp="1"/>
 <image name="images/daisy-mae.jpg" caption="Daisy Mae, P-51C" xp="65" yp="15" width="600" height="239" scale="30" link="https://www.aviationgraphic.com/aviation-lithographs/966-p-47d-thunderbolt-39-red-tails-gm-56.html" sp="1"/>
 <image name="images/ina.jpg" caption="Ina the Macon Belle, P-51C" xp="75" yp="10" width="600" height="239" scale="30" link="https://en.wikipedia.org/wiki/Lee_Archer_(pilot)" sp="1"/>
@@ -115,34 +117,34 @@
 <line xp1="80" yp1="11" xp2="100" yp2="11" sp="2" color="#cc252c" opacity="20"/>
 <line xp1="85" yp1="19" xp2="100" yp2="19" sp="2" color="#cc252c" opacity="20"/>
 <line xp1="90" yp1="26" xp2="100" yp2="26" sp="2" color="#cc252c" opacity="20"/>
-<image name="images/duc.jpg" caption="Distinguished Unit Citation" xp="28" yp="25" width="600" height="160" scale="25" link="https://en.wikipedia.org/wiki/Presidential_Unit_Citation_(United_States)" sp="1.3"/>
-<image name="images/purple-heart.png" xp="20" yp="15" width="300" height="677" scale="20" link="https://en.wikipedia.org/wiki/Purple_Heart"/>
-<image name="images/bronze-star.jpg" xp="25" yp="15" width="300" height="533" scale="25" link="https://en.wikipedia.org/wiki/Bronze_Star_Medal"/>
-<image name="images/dfc.jpg" xp="30" yp="15" width="300" height="551" scale="25" link="https://en.wikipedia.org/wiki/Distinguished_Flying_Cross_(United_States)"/>
-<image name="images/air-medal.gif" xp="35" yp="15" width="300" height="589" scale="25" link="https://en.wikipedia.org/wiki/Air_Medal"/>
-<text align="c" xp="28" yp="27" sp="2" >3</text>
-<text align="c" xp="20" yp="19" sp="2" >8</text>
-<text align="c" xp="25" yp="19" sp="2" >14</text>
-<text align="c" xp="30" yp="19" sp="2" >96</text>
-<text align="c" xp="35" yp="19" sp="2" >744</text>
-<list align="center" xp="20" yp="10" sp="1" font="sans" color="" opacity="100" lp="1.2">
+<image name="images/duc.jpg" caption="Distinguished Unit Citations" xp="30" yp="26" width="600" height="160" scale="25" link="https://en.wikipedia.org/wiki/Presidential_Unit_Citation_(United_States)" sp="1.3"/>
+<text align="c" xp="30" yp="27.5" sp="2" >3</text>
+<text align="c" xp="20" yp="20" sp="2" >8</text>
+<image name="images/purple-heart.png" xp="20" yp="16" width="300" height="677" scale="20" link="https://en.wikipedia.org/wiki/Purple_Heart"/>
+<text align="c" xp="27" yp="20" sp="2" >14</text>
+<image name="images/bronze-star.jpg" xp="27" yp="16" width="300" height="533" scale="25" link="https://en.wikipedia.org/wiki/Bronze_Star_Medal"/>
+<text align="c" xp="34" yp="20" sp="2" >96</text>
+<image name="images/dfc.jpg" xp="34" yp="16" width="300" height="551" scale="25" link="https://en.wikipedia.org/wiki/Distinguished_Flying_Cross_(United_States)"/>
+<text align="c" xp="41" yp="20" sp="2" >744</text>
+<image name="images/air-medal.gif" xp="41" yp="16" width="300" height="589" scale="25" link="https://en.wikipedia.org/wiki/Air_Medal"/>
+<list align="center" xp="20" yp="11" sp="1" font="sans" color="" opacity="100" lp="1.2">
 <li>Purple</li>
-<li>Heart</li>
+<li>Hearts</li>
 </list>
-<list align="center" xp="25" yp="10" sp="1" font="sans" color="" opacity="100" lp="1.2">
+<list align="center" xp="27" yp="11" sp="1" font="sans" color="" opacity="100" lp="1.2">
 <li>Bronze</li>
-<li>Star</li>
+<li>Stars</li>
 </list>
-<list align="center" xp="30" yp="10" sp="1" font="sans" color="" opacity="100" lp="1.2">
+<list align="center" xp="34" yp="11" sp="1" font="sans" color="" opacity="100" lp="1.2">
 <li>Distinguished</li>
-<li>Flying Cross</li>
+<li>Flying Crosses</li>
 </list>
-<list align="center" xp="35" yp="10" sp="1" font="sans" color="" opacity="100" lp="1.2">
+<list align="center" xp="41" yp="11" sp="1" font="sans" color="" opacity="100" lp="1.2">
 <li>Air</li>
-<li>Medal</li>
+<li>Medals</li>
 </list>
-<image name="images/b17-483.png" xp="28" yp="5" width="1288" height="364" scale="20" link="https://www.483bg.org/"/>
-<text align="c" xp="28" yp="2" sp="1.2" >179 bomber escort missions, low 3.9% mission loss rate</text>
+<image name="images/b17-483.png" xp="30" yp="5.5" width="1288" height="364" scale="24" link="https://www.483bg.org/"/>
+<text align="c" xp="30" yp="2" sp="1.2" >179 bomber escort missions, low 3.9% mission loss rate</text>
 <image name="images/fw-190-a.jpg" xp="55" yp="5" width="650" height="230" scale="20" link="https://en.wikipedia.org/wiki/Focke-Wulf_Fw_190"/>
 <text align="c" xp="65" yp="2" sp="1.2" >112 enemy aircraft destroyed in the air, 150 on the ground</text>
 <line xp1="50" yp1="7" xp2="60" yp2="3" sp="0.5" color="#cc252c" opacity="20"/>
