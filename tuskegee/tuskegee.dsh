@@ -207,7 +207,7 @@ deck
 		westcap="The Tuskegee Airmen came from all over the country—forty of forty-eight states plus the District of Columbia (Over 85%) were represented."
 		eastcap="Stationed in Ramitelli, Italy and Sicily, the Tuskegee Airmen amassed an enviable record, flying P-51s, P-47s and other aircraft with the distinctive “Red Tail” markings"
 
-		textblock westcap 15 78 70 1.8
+		textblock westcap 15 81 70 1.8
 		textblock eastcap 15 34 70 1.8
 
 		// Portraits over the US
@@ -223,7 +223,7 @@ deck
 // 		polygon "nyx 38 41"      "nyy 67.5 67.5" curvecolor 20 // Archer
 // 		polygon "cax 14 14"      "cay 59 57"     curvecolor 20 // Ballard
 // 
-
+//
 		//circle ramx ramy 3 curvecolor 20
 		//star ramx ramy 5 1 3 curvecolor 50
 		square ramx ramy 1.5 "black"
@@ -236,6 +236,356 @@ deck
 // 		polygon "ramx 77.5 77.5" "ramy 57 55" curvecolor 30
 // 		image "images/spurgeon-ellington.jpg" ramx 72 650 550 40 "https://cafriseabove.org/spurgeon-neal-ellington/"
 // 		polygon "ramx 60 62" "ramy 56 56" curvecolor 30
+
+		// Group of fighters
+		planew=600
+		planescale=30
+		offset=45
+		// plane locations
+		p1x=10+offset
+		p2x=20+offset
+		p3x=30+offset
+		p4x=35+offset
+		p5x=40+offset
+		p6x=50+offset
+
+		p1y=20
+		p2y=p1y-5
+		p3y=p2y-5
+		p4y=p3y+8
+		p5y=p4y+7
+		p6y=p5y-2
+		cimage "images/lollipoop.jpg" "Lollipoop, P-51D"          p1x p1y planew 239 planescale "http://www.americanairmuseum.com/aircraft/21444" 1
+		cimage "images/daisy-mae.jpg" "Daisy Mae, P-51C"          p2x p2y planew 239 planescale "https://www.aviationgraphic.com/aviation-lithographs/966-p-47d-thunderbolt-39-red-tails-gm-56.html" 1
+		cimage "images/ina.jpg" "Ina the Macon Belle, P-51C"      p3x p3y planew 239 planescale "https://en.wikipedia.org/wiki/Lee_Archer_(pilot)" 1
+		cimage "images/my-buddy.jpg" "My Buddy, P51C"             p4x p4y planew 239 planescale "https://www.starduststudios.com/charles-p-bailey.html" 1
+		cimage "images/peirson-p-47.jpg" "Lt. Peirson P-47D"      p5x p5y planew 250 planescale "https://www.bravobravoaviation.com/en/republic-p-47-thunderbolt/252-p-47d-thunderbolt-1lt-gwynne-peirson-302nd-fs-332nd-fg-tuskegee-airmen-italy-1944.html" 1
+		cimage "images/nona.jpg" "Nona II, P-40"                  p6x p6y planew 229 planescale "" 1
+		// tails
+		ptx1=p1x+5
+		ptx2=p2x+5
+		ptx3=p3x+5
+		ptx4=p4x+5
+		ptx5=p5x+5
+		ptx6=p6x+5
+
+		pty1=p1y+1
+		pty2=p2y+1
+		pty3=p3y+1
+		pty4=p4y+1
+		pty5=p5y+1
+		// length of trails
+		tl1=100-ptx1
+		tl2=100-ptx2
+		tl3=100-ptx3
+		tl4=100-ptx4
+		tl5=100-ptx5
+		// trails
+		hline ptx1 pty1 tl1 2 curvecolor 20
+		hline ptx2 pty2 tl2 2 curvecolor 20
+		hline ptx3 pty3 tl3 2 curvecolor 20
+		hline ptx4 pty4 tl4 2 curvecolor 20
+		hline ptx5 pty5 tl5 2 curvecolor 20
+
+		// Awards DUC: 3, Purple Hearts: 8, Bronze Star:  14, DFC: 96, Air Medals: 744
+		awscale=25
+		awscale2=awscale*.80
+		capsize=0.5
+		hs=7
+		midleft=30
+		imx=midleft-10
+		imy=26
+		imw=300
+		
+		cimage "images/duc.jpg" "Distinguished Unit Citations" midleft imy 600 160 awscale "https://en.wikipedia.org/wiki/Presidential_Unit_Citation_(United_States)" 1.3
+		hy=imy+1.5
+		ctext "3"   midleft hy 2
+
+		imy-=10
+		hy=imy+4
+		ctext "8"   imx hy 2
+		image "images/purple-heart.png"     imx imy imw 677 awscale2 "https://en.wikipedia.org/wiki/Purple_Heart"
+		imx+=hs
+		ctext "14" imx hy 2
+		image "images/bronze-star.jpg"      imx imy imw 533 awscale "https://en.wikipedia.org/wiki/Bronze_Star_Medal"
+		imx+=hs
+		ctext "96" imx hy 2
+		image "images/dfc.jpg"              imx imy imw 551 awscale "https://en.wikipedia.org/wiki/Distinguished_Flying_Cross_(United_States)"
+		imx+=hs
+		ctext "744" imx hy 2
+		image "images/air-medal.gif"        imx imy imw 589 awscale "https://en.wikipedia.org/wiki/Air_Medal"
+
+		capx=midleft-10
+		capy=imy-5
+		clist capx capy 1 "sans" "" 100 1.2
+			li "Purple"
+			li "Hearts"
+		elist
+		capx+=hs
+		clist capx capy 1 "sans" "" 100 1.2
+			li "Bronze"
+			li "Stars"
+		elist
+		capx+=hs
+		clist capx capy 1 "sans" "" 100 1.2
+			li "Distinguished"
+			li "Flying Crosses"
+		elist
+		capx+=hs
+		clist capx capy 1 "sans" "" 100 1.2
+			li "Air"
+			li "Medals"
+		elist
+
+		// Operational Record
+		// 179 bomber escort missions,[47] with a good record of protection,[77] losing bombers 
+		// on only seven missions and a total of only 27, 
+		// compared to an average of 46 among other 15th Air Force P-51 groups[81]
+		// 112 enemy aircraft destroyed in the air, another 150 on the ground[47] and 148 damaged. 
+		// This included three Messerschmidt Me 262 jet fighters shot down
+		// 950 rail cars, trucks and other motor vehicles destroyed (over 600 rail cars[47])
+		image "images/b17-483.png" midleft 5.5 1288 364 24 "https://www.483bg.org/"
+		ctext "179 bomber escort missions, low 3.9% mission loss rate" midleft 2 1.2
+
+		image "images/fw-190-a.jpg" 55 5 650 230 20 "https://en.wikipedia.org/wiki/Focke-Wulf_Fw_190"
+		ctext "112 enemy aircraft destroyed in the air, 150 on the ground" 65 2 1.2
+		line 50 7 60 3 0.5 curvecolor 20
+		line 50 3 60 7 0.5 curvecolor 20
+
+	eslide
+
+	// with photos
+	slide
+		// Ramitelli, Italy
+		ramx=66			
+		ramy=60.5
+		//
+		// USA
+		//
+		// Washington DC
+		dcx=30.5			
+		dcy=58.5
+		// Massachusettes
+		max=32  
+		may=59.7
+		// Illinois
+		ilx=28	
+		ily=60
+		// Pennsylvania
+		pax=31	
+		pay=60
+		// New York
+		nyx=pax
+		nyy=pay+0.5
+		// Vermont
+		vtx=max
+		vty=nyy
+		// New Hampshire
+		nhx=vtx+0.7
+		nhy=vty
+		// Ohio
+		ohx=30	
+		ohy=60
+		// California
+		cax=18.5  
+		cay=58
+		// Texas
+		txx=22	
+		txy=57
+		// Indiana
+		inx=29
+		iny=60
+		// Michigan
+		mix=28.5
+		miy=61
+		// New Jersey
+		njx=32
+		njy=60
+		// Alabama
+		alx=27	
+		aly=57
+		// Missouri
+		mox=26	
+		moy=59
+		// Virginia
+		vax=30
+		vay=58.5
+		// Georgia
+		gax=29	
+		gay=57
+		// North Carolina
+		ncx=30	
+		ncy=58
+		// South Carolina
+		scx=ncx-1
+		scy=gay+1
+		// Kansas
+		ksx=mox-1		
+		ksy=moy
+		// Maryland
+		mdx=31	
+		mdy=vay
+		// Tennesee
+		tnx=29		
+		tny=58.5
+		// West Virginia
+		wvx=30		
+		wvy=59
+		// Louisiana
+		lax=alx-1	
+		lay=aly
+		// Iowa
+		iax=mox		
+		iay=moy+1
+		// Florida
+		flx=gax		
+		fly=gay-1
+		// Oklahoma
+		okx=ksx		
+		oky=ksy-1
+		// Kentucky
+		kyx=inx		
+		kyy=iny-1
+		// Colorado
+		cox=ksx-1	
+		coy=ksy
+		// Arkansas
+		arx=lax	
+		ary=oky
+		// Wyoming
+		wyx=cox+1
+		wyy=coy+1
+		// Delaware
+		dex=njx		
+		dey=njy-1
+		// Mississippi
+		msx=alx+1
+		msy=aly
+		// Connecticut
+		ctx=max
+		cty=may-0.5
+		// Washington
+		wax=cax
+		way=62
+		// Oregon
+		orx=wax
+		ory=way-1
+		// Nebraska
+		nex=ksx
+		ney=ksy+1
+		// Minnesota
+		mnx=mix-1
+		mny=miy
+		// Arizona
+		azx=20
+		azy=58
+		// Wisconsin
+		wix=ilx
+		wiy=mny-1
+
+		//
+		// Caribbean
+		//
+		// Trinidad
+		tdx=34 		
+		tdy=51.5
+		// Haiti
+		hax=32
+		hay=53.5
+		// Virgin Islands
+		vix=hax+3
+		viy=hay
+
+
+		controlx=50
+		controly=70
+		curvelw=0.100
+		curvecolor="#cc252c"
+
+		// Paths to Ramitelli
+		call "path.dsh" dcx dcy controlx controly ramx ramy curvelw curvecolor "DC"
+		call "path.dsh" ilx ily controlx controly ramx ramy curvelw curvecolor "IL"
+		call "path.dsh" nyx nyy controlx controly ramx ramy curvelw curvecolor "NY"
+		call "path.dsh" pax pay controlx controly ramx ramy curvelw curvecolor "PA"
+		call "path.dsh" cax cay controlx controly ramx ramy curvelw curvecolor "CA"
+		call "path.dsh" txx txy controlx controly ramx ramy curvelw curvecolor "TX"
+		call "path.dsh" ohx ohy controlx controly ramx ramy curvelw curvecolor "OH"
+		call "path.dsh" vax vay controlx controly ramx ramy curvelw curvecolor "VA"
+		call "path.dsh" mix miy controlx controly ramx ramy curvelw curvecolor "MI"
+		call "path.dsh" njx njy controlx controly ramx ramy curvelw curvecolor "NJ"
+		call "path.dsh" mox moy controlx controly ramx ramy curvelw curvecolor "MO"
+		call "path.dsh" alx aly controlx controly ramx ramy curvelw curvecolor "AL"
+		call "path.dsh" inx iny controlx controly ramx ramy curvelw curvecolor "IN"
+		call "path.dsh" gax gay controlx controly ramx ramy curvelw curvecolor "GA"
+		call "path.dsh" ncx ncy controlx controly ramx ramy curvelw curvecolor "NC"
+		call "path.dsh" scx scy controlx controly ramx ramy curvelw curvecolor "SC"
+		call "path.dsh" ksx ksy controlx controly ramx ramy curvelw curvecolor "KS"
+		call "path.dsh" mdx mdy controlx controly ramx ramy curvelw curvecolor "MD"
+		call "path.dsh" max may controlx controly ramx ramy curvelw curvecolor "MA"
+		call "path.dsh" tnx tny controlx controly ramx ramy curvelw curvecolor "TN"
+		call "path.dsh" wvx wvy controlx controly ramx ramy curvelw curvecolor "WV"
+		call "path.dsh" iax iay controlx controly ramx ramy curvelw curvecolor "IA"
+		call "path.dsh" lax lay controlx controly ramx ramy curvelw curvecolor "LA"
+		call "path.dsh" flx fly controlx controly ramx ramy curvelw curvecolor "FL"
+		call "path.dsh" okx oky controlx controly ramx ramy curvelw curvecolor "OK"
+		call "path.dsh" kyx kyy controlx controly ramx ramy curvelw curvecolor "KY"
+		call "path.dsh" cox coy controlx controly ramx ramy curvelw curvecolor "CO"
+		call "path.dsh" arx ary controlx controly ramx ramy curvelw curvecolor "AR"
+		call "path.dsh" azx azy controlx controly ramx ramy curvelw curvecolor "AZ"
+		call "path.dsh" mnx mny controlx controly ramx ramy curvelw curvecolor "MN"
+		call "path.dsh" nex ney controlx controly ramx ramy curvelw curvecolor "NE"
+		call "path.dsh" orx ory controlx controly ramx ramy curvelw curvecolor "OR"
+		call "path.dsh" wax way controlx controly ramx ramy curvelw curvecolor "WA"
+		call "path.dsh" msx msy controlx controly ramx ramy curvelw curvecolor "MS"
+		call "path.dsh" wix wiy controlx controly ramx ramy curvelw curvecolor "WI"
+		call "path.dsh" vtx vty controlx controly ramx ramy curvelw curvecolor "VT"
+		call "path.dsh" nhx nhy controlx controly ramx ramy curvelw curvecolor "NH"
+		call "path.dsh" hax hay controlx controly ramx ramy curvelw curvecolor "Haiti"
+		call "path.dsh" tdx tdy controlx controly ramx ramy curvelw curvecolor "Trinidad"
+		call "path.dsh" vix viy controlx controly ramx ramy curvelw curvecolor "Virgin Islands"
+
+		// title
+		etext "THE TUSKEGEE AIRMEN"   95 93 4 "serif"
+		image "images/creamers-dream.jpg" 15 93 331 152
+		hline 23 94 80 3 curvecolor 20 // red trail
+
+		// hemispheres
+		midleft=30
+		midright=midleft+40
+		image "images/west-brown.png" midleft 55 1200 1200 90
+		image "images/east-brown.png" midright 55 1200 1200 90
+		westcap="The Tuskegee Airmen came from all over the country—forty of forty-eight states plus the District of Columbia (Over 85%) were represented."
+		eastcap="Stationed in Ramitelli, Italy and Sicily, the Tuskegee Airmen amassed an enviable record, flying P-51s, P-47s and other aircraft with the distinctive “Red Tail” markings"
+
+		textblock westcap 15 81 70 1.8
+		textblock eastcap 15 34 70 1.8
+
+		// Portraits over the US
+		cimage "images/edward-gleed.jpg"   "Edward C. Gleed, Kansas"           ksx 52 870 925    12 "https://en.wikipedia.org/wiki/Edward_C._Gleed" 1
+ 		cimage "images/benjamin-davis.jpg" "Benjamin O. Davis Jr., Alabama"    40  54 870 925    12 "https://cafriseabove.org/benjamin-o-davis-jr/" 1
+ 		cimage "images/et.jpg"             "Edward M. Thomas, Illinois"        ilx 68 1000 770   12 "https://pioneersofflight.si.edu/content/lt-edward-m-thomas" 1
+ 		cimage "images/lee-archer.jpg"     "Lee A. Archer, New York"           40 70 1057 819    12 "https://en.wikipedia.org/wiki/Lee_Archer_(pilot)" 1
+ 		cimage "images/alton-ballard.jpg"  "Alton F. Ballard, California"      11 cay 1800 1917   5 "https://stanstokes.art/blog/stan-stokes-painting-of-tuskegee-airman-alton-ballard/" 1
+ 
+ 		polygon "ksx 24 26"      "ksy 54.7 54.7" curvecolor 20 // Gleed
+ 		polygon "alx 36.5 36.5"  "aly 55 53"     curvecolor 20 // Davis
+ 		polygon "ilx 27 29"      "ily 65.5 65.5" curvecolor 20 // Thomas
+ 		polygon "nyx 38 41"      "nyy 67.5 67.5" curvecolor 20 // Archer
+ 		polygon "cax 14 14"      "cay 59 57"     curvecolor 20 // Ballard
+ 
+
+		//circle ramx ramy 3 curvecolor 20
+		//star ramx ramy 5 1 3 curvecolor 50
+		square ramx ramy 1.5 "black"
+		star ramx ramy 5 0.20 0.60 "white"
+		rlx=ramx-2
+		etext "Ramitelli, Italy," rlx ramy 1.5
+		image "images/rg.jpg" 60 50 900 955 25 "https://www.loc.gov/item/2007675004/"
+ 		polygon "ramx 65 67" "ramy 66.5 66.5" curvecolor 30
+ 		image "images/rs.jpg" 84.5 55 900 955 25 "https://www.loc.gov/item/2017650168/"
+ 		polygon "ramx 77.5 77.5" "ramy 57 55" curvecolor 30
+ 		image "images/spurgeon-ellington.jpg" ramx 72 650 550 40 "https://cafriseabove.org/spurgeon-neal-ellington/"
+ 		polygon "ramx 60 62" "ramy 56 56" curvecolor 30
 
 		// Group of fighters
 		planew=600
