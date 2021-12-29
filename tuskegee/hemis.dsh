@@ -1,0 +1,14 @@
+		etext "THE TUSKEGEE AIRMEN"   95 93 4 "serif"
+		image "images/creamers-dream.jpg" 15 93 331 152
+		hline 23 94 80 3 curvecolor 20 // red trail
+
+		// hemispheres
+		midleft=30
+		midright=midleft+40
+		image "images/west-brown.png" midleft 55 1200 1200 90
+		image "images/east-brown.png" midright 55 1200 1200 90
+		westcap="The Tuskegee Airmen came from all over the country—forty of forty-eight states plus the District of Columbia (Over 85%) were represented."
+		eastcap="Stationed in Ramitelli, Italy and Sicily, the Tuskegee Airmen amassed an enviable record, flying P-51s, P-47s and other aircraft with the distinctive “Red Tail” markings"
+
+		textblock westcap 15 81 70 1.8
+		textblock eastcap 15 34 70 1.8

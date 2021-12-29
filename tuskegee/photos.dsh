@@ -1,0 +1,22 @@
+		// Portraits over the US
+		cimage "images/edward-gleed.jpg"   "Edward C. Gleed, Kansas"           ksx 52 870 925    12 "https://en.wikipedia.org/wiki/Edward_C._Gleed" 1
+ 		cimage "images/benjamin-davis.jpg" "Benjamin O. Davis Jr., Alabama"    40  54 870 925    12 "https://cafriseabove.org/benjamin-o-davis-jr/" 1
+ 		cimage "images/et.jpg"             "Edward M. Thomas, Illinois"        ilx 68 1000 770   12 "https://pioneersofflight.si.edu/content/lt-edward-m-thomas" 1
+ 		cimage "images/lee-archer.jpg"     "Lee A. Archer, New York"           40 70 1057 819    12 "https://en.wikipedia.org/wiki/Lee_Archer_(pilot)" 1
+ 		cimage "images/lowell-stewart.jpg"  "Lowell Stewart, California"      11 cay 1200 1652   7 "https://en.wikipedia.org/wiki/Lowell_Steward" 1
+ 
+ 		polygon "ksx 24 26"      "ksy 54.7 54.7" curvecolor 20 // Gleed
+ 		polygon "alx 36.5 36.5"  "aly 55 53"     curvecolor 20 // Davis
+ 		polygon "ilx 27 29"      "ily 65.5 65.5" curvecolor 20 // Thomas
+ 		polygon "nyx 38 41"      "nyy 67.5 67.5" curvecolor 20 // Archer
+ 		polygon "cax 14 14"      "cay 59 57"     curvecolor 20 // Ballard
+ 
+
+		rlx=ramx-2
+		etext "Ramitelli, Italy," rlx ramy 1.5
+		image "images/rg.jpg" 60 50 900 955 25 "https://www.loc.gov/item/2007675004/"
+ 		polygon "ramx 65 67" "ramy 66.5 66.5" curvecolor 30
+ 		image "images/rs.jpg" 84.5 55 900 955 25 "https://www.loc.gov/item/2017650168/"
+ 		polygon "ramx 77.5 77.5" "ramy 57 55" curvecolor 30
+ 		image "images/spurgeon-ellington.jpg" ramx 72 650 550 40 "https://cafriseabove.org/spurgeon-neal-ellington/"
+ 		polygon "ramx 60 62" "ramy 56 56" curvecolor 30

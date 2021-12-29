@@ -1,0 +1,190 @@
+		// Ramitelli, Italy
+		ramx=66			
+		ramy=60.5
+		//
+		// USA
+		//
+		// Washington DC
+		dcx=30.5			
+		dcy=58.5
+		// Massachusettes
+		max=32  
+		may=59.7
+		// Illinois
+		ilx=28	
+		ily=60
+		// Pennsylvania
+		pax=31	
+		pay=60
+		// New York
+		nyx=pax
+		nyy=pay+0.5
+		// Vermont
+		vtx=max
+		vty=nyy
+		// New Hampshire
+		nhx=vtx+0.7
+		nhy=vty
+		// Ohio
+		ohx=30	
+		ohy=60
+		// California
+		cax=18.5  
+		cay=58
+		// Texas
+		txx=22	
+		txy=57
+		// Indiana
+		inx=29
+		iny=60
+		// Michigan
+		mix=28.5
+		miy=61
+		// New Jersey
+		njx=32
+		njy=60
+		// Alabama
+		alx=27	
+		aly=57
+		// Missouri
+		mox=26	
+		moy=59
+		// Virginia
+		vax=30
+		vay=58.5
+		// Georgia
+		gax=29	
+		gay=57
+		// North Carolina
+		ncx=30	
+		ncy=58
+		// South Carolina
+		scx=ncx-1
+		scy=gay+1
+		// Kansas
+		ksx=mox-1		
+		ksy=moy
+		// Maryland
+		mdx=31	
+		mdy=vay
+		// Tennesee
+		tnx=29		
+		tny=58.5
+		// West Virginia
+		wvx=30		
+		wvy=59
+		// Louisiana
+		lax=alx-1	
+		lay=aly
+		// Iowa
+		iax=mox		
+		iay=moy+1
+		// Florida
+		flx=gax		
+		fly=gay-1
+		// Oklahoma
+		okx=ksx		
+		oky=ksy-1
+		// Kentucky
+		kyx=inx		
+		kyy=iny-1
+		// Colorado
+		cox=ksx-1	
+		coy=ksy
+		// Arkansas
+		arx=lax	
+		ary=oky
+		// Wyoming
+		wyx=cox+1
+		wyy=coy+1
+		// Delaware
+		dex=njx		
+		dey=njy-1
+		// Mississippi
+		msx=alx+1
+		msy=aly
+		// Connecticut
+		ctx=max
+		cty=may-0.5
+		// Washington
+		wax=cax
+		way=62
+		// Oregon
+		orx=wax
+		ory=way-1
+		// Nebraska
+		nex=ksx
+		ney=ksy+1
+		// Minnesota
+		mnx=mix-1
+		mny=miy
+		// Arizona
+		azx=20
+		azy=58
+		// Wisconsin
+		wix=ilx
+		wiy=mny-1
+
+		//
+		// Caribbean
+		//
+		// Trinidad
+		tdx=34 		
+		tdy=51.5
+		// Haiti
+		hax=32
+		hay=53.5
+		// Virgin Islands
+		vix=hax+3
+		viy=hay
+
+
+		controlx=50
+		controly=70
+		curvelw=0.100
+		curvecolor="#cc252c"
+
+		// Paths to Ramitelli
+		call "path.dsh" dcx dcy controlx controly ramx ramy curvelw curvecolor "DC"
+		call "path.dsh" ilx ily controlx controly ramx ramy curvelw curvecolor "IL"
+		call "path.dsh" nyx nyy controlx controly ramx ramy curvelw curvecolor "NY"
+		call "path.dsh" pax pay controlx controly ramx ramy curvelw curvecolor "PA"
+		call "path.dsh" cax cay controlx controly ramx ramy curvelw curvecolor "CA"
+		call "path.dsh" txx txy controlx controly ramx ramy curvelw curvecolor "TX"
+		call "path.dsh" ohx ohy controlx controly ramx ramy curvelw curvecolor "OH"
+		call "path.dsh" vax vay controlx controly ramx ramy curvelw curvecolor "VA"
+		call "path.dsh" mix miy controlx controly ramx ramy curvelw curvecolor "MI"
+		call "path.dsh" njx njy controlx controly ramx ramy curvelw curvecolor "NJ"
+		call "path.dsh" mox moy controlx controly ramx ramy curvelw curvecolor "MO"
+		call "path.dsh" alx aly controlx controly ramx ramy curvelw curvecolor "AL"
+		call "path.dsh" inx iny controlx controly ramx ramy curvelw curvecolor "IN"
+		call "path.dsh" gax gay controlx controly ramx ramy curvelw curvecolor "GA"
+		call "path.dsh" ncx ncy controlx controly ramx ramy curvelw curvecolor "NC"
+		call "path.dsh" scx scy controlx controly ramx ramy curvelw curvecolor "SC"
+		call "path.dsh" ksx ksy controlx controly ramx ramy curvelw curvecolor "KS"
+		call "path.dsh" mdx mdy controlx controly ramx ramy curvelw curvecolor "MD"
+		call "path.dsh" max may controlx controly ramx ramy curvelw curvecolor "MA"
+		call "path.dsh" tnx tny controlx controly ramx ramy curvelw curvecolor "TN"
+		call "path.dsh" wvx wvy controlx controly ramx ramy curvelw curvecolor "WV"
+		call "path.dsh" iax iay controlx controly ramx ramy curvelw curvecolor "IA"
+		call "path.dsh" lax lay controlx controly ramx ramy curvelw curvecolor "LA"
+		call "path.dsh" flx fly controlx controly ramx ramy curvelw curvecolor "FL"
+		call "path.dsh" okx oky controlx controly ramx ramy curvelw curvecolor "OK"
+		call "path.dsh" kyx kyy controlx controly ramx ramy curvelw curvecolor "KY"
+		call "path.dsh" cox coy controlx controly ramx ramy curvelw curvecolor "CO"
+		call "path.dsh" arx ary controlx controly ramx ramy curvelw curvecolor "AR"
+		call "path.dsh" azx azy controlx controly ramx ramy curvelw curvecolor "AZ"
+		call "path.dsh" mnx mny controlx controly ramx ramy curvelw curvecolor "MN"
+		call "path.dsh" nex ney controlx controly ramx ramy curvelw curvecolor "NE"
+		call "path.dsh" orx ory controlx controly ramx ramy curvelw curvecolor "OR"
+		call "path.dsh" wax way controlx controly ramx ramy curvelw curvecolor "WA"
+		call "path.dsh" msx msy controlx controly ramx ramy curvelw curvecolor "MS"
+		call "path.dsh" wix wiy controlx controly ramx ramy curvelw curvecolor "WI"
+		call "path.dsh" vtx vty controlx controly ramx ramy curvelw curvecolor "VT"
+		call "path.dsh" nhx nhy controlx controly ramx ramy curvelw curvecolor "NH"
+		call "path.dsh" hax hay controlx controly ramx ramy curvelw curvecolor "Haiti"
+		call "path.dsh" tdx tdy controlx controly ramx ramy curvelw curvecolor "Trinidad"
+		call "path.dsh" vix viy controlx controly ramx ramy curvelw curvecolor "Virgin Islands"
+
+		square ramx ramy 1.5 "black"
+		star ramx ramy 5 0.20 0.60 "white"
