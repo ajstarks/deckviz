@@ -24,7 +24,7 @@
 		image "images/dfc.jpg"              imx imy imw 551 awscale "https://en.wikipedia.org/wiki/Distinguished_Flying_Cross_(United_States)"
 		imx+=hs
 		ctext "744" imx hy 2
-		image "images/air-medal.gif"        imx imy imw 589 awscale "https://en.wikipedia.org/wiki/Air_Medal"
+		image "images/air-medal.png"        imx imy imw 589 awscale "https://en.wikipedia.org/wiki/Air_Medal"
 
 		capx=midleft-10
 		capy=imy-5
