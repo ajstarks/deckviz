@@ -29,7 +29,7 @@
 * iam -- "I AM A MAN" poster
 * juneteenth -- Juneteenth flag
 * gomod -- Go module flows
-* lynch -- "A Man eas Lynched" poster
+* lynch -- "A Man Was Lynched" poster
 * messiah -- A passage from Handel's Messiah
 * middle -- the Middle Passage
 * modelt -- Manufacturing and Marketing the Model T - 1908-1916
@@ -58,11 +58,10 @@ Each directory has the '.dsh' scripts, associated data files, and rendered outpu
 
 ### get the deck tools
 
-	go get github.com/ajstarks/deck/cmd/decksh		# get decksh
-	go get github.com/ajstarks/deck/cmd/pdfdeck		# get pdfdeck to render PDFs
-	go get github.com/ajstarks/deck/cmd/pngdeck		# get pngdeck to render PNGs
-	go get github.com/ajstarks/deck/cmd/dchart      # get the dchart command
-	# assume the DECKFONTS environment variable is set to $HOME/deckfonts
+	go install github.com/ajstarks/deck/cmd/decksh@latest	# get decksh
+	go install github.com/ajstarks/deck/cmd/pdfdeck@latest  # get pdfdeck to render PDFs
+	go install github.com/ajstarks/deck/cmd/pngdeck@latest	# get pngdeck to render PNGs
+	go install github.com/ajstarks/deck/cmd/dchart@latest   # get the dchart command
 	cd $HOME
 	git clone https://github.com/ajstarks/deckfonts
 	
