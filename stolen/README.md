@@ -1,2 +1,2 @@
 # Stolen Series
-![stolen](stolen1.png)
+![stolen](stolen4.png)
