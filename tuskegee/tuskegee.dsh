@@ -6,22 +6,24 @@ deck
 	// http://ghostgrey.gaetanmarie.com/articles/2012/Nine%20Myths/Nine%20Myths%20about%20the%20Tuskegee%20Airmen.htm
 	// standard crop for Frissel photos: gift -crop 35,35,935,990 
 	canvas 1584 2016
+
 	slide
-		include "paths.dsh"
+		include "coords.dsh"
+		include "cpaths.dsh"
 		include "hemis.dsh"
 		include "aircraft.dsh"
 		include "awards.dsh"
-		include "credits.dsh"
 		include "credits.dsh"
 	eslide
 
-	// with photos
+	//  with photos
 	slide
-		include "paths.dsh"
-		include "hemis.dsh"
- 		include "photos.dsh"
-		include "aircraft.dsh"
-		include "awards.dsh"
-		include "credits.dsh"
-	eslide
+ 		include "cpaths.dsh"
+ 		include "hemis.dsh"
+  		include "photos.dsh"
+ 		include "aircraft.dsh"
+ 		include "awards.dsh"
+ 		include "credits.dsh"
+ 	eslide
+
 edeck

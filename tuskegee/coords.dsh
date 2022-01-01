@@ -1,0 +1,56 @@
+// Ramitelli, Ital_y
+		ram=(66,60.5)
+		//
+		// USA
+		//
+		dc=(30.5,58.5)
+		ma=(32,59.7)
+		il=(28,60)
+		pa=(31,60)
+		ny=(pa_x,pa_y+0.5)
+		vt=(ma_x,ny_y)
+		nh=(vt_x+0.7,vt_y)
+		oh=(30,60)
+		ca=(18.5,58)
+		tx=(22,57)
+		in=(29,60)
+		mi=(28.5,61)
+		nj=(32,60)
+		al=(27,57)
+		mo=(26,59)
+		va=(30,58.5)
+		ga=(29,57)
+		nc=(29,57)
+		nc=(30,58)
+		sc=(nc_x-1, ga_y+1)
+		ks=(mo_x-1, mo_y)
+		md=(31,va_y)
+		tn=(29,58.5)
+		wv=(30,59)
+		la=(al_x-1,al_y)
+		ia=(mo_x,mo_y+1)
+		fl=(ga_x,ga_y-1)
+		ok=(ks_x,ks_y-1)
+		ky=(in_x,in_y-1)
+		co=(ks_x-1,ks_y)
+		ar=(la_x, ok_y)	
+		wy=(co_x+1,co_y+1)
+		de=(nj_x, nj_y-1)
+		ms=(al_x+1,al_y)
+		ct=(ma_x,ma_y-0.5)
+		wa=(ca_x,62)
+		or=(wa_x,wa_y-1)
+		ne=(ks_x,ks_y+1)
+		mn=(mi_x-1,mi_y)
+		az=(20,58)
+		wi=(il_x,mn_y-1)
+		//
+		// Caribbean
+		//
+		td=(34,51.5)
+		ha=(32,53.5)
+		vi=(ha_x+3, ha_y)
+
+		control=(50,70)
+		curvelw=0.100
+		curvecolor="#cc252c"
