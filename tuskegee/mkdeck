@@ -2,5 +2,17 @@
 serif=PublicSans-Bold
 sans=PublicSans-Regular
 decksh tuskegee.dsh > tuskegee.xml
-pdfdeck -sans $sans -serif $serif -pagesize 1584,2016 $* tuskegee.xml
-pngdeck -sans $sans -serif $serif -pagesize 1584,2016 $* tuskegee.xml
+case "$1" in
+	both)
+		shift
+		pdfdeck -sans $sans -serif $serif -pagesize 1584,2016 $* tuskegee.xml
+		pngdeck -sans $sans -serif $serif -pagesize 1584,2016 $* tuskegee.xml
+		;;
+	png)
+		shift
+		pngdeck -sans $sans -serif $serif -pagesize 1584,2016 $* tuskegee.xml
+		;;
+	*)
+		pdfdeck -sans $sans -serif $serif -pagesize 1584,2016 $* tuskegee.xml
+esac
+
