@@ -1,0 +1,292 @@
+<deck>
+<canvas width="1584" height="2016"/>
+<slide>
+<curve xp1="30.5" yp1="58.5" xp2="50" yp2="70" xp3="66" yp3="60.5" sp="0.100" color="#cc252c"/>
+<ellipse xp="30.5" yp="58.5" wp="0.75" hr="100" color="#cc252c" opacity="20"/>
+<curve xp1="28" yp1="60" xp2="50" yp2="70" xp3="66" yp3="60.5" sp="0.100" color="#cc252c"/>
+<ellipse xp="28" yp="60" wp="0.75" hr="100" color="#cc252c" opacity="20"/>
+<curve xp1="31" yp1="60.5" xp2="50" yp2="70" xp3="66" yp3="60.5" sp="0.100" color="#cc252c"/>
+<ellipse xp="31" yp="60.5" wp="0.75" hr="100" color="#cc252c" opacity="20"/>
+<curve xp1="31" yp1="60" xp2="50" yp2="70" xp3="66" yp3="60.5" sp="0.100" color="#cc252c"/>
+<ellipse xp="31" yp="60" wp="0.75" hr="100" color="#cc252c" opacity="20"/>
+<curve xp1="18.5" yp1="58" xp2="50" yp2="70" xp3="66" yp3="60.5" sp="0.100" color="#cc252c"/>
+<ellipse xp="18.5" yp="58" wp="0.75" hr="100" color="#cc252c" opacity="20"/>
+<curve xp1="22" yp1="57" xp2="50" yp2="70" xp3="66" yp3="60.5" sp="0.100" color="#cc252c"/>
+<ellipse xp="22" yp="57" wp="0.75" hr="100" color="#cc252c" opacity="20"/>
+<curve xp1="30" yp1="60" xp2="50" yp2="70" xp3="66" yp3="60.5" sp="0.100" color="#cc252c"/>
+<ellipse xp="30" yp="60" wp="0.75" hr="100" color="#cc252c" opacity="20"/>
+<curve xp1="30" yp1="58.5" xp2="50" yp2="70" xp3="66" yp3="60.5" sp="0.100" color="#cc252c"/>
+<ellipse xp="30" yp="58.5" wp="0.75" hr="100" color="#cc252c" opacity="20"/>
+<curve xp1="28.5" yp1="61" xp2="50" yp2="70" xp3="66" yp3="60.5" sp="0.100" color="#cc252c"/>
+<ellipse xp="28.5" yp="61" wp="0.75" hr="100" color="#cc252c" opacity="20"/>
+<curve xp1="32" yp1="60" xp2="50" yp2="70" xp3="66" yp3="60.5" sp="0.100" color="#cc252c"/>
+<ellipse xp="32" yp="60" wp="0.75" hr="100" color="#cc252c" opacity="20"/>
+<curve xp1="26" yp1="59" xp2="50" yp2="70" xp3="66" yp3="60.5" sp="0.100" color="#cc252c"/>
+<ellipse xp="26" yp="59" wp="0.75" hr="100" color="#cc252c" opacity="20"/>
+<curve xp1="27" yp1="57" xp2="50" yp2="70" xp3="66" yp3="60.5" sp="0.100" color="#cc252c"/>
+<ellipse xp="27" yp="57" wp="0.75" hr="100" color="#cc252c" opacity="20"/>
+<curve xp1="29" yp1="60" xp2="50" yp2="70" xp3="66" yp3="60.5" sp="0.100" color="#cc252c"/>
+<ellipse xp="29" yp="60" wp="0.75" hr="100" color="#cc252c" opacity="20"/>
+<curve xp1="29" yp1="57" xp2="50" yp2="70" xp3="66" yp3="60.5" sp="0.100" color="#cc252c"/>
+<ellipse xp="29" yp="57" wp="0.75" hr="100" color="#cc252c" opacity="20"/>
+<curve xp1="30" yp1="58" xp2="50" yp2="70" xp3="66" yp3="60.5" sp="0.100" color="#cc252c"/>
+<ellipse xp="30" yp="58" wp="0.75" hr="100" color="#cc252c" opacity="20"/>
+<curve xp1="29" yp1="58" xp2="50" yp2="70" xp3="66" yp3="60.5" sp="0.100" color="#cc252c"/>
+<ellipse xp="29" yp="58" wp="0.75" hr="100" color="#cc252c" opacity="20"/>
+<curve xp1="25" yp1="59" xp2="50" yp2="70" xp3="66" yp3="60.5" sp="0.100" color="#cc252c"/>
+<ellipse xp="25" yp="59" wp="0.75" hr="100" color="#cc252c" opacity="20"/>
+<curve xp1="31" yp1="58.5" xp2="50" yp2="70" xp3="66" yp3="60.5" sp="0.100" color="#cc252c"/>
+<ellipse xp="31" yp="58.5" wp="0.75" hr="100" color="#cc252c" opacity="20"/>
+<curve xp1="32" yp1="59.7" xp2="50" yp2="70" xp3="66" yp3="60.5" sp="0.100" color="#cc252c"/>
+<ellipse xp="32" yp="59.7" wp="0.75" hr="100" color="#cc252c" opacity="20"/>
+<curve xp1="29" yp1="58.5" xp2="50" yp2="70" xp3="66" yp3="60.5" sp="0.100" color="#cc252c"/>
+<ellipse xp="29" yp="58.5" wp="0.75" hr="100" color="#cc252c" opacity="20"/>
+<curve xp1="30" yp1="59" xp2="50" yp2="70" xp3="66" yp3="60.5" sp="0.100" color="#cc252c"/>
+<ellipse xp="30" yp="59" wp="0.75" hr="100" color="#cc252c" opacity="20"/>
+<curve xp1="26" yp1="60" xp2="50" yp2="70" xp3="66" yp3="60.5" sp="0.100" color="#cc252c"/>
+<ellipse xp="26" yp="60" wp="0.75" hr="100" color="#cc252c" opacity="20"/>
+<curve xp1="26" yp1="57" xp2="50" yp2="70" xp3="66" yp3="60.5" sp="0.100" color="#cc252c"/>
+<ellipse xp="26" yp="57" wp="0.75" hr="100" color="#cc252c" opacity="20"/>
+<curve xp1="29" yp1="56" xp2="50" yp2="70" xp3="66" yp3="60.5" sp="0.100" color="#cc252c"/>
+<ellipse xp="29" yp="56" wp="0.75" hr="100" color="#cc252c" opacity="20"/>
+<curve xp1="25" yp1="58" xp2="50" yp2="70" xp3="66" yp3="60.5" sp="0.100" color="#cc252c"/>
+<ellipse xp="25" yp="58" wp="0.75" hr="100" color="#cc252c" opacity="20"/>
+<curve xp1="29" yp1="59" xp2="50" yp2="70" xp3="66" yp3="60.5" sp="0.100" color="#cc252c"/>
+<ellipse xp="29" yp="59" wp="0.75" hr="100" color="#cc252c" opacity="20"/>
+<curve xp1="24" yp1="59" xp2="50" yp2="70" xp3="66" yp3="60.5" sp="0.100" color="#cc252c"/>
+<ellipse xp="24" yp="59" wp="0.75" hr="100" color="#cc252c" opacity="20"/>
+<curve xp1="26" yp1="58" xp2="50" yp2="70" xp3="66" yp3="60.5" sp="0.100" color="#cc252c"/>
+<ellipse xp="26" yp="58" wp="0.75" hr="100" color="#cc252c" opacity="20"/>
+<curve xp1="20" yp1="58" xp2="50" yp2="70" xp3="66" yp3="60.5" sp="0.100" color="#cc252c"/>
+<ellipse xp="20" yp="58" wp="0.75" hr="100" color="#cc252c" opacity="20"/>
+<curve xp1="27.5" yp1="61" xp2="50" yp2="70" xp3="66" yp3="60.5" sp="0.100" color="#cc252c"/>
+<ellipse xp="27.5" yp="61" wp="0.75" hr="100" color="#cc252c" opacity="20"/>
+<curve xp1="25" yp1="60" xp2="50" yp2="70" xp3="66" yp3="60.5" sp="0.100" color="#cc252c"/>
+<ellipse xp="25" yp="60" wp="0.75" hr="100" color="#cc252c" opacity="20"/>
+<curve xp1="18.5" yp1="61" xp2="50" yp2="70" xp3="66" yp3="60.5" sp="0.100" color="#cc252c"/>
+<ellipse xp="18.5" yp="61" wp="0.75" hr="100" color="#cc252c" opacity="20"/>
+<curve xp1="18.5" yp1="62" xp2="50" yp2="70" xp3="66" yp3="60.5" sp="0.100" color="#cc252c"/>
+<ellipse xp="18.5" yp="62" wp="0.75" hr="100" color="#cc252c" opacity="20"/>
+<curve xp1="28" yp1="57" xp2="50" yp2="70" xp3="66" yp3="60.5" sp="0.100" color="#cc252c"/>
+<ellipse xp="28" yp="57" wp="0.75" hr="100" color="#cc252c" opacity="20"/>
+<curve xp1="28" yp1="60" xp2="50" yp2="70" xp3="66" yp3="60.5" sp="0.100" color="#cc252c"/>
+<ellipse xp="28" yp="60" wp="0.75" hr="100" color="#cc252c" opacity="20"/>
+<curve xp1="32" yp1="60.5" xp2="50" yp2="70" xp3="66" yp3="60.5" sp="0.100" color="#cc252c"/>
+<ellipse xp="32" yp="60.5" wp="0.75" hr="100" color="#cc252c" opacity="20"/>
+<curve xp1="32.7" yp1="60.5" xp2="50" yp2="70" xp3="66" yp3="60.5" sp="0.100" color="#cc252c"/>
+<ellipse xp="32.7" yp="60.5" wp="0.75" hr="100" color="#cc252c" opacity="20"/>
+<curve xp1="32" yp1="53.5" xp2="50" yp2="70" xp3="66" yp3="60.5" sp="0.100" color="#cc252c"/>
+<ellipse xp="32" yp="53.5" wp="0.75" hr="100" color="#cc252c" opacity="20"/>
+<curve xp1="34" yp1="51.5" xp2="50" yp2="70" xp3="66" yp3="60.5" sp="0.100" color="#cc252c"/>
+<ellipse xp="34" yp="51.5" wp="0.75" hr="100" color="#cc252c" opacity="20"/>
+<curve xp1="35" yp1="53.5" xp2="50" yp2="70" xp3="66" yp3="60.5" sp="0.100" color="#cc252c"/>
+<ellipse xp="35" yp="53.5" wp="0.75" hr="100" color="#cc252c" opacity="20"/>
+<rect xp="66" yp="60.5" wp="1.5" hr="100" color="black"/>
+<polygon xc="66.00 65.81 65.65 66.12 66.57 66.00 65.43 65.88 66.35 66.19" yc="60.97 60.55 60.12 60.37 60.65 60.66 60.65 60.37 60.12 60.55" color="white"/>
+<text align="e" xp="95" yp="93" sp="4" font="serif">THE TUSKEGEE AIRMEN</text>
+<image name="images/creamers-dream.jpg" xp="15" yp="93" width="331" height="152"/>
+<line xp1="23" yp1="94" xp2="103" yp2="94" sp="3" color="#cc252c" opacity="20"/>
+<image name="images/west-brown.png" xp="30" yp="55" width="1200" height="1200" scale="90"/>
+<image name="images/east-brown.png" xp="70" yp="55" width="1200" height="1200" scale="90"/>
+<text type="block" xp="15" yp="81" wp="70" sp="1.8" >The Tuskegee Airmen came from all over the country—forty of forty-eight states plus the District of Columbia (Over 85%) were represented.</text>
+<text type="block" xp="15" yp="34" wp="70" sp="1.8" >Stationed in Ramitelli, Italy and Sicily, the Tuskegee Airmen amassed an enviable record, flying P-51s, P-47s and other aircraft with the distinctive “Red Tail” markings</text>
+<image name="images/lollipoop.jpg" caption="Lollipoop, P-51D" xp="55" yp="20" width="600" height="239" scale="30" link="http://www.americanairmuseum.com/aircraft/21444" sp="1"/>
+<image name="images/daisy-mae.jpg" caption="Daisy Mae, P-51C" xp="65" yp="15" width="600" height="239" scale="30" link="https://www.aviationgraphic.com/aviation-lithographs/966-p-47d-thunderbolt-39-red-tails-gm-56.html" sp="1"/>
+<image name="images/ina.jpg" caption="Ina the Macon Belle, P-51C" xp="75" yp="10" width="600" height="239" scale="30" link="https://en.wikipedia.org/wiki/Lee_Archer_(pilot)" sp="1"/>
+<image name="images/my-buddy.jpg" caption="My Buddy, P-51C" xp="80" yp="18" width="600" height="239" scale="30" link="https://www.starduststudios.com/charles-p-bailey.html" sp="1"/>
+<image name="images/peirson-p-47.jpg" caption="Lt. Peirson P-47D" xp="85" yp="25" width="600" height="250" scale="30" link="https://www.bravobravoaviation.com/en/republic-p-47-thunderbolt/252-p-47d-thunderbolt-1lt-gwynne-peirson-302nd-fs-332nd-fg-tuskegee-airmen-italy-1944.html" sp="1"/>
+<image name="images/nona.jpg" caption="Nona II, P-40" xp="95" yp="23" width="600" height="229" scale="30" link="" sp="1"/>
+<line xp1="60" yp1="21" xp2="100" yp2="21" sp="2" color="#cc252c" opacity="20"/>
+<line xp1="70" yp1="16" xp2="100" yp2="16" sp="2" color="#cc252c" opacity="20"/>
+<line xp1="80" yp1="11" xp2="100" yp2="11" sp="2" color="#cc252c" opacity="20"/>
+<line xp1="85" yp1="19" xp2="100" yp2="19" sp="2" color="#cc252c" opacity="20"/>
+<line xp1="90" yp1="26" xp2="100" yp2="26" sp="2" color="#cc252c" opacity="20"/>
+<image name="images/duc.jpg" caption="Distinguished Unit Citations" xp="30" yp="26" width="600" height="160" scale="25" link="https://en.wikipedia.org/wiki/Presidential_Unit_Citation_(United_States)" sp="1.3"/>
+<text align="c" xp="30" yp="27.5" sp="2" >3</text>
+<text align="c" xp="20" yp="20" sp="2" >8</text>
+<image name="images/purple-heart.png" xp="20" yp="16" width="300" height="677" scale="20" link="https://en.wikipedia.org/wiki/Purple_Heart"/>
+<text align="c" xp="27" yp="20" sp="2" >14</text>
+<image name="images/bronze-star.jpg" xp="27" yp="16" width="300" height="533" scale="25" link="https://en.wikipedia.org/wiki/Bronze_Star_Medal"/>
+<text align="c" xp="34" yp="20" sp="2" >96</text>
+<image name="images/dfc.jpg" xp="34" yp="16" width="300" height="551" scale="25" link="https://en.wikipedia.org/wiki/Distinguished_Flying_Cross_(United_States)"/>
+<text align="c" xp="41" yp="20" sp="2" >744</text>
+<image name="images/air-medal.png" xp="41" yp="16" width="300" height="589" scale="25" link="https://en.wikipedia.org/wiki/Air_Medal"/>
+<list align="center" xp="20" yp="11" sp="1" font="sans" color="" opacity="100" lp="1.2">
+<li>Purple</li>
+<li>Hearts</li>
+</list>
+<list align="center" xp="27" yp="11" sp="1" font="sans" color="" opacity="100" lp="1.2">
+<li>Bronze</li>
+<li>Stars</li>
+</list>
+<list align="center" xp="34" yp="11" sp="1" font="sans" color="" opacity="100" lp="1.2">
+<li>Distinguished</li>
+<li>Flying Crosses</li>
+</list>
+<list align="center" xp="41" yp="11" sp="1" font="sans" color="" opacity="100" lp="1.2">
+<li>Air</li>
+<li>Medals</li>
+</list>
+<image name="images/b17-483.png" xp="30" yp="5.5" width="1288" height="364" scale="24" link="https://www.483bg.org/"/>
+<text align="c" xp="30" yp="2" sp="1.2" >179 bomber escort missions, low 3.9% mission loss rate</text>
+<image name="images/fw-190.jpg" xp="55" yp="5" width="600" height="261" scale="25" link="https://en.wikipedia.org/wiki/Focke-Wulf_Fw_190"/>
+<text align="c" xp="65" yp="2" sp="1.2" >112 enemy aircraft destroyed in the air, 150 on the ground</text>
+<line xp1="50" yp1="7" xp2="60" yp2="3" sp="0.5" color="#cc252c" opacity="20"/>
+<line xp1="50" yp1="3" xp2="60" yp2="7" sp="0.5" color="#cc252c" opacity="20"/>
+<text align="e" xp="98" yp="2" sp="0.7" font="sans" color="#cc252c" opacity="100" link="https://speakerdeck.com/ajstarks">Anthony Starks, @ajstarks</text>
+<text align="e" xp="98" yp="1" sp="0.7" font="sans" color="gray" opacity="100" link="http://www.gaetanmarie.com">Aircraft Illustrations by Gaëtan Marie</text>
+</slide>
+<slide>
+<curve xp1="30.5" yp1="58.5" xp2="50" yp2="70" xp3="66" yp3="60.5" sp="0.100" color="#cc252c"/>
+<ellipse xp="30.5" yp="58.5" wp="0.75" hr="100" color="#cc252c" opacity="20"/>
+<curve xp1="28" yp1="60" xp2="50" yp2="70" xp3="66" yp3="60.5" sp="0.100" color="#cc252c"/>
+<ellipse xp="28" yp="60" wp="0.75" hr="100" color="#cc252c" opacity="20"/>
+<curve xp1="31" yp1="60.5" xp2="50" yp2="70" xp3="66" yp3="60.5" sp="0.100" color="#cc252c"/>
+<ellipse xp="31" yp="60.5" wp="0.75" hr="100" color="#cc252c" opacity="20"/>
+<curve xp1="31" yp1="60" xp2="50" yp2="70" xp3="66" yp3="60.5" sp="0.100" color="#cc252c"/>
+<ellipse xp="31" yp="60" wp="0.75" hr="100" color="#cc252c" opacity="20"/>
+<curve xp1="18.5" yp1="58" xp2="50" yp2="70" xp3="66" yp3="60.5" sp="0.100" color="#cc252c"/>
+<ellipse xp="18.5" yp="58" wp="0.75" hr="100" color="#cc252c" opacity="20"/>
+<curve xp1="22" yp1="57" xp2="50" yp2="70" xp3="66" yp3="60.5" sp="0.100" color="#cc252c"/>
+<ellipse xp="22" yp="57" wp="0.75" hr="100" color="#cc252c" opacity="20"/>
+<curve xp1="30" yp1="60" xp2="50" yp2="70" xp3="66" yp3="60.5" sp="0.100" color="#cc252c"/>
+<ellipse xp="30" yp="60" wp="0.75" hr="100" color="#cc252c" opacity="20"/>
+<curve xp1="30" yp1="58.5" xp2="50" yp2="70" xp3="66" yp3="60.5" sp="0.100" color="#cc252c"/>
+<ellipse xp="30" yp="58.5" wp="0.75" hr="100" color="#cc252c" opacity="20"/>
+<curve xp1="28.5" yp1="61" xp2="50" yp2="70" xp3="66" yp3="60.5" sp="0.100" color="#cc252c"/>
+<ellipse xp="28.5" yp="61" wp="0.75" hr="100" color="#cc252c" opacity="20"/>
+<curve xp1="32" yp1="60" xp2="50" yp2="70" xp3="66" yp3="60.5" sp="0.100" color="#cc252c"/>
+<ellipse xp="32" yp="60" wp="0.75" hr="100" color="#cc252c" opacity="20"/>
+<curve xp1="26" yp1="59" xp2="50" yp2="70" xp3="66" yp3="60.5" sp="0.100" color="#cc252c"/>
+<ellipse xp="26" yp="59" wp="0.75" hr="100" color="#cc252c" opacity="20"/>
+<curve xp1="27" yp1="57" xp2="50" yp2="70" xp3="66" yp3="60.5" sp="0.100" color="#cc252c"/>
+<ellipse xp="27" yp="57" wp="0.75" hr="100" color="#cc252c" opacity="20"/>
+<curve xp1="29" yp1="60" xp2="50" yp2="70" xp3="66" yp3="60.5" sp="0.100" color="#cc252c"/>
+<ellipse xp="29" yp="60" wp="0.75" hr="100" color="#cc252c" opacity="20"/>
+<curve xp1="29" yp1="57" xp2="50" yp2="70" xp3="66" yp3="60.5" sp="0.100" color="#cc252c"/>
+<ellipse xp="29" yp="57" wp="0.75" hr="100" color="#cc252c" opacity="20"/>
+<curve xp1="30" yp1="58" xp2="50" yp2="70" xp3="66" yp3="60.5" sp="0.100" color="#cc252c"/>
+<ellipse xp="30" yp="58" wp="0.75" hr="100" color="#cc252c" opacity="20"/>
+<curve xp1="29" yp1="58" xp2="50" yp2="70" xp3="66" yp3="60.5" sp="0.100" color="#cc252c"/>
+<ellipse xp="29" yp="58" wp="0.75" hr="100" color="#cc252c" opacity="20"/>
+<curve xp1="25" yp1="59" xp2="50" yp2="70" xp3="66" yp3="60.5" sp="0.100" color="#cc252c"/>
+<ellipse xp="25" yp="59" wp="0.75" hr="100" color="#cc252c" opacity="20"/>
+<curve xp1="31" yp1="58.5" xp2="50" yp2="70" xp3="66" yp3="60.5" sp="0.100" color="#cc252c"/>
+<ellipse xp="31" yp="58.5" wp="0.75" hr="100" color="#cc252c" opacity="20"/>
+<curve xp1="32" yp1="59.7" xp2="50" yp2="70" xp3="66" yp3="60.5" sp="0.100" color="#cc252c"/>
+<ellipse xp="32" yp="59.7" wp="0.75" hr="100" color="#cc252c" opacity="20"/>
+<curve xp1="29" yp1="58.5" xp2="50" yp2="70" xp3="66" yp3="60.5" sp="0.100" color="#cc252c"/>
+<ellipse xp="29" yp="58.5" wp="0.75" hr="100" color="#cc252c" opacity="20"/>
+<curve xp1="30" yp1="59" xp2="50" yp2="70" xp3="66" yp3="60.5" sp="0.100" color="#cc252c"/>
+<ellipse xp="30" yp="59" wp="0.75" hr="100" color="#cc252c" opacity="20"/>
+<curve xp1="26" yp1="60" xp2="50" yp2="70" xp3="66" yp3="60.5" sp="0.100" color="#cc252c"/>
+<ellipse xp="26" yp="60" wp="0.75" hr="100" color="#cc252c" opacity="20"/>
+<curve xp1="26" yp1="57" xp2="50" yp2="70" xp3="66" yp3="60.5" sp="0.100" color="#cc252c"/>
+<ellipse xp="26" yp="57" wp="0.75" hr="100" color="#cc252c" opacity="20"/>
+<curve xp1="29" yp1="56" xp2="50" yp2="70" xp3="66" yp3="60.5" sp="0.100" color="#cc252c"/>
+<ellipse xp="29" yp="56" wp="0.75" hr="100" color="#cc252c" opacity="20"/>
+<curve xp1="25" yp1="58" xp2="50" yp2="70" xp3="66" yp3="60.5" sp="0.100" color="#cc252c"/>
+<ellipse xp="25" yp="58" wp="0.75" hr="100" color="#cc252c" opacity="20"/>
+<curve xp1="29" yp1="59" xp2="50" yp2="70" xp3="66" yp3="60.5" sp="0.100" color="#cc252c"/>
+<ellipse xp="29" yp="59" wp="0.75" hr="100" color="#cc252c" opacity="20"/>
+<curve xp1="24" yp1="59" xp2="50" yp2="70" xp3="66" yp3="60.5" sp="0.100" color="#cc252c"/>
+<ellipse xp="24" yp="59" wp="0.75" hr="100" color="#cc252c" opacity="20"/>
+<curve xp1="26" yp1="58" xp2="50" yp2="70" xp3="66" yp3="60.5" sp="0.100" color="#cc252c"/>
+<ellipse xp="26" yp="58" wp="0.75" hr="100" color="#cc252c" opacity="20"/>
+<curve xp1="20" yp1="58" xp2="50" yp2="70" xp3="66" yp3="60.5" sp="0.100" color="#cc252c"/>
+<ellipse xp="20" yp="58" wp="0.75" hr="100" color="#cc252c" opacity="20"/>
+<curve xp1="27.5" yp1="61" xp2="50" yp2="70" xp3="66" yp3="60.5" sp="0.100" color="#cc252c"/>
+<ellipse xp="27.5" yp="61" wp="0.75" hr="100" color="#cc252c" opacity="20"/>
+<curve xp1="25" yp1="60" xp2="50" yp2="70" xp3="66" yp3="60.5" sp="0.100" color="#cc252c"/>
+<ellipse xp="25" yp="60" wp="0.75" hr="100" color="#cc252c" opacity="20"/>
+<curve xp1="18.5" yp1="61" xp2="50" yp2="70" xp3="66" yp3="60.5" sp="0.100" color="#cc252c"/>
+<ellipse xp="18.5" yp="61" wp="0.75" hr="100" color="#cc252c" opacity="20"/>
+<curve xp1="18.5" yp1="62" xp2="50" yp2="70" xp3="66" yp3="60.5" sp="0.100" color="#cc252c"/>
+<ellipse xp="18.5" yp="62" wp="0.75" hr="100" color="#cc252c" opacity="20"/>
+<curve xp1="28" yp1="57" xp2="50" yp2="70" xp3="66" yp3="60.5" sp="0.100" color="#cc252c"/>
+<ellipse xp="28" yp="57" wp="0.75" hr="100" color="#cc252c" opacity="20"/>
+<curve xp1="28" yp1="60" xp2="50" yp2="70" xp3="66" yp3="60.5" sp="0.100" color="#cc252c"/>
+<ellipse xp="28" yp="60" wp="0.75" hr="100" color="#cc252c" opacity="20"/>
+<curve xp1="32" yp1="60.5" xp2="50" yp2="70" xp3="66" yp3="60.5" sp="0.100" color="#cc252c"/>
+<ellipse xp="32" yp="60.5" wp="0.75" hr="100" color="#cc252c" opacity="20"/>
+<curve xp1="32.7" yp1="60.5" xp2="50" yp2="70" xp3="66" yp3="60.5" sp="0.100" color="#cc252c"/>
+<ellipse xp="32.7" yp="60.5" wp="0.75" hr="100" color="#cc252c" opacity="20"/>
+<curve xp1="32" yp1="53.5" xp2="50" yp2="70" xp3="66" yp3="60.5" sp="0.100" color="#cc252c"/>
+<ellipse xp="32" yp="53.5" wp="0.75" hr="100" color="#cc252c" opacity="20"/>
+<curve xp1="34" yp1="51.5" xp2="50" yp2="70" xp3="66" yp3="60.5" sp="0.100" color="#cc252c"/>
+<ellipse xp="34" yp="51.5" wp="0.75" hr="100" color="#cc252c" opacity="20"/>
+<curve xp1="35" yp1="53.5" xp2="50" yp2="70" xp3="66" yp3="60.5" sp="0.100" color="#cc252c"/>
+<ellipse xp="35" yp="53.5" wp="0.75" hr="100" color="#cc252c" opacity="20"/>
+<rect xp="66" yp="60.5" wp="1.5" hr="100" color="black"/>
+<polygon xc="66.00 65.81 65.65 66.12 66.57 66.00 65.43 65.88 66.35 66.19" yc="60.97 60.55 60.12 60.37 60.65 60.66 60.65 60.37 60.12 60.55" color="white"/>
+<text align="e" xp="95" yp="93" sp="4" font="serif">THE TUSKEGEE AIRMEN</text>
+<image name="images/creamers-dream.jpg" xp="15" yp="93" width="331" height="152"/>
+<line xp1="23" yp1="94" xp2="103" yp2="94" sp="3" color="#cc252c" opacity="20"/>
+<image name="images/west-brown.png" xp="30" yp="55" width="1200" height="1200" scale="90"/>
+<image name="images/east-brown.png" xp="70" yp="55" width="1200" height="1200" scale="90"/>
+<text type="block" xp="15" yp="81" wp="70" sp="1.8" >The Tuskegee Airmen came from all over the country—forty of forty-eight states plus the District of Columbia (Over 85%) were represented.</text>
+<text type="block" xp="15" yp="34" wp="70" sp="1.8" >Stationed in Ramitelli, Italy and Sicily, the Tuskegee Airmen amassed an enviable record, flying P-51s, P-47s and other aircraft with the distinctive “Red Tail” markings</text>
+<image name="images/edward-gleed.jpg" caption="Edward C. Gleed, Kansas" xp="25" yp="52" width="870" height="925" scale="12" link="https://en.wikipedia.org/wiki/Edward_C._Gleed" sp="1"/>
+<image name="images/benjamin-davis.jpg" caption="Benjamin O. Davis Jr., Alabama" xp="40" yp="54" width="870" height="925" scale="12" link="https://cafriseabove.org/benjamin-o-davis-jr/" sp="1"/>
+<image name="images/et.jpg" caption="Edward M. Thomas, Illinois" xp="28" yp="68" width="1000" height="770" scale="12" link="https://pioneersofflight.si.edu/content/lt-edward-m-thomas" sp="1"/>
+<image name="images/lee-archer.jpg" caption="Lee A. Archer, New York" xp="40" yp="70" width="1057" height="819" scale="12" link="https://en.wikipedia.org/wiki/Lee_Archer_(pilot)" sp="1"/>
+<image name="images/lowell-stewart.jpg" caption="Lowell Stewart, California" xp="11" yp="58" width="1200" height="1652" scale="7" link="https://en.wikipedia.org/wiki/Lowell_Steward" sp="1"/>
+<polygon xc="25 24 26" yc="59 54.7 54.7" color="#cc252c" opacity="20"/>
+<polygon xc="27 36.5 36.5" yc="57 55 53" color="#cc252c" opacity="20"/>
+<polygon xc="28 27 29" yc="60 65.5 65.5" color="#cc252c" opacity="20"/>
+<polygon xc="31 38 41" yc="60.5 67.5 67.5" color="#cc252c" opacity="20"/>
+<polygon xc="18.5 14 14" yc="58 59 57" color="#cc252c" opacity="20"/>
+<text align="e" xp="64" yp="60.5" sp="1.5" >Ramitelli, Italy,</text>
+<image name="images/rg.jpg" xp="60" yp="50" width="900" height="955" scale="25" link="https://www.loc.gov/item/2007675004/"/>
+<polygon xc="66 65 67" yc="60.5 66.5 66.5" color="#cc252c" opacity="30"/>
+<image name="images/rs.jpg" xp="84.5" yp="55" width="900" height="955" scale="25" link="https://www.loc.gov/item/2017650168/"/>
+<polygon xc="66 77.5 77.5" yc="60.5 57 55" color="#cc252c" opacity="30"/>
+<image name="images/spurgeon-ellington.jpg" xp="66" yp="72" width="650" height="550" scale="40" link="https://cafriseabove.org/spurgeon-neal-ellington/"/>
+<polygon xc="66 60 62" yc="60.5 56 56" color="#cc252c" opacity="30"/>
+<image name="images/lollipoop.jpg" caption="Lollipoop, P-51D" xp="55" yp="20" width="600" height="239" scale="30" link="http://www.americanairmuseum.com/aircraft/21444" sp="1"/>
+<image name="images/daisy-mae.jpg" caption="Daisy Mae, P-51C" xp="65" yp="15" width="600" height="239" scale="30" link="https://www.aviationgraphic.com/aviation-lithographs/966-p-47d-thunderbolt-39-red-tails-gm-56.html" sp="1"/>
+<image name="images/ina.jpg" caption="Ina the Macon Belle, P-51C" xp="75" yp="10" width="600" height="239" scale="30" link="https://en.wikipedia.org/wiki/Lee_Archer_(pilot)" sp="1"/>
+<image name="images/my-buddy.jpg" caption="My Buddy, P-51C" xp="80" yp="18" width="600" height="239" scale="30" link="https://www.starduststudios.com/charles-p-bailey.html" sp="1"/>
+<image name="images/peirson-p-47.jpg" caption="Lt. Peirson P-47D" xp="85" yp="25" width="600" height="250" scale="30" link="https://www.bravobravoaviation.com/en/republic-p-47-thunderbolt/252-p-47d-thunderbolt-1lt-gwynne-peirson-302nd-fs-332nd-fg-tuskegee-airmen-italy-1944.html" sp="1"/>
+<image name="images/nona.jpg" caption="Nona II, P-40" xp="95" yp="23" width="600" height="229" scale="30" link="" sp="1"/>
+<line xp1="60" yp1="21" xp2="100" yp2="21" sp="2" color="#cc252c" opacity="20"/>
+<line xp1="70" yp1="16" xp2="100" yp2="16" sp="2" color="#cc252c" opacity="20"/>
+<line xp1="80" yp1="11" xp2="100" yp2="11" sp="2" color="#cc252c" opacity="20"/>
+<line xp1="85" yp1="19" xp2="100" yp2="19" sp="2" color="#cc252c" opacity="20"/>
+<line xp1="90" yp1="26" xp2="100" yp2="26" sp="2" color="#cc252c" opacity="20"/>
+<image name="images/duc.jpg" caption="Distinguished Unit Citations" xp="30" yp="26" width="600" height="160" scale="25" link="https://en.wikipedia.org/wiki/Presidential_Unit_Citation_(United_States)" sp="1.3"/>
+<text align="c" xp="30" yp="27.5" sp="2" >3</text>
+<text align="c" xp="20" yp="20" sp="2" >8</text>
+<image name="images/purple-heart.png" xp="20" yp="16" width="300" height="677" scale="20" link="https://en.wikipedia.org/wiki/Purple_Heart"/>
+<text align="c" xp="27" yp="20" sp="2" >14</text>
+<image name="images/bronze-star.jpg" xp="27" yp="16" width="300" height="533" scale="25" link="https://en.wikipedia.org/wiki/Bronze_Star_Medal"/>
+<text align="c" xp="34" yp="20" sp="2" >96</text>
+<image name="images/dfc.jpg" xp="34" yp="16" width="300" height="551" scale="25" link="https://en.wikipedia.org/wiki/Distinguished_Flying_Cross_(United_States)"/>
+<text align="c" xp="41" yp="20" sp="2" >744</text>
+<image name="images/air-medal.png" xp="41" yp="16" width="300" height="589" scale="25" link="https://en.wikipedia.org/wiki/Air_Medal"/>
+<list align="center" xp="20" yp="11" sp="1" font="sans" color="" opacity="100" lp="1.2">
+<li>Purple</li>
+<li>Hearts</li>
+</list>
+<list align="center" xp="27" yp="11" sp="1" font="sans" color="" opacity="100" lp="1.2">
+<li>Bronze</li>
+<li>Stars</li>
+</list>
+<list align="center" xp="34" yp="11" sp="1" font="sans" color="" opacity="100" lp="1.2">
+<li>Distinguished</li>
+<li>Flying Crosses</li>
+</list>
+<list align="center" xp="41" yp="11" sp="1" font="sans" color="" opacity="100" lp="1.2">
+<li>Air</li>
+<li>Medals</li>
+</list>
+<image name="images/b17-483.png" xp="30" yp="5.5" width="1288" height="364" scale="24" link="https://www.483bg.org/"/>
+<text align="c" xp="30" yp="2" sp="1.2" >179 bomber escort missions, low 3.9% mission loss rate</text>
+<image name="images/fw-190.jpg" xp="55" yp="5" width="600" height="261" scale="25" link="https://en.wikipedia.org/wiki/Focke-Wulf_Fw_190"/>
+<text align="c" xp="65" yp="2" sp="1.2" >112 enemy aircraft destroyed in the air, 150 on the ground</text>
+<line xp1="50" yp1="7" xp2="60" yp2="3" sp="0.5" color="#cc252c" opacity="20"/>
+<line xp1="50" yp1="3" xp2="60" yp2="7" sp="0.5" color="#cc252c" opacity="20"/>
+<text align="e" xp="98" yp="2" sp="0.7" font="sans" color="#cc252c" opacity="100" link="https://speakerdeck.com/ajstarks">Anthony Starks, @ajstarks</text>
+<text align="e" xp="98" yp="1" sp="0.7" font="sans" color="gray" opacity="100" link="http://www.gaetanmarie.com">Aircraft Illustrations by Gaëtan Marie</text>
+</slide>
+</deck>

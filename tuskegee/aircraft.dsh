@@ -20,7 +20,7 @@
 		cimage "images/lollipoop.jpg" "Lollipoop, P-51D"          p1x p1y planew 239 planescale "http://www.americanairmuseum.com/aircraft/21444" 1
 		cimage "images/daisy-mae.jpg" "Daisy Mae, P-51C"          p2x p2y planew 239 planescale "https://www.aviationgraphic.com/aviation-lithographs/966-p-47d-thunderbolt-39-red-tails-gm-56.html" 1
 		cimage "images/ina.jpg" "Ina the Macon Belle, P-51C"      p3x p3y planew 239 planescale "https://en.wikipedia.org/wiki/Lee_Archer_(pilot)" 1
-		cimage "images/my-buddy.jpg" "My Buddy, P-51C"             p4x p4y planew 239 planescale "https://www.starduststudios.com/charles-p-bailey.html" 1
+		cimage "images/my-buddy.jpg" "My Buddy, P-51C"            p4x p4y planew 239 planescale "https://www.starduststudios.com/charles-p-bailey.html" 1
 		cimage "images/peirson-p-47.jpg" "Lt. Peirson P-47D"      p5x p5y planew 250 planescale "https://www.bravobravoaviation.com/en/republic-p-47-thunderbolt/252-p-47d-thunderbolt-1lt-gwynne-peirson-302nd-fs-332nd-fg-tuskegee-airmen-italy-1944.html" 1
 		cimage "images/nona.jpg" "Nona II, P-40"                  p6x p6y planew 229 planescale "" 1
 		// tails
