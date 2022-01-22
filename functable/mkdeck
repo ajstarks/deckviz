@@ -1,0 +1,2 @@
+#!/bin/sh
+./ft.sh | pdfdeck -stdout -sans timesi - > functab.pdf
