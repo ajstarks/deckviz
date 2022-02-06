@@ -1,7 +1,7 @@
 		curvecolor="#cc252c"
 		etext "THE TUSKEGEE AIRMEN"   95 93 4 "serif"
-		image "images/creamers-dream.jpg" 15 93 331 152
-		hline 23 94 80 3 curvecolor 20 // red trail
+		//image "images/creamers-dream.jpg" 15 93 331 152
+		hline 0 94 100 3 curvecolor 20 // red trail
 
 		// hemispheres
 		midleft=30
