@@ -19,7 +19,7 @@ Date	Name	Unit	Count	Downed	GO #
 7 Feb 1944	2 Lt Leonard M. Jackson	99 FS	1	FW-190	66 XII AF 24 May 44
 7 Feb 1944	1 Lt Clinton B. Mills	99 FS	1	FW-190	66 XII AF 24 May 44
 9 Jun 1944	1 Lt Charles M. Bussy	302 FS	1	ME-109	1473 XV AF 30 Jun 44
-9 Jun 1944	2 Lt Frederick D.Funderburg	301 FS	2	ME-109s	1473 XV AF 30 Jun 44
+9 Jun 1944	2 Lt Frederick D. Funderburg	301 FS	2	ME-109s	1473 XV AF 30 Jun 44
 9 Jun 1944	1 Lt Melvin T. Jackson	302 FS	1	ME-109	1473 XV AF 30 Jun 44
 9 Jun 1944	1 Lt Wendell O. Pruitt	302 FS	1	ME-109	1473 XV AF 30 Jun 44
 12 Jul 1944	1 Lt Harold E. Sawyer	301 FS	1	FW-190	2032 XV AF 23 Jul 44
@@ -43,7 +43,6 @@ Date	Name	Unit	Count	Downed	GO #
 20 Jul 1944	Cpt Armour G. McDaniel	301 FS	1	ME-109	2284 XV AF 3 Aug 44
 20 Jul 1944	Cpt Edward L. Toppins	99 FS	1	ME-109	2484 XV AF 11 Aug 44
 25 Jul 1944	1 Lt Harold E. Sawyer	301 FS	1	ME-109	2284 XV AF 3 Aug 44
-26 Jul 1944	1 Lt Freddie E. Hutchins	302 FS	1	ME-109	2350 XV AF 6 Aug 44
 26 Jul 1944	1 Lt Freddie E. Hutchins	302 FS	1	ME-109	2350 XV AF 6 Aug 44
 26 Jul 1944	1 Lt Leonard M. Jackson	99 FS	1	ME-109	2484 XV AF 11 Aug 44
 26 Jul 1944	2 Lt Roger Romine	302 FS	1	ME-109	2350 XV AF 6 Aug 44
