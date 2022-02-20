@@ -1,0 +1,215 @@
+deck
+	slide
+
+		liney=85
+		timey=liney+5
+		ts=1.2
+		td=1.5
+		lw=ts*1.5
+		tcolor="crimson"
+		topacity=30
+		
+		right=95
+		left=5
+
+		dmin=0
+		dmax=16000
+
+		// timeline 1944-07-02 to 1945-04-26
+		t01=vmap 0 dmin dmax left right	// 1943-07-02
+		t02=vmap 5016 dmin dmax left right	// 1944-01-27
+		t03=vmap 5040 dmin dmax left right	// 1944-01-28
+		t04=vmap 5232 dmin dmax left right	// 1944-02-05
+		t05=vmap 5280 dmin dmax left right	// 1944-02-07
+		t06=vmap 8232 dmin dmax left right	// 1944-06-09
+		t07=vmap 9024 dmin dmax left right	// 1944-07-12
+		t08=vmap 9120 dmin dmax left right	// 1944-07-16
+		t09=vmap 9144 dmin dmax left right	// 1944-07-17
+		t10=vmap 9168 dmin dmax left right	// 1944-07-18
+		t11=vmap 9216 dmin dmax left right	// 1944-07-20
+		t12=vmap 9336 dmin dmax left right	// 1944-07-25
+		t13=vmap 9360 dmin dmax left right	// 1944-07-26
+		t14=vmap 9384 dmin dmax left right	// 1944-07-27
+		t15=vmap 9456 dmin dmax left right	// 1944-07-30
+		t16=vmap 9816 dmin dmax left right	// 1944-08-14
+		t17=vmap 10032 dmin dmax left right	// 1944-08-23
+		t18=vmap 10056 dmin dmax left right	// 1944-08-24
+		t19=vmap 11232 dmin dmax left right	// 1944-10-12
+		t20=vmap 12072 dmin dmax left right	// 1944-11-16
+		t21=vmap 14952 dmin dmax left right	// 1945-03-16
+		t22=vmap 15144 dmin dmax left right	// 1945-03-24
+		t23=vmap 15312 dmin dmax left right	// 1945-03-31
+		t24=vmap 15336 dmin dmax left right	// 1945-04-01
+		t25=vmap 15672 dmin dmax left right	// 1945-04-15
+		t26=vmap 15936 dmin dmax left right	// 1945-04-26
+
+
+		cmin=0
+		cmax=15
+		vmin=0.5
+		vmax=5
+
+		c01=vmap 1 cmin cmax vmin vmax	// 1943-07-02
+		c02=vmap 10 cmin cmax vmin vmax	// 1944-01-27
+		c03=vmap 3 cmin cmax vmin vmax	// 1944-01-28
+		c04=vmap 1 cmin cmax vmin vmax	// 1944-02-05
+		c05=vmap 3 cmin cmax vmin vmax	// 1944-02-07
+		c06=vmap 5 cmin cmax vmin vmax	// 1944-06-09
+		c07=vmap 4 cmin cmax vmin vmax	// 1944-07-12
+		c08=vmap 2 cmin cmax vmin vmax	// 1944-07-16
+		c09=vmap 3 cmin cmax vmin vmax	// 1944-07-17
+		c10=vmap 12 cmin cmax vmin vmax	// 1944-07-18
+		c11=vmap 4 cmin cmax vmin vmax	// 1944-07-20
+		c12=vmap 1 cmin cmax vmin vmax	// 1944-07-25
+		c13=vmap 4 cmin cmax vmin vmax	// 1944-07-26
+		c14=vmap 8 cmin cmax vmin vmax	// 1944-07-27
+		c15=vmap 1 cmin cmax vmin vmax	// 1944-07-30
+		c16=vmap 1 cmin cmax vmin vmax	// 1944-08-14
+		c17=vmap 1 cmin cmax vmin vmax	// 1944-08-23
+		c18=vmap 3 cmin cmax vmin vmax	// 1944-08-24
+		c19=vmap 9 cmin cmax vmin vmax	// 1944-10-12
+		c20=vmap 2 cmin cmax vmin vmax	// 1944-11-16
+		c21=vmap 1 cmin cmax vmin vmax	// 1945-03-16
+		c22=vmap 3 cmin cmax vmin vmax	// 1945-03-24
+		c23=vmap 13 cmin cmax vmin vmax	// 1945-03-31
+		c24=vmap 12 cmin cmax vmin vmax	// 1945-04-01
+		c25=vmap 1 cmin cmax vmin vmax	// 1945-04-15
+		c26=vmap 4 cmin cmax vmin vmax	// 1945-04-26
+
+		ax1=vmap 5 cmin cmax vmin vmax
+		ax2=vmap 10 cmin cmax vmin vmax
+		ax3=vmap 15 cmin cmax vmin vmax
+
+		axy1=ax1+liney
+		axy2=ax2+liney
+		axy3=ax3+liney
+		axl=left-1
+
+		etext "0"   axl liney 0.75
+		etext "5"   axl axy1 0.75
+		etext "10"  axl axy2 0.75
+		rect 50 87 90 5 tcolor 5
+
+
+		vw=0.2
+		vline t01 liney c01 vw tcolor topacity
+		vline t02 liney c02 vw tcolor
+		vline t03 liney c03 vw tcolor
+		vline t04 liney c04 vw tcolor
+		vline t05 liney c05 vw tcolor
+		vline t06 liney c06 vw tcolor
+		vline t07 liney c07 vw tcolor
+		vline t08 liney c08 vw tcolor
+		vline t09 liney c09 vw tcolor
+		vline t10 liney c10 vw tcolor
+		vline t11 liney c11 vw tcolor
+		vline t12 liney c12 vw tcolor
+		vline t13 liney c13 vw tcolor
+		vline t14 liney c14 vw tcolor
+		vline t15 liney c15 vw tcolor
+		vline t16 liney c16 vw tcolor
+		vline t17 liney c17 vw tcolor
+		vline t18 liney c18 vw tcolor
+		vline t19 liney c19 vw tcolor
+		vline t20 liney c20 vw tcolor
+		vline t21 liney c21 vw tcolor
+		vline t22 liney c22 vw tcolor
+		vline t23 liney c23 vw tcolor
+		vline t24 liney c24 vw tcolor
+		vline t25 liney c25 vw tcolor
+		vline t26 liney c26 vw tcolor
+
+		vw=0.5
+		circle t01 liney vw tcolor topacity
+		circle t02 liney vw tcolor topacity
+		circle t03 liney vw tcolor topacity
+		circle t04 liney vw tcolor topacity
+		circle t05 liney vw tcolor topacity
+		circle t06 liney vw tcolor topacity
+		circle t07 liney vw tcolor topacity
+		circle t08 liney vw tcolor topacity
+		circle t09 liney vw tcolor topacity
+		circle t10 liney vw tcolor topacity
+		circle t11 liney vw tcolor topacity
+		circle t12 liney vw tcolor topacity
+		circle t13 liney vw tcolor topacity
+		circle t14 liney vw tcolor topacity
+		circle t15 liney vw tcolor topacity
+		circle t16 liney vw tcolor topacity
+		circle t17 liney vw tcolor topacity
+		circle t18 liney vw tcolor topacity
+		circle t19 liney vw tcolor topacity
+		circle t20 liney vw tcolor topacity
+		circle t21 liney vw tcolor topacity
+		circle t22 liney vw tcolor topacity
+		circle t23 liney vw tcolor topacity
+		circle t24 liney vw tcolor topacity
+		circle t25 liney vw tcolor topacity
+		circle t26 liney vw tcolor topacity
+
+
+
+		line t01 liney t01 timey 0.05
+		line t26 liney t26 timey 0.05
+		ex=30
+		lex=ex-25
+
+		ctext "Tuskegee Airmen: 112 aerial victories between July 1943 to April 1945" 50 94 3
+
+		note0="On 24 March 1944, three advanced Me 262 jet fighters were downed by three separate pilots" 
+		note1="Lt. Lee Archer flying a P-51C “Ina the Macon Belle”, was among the top scoring pilots, downing a total of four ME-109s (one on 18 July 1944, and three in one day, 12 October 1944)"
+		note2="Lt. Edward Toppins and Cpt. Joseph Ellsberry also matched Archer with four victories each (one short of ace)."
+		note3="31 March 1945, the most victories in a single day: 13 aircraft downed."
+
+		
+		text "July 2 1943" left timey ts
+		etext "April 26 1945" right timey ts
+		lcarrow  t22 liney 90 50  40 50 0.1 1 1 tcolor
+		image "images/daisy-mae.jpg" 80 72 600 239 15
+		image "images/creamers-dream.jpg" 75 65 600 239 15
+		image "images/lollipoop.jpg" 60 57 600 239 15
+
+		ax=75
+		ay=38
+
+		textblock note0 67 80 20 1.2 "serif"
+		textblock note1 55 25 35 1.5 "serif"
+		textblock note2 55 13 35 1.5 "serif"
+		textblock note3 85 62 10 1.2 "serif"
+
+		arrow t23 64 t23 liney 0.1 0.75 0.75 tcolor
+		
+		image "images/ina.jpg" ax ay 600 239 45
+		
+		// Downed aircraft
+		list lex 70 3 "sans" "black" 100 2.666
+			li "59"
+			li "44"
+			li "3"
+			li "3"
+			li "1"
+			li "1"
+			li "1"
+		elist
+		lex+=5
+		list lex 70 2.5 "sans" "gray" 100 3.2
+			li "Me 109"
+			li "Fw 190"
+			li "Me 262"
+			li "He 111"
+			li "Re.2001"
+			li "MC.202"
+			li "MC.205"
+		elist
+		image "images/fw-190.jpg"       ex 70 600 261 20
+		image "images/bf-109.jpg"       ex 60 700 253 20
+		image "images/he-111.svg.png"    ex 40 1280 989 10
+		image "images/me-262-a.jpg"     ex 50 1009 310 12
+		image "images/re-2001-152.png"  ex 30 1179 448 9
+		image "images/mc-202-nazi.jpg"  ex 20 1100 385 10
+		image "images/mc-205v.png"      ex 10 979 263 12
+
+		curvecolor="crimson"
+		include "credits.dsh"
+	eslide
+edeck
