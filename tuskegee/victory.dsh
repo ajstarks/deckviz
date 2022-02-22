@@ -152,13 +152,12 @@ deck
 		line t01 liney t01 timey 0.05
 		line t26 liney t26 timey 0.05
 		ex=30
-		lex=ex-25
 
 		ctext "Tuskegee Airmen: 112 aerial victories between July 1943 to April 1945" 50 94 3
 
 		note0="On 24 March 1944, three advanced Me 262 jet fighters were downed by three separate pilots" 
-		note1="Lt. Lee Archer flying a P-51C “Ina the Macon Belle”, was among the top scoring pilots, downing a total of four ME-109s (one on 18 July 1944, and three in one day, 12 October 1944)"
-		note2="Lt. Edward Toppins and Cpt. Joseph Ellsberry also matched Archer with four victories each (one short of ace)."
+		note1="Lt. Lee Archer flying a P-51C “Ina the Macon Belle”, was among the top scoring pilots, downing a total of four Me 109s (one on 18 July 1944, and three in one day, 12 October 1944)"
+		note2="Lt. Edward Toppins and Cpt. Joseph Ellsberry also matched Archer with four victories each."
 		note3="31 March 1945, the most victories in a single day: 13 aircraft downed."
 
 		
@@ -180,31 +179,31 @@ deck
 		arrow t23 64 t23 liney 0.1 0.75 0.75 tcolor
 		
 		image "images/ina.jpg" ax ay 600 239 45
-		
+		//lcarrow 67 35  50  40 35 70 0.1 1 1 tcolor 
 		// Downed aircraft
-		list lex 70 3 "sans" "black" 100 2.666
-			li "59"
-			li "44"
-			li "3"
-			li "3"
-			li "1"
-			li "1"
-			li "1"
-		elist
-		lex+=5
-		list lex 70 2.5 "sans" "gray" 100 3.2
-			li "Me 109"
-			li "Fw 190"
-			li "Me 262"
-			li "He 111"
-			li "Re.2001"
-			li "MC.202"
-			li "MC.205"
-		elist
+		lex=left+2
+		etext "59" lex 70 3
+		etext "44" lex 60 3
+		etext "3"  lex 50 3
+		etext "3"  lex 40 3
+		etext "1"  lex 30 3
+		etext "1"  lex 20 3
+		etext "1"  lex 10 3
+
+		lex+=4
+
+		text "Me 109" lex 70 2.5 "sans" "gray"
+		text "Fw 190" lex 60 2.5 "sans" "gray"
+		text "Me 262" lex 50 2.5 "sans" "gray"
+		text "He 111" lex 40 2.5 "sans" "gray"
+		text "Re.2001" lex 30 2.5 "sans" "gray"
+		text "MC.202" lex 20 2.5 "sans" "gray"
+		text "MC.205" lex 10 2.5 "sans" "gray"
+
 		image "images/fw-190.jpg"       ex 70 600 261 20
 		image "images/bf-109.jpg"       ex 60 700 253 20
-		image "images/he-111.svg.png"    ex 40 1280 989 10
 		image "images/me-262-a.jpg"     ex 50 1009 310 12
+		image "images/he-111.svg.png"   ex 40 1280 989 10
 		image "images/re-2001-152.png"  ex 30 1179 448 9
 		image "images/mc-202-nazi.jpg"  ex 20 1100 385 10
 		image "images/mc-205v.png"      ex 10 979 263 12
