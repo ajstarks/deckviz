@@ -1,0 +1,16 @@
+deck
+	slide
+		ctext "2022 Academy Award Best Picture Nominees" 50 96 2
+		//vline 50 0 100 0.1
+		//hline 0 50 100 0.1
+		opts="-bar -textsize=0.85 -color=#666666 -barwidth=3"
+		rect 25 75 50 50 "green" 10
+		rect 75 75 50 50 "blue" 10
+		rect 25 25 50 50 "red"  10
+		rect 75 25 50 50 "orange" 10
+		dchart opts -left=5  -right=45 -top=85 -bottom=55 -yrange=0,180,30 -bgcolor=black "budget.d"
+		dchart opts -left=55 -right=95 -top=85 -bottom=55 "photo-days.d"
+		dchart opts -left=5  -right=45 -top=35 -bottom=5 -yrange=0,1200,400 "crew-size.d"
+		dchart opts -left=55 -right=95 -top=35 -bottom=5 -yrange=0,80,20 "post-prod.d"
+	eslide
+edeck
