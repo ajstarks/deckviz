@@ -1,0 +1,55 @@
+deck
+	// awk -F$'\t' -f colors.awk hf-sorted.d  > grid.dsh
+	import "down.dsh"
+	import "up.dsh"
+	import "same.dsh"
+	cccolor="#0b8ca6"
+	eacolor="#0b631e"
+	eecolor="#eac91a"
+	lacolor="#a60018"
+	mecolor="#f0e9ce"
+	nacolor="#e89313"
+	occolor="#a63e3e"
+	sacolor="#8d8475"
+	sscolor="#143f83"
+	wecolor="#222222"
+	slide
+
+		grid "grid.dsh" 30 93 6 6 95
+
+		ll=7
+		ls=1.2
+		text "Human Freedom Index 2021" 30 97 2.5
+		text "Middle East, North Africa"	ll 84.6 ls "sans"
+		text "Sub-Saharan Africa"			ll 82.6 ls "sans"
+		text "Caucasus, Central Asia"		ll 80.6 ls "sans"
+		text "East Asia"					ll 78.6 ls "sans"
+		text "South Asia"					ll 76.6 ls "sans"
+		text "Oceania"						ll 74.6 ls "sans"
+		text "North America"				ll 72.6 ls "sans"
+		text "Latin America, Caribbean"		ll 70.6 ls "sans"
+		text "Eastern Europe"				ll 68.6 ls "sans"
+		text "Western Europe"				ll 66.6 ls "sans"
+
+		ll=5
+		square ll 85 1.5 mecolor
+		square ll 83 1.5 sscolor
+		square ll 81 1.5 cccolor
+		square ll 79 1.5 eacolor
+		square ll 77 1.5 sacolor
+		square ll 75 1.5 occolor
+		square ll 73 1.5 nacolor
+		square ll 71 1.5 lacolor
+		square ll 69 1.5 eecolor
+		square ll 67 1.5 wecolor
+
+		down  ""  5  93 3 9.11 wecolor wecolor
+		up    ""   10 93  3 9.11 wecolor wecolor
+		same "CHE" 15 93  3 9.11 wecolor "white"
+		text "decrease" 5 89 1
+		text "increase"   10 89 1
+		text "same" 15 89 1
+		text "score/country" 18.5 91 0.75
+
+	eslide
+edeck

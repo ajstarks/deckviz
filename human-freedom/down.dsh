@@ -1,0 +1,19 @@
+def down Name X Y Size Score Color TextColor
+	s2=Size/2
+	p1=(X,Y)
+	p2=(X,Y-Size)
+	p3=(X+Size,Y-Size)
+	p4=(X+Size,Y)
+	p5=(X+s2,Y-s2)
+	polygon "p1_x p2_x p3_x p4_x p5_x" "p1_y p2_y p3_y p4_y p5_y" Color
+
+	ss=format "%.2f" Score
+	ts=Size*0.2
+	tx=p3_x-0.5
+	ty=p3_y+0.5
+	sx=tx
+	sy=ty+ts
+	
+	etext Name tx ty ts "serif" TextColor
+	etext ss   sx sy ts "sans" TextColor
+edef

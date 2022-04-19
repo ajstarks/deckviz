@@ -1,0 +1,12 @@
+def country Name X Y Size Score Color TextColor
+	h=Size*0.3
+	h2=Size*0.1
+	sy=Y-h
+	tx=X
+	ty=Y-h2
+	ts=Size*0.2
+	ss=format "%.2f" Score
+	square X Y Size Color
+	text  Name tx ty  ts "serif" TextColor
+	text  ss   tx sy  ts "sans" TextColor
+edef
