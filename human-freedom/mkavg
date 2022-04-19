@@ -1,0 +1,12 @@
+#!/bin/sh
+FILE=hf-sorted.d
+awk -F$'\t' '$3 == "Caucasus & Central Asia" {sum+=$2; n++} END {print "Caucasus & Central Asia" "\t" sum/n}' $FILE
+awk -F$'\t' '$3 == "East Asia" {sum+=$2; n++} END {print "East Asia" "\t" sum/n}' $FILE
+awk -F$'\t' '$3 == "Eastern Europe" {sum+=$2; n++} END {print "Eastern Europe" "\t" sum/n}' $FILE
+awk -F$'\t' '$3 == "Latin America & the Caribbean" {sum+=$2; n++} END {print "Latin America & the Caribbean" "\t" sum/n}' $FILE
+awk -F$'\t' '$3 == "Middle East & North Africa" {sum+=$2; n++} END {print "Middle East & North Africa" "\t" sum/n}' $FILE
+awk -F$'\t' '$3 == "North America" {sum+=$2; n++} END {print "North America" "\t" sum/n}' $FILE
+awk -F$'\t' '$3 == "Oceania" {sum+=$2; n++} END {print "Oceania"  "\t" sum/n}' $FILE
+awk -F$'\t' '$3 == "South Asia" {sum+=$2; n++} END {print "South Asia" "\t" sum/n}' $FILE
+awk -F$'\t' '$3 == "Sub-Saharan Africa" {sum+=$2; n++} END {print "Sub-Saharan Africa"  "\t" sum/n}' $FILE
+awk -F$'\t' '$3 == "Western Europe" {sum+=$2; n++} END {print "Western Europe" "\t" sum/n}' $FILE

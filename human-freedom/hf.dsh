@@ -3,53 +3,62 @@ deck
 	import "down.dsh"
 	import "up.dsh"
 	import "same.dsh"
-	cccolor="#0b8ca6"
-	eacolor="#0b631e"
-	eecolor="#eac91a"
-	lacolor="#a60018"
-	mecolor="#f0e9ce"
-	nacolor="#e89313"
-	occolor="#a63e3e"
-	sacolor="#8d8475"
-	sscolor="#143f83"
-	wecolor="#222222"
+
 	slide
+		cccolor="#0b8ca6"
+		eacolor="#0b631e"
+		eecolor="#eac91a"
+		lacolor="#a60018"
+		mecolor="#f0e9ce"
+		nacolor="#e89313"
+		occolor="#a63e3e"
+		sacolor="#8d8475"
+		sscolor="#143f83"
+		wecolor="#222222"
 
-		grid "grid.dsh" 30 93 6 6 95
+		gx=33
+		text "Human Freedom Index 2021" gx 97 2.5
+		grid "grid.dsh" gx 94.5 6 6 95
 
-		ll=7
+		x=4
 		ls=1.2
-		text "Human Freedom Index 2021" 30 97 2.5
-		text "Middle East, North Africa"	ll 84.6 ls "sans"
-		text "Sub-Saharan Africa"			ll 82.6 ls "sans"
-		text "Caucasus, Central Asia"		ll 80.6 ls "sans"
-		text "East Asia"					ll 78.6 ls "sans"
-		text "South Asia"					ll 76.6 ls "sans"
-		text "Oceania"						ll 74.6 ls "sans"
-		text "North America"				ll 72.6 ls "sans"
-		text "Latin America, Caribbean"		ll 70.6 ls "sans"
-		text "Eastern Europe"				ll 68.6 ls "sans"
-		text "Western Europe"				ll 66.6 ls "sans"
+		square x 85 1.5 mecolor
+		square x 83 1.5 sscolor
+		square x 81 1.5 cccolor
+		square x 79 1.5 eacolor
+		square x 77 1.5 sacolor
+		square x 75 1.5 occolor
+		square x 73 1.5 nacolor
+		square x 71 1.5 lacolor
+		square x 69 1.5 eecolor
+		square x 67 1.5 wecolor
 
-		ll=5
-		square ll 85 1.5 mecolor
-		square ll 83 1.5 sscolor
-		square ll 81 1.5 cccolor
-		square ll 79 1.5 eacolor
-		square ll 77 1.5 sacolor
-		square ll 75 1.5 occolor
-		square ll 73 1.5 nacolor
-		square ll 71 1.5 lacolor
-		square ll 69 1.5 eecolor
-		square ll 67 1.5 wecolor
+		x+=2
+		text "Middle East, North Africa"	x 84.6 ls "sans"
+		text "Sub-Saharan Africa"			x 82.6 ls "sans"
+		text "Caucasus, Central Asia"		x 80.6 ls "sans"
+		text "East Asia"					x 78.6 ls "sans"
+		text "South Asia"					x 76.6 ls "sans"
+		text "Oceania"						x 74.6 ls "sans"
+		text "North America"				x 72.6 ls "sans"
+		text "Latin America, Caribbean"		x 70.6 ls "sans"
+		text "Eastern Europe"				x 68.6 ls "sans"
+		text "Western Europe"				x 66.6 ls "sans"
 
-		down  ""  5  93 3 9.11 wecolor wecolor
-		up    ""   10 93  3 9.11 wecolor wecolor
-		same "CHE" 15 93  3 9.11 wecolor "white"
-		text "decrease" 5 89 1
-		text "increase"   10 89 1
-		text "same" 15 89 1
-		text "score/country" 18.5 91 0.75
+		x=3
+		x1=x+7
+		x2=x1+7
+
+		down  ""    x  93 3 9.11 wecolor wecolor
+		up    ""    x1 93  3 9.11 wecolor wecolor
+		same "CHE"  x2 93  3 9.11 wecolor "white"
+		text "decrease"   x 89 1
+		text "increase"   x1 89 1
+		text "same"       x2 89 1
+		etext "score/country" 26 91 0.75
+
+		text "Average Score per Region" x 53 1.5
+		dchart -textsize 1.2 -vcolor=slate -datafmt=%.2f -ls=1.8 -left=3 -right=30 -top 50 -bottom 20 -wbar avg.d
 
 	eslide
 edeck

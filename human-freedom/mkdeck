@@ -1,0 +1,2 @@
+#!/bin/sh
+decksh hf.dsh |pdf -grid 0 -serif NotoSans-Bold -sans NotoSans-Regular -pagesize 1200x1200
