@@ -1,0 +1,2 @@
+#!/bin/sh
+decksh juneteenth.dsh|pdfdeck -pagesize 1950,1200 -stdout - > juneteenth.pdf
