@@ -1,0 +1,162 @@
+deck
+	canvas 1000 1000
+	slide "#cccccc" "black"
+		
+		rw=60
+		rh=rw*0.545
+		ddo=20
+		ddi=ddo-0.4
+		dx=65
+		dy=50
+
+		orw=rw+1
+		orh=rh+1
+		rect   50 50 orw orh
+		rect   50 50 rw rh "white"
+		circle dx dy ddo "black"
+		circle dx dy ddi "white"
+
+		sddo=ddo*0.30
+		sddi=sddo-0.3
+		circle dx dy sddo "black"
+		circle dx dy sddi "#d2d2ca"
+
+		nr=ddo/2
+		nr+=1.5
+		dts=1.5
+
+		nr2=nr*2
+		//circle dx dy nr2 "black" 10
+
+		// 90
+		p=polar dx dy nr 65
+		rtext "90" p_x p_y 330 dts
+
+		// 110
+		p=polar dx dy nr 115
+		rtext "110" p_x p_y 20 dts
+
+		// 150
+		p=polar dx dy nr 160
+		rtext "150" p_x p_y 65 dts
+
+		// 0
+		p=polar dx dy nr 180
+		rtext "0" p_x p_y 90 dts
+
+		// 70
+		p=polar dx dy nr 350
+		rtext "70" p_x p_y 260 dts
+
+		// 75
+		p=polar dx dy nr 10
+		rtext "75" p_x p_y 275 dts
+
+		// 65
+		p=polar dx dy nr 320
+		rtext "65" p_x p_y 220 dts 
+
+		// 60
+		p=polar dx dy nr 275
+		rtext "60" p_x p_y 180 dts
+
+		// 55
+		p=polar dx dy nr 230
+		rtext "55" p_x p_y 135 dts
+
+		ncolor="orangered"
+		p=polar dx dy nr 45
+		rtext "20" p_x p_y 310 dts "sans" ncolor
+
+		// 22
+		p=polar dx dy nr 97
+		rtext "22" p_x p_y 0 dts "sans" ncolor
+
+		// 24
+		p=polar dx dy nr 130
+		rtext "24" p_x p_y 30 dts "sans" ncolor
+
+		// 15
+		p=polar dx dy nr 200
+		rtext "15" p_x p_y 110 dts "sans" ncolor
+
+		// 16
+		p=polar dx dy nr 250
+		rtext "16" p_x p_y 155 dts "sans" ncolor
+
+		// 17
+		p=polar dx dy nr 295
+		rtext "17" p_x p_y 200 dts "sans" ncolor
+
+		// 18
+		p=polar dx dy nr 335
+		rtext "18" p_x p_y 235 dts "sans" ncolor
+
+		nr=ddo/2
+		p1=polar dx dy nr 60
+		nr-=3
+		p2=polar dx dy nr 60
+		line p1_x p1_y p2_x p2_y 0.4
+
+		nr=ddo/2
+		p1=polar dx dy nr 300
+		nr-=3
+		p2=polar dx dy nr 300
+		line p1_x p1_y p2_x p2_y 0.4
+
+		nr=ddo/2
+		p1=polar dx dy nr 180
+		p2_x=p1_x+2
+		p2_y=p1_y+1
+		p3_x=p2_x
+		p3_y=p1_y-1
+
+		polygon "p1_x p2_x p3_x"  "p1_y p2_y p3_y" "black"
+
+
+
+		x1=22.5
+		x2=48
+		xi=2.5
+		cy=61.5
+		for x=x1 x2 xi
+			circle x cy 1 "black"
+		efor
+		cy-=2.5
+		for x=x1 x2 xi
+			circle x cy 1 "black"
+		efor
+		cy-=2.5
+		for x=x1 x2 xi
+			circle x cy 1 "black"
+		efor
+		cy-=2.5
+		for x=x1 x2 xi
+			circle x cy 1 "black"
+		efor
+		cy-=2.5
+		for x=x1 x2 xi
+			circle x cy 1 "black"
+		efor
+		cy-=2.5
+		for x=x1 x2 xi
+			circle x cy 1 "black"
+		efor
+		cy-=2.5
+		for x=x1 x2 xi
+			circle x cy 1 "black"
+		efor
+		cy-=2.5
+		for x=x1 x2 xi
+			circle x cy 1 "black"
+		efor
+		cy-=2.5
+		for x=x1 x2 xi
+			circle x cy 1 "black"
+		efor
+		cy-=2.5
+		for x=x1 x2 xi
+			circle x cy 1 "black"
+		efor
+	eslide
+edeck
