@@ -43,6 +43,7 @@
 * speed -- Comparison of Indy 500 speed data
 * stockgrid -- stocks using seasonal palette
 * swd -- Examples from "Storytelling with Data"
+* t3 -- Dieter Rams T3 Radio (1958)
 * tailscale -- TailScale style diagrams
 * thomas -- Iris, Tulips, Jonquils, and Crocuses, 1969, Alma Thomas
 * toni -- Toni Morrison quote from Charlie Rose Interview, 1993
