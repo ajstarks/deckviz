@@ -1,0 +1,2 @@
+#!/bin/sh
+decksh t3.dsh|pdfdeck -stdout -pagesize 1000x1000 -sans NotoMono-Regular - > t3.pdf
