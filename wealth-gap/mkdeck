@@ -1,0 +1,2 @@
+#!/bin/sh
+decksh wg.dsh|pdfdeck -stdout -pagesize 1000x1000 -sans PublicSans-Regular $* - > wg.pdf

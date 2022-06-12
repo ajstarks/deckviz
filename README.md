@@ -52,6 +52,7 @@
 * voyager -- the Voyager spacecraft
 * warlife -- How much of your life has the U.S. been at war
 * weather -- Weather trends
+* wg -- U.S. Wealth Gap
 
 Each directory has the '.dsh' scripts, associated data files, and rendered output in PDF and PNG formats.
 
