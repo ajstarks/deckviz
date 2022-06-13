@@ -4,6 +4,6 @@ deck
 		text "Blacks" 5 70 2
 		text "Whites" 5 40 2
 		image "17c.jpg" 55 50 100 0
-		ctext "Source: Wealth of Two Nations, The U.S. Racial Wealth Gap, 1860-2020, Darenoncourt, Kim, Kuhn, Schularick, 2022" 50 5 1.5
+		ctext "Source: Wealth of Two Nations, The U.S. Racial Wealth Gap, 1860-2020, Darenoncourt, Kim, Kuhn, Schularick, 2022" 50 5 1.5 "sans" "" 100 "https://t.co/NsBjzJwkNy"
 	eslide
 edeck
