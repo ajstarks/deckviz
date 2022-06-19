@@ -3,6 +3,7 @@
 ### Contents
 
 * 2020election -- 2020 Election
+* aapl -- Apple 2018 Results
 * absense -- Theaster Gates from "Black Art: Absence of Light"
 * aid -- International aid as defined in the #SWDchallenge
 * aapl -- Apple financial results
@@ -13,46 +14,51 @@
 * bp -- Blood Pressure and Heart Rate
 * c19 -- COVID-19
 * ceo-stock -- The relationship of CEO tenure to stock price
-* covid-usa -- Covid data
 * complex-table -- charts and tables
+* covid-usa -- Covid data
 * cyano -- #RecreationThursday -- Will Creech grid
 * diptych -- American Diptych
+* domestica -- Output from the Domestica course "Data Visualization and Information Design"
 * elections -- elections through the years
-* em -- CO2 Emissions (from Domesitica Data Visualization course)
 * fam -- family trees
 * festival -- Stage from the 1969 Harlem Cultural Festival
 * fire -- German wildfires
 * flag -- Flags
+* functable -- Mathematical Functions Table
 * go -- go built from arcs and lines
 * gomod -- go build flows
 * hlito -- Hlito for #RecreationThursday
+* human-freedom -- Remix of Human Freedom Index visualization
 * iam -- "I AM A MAN" poster
 * juneteenth -- Juneteenth flag
-* gomod -- Go module flows
 * lynch -- "A Man Was Lynched" poster
 * messiah -- A passage from Handel's Messiah
 * middle -- the Middle Passage
+* mlb -- Major League Baseball Brackets
 * modelt -- Manufacturing and Marketing the Model T - 1908-1916
 * multigen -- Multi-generational households
 * nba -- NBA standings
 * netflix -- Netflix viewing frequency
-* odita -- #recreationthursday from Odili Donald Odita 
+* odita -- #recreationthursday from Odili Donald Odita
+* oscars -- 2022 Academy Awards
 * prison -- Comparing the rate of incarceration vs. US presidential terms
 * qs --  Quadratspirale schwarz, 1952 (#RecreationThursday)
 * reqheader -- Request headers diagram
 * speed -- Comparison of Indy 500 speed data
 * stockgrid -- stocks using seasonal palette
+* stolen -- The Stolen Series
 * swd -- Examples from "Storytelling with Data"
 * t3 -- Dieter Rams T3 Radio (1958)
 * tailscale -- TailScale style diagrams
 * thomas -- Iris, Tulips, Jonquils, and Crocuses, 1969, Alma Thomas
 * toni -- Toni Morrison quote from Charlie Rose Interview, 1993
+* top-netflix -- Netflix viewing data
 * tuskegee -- The Tuskegee Airmen
 * ur -- quote from Jenkins' "Underground Railroad"
 * voyager -- the Voyager spacecraft
 * warlife -- How much of your life has the U.S. been at war
+* wealth-gap -- US Wealth Gap
 * weather -- Weather trends
-* wg -- U.S. Wealth Gap
 
 Each directory has the '.dsh' scripts, associated data files, and rendered output in PDF and PNG formats.
 
