@@ -44,6 +44,7 @@
 * prison -- Comparing the rate of incarceration vs. US presidential terms
 * qs --  Quadratspirale schwarz, 1952 (#RecreationThursday)
 * reqheader -- Request headers diagram
+* slave -- African Slave Routes
 * speed -- Comparison of Indy 500 speed data
 * stockgrid -- stocks using seasonal palette
 * stolen -- The Stolen Series
