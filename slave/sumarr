@@ -1,0 +1,2 @@
+#!/bin/sh
+csvread f g < routes.csv | sort | awk '{year[$1] += $2} END {for (x in year) { print x "\t" year[x]}}'

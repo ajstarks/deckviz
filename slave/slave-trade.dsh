@@ -1,0 +1,9 @@
+deck
+	slide "black" "silver"
+	text "African Slave Trade, 1514 – 1866" 5 90 3 "serif"
+	text "People transported per year"      5 85 1 "serif"
+	text "Source: American Slavery and Juneteenth, Tidy Tuesday, 2022-06-21" 5 5 1 "serif" "" 100 "https://github.com/rfordatascience/tidytuesday/blob/master/data/2022/2022-06-21/slave_routes.csv"
+	opts="-xlabel=20 -vol -color=crimson -lcolor=silver -line=f -bar=f -val=f -yaxis  -yrange=0,80000,20000"
+	dchart opts arr.d
+	eslide
+edeck
