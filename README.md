@@ -31,6 +31,7 @@
 * human-freedom -- Remix of Human Freedom Index visualization
 * iam -- "I AM A MAN" poster
 * juneteenth -- Juneteenth flag
+* lamp -- Bauhaus lamp
 * lynch -- "A Man Was Lynched" poster
 * messiah -- A passage from Handel's Messiah
 * middle -- the Middle Passage
