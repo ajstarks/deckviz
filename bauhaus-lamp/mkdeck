@@ -1,0 +1,4 @@
+#!/bin/sh
+decksh lamp.dsh > lamp.xml
+pdfdeck lamp.xml
+pngdeck lamp.xml

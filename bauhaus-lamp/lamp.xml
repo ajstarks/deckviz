@@ -1,0 +1,16 @@
+<deck>
+<slide>
+<arc xp="50" yp="70" wp="40" hp="40" a1="0" a2="200"/>
+<arc xp="50" yp="70" wp="40" hp="40" a1="340" a2="360"/>
+<line xp1="31" yp1="60" xp2="69" yp2="60" sp="1.5" color="silver"/>
+<line xp1="34" yp1="8" xp2="66" yp2="8" sp="3" color="green" opacity="20"/>
+<line xp1="50" yp1="45" xp2="50" yp2="51" sp="6" color="silver"/>
+<line xp1="50" yp1="50" xp2="50" yp2="59" sp="8" color="silver"/>
+<line xp1="50" yp1="15" xp2="50" yp2="45" sp="6" color="gray" opacity="20"/>
+<line xp1="50" yp1="15" xp2="50" yp2="45" sp="2" color="black" opacity="20"/>
+<line xp1="50" yp1="10" xp2="50" yp2="15" sp="6" color="silver"/>
+<line xp1="45" yp1="55" xp2="47" yp2="55" sp="2" color="silver"/>
+<line xp1="45" yp1="30" xp2="45" yp2="55" sp="0.2"/>
+<ellipse xp="45" yp="30" wp="1.5" hr="100"/>
+</slide>
+</deck>
