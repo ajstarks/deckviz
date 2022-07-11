@@ -1,0 +1,4 @@
+#!/bin/sh
+decksh hsv.dsh > hsv.xml
+pdfdeck hsv.xml
+pngdeck hsv.xml

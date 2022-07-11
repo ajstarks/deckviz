@@ -1,0 +1,10 @@
+def hv X1 X2 V
+	lx=X1+10
+	ly=V-0.5
+	label=format "%g" V
+	ctext label lx ly 1.5
+	color=format "hsv(0,%g,100)" V
+	circle X1 V 2 color
+	color=format "hsv(0,100,%g)" V
+	circle X2 V 2 color
+edef

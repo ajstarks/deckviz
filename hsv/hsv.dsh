@@ -1,0 +1,29 @@
+deck
+	import "hf.dsh"
+	import "hv.dsh"
+
+	slide "black" "white"
+
+		ctext "Hue" 30 50 1.5
+		for h=0 350 10
+			hf 30 50 20 h 3
+		efor
+	
+		ctext "Saturation"      70 97.5 1.5
+		ctext "Value"           90 97.5 1.5
+		for v=10 90 5
+			hv 70 90 v
+		efor
+
+	eslide
+
+	slide
+		square 20 80 20 "hsv(0,100,100)"
+		square 50 80 20 "hsv(0,50,100)"		
+		square 80 80 20 "hsv(0,20,100)"
+
+		square 20 40 20 "rgb(255,0,0)"
+		square 50 40 20 "rgb(255,0,0)" 50	
+		square 80 40 20 "rgb(255,0,0)" 20
+	eslide
+edeck

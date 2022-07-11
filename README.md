@@ -28,6 +28,7 @@
 * go -- go built from arcs and lines
 * gomod -- go build flows
 * hlito -- Hlito for #RecreationThursday
+* hsv -- HSV color model
 * human-freedom -- Remix of Human Freedom Index visualization
 * iam -- "I AM A MAN" poster
 * juneteenth -- Juneteenth flag

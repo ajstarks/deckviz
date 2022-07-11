@@ -1,0 +1,12 @@
+def hf X Y R T Ds
+	r=R+5
+	a=format "%g" T
+	lw=Ds/4
+	ts=Ds*0.5
+	color=format "hsv(%g,100,100)" T
+	p =  polar X Y R  T
+	p2 = polar X Y r T
+	circle p_x p_y Ds  color
+	ctext a p2_x p2_y ts
+	line p_x p_y p2_x p2_y lw color 50
+edef
