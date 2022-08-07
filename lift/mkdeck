@@ -1,0 +1,2 @@
+#!/bin/sh
+decksh lift.dsh | pdfdeck -stdout -serif timesi - > lift.pdf

@@ -1,0 +1,11 @@
+// 6 star row
+for x=7 40 6
+	star x sy 5 inner outer scolor
+efor
+sy-=sincr
+
+// 5 star row
+for x=10 35 6
+	star x sy 5 inner outer scolor
+efor
+sy-=sincr

@@ -1,0 +1,40 @@
+deck
+	slide "black" "white"
+		ts=2.6
+		l1=40
+		l2=l1-35
+		l3=l2+10
+		yincr=9.5
+		top=85
+
+		y=top
+		tcolor="white"
+		text "Lift every voice and sing, Till earth and heaven ring."            l1 y ts "serif" tcolor
+		y-=yincr
+		text "Ring with the harmonies of Liberty. Let our rejoicing"             l1 y ts "serif" tcolor
+		y-=yincr
+		text "rise, high as the listening skies, Let it resound loud"            l1 y ts "serif" tcolor
+		y-=yincr
+		text "as the rolling sea.  Sing a song full of the faith that"           l1 y ts "serif" tcolor
+		y-=yincr
+		text "that the dark past has taught us.   Sing a song  full of the hope  that the present has"  l2 y ts "serif" tcolor
+		y-=yincr
+		text "brought us. Facing the rising sun of our new day begun. Let us march on till victory"   l2 y ts "serif" tcolor
+		y-=yincr
+		text "is won."                                                                                l2 y ts "serif" tcolor
+		text " Negro National Anthem  —   James Weldon Johnson   —  1900"                             l3 y 3 "serif" tcolor
+
+		// stars
+		scolor="white"
+		inner=0.5
+		outer=inner*3
+		sincr=3.6
+		sy=top+1
+		for i=1 4
+			include "starow.dsh"
+		efor
+		for x=7 40 6
+			star x sy 5 inner outer scolor
+		efor
+	eslide
+edeck
