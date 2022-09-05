@@ -33,6 +33,7 @@
 * iam -- "I AM A MAN" poster
 * juneteenth -- Juneteenth flag
 * lamp -- Bauhaus lamp
+* lift -- Lift every voice and sing
 * lynch -- "A Man Was Lynched" poster
 * messiah -- A passage from Handel's Messiah
 * middle -- the Middle Passage
@@ -43,6 +44,7 @@
 * netflix -- Netflix viewing frequency
 * odita -- #recreationthursday from Odili Donald Odita
 * oscars -- 2022 Academy Awards
+* pic -- diagrams from pic
 * prison -- Comparing the rate of incarceration vs. US presidential terms
 * qs --  Quadratspirale schwarz, 1952 (#RecreationThursday)
 * reqheader -- Request headers diagram

@@ -1,0 +1,111 @@
+deck
+	slide
+		ts=2
+		ts2=ts/2
+		ty=75
+		sy=ty+ts2
+		sw=15
+		sh=sw/2
+		op=20
+		op1=op/2
+		color="black"
+
+		arrt=0.1
+		arrw=2
+		arrh=2
+
+		ctext   "document"   10 ty ts
+		ctext   "PIC"        30 ty ts
+		ctext   "TBL/EQN"    50 ty ts
+		ctext   "TROFF"      70 ty ts
+		ctext   "typesetter" 90 ty ts
+		ellipse 10 sy sw sh color op
+		rect    30 sy sw sh color op
+		rect    50 sy sw sh color op1
+		rect    70 sy sw sh color op
+		ellipse 90 sy sw sh color op
+		arrow   17  sy 23 sy arrt arrw arrh color
+		arrow   37  sy 43 sy arrt arrw arrh color
+		arrow   57  sy 63 sy arrt arrw arrh color
+		arrow   77  sy 83 sy arrt arrw arrh color
+
+		ts=1.5
+		arrlen=10
+		arrt=0.1
+		arrw=2
+		arrh=2
+
+		// Disk
+		dx=25       // Begin X location
+		midy=25     // Begin Y location
+
+		ty=midy-1
+		dsize=7
+		dsize2=dsize/2
+		dend=dx+dsize2
+		ar1x=dend+arrlen
+		arrlen2=arrlen*0.4
+		dlx=dend+arrlen2
+		dly1=midy+1
+		dly2=midy-2
+		dlts=ts*0.9
+
+		// CPU
+		cx=dx+18
+		cw=10
+		cw2=cw/2
+		ch=cw*.7
+		ch2=ch/2
+		cend=cx+cw2
+		ar2x=cend+arrlen
+
+		// cpu input arrow
+		carrlen=15
+		ctop=midy+ch2
+		carrtop=ctop+carrlen
+
+		// CRT
+		crtx2=ar2x+3
+		crth=5
+		crtw=7
+		crtw2=crtw/2
+		crtx3=crtx2+crtw
+		crty1=midy+1
+		crty2=midy-1
+		crttop=midy+crth
+		crtbot=midy-crth
+		crtlx=crtx3-crtw2
+
+		// paper
+		plen=20
+		px=crtx3+1
+		py1=midy-plen
+		py2=midy+plen
+		plx=px+1
+
+		rx1=px-1
+		rx2=px+1
+		ry=py2-8
+		rs=2
+		rlx=rx2+rs
+
+
+		circle  dx midy dsize "red"
+		arrow   dend midy ar1x midy arrt arrw arrh
+		rect    cx midy cw ch "blue"
+		arrow   cend midy ar2x midy arrt arrw arrh
+		arrow   cx carrtop cx ctop arrt arrw arrh
+		polygon "ar2x crtx2 crtx3 crtx3 crtx2 ar2x" "crty1 crty1 crttop crtbot crty2 crty2" "green"
+		arrow   px py1 px py2 arrt arrw arrh
+		circle  rx1 ry rs
+		circle  rx2 ry rs
+		ctext   "DISK" dx ty ts "sans" "white"
+		ctext   "character" dlx dly1 dlts
+		ctext   "defns"     dlx dly2 dlts
+		ctext   "input"     cx carrtop ts
+		ctext   "CPU"       cx ty ts "sans" "white"
+		ctext   "CRT"       crtlx  ty ts "sans" "white"
+		btext   "rollers"   rlx ry ts
+		btext   "paper"     plx py1 ts
+	eslide
+edeck
