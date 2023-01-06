@@ -1,0 +1,30 @@
+deck
+	ix=50
+	iy=33
+	svx=ix+3
+	svy=iy+8
+	svcolor="tan"
+	tx=3
+	ts=1
+	tts=ts*2
+	blurb="Seneca Village was established in 1825, becoming an enclave for Black Americans seeking to own property and build a community, until it was razed to build Central Park in 1857. By 1855, the enclave was home to 225 residents, its population was made up of"
+	bounds="Seneca Village was bounded by 82nd and 86th Streets, between 7th and 8th Avenues (Central Park West). Its area was 5% of present-day Central Park."
+	makeup="The Village contained over fifty homes, a school and three churches.  Half of the homes were owned by Black New Yorkers, giving them the right to vote."
+	popcompare="compared to the overall percentage of Black people in New York City over time:"
+	popts="-textsize=1 -pwidth=2.5 -pmap -left=3 -right=25 -top=80 -val=f -title=f -color=tan"
+	nopts="-textsize=1 -xlabel=2  -line -linewidth=0.15 -vol -bar=f  -top=68 -bottom=60 -left=3 -right=30  -title=f -color=tan"
+
+	slide "linen"
+		ctext    "Geography and demographics of Seneca Village" 52 7 tts
+		textblock blurb      tx 92 25 ts
+		textblock popcompare tx 75 25 ts
+		textblock bounds     37 54 30 ts
+		textblock makeup     75 75 20 ts
+		dbrace svx 47 40 2 2 0.1
+		image "sv-1856.png" svx 75 40 0
+		image "cpmap.png" ix  iy 95 0
+		hline 46 svy 14 6.5 svcolor 60
+		dchart popts senecapop.d 
+		dchart nopts -csv -csvcol=date,bpct nypop-pct.csv
+	eslide
+edeck

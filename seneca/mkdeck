@@ -1,0 +1,2 @@
+#!/bin/bash
+decksh seneca.dsh|pdfdeck -stdout -sans Baskervville-Italic  - > seneca.pdf
