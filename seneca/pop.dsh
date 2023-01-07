@@ -1,0 +1,87 @@
+deck
+	bgcolor="linen"
+	txcolor="black"
+	slide bgcolor txcolor
+		opts="-min=0 -max=100 -yrange=0,100,20 -csv -grid -vol -bar=f -title=f -datafmt=%.1f -yaxis -val"
+		ctext "Comparative Percent White and Black Population of New York City, 1790-2020" 50 92 2
+		etext "Source: US Census," 25 10 1 "sans" "gray" 100 "https://www2.census.gov/library/working-papers/2005/demo/pop-twps0076/nytab.xls"
+		btext "Wikipedia"          25.5 10 1 "sans" "gray" 100 "https://en.wikipedia.org/wiki/Demographic_history_of_New_York_City"
+		etext "White" 50 50 1.5 "sans" "white"
+		etext "Black" 15 32 1.5 "sans" "white"
+		dchart  opts -csvcol=date,bpct -color=black  n.csv
+		dchart  opts -csvcol=date,wpct -color=gray   n.csv
+	eslide
+
+	slide bgcolor txcolor
+		opts="-min=0 -max=6e6 -val=f -csv -vol -bar=f -title=f -yaxis -grid -yrange=0,6e6,1e6"
+		ctext "White and Black Population of New York City, 1790-1920" 50 92 2
+		text "Source: US Census" 10 10 1 "sans" "gray" 100 "https://www2.census.gov/library/working-papers/2005/demo/pop-twps0076/nytab.xls"
+		text "White" 90 75 1.5 "sans" "gray"
+		text "Black" 90 30 1.5 "sans" "black"
+		dchart  opts -csvcol=date,bpop -color=black  nypop.csv
+		dchart  opts -csvcol=date,wpop -color=gray   nypop.csv
+	eslide
+
+	slide bgcolor txcolor
+		opts="-min=0 -max=100 -yrange=0,100,20 -csv -scatter -vol -bar=f -title=f -datafmt=%.1f%%"
+		ctext "Comparative Percent White and Black Population of New York City, 1900-2020" 50 92 2
+		text "Source: Wikipedia" 10 10 1 "sans" "gray" 100 "https://en.wikipedia.org/wiki/Demographic_history_of_New_York_City"
+		etext "White" 7 75 1.5 "sans" "gray"
+		etext "Black" 7 35 1.5 "sans" "black"
+		dchart  opts -csvcol=date,bpct -color=black  nycpop.csv
+		dchart  opts -csvcol=date,wpct -color=gray   nycpop.csv
+	eslide
+
+	slide bgcolor txcolor
+		opts="-min=0 -max=7e6 -val=f -csv -vol -dot -bar=f -title=f -yaxis -grid -yrange=0,7e6,1e6"
+		ctext "White and Black Population of New York City, 1900-2022" 50 92 2
+		text "Source: US Census" 10 10 1 "sans" "gray" 100 "https://en.wikipedia.org/wiki/Demographic_history_of_New_York_City"
+		text "White" 92 47 1.5 "sans" "gray"
+		text "Black" 92 35 1.5 "sans" "black"
+		dchart  opts -csvcol=date,bpop -color=black  nycpop.csv
+		dchart  opts -csvcol=date,wpop -color=gray   nycpop.csv
+	eslide
+
+	slide bgcolor txcolor
+		opts="-min=0 -max=9e6 -val=f -csv -vol -volop=10 -line -bar=f -title=f -yaxis -grid -yrange=0,9e6,1e6"
+		ctext "New York City Population: White and Black, 1900-2022" 50 92 2
+		text "Source: US Census" 10 10 1 "sans" "gray" 100 "https://en.wikipedia.org/wiki/Demographic_history_of_New_York_City"
+		text "White" 92 45 1.5 "sans" "gray"
+		text "Black" 92 35 1.5 "sans" "black"
+		text "Total" 92 78 1.5 "sans" "darkblue"
+		dchart  opts -csvcol=date,pop -color=darkblue  nycpop.csv
+		dchart  opts -csvcol=date,bpop -color=black    nycpop.csv
+		dchart  opts -csvcol=date,wpop -color=gray     nycpop.csv
+	eslide
+
+	slide bgcolor txcolor
+		opts="-min=0 -max=9 -val=f -csv -vol -volop=10 -bar=f -title=f -yaxis -grid -yrange=0,9,2"
+		ctext "New York City Population: White and Black, 1900-2022" 50 92 3
+		text "Source: US Census" 10 10 1 "sans" "gray" 100 "https://en.wikipedia.org/wiki/Demographic_history_of_New_York_City"
+		text "White" 92 45 1.5 "sans" "gray"
+		text "Black" 92 35 1.5 "sans" "black"
+		text "Total" 92 78 1.5 "sans" "darkblue"
+		dchart  opts -csvcol=date,pop  -color=black nycpopm.csv
+		dchart  opts -csvcol=date,bpop -color=black nycpopm.csv
+		dchart  opts -csvcol=date,wpop -color=black nycpopm.csv
+	eslide
+
+	slide bgcolor txcolor
+		opts="-min=0 -max=100 -xlast -yrange=0,100,25 -csv -dot  -vol -bar=f -title=f -datafmt=%.1f"
+		ctext "White/Black Population Percentage 1820-1990: New York Boroughs" 50 92 3
+		btext "Brooklyn" 10 80 2
+		dchart opts -xlabel=2 -top=75 -bottom=55 -csvcol=date,wpct -color=gray  brklyn.csv
+		dchart opts -xlabel=0 -top=75 -bottom=55 -csvcol=date,bpct -color=black brklyn.csv
+
+		btext "Manhattan" 10 35 2
+		dchart opts -xlabel=2 -top=30 -bottom=10 -csvcol=date,wpct -color=gray  mh.csv
+		dchart opts -xlabel=0 -top=30 -bottom=10 -csvcol=date,bpct -color=black mh.csv
+
+		ctext "White" 40 70 1
+		ctext "Black" 85 57 1 "sans" "white"
+		ctext "White" 40 20 1 "sans"
+		ctext "Black" 85 11 1 "sans" "white"
+
+	eslide
+
+edeck
