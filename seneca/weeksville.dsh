@@ -1,0 +1,54 @@
+deck
+	bgcolor="linen"
+	txcolor="black"
+	p1=(30,90)
+	p2=(70,90)
+	p3=(70,37)
+	p4=(46,16)
+	p5=(30,10)
+
+	// Map wedge
+	w1=(30,10)
+	w2=(46,16)
+	w3=(71,37)
+	w4=(71,10)
+
+	h1=(53,69)
+	h2=(60.5,69)
+	h3=(60.5,66)
+	h4=(53,66)
+
+	hf=(58,68)    // Hunterfly road house
+	jwh=(38.5,80) // James Weeks House
+	imx=85
+	dotsize=0.50
+	linesize=0.05
+	ts=1
+	tts=ts*2
+	opts="-min=0 -max=100 -xlast -textsize=1 -yaxis -yrange=0,100,25 -scatter -csv -dot=f  -vol -volop=30 -val=f -bar=f -title=f -datafmt=%.1f"
+	slide bgcolor txcolor
+		blurb="Founded in 1835, by James Weeks, a formerly enslaved stevedore from Virginia, Weeks seized the opportunity to acquire land, allowing Black New Yorkers to exercise voting rights."
+		location="Located in the Crown Heights neighborhood of Brooklyn, the Weeksville Area is bounded by Fulton Street to the north, Troy Avenue to the east, Ralph Avenue on the west, and New York Avenue on the south"
+
+		ctext    "Weeksville Area, Brooklyn, New York" 50 7 tts
+		image    "weeksville07.png" 50 50 40 0
+		polygon  "w1_x w2_x w3_x w4_x" "w1_y w2_y w3_y w4_y" bgcolor
+
+		cimage   "Hunterfly_road_houses.jpg" "Hunterfly Road Houses"       imx hf_y 20 0 100 "https://brooklynrelics.blogspot.com/2014/10/weeksville-and-hunterfly-road-houses.html" 1
+		cimage   "hunterfly-1922.jpg"        "Hunterfly Road Houses, 1922" imx 40   20 0 100 "https://www.bklynlibrary.org/blog/2017/02/15/hunterfly-road-houses" 1
+		textbox  location 5 75 20 ts "serif"
+		textbox  blurb    5 65 20 ts "serif"
+		circle   jwh_x jwh_y dotsize "red"
+		ctext    "James Weeks' Home" 38.5 78 ts
+		line     jwh_x jwh_y 28 jwh_y linesize "red"
+		line     28 jwh_y 28 65 linesize "red"
+		circle   hf_x hf_y    dotsize "red"
+		hline    hf_x hf_y 17 linesize "red"
+
+		text "White/Black Population of Brooklyn 1920-1990" 5 47 1
+		text "White" 10 42 0.75
+		text "Black" 25 36 0.75 "sans" "white"
+		dchart opts -xlabel=2 -left=5 -right=27 -top=45 -bottom=35 -csvcol=date,wpct -color=gray  brklyn.csv
+		dchart opts -xlabel=0 -left=5 -right=27 -top=45 -bottom=35 -csvcol=date,bpct -color=black brklyn.csv
+	eslide
+edeck

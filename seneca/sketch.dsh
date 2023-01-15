@@ -1,0 +1,68 @@
+	slide
+		cpw=90			// Central Park Width (4km)
+		cph=cpw/5		// Central Park Height (0.8km one fifth the width)
+		svh=cph*0.33	// Seneca Village height = 0.33 of the height of Central Park
+		svw=svh*2		// Senaca Village width (2x its height)
+
+		cx=50
+		cy=50
+
+		w2=cpw/2
+		bcp=cx-w2
+		bcp2=cpw*0.524	// Seneca village is centered approximately halfway up
+		sx=bcp+bcp2
+
+		h2=cph/2 		// Seneca village is centered approximately 16% in
+		bsv=cy+h2
+		bsv2=cph*0.16
+		sy=bsv-bsv2
+
+		svcolor="black"
+		cpcolor="green"
+
+		rect cx cy cpw cph cpcolor
+		rect sx sy  svw svh svcolor
+
+		ll=5
+		
+		X=cx-w2
+		Y=cy+h2
+		vline X Y ll
+		Y+=ll
+		ctext "59th" X Y 2
+
+		X=cx+w2
+		ctext "110th" X Y 2
+		Y-=ll
+		vline X Y ll
+
+
+		
+		w2=svw/2
+		h2=svh/2
+		X=sx-w2
+		Y=sy+h2
+		vline X Y ll
+		Y+=ll
+		ctext "82nd" X Y 1
+		X+=svw
+		ctext "89th" X Y 1
+		Y-=ll
+		vline X Y ll
+
+	eslide
+
+	slide "#9ec7f3"
+		image "nyc.png" 50 50 75 0
+	eslide
+
+	slide "black" "white"
+		is=15
+		iy=80
+		image "nyc.png" 10 iy is 0
+		image "nyc.png" 30 iy is 0
+		image "nyc.png" 50 iy is 0
+		image "nyc.png" 70 iy is 0
+		image "nyc.png" 90 iy is 0
+		image "nyc.png" 50 40 30 0
+	eslide
