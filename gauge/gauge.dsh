@@ -1,0 +1,40 @@
+def gauge Value Label Fmt Ts Cx Cy R Min Max
+	lts=Ts*0.6
+	tsd=lts*1.1
+	rad=R/2
+	tsh=lts/2
+	ts2=lts*0.75
+	rad2=rad-tsh
+	rad3=rad+tsd
+
+	// compute value angle
+	a=vmap Value Min Max 180 0
+	pv=polar Cx Cy rad  a  // Value
+	p2=polar Cx Cy rad2 a  // Line
+	p3=polar Cx Cy rad3 a  // Label
+
+	// Gauge elements: 
+	// value, line, enclosing arc
+	circle pv_x pv_y ts2 "red"
+	lw=ts2*0.4
+	line   Cx   Cy p2_x p2_y lw "gray" 20
+	arc    Cx   Cy R R 0 180 lts "gray" 20
+
+	// Value Label
+	vals=format Fmt Value
+	ctext vals p3_x p3_y lts
+
+	// Min, Max labels
+	lx=Cx-rad
+	ly=Cy-ts2
+	mins=format "%v" Min
+	maxs=format "%v" Max
+	ctext mins lx ly lts
+	lx=Cx+rad
+	ctext maxs lx ly lts
+
+	// Gauge label
+	lx=Cx
+	ly=Cy-Ts
+	ctext Label lx ly Ts
+edef

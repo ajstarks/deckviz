@@ -1,0 +1,37 @@
+deck
+	import "gauge.dsh"
+	min=0
+	max=100
+	slide
+		labelcolor="rgb(75,75,75)"
+		size=5
+		x=50
+		y=50
+		width=40
+		label="Measure"
+		fmt="%v"
+		gauge 25 label fmt size x y width min max
+		ctext "min"            30 40 2 "mono" labelcolor
+		ctext "max"            70 40 2 "mono" labelcolor
+		ctext "label (size)"   50 40 2 "mono" labelcolor
+		ctext "value (fmt)"    24 72 2 "mono" labelcolor
+		ctext "(x,y)"          50 50 2 "mono" labelcolor
+		ctext "width"          50 30 2 "mono" labelcolor
+		dbrace 50 35 40 2 2 0.1
+		ctext `gauge 25 "Measure" fmt size x y width min max` 50 20 3 "mono" labelcolor
+	eslide
+	slide
+		gauge 20 "Item 1" "%v"   3 20 70 20 min max
+		gauge 50 "Item 2" "%v"   3 50 70 20 min max
+		gauge 80 "Item 3" "%v"   3 80 70 20 min max
+
+		min=10
+		max=50
+		r1=random min max
+		r2=random min max
+		r3=random min max
+		gauge r1 "A"      "%.1f" 3 20 20 20 min max
+		gauge r2 "B"      "%.2f" 3 50 20 20 min max
+		gauge r3 "C"      "%.3f" 3 80 20 20 min max
+	eslide
+edeck
