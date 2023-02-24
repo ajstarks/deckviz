@@ -20,6 +20,20 @@ deck
 		dbrace 50 35 40 2 2 0.1
 		ctext `gauge 25 "Measure" fmt size x y width min max` 50 20 3 "mono" labelcolor
 	eslide
+
+	slide
+		gauge 90 "Temp"     "%v °C" 2 10 50 10 50 150
+		gauge 2  "RPMx1000" "%v"    3 33 50 30  1 6
+		gauge 80 "km/h"     "%v"    3 66 50 30  0 220
+		gauge 60 "Fuel"     "%v%%"  2 90 50 10  0 100
+	eslide
+
+	slide
+		gauge 4     "RPMx1000" "%v"    3 12 50 20  1 7
+		gauge 100   "MPH"      "%v"    4 50 50 40 0 120
+		gauge 10    "Fuel"    "%v%%"   3 88 50 20 0 100
+	eslide
+
 	slide
 		gauge 20 "Item 1" "%v"   3 20 70 20 min max
 		gauge 50 "Item 2" "%v"   3 50 70 20 min max
