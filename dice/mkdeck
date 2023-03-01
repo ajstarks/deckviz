@@ -1,0 +1,2 @@
+#!/bin/sh
+decksh schooling.dsh|pdfdeck -stdout -sans Charter - > f.pdf

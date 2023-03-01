@@ -1,0 +1,6 @@
+def dice2 X Y Dist Dotsize
+	p1=polar X Y Dist 135
+	p2=polar X Y Dist 225
+	circle p1_x p1_y Dotsize "black"
+	circle p2_x p2_y Dotsize "black"
+edef "black"

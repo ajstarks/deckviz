@@ -1,0 +1,11 @@
+def dice X Y Dist Dotsize
+	p1=polar X Y Dist 45
+	p2=polar X Y Dist 135
+	p3=polar X Y Dist 225
+	p4=polar X Y Dist 315
+	circle X Y Dotsize "black"
+	circle p1_x p1_y Dotsize "black"
+	circle p2_x p2_y Dotsize "black"
+	circle p3_x p3_y Dotsize "black"
+	circle p4_x p4_y Dotsize "black"
+edef

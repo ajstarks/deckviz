@@ -1,0 +1,126 @@
+deck
+	import "dice.dsh"
+	import "dice2.dsh"
+	import "dice3.dsh"
+	import "dice1.dsh"
+
+	tleft=10
+	dleft=tleft+25
+	vskip=7
+	ts=2
+	ts2=ts*0.75
+	top=93
+	bot=100-top
+	botry=bot+5
+	dicesize=1.5
+	dotsize=dicesize/2
+	title1="DAYS OF SCHOOLING PER YEAR"
+	title2="IF EACH NEGRO CHILD OF SCHOOL AGE GOT HIS SHARE"
+	subtitle="Each dot represents one day of schooling for one child"
+	sidenote="NEGRO YEAR BOOK 1916-17"
+	slide
+
+		// Title
+		y=top
+		ctext title1 50 y ts
+		y-=4
+		ctext title2 50 y ts
+		y-=4
+		hline tleft y 80 0.1
+		ctext subtitle 50 bot ts2
+		hline tleft botry 80 0.1
+		y-=10
+		rtext sidenote 97 60 270 ts2
+	
+		// MD
+		text "MARYLAND"			tleft y ts
+		ctext "57" 92 y ts
+		y+=1
+		for x=dleft 85 5
+			dice x y dicesize dotsize
+		efor
+		dice2 90 y dicesize dotsize
+		y-=vskip
+
+		// NC
+		text "NORTH CAROLINA"	tleft y ts
+		ctext "50" 90 y ts
+		y+=1
+		for x=dleft 85 5
+			dice x y dicesize dotsize
+		efor
+		y-=vskip
+
+		// GA
+		text "GEORGIA"			tleft y ts
+		ctext "48" 85 y ts
+
+		y+=1
+		for x=dleft 75 5
+			dice x y dicesize dotsize
+		efor
+		dice3 80 y dicesize dotsize
+		y-=vskip
+
+		// VA
+		text "VIRGINIA"			tleft y ts
+		ctext "47" 82 y ts
+		y+=1
+		for x=dleft 75 5
+			dice x y dicesize dotsize
+		efor
+		dice2 80 y dicesize dotsize
+
+		y-=vskip
+
+		// TX
+		text "TEXAS"			tleft y ts
+		ctext "47" 82 y ts
+		y+=1
+		for x=dleft 75 5
+			dice x y dicesize dotsize
+		efor
+		dice2 80 y dicesize dotsize
+		y-=vskip
+
+		// FL
+		text "FLORIDA"			tleft y ts
+		ctext "43" 80 y ts
+		y+=1
+		for x=dleft 70 5
+			dice x y dicesize dotsize
+		efor
+		dice3 75 y dicesize dotsize
+
+		y-=vskip
+
+		// AL
+		text "ALABAMA"			tleft y ts
+		ctext "27" 62 y ts
+		y+=1
+		for x=dleft 55 5
+			dice x y dicesize dotsize
+		efor
+		dice2 60 y dicesize dotsize
+		y-=vskip
+
+		// SC
+		text "SOUTH CAROLINA"	tleft y ts
+		ctext "26" 62 y ts
+		y+=1
+		for x=dleft 55 5
+			dice x y dicesize dotsize
+		efor
+		dice1 60 y dicesize dotsize
+		y-=vskip
+
+		// LA
+		text "LOUISIANA"		tleft y ts
+		ctext "23" 60 y ts
+		y+=1
+		for x=dleft 50 5
+			dice x y dicesize dotsize
+		efor
+		dice3 55 y dicesize dotsize
+	eslide
+edeck

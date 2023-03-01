@@ -1,0 +1,4 @@
+def dice1 X Y Dist Dotsize
+	p1=polar X Y Dist 135
+	circle p1_x p1_y Dotsize "black"
+edef
