@@ -1,0 +1,5 @@
+gift -edge -emboss -sobel -pixelate 5
+gift -edge  -threshold 30 
+gift -threshold 30
+gift  -sobel 
+gift  -sobel  dubois01.png | gift -invert

@@ -1,0 +1,1 @@
+decksh d.dsh|pdfr -pagesize 900x900 -grid 0

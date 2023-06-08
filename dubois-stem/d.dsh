@@ -1,0 +1,66 @@
+deck
+	imx=7
+	ims=80
+	vims=12
+	ts=3
+
+	lw=0.5
+	lcolor="crimson"
+	slide "black" "white"
+		//image "blue-outline.png" 55 50 ims 0
+		ctext "Du Bois SERVE Project" 55 50 5
+		image "tlogo.png" 55 72 30 0
+		curve 60 93 28 94  24 70 lw lcolor
+		line  24 70 24 65 lw lcolor
+		line  24 65 23 57 lw lcolor
+		curve 23 57 25 55 25 52 lw lcolor
+		curve 25 52 22 47 22 45 lw lcolor
+		curve 22 45 22 42 21 40 lw lcolor
+		curve 21 40 20 35 26 35 lw lcolor
+		curve 26 35 22 30 29 28 lw lcolor
+		curve 29 28 27 25 30 23 lw lcolor
+		curve 30 23 25 15 32  7 lw lcolor
+		curve 32  7 37  7 40 12 lw lcolor
+		curve 40 12 65 20 85 35 lw lcolor
+		curve 85 35 84 41 85 45 lw lcolor
+		curve 60 93 85 93 90 70 lw lcolor
+		curve 90 70 96 52 85 45 lw lcolor
+	eslide
+
+	slide "black" "white"
+		image "dubois-mono.png" 55 50 ims 0
+		image "tlogo.png" 35 72 22  0
+		image "tpop.png"  55 70 25 0
+		image "tpv.png"   80 72 25 0
+		rtext "Du Bois SERVE Project" 10 5 90 5
+	eslide
+
+
+	slide "black" "white"
+		image "dubois-mono.png" 55 50 ims 0
+		include "logos.dsh"
+	eslide
+
+	slide "#4d3d1f" "white"
+		image "dubois01.png" 55 50 ims 0
+		include "logos.dsh"
+	eslide
+
+
+	slide  "#4d3d1f" "white"
+	
+		image "dubois01.png" 55 50 ims 0
+		include "logos.dsh"
+	eslide
+
+	slide "black" "white"
+		
+		image "dubois-bw-abstract.png" 55 50 ims 0
+		include "logos.dsh"
+	eslide
+
+	slide "black" "white"
+		image "pix.png" 55 50 ims 0
+		include "logos.dsh"
+	eslide
+edeck
