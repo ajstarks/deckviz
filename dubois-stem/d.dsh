@@ -10,22 +10,16 @@ deck
 		//image "blue-outline.png" 55 50 ims 0
 		ctext "Du Bois SERVE Project" 55 50 5
 		image "tlogo.png" 55 72 30 0
-		curve 60 93 28 94 24 70 lw lcolor // top of the head
-		curve 24 70 24 66 24 65 lw lcolor // brow 1
-		curve 24 65 22 60 23 57 lw lcolor // brow2 
-		curve 23 57 25 55 25 52 lw lcolor // eye
-		curve 25 52 22 47 22 45 lw lcolor // nose 1
-		curve 22 45 22 42 21 40 lw lcolor // nose 2
-		curve 21 40 20 35 26 35 lw lcolor // nose 3
-		curve 26 35 22 30 29 28 lw lcolor // nose 4
-		curve 29 28 27 25 30 23 lw lcolor // hair 1
-		curve 30 23 25 15 32  7 lw lcolor // lip
-		curve 32  7 37  7 40 12 lw lcolor // hair 2
-		curve 40 12 65 20 85 35 lw lcolor // hair 3
-		curve 85 35 84 41 85 45 lw lcolor 
-		curve 60 93 85 93 90 70 lw lcolor
-		curve 90 70 96 52 85 45 lw lcolor
+		include "outline.dsh"
 	eslide
+
+	slide "linen" "black"
+		//image "blue-outline.png" 55 50 ims 0
+		ctext "Du Bois SERVE Project" 55 50 5
+		image "tlogo.png" 55 72 30 0
+		include "outline.dsh"
+	eslide
+
 
 	slide "black" "white"
 		include "sil.dsh"
@@ -51,12 +45,6 @@ deck
 	eslide
 
 	slide "#4d3d1f" "white"
-		image "dubois01.png" 55 50 ims 0
-		include "logos.dsh"
-		rtext "Du Bois SERVE Project" imx 5 90 ts
-	eslide
-
-	slide  "#4d3d1f" "white"
 		image "dubois01.png" 55 50 ims 0
 		include "logos.dsh"
 		rtext "Du Bois SERVE Project" imx 5 90 ts
