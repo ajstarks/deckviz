@@ -1,0 +1,170 @@
+deck
+	cfont="serif" // Charter-Regular
+	ts=1.1
+	titlesize=ts*4
+	tw=24
+	c1=23
+	c2=c1+33
+	hlcolor="maroon"
+	hlop=20
+
+	gody=80
+	negroy=gody-15
+	pridey=negroy-10
+	servicey=pridey-17
+	devily=servicey-18
+
+	peacey=80
+	libertyy=peacey-15
+	trainy=libertyy-15
+	patiencey=trainy-18
+
+	tf=0.5 	// adjustment for highlight text baseline
+	godhy=gody+tf
+	negrohy=negroy+tf
+	pridehy=pridey+tf
+	servicehy=servicey+tf
+	devilhy=devily+tf
+
+	peacehy=peacey+tf
+	libertyhy=libertyy+tf
+	trainhy=trainy+tf
+	patiencehy=patiencey+tf
+
+	// length of the highlight; adjust for different fonts
+	godhl=7.5
+	negrohl=20
+	pridehl=22
+	servicehl=9
+	devilhl=10
+	peacehl=15
+	libertyhl=16
+	trainhl=17
+	patiencehl=13.5
+
+
+	god="I believe in God who made of one blood all races that dwell on earth. I believe that all men, black and brown and white, are brothers,  varying through Time and Opportunity, in form and gift and feature, but differing in no essential particular, and alike in soul and  in the possibility of infinite development."
+	negro="Especially do I believe in the Negro Race; in the beauty of its genius, the sweetness of its soul, and its strength in that meekness which shall yet inherit this turbulent earth."
+	pride="I believe in pride of race and lineage and self; in pride of self so deep as to scorn injustice to other selves; in pride of lineage so great as to despise no man's father; in pride of race so chivalrous as neither to offer bastardy to the weak, not beg wedlock of the strong, knowing that men may be brothers in Christ, even as though they be not brothers-in-law."
+	service="I believe in Service — humble reverent service from the blackening of boots to  the whitening of souls; for Work is Heaven, Idleness Hell, and  Wage is the “Well Done!” of the Master who summoned all them that labor and are heavy laden, making no distinction between the black sweating cotton-hands of Georgia and the First Families of Virginia, since all distinction  not based on deed is devilish and not divine."
+	devil="I believe in the Devil and his angels, who wantonly work to narrow the opportunity of struggling human beings, especially if they be black; who spit in the faces of the fallen, strike then that cannot strike again, believe the worst and work to prove it, hating the image which their Maker stamped on a brother's soul."
+	peace="I believe in the Prince of Peace. I believe that War is Murder. I believe that armies and navies are at bottom the tinsel and braggadocia of oppression and wrong; and I believe that the wicked conquest of weaker and darker nations by nations whiter and stronger but foreshadows the death of that strength."
+	training="I believe in the training of children, black even as white; the leading out of little souls into the green pastures and beside the still waters, not for pelt or peace, but for Life lit by some large vision of beauty and goodness  and truth; lest we forget, and the sons of the fathers, like Esau, for mere meat barter their birthright in a mighty nation."
+	liberty="I believe in the Liberty for all men; the space to stretch their arms and their souls; the right to breathe and the right to vote, the freedom to choose their friends, enjoy the sunshine and ride on the railroads, uncursed by color; thinking, dreaming, working as they will in a kingdom of God and love."
+	patience="Finally, I believe in Patience — patience with the weakness of the Weak and the strength of the Strong, the prejudice of the Ignorant and the ignorance of the  Blind; patience with the tardy triumph of Joy and the mad chastening of  Sorrow — patience with God."
+	
+
+	god1="who made of one blood all races that dwell on earth. I believe that all men, black and brown and white, are brothers,  varying through Time and Opportunity, in form and gift and feature, but differing in no essential particular, and alike in soul and  in the possibility of infinite development."
+	negro1="in the beauty of its genius, the sweetness of its soul, and its strength in that meekness which shall yet inherit this turbulent earth."
+	pride1="and lineage and self; in pride of self so deep as to scorn injustice to other selves; in pride of lineage so great as to despise no man's father; in pride of race so chivalrous as neither to offer bastardy to the weak, not beg wedlock of the strong, knowing that men may be brothers in Christ, even as though they be not brothers-in-law."
+	service1="humble reverent service from the blackening of boots to  the whitening of souls; for Work is Heaven, Idleness Hell, and  Wage is the “Well Done!” of the Master who summoned all them that labor and are heavy laden, making no distinction between the black sweating cotton-hands of Georgia and the First Families of Virginia, since all distinction  not based on deed is devilish and not divine."
+	devil1="and his angels, who wantonly work to narrow the opportunity of struggling human beings, especially if they be black; who spit in the faces of the fallen, strike then that cannot strike again, believe the worst and work to prove it, hating the image which their Maker stamped on a brother's soul."
+	peace1="I believe that War is Murder. I believe that armies and navies are at bottom the tinsel and braggadocia of oppression and wrong; and I believe that the wicked conquest of weaker and darker nations by nations whiter and stronger but foreshadows the death of that strength."
+	liberty1="the space to stretch their arms and their souls; the right to breathe and the right to vote, the freedom to choose their friends, enjoy the sunshine and ride on the railroads, uncursed by color; thinking, dreaming, working as they will in a kingdom of God and love."
+	train1="black even as white; the leading out of little souls into the green pastures and beside the still waters, not for pelt or peace, but for Life lit by some large vision of beauty and goodness  and truth; lest we forget, and the sons of the fathers, like Esau, for mere meat barter their birthright in a mighty nation."
+	patience1="patience with the weakness of the Weak and the strength of the Strong, the prejudice of the Ignorant and the ignorance of the  Blind; patience with the tardy triumph of Joy and the mad chastening of  Sorrow — patience with God."
+
+
+	slide "linen" "black"
+		ctext "CREDO"           			50 90 titlesize cfont
+		ctext "by W. E. Burghardt Du Bois"	50 87 ts cfont
+		textblock god						c1 gody tw ts cfont
+		textblock negro						c1 negroy tw ts cfont
+		textblock pride						c1 pridey tw ts cfont
+		textblock service					c1 servicey tw ts cfont
+		textblock devil     				c1 devily tw ts cfont
+
+		textblock peace     				c2 peacey tw ts cfont
+		textblock liberty					c2 libertyy tw ts cfont
+		textblock training					c2 trainy tw ts cfont
+		textblock patience					c2 patiencey tw ts cfont
+	
+		hline c1 godhy godhl				ts hlcolor hlop
+		hline c1 negrohy negrohl			ts hlcolor hlop
+		hline c1 pridehy pridehl			ts hlcolor hlop
+		hline c1 servicehy servicehl		ts hlcolor hlop
+		hline c1 devilhy devilhl			ts hlcolor hlop
+
+		hline c2 peacehy peacehl 			ts hlcolor hlop
+		hline c2 libertyhy libertyhl		ts hlcolor hlop
+		hline c2 trainhy trainhl			ts hlcolor hlop
+		hline c2 patiencehy patiencehl 		ts hlcolor hlop
+	eslide
+
+	slide "linen" "black"
+		c1=15
+		c2=c1+25
+		c3=c2+27
+		r1=75
+		r2=r1-20
+		r3=r2-25
+		tw=20
+
+		ctext "CREDO"           			50 90 titlesize cfont
+		ctext "by W. E. Burghardt Du Bois"	50 87 ts cfont
+		textblock god 		c1 r1 tw ts cfont
+		textblock negro 	c2 r1 tw ts cfont
+		textblock pride 	c3 r1 tw ts cfont
+
+		textblock service 	c1 r2 tw ts cfont
+		textblock devil 	c2 r2 tw ts cfont
+		textblock peace 	c3 r2 tw ts cfont
+
+		textblock liberty 	c1 r3 tw ts cfont
+		textblock training 	c2 r3 tw ts cfont
+		textblock patience 	c3 r3 tw ts cfont
+	eslide
+
+
+	hs=5
+	mid=50
+	hy=72
+	ts=hs*0.6
+	tx=18
+	ty=hy-10
+	tw=60
+	slide "linen" "black"
+		ctext "I believe in God" mid hy hs cfont hlcolor
+		textblock god1 tx ty tw ts cfont
+	eslide
+
+	slide "linen" "black"
+		ctext "Especially do I believe in the Negro race;" mid hy hs cfont hlcolor
+		textblock negro1 tx ty tw ts cfont
+	eslide
+
+	slide "linen" "black"
+		ctext "I believe in pride of race" mid hy hs cfont hlcolor
+		textblock pride1 tx ty tw ts cfont
+	eslide
+
+	slide "linen" "black"
+		ctext "I believe in Service — " mid hy  hs cfont hlcolor
+		textblock service1 tx ty tw ts cfont
+	eslide
+
+	slide "linen" "black"
+		ctext "I believe in the Devil" mid hy  hs cfont hlcolor
+		textblock devil1 tx ty tw ts cfont
+	eslide
+
+	slide "linen" "black"
+		ctext "I believe in the Price of Peace" mid hy  hs cfont hlcolor
+		textblock peace1 tx ty tw ts cfont
+	eslide
+
+	slide "linen" "black"
+		ctext "I believe in the Liberty of all men;" mid hy  hs cfont hlcolor
+		textblock liberty1 tx ty tw ts cfont
+	eslide
+
+	slide "linen" "black"
+		ctext "I believe in the training of children;" mid hy  hs cfont hlcolor
+		textblock train1 tx ty tw ts cfont
+	eslide
+
+	slide "linen" "black"
+		ctext "Finally, I believe in Patience — " mid hy hs cfont hlcolor
+		textblock patience1 tx ty tw ts cfont
+	eslide
+edeck
