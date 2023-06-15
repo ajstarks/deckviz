@@ -42,7 +42,6 @@ deck
 	trainhl=17
 	patiencehl=13.5
 
-
 	god="I believe in God who made of one blood all races that dwell on earth. I believe that all men, black and brown and white, are brothers,  varying through Time and Opportunity, in form and gift and feature, but differing in no essential particular, and alike in soul and  in the possibility of infinite development."
 	negro="Especially do I believe in the Negro Race; in the beauty of its genius, the sweetness of its soul, and its strength in that meekness which shall yet inherit this turbulent earth."
 	pride="I believe in pride of race and lineage and self; in pride of self so deep as to scorn injustice to other selves; in pride of lineage so great as to despise no man's father; in pride of race so chivalrous as neither to offer bastardy to the weak, not beg wedlock of the strong, knowing that men may be brothers in Christ, even as though they be not brothers-in-law."
@@ -63,8 +62,56 @@ deck
 	train1=substr training 38 -
 	patience1=substr patience 34 -
 
+	godh=substr god - 15
+	negroh=substr negro - 40
+	prideh=substr pride - 25
+	serviceh=substr service - 20
+	devilh=substr devil - 21
+	peaceh=substr peace - 31
+	libertyh=substr liberty - 35
+	trainh=substr training - 36
+	patienceh=substr patience - 30
+
+	// three per page
+	slide "linen" "black"
+		c1=15
+		c2=c1+25
+		textblock godh         c1 88 10 3 cfont hlcolor
+		textblock god1         c2 92 40 2 cfont
+
+		textblock negroh       c1 56 10 3 cfont hlcolor
+		textblock negro1       c2 55 40 2 cfont
+
+		textblock prideh       c1 20 10 3 cfont hlcolor
+		textblock pride1       c2 25 40 2 cfont
+	eslide
 
 	slide "linen" "black"
+		textblock serviceh     c1 84 10 3 cfont hlcolor
+		textblock service1     c2 92 40 2 cfont
+
+		textblock devilh       c1 50 10 3 cfont hlcolor
+		textblock devil1       c2 55 40 2 cfont
+
+		textblock peaceh       c1 22 10 3 cfont hlcolor
+		textblock peace1       c2 25 40 2 cfont
+	eslide
+
+	slide "linen" "black"
+		textblock libertyh     c1 89 10 3 cfont hlcolor
+		textblock liberty1     c2 92 40 2 cfont
+
+		textblock trainh       c1 52 10 3 cfont hlcolor
+		textblock train1       c2 55 40 2 cfont
+
+		textblock patienceh    c1 25 10 3 cfont hlcolor
+		textblock patience1    c2 25 40 2 cfont
+	eslide
+
+	// Two column
+	slide "linen" "black"
+		c1=20
+		c2=c1+35
 		ctext "CREDO"           			50 90 titlesize cfont
 		ctext "by W. E. Burghardt Du Bois"	50 87 ts cfont
 		textblock god						c1 gody tw ts cfont
@@ -90,10 +137,11 @@ deck
 		hline c2 patiencehy patiencehl 		ts hlcolor hlop
 	eslide
 
+	// Three column
 	slide "linen" "black"
-		c1=15
-		c2=c1+25
-		c3=c2+27
+		c1=10
+		c2=c1+30
+		c3=c2+30
 		r1=75
 		r2=r1-20
 		r3=r2-25
@@ -115,55 +163,66 @@ deck
 	eslide
 
 
+	// One per page
 	hs=5
 	mid=50
 	hy=72
 	ts=hs*0.6
 	tx=18
 	ty=hy-10
+	tty=hy+20
 	tw=60
 	slide "linen" "black"
-		ctext "I believe in God" mid hy hs cfont hlcolor
+		ctext "I." mid tty 3 cfont hlcolor
+		ctext godh mid hy hs cfont hlcolor
 		textblock god1 tx ty tw ts cfont
 	eslide
 
 	slide "linen" "black"
-		ctext "Especially do I believe in the Negro race;" mid hy hs cfont hlcolor
+		ctext "II." mid tty 3 cfont hlcolor
+		ctext negroh mid hy hs cfont hlcolor
 		textblock negro1 tx ty tw ts cfont
 	eslide
 
 	slide "linen" "black"
-		ctext "I believe in pride of race" mid hy hs cfont hlcolor
+		ctext "III." mid tty 3 cfont hlcolor
+		ctext prideh mid hy hs cfont hlcolor
 		textblock pride1 tx ty tw ts cfont
 	eslide
 
 	slide "linen" "black"
-		ctext "I believe in Service — " mid hy  hs cfont hlcolor
+		ctext "IV." mid tty 3 cfont hlcolor
+		ctext serviceh mid hy hs cfont hlcolor
 		textblock service1 tx ty tw ts cfont
 	eslide
 
 	slide "linen" "black"
-		ctext "I believe in the Devil" mid hy  hs cfont hlcolor
+		ctext "V." mid tty 3 cfont hlcolor
+		ctext devilh mid hy hs cfont hlcolor
 		textblock devil1 tx ty tw ts cfont
 	eslide
 
 	slide "linen" "black"
-		ctext "I believe in the Price of Peace" mid hy  hs cfont hlcolor
+		ctext "VI." mid tty 3 cfont hlcolor
+		ctext peaceh mid hy hs cfont hlcolor
 		textblock peace1 tx ty tw ts cfont
 	eslide
 
 	slide "linen" "black"
-		ctext "I believe in the Liberty of all men;" mid hy  hs cfont hlcolor
+		ctext "VII." mid tty 3 cfont hlcolor
+		ctext libertyh mid hy hs cfont hlcolor
 		textblock liberty1 tx ty tw ts cfont
 	eslide
 
 	slide "linen" "black"
-		ctext "I believe in the training of children;" mid hy  hs cfont hlcolor
+		ctext "VII." mid tty 3 cfont hlcolor
+		ctext trainh mid hy hs cfont hlcolor
 		textblock train1 tx ty tw ts cfont
 	eslide
 
 	slide "linen" "black"
-		ctext "Finally, I believe in Patience — " mid hy hs cfont hlcolor
+		ctext "IX." mid tty 3 cfont hlcolor
+		ctext patienceh mid hy hs cfont hlcolor
 		textblock patience1 tx ty tw ts cfont
 	eslide
 edeck
