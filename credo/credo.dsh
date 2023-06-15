@@ -53,16 +53,15 @@ deck
 	liberty="I believe in the Liberty for all men; the space to stretch their arms and their souls; the right to breathe and the right to vote, the freedom to choose their friends, enjoy the sunshine and ride on the railroads, uncursed by color; thinking, dreaming, working as they will in a kingdom of God and love."
 	patience="Finally, I believe in Patience — patience with the weakness of the Weak and the strength of the Strong, the prejudice of the Ignorant and the ignorance of the  Blind; patience with the tardy triumph of Joy and the mad chastening of  Sorrow — patience with God."
 	
-
-	god1="who made of one blood all races that dwell on earth. I believe that all men, black and brown and white, are brothers,  varying through Time and Opportunity, in form and gift and feature, but differing in no essential particular, and alike in soul and  in the possibility of infinite development."
-	negro1="in the beauty of its genius, the sweetness of its soul, and its strength in that meekness which shall yet inherit this turbulent earth."
-	pride1="and lineage and self; in pride of self so deep as to scorn injustice to other selves; in pride of lineage so great as to despise no man's father; in pride of race so chivalrous as neither to offer bastardy to the weak, not beg wedlock of the strong, knowing that men may be brothers in Christ, even as though they be not brothers-in-law."
-	service1="humble reverent service from the blackening of boots to  the whitening of souls; for Work is Heaven, Idleness Hell, and  Wage is the “Well Done!” of the Master who summoned all them that labor and are heavy laden, making no distinction between the black sweating cotton-hands of Georgia and the First Families of Virginia, since all distinction  not based on deed is devilish and not divine."
-	devil1="and his angels, who wantonly work to narrow the opportunity of struggling human beings, especially if they be black; who spit in the faces of the fallen, strike then that cannot strike again, believe the worst and work to prove it, hating the image which their Maker stamped on a brother's soul."
-	peace1="I believe that War is Murder. I believe that armies and navies are at bottom the tinsel and braggadocia of oppression and wrong; and I believe that the wicked conquest of weaker and darker nations by nations whiter and stronger but foreshadows the death of that strength."
-	liberty1="the space to stretch their arms and their souls; the right to breathe and the right to vote, the freedom to choose their friends, enjoy the sunshine and ride on the railroads, uncursed by color; thinking, dreaming, working as they will in a kingdom of God and love."
-	train1="black even as white; the leading out of little souls into the green pastures and beside the still waters, not for pelt or peace, but for Life lit by some large vision of beauty and goodness  and truth; lest we forget, and the sons of the fathers, like Esau, for mere meat barter their birthright in a mighty nation."
-	patience1="patience with the weakness of the Weak and the strength of the Strong, the prejudice of the Ignorant and the ignorance of the  Blind; patience with the tardy triumph of Joy and the mad chastening of  Sorrow — patience with God."
+	god1=substr god 17 -
+	negro1=substr negro 42 -
+	pride1=substr pride 27 -
+	service1=substr service 24 -
+	devil1=substr devil 23 -
+	peace1=substr peace 34 -
+	liberty1=substr liberty 38 -
+	train1=substr training 38 -
+	patience1=substr patience 34 -
 
 
 	slide "linen" "black"
