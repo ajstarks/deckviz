@@ -72,6 +72,15 @@ deck
 	trainh=substr training - 36
 	patienceh=substr patience - 30
 
+	egod=substr godh 13 -
+	enegro=substr negroh 27 -
+	epride=substr prideh 13 -
+	eservice=substr serviceh 13 -
+	edevil=substr devilh 13 -
+	epeace=substr peaceh 13 -
+	eliberty=substr libertyh 13 -
+	etrain=substr trainh 13 -
+	epatience=substr patienceh 22 -
 	// three per page
 	slide "linen" "black"
 		c1=15
@@ -167,62 +176,79 @@ deck
 	hs=5
 	mid=50
 	hy=72
+	ns=3
 	ts=hs*0.6
 	tx=18
 	ty=hy-10
 	tty=hy+20
 	tw=60
 	slide "linen" "black"
-		ctext "I." mid tty 3 cfont hlcolor
+		ctext "I." mid tty ns cfont hlcolor
 		ctext godh mid hy hs cfont hlcolor
 		textblock god1 tx ty tw ts cfont
 	eslide
 
 	slide "linen" "black"
-		ctext "II." mid tty 3 cfont hlcolor
+		ctext "II." mid tty ns cfont hlcolor
 		ctext negroh mid hy hs cfont hlcolor
 		textblock negro1 tx ty tw ts cfont
 	eslide
 
 	slide "linen" "black"
-		ctext "III." mid tty 3 cfont hlcolor
+		ctext "III." mid tty ns cfont hlcolor
 		ctext prideh mid hy hs cfont hlcolor
 		textblock pride1 tx ty tw ts cfont
 	eslide
 
 	slide "linen" "black"
-		ctext "IV." mid tty 3 cfont hlcolor
+		ctext "IV." mid tty ns cfont hlcolor
 		ctext serviceh mid hy hs cfont hlcolor
 		textblock service1 tx ty tw ts cfont
 	eslide
 
 	slide "linen" "black"
-		ctext "V." mid tty 3 cfont hlcolor
+		ctext "V." mid tty ns cfont hlcolor
 		ctext devilh mid hy hs cfont hlcolor
 		textblock devil1 tx ty tw ts cfont
 	eslide
 
 	slide "linen" "black"
-		ctext "VI." mid tty 3 cfont hlcolor
+		ctext "VI." mid tty ns cfont hlcolor
 		ctext peaceh mid hy hs cfont hlcolor
 		textblock peace1 tx ty tw ts cfont
 	eslide
 
 	slide "linen" "black"
-		ctext "VII." mid tty 3 cfont hlcolor
+		ctext "VII." mid tty ns cfont hlcolor
 		ctext libertyh mid hy hs cfont hlcolor
 		textblock liberty1 tx ty tw ts cfont
 	eslide
 
 	slide "linen" "black"
-		ctext "VII." mid tty 3 cfont hlcolor
+		ctext "VII." mid tty ns cfont hlcolor
 		ctext trainh mid hy hs cfont hlcolor
 		textblock train1 tx ty tw ts cfont
 	eslide
 
 	slide "linen" "black"
-		ctext "IX." mid tty 3 cfont hlcolor
+		ctext "IX." mid tty ns cfont hlcolor
 		ctext patienceh mid hy hs cfont hlcolor
 		textblock patience1 tx ty tw ts cfont
 	eslide
+
+	slide "linen" "black"
+		ex=33
+		etext "I Believe in" 26 50 4 cfont
+		lbrace 27 51 90 2.5 2
+		text egod 		ex 90 ns cfont hlcolor
+		text enegro		ex 80 ns cfont hlcolor
+		text epride		ex 70 ns cfont hlcolor
+		text eservice	ex 60 ns cfont hlcolor
+		text edevil		ex 50 ns cfont hlcolor
+		text epeace		ex 40 ns cfont hlcolor
+		text eliberty	ex 30 ns cfont hlcolor
+		text etrain		ex 20 ns cfont hlcolor
+		text epatience	ex 10 ns cfont hlcolor
+	eslide
+		
 edeck
