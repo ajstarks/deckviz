@@ -1,0 +1,109 @@
+deck
+	canvas 1000 1000
+	import "planet.dsh"
+	import "ang.dsh"
+
+
+	slide "black"
+
+		cstep=1
+		
+
+		r=10
+		c=1
+		step=20
+		stephalf=step/2
+		csize=r*1.5
+
+		circle 50 50 csize "hsv(0,100,100)"
+
+		for t=0 360 step
+			ang 50 50 r t c "hsv(10,100,100)"
+		efor
+
+		r+=2
+		c+=cstep
+		for t=stephalf 360 step
+			ang 50 50 r t c "hsv(17,100,100)"
+		efor
+
+		r+=3
+		c+=cstep
+		for t=0 360 step
+			ang 50 50 r t c "hsv(24,100,100)"
+		efor
+
+		r+=4
+		c+=cstep
+		for t=stephalf 360 step
+			ang 50 50 r t c "hsv(31,100,100)"
+		efor
+
+		r+=5
+		c+=cstep
+		for t=0 360 step
+			ang 50 50 r t c "hsv(38,100,100)"
+		efor
+
+		r+=6
+		c+=cstep
+		for t=stephalf 360 step
+			ang 50 50 r t c "hsv(45,100,100)"
+		efor
+
+		r+=8
+		p=polar 50 50 r 0
+		planet p_x p_y 5 7 1 "red" "orange"
+
+		p=polar 50 50 r 20
+		planet p_x p_y 5 7 1 "red" "orange" 
+
+		p=polar 50 50 r 40
+		planet p_x p_y 5 7 1 "red" "orange"
+
+		p=polar 50 50 r 60
+		planet p_x p_y 5 7 1 "red" "orange" 
+
+		p=polar 50 50 r 80
+		planet p_x p_y 5 7 1 "red" "orange"
+
+		p=polar 50 50 r 100
+		planet p_x p_y 5 7 1 "red" "orange" 
+
+		p=polar 50 50 r 120
+		planet p_x p_y 5 7 1 "red" "orange"
+
+		p=polar 50 50 r 140
+		planet p_x p_y 5 7 1 "red" "orange" 
+
+		p=polar 50 50 r 160
+		planet p_x p_y 5 7 1 "red" "orange"
+
+		p=polar 50 50 r 180
+		planet p_x p_y 5 7 1 "red" "orange"
+
+		p=polar 50 50 r 200
+		planet p_x p_y 5 7 1 "red" "orange"
+
+		p=polar 50 50 r 220
+		planet p_x p_y 5 7 1 "red" "orange"
+
+		p=polar 50 50 r 240
+		planet p_x p_y 5 7 1 "red" "orange"
+
+		p=polar 50 50 r 260
+		planet p_x p_y 5 7 1 "red" "orange"
+
+		p=polar 50 50 r 280
+		planet p_x p_y 5 7 1 "red" "orange"
+
+		p=polar 50 50 r 300
+		planet p_x p_y 5 7 1 "red" "orange"
+
+		p=polar 50 50 r 320
+		planet p_x p_y 5 7 1 "red" "orange"
+
+		p=polar 50 50 r 340
+		planet p_x p_y 5 7 1 "red" "orange"
+	eslide
+edeck

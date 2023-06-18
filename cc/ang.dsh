@@ -1,0 +1,4 @@
+def ang X Y Radius Theta Size Color
+	p=polar X Y Radius Theta
+	circle p_x p_y Size Color
+edef

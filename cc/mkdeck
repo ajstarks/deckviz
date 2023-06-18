@@ -1,0 +1,2 @@
+#!/bin/bash
+decksh cc.dsh|pdfr -pagesize 1000x1000

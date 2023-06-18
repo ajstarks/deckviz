@@ -1,0 +1,28 @@
+def planet CX CY Radius Size1 Size2 Color1 Color2
+		circle CX CY Size1 Color1
+		p=polar CX CY Radius 0
+		circle p_x p_y Size2 Color2
+		p=polar CX CY Radius 30
+		circle p_x p_y Size2 Color2
+		p=polar CX CY Radius 60
+		circle p_x p_y Size2 Color2
+		p=polar CX CY Radius 90
+		circle p_x p_y Size2 Color2
+		p=polar CX CY Radius 120
+		circle p_x p_y Size2 Color2
+		p=polar CX CY Radius 150
+		circle p_x p_y Size2 Color2
+		p=polar CX CY Radius 180
+		circle p_x p_y Size2 Color2
+		p=polar CX CY Radius 210
+		circle p_x p_y Size2 Color2
+		p=polar CX CY Radius 240
+		circle p_x p_y Size2 Color2
+		p=polar CX CY Radius 270
+		circle p_x p_y Size2 Color2
+		p=polar CX CY Radius 300
+		circle p_x p_y Size2 Color2
+		p=polar CX CY Radius 330
+		circle p_x p_y Size2 Color2
+		p=polar CX CY Radius 360
+edef
