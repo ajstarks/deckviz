@@ -1,0 +1,32 @@
+deck
+	july4="“Fellow-citizens, above your national, tumultuous joy, I hear the mournful wail of millions!”"
+	false="“America is false to the past, false to the present, and solemnly binds herself to be false to the future.”"
+	blacker="“I do not hesitate to declare, with all my soul, that the character and conduct of this nation never looked blacker to me than on this 4th of July!”"
+	justice="“Where justice is denied, where poverty is enforced, where ignorance prevails, and where any one class is made to feel that society is an organized conspiracy to opress, rob, and degrade them, neither persons nor property will be safe.”"
+
+	// image source: 
+	// https://www.syracuse.com/empire/2016/04/frederick_douglass_mystery_how_did_rare_photo_of_famed_abolitionist_end_up_in_sy.html
+	slide "black" "white"
+		image "douglass-1850.jpg" 25 50 40 0
+		textblock blacker 50 70 35 3.5 "serif"
+		text "The Meaning of July Fourth for the Negro, July 5, 1852" 50 20 1.5 "serif"
+	eslide
+
+	slide "black" "white"
+		image "douglass-1850.jpg" 25 50 40 0
+		textblock july4 50 70 35 3.5 "serif"
+		text "The Meaning of July Fourth for the Negro, July 5, 1852" 50 20 1.5 "serif"
+	eslide
+
+	slide "black" "white"
+		image "douglass-1850.jpg" 25 50 40 0
+		textblock false 50 70 35 3.5 "serif"
+		text "The Meaning of July Fourth for the Negro, July 5, 1852" 50 20 1.5 "serif"
+	eslide
+
+	slide "black" "white"
+		image "douglass-1895.jpg" 25 50 35 0
+		textblock justice 48 72 40 3 "serif"
+		text "Frederick Douglass, February 1895" 50 25 1.5 "serif"
+	eslide
+edeck
