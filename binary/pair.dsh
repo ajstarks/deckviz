@@ -1,0 +1,5 @@
+def pair X Y Size Sep Color
+	y2=Y-Sep
+	circle X Y Size Color
+	circle X y2 Size Color
+edef

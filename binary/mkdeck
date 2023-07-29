@@ -1,0 +1,2 @@
+#!/bin/sh
+decksh binary.dsh|pdfdeck -pagesize 1000x1000 -stdout -mono FiraMono-Regular - > f.pdf

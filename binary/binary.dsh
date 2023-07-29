@@ -1,0 +1,107 @@
+deck
+	import "pair.dsh"
+	dcolor="white"
+	slide "black" dcolor
+		x=10
+		y=40
+		ctext "1"  x y 1 "mono"
+		x+=2
+		ctext "2"  x y 2 "mono"
+		x+=4
+		ctext "4"  x y 4 "mono"
+		x+=8
+		ctext "8"  x y 8 "mono"
+		x+=16
+		ctext "16" x y 16 "mono"
+		x+=32
+		ctext "32" x y 32 "mono"
+		hline 0 y 100 0.1 dcolor
+		rect 50 20 100 40
+
+		dx=10
+		dy=38
+		dy1=dy-1
+		ds=1
+		
+		circle dx dy1 1 dcolor
+
+		dx+=2
+		// 2
+		pair dx dy 1 2 dcolor
+		
+		// 4
+		for x=15 17 2
+			pair x dy 1 2 dcolor
+		efor
+
+		// 8
+		for x=21 27 2
+			pair x dy 1 2 dcolor
+		efor
+
+		// 16
+		for x=33 47 2
+			pair x dy 1 2 dcolor
+		efor
+
+		// 32
+		for x=56 86 2
+			pair x dy 1 2 dcolor
+		efor
+
+		// 1
+		dx=10
+		circle dx 98 0.5 dcolor
+
+		// 2
+		dx+=2
+		for dy=97 98
+			circle dx dy 0.5 dcolor
+		efor
+
+		// 4
+		dx+=4
+		for dy=95 98
+			circle dx dy 0.5 dcolor
+		efor
+
+		// 8
+		dx+=8
+		for dy=91 98
+			circle dx dy 0.5 dcolor
+		efor
+		
+		// 16
+		dx+=16
+		for dy=83 98
+			circle dx dy 0.5 dcolor
+		efor
+
+		dx+=32
+		for dy=71 98
+			circle dx dy 0.5 dcolor
+		efor
+	eslide
+
+	slide "dodgerblue" "black"
+		x=10
+		y=70
+		ctext "1"  x y 1 "mono"
+		x+=2
+		y-=2
+		ctext "2"  x y 2 "mono"
+		x+=4
+		y-=4
+		ctext "4"  x y 4 "mono"
+		x+=8
+		y-=8
+		ctext "8"  x y 8 "mono"
+		x+=16
+		y-=16
+		ctext "16" x y 16 "mono"
+		x+=32
+		y-=32
+		ctext "32" x y 32 "mono"
+		rect 50 35 100 70 "tan"
+	eslide
+edeck
