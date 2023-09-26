@@ -1,0 +1,2 @@
+#!/bin/sh
+convert $1 -transparent white $2

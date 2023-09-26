@@ -6,6 +6,22 @@ deck
 
 	lw=0.4
 	lcolor="crimson"
+
+
+	slide "black" "white"
+		//image "blue-outline.png" 55 50 ims 0
+		ctext "Du Bois SERVE Project" 55 50 5
+		image "tpop.png" 55 72 33 0
+		include "outline.dsh"
+	eslide
+
+	slide "linen" "black"
+		//image "blue-outline.png" 55 50 ims 0
+		ctext "Du Bois SERVE Project" 55 50 5
+		image "tpop.png" 55 72 33 0
+		include "outline.dsh"
+	eslide
+
 	slide "black" "white"
 		//image "blue-outline.png" 55 50 ims 0
 		ctext "Du Bois SERVE Project" 55 50 5
@@ -39,9 +55,15 @@ deck
 
 	slide "black" "white"
 		image "dubois-mono.png" 55 50 ims 0
+		include "full-logos.dsh"
+		textblock "Du Bois Science Visualization Enpowerment Project" 20 90 50 4textblock "Du Bois Science Visualization Enpowerment Project" 75 22 10 2.5
+	eslide
+
+
+	slide "black" "white"
+		image "dubois-mono.png" 55 50 ims 0
 		include "logos.dsh"
 		rtext "Du Bois SERVE Project" imx 5 90 ts
-
 	eslide
 
 	slide "#4d3d1f" "white"

@@ -2,5 +2,6 @@
 		image "tlogo.png"  imx 88 vims 0
 		image "tpv.png"    imx 70 vims 0
 		image "tpop.png"   imx 52 15 0
+		
 		//textblock "Du Bois Science Visualization Enpowerment Project" 75 22 10 2.5
 		//text Du Bois Science Education Visualization Empowerment Project"
