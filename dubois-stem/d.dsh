@@ -10,28 +10,32 @@ deck
 
 	slide "black" "white"
 		//image "blue-outline.png" 55 50 ims 0
-		ctext "Du Bois SERVE Project" 55 50 5
+		ctext "Du Bois"       55 50 7
+		ctext "SERVE Project" 55 40 7
 		image "tpop.png" 55 72 33 0
 		include "outline.dsh"
 	eslide
 
 	slide "linen" "black"
 		//image "blue-outline.png" 55 50 ims 0
-		ctext "Du Bois SERVE Project" 55 50 5
+		ctext "Du Bois"       55 50 7
+		ctext "SERVE Project" 55 40 7		
 		image "tpop.png" 55 72 33 0
 		include "outline.dsh"
 	eslide
 
 	slide "black" "white"
 		//image "blue-outline.png" 55 50 ims 0
-		ctext "Du Bois SERVE Project" 55 50 5
+		ctext "Du Bois"       55 50 7
+		ctext "SERVE Project" 55 40 7
 		image "tlogo.png" 55 72 30 0
 		include "outline.dsh"
 	eslide
 
 	slide "linen" "black"
 		//image "blue-outline.png" 55 50 ims 0
-		ctext "Du Bois SERVE Project" 55 50 5
+		ctext "Du Bois"       55 50 7
+		ctext "SERVE Project" 55 40 7
 		image "tlogo.png" 55 72 30 0
 		include "outline.dsh"
 	eslide
@@ -40,7 +44,8 @@ deck
 	slide "black" "white"
 		include "sil.dsh"
 		include "logos.dsh"
-		ctext "Du Bois SERVE Project" 55 50 5
+		ctext "Du Bois"       55 60 7
+		ctext "SERVE Project" 55 50 7
 		//rtext "Du Bois SERVE Project" 10 5 90 5
 	eslide
 
