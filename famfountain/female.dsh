@@ -1,0 +1,12 @@
+def female Name Px Py Value Min Max Dmin Dmax Ls Lw
+		femalex=Px-25
+		lw2=lw/2
+		Cx=Px
+		y=vmap Value Min Max Dmin Dmax
+		femaley=y+lw2
+		H=y-Py
+		H2=H*0.75
+		Cy=Py+H2
+		etext Name femalex y Ls "serif"
+		curve Px Py Cx Cy femalex femaley Lw "red" 30
+edef

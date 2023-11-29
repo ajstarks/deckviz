@@ -1,0 +1,10 @@
+def vscale X Value Min Max Dmin Dmax Ys
+		ys2=Ys/4
+		label=format "%0.f" Value
+		y=vmap Value Min Max Dmin Dmax
+		etext label X y Ys "mono"
+		marginX=X*2
+		rulelen=100-marginX
+		ruley=y+ys2
+		hline X ruley rulelen 0.05
+edef 

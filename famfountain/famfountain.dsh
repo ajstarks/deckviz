@@ -1,0 +1,155 @@
+deck
+		import "vscale.dsh"
+		import "male.dsh"
+		import "female.dsh"
+
+		dmin=10
+		dmax=90
+		tx=50
+		ty=dmin-7
+		lfont="mono"
+		nfont="serif"
+		lw=1
+		ls=lw*2.2
+		lx=5
+		px=50
+		ys=ls*0.75
+		ts=ls*2
+//.....................................................................
+
+
+
+	slide
+		min=1945
+		max=1970
+
+		for v=min max 5
+			vscale lx v min max dmin dmax ys
+		efor
+
+		ctext "Starks" tx ty ts nfont
+		py=vmap 1953 min max dmin dmax
+		ctext "Floyd+Jacqueline" px py ls nfont
+
+		py+=lw
+
+		female "Judith Elaine"   px py 1954 min max dmin dmax ls lw
+		female "Patricia Joanne" px py 1955 min max dmin dmax ls lw
+		male   "Anthony Jerome"  px py 1958 min max dmin dmax ls lw
+		male   "Norman Randall"  px py 1961 min max dmin dmax ls lw
+		male   "John Ivan"       px py 1963 min max dmin dmax ls lw
+		female "Jill Antoinette" px py 1964 min max dmin dmax ls lw
+		male   "Gerald Vincent"  px py 1967 min max dmin dmax ls lw
+		male   "Brian Douglas"   px py 1970 min max dmin dmax ls lw
+	eslide
+
+	slide
+		min=1945
+		max=1970
+		for v=min max 5
+			vscale lx v min max dmin dmax ys
+		efor
+
+		ctext "Gardner" tx ty ts nfont
+		py=vmap 1950 min max dmin dmax
+		ctext "Reginald+Carmen" px py ls nfont
+
+		male   "Mahershal al Hash-Baz"     px py 1951 min max dmin dmax ls lw
+		female "Karlene Grace"             px py 1958 min max dmin dmax ls lw
+		male   "Reginald Joseph Jr."       px py 1961 min max dmin dmax ls lw
+		male   "John Maxwell"              px py 1963 min max dmin dmax ls lw
+		male   "Llaurel Gauffield"         px py 1966 min max dmin dmax ls lw
+		male   "Albernard Alcreatus"       px py 1968 min max dmin dmax ls lw
+	eslide
+
+	slide
+		min=1945
+		max=1970
+
+		for v=min max 5
+			vscale lx v min max dmin dmax ys
+		efor
+
+		ctext "King" tx ty ts nfont
+		py=vmap 1953 min max dmin dmax
+		ctext "Martin Jr.+Coretta" px py ls nfont
+		py+=lw
+		female  "Yolanda Denise"    px py 1955 min max dmin dmax ls lw
+		male    "Martin Luther III" px py 1957 min max dmin dmax ls lw
+		male    "Dexter Scott"      px py 1961 min max dmin dmax ls lw
+		female  "Bernice Albertine" px py 1963 min max dmin dmax ls lw
+
+	eslide
+
+	slide
+		min=1945
+		max=1970
+
+		for v=min max 5
+			vscale lx v min max dmin dmax ys
+		efor
+
+		ctext "Mountbatten-Windsor" tx ty ts nfont
+		py=vmap 1947 min max dmin dmax
+		ctext "Philip+Elizabeth" px py ls nfont
+
+		py+=lw
+
+		male   "Charles Philip"   px py 1948 min max dmin dmax ls lw
+		female "Anne Elizabeth"    px py 1950 min max dmin dmax ls lw
+		male   "Andrew Albert" px py 1960 min max dmin dmax ls lw
+		male   "Edward Antony"    px py 1964 min max dmin dmax ls lw
+	eslide
+
+
+	slide
+		min=1810
+		max=1839
+
+		for v=1810 1840 5
+			vscale lx v min max dmin dmax ys
+		efor
+
+		ctext "Vanderbilt" tx ty ts nfont
+		py=vmap 1813 min max dmin dmax
+		ctext "Cornelius+Sophia" px py ls nfont
+
+		py+=lw
+
+		female "Phebe"     px py 1814 min max dmin dmax ls lw
+		female "Ethelinda" px py 1817 min max dmin dmax ls lw
+		female "Eliza"     px py 1819 min max dmin dmax ls lw
+		male   "William"   px py 1821 min max dmin dmax ls lw
+		female "Emily"     px py 1823 min max dmin dmax ls lw
+		female "Sophia"    px py 1825 min max dmin dmax ls lw
+		female "Maria"     px py 1827 min max dmin dmax ls lw
+		female "Frances"   px py 1828 min max dmin dmax ls lw
+		male   "Cornelius" px py 1830 min max dmin dmax ls lw
+		male   "George"    px py 1832 min max dmin dmax ls lw
+		female "Mary"      px py 1834 min max dmin dmax ls lw
+		female "Catherine" px py 1836 min max dmin dmax ls lw
+		male   "George"    px py 1839 min max dmin dmax ls lw
+	eslide
+
+	slide
+		min=1980
+		max=1988
+
+		for v=min max 2
+			vscale lx v min max dmin dmax ys
+		efor
+
+		ctext "Starks" tx ty ts nfont
+		py=vmap 1980 min max dmin dmax
+		ctext "Anthony+Karlene" px py ls nfont
+
+		py+=lw
+
+		female "Monica Dawn"         px py 1981 min max dmin dmax ls lw
+		male   "Anthony Jerome, Jr." px py 1983 min max dmin dmax ls lw
+		female "Christina Andrea"    px py 1986 min max dmin dmax ls lw
+		male   "Andrew Joseph"       px py 1988 min max dmin dmax ls lw
+	eslide
+
+
+edeck

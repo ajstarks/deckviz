@@ -21,6 +21,7 @@
 * domestica -- Output from the Domestica course "Data Visualization and Information Design"
 * elections -- elections through the years
 * fam -- family trees
+* famfountain -- family fountains
 * festival -- Stage from the 1969 Harlem Cultural Festival
 * fire -- German wildfires
 * flag -- Flags
