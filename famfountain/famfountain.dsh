@@ -2,6 +2,7 @@ deck
 		import "vscale.dsh"
 		import "male.dsh"
 		import "female.dsh"
+		import "hscale.dsh"
 
 		dmin=10
 		dmax=90
@@ -17,13 +18,11 @@ deck
 		ts=ls*2
 //.....................................................................
 
-
-
 	slide
-		min=1945
+		min=1952
 		max=1970
 
-		for v=min max 5
+		for v=min max 2
 			vscale lx v min max dmin dmax ys
 		efor
 
@@ -43,10 +42,64 @@ deck
 		male   "Brian Douglas"   px py 1970 min max dmin dmax ls lw
 	eslide
 
+
 	slide
-		min=1945
-		max=1970
+		min=1948
+		max=1966
+
+		for v=min max 2
+			vscale lx v min max dmin dmax ys
+		efor
+
+		ctext "Jackson" tx ty ts nfont
+		py=vmap 1949 min max dmin dmax
+		ctext "Joe+Katherine" px py ls nfont
+
+		py+=lw
+
+		female "Rebbie"   px py 1950 min max dmin dmax ls lw
+		male   "Jackie"   px py 1951 min max dmin dmax ls lw
+		male   "Tito"     px py 1953 min max dmin dmax ls lw
+		male   "Jermaine" px py 1954 min max dmin dmax ls lw
+		female "La Toya"  px py 1956 min max dmin dmax ls lw
+		male   "Marion"   px py 1957 min max dmin dmax ls lw
+		male   "Michael"  px py 1958 min max dmin dmax ls lw
+		male   "Randy"    px py 1961 min max dmin dmax ls lw
+		female "Janet"    px py 1966 min max dmin dmax ls lw
+	eslide
+
+
+	slide
+		min=1955
+		max=1975
+
 		for v=min max 5
+			vscale lx v min max dmin dmax ys
+		efor
+
+		ctext "Wayans" tx ty ts nfont
+		py=vmap 1955 min max dmin dmax
+		ctext "Howell+Elvira" px py ls nfont
+
+		py+=lw
+
+		male   "Dwyane Howell"      px py 1956 min max dmin dmax ls lw
+		male   "Keenen Ivory"       px py 1958 min max dmin dmax ls lw
+		female "Diedra Lenora"      px py 1959 min max dmin dmax ls lw
+		male   "Damon Kyle"         px py 1960 min max dmin dmax ls lw
+		female "Kimberly Nicole"    px py 1961 min max dmin dmax ls lw
+		female "Elvira Alethia"     px py 1964 min max dmin dmax ls lw
+		female "Nadia Yvette"       px py 1965 min max dmin dmax ls lw
+		female "Devonne Chaunté"    px py 1966 min max dmin dmax ls lw
+		male   "Shawn Mathis"       px py 1971 min max dmin dmax ls lw
+		male   "Marlon Lamont"      px py 1972 min max dmin dmax ls lw
+		
+	eslide
+
+	slide
+		min=1950
+		max=1970
+		for v=min max 2
 			vscale lx v min max dmin dmax ys
 		efor
 
@@ -63,10 +116,10 @@ deck
 	eslide
 
 	slide
-		min=1945
-		max=1970
+		min=1952
+		max=1964
 
-		for v=min max 5
+		for v=min max 2
 			vscale lx v min max dmin dmax ys
 		efor
 
@@ -80,6 +133,26 @@ deck
 		female  "Bernice Albertine" px py 1963 min max dmin dmax ls lw
 
 	eslide
+	slide
+		min=1980
+		max=1988
+
+		for v=min max
+			vscale lx v min max dmin dmax ys
+		efor
+
+		ctext "Starks" tx ty ts nfont
+		py=vmap 1980 min max dmin dmax
+		ctext "Anthony+Karlene" px py ls nfont
+
+		py+=lw
+
+		female "Monica Dawn"         px py 1981 min max dmin dmax ls lw
+		male   "Anthony Jerome, Jr." px py 1983 min max dmin dmax ls lw
+		female "Christina Andrea"    px py 1986 min max dmin dmax ls lw
+		male   "Andrew Joseph"       px py 1988 min max dmin dmax ls lw
+	eslide
+
 
 	slide
 		min=1945
@@ -100,7 +173,6 @@ deck
 		male   "Andrew Albert" px py 1960 min max dmin dmax ls lw
 		male   "Edward Antony"    px py 1964 min max dmin dmax ls lw
 	eslide
-
 
 	slide
 		min=1810
@@ -132,24 +204,98 @@ deck
 	eslide
 
 	slide
-		min=1980
-		max=1988
+		ctext "Starks" 50 80 5 "serif"
+		yy=60
+		yearmin=1955
+		yearmax=2025
+		dmin=10
+		dmax=90
+		dist=dmax-dmin
 
-		for v=min max 2
-			vscale lx v min max dmin dmax ys
+	
+
+		for v=yearmin yearmax 5
+			hscale yy v yearmin yearmax dmin dmax ys
 		efor
 
-		ctext "Starks" tx ty ts nfont
-		py=vmap 1980 min max dmin dmax
-		ctext "Anthony+Karlene" px py ls nfont
+		ajs=vmap 1958 yearmin yearmax dmin dmax
+		circle ajs yy 1 "blue" 30
+		mds=vmap 1981 yearmin yearmax dmin dmax
+		circle mds yy 1 "red" 30
+		ajs2=vmap 1983 yearmin yearmax dmin dmax
+		circle ajs2 yy 1 "blue" 30
+		cas=vmap 1986 yearmin yearmax dmin dmax
+		circle cas yy 1 "red" 30
+		ajs3=vmap 1988 yearmin yearmax dmin dmax
+		circle ajs3 yy 1 "blue" 30
 
-		py+=lw
+		lw=0.2
+		cy=yy+20
+		curve ajs yy 30 cy mds   yy lw "red"  20
+		curve ajs yy 30 cy ajs2  yy lw "blue" 20
+		curve ajs yy 30 cy cas   yy lw "red"  20
+		curve ajs yy 30 cy ajs3  yy lw "blue" 20
 
-		female "Monica Dawn"         px py 1981 min max dmin dmax ls lw
-		male   "Anthony Jerome, Jr." px py 1983 min max dmin dmax ls lw
-		female "Christina Andrea"    px py 1986 min max dmin dmax ls lw
-		male   "Andrew Joseph"       px py 1988 min max dmin dmax ls lw
+		mia=vmap 2007 yearmin yearmax dmin dmax
+		circle mia yy 1 "red" 30
+		ltl=vmap 2015 yearmin yearmax dmin dmax
+		circle ltl yy 1 "blue" 30
+		ej=vmap 2019 yearmin yearmax dmin dmax
+		circle ej yy 1 "blue" 30
+		vio=vmap 2020 yearmin yearmax dmin dmax
+		circle vio yy 1 "red" 30
+
+		curve ajs2 yy 60 cy mia yy lw "red"  20
+		curve ajs2 yy 60 cy vio yy lw "red"  20
+
+		curve mds yy  60 cy ltl yy lw "blue" 20
+		curve cas yy  60 cy ej  yy lw "blue" 20
+
+		ny=yy-10
+
+		ndist=yy-ny
+		vline ajs ny ndist
+		etext "Anthony"    ajs  ny ls "serif"
+		ny-=5
+
+		ndist=yy-ny
+		vline mds ny ndist
+		etext "Monica"     mds  ny ls "serif"
+		ny-=5
+
+		ndist=yy-ny
+		vline ajs2 ny ndist
+		etext "Tony"       ajs2 ny ls "serif"
+
+		ny-=5
+		ndist=yy-ny
+		vline cas ny ndist
+		etext "Christina"  cas  ny ls "serif"
+		
+		ny-=5
+		ndist=yy-ny
+		vline ajs3 ny ndist
+		etext "Andrew"  ajs3  ny ls "serif"
+
+		ny-=5
+		ndist=yy-ny
+		vline mia ny ndist
+		etext "Mia"        mia  ny ls "serif"
+
+		ny-=5
+		ndist=yy-ny
+		vline ltl ny ndist
+		etext "Landon"        ltl  ny ls "serif"
+
+		ny-=5
+		ndist=yy-ny
+		vline ej ny ndist
+		etext "Emanuel, Jr"        ej  ny ls "serif"
+
+		ny-=5
+		ndist=yy-ny
+		vline vio ny ndist
+		etext "Violet"        vio  ny ls "serif"
 	eslide
-
 
 edeck

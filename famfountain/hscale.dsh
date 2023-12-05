@@ -1,0 +1,14 @@
+def hscale Y Value Min Max Dmin Dmax Ys
+		// horizontal scale
+		dist=Dmax-Dmin
+		lx=vmap Min Min Max Dmin Dmax
+		hline lx yy dist
+		xp=vmap Value Min Max Dmin Dmax
+		// tick
+		y2=Y-Ys
+		vline xp y2 Ys
+		y2-=Ys
+		// label
+		label=format "%0.f" Value
+		ctext label xp y2 Ys "mono"
+edef 

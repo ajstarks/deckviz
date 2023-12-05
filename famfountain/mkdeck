@@ -1,2 +1,2 @@
 #!/bin/sh
-decksh famtree.dsh | pdfr -pagesize 1500x1200 -mono  et-book-roman-old-style-figures -serif Charter-Regular
+decksh famfountain.dsh | pdfr -pagesize 1500x1200 -mono  et-book-roman-old-style-figures -serif Charter-Regular
