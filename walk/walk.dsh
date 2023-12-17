@@ -1,0 +1,32 @@
+deck
+	ims=7
+	lw=0.4
+	lop=40
+	lcolor="crimson"
+
+	slide
+		image "images/IMG_5978.jpg"    30 50 30 0
+		image "images/rs-IMG_5978.jpg" 70 50 30 0
+	eslide
+
+	slide
+		include "gps-route.dsh"
+	eslide
+
+	slide
+		image "images/walkmap.png"		50 50 50 0
+		image "images/rs-IMG_6006.jpg"	33.5 43.5 ims 0
+		image "images/rs-IMG_6031.jpg"	51.0 92.0 ims 0
+		image "images/rs-IMG_5996.jpg"	45.5 20.0 ims 0
+		image "images/rs-IMG_6001.jpg"	32.0 14.0 ims 0
+		image "images/rs-IMG_6017.jpg"	42.0 68.0 ims 0
+		image "images/rs-IMG_5998.jpg"	71.0 68.0 ims 0
+		image "images/rs-IMG_5993.jpg"	62.0 50.0 ims 0
+		image "images/rs-IMG_6004.jpg"	30.0 30.0 ims 0
+		image "images/rs-IMG_5980.jpg"	65.0 90.0 ims 0
+
+		//include "route.dsh"
+		include "gps-route.dsh"
+
+	eslide
+edeck

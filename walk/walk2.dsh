@@ -1,0 +1,52 @@
+// 1) read GPS coordinates (each line is lat,long pairs per second 
+// 2) determine GPS bounding box from that input
+// 3) use the bounding box to make map image
+// 4) generate map path
+//
+// $ fitcsvcoord 2023.12.15-1702656166.1630511.csv > f.coord
+//
+// $ ./mapcoord -info f.coord
+// center=40.6291415,-74.4224255 -longmin=-74.4292 -longmax=-74.415651 -latmin=40.621815 -latmax=40.636468
+//
+// $ create-static-map --width 1000 --height 1000  -b "40.636468,-74.4292|40.621815,-74.415651" -z 15 -o ~/deckviz/walk/map1.png
+//
+// $ ./mapcoord  \
+//             -ymin=5 \
+//             -ymax=95 \
+//             -xmin=18 \
+//             -xmax=82 \
+//             -longmin=-74.4292 \
+//             -longmax=-74.415651 \
+//             -latmin=40.621815 \
+//             -latmax=40.636468 \
+//             -bbox=blue \
+//             -style decksh \
+//             -linewidth=0.5 \
+//             -color=blue \
+//             -fulldeck=f \
+//             f.coord       > ~/deckviz/walk/gps-route2.dsh 
+//
+// to show the path in specified intervals:
+// $ awk 'NR % 30  == 0 {printf "circle %s %s 1 \"crimson\" \n", $2, $3}' gps-route2.dsh > gps-circle.dsh
+deck
+	slide
+		image "map2.png" 50 50 100 0
+		include "x-path.dsh"
+	eslide
+
+	slide
+		image "map2.png" 50 50 100 0
+		include "x-circle.dsh"
+	eslide
+
+
+	slide
+		image "map1.png" 50 50 100 0
+		include "gps-circle.dsh"
+	eslide
+
+	slide
+		image "map1.png" 50 50 100 0
+		include "gps-route2.dsh"
+	eslide
+edeck

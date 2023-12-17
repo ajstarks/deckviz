@@ -1,0 +1,2 @@
+#!/bin/sh
+decksh walk2.dsh | pdfdeck -stdout -grid 5 -pagesize 1000x1000  - > f.pdf

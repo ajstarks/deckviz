@@ -1,0 +1,19 @@
+		line 52.5 90.0 57.0 97.0 lw lcolor lop // mountain ave: richard way > meadowbrook
+		line 57.0 97.0 72.0 82.0 lw lcolor lop // meadowbrook > mali
+		line 72.0 82.0 69.5 77.5 lw lcolor lop // mali
+		line 69.5 77.5 74.0 73.0 lw lcolor lop // meadowbrook > brook
+
+		// Brook
+		curve 74.0 73.0 63.0 46.0 54.5 34.7 lw lcolor lop
+		curve 54.5 34.7 46.0 29.0 45.5 17.0 lw lcolor lop
+		line  45.5 17.0 40.0  7.0 lw lcolor lop
+
+		line 40.0  7.0 26.0 21.5 lw lcolor lop // Watchung
+		line 26.0 21.5 37.3 39.5 lw lcolor lop // fairview
+		line 37.3 39.5 33.5 43.5 lw lcolor lop // delacy
+		line 33.5 43.5 41.7 55.0 lw lcolor lop // grandview
+		line 41.7 55.0 36.5 60.0 lw lcolor lop // belmont
+		line 36.5 60.0 52.0 82.0 lw lcolor lop // murial
+		line 52.0 82.0 49.0 85.0 lw lcolor lop // farragut
+		line 49.0 85.0 52.5 90.0 lw lcolor lop // mountain
+		line 52.5 90.0 51.0 92.0 lw lcolor lop // richard way
