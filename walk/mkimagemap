@@ -1,0 +1,11 @@
+#!/bin/sh
+# make an image map from a list of geo-tagged images
+imgps $* > coords.d # get a list of filenames and lat/lon
+center=$(awk '{print $2, $3}' coords.d | geodeck --info | sed -e 's/ --bbox.*//') # determine the center of the coordinate list
+# generate the create-static-map command line
+awk -v cp=$center '
+BEGIN { printf "create-static-map --output=mapc.png  %s -z 16 --width=1000 --height=1000 \\\n", cp} 
+{
+	printf "-m \"%s,%s\" \\\n", $2, $3
+	# printf "--imagemarker=image:\"small-%s|offsetx:50|offsety:37|%s,%s\" \\\n", $1, $2, $3
+}' coords.d | sh; open mapc.png

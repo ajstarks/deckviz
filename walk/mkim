@@ -1,0 +1,3 @@
+#!/bin/sh
+imgps [a-z]*.jpg | awk '{print $2, $3}' | geodeck $* -style plain > c
+paste f c | awk 'BEGIN {print "deck\nslide\nimage \"mapc.png\" 50 50 1000 1000"}{printf "image \"%s\" %s %s 10 0\ncircle %s %s 1 \"red\"\n", $1, $2, $3, $2, $3} END {print "eslide\nedeck"}' > walk3.dsh
