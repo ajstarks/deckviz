@@ -1,4 +1,6 @@
+// Black national Anthem, James Weldon Johnson, 1900
 deck
+	// verse 1
 	slide "black" "white"
 		ts=2.6
 		l1=40
@@ -7,11 +9,17 @@ deck
 		yincr=9.5
 		top=85
 
+		scolor="white"
+		inner=0.5
+		outer=inner*3
+		sincr=3.6
+		sy=top+1
+
 		y=top
 		tcolor="white"
-		text "Lift every voice and sing, Till earth and heaven ring."            l1 y ts "serif" tcolor
+		text "Lift every voice and sing, Till earth and heaven ring,"            l1 y ts "serif" tcolor
 		y-=yincr
-		text "Ring with the harmonies of Liberty. Let our rejoicing"             l1 y ts "serif" tcolor
+		text "Ring with the harmonies of Liberty; Let our rejoicing"             l1 y ts "serif" tcolor
 		y-=yincr
 		text "rise, high as the listening skies, Let it resound loud"            l1 y ts "serif" tcolor
 		y-=yincr
@@ -22,13 +30,67 @@ deck
 		text "brought us. Facing the rising sun of our new day begun. Let us march on till victory"   l2 y ts "serif" tcolor
 		y-=yincr
 		text "is won."                                                                                l2 y ts "serif" tcolor
-		text " Negro National Anthem  —   James Weldon Johnson   —  1900"                             l3 y 3 "serif" tcolor
+		etext " Negro National Anthem  —   James Weldon Johnson   —  1900"                            91 y 3 "serif" tcolor
 
 		// stars
-		scolor="white"
-		inner=0.5
-		outer=inner*3
-		sincr=3.6
+	
+		for i=1 4
+			include "starow.dsh"
+		efor
+		for x=7 40 6
+			star x sy 5 inner outer scolor
+		efor
+	eslide
+
+
+	// verse 2
+	slide "black" "white"
+		y=top
+		tcolor="white"
+		text "Stony the road we trod, Bitter the chastening rod,"                           l1 y ts "serif" tcolor
+		y-=yincr
+		text "Felt  in  the  days  when hope unborn  had died;"                             l1 y ts "serif" tcolor
+		y-=yincr
+		text "Yet with a steady beat, Have not our weary feet,"                            l1 y ts "serif" tcolor
+		y-=yincr
+		text "Come to the place for which our Fathers sighed?"                              l1 y ts "serif" tcolor
+		y-=yincr
+		text "We have come over a way that with tears has been watered,  —  We  have  come,"   l2 y ts "serif" tcolor
+		y-=yincr
+		text "treading our path through the blood of the slaughtered, Out from the gloomy past,"     l2 y ts "serif" tcolor
+		y-=yincr
+		text "Till now we stand at last    —    Where the white gleam of our bright star is cast."     l2 y ts "serif" tcolor
+
+		sy=top+1
+		for i=1 4
+			include "starow.dsh"
+		efor
+		for x=7 40 6
+			star x sy 5 inner outer scolor
+		efor
+	eslide
+
+
+	// verse 3
+	slide "black" "white"
+		y=top
+		tcolor="white"
+		text "God of our weary years,  God of our silent tears,"                   l1 y ts "serif" tcolor
+		y-=yincr
+		text "Thou who hast brought us  thus  far on  the way;"                   l1 y ts "serif" tcolor
+		y-=yincr
+		text "Thou who hast by Thy might, Led us into the light"                   l1 y ts "serif" tcolor
+		y-=yincr
+		text "Keep us forever in the path, we pray.   Lest our "                   l1 y ts "serif" tcolor
+		y-=yincr
+		text "feet stray from the places, our God, where we met Thee,   Lest  our  hearts  drunk"     l2 y ts "serif" tcolor
+		y-=yincr
+		text "with the wine of the world, we forget Thee;   Shadowed beneath Thine hand   —  "     l2 y ts "serif" tcolor
+		y-=yincr
+		text "May we forever stand,"     l2 y ts "serif" tcolor
+		ctext "—— True to our God ——"    45 y ts "serif" tcolor
+		etext "True to our native land." 88 y ts "serif" tcolor
+
 		sy=top+1
 		for i=1 4
 			include "starow.dsh"
