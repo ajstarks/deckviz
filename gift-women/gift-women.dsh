@@ -1,0 +1,58 @@
+deck
+	// https://www.sos.mo.gov/archives/mdh_splash/default.asp?coll=aa_portrait
+	// https://www2.census.gov/library/publications/decennial/1920/volume-3/41084484v3ch01.pdf
+	// Teachers: https://exhibitenvoy.org/exhibits/we-are-not-strangers-here-african-american-histories-in-rural-california/
+	slide
+		left=10
+		gh=20
+		gw=80
+		gleft=17
+		gtop=50
+		gright=gleft+gw
+		gbot=gtop-gh
+		imy=gtop+18
+		gcolor="chocolate"
+
+		ts=3.5
+		ss=ts * 0.5
+
+		ctext "The Freedom of Womanhood" 50 92 ts
+		text "In the United States in 1920 there were 5,253,695 Black women" gleft 85 ss
+		dchart -left gleft -right gright -top gtop -bottom gbot -color gcolor -pmap -val=f women.d
+
+		image "child.jpg"        27 imy 12 0
+		image "woman-1915.png"   45 imy 33 0
+		image "woman-5-1900.jpg" 75 imy 12 0
+
+		gtop-=10
+		text "Black Women's Occupations" gleft gtop ss
+		gtop-=5
+		gbot-=20
+		
+		gright-=10
+		dchart -lcolor "black" -vcolor "black" -left gleft -right gright -top gtop -bottom gbot -wbar -color gcolor -pct  women-work.d
+
+
+		dmin=0
+		dmax=100
+		cmin=gleft
+		cmax=80
+		gw=cmax-cmin
+
+		bw=gw*0.389
+		ww=gw*0.172
+
+		
+
+		text "Percentage of Women in the Labor Force (1920)" gleft 15 ss
+		hline gleft 10 gw 4 "rgb(210,210,210)"
+		hline gleft 10 bw 2 "hsv(0,56,43)" 40
+		hline gleft  4 gw 4 "rgb(210,210,210)"
+		hline gleft  4 ww 2 "white"
+
+		glx=gleft-1
+		etext "Black 38.9%" glx 9.5 1.5
+		etext "White 17.2%" glx 3.5  1.5
+
+	eslide
+edeck
