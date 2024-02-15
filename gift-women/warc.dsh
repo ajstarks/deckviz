@@ -1,0 +1,25 @@
+edge=polar 40 5 30 124.338
+lab=polar 40 5 34 124.338
+line edge_x edge_y lab_x lab_y 0.1 "gray"
+ctext "Farm Laborers (57.08%)" lab_x lab_y 1.5 "sans" "crimson"
+arc 40 5 30 30 78.6758 170 30 "crimson"	// Farm Laborers 57.1%
+edge=polar 40 5 30 51.2785
+lab=polar 40 5 34 51.2785
+line edge_x edge_y lab_x lab_y 0.1 "gray"
+text "Servants (34.25%)" lab_x lab_y 1.5 "sans" "gold"
+arc 40 5 30 30 23.8813 78.6758 30 "gold"	// Servants 34.2%
+edge=polar 40 5 30 20.2283
+lab=polar 40 5 34 20.2283
+line edge_x edge_y lab_x lab_y 0.1 "gray"
+text "Farmers (4.57%)" lab_x lab_y 1.5 "sans" "green"
+arc 40 5 30 30 16.5753 23.8813 30 "green"	// Farmers 4.6%
+edge=polar 40 5 30 14.2922
+lab=polar 40 5 34 14.2922
+line edge_x edge_y lab_x lab_y 0.1 "gray"
+text "Trades (2.85%)" lab_x lab_y 1.5 "sans" "burlywood"
+arc 40 5 30 30 12.0091 16.5753 30 "burlywood"	// Trades 2.9%
+edge=polar 40 5 30 11.0046
+lab=polar 40 5 34 11.0046
+line edge_x edge_y lab_x lab_y 0.1 "gray"
+text "Teachers (1.26%)" lab_x lab_y 1.5 "sans" "sienna"
+arc 40 5 30 30 10 12.0091 30 "sienna"	// Teachers 1.3%

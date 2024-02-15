@@ -1,0 +1,2 @@
+#!/bin/sh
+gift -crop 92,45,730,970 $1 > crop-$1

@@ -1,0 +1,2 @@
+#!/bin/sh
+decksh gift-women.dsh|pdfr -grid 0

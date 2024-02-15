@@ -22,7 +22,8 @@ deck
 
 		image "child.jpg"        27 imy 12 0
 		image "woman-1915.png"   45 imy 33 0
-		image "woman-5-1900.jpg" 75 imy 12 0
+		//image "woman-2-1918.jpg" 75 imy 12 0
+		image "/home/ajstarks/deckviz/gift-women/crop-service-pnp-cph-3c20000-3c24000-3c24600-3c24676v.jpg" 75 imy 12 0
 
 		gtop-=10
 		text "Black Women's Occupations" gleft gtop ss
@@ -31,7 +32,9 @@ deck
 		
 		gright-=10
 		dchart -lcolor "black" -vcolor "black" -left gleft -right gright -top gtop -bottom gbot -wbar -color gcolor -pct  women-work.d
+eslide
 
+slide
 
 		dmin=0
 		dmax=100
@@ -42,7 +45,6 @@ deck
 		bw=gw*0.389
 		ww=gw*0.172
 
-		
 
 		text "Percentage of Women in the Labor Force (1920)" gleft 15 ss
 		hline gleft 10 gw 4 "rgb(210,210,210)"
@@ -54,5 +56,146 @@ deck
 		etext "Black 38.9%" glx 9.5 1.5
 		etext "White 17.2%" glx 3.5  1.5
 
+		laborw=95
+		lx=2.5
+		ly=50
+		lh=5
+		imy=ly+20
+		farmerpct=0.616  * laborw
+		servantpct=0.342 * laborw
+		tradepct=0.029   * laborw
+		teachpct=0.013   * laborw
+		imw2=farmerpct/2
+		imx=lx+imw2
+		//rect  imx imy 20 30 "green"
+		image "farmer.jpg" imx imy 20 0
+		rect  imx imy 20 28 "green" 10
+		hline lx ly farmerpct lh "green"
+		ctext "Farmers/Farm Laborers: 61.6%" imx ly 2 "sans" "white"
+
+		lx+=farmerpct
+		imw2=servantpct/2
+		imx=lx+imw2
+		image "servant.jpg" imx imy 20 0
+		rect  imx imy 20 20 "blue" 10
+		hline lx ly servantpct lh "blue"
+		ctext "Servants: 34.2%" imx ly 2 "sans" "white"
+
+		lx+=servantpct
+		imw2=tradepct/2
+		imx=lx+imw2
+		imy-=10
+		image "trades.png" imx imy 10 0
+		rect  imx imy 10 8 "orange" 10
+		hline lx ly tradepct   lh "orange"
+
+		lx+=tradepct
+		imw2=teachpct/2
+		imx=lx+imw2
+		imy-=22
+		image "teachers.png" imx imy 10 0
+		rect  imx imy 10 10 "red" 10
+		hline lx ly teachpct   lh "red"
 	eslide
+
+	slide
+		laborw=95
+		lx=2.5
+		ly=50
+		lh=5
+		farmerpct=0.616  * laborw
+		servantpct=0.342 * laborw
+		tradepct=0.029   * laborw
+		teachpct=0.013   * laborw
+		hline lx ly farmerpct lh "green"
+		lx+=farmerpct
+		hline lx ly servantpct lh "yellow"
+		lx+=servantpct
+		hline lx ly tradepct   lh "sienna"
+		lx+=tradepct
+		hline lx ly teachpct   lh "burlywood"
+
+		ly+=20
+		ims=15
+		cimage "farmer.jpg"   "Farmers/Farm Laborers"    20 ly 12 0 // 61.6%
+		cimage "servant.jpg"  "Servants"                 45 ly 15 0 // 34.2%
+		cimage "trades.png"    "Trades"                  65 ly 17 0 // 2.9%
+		cimage "teachers.png"  "Teachers"                85 ly ims 0 // 1.3%
+	eslide
+
+
+	slide
+		laborh=96
+		lx=30
+		ly=2
+		lw=12
+		imx=lx+30
+		farmlaborpct=0.571  * laborh
+		servantpct=0.342    * laborh
+		farmerpct=0.046     * laborh
+		tradepct=0.029      * laborh
+		teachpct=0.013      * laborh
+		vline lx ly farmlaborpct lw "crimson"
+		etext "Farm Laborers"         20 30 1.5
+		ctext "57.1%"                 30 30 3
+		image "woman-montgomery.jpg" imx 30 30 0
+
+		ly+=farmlaborpct
+		vline lx ly servantpct lw "yellow"
+		etext "Servants"              20 72 1.5
+		ctext "34.2%"                 30 72 3
+		image "nanny.jpg"            imx 72 12 0 
+
+		ly+=servantpct
+		vline lx ly farmerpct lw "green"
+		etext "Farmers"              20 91 1.5
+		ctext "4.6%"                 30 91 1
+		image "farmer.jpg"           imx 91 7 0
+	
+		ly+=farmerpct
+		vline lx ly tradepct   lw "sienna"
+		etext "Trades"               20 95 1.5
+		ctext "2.9%"                 30 95 1
+		image "trades.png"           80 95 10 0
+
+		ly+=tradepct
+		vline lx ly teachpct   lw "burlywood"
+		etext "Teachers"             20 97 1
+		ctext "1.3%"                 30 97 1
+		image "teachers.png"         92 94 10 0
+	eslide
+
+
+	slide "black" "white"
+		dchart -lcolor "black" -vcolor "black" -left 50 -right gright -top 70 -bottom gbot -donut -pwidth=15 -psize=15  -pct  women-work.d
+		//textblock "Black Women's Occupations" 40 60 20 3
+		image "farmer.jpg"       20 70 26 0 // 61.6%
+		image "servant.jpg"      56 30 17 0 // 34.2%
+		image "trades.png"       75 55 15 0 // 2.9%
+		image "teachers.png"     75 70 10 0 // 1.3%
+	eslide
+
+
+	slide "black" "white"
+		ctext "Black Women's Labor (1920)" 50 95 3.5
+		vline 7.5 44 42 0.75 "crimson"
+		vline 60  42 30 0.75 "gold"
+		vline 73  23 14 0.75 "green"
+		vline 84.2 15   6   0.4 "burlywood"
+		vline 87.2 5.5  9  0.4 "sienna"
+		image "farm-labor0.jpg"            20 65 24  0 
+		image "nanny.jpg"                  68 57 15  0
+		image "farmer.jpg"                 78 30 10  0
+		image "trades.png"                 88 18 7   0
+		image "GSimpson.jpg"               90 10 5   0 
+		include "warc.dsh"
+	eslide
+
+	slide
+		ctext "Percentage of Women in the Labor Force (1920)" 50 92 3
+		dchart -left=10 -lego -top 80 -textsize=4  workingb.d
+		dchart -left=55 -lego -top 80 -textsize=4  workingw.d
+	eslide
+
+
 edeck
