@@ -1,25 +1,25 @@
-edge=polar 40 5 30 124.338
-lab=polar 40 5 34 124.338
+edge=polar 40 5 25 124.338
+lab=polar 40 5 29 124.338
 line edge_x edge_y lab_x lab_y 0.1 "gray"
 ctext "Farm Laborers (57.08%)" lab_x lab_y 1.5 "sans" "crimson"
-arc 40 5 30 30 78.6758 170 30 "crimson"	// Farm Laborers 57.1%
-edge=polar 40 5 30 51.2785
-lab=polar 40 5 34 51.2785
+arc 40 5 25 25 78.6758 170 25 "crimson"	// Farm Laborers 57.1%
+edge=polar 40 5 25 51.2785
+lab=polar 40 5 29 51.2785
 line edge_x edge_y lab_x lab_y 0.1 "gray"
 text "Servants (34.25%)" lab_x lab_y 1.5 "sans" "gold"
-arc 40 5 30 30 23.8813 78.6758 30 "gold"	// Servants 34.2%
-edge=polar 40 5 30 20.2283
-lab=polar 40 5 34 20.2283
+arc 40 5 25 25 23.8813 78.6758 25 "gold"	// Servants 34.2%
+edge=polar 40 5 25 20.2283
+lab=polar 40 5 29 20.2283
 line edge_x edge_y lab_x lab_y 0.1 "gray"
-text "Farmers (4.57%)" lab_x lab_y 1.5 "sans" "green"
-arc 40 5 30 30 16.5753 23.8813 30 "green"	// Farmers 4.6%
-edge=polar 40 5 30 14.2922
-lab=polar 40 5 34 14.2922
+text "Farmers (4.57%)" lab_x lab_y 1.5 "sans" "rgb(0,128,0)"
+arc 40 5 25 25 16.5753 23.8813 25 "rgb(0,128,0)"	// Farmers 4.6%
+edge=polar 40 5 25 14.2922
+lab=polar 40 5 29 14.2922
 line edge_x edge_y lab_x lab_y 0.1 "gray"
 text "Trades (2.85%)" lab_x lab_y 1.5 "sans" "burlywood"
-arc 40 5 30 30 12.0091 16.5753 30 "burlywood"	// Trades 2.9%
-edge=polar 40 5 30 11.0046
-lab=polar 40 5 34 11.0046
+arc 40 5 25 25 12.0091 16.5753 25 "burlywood"	// Trades 2.9%
+edge=polar 40 5 25 11.0046
+lab=polar 40 5 29 11.0046
 line edge_x edge_y lab_x lab_y 0.1 "gray"
 text "Teachers (1.26%)" lab_x lab_y 1.5 "sans" "sienna"
-arc 40 5 30 30 10 12.0091 30 "sienna"	// Teachers 1.3%
+arc 40 5 25 25 10 12.0091 25 "sienna"	// Teachers 1.3%

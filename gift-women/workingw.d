@@ -1,2 +1,2 @@
-White Women	17.2	pink
-Other Workers	83.8	silver
+White Women	17.2	tan
+Other Workers	83.8	#cccccc
