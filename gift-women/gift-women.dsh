@@ -17,10 +17,12 @@ deck
 		gbot=gtop-gh
 		imy=gtop+20
 		gcolor="sienna"
-		ts=3.5
+		ts=4
 		ss=ts * 0.5
+		ss1=ts * 0.25
 
-		ctext "The Freedom of Womanhood" 50 92 ts
+		ctext "The Freedom of Womanhood" 50 93 ts
+		ctext "from “The Gift of Black Folk: The Negroes in the Making of America” (1924) by W.E.B. Du Bois" 50 90 ss1
 		ctext "In the United States in 1920 there were 5,253,695 Black women" 50 85 ss
 		dchart -left gleft -right gright -top gtop -bottom gbot -color gcolor -pmap -val=f women.d
 
@@ -66,50 +68,6 @@ deck
 		dchart -left=55 -lego -top 80 -textsize=3  workingw.d
 	eslide
 
-//	slide
-//		laborw=95
-//		lx=2.5
-//		ly=50
-//		lh=5
-//		imy=ly+20
-//		farmerpct=0.616  * laborw
-//		servantpct=0.342 * laborw
-//		tradepct=0.029   * laborw
-//		teachpct=0.013   * laborw
-//		imw2=farmerpct/2
-//		imx=lx+imw2
-//		//rect  imx imy 20 30 "green"
-//		image "farmer.jpg" imx imy 20 0
-//		rect  imx imy 20 28 farmercolor 10
-//		hline lx ly farmerpct lh farmercolor
-//		ctext "Farmers/Farm Laborers: 61.6%" imx ly 2
-//
-//		lx+=farmerpct
-//		imw2=servantpct/2
-//		imx=lx+imw2
-//		image "laundry.jpg" imx imy 20 0
-//		rect  imx imy 20 20 servantcolor 10
-//		hline lx ly servantpct lh servantcolor
-//		ctext "Servants: 34.2%" imx ly 2
-//
-//		lx+=servantpct
-//		imw2=tradepct/2
-//		imx=lx+imw2
-//		imy-=10
-//		image "trades.png" imx imy 10 0
-//		rect  imx imy 10 8 tradecolor 10
-//		hline lx ly tradepct   lh tradecolor
-//
-//		lx+=tradepct
-//		imw2=teachpct/2
-//		imx=lx+imw2
-//		imy-=22
-//		image "teachers.png" imx imy 10 0
-//		rect  imx imy 10 10 teachercolor 10
-//		hline lx ly teachpct   lh teachercolor
-//	eslide
-
-
 	slide
 		ctext "Black Women’s Labor (1920)" 50 92 3.5
 		laborw=90
@@ -131,71 +89,67 @@ deck
 		ly+=20
 		ly2=ly-35
 		ims=15
-		cimage "farmer.jpg"   "Farmers/Farm Laborers (61.6%)"    30 ly  12 0 0 "" 1.75 // 61.6%
-		cimage "laundry.jpg"  "Servants (34.2%)"                 75 ly  10 0 0 "" 1.75  // 34.2%
-		cimage "trades0.jpg"    "Trades (2.9%)"                   93 ly  10 0 0 "" 1.75// 2.9%
-		cimage "teachers.png"  "Teachers (1.3%)"                 94.5 ly2  9 0 0 "" 1.75 // 1.3%
+		cimage "farmer.jpg"   "Farmers/Farm Laborers (61.6%)"    30   ly  12 0 0 "" 1.6  // 61.6%
+		cimage "laundry.jpg"  "Servants (34.2%)"                 75   ly  10 0 0 "" 1.6  // 34.2%
+		cimage "trades0.jpg"  "Trades (2.9%)"                    93   ly  10 0 0 "" 1.6  // 2.9%
+		cimage "teachers.png" "Teachers (1.3%)"                  94.5 ly2  9 0 0 "" 1.5  // 1.3%
 
-		lw=0.25
+		lw=0.2
 		vline 30 53 5 lw farmercolor
 		vline 75 53 5 lw servantcolor
 		vline 93 53 7 lw tradecolor
 		vline 94.5 40 7 lw teachercolor
 	eslide
 
-
 	slide
 		rtext "Black Women’s Labor (1920)" 5 5 90 3.5
 		laborh=96
-		lx=30
+		lx=50
 		ly=2
 		lw=12
-		imx=lx+30
+		imx=lx-25
+		hlw=0.25
 		farmlaborpct=0.571  * laborh
 		servantpct=0.342    * laborh
 		farmerpct=0.046     * laborh
 		tradepct=0.029      * laborh
 		teachpct=0.013      * laborh
 		vline lx ly farmlaborpct lw farmlaborcolor
-		etext "Farm Laborers"         20 30 1.5
-		ctext "57.1%"                 30 30 3
-		image "woman-montgomery.jpg" imx 30 30 0
+		ctext "57.1%"                 lx 30 3
+		cimage "woman-montgomery.jpg" "Farm Laborers" imx 30 27 0 0 "" 1.5
+		imx+=14
+		hline imx 30 15 hlw farmlaborcolor
 
 		ly+=farmlaborpct
+		imx+=26
 		vline lx ly servantpct lw servantcolor
-		etext "Servants"              20 72 1.5
-		ctext "34.2%"                 30 72 3
-		image "laundry.jpg"            imx 72 12 0 
+		ctext "34.2%"                 lx 72 3
+		cimage "laundry.jpg"  "Servants"  imx 72 12 0 0 "" 1.5
+		hline lx 72 9 hlw servantcolor
 
 		ly+=servantpct
+		imx-=30
 		vline lx ly farmerpct lw farmercolor
-		etext "Farmers"              20 91 1.5
-		ctext "4.6%"                 30 91 1
-		image "farmer.jpg"           imx 91 7 0
+		ctext "4.6%"                 lx 91 1
+		cimage "farmer.jpg" "Farmers"          imx 91 7 0 0 "" 1.5
+		imx+=3.5
+		hline imx 91 6 hlw farmercolor
 	
 		ly+=farmerpct
+		imx+=30
 		vline lx ly tradepct   lw tradecolor
-		etext "Trades"               20 95 1.5
-		ctext "2.9%"                 30 95 1
-		image "trades.png"           80 95 10 0
+		ctext "2.9%"                 lx 95 1
+		cimage "trades0.jpg"  "Trades"       imx 95 9 0 0 "" 1.5
+		hline lx 96 14 hlw tradecolor
 
 		ly+=tradepct
+		imx-=43
 		vline lx ly teachpct   lw teachercolor
-		etext "Teachers"             20 97 1
-		ctext "1.3%"                 30 97 1
-		image "teachers.png"         92 94 10 0
+		ctext "1.3%"                 lx 97 1 "sans" "white"
+		cimage "GSimpson.jpg" "Teachers"        imx 94 5 0 0 "" 1.5
+		imx+=2.75
+		hline imx 97.5 20 hlw teachercolor
 	eslide
-
-
-//	slide "black" "white"
-//		ctext "Black Women’s Labor (1920)" 50 92 3.5
-//		dchart -lcolor "black" -vcolor "black" -left 50 -right gright -top 70 -bottom gbot -donut -pwidth=15 -solidpmap -psize=15  -pct  women-work.d
-//		image "farmer.jpg"       20 70 26 0 // 61.6%
-//		image "nanny.jpg"        56 30 12 0 // 34.2%
-//		image "trades.png"       75 55 15 0 // 2.9%
-//		image "teachers.png"     75 70 10 0 // 1.3%
-//	eslide
-
 
 	slide "black" "white"
 		ctext "Black Women’s Labor (1920)" 50 92 3.5
