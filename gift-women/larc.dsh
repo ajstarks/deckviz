@@ -1,10 +1,10 @@
 edge=polar 50 5 40 113.607
-lab=polar 50 5 20 113.607
-ctext "57.08%" lab_x lab_y 3.00 "sans" "black"
+lab=polar 50 5 28 113.607
+ctext "57.08%" lab_x lab_y 2.25 "sans" "black"
 arc 50 5 40 40 82.2146 145 40 "#dc143c" wop	// Farm Laborers 57.1%
 edge=polar 50 5 40 63.379
-lab=polar 50 5 20 63.379
-text "34.25%" lab_x lab_y 3.00 "sans" "black"
+lab=polar 50 5 28 63.379
+text "34.25%" lab_x lab_y 2.25 "sans" "black"
 arc 50 5 40 40 44.5434 82.2146 40 "#ffd700" wop	// Servants 34.2%
 edge=polar 50 5 40 42.032
 lab=polar 50 5 42 42.032

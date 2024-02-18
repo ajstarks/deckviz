@@ -7,7 +7,9 @@ deck
 	farmercolor="#00aa00"
 	tradecolor="#d2b48c"
 	teachercolor="#654321"
-	slide // "black" "white"
+	bgcolor="linen"
+	txcolor="black"
+	slide bgcolor txcolor
 		left=10
 		gh=20
 		gw=80
@@ -62,7 +64,7 @@ deck
 		etext "White 17.2%" glx gy2  1.5
 	eslide
 
-	slide // "black" "white"
+	slide bgcolor txcolor // "black" "white"
 		ctext "Black and White Women in the U.S. Labor Force (1920)" 50 92 3
 		uslaby=70
 		image "trades.png"   33  uslaby 30 0
@@ -72,7 +74,7 @@ deck
 		dchart -left=55 -lego -top uslaby -textsize=3  workingw.d
 	eslide
 
-	slide
+	slide bgcolor txcolor
 		ctext "Black Women’s Labor (1920)" 50 92 3.5
 		laborw=90
 		lx=5
@@ -105,7 +107,7 @@ deck
 		vline 94.5 40 7 lw teachercolor
 	eslide
 
-	slide "black" "white"
+	slide bgcolor txcolor // "black" "white"
 		textblock "Black Women’s Labor (1920)" 60 30 20 3.5
 		laborh=96
 		lx=50
@@ -120,9 +122,9 @@ deck
 		teachpct=0.013      * laborh
 		vline lx ly farmlaborpct lw farmlaborcolor
 		ctext "57.1%"                 lx 30 3 "sans" "black"
-		cimage "farm-labor0.jpg" "Farm Laborers" imx 30 27 0 0 "" 1.5
+		cimage "farmer.jpg" "Farm Laborers" imx 30 28 0 0 "" 1.5
 		imx+=14
-		hline imx 30 15 hlw farmlaborcolor
+		hline imx 30 20 hlw farmlaborcolor
 
 		ly+=farmlaborpct
 		imx+=26
@@ -135,9 +137,9 @@ deck
 		imx-=30
 		vline lx ly farmerpct lw farmercolor
 		ctext "4.6%"                 lx 91 1.5 "sans" "black"
-		cimage "farmer.jpg" "Farmers"          imx 91 7 0 0 "" 1.5
+		cimage "farm-labor.jpg" "Farmers"          imx 91 5 0 0 "" 1.5
 		imx+=3.5
-		hline imx 91 6 hlw farmercolor
+		hline imx 91 10 hlw farmercolor
 	
 		ly+=farmerpct
 		imx+=30
@@ -155,30 +157,14 @@ deck
 		hline imx 97.5 20 hlw teachercolor
 	eslide
 
-	slide "black" "white"
+	slide bgcolor txcolor
 		ctext "Black Women’s Labor (1920)" 50 92 3.5
-//		rect 22 60 24 43 "crimson"      20
-//		rect 65 52 18 30 "gold"         20
-//		rect 73 27  9 12 "rgb(0,128,0)" 20
-//		rect 85 18  7 7 "burlywood"     20
-//		rect 85  8  5 8 "sienna"        20
-
-		aw=0.5
-		aop=100
-		rect 10 60  aw 43  farmlaborcolor aop
-		rect 55 52  aw 30  servantcolor   aop
-		rect 68 27  aw 12  farmercolor    aop
-		rect 81 18  aw 7   tradecolor     aop
-		rect 82  8  aw 8   teachercolor   aop
-		image "farm-labor0.jpg"            22 60 24  0 
-		image "laundry.jpg"                65 52 18  0
-		image "farmer.jpg"                 73 27  9  0
-		image "trades0.jpg"                85 18 7   0
-		image "GSimpson.jpg"               85 8  5   0 
-		include "warc.dsh"
+		wop=80
+		include "larc.dsh"
+		cimage  "farmer.jpg"      "Farm Laborers" 25 68 20   0 0 "" 1.2
+		cimage  "laundry.jpg"     "Servants"      67 67 12   0 0 "" 1.2
+		cimage  "farm-labor.jpg"  "Farmers"       83 53 6    0 0 "" 1.2
+		cimage  "trades0.jpg"     "Trades"        92 43 7    0 0 "" 1.2
+		cimage  "GSimpson.jpg"    "Teachers"      90 32 5    0 0 "" 1.2
 	eslide
-
-
-
-
 edeck

@@ -24,6 +24,7 @@ BEGIN {
 	label[NR] = $1
 	data[NR] = $2
 	colors[NR] = $3
+	outlables="no"
 }
 END {
 	start=startangle
@@ -32,18 +33,40 @@ END {
 		m = pct * span
 		a1 = start - m
 		a2 = start
-		r=size+4
 		labelangle =  a2-((a2-a1)/2)
+		
 		printf "edge=polar %g %g %g %g\n", cx, cy, size, labelangle
-		printf "lab=polar %g %g %g %g\n", cx, cy, r, labelangle
-		printf "line edge_x edge_y lab_x lab_y 0.1 \"gray\"\n"
+
 		if (labelangle > 90) {
 			ttype="ctext"
 		} else {
 			ttype="text"
 		}
-		printf "%s \"%s (%.2f%%)\" lab_x lab_y 1.5 \"sans\" \"%s\"\n", ttype, label[i], pct*100, colors[i]
-		printf "arc %g %g %g %g %g %g %g \"%s\"\t// %s %.1f%%\n", cx, cy, size, size, a1, a2,  size, colors[i], label[i], pct*100
+		
+		if (outables == "yes") {
+			r=size+2
+			tsize=1.5
+			printf "lab=polar %g %g %g %g\n", cx, cy, r, labelangle
+			printf "line edge_x edge_y lab_x lab_y 0.1 \"%s\"\n", colors[i]
+			printf "%s \"%s (%.2f%%)\" lab_x lab_y tsize \"sans\" \"%s\"\n", ttype, label[i], pct*100, tsize, "black"
+		} else {
+
+			if (pct*100 > 30) {
+				tsize=2.25
+				r=size*0.7
+				printf "lab=polar %g %g %g %g\n", cx, cy, r, labelangle
+				
+			} else {
+				r = size+2
+				tsize=1.5
+				printf "lab=polar %g %g %g %g\n", cx, cy, r, labelangle
+				printf "line edge_x edge_y lab_x lab_y 0.1 \"%s\"\n", colors[i]
+				
+			}
+			
+			printf "%s \"%.2f%%\" lab_x lab_y %.2f \"sans\" \"%s\"\n", ttype, pct*100, tsize, "black"
+		}
+		printf "arc %g %g %g %g %g %g %g \"%s\" wop\t// %s %.1f%%\n", cx, cy, size, size, a1, a2,  size, colors[i], label[i], pct*100
 		start = a1
 	}
 }
