@@ -1,0 +1,6 @@
+def lit X0 X1 X2 Y Incr1 Filename Resp
+	text "a a" X0 Y os "symbol"
+	textblockfile Filename X1 Y lw ls "serif"
+	Y-=Incr1
+	text Resp X2 Y ls "serif" rcolor
+edef

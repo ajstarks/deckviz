@@ -35,6 +35,7 @@
 * juneteenth -- Juneteenth flag
 * lamp -- Bauhaus lamp
 * lift -- Lift every voice and sing
+* litany -- Du Bois's "A Litany of Atlanta"
 * lynch -- "A Man Was Lynched" poster
 * messiah -- A passage from Handel's Messiah
 * middle -- the Middle Passage

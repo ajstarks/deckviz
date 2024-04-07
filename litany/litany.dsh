@@ -1,7 +1,10 @@
 // border using dingbat fonts
 // for symbol try DavysDingbats2, JandaFlowerDoodles, IMFellFlowers2
 deck
-	border="H" // IMFellFlowers2
+	canvas 1200 1750
+	import "lit.dsh"
+	import "border.dsh"
+	borderChar="H" // IMFellFlowers2
 	fs=2.5
 	top=95
 	bot=5
@@ -10,74 +13,82 @@ deck
 	xincr=fs*1.5	// horizontal char spacing
 	yincr=fs*0.8	// vertical char spacing
 	rcolor="#aa0000"
+
+	c0=12
+	c1=c0+8
+	c2=c1+5
+	lw=60
+	ls=2
+	os=ls*0.75
+
 	slide
-		for x=left right xincr
-			ctext border x top fs "symbol"
-			ctext border x bot fs "symbol"
-		efor
-		for y=bot top yincr
-			ctext border left  y fs "symbol"
-			ctext border right y fs "symbol"
-		efor
-
-		c0=12
-		c1=c0+8
-		c2=c1//+5
-		lw=60
-		ls=2
-		os=ls*0.75
-
 		ly=90
 		ctext "A Litany of Atlanta" 50 ly 5 "serif"
-		
-		ly-=11
+		border borderChar left right top bot xincr yincr
+		ly-=6.5
 		text "I" c0 ly 3.5 "symbol"
-		ly=80
-		textblockfile "litany1.txt" c1 ly lw ls "serif"
-
+		ly=85
+		textblockfile "litany01.txt" c1 ly lw ls "serif"
 		ly-=4
 		text "Hear us, good Lord!" c2 ly ls "serif" rcolor
 		ly-=3
+		lit c0 c1 c2 ly 4 "litany02.txt" "We beseech Thee to hear us, Good Lord!"
+		ly-=7
+		lit c0 c1 c2 ly 8 "litany03.txt" "Have mercy on us, misearble sinners!"
+		ly-=11
+		lit c0 c1 c2 ly 8 "litany04.txt" "Thou knowest, good God!" 
+		ly-=11
+		lit c0 c1 c2 ly 4 "litany05.txt" "Justice, O Judge of Men!"
+		ly-=7
+		lit c0 c1 c2 ly 6 "litany06.txt" "Awake thous that sleepest!"
+		ly-=9
+		lit c0 c1 c2 ly 8 "litany07.txt" "Turn again, O Lord, leave us not to perish in our sin!"
+		ly-=11
+		lit c0 c1 c2 ly 2 "litany08.txt" "Great God deliver us!" 
+	eslide
+	slide
+		border borderChar left right top bot xincr yincr
+		ly=85
+		lit c0 c1 c2 ly 2 "litany09.txt" "Great God deliver us!"
+		ly-=5
+		lit c0 c1 c2 ly 2 "litany10.txt" "Great God deliver us!"
+		ly-=5
+		lit c0 c1 c2 ly 10 "litany11.txt" "Bend us Thine ear, O Lord!"
+		ly-=13
+		lit c0 c1 c2 ly 8 "litany12.txt" "Turn again our captivity, O Lord!"
+		ly-=11
+		lit c0 c1 c2 ly 12 "litany13.txt" "Hear us, O heavenly Father!"
+		ly-=15
+		lit c0 c1 c2 ly 8 "litany14.txt" "Forgive us good Lord; we know not what we say!"
+		ly-=11
+		lit c0 c1 c2 ly 10 "litany15.txt" "Keep not thou silence, O God!"
+	eslide
 
-		text "a a" c0 ly os "symbol"
-		textblockfile "litany2.txt" c1 ly lw ls "serif"
-		ly-=4
-		text "We beseech Thee to hear us, Good Lord!" c2 ly ls "serif" rcolor
-		ly-=3
-
-		text "a a" c0 ly os "symbol"
-		textblockfile "litany3.txt" c1 ly lw ls "serif"
-		ly-=8
-		text "Have mercy on us, misearble sinners!" c2 ly ls "serif" rcolor
-		ly-=3
-
-		text "a a" c0 ly os "symbol"
-		textblockfile "litany4.txt" c1 ly lw ls "serif"
-		ly-=8
-		text "Thous knowest, good God!" c2 ly ls "serif" rcolor
-		ly-=3
-
-		text "a a" c0 ly os "symbol"
-		textblockfile "litany5.txt" c1 ly lw ls "serif"
-		ly-=4
-		text "Justice, O Judge of Men!" c2 ly ls "serif" rcolor
-		ly-=3	
-
-		text "a a" c0 ly os "symbol"
-		textblockfile "litany6.txt" c1 ly lw ls "serif"
-		ly-=6
-		text "Awake thous that sleepest!" c2 ly ls "serif" rcolor
-		ly-=3	
-
-		text "a a" c0 ly os "symbol"
-		textblockfile "litany7.txt" c1 ly lw ls "serif"
-		ly-=8
-		text "Turn again, O Lord, leave us not to perish in our sin!" c2 ly ls "serif" rcolor
-		ly-=3	
-
-		text "a a" c0 ly os "symbol"
-		textblockfile "litany8.txt" c1 ly lw ls "serif"
-		ly-=2
-		text "Great God deliver us!" c2 ly ls "serif" rcolor	
+	slide
+		border borderChar left right top bot xincr yincr
+		ly=85
+		lit c0 c1 c2 ly 4 "litany16.txt" "Ah! Christ of all the Pitties!"
+		ly-=7
+		lit c0 c1 c2 ly 4 "litany17.txt" ""
+		ly-=7
+		lit c0 c1 c2 ly 4 "litany18.txt" ""
+		ly-=5
+		lit c0 c1 c2 ly 4 "litany19.txt" "Amen! Welcome dark sleep!"
+		ly-=7
+		lit c0 c1 c2 ly 8 "litany20.txt" "Selah!"
+		ly-=11
+		lit c0 c1 c2 ly 2 "litany21.txt" "Vengence is mine, I will repay, saith the Lord!"
+		ly-=5
+		lit c0 c1 c2 ly 2 "litany22.txt" "Kyrie Eleison"
+		ly-=5
+		lit c0 c1 c2 ly 2 "litany23.txt" "We beseech Thee to hear us, good Lord!"
+		ly-=5
+		lit c0 c1 c2 ly 2 "litany24.txt" "We beseech Thee to hear us, good Lord!"
+		ly-=5
+		lit c0 c1 c2 ly 2 "litany25.txt" "Hear us, good Lord!"
+		ly-=5
+		lit c0 c1 c2 ly 2 "litany26.txt" "Amen!"
+		ly-=5
+		lit c0 c1 c2 ly 2 "litany27.txt" "Selah!"
 	eslide
 edeck

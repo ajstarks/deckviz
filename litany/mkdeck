@@ -1,0 +1,2 @@
+#!/bin/sh
+decksh litany.dsh | pdfdeck -pagesize 1200x1750 -symbol IMFellFlowers2 -stdout - > litany.pdf

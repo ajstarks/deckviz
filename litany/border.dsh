@@ -1,0 +1,10 @@
+def border BorderChar Left Right Top Bottom Xincr Yincr
+	for x=Left Right Xincr
+		ctext BorderChar x Top fs "symbol"
+		ctext BorderChar x Bottom fs "symbol"
+	efor
+	for y=Bottom Top Yincr
+		ctext BorderChar left  y fs "symbol"
+		ctext BorderChar right y fs "symbol"
+	efor
+edef
