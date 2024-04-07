@@ -1,0 +1,83 @@
+// border using dingbat fonts
+// for symbol try DavysDingbats2, JandaFlowerDoodles, IMFellFlowers2
+deck
+	border="H" // IMFellFlowers2
+	fs=2.5
+	top=95
+	bot=5
+	left=5
+	right=95
+	xincr=fs*1.5	// horizontal char spacing
+	yincr=fs*0.8	// vertical char spacing
+	rcolor="#aa0000"
+	slide
+		for x=left right xincr
+			ctext border x top fs "symbol"
+			ctext border x bot fs "symbol"
+		efor
+		for y=bot top yincr
+			ctext border left  y fs "symbol"
+			ctext border right y fs "symbol"
+		efor
+
+		c0=12
+		c1=c0+8
+		c2=c1//+5
+		lw=60
+		ls=2
+		os=ls*0.75
+
+		ly=90
+		ctext "A Litany of Atlanta" 50 ly 5 "serif"
+		
+		ly-=11
+		text "I" c0 ly 3.5 "symbol"
+		ly=80
+		textblockfile "litany1.txt" c1 ly lw ls "serif"
+
+		ly-=4
+		text "Hear us, good Lord!" c2 ly ls "serif" rcolor
+		ly-=3
+
+		text "a a" c0 ly os "symbol"
+		textblockfile "litany2.txt" c1 ly lw ls "serif"
+		ly-=4
+		text "We beseech Thee to hear us, Good Lord!" c2 ly ls "serif" rcolor
+		ly-=3
+
+		text "a a" c0 ly os "symbol"
+		textblockfile "litany3.txt" c1 ly lw ls "serif"
+		ly-=8
+		text "Have mercy on us, misearble sinners!" c2 ly ls "serif" rcolor
+		ly-=3
+
+		text "a a" c0 ly os "symbol"
+		textblockfile "litany4.txt" c1 ly lw ls "serif"
+		ly-=8
+		text "Thous knowest, good God!" c2 ly ls "serif" rcolor
+		ly-=3
+
+		text "a a" c0 ly os "symbol"
+		textblockfile "litany5.txt" c1 ly lw ls "serif"
+		ly-=4
+		text "Justice, O Judge of Men!" c2 ly ls "serif" rcolor
+		ly-=3	
+
+		text "a a" c0 ly os "symbol"
+		textblockfile "litany6.txt" c1 ly lw ls "serif"
+		ly-=6
+		text "Awake thous that sleepest!" c2 ly ls "serif" rcolor
+		ly-=3	
+
+		text "a a" c0 ly os "symbol"
+		textblockfile "litany7.txt" c1 ly lw ls "serif"
+		ly-=8
+		text "Turn again, O Lord, leave us not to perish in our sin!" c2 ly ls "serif" rcolor
+		ly-=3	
+
+		text "a a" c0 ly os "symbol"
+		textblockfile "litany8.txt" c1 ly lw ls "serif"
+		ly-=2
+		text "Great God deliver us!" c2 ly ls "serif" rcolor	
+	eslide
+edeck
