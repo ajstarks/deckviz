@@ -1,0 +1,14 @@
+def petal Cx Cy R T Incr
+		r=R
+		rc=r*0.7
+		inh=Incr/2
+
+		a1=T
+		a2=T+inh
+		a3=T-inh
+		end=polar Cx Cy r  a1
+		ctl=polar Cx Cy rc a2
+		btl=polar Cx Cy rc a3
+		curve Cx Cy ctl_x ctl_y end_x end_y
+		curve Cx Cy btl_x btl_y end_x end_y
+edef

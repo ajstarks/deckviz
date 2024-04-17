@@ -1,0 +1,34 @@
+deck
+	import "pet.dsh"
+
+	slide
+		cx=50
+		cy=50
+		r=30
+		d=r*2
+		for t=0 360 45
+			petal cx cy r t 45
+		efor
+		circle cx cy d "red" 10
+		cx-=40
+		cy+=30
+		r-=20
+		for t=0 360 24
+			petal cx cy r t 24
+		efor
+		cx+=80
+		for t=0 360 24
+			petal cx cy r t 96
+		efor
+		cy-=60
+		for t=0 360 24
+			petal cx cy r t  90
+		efor
+
+		cx-=80
+		for t=0 360 42
+			petal cx cy r t  90
+		efor
+	eslide
+
+edeck
