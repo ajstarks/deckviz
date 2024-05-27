@@ -1,0 +1,19 @@
+def scorechart Title Aname Hname Ascore Hscore Alogo Hlogo Acolor Hcolor Afile Hfile Winner Wcolor
+		Ax=40
+		Hx=60
+
+		ctext Title   50 95 3
+		ctext Hscore  Hx 88 3 "sans" Hcolor
+		ctext Ascore  Ax 88 3 "sans" Acolor
+		image Hlogo   Hx 80 5 0
+		image Alogo   Ax 80 5 0
+		ctext Hname   Hx 85 1.5 "sans" Hcolor
+		ctext Aname   Ax 85 1.5 "sans" Acolor
+
+		opts="-bar=f -line -val=f -min=0 -max=120 -left=10 -right=90 -top=35 -bottom=5"
+		dchart opts -xlabel=0 -yaxis -grid -yrange=0,120,30 -color Hcolor Hfile
+		dchart opts -xlabel=0                               -color Acolor Afile
+
+		opts="-textsize=1 -vol -line -bar=f -xlabel=0 -min=-15 -max=5 -bottom=60 -top=65 -left=10 -right=90 -lcolor=white -vcolor=gray"
+		dchart opts -volop 60 -color Wcolor Winner
+edef

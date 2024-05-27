@@ -1,0 +1,13 @@
+#!/bin/sh
+if test $# -ne 3
+then
+	echo "input-file away home"
+	exit 1
+fi
+input=$1
+away=$2
+home=$3
+awk '{print ++n "\t" $1}' 		$input > $away.d
+awk '{print ++n "\t" $2}' 		$input > $home.d
+awk '{print ++n "\t" $1-$2}' 	$input > $away-diff.d
+awk '{print ++n "\t" $2-$1}' 	$input > $home-diff.d

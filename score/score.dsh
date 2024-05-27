@@ -1,0 +1,36 @@
+// NBA scoring
+// data format: team1  team2
+// ./mkdata input away home
+
+deck
+	import "scorechart.dsh"
+
+	bosname="Boston Celtics"
+	boslogo="bos.png"
+	boscolor="#14834c"
+
+	indname="Indiana Pacers"
+	indlogo="ind.png"
+	indcolor="#05285f"
+
+	minname="Minnesota Timberwolves"
+	minlogo="min.png"
+	mincolor="#061d3c"
+
+	dalname="Dallas Mavericks"
+	dallogo="dal.png"
+	dalcolor="#1563ad"
+	
+	slide
+		scorechart "Eastern Conference Finals, Game 3" bosname indname "114" "111" boslogo indlogo boscolor indcolor "bos.d" "ind.d" "bos-diff.d" boscolor
+	eslide
+
+	slide
+		scorechart "Western Conference Finals, Game 2" dalname minname "109" "108" dallogo minlogo dalcolor mincolor "dal.d" "min.d" "dal-diff.d" dalcolor
+	eslide
+
+	slide
+		scorechart "Western Conference Finals, Game 3" minname dalname "107" "116" minlogo dallogo mincolor dalcolor "min-g3.d" "dal-g3.d" "dal-g3-diff.d" dalcolor
+	eslide
+
+edeck
