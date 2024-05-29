@@ -26,6 +26,10 @@ deck
 	eslide
 
 	slide
+		scorechart "Eastern Conference Finals, Game 4" bosname indname "105" "102" boslogo indlogo boscolor indcolor "bos-g4.d" "ind-g4.d" "bos-g4-diff.d" boscolor
+	eslide
+
+	slide
 		scorechart "Western Conference Finals, Game 2" dalname minname "109" "108" dallogo minlogo dalcolor mincolor "dal.d" "min.d" "dal-diff.d" dalcolor
 	eslide
 
@@ -33,4 +37,7 @@ deck
 		scorechart "Western Conference Finals, Game 3" minname dalname "107" "116" minlogo dallogo mincolor dalcolor "min-g3.d" "dal-g3.d" "dal-g3-diff.d" dalcolor
 	eslide
 
+	slide
+		scorechart "Western Conference Finals, Game 4" minname dalname "105" "100" minlogo dallogo mincolor dalcolor "min-g4.d" "dal-g4.d" "min-g4-diff.d" mincolor
+	eslide
 edeck
