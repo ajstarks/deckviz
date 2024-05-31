@@ -5,6 +5,10 @@
 deck
 	import "scorechart.dsh"
 
+	nykname="New York Knicks"
+	nyklogo="nyk.png"
+	nykcolor="#f28439"
+
 	bosname="Boston Celtics"
 	boslogo="bos.png"
 	boscolor="#14834c"
@@ -20,9 +24,13 @@ deck
 	dalname="Dallas Mavericks"
 	dallogo="dal.png"
 	dalcolor="#1563ad"
+
+	slide
+		scorechart "Eastern Conference Semi-Finals, Game 4" nykname indname "89" "121" nyklogo indlogo nykcolor indcolor "nyk-g4.d" "ind-g4.d" "ind-g4-diff.d" indcolor
+	eslide
 	
 	slide
-		scorechart "Eastern Conference Finals, Game 3" bosname indname "114" "111" boslogo indlogo boscolor indcolor "bos.d" "ind.d" "bos-diff.d" boscolor
+		scorechart "Eastern Conference Finals, Game 3"      bosname indname "114" "111" boslogo indlogo boscolor indcolor "bos.d" "ind.d" "bos-diff.d" boscolor
 	eslide
 
 	slide
@@ -39,5 +47,9 @@ deck
 
 	slide
 		scorechart "Western Conference Finals, Game 4" minname dalname "105" "100" minlogo dallogo mincolor dalcolor "min-g4.d" "dal-g4.d" "min-g4-diff.d" mincolor
+	eslide
+
+	slide
+		scorechart "Western Conference Finals, Game 5" dalname minname "124" "103" dallogo minlogo dalcolor mincolor "dal-g5.d" "min-g5.d" "dal-g5-diff.d" dalcolor
 	eslide
 edeck
