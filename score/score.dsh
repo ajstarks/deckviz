@@ -1,6 +1,10 @@
 // NBA scoring
-// data format: team1  team2
-// ./mkdata input away home
+// data format
+//away\thome
+//.
+//.
+//.
+// ./mkdata input awayname homename
 
 deck
 	import "scorechart.dsh"
