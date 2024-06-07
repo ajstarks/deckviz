@@ -1,19 +1,19 @@
 def scorechart Title Aname Hname Ascore Hscore Alogo Hlogo Acolor Hcolor Afile Hfile Winner Wcolor
-		Ax=40
-		Hx=60
+	Ax=40
+	Hx=60
 
-		ctext Title   50 95 3
-		ctext Hscore  Hx 88 3 "sans" Hcolor
-		ctext Ascore  Ax 88 3 "sans" Acolor
-		image Hlogo   Hx 80 5 0
-		image Alogo   Ax 80 5 0
-		ctext Hname   Hx 85 1.5 "sans" Hcolor
-		ctext Aname   Ax 85 1.5 "sans" Acolor
+	ctext Title   50 95 3
+	ctext Hscore  Hx 88 3 "sans" Hcolor
+	ctext Ascore  Ax 88 3 "sans" Acolor
+	image Hlogo   Hx 80 5 0
+	image Alogo   Ax 80 5 0
+	ctext Hname   Hx 85 1.5 "sans" Hcolor
+	ctext Aname   Ax 85 1.5 "sans" Acolor
 
-		opts="-bar=f -line -val=f  -min=0 -max=130 -left=10 -right=90 -top=35 -bottom=5"
-		dchart opts -xlabel=0 -yaxis -yrange=0,160,40 -grid  -color Hcolor Hfile
-		dchart opts -xlabel=0                               -color Acolor Afile
+	opts="-left=10  -right=90  -bottom=5 -top=35  -xlabel=0 -bar=f -line -val=f  -min=0 -max=125"
+	dchart opts  -yaxis -yrange=0,125,25 -grid  -color Hcolor Hfile
+	dchart opts                                 -color Acolor Afile
 
-		dopts="-bottom=50 -top=65 -left=10 -right=90  -textsize=1 -vol -line -bar=f -xlabel=0 -min=-50 -max=50 -lcolor=white -vcolor=gray"
-		dchart dopts -volop 50 -color Wcolor Winner
+	dopts="-left=10 -right=90 -bottom=50 -top=65  -textsize=1 -vol -volop 50 -line -bar=f -xlabel=0 -min=-40 -max=40 -lcolor=white -vcolor=gray"
+	dchart dopts  -color Wcolor Winner
 edef
