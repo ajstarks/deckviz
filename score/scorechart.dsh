@@ -10,10 +10,10 @@ def scorechart Title Aname Hname Ascore Hscore Alogo Hlogo Acolor Hcolor Afile H
 	ctext Hname   Hx 85 1.5 "sans" Hcolor
 	ctext Aname   Ax 85 1.5 "sans" Acolor
 
-	opts="-left=10  -right=90  -bottom=5 -top=35  -xlabel=0 -bar=f -line -val=f  -min=0 -max=125"
+	opts="-bounds=10,90,35,5 -xlabel=0 -bar=f -line -val=f  -min=0 -max=125"
 	dchart opts  -yaxis -yrange=0,125,25 -grid  -color Hcolor Hfile
 	dchart opts                                 -color Acolor Afile
 
-	dopts="-left=10 -right=90 -bottom=50 -top=65  -textsize=1 -vol -volop 50 -line -bar=f -xlabel=0 -min=-40 -max=40 -lcolor=white -vcolor=gray"
+	dopts="-bounds=10,90,65,50   -textsize=1 -vol -volop 50 -line -bar=f -xlabel=0 -min=-40 -max=40 -lcolor=white -vcolor=gray"
 	dchart dopts  -color Wcolor Winner
 edef

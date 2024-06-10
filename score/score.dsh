@@ -60,4 +60,8 @@ deck
 	slide
 		scorechart "NBA Championship 2024, Game 1"      dalname bosname  "89" "107"  dallogo boslogo dalcolor boscolor  "dal-chm-g1.d"   "bos-chm-g1.d" "bos-chm-g1-diff.d" boscolor
 	eslide
+
+	slide
+		scorechart "NBA Championship 2024, Game 2"      dalname bosname  "98" "105"  dallogo boslogo dalcolor boscolor  "dal-chm-g2.d"   "bos-chm-g2.d" "bos-chm-g2-diff.d" boscolor
+	eslide
 edeck
