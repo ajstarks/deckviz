@@ -9,7 +9,7 @@ fi
 latlong="-latmax 70 -latmin -70 -longmax 165 -longmin -165"
 
 # make markup for the world map
-world $latlong -fulldeck=f -style deck -shape fill -color sienna ~/gocode/kml/cmd/world/world.kml > world.xml
+world $latlong -fulldeck=f -style deck -shape fill -color sienna world.kml > world.xml
 
 # for each file, (list of country codes), place a dot. One slide per file
 echo '<deck>'
