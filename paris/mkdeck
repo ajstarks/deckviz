@@ -1,0 +1,29 @@
+#!/bin/sh
+if test $# -lt 1
+then
+    echo "specify files with country codes" 2>&1
+    exit 1
+fi
+
+# set geo box
+latlong="-latmax 70 -latmin -70 -longmax 165 -longmin -165"
+
+# make markup for the world map
+world $latlong -fulldeck=f -style deck -shape fill -color sienna ~/gocode/kml/cmd/world/world.kml > world.xml
+
+# for each file, (list of country codes), place a dot. One slide per file
+echo '<deck>'
+for files in $*
+do
+    (
+    echo '<slide bg="skyblue">'
+    echo "<text xp=\"50\" yp=\"5\" sp=\"2.5\" align=\"c\">$files</text>"
+    cat world.xml
+    for i in $(cat $files)
+    do
+        grep $i ccll.csv | awk -F, '{print $2, $3}'
+    done | geodeck $latlong -style deck -shape dot -color white:70 -shapesize 1 -autobbox=f
+    echo '</slide>'
+    )
+done
+echo '</deck>'
