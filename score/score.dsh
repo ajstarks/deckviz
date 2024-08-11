@@ -9,6 +9,14 @@
 deck
 	import "scorechart.dsh"
 
+	usaname="USA"
+	usalogo="usa.png"
+	usacolor="blue"
+
+	franame="FRA"
+	fralogo="fra.png"
+	fracolor="red"
+
 	nykname="New York Knicks"
 	nyklogo="nyk.png"
 	nykcolor="#f28439"
@@ -77,6 +85,8 @@ deck
 		scorechart "NBA Championship 2024, Game 5"      dalname bosname  "88" "106"  dallogo boslogo dalcolor boscolor  "dal-chm-g5.d"   "bos-chm-g5.d" "bos-chm-g5-diff.d" boscolor
 	eslide
 
-
+	slide
+		scorechart "2024 Olympics Basketball Gold Medal Game"			franame usaname	"87" "98"	fralogo usalogo fracolor usacolor	"usa-gold.d" "fra-gold.d" "fra-gold-diff.d" usacolor
+	eslide
 
 edeck
