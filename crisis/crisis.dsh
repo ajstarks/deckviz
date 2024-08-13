@@ -1,0 +1,59 @@
+deck
+	//slide "black" "white"
+	//	image "the-crisis-may-1927.jpg" 50 50 100 0
+	//eslide
+
+	bgcolor="#304b6b"
+	fgcolor="#cec4ba"
+	sawtoothX="0 3 6 9 12 15 18 21 24 27 30 33 36 39 42 45 48 51 54 57 60 63 66 69 72 75 78 81 84 87 90 93 96 99 0"
+	sawtoothY="98 100 98 100 98 100 98 100 98 100 98 100 98 100 98 100 98 100 98 100 98 100 98 100 98 100 98 100 98 100 98 100 98 100 100"
+	slide bgcolor "white"
+		polygon  sawtoothX  sawtoothY fgcolor
+
+		// center
+		polygon "25 75 55 50 45" 						"82 82 45 50 45"				fgcolor
+		polygon "45 29 47 50 53 71 57"					"82 75 78 50 78 75 82"			bgcolor  75
+		polygon "40 29 45 50 55 71 62"					"82 75 76 50 76 75 82"			bgcolor  30
+		polygon "25 34 29 44 50 56 71 67 75"			"82 80 75 73 50 73 75 80 82"	bgcolor 30
+
+		// left
+		polygon "11 15 15 18 14 11" 					"82 82 78 75 75 78"				fgcolor 70
+		polygon "11 15 18 14" 							"75 75 70 70"					fgcolor 70
+		polygon "11 16 20 15" 							"70 70 57 57"					fgcolor 70
+		polygon "13 18 35 7 3 15"						"57 57 42 17 17 42"				fgcolor 70
+
+		polygon "15 19 19 22 18 15" 					"82 82 78 75 75 78"				fgcolor 20
+		polygon "15 19 22 18" 							"75 75 70 70"					fgcolor 20
+		polygon "15 20 24 19" 							"70 70 57 57"					fgcolor 20
+		polygon "17 22 39 11 7 19"						"57 57 42 17 17 42"				fgcolor 20
+
+		polygon "0 11 11 14 11 14 11 15 13 30 3 0"		"82 82 78 75 75 70 70 57 57 42 17 17"     fgcolor
+
+		// right
+		polygon "81 81 78 82 85 85" 					"82 78 75 75 78 82"				fgcolor 20
+		polygon "81 85 83 79" 							"75 75 70 70"					fgcolor 20
+		polygon "82 87 80 75" 							"70 70 57 57"					fgcolor 20
+		polygon "78 60 88 93 65 82" 					"57 42 17 17 42 57"				fgcolor 20
+
+		polygon "85 85 82 86 89 89" 					"82 78 75 75 78 82" 			fgcolor 70
+		polygon "85 89 87 83" 							"75 75 70 70"					fgcolor 70
+		polygon "87 92 85 80" 							"70 70 57 57"					fgcolor 70
+		polygon "82 65 93 97 70 87" 					"57 42 17 17 42 57"				fgcolor 70
+
+		polygon "89 100 100 97 70 87 85 92 87 89 86 89 89"	"82 82 17 17 42 57 57 70 70 75 75 78 82" fgcolor
+
+		// awk 'BEGIN { for (x=0; x <= 8*6.28318530718; x+=0.01) {printf "%g\t%g\n", x, sin(x)}}' > sine.d
+
+		opts="-xlabel=0 -val=f -left=0 -right=120 -scatter -color #77818a"
+		dchart  opts -top 11.5 -bottom 10.5   sine.d
+		//dchart  opts -top 11   -bottom 10     sine.d
+		//dchart  opts -top 10.5 -bottom 9.5    sine.d
+		//dchart  opts -top 10   -bottom 9      sine.d
+
+		dchart  opts -top 5.5  -bottom 4.5    sine.d
+		//dchart  opts -top 5    -bottom 4      sine.d
+		//dchart  opts -top 4.5  -bottom 3.5    sine.d
+		//dchart  opts -top 4    -bottom 3      sine.d
+	eslide
+
+edeck
