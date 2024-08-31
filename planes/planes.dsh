@@ -1,0 +1,41 @@
+// Planes in Modulated Surface 4, Lygia Clark, 1957
+deck
+	canvas 1000 1000
+	bgcolor="black"
+	shapecolor="white"
+	slide bgcolor
+
+		top=100
+		bottom=0
+		left=0
+		right=100
+		half=50
+		fourth=half/2
+		threefourths=fourth*3
+
+		ns=10            // notch size
+		n1=half-ns
+		n2=half+ns
+
+		// top shape (clockwise from midpoint)
+		t1=(half,half)
+		t2=(n1,threefourths)
+		t3=(fourth,threefourths)
+		t4=(fourth,half)
+		t5=(left,half)
+		t6=(fourth,top)
+		t7=(threefourths,top)
+		polygon "t1_x t2_x t3_x t4_x t5_x t6_x t7_x" "t1_y t2_y t3_y t4_y t5_y t6_y t7_y" shapecolor
+		
+		// bottom shape
+		b1=(half,half)
+		b2=(n2,fourth)
+		b3=(threefourths,fourth)
+		b4=(threefourths,half)
+		b5=(right,half)
+		b6=(threefourths,bottom)
+		b7=(fourth,bottom)
+		polygon "b1_x b2_x b3_x b4_x b5_x b6_x b7_x" "b1_y b2_y b3_y b4_y b5_y b6_y b7_y" shapecolor
+
+	eslide
+edeck

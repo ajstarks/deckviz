@@ -1,0 +1,2 @@
+#!/bin/sh
+decksh planes.dsh|pdfr -grid 0 -pagesize 1000x1000
