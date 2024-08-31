@@ -1,0 +1,8 @@
+def aline Cx Cy Radius Theta Diff Lw Color
+	c2=Cx-Diff
+	a=polar Cx Cy Radius Theta
+	b=polar c2 Cy Radius Theta
+	//al=format "%.2f" Theta
+	//text al b_x b_y 1 "sans" "red"
+	line a_x a_y b_x b_y Lw Color
+edef

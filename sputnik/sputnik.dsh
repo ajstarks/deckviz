@@ -1,0 +1,36 @@
+deck
+	slide // "black" "white"
+		import "aline.dsh"
+		cx=70
+		cy=50
+		r=58.5/4 // sputnik diameter (cm)
+		size=5
+		cx2=cx-size
+		d=r*2
+		aw=0.4
+		shw=0.05
+		shColor="gray"
+		spColor="gray"
+
+		etext "Sputnik 1"      95 95 2
+		etext "4 October 1957" 95 92 1
+
+		circle cx2 cy d spColor 30
+
+		// shading
+		for a=100 260 2
+			aline cx cy r a size shw shColor
+		efor
+
+		// antennas
+		a1=polar cx2 cy r 90
+		a4=polar cx2 cy r 270
+		a3=polar cx2 cy r 215
+
+		line cx   cy   0 cy aw
+		line a1_x a1_y 0 95 aw
+		line a4_x a4_y 0 5  aw
+		line a3_x a3_y 0 20 aw
+
+	eslide
+edeck
