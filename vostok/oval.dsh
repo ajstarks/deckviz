@@ -1,0 +1,12 @@
+def oval X Y W H Sw
+	h2=H/2
+	w2=W/2
+	x1=X-w2
+	x2=X+w2
+	y1=Y+h2
+	y2=Y-h2
+	arc X y1 W W 0 180 Sw
+	arc X y2 W W 180 360 Sw
+	vline x1 y2 H Sw
+	vline x2 y2 H Sw
+edef

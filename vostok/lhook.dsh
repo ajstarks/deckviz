@@ -1,0 +1,10 @@
+def lhook X Y W H1 H2 Sw
+	w2=W/2
+	vline X Y H1 Sw
+	ax=X-w2
+	ay=Y+H1
+	arc ax ay W W 0 180 Sw
+	dx=X-W
+	dy=ay-H2
+	vline dx dy H2 Sw
+edef

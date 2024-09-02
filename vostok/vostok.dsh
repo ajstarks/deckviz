@@ -1,0 +1,56 @@
+deck
+	slide
+		import "oval.dsh"
+		import "rhook.dsh"
+		import "lhook.dsh"
+
+		etext "Vostok 1" 95 95 3
+		etext "April 12, 1961" 95 91 2
+		mid=50
+		mid1=mid-7.5
+		mid2=mid+7.5
+
+		sw=0.2
+		capy=65
+		hooky=capy+10
+		tanky=capy-17
+		insy1=tanky-4
+		insy2=insy1-10
+		moty1=insy2
+		moty2=moty1-20
+		retroy1=moty2
+		retroy2=retroy1-4
+
+		//arc 50 capy 30 30 0 220
+		//arc 50 capy 30 30 320 359
+
+		circle 50 capy 30 "gray" 30
+		circle 41 tanky 5 "green"
+		circle 44 tanky 5 "green"
+		circle 47 tanky 5 "green"
+		circle 50 tanky 5 "green"
+		circle 53 tanky 5 "green"
+		circle 56 tanky 5 "green"
+		circle 59 tanky 5 "green"
+
+		polygon "40 60 65 35" "insy1 insy1 insy2 insy2"
+		polygon "35 65 55 45" "moty1 moty1 moty2 moty2" "gray" 40
+
+		anx=62
+		any=tanky-8
+		line  anx any 90 50 sw
+		hline anx any 25    sw
+		line  anx any 90 30 sw
+
+		polygon "46 54 52 48" "retroy1 retroy1 retroy2 retroy2"
+
+		oval mid1 15 3 10 sw
+		oval mid2 15 3 10 sw
+		vline mid1 22 7 sw
+		vline mid2 22 7 sw
+
+		lhook mid1 hooky 3 15 7 sw
+		rhook mid2 hooky 3 15 7 sw
+
+	eslide
+edeck
