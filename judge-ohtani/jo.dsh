@@ -1,0 +1,151 @@
+deck
+	import "recordscore.dsh"
+	slide "black" "white"
+		// Aaron Judge
+		paj=704
+		avgj=0.322
+		obpj=0.458
+		slgj=0.701
+		opsj=1.159
+		hrj=58
+		runsj=122
+		rbij=144
+		wrcj=218
+		wobaj=0.476
+		kpctj=24.3
+		bbpctj=18.9
+		sbj=10
+		fwarj=11.2
+		bwarj=10.8
+
+		// Shohei Ohtani
+		pao=731
+		avgo=0.310
+		obpo=0.390
+		slgo=0.646
+		opso=1.036
+		hro=54
+		runso=134
+		rbio=130
+		wrco=181
+		wobao=0.431
+		kpcto=22.2
+		bbpcto=11.1
+		sbo=59
+		fwaro=9.1
+		bwaro=9.2
+
+		// records
+		pamax=778		// Jimmy Rollins
+		avgmax=0.4711
+		slgmax=0.9744	// Josh Gibson
+		obpmax=0.6094	// Barry Bonds
+		hrmax=72		// Barry Bonds
+		runsmax=198		// Billy Hamiliton
+		rbimax=191		// Hank Wilson
+		opsmax=1.4217	// Barry Bonds
+		wrcmax=244 		// Barry Bonds
+		wobamax=0.597	// Babe Ruth
+		kpctmax=50		// Jake Stahl
+		bbpctmax=20.6	// Ted Williams
+		sbmax=130		// Rickey Henderson
+		fwarmax=12
+		bwarmax=14.1	// Babe Ruth
+		
+		wcolor="green"
+		lcolor="crimson"
+		recordcolor="rgb(100,100,100)"
+		ts=2
+		top=70
+		lw=2
+		lop=10
+		rlop=lop+10
+		y=top
+		ty=top+5
+		tty=ty+15
+		vskip=lw*1.5
+		ims=12
+
+		barmin=10
+		barmax=45
+		
+		ctext "2024 MLB Season Statistical Comparison"  50 tty 4
+		text "Aaron Judge" barmin ty 3
+		image "judge.png" 32 80 ims 0
+
+		text "Favorable"		13 19.3 ts
+		text "Unfavorable"		13 15.3 ts
+		text "Season Record"	13 11.3 ts
+		square 11 20 ts wcolor
+		square 11 16 ts lcolor
+		square 11 12 ts recordcolor
+
+		recordscore "PA"	"%.0f" paj		barmin barmax  pamax	ts lcolor lw y
+		y -= vskip
+		recordscore "AVG"	"%.3f" avgj		barmin barmax avgmax	ts wcolor lw y
+		y -= vskip
+		recordscore "OBP"	"%.3f" obpj		barmin barmax obpmax	ts wcolor lw y 
+		y -= vskip
+		recordscore "SLG"	"%.3f" slgj		barmin barmax slgmax	ts wcolor lw y 
+		y -= vskip
+		recordscore "OPS"	"%.3f" opsj		barmin barmax opsmax	ts wcolor lw y 
+		y -= vskip
+		recordscore "HR"	"%0.f" hrj		barmin barmax hrmax		ts wcolor lw y 
+		y -= vskip
+		recordscore "RUNS"	"%0.f" runsj	barmin barmax runsmax	ts lcolor lw y 
+		y -= vskip
+		recordscore "RBI"	"%0.f" rbij		barmin barmax rbimax	ts wcolor lw y
+		y -= vskip
+		recordscore "wRC+"	"%0.f" wrcj		barmin barmax wrcmax	ts wcolor lw y
+		y -= vskip
+		recordscore "wOBA"	"%.3f" wobaj	barmin barmax wobamax	ts wcolor lw y
+		y -= vskip
+		recordscore "K%"	"%.1f" kpctj	barmin barmax kpctmax	ts lcolor lw y
+		y -= vskip
+		recordscore "BB%"	"%.1f" bbpctj	barmin barmax bbpctmax	ts wcolor lw y
+		y -= vskip
+		recordscore "SB"	"%0.f" sbj		barmin barmax sbmax		ts lcolor lw y
+		y -= vskip
+		recordscore "fWAR"	"%.1f" fwarj	barmin barmax fwarmax	ts wcolor lw y
+		y -= vskip
+		recordscore "bWAR"	"%.1f" bwarj	barmin barmax bwarmax	ts wcolor lw y
+		y -= vskip
+
+
+		barmin=55
+		barmax=90
+		text "Shohei Ohtani" barmin ty 3
+		image "ohtani.png" 80 80 ims 0
+
+		y=top
+		recordscore ""     "%.0f"  pao  barmin barmax     pamax		ts wcolor lw y
+		y -= vskip
+		recordscore ""	"%.3f" avgo		barmin barmax avgmax	ts lcolor lw y
+		y -= vskip
+		recordscore ""	"%.3f" obpo		barmin barmax obpmax	ts lcolor lw y 
+		y -= vskip
+		recordscore ""	"%.3f" slgo		barmin barmax slgmax	ts lcolor lw y 
+		y -= vskip
+		recordscore ""	"%.3f" opso		barmin barmax opsmax	ts lcolor lw y 
+		y -= vskip
+		recordscore ""	"%0.f" hro		barmin barmax hrmax		ts lcolor lw y 
+		y -= vskip
+		recordscore ""	"%0.f" runso	barmin barmax runsmax	ts wcolor lw y 
+		y -= vskip
+		recordscore ""	"%0.f" rbio		barmin barmax rbimax	ts lcolor lw y
+		y -= vskip
+		recordscore ""	"%0.f" wrco		barmin barmax wrcmax	ts lcolor lw y
+		y -= vskip
+		recordscore ""	"%.3f" wobao	barmin barmax wobamax	ts lcolor lw y
+		y -= vskip
+		recordscore ""	"%.1f" kpcto	barmin barmax kpctmax	ts wcolor lw y
+		y -= vskip
+		recordscore ""	"%.1f" bbpcto	barmin barmax bbpctmax	ts lcolor lw y
+		y -= vskip
+		recordscore ""	"%0.f" sbo		barmin barmax sbmax	    ts wcolor lw y
+		y -= vskip
+		recordscore ""	"%.1f" fwaro	barmin barmax fwarmax	ts lcolor lw y
+		y -= vskip
+		recordscore ""	"%.1f" bwaro	barmin barmax bwarmax	ts lcolor lw y
+	eslide
+edeck

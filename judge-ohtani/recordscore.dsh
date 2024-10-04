@@ -1,0 +1,19 @@
+def recordscore StatLabel StatFmt StatValue Min Max MaxStat Ts Color Lw Y
+		lx=Min-1
+		tskip=Ts*.45
+		ly=Y-tskip
+		recx=Max+0.5
+		statx=Min+0.5
+		tlop=lop+10
+		p=vmap StatValue 0 MaxStat Min Max
+		if StatLabel ne ""
+			etext StatLabel lx ly Ts
+		eif
+		line Min y Max y Lw recordcolor 50
+		line Min Y p Y Lw Color
+		val=format StatFmt StatValue
+		text val statx ly Ts "mono" "white"
+		val=format StatFmt MaxStat
+		tlop=50
+		text val recx ly Ts "mono" "" tlop
+edef
