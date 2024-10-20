@@ -1,0 +1,11 @@
+$ sh bundle                     # expand shell archive
+$ uudecode face1.uu             # decode image to raw format
+# change DEF_X and DEF_Y in popi.h to specify image size
+$ gcc -std=c89 -o popi *.c -lm  # build popi
+$ ./popi                        # run popi
+-> r face1
+-> new=face1
+-> w f
+-> q
+$ popio -export -width 248 -height 248 < f > f.png
+$ open f.png

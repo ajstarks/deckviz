@@ -1,0 +1,4 @@
+popio is a Go program to import and export popi images. 
+popio reads from stdin and writes to stdout in two modes; 
+(1) read images (JPEG or PNG) writing to raw, and
+(2) read raw files and write to PNG. 
