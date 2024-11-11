@@ -10,6 +10,20 @@ deck
 	subsize=titlesize/2
 	suby=titley-5
 	subcy=suby+0.9
+
+	slide
+		include "statescale.dsh"
+		include "2024grid.dsh"
+		ctext "2024 US Presidential Election" mid titley titlesize
+		ctext "Harris (DEM)" 35 suby subsize "sans" demcolor
+		ctext "Trump (REP)" 65 suby subsize "sans" repcolor
+		circle 27 subcy 1 demcolor
+		circle 57 subcy 1 repcolor
+		ctext "Area of circles indicate state populations" 50 5 1 "sans" "gray"
+	eslide
+
+
+
 	include "statescale.dsh"
 	slide
 		include "2020grid.dsh"
