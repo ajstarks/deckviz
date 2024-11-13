@@ -1,3 +1,3 @@
 Running the build system (Ctrl- or Cmd-B) within the editor
-runs the script, making the output that is displayed in the viewer.
+runs the script, making the output shown in another editor tab.
 To change the output, edit the script and re-run the build.

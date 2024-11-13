@@ -9,52 +9,49 @@ deck
 	ts            = bs * 1.5
 	ss            = bs / 2
 	c0            = 10
-	c1            = 22
-	c2            = c1 + 30
-	r0            = ty - 10
-	r1            = r0 - 25
-	r2            = r1 - 25
+	c1            = 20
+	c2            = c1 + 35
+	r0            = ty - 15
+	r1            = r0 - 20
+	r2            = r1 - 33
 	r3            = r2 - 5
-	r4            = r3 - 10
+	r4            = r3 - 7
 	picolink      = "https://spinroot.com/pico/"
 	popiolink     = "https://github.com/ajstarks/utils/blob/master/cmd/popio/main.go"
-	netliblink    = "https://netlib.org/popi/"
+	netliblink    = "https://netlib.org/popi"
+	bundlelink    = "https://netlib.org/popi/bundle"
+	facelink      = "https://netlib.org/popi/face1.uu"
 	title         = "Interactive Image Manipulation with popi"
-	buildpopi     = "Go to https://www.netlib.com/popi/, download bundle and face1.uu"
 	buildcmd      = "popi < $file; popio -export < f > f.png"
 	importcmd     = "popio -import < ajs.jpg > ajs"
 	exportcmd     = "popio -export < ajs > f.png"
-	
+
 	slide bgcolor txcolor
 		ctext         title                   tx ty ts
-		image         "popi-build.png"        mid mid 80 0
+		image         "images/sublime-popi01.png"        mid mid 80 0
 	eslide
 
 	slide bgcolor txcolor
 		ctext         "popi (portable pico)"  tx ty ts "sans" "" 100 picolink
-		image         "hilmirror.png"         25 r1 30 0
+		image         "images/hilmirror.png"         25 r1 30 0
 		textblockfile "pico.txt" 45 72 40 bs
 	eslide
 
 	slide bgcolor txcolor
-		ctext         importcmd               33 r0 1.5 "mono"
-		ubracket      33 r0 30 5 0.1
-		ctext         exportcmd               66 r0 1.5 "mono"
-		ubracket      66 r0 30 5 0.1
-		ctext         "run popi"              mid r0 1.5
-		cimage        "ajs-pic01.jpg"         "original image" 20 r1 25 0
-		cimage        "ajs-raw.png"           "raw image" 50 r1 25 0
-		cimage        "ajs-edit.png"          "edited image" 80 r1 25 0
 		ctext         "popio (popi I/O)"      tx ty ts "sans" "" 100 popiolink
-		textblockfile "popio.txt" 10 r4 75 bs
+		ctext         importcmd               20 r0 2 "mono"
+		ctext         exportcmd               80 r0 2 "mono"
+		ctext         "run popi"              mid r0 2
+		cimage        "images/ajs-pic01.jpg"         "original image" 20 r1 25 0
+		cimage        "images/ajs-raw.png"           "raw image" 50 r1 25 0
+		cimage        "images/ajs-edit.png"          "edited image" 80 r1 25 0
+		textblockfile "popio.txt" 10 r2 75 bs
 	eslide
 
 	slide bgcolor txcolor
-		ctext         "Set up"                tx ty ts
-		text          "Sublime Text"          c2 r0 2
-		text          "Loupe"                 c1 r0 2
-		image         "popi-build.png"        mid r1 60 0
-		text          "image in viewer"       c1 r2 2
+		ctext         "Editor Set up"                tx ty ts
+		image         "images/sublime-popi01.png"        mid r1 70 0
+		text          "image in another editor tab"       c1 r2 2
 		text          "popi script in editor" c2 r2 2
 		text          buildcmd                c2 r3 2 "mono"
 		text          "f.png"                 c1 r3 2 "mono"
@@ -65,32 +62,63 @@ deck
 		line          c2 r1 c2 r2 0.1 "crimson"
 	eslide
 
-
-
 	slide bgcolor txcolor
 		ctext "Editor with popi code" tx ty ts
-		image "edit0.png" 73 50 36 0
-		//image "edit2.png" 50 50 80 0
+		image "images/sublime-edit.png" 70 50 43 0
 	eslide
 
 	slide bgcolor txcolor
 		ctext "Editor and Image" tx ty ts
-		image "edit2.png" 50 50 80 0
+		image "images/sublime-popi00.png" 50 50 80 0
 	eslide
 
 	slide bgcolor txcolor
 		ctext "Update and re-build" tx ty ts
-		image "edit3.png" 50 50 80 0
+		image "images/sublime-popi01.png" 50 50 80 0
 	eslide
 
+	slide bgcolor txcolor
+		ims=50
+		ctext "Examples" tx ty ts
+		image "images/example07.png" 25 73 ims 0
+		image "images/example08.png" 25 43 ims 0
+		image "images/example09.png" 25 13 ims 0
+		image "images/example10.png" 75 73 ims 0
+		image "images/example11.png" 75 43 ims 0
+		image "images/example12.png" 75 13 ims 0
+	eslide
+	slide bgcolor txcolor
+		ims=50
+		ctext "Examples" tx ty ts
+		image "images/example31.png" 25 73 ims 0
+		image "images/example32.png" 25 43 ims 0
+		image "images/example33.png" 25 13 ims 0
+		image "images/example40.png" 75 73 ims 0
+		image "images/example42.png" 75 43 ims 0
+		image "images/example43.png" 75 13 ims 0
+	eslide
+	slide bgcolor txcolor
+		ims=50
+		ctext "Examples" tx ty ts
+		image "images/example07.png" 25 73 ims 0
+		image "images/example08.png" 25 43 ims 0
+		image "images/example09.png" 25 13 ims 0
+		image "images/example10.png" 75 73 ims 0
+		image "images/example11.png" 75 43 ims 0
+		image "images/example12.png" 75 13 ims 0
+	eslide
 
 	slide bgcolor txcolor
 		shx           = 7
-		ctext         "Building popi"         tx ty ts "sans" "" 100 netliblink
-		textblock     buildpopi               shx 80 60 bs
-		textfile      "runpopi.txt" shx 65 bs "mono"
-		cimage        "gerard248.png"         "face1" 70 40 10 0
+		she           = shx+40
+		lnks          = bs*0.75
+		ctext         "Building popi"          tx ty ts "sans" "" 100 netliblink
+		text          "Download shell archive" shx 80 bs
+		text          "Download face1.uu"      shx 75 bs
+		text          bundlelink               she 80 lnks "mono" "" 100 bundlelink
+		text          facelink                 she 75 lnks "mono" "" 100 facelink
+		textfile      "runpopi.txt"            shx 65 bs "mono"
+		cimage        "images/gerard248.png"         "face1" 33 40 10 0
 	eslide
-
 
 edeck

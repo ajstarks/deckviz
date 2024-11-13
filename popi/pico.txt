@@ -1,4 +1,4 @@
-popi is the portable version of the pico editor, as described in “Beyond Photography — 
+popi is the portable version of the pico program, described in “Beyond Photography: 
 The Digital Darkroom” by Gerard Holzmann.
 \n
 popi works with square, 8-bit (0-255, black-white) raw grayscale images.

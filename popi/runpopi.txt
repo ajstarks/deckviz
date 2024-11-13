@@ -7,5 +7,6 @@ $ ./popi                        # run popi
 -> new=face1
 -> w f
 -> q
+# convert to raw popi image to png
 $ popio -export -width 248 -height 248 < f > f.png
-$ open f.png
+$ open f.png                    # show the image

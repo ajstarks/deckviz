@@ -1,0 +1,2 @@
+#!/bin/sh
+decksh popi.dsh | pdfdeck -sans PublicSans-Regular -mono Inconsolata-Regular -stdout - > popi.pdf
