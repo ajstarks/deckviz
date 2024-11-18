@@ -1,0 +1,1 @@
+{"shell_cmd": "popi < $file >/dev/null; popio -export < f > f.png"}

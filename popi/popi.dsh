@@ -49,7 +49,17 @@ deck
 	eslide
 
 	slide bgcolor txcolor
-		ctext         "Editor Set up"                tx ty ts
+		ctext         "Editor Build System Set up" tx ty ts
+		text          "in $CONFIG/Packages/User/popi.sublime-build, place:" 20 85 2
+		textfile      "build-system.txt" 20 80  2 "mono"
+		textblock     "Select the build system" 10 30 10 2
+		hline         22 29 30 0.2 "crimson"
+		circle        52 29 1 "crimson"
+		image         "images/build-system.png" 50 40 50 0
+	eslide
+
+	slide bgcolor txcolor
+		ctext         "Editor Set up"              tx ty ts
 		image         "images/sublime-popi01.png"        mid r1 70 0
 		text          "image in another editor tab"       c1 r2 2
 		text          "popi script in editor" c2 r2 2
@@ -58,8 +68,8 @@ deck
 		textblockfile "setup.txt" 10 r4 75 bs
 		circle        c1 r1 1 "crimson"
 		circle        c2 r1 1 "crimson"
-		line          c1 r1 c1 r2 0.1 "crimson"
-		line          c2 r1 c2 r2 0.1 "crimson"
+		line          c1 r1 c1 r2 0.2 "crimson"
+		line          c2 r1 c2 r2 0.2 "crimson"
 	eslide
 
 	slide bgcolor txcolor
