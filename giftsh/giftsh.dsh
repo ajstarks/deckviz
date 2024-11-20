@@ -18,70 +18,14 @@ deck
 	slide bgcolor txcolor
 		ctext "giftsh: a DSL and shell for image transformations" tx ty ts
 		ims=10
-		grid "transforms.dsh" 10 70 10 13 95
-	eslide
-
-	slide bgcolor txcolor
-		ctext "Install and run" tx ty ts
-		ctext "go install github.com/ajstarks/giftsh@latest" mid 70 3 "mono"
-		c1=4
-		ls=ts*0.65
-		lr=60
-		list c1 lr ls "mono" cmdcolor
-			li "giftsh"
-			li "giftsh < f.gsh > f.jpg"
-			li "giftsh -o f.jpg"
-			li "giftsh -c f.gsh"
-			li "giftsh -c f.gsh -o f.jpg"
-			li "giftsh -c f.gsh -w f.jpg"
-			li "giftsh -h"
-		elist
-		c1+=35
-		list c1 lr ls
-			li "commands from stdin, output to stdout"
-			li "commands from f.gsh, output to f.jpg"
-			li "commands from stdin, output to f.jpg"
-			li "commands from f.gsh, output to stdout"
-			li "commands from f.gsh, output to f.jpg"
-			li "commands from f.gsh, write after each command"
-			li "show help and command set"
-		elist
-	eslide
-
-	slide bgcolor txcolor
-		lw=0.2
-		ay=ty+2
-		ctext "giftsh" tx ty 5
-		ctext "script" 20 ty ts
-		ctext "result"  80 ty ts
-
-		arrow 30 ay 40 ay  0.5 3 4
-		arrow 60 ay 70 ay 0.5 3 4
-
-		vline  20 65 20 lw txcolor
-		vline  80 65 20 lw txcolor
-		circle 20 65 1.5 txcolor
-		circle 80 65 1.5 txcolor
-
-		square 20 mid 20 "gray"
-		textfile "test.gsh" 11 55 3  "mono" "black"
-		image "images/ajs.jpg" 40 mid 20 0
-		image "images/ajs-pixelate.jpg" 60 mid 20 0
-		image "images/ajs-pixelate-sobel.jpg" 80 mid 20 0
-		ctext "giftsh -c test.gsh -o test.jpg" mid 20 6 "mono" cmdcolor
-		circle 20 35 1.5 txcolor
-		vline  20 30  4 lw txcolor
-		hline  20 30 25 lw txcolor
-		vline  45 25  5 lw txcolor
-		vline  80 25 10 lw txcolor
-		circle 80 35 1.5 txcolor
+		grid "transforms.dsh" 10 65 10 13 95
 	eslide
 
 	slide bgcolor txcolor
 		lx=4
 		ly=ty-15
-		ls=ts*0.38
-		ll=1.5
+		ls=ts*0.40
+		ll=1.8
 		ctext "Command list" tx ty ts
 		list lx ly ls "mono" cmdcolor 100 ll 
 			li "blur"
@@ -102,12 +46,12 @@ deck
 			li "invert"
 			li "max"
 		elist
-		lx+=10
+		lx+=11
 		list lx ly ls "sans" txcolor 100 ll
 			li "value > 0"
 			li "value (-100, 100)"
 			li "red green blue (-100, 500)"
-			li "hue (0-360) saturation (0-100) percentage (0-100)"
+			li "hue (0-360) saturation (0-100) value (0-100)"
 			li "l for linear->sRGB or s for sRGB->linear"
 			li "value (-100, 100)"
 			li "x1 y1 x2 y2 (rectangle at (x1,y1) and (x2,y2)"
@@ -122,7 +66,7 @@ deck
 			li "invert image"
 			li "local maximum size (odd positive integer)"
 		elist
-		lx+=38
+		lx+=36
 		list lx ly ls "mono" cmdcolor 100 ll
 			li "mean"
 			li "median"
@@ -165,18 +109,81 @@ deck
 	eslide
 
 	slide bgcolor txcolor
+		capsize=1.2
 		ctext "Transformations" tx ty ts
 		grid  "ctransforms.dsh" 10 70 10 18 95
 	eslide	
 
 	slide bgcolor txcolor
+		ctext "Install and run" tx ty ts
+		ctext "go install github.com/ajstarks/giftsh@latest" mid 75 3 "mono"
+		c1=4
+		ls=ts*0.65
+		lr=60
+		list c1 lr ls "mono" cmdcolor 100 2
+			li "giftsh"
+			li "giftsh < f.gsh > f.jpg"
+			li "giftsh -o f.jpg"
+			li "giftsh -c f.gsh"
+			li "giftsh -c f.gsh -o f.jpg"
+			li "giftsh -c f.gsh -w f.jpg"
+			li "giftsh -h"
+		elist
+		c1+=35
+		list c1 lr ls "sans" txcolor 100 2
+			li "commands from stdin, output to stdout"
+			li "commands from f.gsh, output to f.jpg"
+			li "commands from stdin, output to f.jpg"
+			li "commands from f.gsh, output to stdout"
+			li "commands from f.gsh, output to f.jpg"
+			li "commands from f.gsh, write after each command"
+			li "show help and command set"
+		elist
+	eslide
+
+	slide bgcolor txcolor
+		lw=0.2
+		ay=ty+2
+		ds=1.2
+		ctext "giftsh" tx ty ts
+		ctext "script" 20 ty ts
+		ctext "result"  80 ty ts
+
+		arrow 30 ay 40 ay lw 2 3
+		arrow 60 ay 70 ay lw 2 3
+
+		vline  20 65 20 lw txcolor
+		vline  80 65 20 lw txcolor
+		circle 20 65 ds txcolor
+		circle 80 65 ds txcolor
+
+		square 20 mid 20 "gray"
+		textfile "test.gsh" 11 55 3  "mono" "black"
+		image "images/ajs.jpg" 40 mid 20 0
+		image "images/ajs-pixelate.jpg" 60 mid 20 0
+		image "images/ajs-pixelate-sobel.jpg" 80 mid 20 0
+		ctext "giftsh -c test.gsh -o test.jpg" mid 20 6 "mono" cmdcolor
+		circle 20 35 ds txcolor
+		vline  20 30  4 lw txcolor
+		hline  20 30 25 lw txcolor
+		vline  45 25  5 lw txcolor
+		vline  80 25 10 lw txcolor
+		circle 80 35 ds txcolor
+	eslide
+
+	slide bgcolor txcolor
 		ctext "Editor Setup" tx ty ts
-		ctext "in $CONFIG/Packages/User/gsh.sublime-build:" mid 80 3
+		ctext "in <config-dir>/Packages/User/gsh.sublime-build:" mid 80 3
 		ctext `{"shell_cmd": "giftsh < $file > f.jpg"}`  mid 70 3 "mono" cmdcolor
 		image "images/giftsh-st.png" 50 40 80 0
 		ctext "original" 25 10 3
 		ctext "script"   50 10 3
 		ctext "result"   75 10 3
-		textblock "trigger build to see result" 42 40 10 2 "sans" "black"
+		textblock "trigger build to see result" 43 40 10 2 "sans" "black"
+	eslide
+
+	slide bgcolor txcolor
+		ctext "Script to generate image transformations" tx ty ts
+		textfile "images/genpics.sh" 25 85 1.25 "mono"
 	eslide
 edeck

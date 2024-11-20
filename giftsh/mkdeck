@@ -1,7 +1,7 @@
 #!/bin/sh
 if test giftsh.dsh -nt giftsh.pdf
 then 
-	decksh giftsh.dsh|pdfdeck -sans PublicSans-Regular -mono Inconsolata-Regular -stdout - > giftsh.pdf
+	decksh giftsh.dsh|pdfdeck -pagesize 1200x900  -sans PublicSans-Regular -mono Inconsolata-Regular -stdout - > giftsh.pdf
 else
 	echo "update giftsh.dsh"
 fi
