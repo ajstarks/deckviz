@@ -1,0 +1,6 @@
+#!/bin/sh
+for i in *.jpg
+do
+	t=`basename $i .jpg`
+	echo "cimage \"images/$i\" \"$t\" x y ims 0 0 \"\" 1.5"
+done

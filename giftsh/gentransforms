@@ -1,0 +1,2 @@
+#!/bin/sh
+for i in `cat cmd`; do giftsh -c $i.gsh > $i.jpg; done

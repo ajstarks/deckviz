@@ -1,0 +1,182 @@
+deck
+	mid=50
+	tx=mid
+	ty=90
+	ts=4
+	darkmode=1
+
+	if darkmode == 1
+		bgcolor="black"
+		txcolor="white"
+		cmdcolor="rgb(200,200,200)"
+	else
+		bgcolor="white"
+		txcolor="black"
+		cmdcolor="rgb(128,0,0)"
+	eif
+
+	slide bgcolor txcolor
+		ctext "giftsh: a DSL and shell for image transformations" tx ty ts
+		ims=10
+		grid "transforms.dsh" 10 70 10 13 95
+	eslide
+
+	slide bgcolor txcolor
+		ctext "Install and run" tx ty ts
+		ctext "go install github.com/ajstarks/giftsh@latest" mid 70 3 "mono"
+		c1=4
+		ls=ts*0.65
+		lr=60
+		list c1 lr ls "mono" cmdcolor
+			li "giftsh"
+			li "giftsh < f.gsh > f.jpg"
+			li "giftsh -o f.jpg"
+			li "giftsh -c f.gsh"
+			li "giftsh -c f.gsh -o f.jpg"
+			li "giftsh -c f.gsh -w f.jpg"
+			li "giftsh -h"
+		elist
+		c1+=35
+		list c1 lr ls
+			li "commands from stdin, output to stdout"
+			li "commands from f.gsh, output to f.jpg"
+			li "commands from stdin, output to f.jpg"
+			li "commands from f.gsh, output to stdout"
+			li "commands from f.gsh, output to f.jpg"
+			li "commands from f.gsh, write after each command"
+			li "show help and command set"
+		elist
+	eslide
+
+	slide bgcolor txcolor
+		lw=0.2
+		ay=ty+2
+		ctext "giftsh" tx ty 5
+		ctext "script" 20 ty ts
+		ctext "result"  80 ty ts
+
+		arrow 30 ay 40 ay  0.5 3 4
+		arrow 60 ay 70 ay 0.5 3 4
+
+		vline  20 65 20 lw txcolor
+		vline  80 65 20 lw txcolor
+		circle 20 65 1.5 txcolor
+		circle 80 65 1.5 txcolor
+
+		square 20 mid 20 "gray"
+		textfile "test.gsh" 11 55 3  "mono" "black"
+		image "images/ajs.jpg" 40 mid 20 0
+		image "images/ajs-pixelate.jpg" 60 mid 20 0
+		image "images/ajs-pixelate-sobel.jpg" 80 mid 20 0
+		ctext "giftsh -c test.gsh -o test.jpg" mid 20 6 "mono" cmdcolor
+		circle 20 35 1.5 txcolor
+		vline  20 30  4 lw txcolor
+		hline  20 30 25 lw txcolor
+		vline  45 25  5 lw txcolor
+		vline  80 25 10 lw txcolor
+		circle 80 35 1.5 txcolor
+	eslide
+
+	slide bgcolor txcolor
+		lx=4
+		ly=ty-15
+		ls=ts*0.38
+		ll=1.5
+		ctext "Command list" tx ty ts
+		list lx ly ls "mono" cmdcolor 100 ll 
+			li "blur"
+			li "brightness"
+			li "colorbalance"
+			li "colorize"
+			li "colorspace"
+			li "contrast"
+			li "crop"
+			li "cropsize"
+			li "edge"
+			li "emboss"
+			li "fliph"
+			li "flipv"
+			li "gamma"
+			li "gray"
+			li "hue"
+			li "invert"
+			li "max"
+		elist
+		lx+=10
+		list lx ly ls "sans" txcolor 100 ll
+			li "value > 0"
+			li "value (-100, 100)"
+			li "red green blue (-100, 500)"
+			li "hue (0-360) saturation (0-100) percentage (0-100)"
+			li "l for linear->sRGB or s for sRGB->linear"
+			li "value (-100, 100)"
+			li "x1 y1 x2 y2 (rectangle at (x1,y1) and (x2,y2)"
+			li "width height"
+			li "edge filter"
+			li "emboss filter"
+			li "flip horizontal"
+			li "flip vertical"
+			li "value (< 1 darken, > 1 lighten)"
+			li "grayscale image"
+			li "value (-180, 180)"
+			li "invert image"
+			li "local maximum size (odd positive integer)"
+		elist
+		lx+=38
+		list lx ly ls "mono" cmdcolor 100 ll
+			li "mean"
+			li "median"
+			li "min"
+			li "opacity"
+			li "pixelate"
+			li "resize"
+			li "resizefill"
+			li "resizefit"
+			li "rotate"
+			li "saturation"
+			li "sepia"
+			li "sigmoid"
+			li "sobel"
+			li "threshold"
+			li "transpose"
+			li "transverse"
+			li "unsharp"
+		elist
+		lx+=10
+		list lx ly ls "sans" txcolor 100 ll
+			li "local mean size (odd positive integer)"
+			li "local median size (odd positive integer)"
+			li "local minimum size (odd positive integer)"
+			li "value (0-100)"
+			li "pixels"
+			li "width height"
+			li "width height"
+			li "width height"
+			li "degrees counter-clockwise"
+			li "value (-100, 500)"
+			li "value (0-100)"
+			li "midpoint (0,1) factor (-10,10)"
+			li "sobel filter"
+			li "color threshold percentage (0-100)"
+			li "flip horizontally and rotate 90° counter-clockwise"
+			li "flip vertically and rotate 90° counter-clockwise"
+			li "sigma (> 0) amount (0.5, 1.5) threshold (0, 0.05)"
+		elist
+	eslide
+
+	slide bgcolor txcolor
+		ctext "Transformations" tx ty ts
+		grid  "ctransforms.dsh" 10 70 10 18 95
+	eslide	
+
+	slide bgcolor txcolor
+		ctext "Editor Setup" tx ty ts
+		ctext "in $CONFIG/Packages/User/gsh.sublime-build:" mid 80 3
+		ctext `{"shell_cmd": "giftsh < $file > f.jpg"}`  mid 70 3 "mono" cmdcolor
+		image "images/giftsh-st.png" 50 40 80 0
+		ctext "original" 25 10 3
+		ctext "script"   50 10 3
+		ctext "result"   75 10 3
+		textblock "trigger build to see result" 42 40 10 2 "sans" "black"
+	eslide
+edeck

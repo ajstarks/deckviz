@@ -1,0 +1,5 @@
+#!/bin/sh
+for i in *.jpg
+do 
+	echo "image \"images/$i\" x y ims 0"
+done

@@ -1,0 +1,35 @@
+blur 10
+brightness 20
+colorbalance 10 10 10
+colorize 180 100 100
+colorspace l
+colorspace s
+contrast 20
+crop 0 0 100 100
+cropsize 100 100
+edge
+emboss
+fliph
+flipv
+gamma 2
+gray
+hue 75
+invert
+max 3
+mean 5
+median 5
+min 5
+opacity 30
+pixelate 50
+resizefill 512 512
+resizefit 512 512
+resize 200 200
+rotate 270
+saturation 20
+sepia 100
+sigmoid 0.5 0
+sobel
+threshold 20
+transpose
+transverse
+unsharp 1 1 0.05

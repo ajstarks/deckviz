@@ -1,0 +1,37 @@
+blur            value > 0
+brightness      value (-100, 100)
+colorbalance    red green blue (-100, 500)
+colorize        hue (0-360) saturation (0-100) percentage (0-100)
+colorspace      l for linear->sRGB or s for sRGB->linear
+contrast        value (-100, 100)
+crop            x1 y1 x2 y2 (rectangle at (x1,y1) and (x2,y2)
+cropsize        width height
+edge            edge filter
+emboss          emboss filter
+fliph           flip horizontal
+flipv           flip vertical
+gamma           value (< 1 darken, > 1 lighten)
+gray            grayscale image
+help            show command set
+hue             value (-180, 180)
+invert          invert image
+max             local maximum size (odd positive integer)
+mean            local mean size (odd positive integer)
+median          local median size (odd positive integer)
+min             local minimum size (odd positive integer)
+opacity         value (0-100)
+pixelate        pixels
+read            imagefile (open source file)
+reset           discard image edits (watch mode only)
+resize          width height
+resizefill      width height
+resizefit       width height
+rotate          degrees counter-clockwise
+saturation      value (-100, 500)
+sepia           value (0-100)
+sigmoid         midpoint (0,1) factor (-10,10)
+sobel           sobel filter
+threshold       color threshold percentage (0-100)
+transpose       flip horizontally and rotate 90° counter-clockwise
+transverse      flip vertically and rotate 90° counter-clockwise
+unsharp         sigma (> 0) amount (0.5, 1.5) threshold (0, 0.05)
