@@ -26,6 +26,7 @@
 * fire -- German wildfires
 * flag -- Flags
 * functable -- Mathematical Functions Table
+* giftsh -- a DSL for image editing
 * go -- go built from arcs and lines
 * gomod -- go build flows
 * hlito -- Hlito for #RecreationThursday
