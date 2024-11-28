@@ -181,12 +181,18 @@ deck
 	eslide
 
 	slide bgcolor txcolor
-		ctext "Running" tx ty ts
+		ctext "Running with the build system" tx ty ts
 		image "images/all-build.png" 50 50 90 0
 		ctext "original" 20 20 3
 		ctext "script"   50 20 3
 		ctext "result"   80 20 3
-		textblock "trigger build to see result" 43 40 10 2 "sans" "black"
+		textblock "trigger build to see result" 43 50 10 2 "sans" "black"
+	eslide
+
+	slide bgcolor txcolor
+		ctext "Running with entr" tx ty ts
+		image "images/giftsh-entr.png" 50 50 90 0
+		textblock "save file to see result" 43 50 10 2 "sans" "black"
 	eslide
 
 	slide bgcolor txcolor
