@@ -1,0 +1,3 @@
+#!/bin/sh
+decksh br.dsh > br.xml
+pngdeck -pagesize 1200x900 -sans PublicSans-Regular -serif ETBembo-RomanOSF br.xml

@@ -1,0 +1,2 @@
+#!/bin/sh
+decksh br.dsh | pdfr -sans PublicSans-Regular -serif ETBembo-RomanOSF # Charter-Regular

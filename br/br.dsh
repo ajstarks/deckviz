@@ -1,0 +1,92 @@
+// Black Reconstruction, The Price of Disaster, ppg 371-372
+deck
+	import "pmap.dsh"
+	import "twolabel.dsh"
+	footnote="From Black Reconstruction, The Price of Disaster, ppg 371-372"
+	fnx=50
+	fny=5
+	fns=2
+	bgcolor="white"
+	txcolor="black"
+	color1="rgb(20,20,20)"
+	color2="rgb(235,235,235)"
+	slide bgcolor txcolor
+		
+		
+		top=85
+		left=16
+		lw=75
+		lh=4
+		sp=lh*1.5
+		ty=top
+		bty=ty+1
+
+		ctext footnote fnx fny fns
+		twolabel left ty 10 4 "Black" "White" "State Delegations: 1868" color1 color2
+
+		ty-=sp
+		pmap left ty lw lh "South Carolina"  76 48  color1 color2
+		ty-=sp
+		pmap left ty lw lh "Louisiana"       49 49  color1 color2  
+		ty-=sp
+		pmap left ty lw lh "Florida"         18 27  color1 color2
+		ty-=sp
+		pmap left ty lw lh "Virginia"        25 80  color1 color2
+		ty-=sp
+		pmap left ty lw lh "Georgia"         33 137 color1 color2 
+		ty-=sp
+		pmap left ty lw lh "Mississippi"     17 83  color1 color2 
+		ty-=sp
+		pmap left ty lw lh "Alabama"         18 90  color1 color2
+		ty-=sp
+		pmap left ty lw lh "Arkansas"         8 58  color1 color2 
+		ty-=sp
+		pmap left ty lw lh "North Carolina"  15 118 color1 color2 
+		ty-=sp
+		pmap left ty lw lh "Texas"            9 81  color1 color2 
+	eslide
+
+	slide bgcolor txcolor
+		left=16
+		lw=75
+		lh=4
+		sp=lh*1.5
+		ty=top
+		
+		ctext footnote fnx fny fns
+		twolabel left ty 10 lh "Black" "White" "Registered Voters: 1867" color1 color2
+
+		ty-=sp
+		pmap left ty lw lh "Louisiana"			84436 45218   color1 color2 
+		ty-=sp
+		pmap left ty lw lh "Alabama"			104518 61295   color1 color2 
+		ty-=sp
+		pmap left ty lw lh "South Carolina"		80550 46882    color1 color2
+		ty-=sp
+		pmap left ty lw lh "Florida"			16089 11914    color1 color2
+		ty-=sp
+		pmap left ty lw lh "*Mississippi"		77328 62362    color1 color2
+		ty-=sp
+		pmap left ty lw lh "Georgia"			95168 96333    color1 color2
+		ty-=sp
+		pmap left ty lw lh "Virginia"			105832 120101  color1 color2
+		ty-=sp
+		pmap left ty lw lh "Texas"				49497 59633    color1 color2
+		ty-=sp
+		pmap left ty lw lh "North Carolina"		72932 106721   color1 color2
+		ty-=sp
+		pmap left ty lw lh "*Arkansas"			17109 49722    color1 color2
+		text "* Division by race estimated, total official" left 20 1
+	eslide
+
+	slide bgcolor txcolor
+		ty=top
+		ctext footnote fnx fny fns
+		twolabel left ty 10 4 "Black" "White" "Voters in the South" color1 color2
+		ty-=sp
+		pmap left ty lw lh "1860"     0  721191 color1 color2
+		ty-=sp
+		pmap left ty lw lh "1867" 703459 660181 color1 color2
+	eslide
+
+edeck

@@ -1,0 +1,13 @@
+def twolabel X Y Width Height Label1 Label2 Label3 Color1 Color2
+	twby=Y+1
+	twx2=X+Width
+	twlx1=X+1
+	twlx2=twx2+1
+	twlx3=twlx2+Width
+	twth=Height-1
+	hline    X twby Width Height Color1
+	hline twx2 twby Width Height Color2
+	text Label1 twlx1 Y twth "serif" "white"
+	text Label2 twlx2 Y twth "serif"
+	text Label3 twlx3 Y twth "serif"
+edef
