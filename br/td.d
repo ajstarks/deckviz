@@ -1,0 +1,11 @@
+# State Delegations, 1868
+GA	170
+NC	133
+SC	124
+AL	108
+VA	105
+MS	100
+LA	98
+TX	90
+AK	66
+FL	45
