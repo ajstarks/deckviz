@@ -2,17 +2,18 @@
 deck
 	import "pmap.dsh"
 	import "twolabel.dsh"
+
 	footnote="From Black Reconstruction, The Price of Disaster, ppg 371-372"
 	fnx=50
 	fny=5
 	fns=2
+	fnss=fns*0.75
 	bgcolor="white"
 	txcolor="black"
 	color1="rgb(20,20,20)"
 	color2="rgb(235,235,235)"
+
 	slide bgcolor txcolor
-		
-		
 		top=85
 		left=16
 		lw=75
@@ -43,15 +44,11 @@ deck
 		ty-=sp
 		pmap left ty lw lh "North Carolina"  15 118 color1 color2 
 		ty-=sp
-		pmap left ty lw lh "Texas"            9 81  color1 color2 
+		pmap left ty lw lh "Texas"            9 81  color1 color2
 	eslide
 
-
-slide bgcolor txcolor
-		
-		
+	slide bgcolor txcolor
 		top=85
-		left=16
 		lw=75
 		lh=4
 		sp=lh*1.5
@@ -85,14 +82,13 @@ slide bgcolor txcolor
 		ty-=sp
 	eslide
 
-	slide bgcolor txcolor
-		opts="-color=gray -ls=1.5 -hbar -left=20 -right=70"
-		dchart opts -top=85 "td.d"
-		dchart opts -top=35 "rv.d"
-	eslide
+//	slide bgcolor txcolor
+//		opts="-color=gray -ls=1.5 -hbar -left=20 -right=70"
+//		dchart opts -top=85 "td.d"
+//		dchart opts -top=35 "rv.d"
+//	eslide
 
 	slide bgcolor txcolor
-		left=16
 		lw=75
 		lh=4
 		sp=lh*1.5
@@ -121,11 +117,10 @@ slide bgcolor txcolor
 		pmap left ty lw lh "North Carolina"		72932 106721   color1 color2
 		ty-=sp
 		pmap left ty lw lh "*Arkansas"			17109 49722    color1 color2
-		text "* Division by race estimated, total official" left 20 1
+		text "* Division by race estimated, total official" left 20 fnss
 	eslide
 
 	slide bgcolor txcolor
-		left=16
 		lw=75
 		lh=4
 		sp=lh*1.5
@@ -154,7 +149,7 @@ slide bgcolor txcolor
 		pmap left ty lw lh "*Arkansas"			17109 49722    color1 color2
 		ty-=sp
 		pmap left ty lw lh "Florida"			16089 11914    color1 color2
-		text "* Division by race estimated, total official" left 20 1
+		text "* Division by race estimated, total official" left 20 fnss
 	eslide
 
 	slide bgcolor txcolor

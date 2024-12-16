@@ -7,9 +7,15 @@ def pmap X Y Width Height Label V1 V2 Color1 Color2
 	ls=Height*0.45
 	ts=ls*1.2
 	
+
+	l1v=format "%," V1
+	l2v=format "%," V2
+	l1p=format " %0.f%% " pct1
+	l2p=format " %0.f%% " pct2
+
 	l1=format "%0.f (%0.f%%)" V1 pct1
 	l2=format "%0.f (%0.f%%)" V2 pct2
-	tl=format "%0.f" sum
+	tl=format "%," sum
 	
 	value1=vmap V1 0 sum 0 Width
 	value2=vmap V2 0 sum 0 Width
@@ -23,9 +29,17 @@ def pmap X Y Width Height Label V1 V2 Color1 Color2
 	lx1=X+0.5
 	lx2=xv+0.5
 	tx=X+Width
-	tx+=1
+	tx+=8
 	etext Label nx yl ts "serif"
-	text l1 lx1 yl ls "serif" "white"
-	text l2 lx2 yl ls "serif" "black"
-	text tl tx  yl ls "serif"
+	//text l1 lx1 yl ls "serif" "white"
+	//text l2 lx2 yl ls "serif" "black"
+	vw1=value1/2
+	vw2=value2/2
+	lx1p=lx1+5.75
+	lx2p=lx2+5.75
+	text  l1p lx1 yl ls "serif" "white"
+	text  l1v lx1p yl ls "serif" "white"
+	text  l2p lx2 yl ls "serif" "black"
+	text  l2v lx2p yl ls "serif" "black"
+	etext tl tx  yl ls "serif"
 edef
