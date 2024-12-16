@@ -1,0 +1,45 @@
+		ctext "Wide Receiver Championship" tx ty ts
+		// left side
+		// round 1
+		cimage "chase.png"     "Chase"        lp01_x lp01_y ims 0 100 "" 1.5
+		cimage "jefferson.png" "Jefferson"    lp02_x lp02_y ims 0 100 "" 1.5
+		cimage "nabers.png"    "Nabers"       lp03_x lp03_y ims 0 100 "" 1.5
+		cimage "harrison.png"  "Harrison"     lp04_x lp04_y ims 0 100 "" 1.5
+		cimage "brown.png"     "Brown"        lp05_x lp05_y ims 0 100 "" 1.5
+		cimage "hill.png"      "Hill"         lp06_x lp06_y ims 0 100 "" 1.5
+		cimage "diggs.png"     "Diggs"        lp07_x lp07_y ims 0 100 "" 1.5
+		cimage "stbrown.png"   "St. Brown"    lp08_x lp08_y ims 0 100 "" 1.5
+		// round 2
+		cimage "jefferson.png" "Jefferson"    lp09_x lp09_y ims 0 100 "" 1.5
+		cimage "nabers.png"    "Nabers"       lp10_x lp10_y ims 0 100 "" 1.5
+		cimage "brown.png"     "Brown"        lp11_x lp11_y ims 0 100 "" 1.5
+		cimage "stbrown.png"   "St. Brown"    lp12_x lp12_y ims 0 100 "" 1.5
+		// round 3
+		cimage "nabers.png"    "Nabors"       lp13_x lp13_y ims 0
+		cimage "brown.png"     "Brown"        lp14_x lp14_y ims 0
+		// championship
+		cimage "nabers.png"    "Nabers"       lp15_x lp15_y ims 0
+
+		// right side
+		// round 1
+		cimage "moore.png"     "Moore"        rp01_x rp01_y ims 0 100 "" 1.5
+		cimage "collins.png"   "Collins"      rp02_x rp02_y ims 0 100 "" 1.5
+		cimage "hopkins.png"   "Hopkins"      rp03_x rp03_y ims 0 100 "" 1.5
+		cimage "cooper.png"    "Cooper"       rp04_x rp04_y ims 0 100 "" 1.5
+		cimage "adams.png"     "Adams"        rp05_x rp05_y ims 0 100 "" 1.5
+		cimage "metcalf.png"   "Metcalf"      rp06_x rp06_y ims 0 100 "" 1.5
+		cimage "nacua.png"     "Nacua"       rp07_x rp07_y ims 0 100 "" 1.5
+		cimage "wilson.png"    "Wilson"      rp08_x rp08_y ims 0 100 "" 1.5
+		// round 2
+		cimage "moore.png"     "Moore" rp09_x rp09_y ims 0 100 "" 1.5
+		cimage "hopkins.png"   "Hopkins" rp10_x rp10_y ims 0 100 "" 1.5
+		cimage "metcalf.png"   "Metcalf" rp11_x rp11_y ims 0 100 "" 1.5
+		cimage "wilson.png"    "Wilson" rp12_x rp12_y ims 0 100 "" 1.5
+		// round 3
+		cimage "hopkins.png"   "Hopkins" rp13_x rp13_y ims 0
+		cimage "metcalf.png"   "Metcalf" rp14_x rp14_y ims 0
+		// championship
+		cimage "hopkins.png"   "Hopkins" rp15_x rp15_y ims 0
+
+		// champion
+		cimage  "nabers.png"   "Nabers" chx chy chims 0

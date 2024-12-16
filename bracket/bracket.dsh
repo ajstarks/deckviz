@@ -1,0 +1,94 @@
+deck
+	bgcolor="black"
+	fgcolor="white"
+	brcolor=fgcolor
+
+	tx=50
+	ty=92
+	ts=3.5
+
+	ims=6
+	chx=50
+	chy=60
+	chims=ims*2
+
+	left_l1x=15
+	left_l2x=25
+	left_l3x=35
+	left_l4x=50
+
+	right_l1x=100-left_l1x
+	right_l2x=100-left_l2x
+	right_l3x=100-left_l3x
+
+	br1h=12
+	l2H=br1h*2
+	l3H=br1h*3
+	br1h2=br1h/2
+	br2h=br1h*2
+	br3h=br2h*2
+
+	l1y=85
+	l1ya=l1y-br1h
+	l2y=l1y-l2H
+	l2ya=l2y-l3H
+	l3y=l2y-l2H
+	l4y=l3y-l2H
+	mid=50
+
+	brw=2
+	aw=2
+	ah=2
+	lw=0.1
+
+	// left side
+	lp01=(left_l1x-br1h2, l1y+br1h2)
+	lp02=(lp01_x, l1y-br1h2)
+	lp03=(lp01_x, l2y+br1h2)
+	lp04=(lp01_x, l2y-br1h2)
+	lp05=(lp01_x, l3y+br1h2)
+	lp06=(lp01_x, l3y-br1h2)
+	lp07=(lp01_x, l4y+br1h2)
+	lp08=(lp01_x, l4y-br1h2)
+
+	lp09=(left_l2x-br1h2, l2y+l2H)
+	lp10=(lp09_x, lp09_y-l2H)
+	lp11=(lp09_x, l2ya+br1h)
+	lp12=(lp09_x, lp11_y-l2H)
+
+	lp13=(left_l3x-br1h2, mid+br2h)
+	lp14=(lp13_x, mid-br2h)
+
+	lp15=(left_l3x+ims, mid)
+
+	// right side
+	rp01=(right_l1x+br1h2, l1y+br1h2)
+	rp02=(rp01_x, l1y-br1h2)
+	rp03=(rp01_x, l2y+br1h2)
+	rp04=(rp01_x, l2y-br1h2)
+	rp05=(rp01_x, l3y+br1h2)
+	rp06=(rp01_x, l3y-br1h2)
+	rp07=(rp01_x, l4y+br1h2)
+	rp08=(rp01_x, l4y-br1h2)
+
+	rp09=(right_l2x+br1h2, l2y+l2H)
+	rp10=(rp09_x, lp09_y-l2H)
+	rp11=(rp09_x, l2ya+br1h)
+	rp12=(rp09_x, lp11_y-l2H)
+
+	rp13=(right_l3x+br1h2, mid+br2h)
+	rp14=(rp13_x, mid-br2h)
+
+	rp15=(right_l3x-ims, mid)
+
+	slide bgcolor fgcolor
+		include "braces.dsh"
+		include "wrpng.dsh"
+	eslide
+
+	slide bgcolor fgcolor
+		include "braces.dsh"
+		include "wrjpg.dsh"
+	eslide
+
+edeck

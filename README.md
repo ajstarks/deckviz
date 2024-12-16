@@ -12,6 +12,8 @@
 * babynames -- Baby names through the decades
 * billions -- top 10 US billionaires
 * bp -- Blood Pressure and Heart Rate
+* br -- Charts from data found in Black Reconstruction by Du Bois
+* bracket -- sports brackets
 * c19 -- COVID-19
 * ceo-stock -- The relationship of CEO tenure to stock price
 * complex-table -- charts and tables

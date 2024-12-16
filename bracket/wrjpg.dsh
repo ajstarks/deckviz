@@ -1,0 +1,45 @@
+		ctext "Wide Receiver Championship" tx ty ts
+		// left side
+		// round 1
+		image "chase.jpg"     lp01_x lp01_y ims 0
+		image "jefferson.jpg" lp02_x lp02_y ims 0
+		image "nabers.jpg"    lp03_x lp03_y ims 0
+		image "harrison.jpg"  lp04_x lp04_y ims 0
+		image "brown.jpg"     lp05_x lp05_y ims 0
+		image "hill.jpg"      lp06_x lp06_y ims 0
+		image "diggs.jpg"     lp07_x lp07_y ims 0
+		image "stbrown.jpg"   lp08_x lp08_y ims 0
+		// round 2
+		image "jefferson.jpg" lp09_x lp09_y ims 0
+		image "nabers.jpg"    lp10_x lp10_y ims 0
+		image "brown.jpg"     lp11_x lp11_y ims 0
+		image "stbrown.jpg"   lp12_x lp12_y ims 0
+		// round 3
+		image "nabers.jpg"    lp13_x lp13_y ims 0
+		image "brown.jpg"     lp14_x lp14_y ims 0
+		// championship
+		image "nabers.jpg"    lp15_x lp15_y ims 0
+
+		// right side
+		// round 1
+		image "moore.jpg"     rp01_x rp01_y ims 0
+		image "collins.jpg"   rp02_x rp02_y ims 0
+		image "hopkins.jpg"   rp03_x rp03_y ims 0
+		image "cooper.jpg"    rp04_x rp04_y ims 0
+		image "adams.jpg"     rp05_x rp05_y ims 0
+		image "metcalf.jpg"   rp06_x rp06_y ims 0
+		image "nacua.jpg"     rp07_x rp07_y ims 0
+		image "wilson.jpg"    rp08_x rp08_y ims 0
+		// round 2
+		image "moore.jpg"     rp09_x rp09_y ims 0
+		image "hopkins.jpg"   rp10_x rp10_y ims 0
+		image "metcalf.jpg"   rp11_x rp11_y ims 0
+		image "wilson.jpg"    rp12_x rp12_y ims 0
+		// round 3
+		image "hopkins.jpg"   rp13_x rp13_y ims 0
+		image "metcalf.jpg"   rp14_x rp14_y ims 0
+		// championship
+		image "hopkins.jpg"   rp15_x rp15_y ims 0
+
+		// champion
+		image  "nabers.jpg"   chx chy chims 0

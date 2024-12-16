@@ -1,0 +1,18 @@
+rbrace left_l1x  l1y br1h aw ah lw brcolor
+		rbrace left_l1x  l2y br1h aw ah lw brcolor
+		rbrace left_l1x  l3y br1h aw ah lw brcolor
+		rbrace left_l1x  l4y br1h aw ah lw brcolor
+
+		lbrace right_l1x l1y br1h aw ah lw brcolor
+		lbrace right_l1x l2y br1h aw ah lw brcolor
+		lbrace right_l1x l3y br1h aw ah lw brcolor
+		lbrace right_l1x l4y br1h aw ah lw brcolor
+
+		rbrace left_l2x  l1ya br2h aw ah lw brcolor
+		rbrace left_l2x  l2ya br2h aw ah lw brcolor
+
+		lbrace right_l2x l1ya br2h aw ah lw brcolor
+		lbrace right_l2x l2ya br2h aw ah lw brcolor
+
+		rbrace left_l3x  mid  br3h aw ah lw brcolor
+		lbrace right_l3x mid  br3h aw ah lw brcolor
