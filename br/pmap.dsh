@@ -1,4 +1,4 @@
-def pmap X Y Width Height Label V1 V2 Color1 Color2 
+def pmap X Y Width Height Label V1 V2 Color1 Color2
 	sum=V1+V2
 	pct1=V1/sum
 	pct2=V2/sum
@@ -10,8 +10,8 @@ def pmap X Y Width Height Label V1 V2 Color1 Color2
 
 	l1v=format "%," V1
 	l2v=format "%," V2
-	l1p=format " %0.f%% " pct1
-	l2p=format " %0.f%% " pct2
+	l1p=format "%0.f%%" pct1
+	l2p=format "%0.f%%" pct2
 
 	l1=format "%0.f (%0.f%%)" V1 pct1
 	l2=format "%0.f (%0.f%%)" V2 pct2
@@ -20,7 +20,7 @@ def pmap X Y Width Height Label V1 V2 Color1 Color2
 	value1=vmap V1 0 sum 0 Width
 	value2=vmap V2 0 sum 0 Width
 
-	//hline X Y Width 4 "gray"
+	//hline X Y Width 4.7 "gray"
 	hline X  Y value1 Height Color1 100
 	xv=X+value1
 	hline xv Y value2 Height Color2 100
@@ -29,17 +29,17 @@ def pmap X Y Width Height Label V1 V2 Color1 Color2
 	lx1=X+0.5
 	lx2=xv+0.5
 	tx=X+Width
-	tx+=8
+	tx+=7
 	etext Label nx yl ts "serif"
 	//text l1 lx1 yl ls "serif" "white"
 	//text l2 lx2 yl ls "serif" "black"
 	vw1=value1/2
 	vw2=value2/2
-	lx1p=lx1+5.75
-	lx2p=lx2+5.75
-	text  l1p lx1 yl ls "serif" "white"
-	text  l1v lx1p yl ls "serif" "white"
-	text  l2p lx2 yl ls "serif" "black"
-	text  l2v lx2p yl ls "serif" "black"
-	etext tl tx  yl ls "serif"
+	lx1p=lx1+4
+	lx2p=lx2+4
+	text  l1p lx1   yl ls "serif" "white"
+	text  l1v lx1p  yl ls "serif" "white"
+	text  l2p lx2   yl ls "serif" "black"
+	text  l2v lx2p  yl ls "serif" "black"
+	etext tl tx yl ls "serif"
 edef
