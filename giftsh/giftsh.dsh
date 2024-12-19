@@ -172,7 +172,7 @@ deck
 	eslide
 
 	slide bgcolor txcolor
-		ctext "Editor Setup" tx ty ts
+		ctext "Editor Setup (Sublime Text)" tx ty ts
 		ctext "in <config-dir>/Packages/User/gsh.sublime-build:" mid 80 3
 		ctext `{"shell_cmd": "giftsh < $file > f.jpg"}`  mid 72 3 "mono" cmdcolor
 		textblock "Configure the build system" 5 27 10 2
@@ -196,7 +196,14 @@ deck
 	eslide
 
 	slide bgcolor txcolor
+		ctext "Running with entr and zed" tx ty ts
+		image "images/giftsh-zed-entr.png" 50 45 85 0
+		textblock "save file to see result" 43 50 10 2 "sans" "black"
+	eslide
+
+
+	slide bgcolor txcolor
 		ctext "Script to generate image transformations" tx ty ts
-		textfile "images/genpics.sh" 25 85 1.25 "mono"
+		textfile "images/genpics.sh" 12 87 1.1 "mono"
 	eslide
 edeck
