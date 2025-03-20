@@ -27,7 +27,7 @@ type options struct {
 	bgcolor, textcolor          string
 }
 
-var partyColors = map[string]string{"r": "red", "d": "blue", "i": "gray"}
+var partyColors = map[string]string{"r": "red", "d": "blue", "i": "gray", "w": "red", "dr": "purple", "f": "orange"}
 
 // maprange maps one range into another
 func maprange(value, low1, high1, low2, high2 float64) float64 {
@@ -102,18 +102,42 @@ func process(opts options, data []egrid, min, max int, title string) {
 	endPage()
 }
 
+func partycand(s, def string) (string, string) {
+	var party, cand string
+	f := strings.Split(s, ":")
+	if len(f) > 1 {
+		party = f[1]
+		cand = f[0]
+	} else {
+		party = def
+		cand = s
+	}
+	return party, cand
+}
+
 // showtitle shows the title and subhead
 func showtitle(s string, top float64) {
 	fields := strings.Fields(s) // year, democratic, republican, third-party (optional)
-	if len(fields) < 3 {
+
+	if len(fields) < 2 {
 		return
 	}
 	suby := top - 7
 	ctext(50, top, 3.6, fields[0]+" US Presidential Election", "")
-	legend(20, suby, 2.0, fields[1], partyColors["d"])
-	legend(80, suby, 2.0, fields[2], partyColors["r"])
+
+	var party string
+	var cand string
+	if len(fields) > 1 {
+		party, cand = partycand(fields[1], "d")
+		legend(20, suby, 2.0, cand, partyColors[party])
+	}
+	if len(fields) > 2 {
+		party, cand = partycand(fields[2], "r")
+		legend(80, suby, 2.0, cand, partyColors[party])
+	}
 	if len(fields) > 3 {
-		legend(50, suby, 2.0, fields[3], partyColors["i"])
+		party, cand = partycand(fields[3], "i")
+		legend(50, suby, 2.0, cand, partyColors[party])
 	}
 }
 
