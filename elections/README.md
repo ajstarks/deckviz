@@ -17,6 +17,11 @@ The states are arranged in a grid with rows numbered 0-n west to east, and and c
 to south.
 
 The party is designated as 'd' for the Democratic Party, and 'r' for Republican, 'i' for independent or third-party.
+Other party affiliations may be added to the name of the candidate:
+
+* name:f -- Federalist
+* name:w -- Whig
+* name:dr -- Democratic Republican
 
 The population is from the US Census State Intercensal tables, using the data closest 
 to the election year. For example, for election year 2020, the data estimated from 2019 is used. 
