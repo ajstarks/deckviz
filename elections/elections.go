@@ -102,6 +102,7 @@ func process(opts options, data []egrid, min, max int, title string) {
 	endPage()
 }
 
+// partycand defines the party and candidate
 func partycand(s, def string) (string, string) {
 	var party, cand string
 	f := strings.Split(s, ":")
@@ -123,7 +124,8 @@ func showtitle(s string, top float64) {
 		return
 	}
 	suby := top - 7
-	ctext(50, top, 3.6, fields[0]+" US Presidential Election", "")
+	ctext(50, top, 4, fields[0]+" US Presidential Election", "")
+	// ctext(50, top, 5, fields[0]+" US President", "") //+" US Presidential Election", "")
 
 	var party string
 	var cand string
