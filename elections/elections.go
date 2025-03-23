@@ -1,4 +1,5 @@
-// elections: show election results on a state grid
+// elections: show election results on a state grid,
+// using deck markup.
 package main
 
 import (
@@ -131,7 +132,7 @@ func partycand(s, def string) (string, string) {
 func million(n int64) string {
 	s := strconv.FormatInt(n, 10)
 	p := len(s)
-	return "Population: " + s[0:p-6] + "," + s[p-6:p-3] + "," + s[p-3:p]
+	return s[0:p-6] + "," + s[p-6:p-3] + "," + s[p-3:p]
 }
 
 // showtitle shows the title and subhead
@@ -143,8 +144,7 @@ func showtitle(s string, pop int64, top float64) {
 	}
 	suby := top - 7
 	ctext(50, top, 4, fields[0]+" US Presidential Election", "")
-	ctext(90, 5, 1.5, million(pop), "")
-	// ctext(50, top, 5, fields[0]+" US President", "") //+" US Presidential Election", "")
+	ctext(90, 5, 1.5, "Population: "+million(pop), "")
 
 	var party string
 	var cand string
@@ -164,17 +164,18 @@ func showtitle(s string, pop int64, top float64) {
 
 // circle makes a circle
 func circle(x, y, r float64, color string) {
-	fmt.Printf("circle %g %g %.4g \"%s\"\n", x, y, r, color)
+	fmt.Printf("<ellipse xp=\"%g\" yp=\"%g\" wp=\"%.4g\" hr=\"100\" color=\"%s\"/>\n", x, y, r, color)
 }
 
 // ctext makes centered text
 func ctext(x, y, ts float64, s string, color string) {
-	fmt.Printf("ctext \"%s\" %g %g %g \"sans\" \"%s\"\n", s, x, y, ts, color)
+	fmt.Printf("<text align=\"c\" xp=\"%g\" yp=\"%g\" sp=\"%g\" font=\"sans\" color=\"%s\">%s</text>\n", x, y, ts, color, s)
 }
 
 // ltext makes left-aligned text
 func ltext(x, y, ts float64, s string, color string) {
-	fmt.Printf("text \"%s\" %g %g %g \"sans\" \"%s\"\n", s, x, y, ts, color)
+	fmt.Printf("<text xp=\"%g\" yp=\"%g\" sp=\"%g\" font=\"sans\" color=\"%s\">%s</text>\n", x, y, ts, color, s)
+
 }
 
 // legend makes the subtitle
@@ -185,23 +186,23 @@ func legend(x, y, ts float64, s string, color string) {
 
 // beginPage starts a page
 func beginPage(bgcolor, textcolor string) {
-	fmt.Printf("slide \"%s\" \"%s\"\n", bgcolor, textcolor)
+	fmt.Printf("<slide bg=\"%s\" fg=\"%s\">\n", bgcolor, textcolor)
 }
 
 // endPage ends a page
 func endPage() {
 	ctext(50, 5, 1.2, "The area of a circle denotes state population: source U.S. Census", "gray")
-	fmt.Println("eslide")
+	fmt.Println("</slide>")
 }
 
 // beginDoc starts the document
 func beginDoc() {
-	fmt.Println("deck")
+	fmt.Println("<deck>")
 }
 
 // endDoc ends the document
 func endDoc() {
-	fmt.Println("edeck")
+	fmt.Println("</deck>")
 }
 
 func main() {
