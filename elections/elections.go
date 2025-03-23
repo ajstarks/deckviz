@@ -18,7 +18,7 @@ type egrid struct {
 	party      string
 	row        int
 	col        int
-	population int
+	population int64
 }
 
 // command line options
@@ -48,13 +48,23 @@ func atoi(s string) int {
 	return v
 }
 
+// atoi64 converts a string to an 64-bit integer
+func atoi64(s string) int64 {
+	v, err := strconv.ParseInt(s, 10, 64)
+	if err != nil {
+		return 0
+	}
+	return v
+}
+
 // readData reads election data into the data structure
-func readData(r io.Reader) ([]egrid, int, int, string, error) {
+func readData(r io.Reader) ([]egrid, int64, int64, string, error) {
 	var d egrid
 	var data []egrid
 	title := ""
 	scanner := bufio.NewScanner(r)
-	min, max := math.MaxInt32, -math.MaxInt32
+	var min, max int64
+	min, max = math.MaxInt64, -math.MaxInt64
 	for scanner.Scan() {
 		t := scanner.Text()
 		if len(t) == 0 { // skip blank lines
@@ -73,7 +83,7 @@ func readData(r io.Reader) ([]egrid, int, int, string, error) {
 		d.col = atoi(fields[1])
 		d.row = atoi(fields[2])
 		d.party = fields[3]
-		d.population = atoi(fields[4])
+		d.population = atoi64(fields[4])
 		data = append(data, d)
 		// compute min, max
 		if d.population > max {
@@ -87,18 +97,20 @@ func readData(r io.Reader) ([]egrid, int, int, string, error) {
 }
 
 // process walks the data, making the visualization
-func process(opts options, data []egrid, min, max int, title string) {
+func process(opts options, data []egrid, min, max int64, title string) {
 	amin := area(float64(min))
 	amax := area(float64(max))
 	beginPage(opts.bgcolor, opts.textcolor)
-	showtitle(title, opts.top+15)
+	var pop int64 = 0
 	for _, d := range data {
+		pop += d.population
 		x := opts.left + (float64(d.row) * opts.colsize)
 		y := opts.top - (float64(d.col) * opts.rowsize)
 		r := maprange(area(float64(d.population)), amin, amax, 2, opts.colsize)
 		circle(x, y, r, partyColors[d.party])
 		ctext(x, y-0.5, 1.2, d.name, "white")
 	}
+	showtitle(title, pop, opts.top+15)
 	endPage()
 }
 
@@ -116,8 +128,14 @@ func partycand(s, def string) (string, string) {
 	return party, cand
 }
 
+func million(n int64) string {
+	s := strconv.FormatInt(n, 10)
+	p := len(s)
+	return "Population: " + s[0:p-6] + "," + s[p-6:p-3] + "," + s[p-3:p]
+}
+
 // showtitle shows the title and subhead
-func showtitle(s string, top float64) {
+func showtitle(s string, pop int64, top float64) {
 	fields := strings.Fields(s) // year, democratic, republican, third-party (optional)
 
 	if len(fields) < 2 {
@@ -125,6 +143,7 @@ func showtitle(s string, top float64) {
 	}
 	suby := top - 7
 	ctext(50, top, 4, fields[0]+" US Presidential Election", "")
+	ctext(90, 5, 1.5, million(pop), "")
 	// ctext(50, top, 5, fields[0]+" US President", "") //+" US Presidential Election", "")
 
 	var party string
