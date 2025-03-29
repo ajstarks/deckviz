@@ -25,10 +25,11 @@ type egrid struct {
 // command line options
 type options struct {
 	top, left, rowsize, colsize float64
-	bgcolor, textcolor          string
+	bgcolor, textcolor, shape   string
 }
 
 var partyColors = map[string]string{"r": "red", "d": "blue", "i": "gray", "w": "peru", "dr": "purple", "f": "green"}
+var width, height int
 
 // maprange maps one range into another
 func maprange(value, low1, high1, low2, high2 float64) float64 {
@@ -43,15 +44,6 @@ func area(v float64) float64 {
 // atoi converts a string to an integer
 func atoi(s string) int {
 	v, err := strconv.Atoi(s)
-	if err != nil {
-		return 0
-	}
-	return v
-}
-
-// atoi64 converts a string to an 64-bit integer
-func atoi64(s string) int64 {
-	v, err := strconv.ParseInt(s, 10, 64)
 	if err != nil {
 		return 0
 	}
@@ -107,8 +99,20 @@ func process(opts options, data []egrid, min, max int, title string) {
 		pop += d.population
 		x := opts.left + (float64(d.row) * opts.colsize)
 		y := opts.top - (float64(d.col) * opts.rowsize)
-		r := maprange(area(float64(d.population)), amin, amax, 2, opts.colsize)
-		circle(x, y, r, partyColors[d.party])
+		switch opts.shape {
+		case "c":
+			r := maprange(area(float64(d.population)), amin, amax, 2, opts.colsize)
+			circle(x, y, r, partyColors[d.party])
+		case "h":
+			r := maprange(area(float64(d.population)), amin, amax, 2, opts.colsize)
+			hexagon(x, y, r/2, partyColors[d.party])
+		case "s":
+			r := maprange(float64(d.population), float64(min), float64(max), 2, opts.colsize)
+			square(x, y, r, partyColors[d.party])
+		default:
+			r := maprange(area(float64(d.population)), amin, amax, 2, opts.colsize)
+			circle(x, y, r, partyColors[d.party])
+		}
 		ctext(x, y-0.5, 1.2, d.name, "white")
 	}
 	showtitle(title, pop, opts.top+15)
@@ -167,6 +171,11 @@ func circle(x, y, r float64, color string) {
 	fmt.Printf("<ellipse xp=\"%g\" yp=\"%g\" wp=\"%.4g\" hr=\"100\" color=\"%s\"/>\n", x, y, r, color)
 }
 
+// square makes a square centered at (x,y), size r
+func square(x, y, r float64, color string) {
+	fmt.Printf("<rect xp=\"%g\" yp=\"%g\" wp=\"%.4g\" hr=\"100\" color=\"%s\"/>\n", x, y, r, color)
+}
+
 // ctext makes centered text
 func ctext(x, y, ts float64, s string, color string) {
 	fmt.Printf("<text align=\"c\" xp=\"%g\" yp=\"%g\" sp=\"%g\" font=\"sans\" color=\"%s\">%s</text>\n", x, y, ts, color, s)
@@ -175,13 +184,40 @@ func ctext(x, y, ts float64, s string, color string) {
 // ltext makes left-aligned text
 func ltext(x, y, ts float64, s string, color string) {
 	fmt.Printf("<text xp=\"%g\" yp=\"%g\" sp=\"%g\" font=\"sans\" color=\"%s\">%s</text>\n", x, y, ts, color, s)
-
 }
 
 // legend makes the subtitle
 func legend(x, y, ts float64, s string, color string) {
 	ltext(x, y, ts, s, "")
 	circle(x-ts, y+ts/3, ts/2, color)
+}
+
+// hexagon makes a hexagon centered at (x,y), inscribes in a circle of radius r
+func hexagon(cx, cy, r float64, color string) {
+	// construct a polygon with points at these angles
+	angles := []float64{30, 90, 150, 210, 270, 330}
+	px := make([]float64, len(angles))
+	py := make([]float64, len(angles))
+
+	// polar coordinates to cartesion, with aspect ratio correction
+	aspect := float64(width) / float64(height)
+	for i, a := range angles {
+		t := a * (math.Pi / 180)
+		px[i] = cx + (r * math.Cos(t))
+		py[i] = cy + ((r * aspect) * math.Sin(t))
+	}
+
+	// make the deck markup
+	fmt.Printf("<polygon xc=\"")
+	end := len(px) - 1
+	for i := 0; i < end; i++ {
+		fmt.Printf("%.3f ", px[i])
+	}
+	fmt.Printf("%.3f\" yc=\"", px[end])
+	for i := 0; i < end; i++ {
+		fmt.Printf("%.3f ", py[i])
+	}
+	fmt.Printf("%.3f\" color=\"%s\"/>\n", py[end], color)
 }
 
 // beginPage starts a page
@@ -197,7 +233,7 @@ func endPage() {
 
 // beginDoc starts the document
 func beginDoc() {
-	fmt.Println("<deck>")
+	fmt.Printf("<deck>\n<canvas width=\"%d\" height=\"%d\"/>\n", width, height)
 }
 
 // endDoc ends the document
@@ -207,12 +243,15 @@ func endDoc() {
 
 func main() {
 	var opts options
+	flag.IntVar(&width, "width", 1200, "canvas width")
+	flag.IntVar(&height, "height", 900, "canvas height")
 	flag.Float64Var(&opts.top, "top", 75, "top")
-	flag.Float64Var(&opts.left, "left", 7, "left")
-	flag.Float64Var(&opts.rowsize, "rowsize", 9, "rowsize")
-	flag.Float64Var(&opts.colsize, "colsize", 7, "colsize")
+	flag.Float64Var(&opts.left, "left", 25, "left")
+	flag.Float64Var(&opts.rowsize, "rowsize", float64(width)*0.006, "rowsize")
+	flag.Float64Var(&opts.colsize, "colsize", float64(height)*0.006, "colsize")
 	flag.StringVar(&opts.bgcolor, "bgcolor", "black", "background color")
 	flag.StringVar(&opts.textcolor, "textcolor", "white", "textcolor")
+	flag.StringVar(&opts.shape, "shape", "c", "shape for states: \"c\": circle, \"h\": hexagon, \"s\": square")
 	flag.Parse()
 
 	beginDoc()
