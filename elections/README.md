@@ -40,23 +40,29 @@ Files named with the nyt prefix, like ```nyt-2008.d``` use the layout from the N
 
 here are the command line options:
 ```
- -bgcolor string
-    	background color (default "black")
+   -bgcolor string
+        background color (default "black")
   -colsize float
-    	colsize (default 7)
+        colsize (default 5.4)
+  -height int
+        canvas height (default 900)
   -left float
-    	left (default 7)
+        left (default 25)
   -rowsize float
-    	rowsize (default 9)
+        rowsize (default 7.2)
+  -shape string
+        shape for states: "c": circle, "h": hexagon, "s": square, "l": line, "g": geographic, "p": plain text (default "c")
   -textcolor string
-    	textcolor (default "white")
+        textcolor (default "white")
   -top float
-    	top (default 75)
+        top (default 75)
+  -width int
+        canvas width (default 1200)
 ```
 
 This command will make a PDF showing the elections from 1792-2024 using NYT layout style:
 
-	go run elections.go -left 15 nyt-????.d | pdfdeck -pagesize 1200,900 -sans PublicSans-Regular -stdout - > elections.pdf
+	go run elections.go -width 1200 -height 900 -left 15 nyt-????.d | pdfdeck -pagesize 1200,900 -sans PublicSans-Regular -stdout - > elections.pdf
 
 
 ## Data from US Census: 

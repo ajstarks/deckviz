@@ -1,5 +1,6 @@
 // elections: show election results on a state grid,
 // using deck markup.
+// elections [opts] file... | pdfdeck ... -symbol stateface ...
 package main
 
 import (
@@ -28,6 +29,60 @@ type options struct {
 	bgcolor, textcolor, shape   string
 }
 
+// character map for the Stateface font
+var statemap = map[string]string{
+	"AL": "B",
+	"AK": "A",
+	"AZ": "D",
+	"AR": "C",
+	"CA": "E",
+	"CO": "F",
+	"CT": "G",
+	"DE": "H",
+	"FL": "I",
+	"GA": "J",
+	"HI": "K",
+	"ID": "M",
+	"IL": "N",
+	"IN": "O",
+	"IA": "L",
+	"KS": "P",
+	"KY": "Q",
+	"LA": "R",
+	"ME": "U",
+	"MD": "T",
+	"MA": "S",
+	"MI": "V",
+	"MN": "W",
+	"MS": "Y",
+	"MO": "X",
+	"MT": "Z",
+	"NE": "c",
+	"NV": "g",
+	"NH": "d",
+	"NJ": "e",
+	"NM": "f",
+	"NY": "h",
+	"NC": "a",
+	"ND": "b",
+	"OH": "i",
+	"OK": "j",
+	"OR": "k",
+	"PA": "l",
+	"RI": "m",
+	"SC": "n",
+	"SD": "o",
+	"TN": "p",
+	"TX": "q",
+	"UT": "r",
+	"VT": "t",
+	"VA": "s",
+	"WA": "u",
+	"WV": "w",
+	"WI": "v",
+	"WY": "x",
+	"DC": "y",
+}
 var partyColors = map[string]string{"r": "red", "d": "blue", "i": "gray", "w": "peru", "dr": "purple", "f": "green"}
 var width, height int
 
@@ -101,8 +156,13 @@ func process(opts options, data []egrid, min, max int, title string) {
 		y := opts.top - (float64(d.col) * opts.rowsize)
 		fpop := float64(d.population)
 		apop := area(fpop)
+
+		// defaults
 		txcolor := "white"
 		txsize := 1.2
+		font := "sans"
+		name := d.name
+
 		switch opts.shape {
 		case "c": // circle
 			r := maprange(apop, amin, amax, 2, opts.colsize)
@@ -117,14 +177,19 @@ func process(opts options, data []egrid, min, max int, title string) {
 			r := maprange(apop, amin, amax, 2, opts.colsize)
 			polylines(x, y, r/2, 0.25, partyColors[d.party])
 			txcolor = partyColors[d.party]
-		case "p":
+		case "p": // plain text
 			txcolor = partyColors[d.party]
 			txsize = maprange(fpop, fmin, fmax, 2, opts.colsize*0.75)
+		case "g": // geographic
+			txcolor = partyColors[d.party]
+			name = statemap[d.name]
+			font = "symbol"
+			txsize = maprange(fpop, fmin, fmax, 2, opts.colsize)
 		default:
 			r := maprange(apop, amin, amax, 2, opts.colsize)
 			circle(x, y, r, partyColors[d.party])
 		}
-		ctext(x, y-0.5, txsize, d.name, txcolor)
+		ctext(x, y-0.5, txsize, name, font, txcolor)
 	}
 	showtitle(title, sumpop, opts.top+15)
 	endPage()
@@ -158,8 +223,8 @@ func showtitle(s string, pop int, top float64) {
 		return
 	}
 	suby := top - 7
-	ctext(50, top, 4, fields[0]+" US Presidential Election", "")
-	ctext(90, 5, 1.5, "Population: "+million(pop), "")
+	ctext(50, top, 4, fields[0]+" US Presidential Election", "sans", "")
+	ctext(90, 5, 1.5, "Population: "+million(pop), "sans", "")
 
 	var party string
 	var cand string
@@ -188,8 +253,8 @@ func square(x, y, r float64, color string) {
 }
 
 // ctext makes centered text
-func ctext(x, y, ts float64, s string, color string) {
-	fmt.Printf("<text align=\"c\" xp=\"%g\" yp=\"%g\" sp=\"%g\" font=\"sans\" color=\"%s\">%s</text>\n", x, y, ts, color, s)
+func ctext(x, y, ts float64, s string, font string, color string) {
+	fmt.Printf("<text align=\"c\" xp=\"%g\" yp=\"%g\" sp=\"%g\" font=\"%s\" color=\"%s\">%s</text>\n", x, y, ts, font, color, s)
 }
 
 // ltext makes left-aligned text
@@ -260,7 +325,7 @@ func beginPage(bgcolor, textcolor string) {
 
 // endPage ends a page
 func endPage() {
-	ctext(50, 5, 1.2, "The area of a circle denotes state population: source U.S. Census", "gray")
+	ctext(50, 5, 1.2, "The area of a circle denotes state population: source U.S. Census", "sans", "gray")
 	fmt.Println("</slide>")
 }
 
@@ -284,7 +349,7 @@ func main() {
 	flag.Float64Var(&opts.colsize, "colsize", float64(height)*0.006, "colsize")
 	flag.StringVar(&opts.bgcolor, "bgcolor", "black", "background color")
 	flag.StringVar(&opts.textcolor, "textcolor", "white", "textcolor")
-	flag.StringVar(&opts.shape, "shape", "c", "shape for states: \"c\": circle, \"h\": hexagon, \"s\": square, \"l\": line, \"p\": plain text")
+	flag.StringVar(&opts.shape, "shape", "c", "shape for states: \"c\": circle, \"h\": hexagon, \"s\": square, \"l\": line, \"g\": geographic, \"p\": plain text")
 	flag.Parse()
 
 	beginDoc()
