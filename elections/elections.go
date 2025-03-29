@@ -101,6 +101,8 @@ func process(opts options, data []egrid, min, max int, title string) {
 		y := opts.top - (float64(d.col) * opts.rowsize)
 		fpop := float64(d.population)
 		apop := area(fpop)
+		txcolor := "white"
+		txsize := 1.2
 		switch opts.shape {
 		case "c": // circle
 			r := maprange(apop, amin, amax, 2, opts.colsize)
@@ -111,11 +113,18 @@ func process(opts options, data []egrid, min, max int, title string) {
 		case "s": // square
 			r := maprange(fpop, fmin, fmax, 2, opts.colsize)
 			square(x, y, r, partyColors[d.party])
+		case "l": // lines
+			r := maprange(apop, amin, amax, 2, opts.colsize)
+			polylines(x, y, r/2, 0.25, partyColors[d.party])
+			txcolor = partyColors[d.party]
+		case "p":
+			txcolor = partyColors[d.party]
+			txsize = maprange(fpop, fmin, fmax, 2, opts.colsize*0.75)
 		default:
 			r := maprange(apop, amin, amax, 2, opts.colsize)
 			circle(x, y, r, partyColors[d.party])
 		}
-		ctext(x, y-0.5, 1.2, d.name, "white")
+		ctext(x, y-0.5, txsize, d.name, txcolor)
 	}
 	showtitle(title, sumpop, opts.top+15)
 	endPage()
@@ -222,6 +231,28 @@ func hexagon(cx, cy, r float64, color string) {
 	fmt.Printf("%.3f\" color=\"%s\"/>\n", py[end], color)
 }
 
+func polylines(cx, cy, r, lw float64, color string) {
+	// construct a polygon with points at these angles
+	angles := []float64{30, 90, 150, 210, 270, 330} // square: []float64{45, 135, 225, 315}
+	px := make([]float64, len(angles))
+	py := make([]float64, len(angles))
+
+	// polar coordinates to cartesion, with aspect ratio correction
+	aspect := float64(width) / float64(height)
+	for i, a := range angles {
+		t := a * (math.Pi / 180)
+		px[i] = cx + (r * math.Cos(t))
+		py[i] = cy + ((r * aspect) * math.Sin(t))
+	}
+
+	attr := fmt.Sprintf("sp=\"%g\" color=\"%s\"/>", lw, color)
+	lx := len(px) - 1
+	for i := 0; i < lx; i++ {
+		fmt.Printf("<line xp1=\"%g\" yp1=\"%g\" xp2=\"%g\" yp2=\"%g\" %s\n", px[i], py[i], px[i+1], py[i+1], attr)
+	}
+	fmt.Printf("<line xp1=\"%g\" yp1=\"%g\" xp2=\"%g\" yp2=\"%g\" %s\n", px[0], py[0], px[lx], py[lx], attr)
+}
+
 // beginPage starts a page
 func beginPage(bgcolor, textcolor string) {
 	fmt.Printf("<slide bg=\"%s\" fg=\"%s\">\n", bgcolor, textcolor)
@@ -253,7 +284,7 @@ func main() {
 	flag.Float64Var(&opts.colsize, "colsize", float64(height)*0.006, "colsize")
 	flag.StringVar(&opts.bgcolor, "bgcolor", "black", "background color")
 	flag.StringVar(&opts.textcolor, "textcolor", "white", "textcolor")
-	flag.StringVar(&opts.shape, "shape", "c", "shape for states: \"c\": circle, \"h\": hexagon, \"s\": square")
+	flag.StringVar(&opts.shape, "shape", "c", "shape for states: \"c\": circle, \"h\": hexagon, \"s\": square, \"l\": line, \"p\": plain text")
 	flag.Parse()
 
 	beginDoc()
