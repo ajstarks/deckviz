@@ -91,31 +91,33 @@ func readData(r io.Reader) ([]egrid, int, int, string, error) {
 
 // process walks the data, making the visualization
 func process(opts options, data []egrid, min, max int, title string) {
-	amin := area(float64(min))
-	amax := area(float64(max))
 	beginPage(opts.bgcolor, opts.textcolor)
-	pop := 0
+	fmin, fmax := float64(min), float64(max)
+	amin, amax := area(fmin), area(fmax)
+	sumpop := 0
 	for _, d := range data {
-		pop += d.population
+		sumpop += d.population
 		x := opts.left + (float64(d.row) * opts.colsize)
 		y := opts.top - (float64(d.col) * opts.rowsize)
+		fpop := float64(d.population)
+		apop := area(fpop)
 		switch opts.shape {
-		case "c":
-			r := maprange(area(float64(d.population)), amin, amax, 2, opts.colsize)
+		case "c": // circle
+			r := maprange(apop, amin, amax, 2, opts.colsize)
 			circle(x, y, r, partyColors[d.party])
-		case "h":
-			r := maprange(area(float64(d.population)), amin, amax, 2, opts.colsize)
+		case "h": // hexagom
+			r := maprange(apop, amin, amax, 2, opts.colsize)
 			hexagon(x, y, r/2, partyColors[d.party])
-		case "s":
-			r := maprange(float64(d.population), float64(min), float64(max), 2, opts.colsize)
+		case "s": // square
+			r := maprange(fpop, fmin, fmax, 2, opts.colsize)
 			square(x, y, r, partyColors[d.party])
 		default:
-			r := maprange(area(float64(d.population)), amin, amax, 2, opts.colsize)
+			r := maprange(apop, amin, amax, 2, opts.colsize)
 			circle(x, y, r, partyColors[d.party])
 		}
 		ctext(x, y-0.5, 1.2, d.name, "white")
 	}
-	showtitle(title, pop, opts.top+15)
+	showtitle(title, sumpop, opts.top+15)
 	endPage()
 }
 
