@@ -175,7 +175,7 @@ func process(opts options, data []egrid, min, max int, title string) {
 			square(x, y, r, partyColors[d.party])
 		case "l": // lines
 			r := maprange(apop, amin, amax, 2, opts.colsize)
-			polylines(x, y, r/2, 0.25, partyColors[d.party])
+			polylines(x, y, r/2, 0.2, partyColors[d.party])
 			txcolor = partyColors[d.party]
 		case "p": // plain text
 			txcolor = partyColors[d.party]
@@ -268,21 +268,23 @@ func legend(x, y, ts float64, s string, color string) {
 	circle(x-ts, y+ts/3, ts/2, color)
 }
 
-// hexagon makes a hexagon centered at (x,y), inscribes in a circle of radius r
-func hexagon(cx, cy, r float64, color string) {
-	// construct a polygon with points at these angles
-	angles := []float64{30, 90, 150, 210, 270, 330}
+// pangles computes the points of a polygon based on a series of angles
+func pangles(cx, cy, r float64, angles []float64) ([]float64, []float64) {
 	px := make([]float64, len(angles))
 	py := make([]float64, len(angles))
-
-	// polar coordinates to cartesion, with aspect ratio correction
 	aspect := float64(width) / float64(height)
 	for i, a := range angles {
 		t := a * (math.Pi / 180)
 		px[i] = cx + (r * math.Cos(t))
 		py[i] = cy + ((r * aspect) * math.Sin(t))
 	}
+	return px, py
+}
 
+// hexagon makes a hexagon centered at (x,y), inscribes in a circle of radius r
+func hexagon(cx, cy, r float64, color string) {
+	// construct a polygon with points at these angles
+	px, py := pangles(cx, cy, r, []float64{30, 90, 150, 210, 270, 330})
 	// make the deck markup
 	fmt.Printf("<polygon xc=\"")
 	end := len(px) - 1
@@ -298,18 +300,7 @@ func hexagon(cx, cy, r float64, color string) {
 
 func polylines(cx, cy, r, lw float64, color string) {
 	// construct a polygon with points at these angles
-	angles := []float64{30, 90, 150, 210, 270, 330} // square: []float64{45, 135, 225, 315}
-	px := make([]float64, len(angles))
-	py := make([]float64, len(angles))
-
-	// polar coordinates to cartesion, with aspect ratio correction
-	aspect := float64(width) / float64(height)
-	for i, a := range angles {
-		t := a * (math.Pi / 180)
-		px[i] = cx + (r * math.Cos(t))
-		py[i] = cy + ((r * aspect) * math.Sin(t))
-	}
-
+	px, py := pangles(cx, cy, r, []float64{30, 90, 150, 210, 270, 330})
 	attr := fmt.Sprintf("sp=\"%g\" color=\"%s\"/>", lw, color)
 	lx := len(px) - 1
 	for i := 0; i < lx; i++ {
@@ -349,7 +340,7 @@ func main() {
 	flag.Float64Var(&opts.colsize, "colsize", float64(height)*0.006, "colsize")
 	flag.StringVar(&opts.bgcolor, "bgcolor", "black", "background color")
 	flag.StringVar(&opts.textcolor, "textcolor", "white", "textcolor")
-	flag.StringVar(&opts.shape, "shape", "c", "shape for states: \"c\": circle, \"h\": hexagon, \"s\": square, \"l\": line, \"g\": geographic, \"p\": plain text")
+	flag.StringVar(&opts.shape, "shape", "c", "shape for states:\n\"c\": circle,\n\"h\": hexagon,\n\"s\": square\n\"l\": line\n\"g\": geographic\n\"p\": plain text")
 	flag.Parse()
 
 	beginDoc()
