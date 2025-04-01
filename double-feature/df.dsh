@@ -1,0 +1,84 @@
+// Double Features
+deck
+	c1=25
+	c2=75
+	imy=50
+	ims=40
+	bgcolor="black"
+	txcolor="white"
+
+	slide bgcolor txcolor
+		cimage "mister-roberts.png" "Mister Robers (1954)" c1 imy ims 0
+		cimage "caine-mutiny.png" "The Caine Mutiny (1955)" c2 imy ims 0
+	eslide
+
+	slide bgcolor txcolor
+		cimage "stalag-17.png" "Stalag 17 (1955)" c1 imy ims 0
+		cimage "harts-war.png" "Hart's War (2002)" c2 imy ims 0
+	eslide
+
+	slide bgcolor txcolor
+		cimage "paths-of-glory.png" "Paths of Glory (1957)" c1 imy ims 0
+		cimage "they-shall-not-grow-old.png" "They Shall Not Grow Old (2017)" c2 imy ims 0
+	eslide
+
+	slide bgcolor txcolor
+		cimage "murder-of-fred-hampton.png" "The Murder of Fred Hampton (1971)" c1 imy ims 0
+		cimage "judas-and-the-black-messiah.png" "Judas and the Black Messiah (2021)" c2 imy ims 0
+	eslide
+
+	slide bgcolor txcolor
+		cimage "american-graffitti.png" "American Gaffiitti (1973)" c1 imy ims 0
+		cimage "cooley-high.png" "Cooley High (1975)" c2 imy ims 0
+	eslide
+
+	slide bgcolor txcolor
+		cimage "school-daze.png" "School Daze (1988)" c1 imy ims 0
+		cimage "do-the-right-thing.png" "Do the Right Thing (1989)" c2 imy ims 0
+	eslide
+
+	slide bgcolor txcolor
+		cimage "hoop-dreams.png" "Hoop Dreams (1994)" c1 imy ims 0
+		cimage "he-got-game.png" "He Got Game (1998)" c2 imy ims 0
+	eslide
+
+	slide bgcolor txcolor
+		cimage "boiler-room.png" "Boiler Room (2000)" c1 imy ims 0
+		cimage "wolf-of-wall-street.png" "The Wolf of Wall Street (2013)" c2 imy ims 0
+	eslide
+
+	slide bgcolor txcolor
+		cimage "social-network.png" "The Social Network (2010)" c1 imy ims 0
+		cimage "social-dilemma.png" "The Social Delimma (2020)" c2 imy ims 0
+	eslide
+
+	slide bgcolor txcolor
+		cimage "in-order-of-disappearance.png" "In Order of Disappearence (2014)" c1 imy ims 0
+		cimage "cold-pursuit.png" "Cold Pursuit (2019)" c2 imy ims 0
+	eslide
+
+	slide bgcolor txcolor
+		cimage "icarus.png" "Icarus (2017)" c1 imy ims 0
+		cimage "screwball.png" "Screwball (2018)" c2 imy ims 0
+	eslide
+
+	slide bgcolor txcolor
+		cimage "first-man.png" "First Man (2018)" c1 imy ims 0
+		cimage "apollo-11.png" "Apollo 11 (2019)" c2 imy ims 0
+	eslide
+
+	slide bgcolor txcolor	
+		cimage "underground-railroad.png" "The Underground Railroad (2021)" c1 imy ims 0
+		cimage "nickel-boys.png" "The Nickel Boys (2024)" c2 imy ims 0
+	eslide
+
+	slide bgcolor txcolor
+		cimage "hit-man.png" "Hit Man (2023)" c1 imy ims 0
+		cimage "the-killer.png" "The Killer (2023)" c2 imy ims 0
+	eslide
+
+	slide bgcolor txcolor
+		cimage "red-rocket.png" "Red Rocket (2021)" c1 imy ims 0
+		cimage "anora.png" "Anora (2024)" c2 imy ims 0
+	eslide
+edeck
