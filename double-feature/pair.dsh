@@ -1,0 +1,5 @@
+def pair P1 P2 X1 Y Spacing Scale
+	X2=X1+Spacing
+	image P1 X1 Y Scale 0
+	image P2 X2 Y Scale 0
+edef

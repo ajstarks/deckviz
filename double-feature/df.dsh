@@ -1,14 +1,70 @@
 // Double Features
 deck
+	import "pair.dsh"
+	import "cpair.dsh"
+	bgcolor="black"
+	txcolor="white"
+
+	
+
+	slide bgcolor txcolor
+		rect 50 50 100 100 "black" 50
+		clist 50 55 10 "sans" "" 100 1.2
+			li "Double"
+			li "Features"
+		elist
+		ileft=8
+		ix=ileft
+		iy=87
+		hskip=25
+		vskip=25
+		pair "mister-roberts.png" "caine-mutiny.png" ix iy 10 10
+		ix+=hskip
+		pair "stalag-17.png" "harts-war.png" ix iy 10 10
+		ix+=hskip
+		pair "paths-of-glory.png" "they-shall-not-grow-old.png" ix iy 10 10
+		ix+=hskip
+		pair "murder-of-fred-hampton.png" "judas-and-the-black-messiah.png" ix iy 10 10
+
+		ix=ileft
+		iy-=vskip
+		pair "american-graffitti.png" "cooley-high.png" ix iy 10 10
+		ix+=hskip
+		pair "all-the-presidents-men.png" "spotlight.png" ix iy 10 10
+		ix+=hskip
+		pair "school-daze.png" "do-the-right-thing.png" ix iy 10 10
+		ix+=hskip	
+		pair "hoop-dreams.png" "he-got-game.png" ix iy 10 10
+
+		ix=ileft
+		iy-=vskip
+		pair "boiler-room.png" "wolf-of-wall-street.png" ix iy 10 10
+		ix+=hskip
+		pair "social-network.png" "social-dilemma.png" ix iy 10 10
+		ix+=hskip
+		pair "in-order-of-disappearance.png" "cold-pursuit.png" ix iy 10 10
+		ix+=hskip	
+		pair "icarus.png" "screwball.png" ix iy 10 10
+
+
+		ix=ileft
+		iy-=vskip
+		pair "first-man.png" "apollo-11.png" ix iy 10 10
+		ix+=hskip
+		pair "underground-railroad.png" "nickel-boys.png" ix iy 10 10
+		ix+=hskip
+		pair "hit-man.png" "the-killer.png" ix iy 10 10
+		ix+=hskip	
+		pair "red-rocket.png" "anora.png" ix iy 10 10
+
+	eslide
+	
 	c1=25
 	c2=75
 	imy=50
 	ims=40
-	bgcolor="black"
-	txcolor="white"
-
 	slide bgcolor txcolor
-		cimage "mister-roberts.png" "Mister Robers (1954)" c1 imy ims 0
+		cimage "mister-roberts.png" "Mister Roberts (1954)" c1 imy ims 0
 		cimage "caine-mutiny.png" "The Caine Mutiny (1955)" c2 imy ims 0
 	eslide
 
@@ -30,6 +86,11 @@ deck
 	slide bgcolor txcolor
 		cimage "american-graffitti.png" "American Gaffiitti (1973)" c1 imy ims 0
 		cimage "cooley-high.png" "Cooley High (1975)" c2 imy ims 0
+	eslide
+
+	slide bgcolor txcolor
+		cimage "all-the-presidents-men.png" "All the President's Men (1976)" c1 imy ims 0
+		cimage "spotlight.png" "Spotlight (2015)" c2 imy ims 0
 	eslide
 
 	slide bgcolor txcolor

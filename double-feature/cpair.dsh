@@ -1,0 +1,5 @@
+def cpair P1 C1 P2 C2 X1 Y Spacing Scale
+	X2=X1+Spacing
+	cimage P1 C1 X1 Y Scale 0
+	cimage P2 C2 X2 Y Scale 0
+edef
