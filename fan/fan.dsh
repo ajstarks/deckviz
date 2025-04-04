@@ -1,0 +1,147 @@
+deck
+	bgcolor="black"
+	fgcolor="white"
+
+
+
+	slide bgcolor fgcolor
+		ctext "Constructing a Du Bois-style fan chart" 50 5 3
+		asize=30
+		mx=50
+		my=50
+		topcolor="gray"
+		illcolor="rgb(150,160,150)"
+		botcolor="steelblue"
+		legcolor="lightsteelblue"
+		a1x=23
+		a1y=72
+		a2x=77
+		a2y=a1y
+
+		arc mx my asize asize  35 145 asize topcolor 50
+		arc mx my asize asize  215 325 asize botcolor 70
+
+		ctext "TOP" 50 75 3 
+		ctext "BOTTOM" 50 25 3
+		ctext "LEFT LEGEND" 17.5 50 3 
+		ctext "RIGHT LEGEND" 82.5 50 3
+		//ctext "Center" 50 50 2
+		ctext "35°"  a2x a2y 2
+		ctext "145°" a1x a1y 2
+		ctext "215°" 25 30 2
+		ctext "325°" 75 30 2
+		ctext "110°" 50 95 2
+		ubrace 50 94 50 2 2 0.2
+
+		hline 5 50 25 20 legcolor 50
+		hline 70 50 25 20 legcolor 50
+	eslide
+
+	slide bgcolor fgcolor
+		ssize=asize*0.75
+		arc 25 55 ssize ssize  35 145 ssize topcolor 50
+		arc 25 55 ssize ssize 215 325 ssize botcolor 70
+		textfile "1900-occupations.csv" 45 75 1.5 "mono"
+		hline 45 63.5 50 12 topcolor 70
+		hline 45 47 50 12 botcolor 70
+	eslide
+
+	slide bgcolor fgcolor
+		ctext "110°" 50 95 2
+		ctext "35°"  a2x a2y 2
+		ctext "145°" a1x a1y 2
+		ubrace 50 94 50 2 2 0.2
+		arc mx my asize asize  35 145 asize illcolor 50
+	eslide
+
+	slide "black" "white" // bgcolor fgcolor
+		dx=15
+		lx=dx+7
+		ls=2.5
+		ctext "110°" 50 95 2
+		ubrace 50 94 50 2 2 0.2
+		arc mx my asize asize  35 145 asize illcolor 50
+		arc mx my asize asize 76.80 145.00 asize "crimson"
+
+		ctext "76.8°" 57 88 2
+		ctext "35°"   a2x a2y 2
+		ctext "145°"  a1x a1y 2
+
+		hline 0 25 100 30 "black"
+
+		
+		text "62% of 110 = 30.8,  145-30.8 = 76.8"  lx 40 ls "mono" "crimson"
+		text `"AGRICULTURE, FISHERIES AND MINING",62,crimson` dx 20 ls "mono" "crimson"
+	eslide
+
+
+	slide "black" "white" // bgcolor fgcolor
+		ctext "110°" 50 95 2
+		ubrace 50 94 50 2 2 0.2
+		arc mx my asize asize  35 145 asize illcolor 70
+		arc mx my asize asize 76.80 145.00 asize "crimson"
+		arc mx my asize asize 46.00 76.80 asize "gold"
+
+		ctext "46.0°" 70 80 2
+		ctext "76.8°" 57 88 2
+		ctext "35°"   a2x a2y 2
+		ctext "145°"  a1x a1y 2
+
+		text "62% of 110 = 68.2,  145-68.2 = 76.8"   lx 40 ls "mono" "crimson"
+		text "28% of 110 = 30.8,  76.8-30.8 = 46.0"  lx 35 ls "mono" "gold"
+		text `"AGRICULTURE, FISHERIES AND MINING",62,crimson` dx 20 ls "mono" "crimson"
+		text `"DOMESTIC AND PERSONAL SERVICE",28,gold`        dx 15 ls "mono" "gold"
+	eslide
+
+	slide "black" "white" // bgcolor fgcolor
+		ctext "110°" 50 95 2
+		ubrace 50 94 50 2 2 0.2
+		arc mx my asize asize  35 145 asize illcolor 70
+		arc mx my asize asize 76.80 145.00 asize "crimson"
+		arc mx my asize asize 46.00 76.80 asize "gold"
+		arc mx my asize asize 40.50 46.00 asize "steelblue"
+
+		ctext "40.5"  74 77 2
+		ctext "46.0°" 71 80 2
+		ctext "76.8°" 57 88 2
+		ctext "35°"   a2x a2y 2
+		ctext "145°"  a1x a1y 2
+
+		text "62% of 110 = 68.2,  145-68.2  = 76.8"  lx 40 ls "mono" "crimson"
+		text "28% of 110 = 30.8,  76.8-30.8 = 46.0"  lx 35 ls "mono" "gold"
+		text " 5% of 110 =  5.5,  46.0-5.5  = 40.5"  lx 30 ls "mono" "steelblue"
+
+		text `"AGRICULTURE, FISHERIES AND MINING",62,crimson`        dx 20 ls "mono"  "crimson"
+		text `"DOMESTIC AND PERSONAL SERVICE",28,gold`               dx 15 ls "mono"  "gold"
+		text `"MANUFACTURING AND MECHANICAL INDUSTRIES",5,steelblue` dx 10 ls "mono"  "steelblue"
+	eslide
+
+	slide bgcolor fgcolor
+		arc mx my asize asize  35 145 asize topcolor 50
+		arc mx my asize asize  215 325 asize botcolor 70
+
+		ctext "TOP" 50 75 3 
+		ctext "BOTTOM" 50 25 3
+		//ctext "Center" 50 50 2
+		ctext "35°"  a2x a2y 2
+		ctext "145°" a1x a1y 2
+		ctext "215°" 25 30 2
+		ctext "325°" 75 30 2
+		ctext "110°" 50 95 2
+		ubrace 50 94 50 2 2 0.2
+
+		hline 5 50 25 20 legcolor  30
+		hline 70 50 25 20 legcolor 30
+
+		circle 7 57 2 "crimson"
+		circle 7 50 2 "gold"
+		circle 7 43 2 "steelblue"
+
+		circle 72 57 2 "tan"
+		circle 72 50 2 "rgb(101,67,33)"
+		ctext "POPULATION 1" 50 89 1.5
+		ctext "POPULATION 2" 50 9 1.5
+
+
+	eslide
+edeck
