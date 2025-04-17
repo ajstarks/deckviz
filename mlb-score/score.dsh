@@ -1,0 +1,9 @@
+deck
+	import "diamond.dsh"
+	import "inning.dsh"
+	import "dscore.dsh"
+
+	slide "black" "white"
+		dscore 20 50 "kan.png" "nyy.png" 3 4 "Schreiber" "Judge" "b7" "1-0" "---" 0
+	eslide
+edeck

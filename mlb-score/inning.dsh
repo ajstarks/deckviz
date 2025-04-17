@@ -1,0 +1,15 @@
+def inning X Y Number Size Dir Color
+	ish=Size/2
+	is2=Size*2
+	if Dir == "t"
+		ip1=(X+Size, Y+Size)
+		ip2=(ip1_x-ish,Y)
+		ip3=(ip1_x+ish,Y)
+	else
+		ip1=(X+Size, Y)
+		ip2=(ip1_x-ish,Y+Size)
+		ip3=(ip1_x+ish,Y+Size)
+	eif
+	polygon "ip1_x ip2_x ip3_x" "ip1_y ip2_y ip3_y" Color
+	ctext Number X Y Size
+edef

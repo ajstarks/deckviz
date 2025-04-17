@@ -1,0 +1,86 @@
+def dscore X Y Vlogo Hlogo Vscore Hscore Vplayer Hplayer Inning Count Bases Outs
+	hs=format "%v" Hscore
+	vs=format "%v" Vscore
+	ims=15
+
+	// sizes
+	ts=ims*0.4
+	ds=ts/4
+	ts2=ts/3
+	cs=ts/2
+
+	// coordinates
+	xp=X
+	yp=Y
+	scorey=Y-3
+	playy=Y-10
+
+	dx1=X+40
+	dx2=dx1-2
+	dx3=dx1+2
+	dy1=Y+2
+	dy2=Y-1
+	dy3=dy2
+
+	// colors
+	b1color="gray"
+	b2color="gray"
+	b3color="gray"
+	out1color="gray"
+	out2color="gray"
+
+	indir=substr Inning 0 0
+	innum=substr Inning 1 end
+
+	// visitor
+	image Vlogo   xp yp ims 0
+	ctext Vplayer xp playy ts2
+	xp+=10
+	ctext vs  xp scorey ts
+
+	// Home
+	xp+=10
+	image Hlogo xp yp ims 0
+	ctext Hplayer xp playy ts2
+	xp+=10
+	ctext hs xp scorey ts
+
+	// bases
+	b1=substr Bases 0 0
+	b2=substr Bases 1 1
+	b3=substr Bases 2 2
+	if b1 != "-"
+		b1color="white"
+	eif
+	if b2 != "-"
+		b2color="white"
+	eif
+	if b3 != "-"
+		b3color="white"
+	eif
+	diamond dx1 dy1 ds b2color
+	diamond dx2 dy2 ds b1color
+	diamond dx3 dy3 ds b3color
+
+	// Inning
+	inning dx1 playy innum ts2 indir "gray"
+
+	// Count
+	xp+=20
+	ctext Count xp dy2 cs
+
+	// Outs
+	if Outs == 1
+		out1color="white"
+	eif
+	if Outs == 2
+		out1color="white"
+		out2color="white"
+	eif
+
+	ox1=xp-1
+	ox2=xp+1
+	oy=playy+1
+	circle ox1 oy ds out1color
+	circle ox2 oy ds out2color
+edef

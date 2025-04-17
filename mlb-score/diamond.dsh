@@ -1,0 +1,7 @@
+def diamond X Y Size Color
+	p1=(X+Size,Y)
+	p2=(X,Y-Size)
+	p3=(X-Size,Y)
+	p4=(X,Y+Size)
+	polygon "p1_x p2_x p3_x p4_x" "p1_y p2_y p3_y p4_y" Color
+edef
