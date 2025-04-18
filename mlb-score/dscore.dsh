@@ -1,10 +1,13 @@
 def dscore X Y Vlogo Hlogo Vscore Hscore Vplayer Hplayer Inning Count Bases Outs
 	hs=format "%v" Hscore
 	vs=format "%v" Vscore
-	ims=15
+	ims=5
+	hskip=10
+	hskip2=hskip*2
+	hskip4=hskip*4
 
 	// sizes
-	ts=ims*0.4
+	ts=6
 	ds=ts/4
 	ts2=ts/3
 	cs=ts/2
@@ -14,13 +17,6 @@ def dscore X Y Vlogo Hlogo Vscore Hscore Vplayer Hplayer Inning Count Bases Outs
 	yp=Y
 	scorey=Y-3
 	playy=Y-10
-
-	dx1=X+40
-	dx2=dx1-2
-	dx3=dx1+2
-	dy1=Y+2
-	dy2=Y-1
-	dy3=dy2
 
 	// colors
 	b1color="gray"
@@ -35,14 +31,14 @@ def dscore X Y Vlogo Hlogo Vscore Hscore Vplayer Hplayer Inning Count Bases Outs
 	// visitor
 	image Vlogo   xp yp ims 0
 	ctext Vplayer xp playy ts2
-	xp+=10
+	xp+=hskip
 	ctext vs  xp scorey ts
 
 	// Home
-	xp+=10
-	image Hlogo xp yp ims 0
+	xp+=hskip
+	image Hlogo   xp yp ims 0
 	ctext Hplayer xp playy ts2
-	xp+=10
+	xp+=hskip
 	ctext hs xp scorey ts
 
 	// bases
@@ -58,6 +54,15 @@ def dscore X Y Vlogo Hlogo Vscore Hscore Vplayer Hplayer Inning Count Bases Outs
 	if b3 != "-"
 		b3color="white"
 	eif
+
+	// diamond
+	xp+=hskip
+	dx1=xp
+	dx2=dx1-2
+	dx3=dx1+2
+	dy1=Y+2
+	dy2=Y-1
+	dy3=dy2
 	diamond dx1 dy1 ds b2color
 	diamond dx2 dy2 ds b1color
 	diamond dx3 dy3 ds b3color
@@ -66,7 +71,7 @@ def dscore X Y Vlogo Hlogo Vscore Hscore Vplayer Hplayer Inning Count Bases Outs
 	inning dx1 playy innum ts2 indir "gray"
 
 	// Count
-	xp+=20
+	xp+=hskip
 	ctext Count xp dy2 cs
 
 	// Outs

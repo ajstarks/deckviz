@@ -1,0 +1,27 @@
+def stand X Y Logo Name Win Loss
+	ims=4
+	tx=X+5
+	ty=Y-1
+	ts=2.5
+	lh=vskip/2
+	liney=Y-lh
+	linex=X-3
+	lw=45
+	image Logo X Y ims 0
+	text  Name tx ty ts
+	games=Win+Loss
+	pct=Win/games
+	wins=format "%v" Win
+	loss=format "%v" Loss
+	pcts=format  "%0.3f" pct
+	pcts=substr pcts 1 end
+
+	wlx=X+25
+	etext wins wlx ty ts "mono"
+	wlx+=5
+	etext loss wlx ty ts "mono"
+	wlx+=10
+	etext pcts wlx ty ts "mono"
+	hline linex liney lw 0.1 "white" 50
+edef
+

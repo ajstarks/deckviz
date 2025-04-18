@@ -2,8 +2,57 @@ deck
 	import "diamond.dsh"
 	import "inning.dsh"
 	import "dscore.dsh"
+	import "stand.dsh"
 
 	slide "black" "white"
-		dscore 20 50 "kan.png" "nyy.png" 3 4 "Schreiber" "Judge" "b7" "1-0" "---" 0
+		dscore 25 85 "kan.png" "nyy.png" 1 0 "Bubic"      "Volpe"      "b3" "0-1" "-xx" 2
+		dscore 25 65 "kan.png" "nyy.png" 1 2 "Bubic"      "Bellinger"  "b4" "0-2" "x-x" 2
+		dscore 25 45 "kan.png" "nyy.png" 3 3 "India"      "Schmidt"    "t5" "1-0" "x--" 2
+		dscore 25 25 "kan.png" "nyy.png" 3 4 "Schreiber"  "Judge"      "b7" "1-0" "---" 0
 	eslide
+
+	slide "black" "white"
+		dscore 25 85 "oak.png" "cws.png" 2 0 "Butler" "Martin" "t5" "0-0" "---" 1
+		dscore 25 65 "oak.png" "cws.png" 4 0 "Bleday" "Martin" "t6" "2-1" "--x" 1
+		dscore 25 45 "oak.png" "cws.png" 5 0 "Soderstrom" "Eisert" "t7" "3-2" "---" 2
+		dscore 25 25 "oak.png" "cws.png" 8 0 "Rooker" "Wilson" "t9" "2-2" "x--" 2
+	eslide
+
+
+	slide "black" "white"
+		dscore 25 45 "nyy.png" "tb.png" 2 3 "Rice" "Bradley" "t5" "0-0" "xx-" 1
+	eslide
+
+	imx=10
+	imy=90
+	vskip=7
+	vs2=vskip*2
+	sx=5
+	slide "black" "white"
+		stand sx imy "nyy.png" "Yankees" 11 7 
+		imy-=vskip
+		stand sx imy "tor.png" "Blue Jays" 11 8 
+		imy-=vskip
+		stand sx imy "bos.png" "Red Sox" 10 10 
+		imy-=vskip
+		stand sx imy "tb.png" "Rays" 8 10 
+		imy-=vskip
+		stand sx imy "bal.png" "Orioles" 5 13 
+
+		imy=90
+		sx+=50
+
+		stand sx imy "det.png" "Tigers" 10 8 
+		imy-=vskip
+		stand sx imy "cle.png" "Guardians" 9 8 
+		imy-=vskip
+		stand sx imy "kan.png" "Royals" 8 11 
+		imy-=vskip
+		stand sx imy "min.png" "Twins" 7 12
+		imy-=vskip
+		stand sx imy "cws.png" "White Sox" 4 14 
+
+	eslide
+
+
 edeck
