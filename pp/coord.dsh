@@ -1,0 +1,6 @@
+def coord X Y Size Label
+	sy=Size*2
+	ly=Y-sy
+	circle X Y Size "red" 40
+	ctext Label X ly Size
+edef

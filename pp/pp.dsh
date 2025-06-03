@@ -1,0 +1,35 @@
+deck
+	import "coord.dsh"
+	slide
+		r0=100
+		r1=r0*0.85
+		r3=r0*0.25
+		r2=r0*0.81
+		r4=r0*0.22
+		color="steelblue"
+
+		p0=(100,100)
+		p1=polar p0_x p0_y r0 200
+		p2=polar p0_x p0_y r1 215
+		p3=polar p0_x p0_y r2 225
+		p4=polar p0_x p0_y r2 250
+		p5=polar p2_x p2_y r3 275
+		p6=polar p5_x p5_y r4 30
+
+//		coord p1_x p1_y 2 "P1"
+//		coord p2_x p2_y 2 "P2"
+//		coord p3_x p3_y 2 "P3"
+//		coord p0_x p0_y 2 "P0"
+//		coord p4_x p4_y 2 "P4"
+//		coord p5_x p5_y 2 "P5"
+//		coord p6_x p6_y 2 "P6"
+
+		polygon "p0_x p1_x p2_x"      "p0_y p1_y p2_y"      color 20
+		polygon "p0_x p3_x p4_x"      "p0_y p3_y p4_y"      color 20
+
+		polygon "p3_x p5_x p6_x"      "p3_y p5_y p6_y"      color 10
+		polygon "p0_x p2_x p5_x p3_x" "p0_y p2_y p5_y p3_y" color 50
+		
+
+	eslide
+edeck
