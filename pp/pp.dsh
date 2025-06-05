@@ -16,14 +16,6 @@ deck
 		p5=polar p2_x p2_y r3 275
 		p6=polar p5_x p5_y r4 30
 
-//		coord p1_x p1_y 2 "P1"
-//		coord p2_x p2_y 2 "P2"
-//		coord p3_x p3_y 2 "P3"
-//		coord p0_x p0_y 2 "P0"
-//		coord p4_x p4_y 2 "P4"
-//		coord p5_x p5_y 2 "P5"
-//		coord p6_x p6_y 2 "P6"
-
 		polygon "p0_x p1_x p2_x"      "p0_y p1_y p2_y"      color 20
 		polygon "p0_x p3_x p4_x"      "p0_y p3_y p4_y"      color 20
 
