@@ -1,27 +1,16 @@
 deck
-	import "coord.dsh"
+	import "plane.dsh"
 	slide
-		r0=100
-		r1=r0*0.85
-		r3=r0*0.25
-		r2=r0*0.81
-		r4=r0*0.22
-		color="steelblue"
+		plane 85 90 80 "steelblue"
+		plane 20 90 10 "red"
+		plane 80 10 7  "black"
+	eslide
 
-		p0=(100,100)
-		p1=polar p0_x p0_y r0 200
-		p2=polar p0_x p0_y r1 215
-		p3=polar p0_x p0_y r2 225
-		p4=polar p0_x p0_y r2 250
-		p5=polar p2_x p2_y r3 275
-		p6=polar p5_x p5_y r4 30
-
-		polygon "p0_x p1_x p2_x"      "p0_y p1_y p2_y"      color 20
-		polygon "p0_x p3_x p4_x"      "p0_y p3_y p4_y"      color 20
-
-		polygon "p3_x p5_x p6_x"      "p3_y p5_y p6_y"      color 10
-		polygon "p0_x p2_x p5_x p3_x" "p0_y p2_y p5_y p3_y" color 50
-		
-
+	slide
+		for x=20 100 20
+			plane x 90 20 "red"
+			plane x 60 20 "black"
+			plane x 30 20 "blue" 
+		efor
 	eslide
 edeck
