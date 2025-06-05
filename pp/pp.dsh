@@ -3,14 +3,15 @@ deck
 	slide
 		plane 85 90 80 "steelblue"
 		plane 20 90 10 "red"
-		plane 80 10 7  "black"
+		plane 50 10 7  "black"
 	eslide
 
 	slide
-		for x=20 100 20
-			plane x 90 20 "red"
-			plane x 60 20 "black"
-			plane x 30 20 "blue" 
+		for x=15 100 10
+			plane x 90 10 "red"
+			plane x 60 10 "black"
+			plane x 30 10 "blue" 
 		efor
 	eslide
+
 edeck
