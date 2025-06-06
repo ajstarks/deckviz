@@ -1,0 +1,20 @@
+def shadowp X Y Size
+	r0=Size
+	r1=r0*0.85
+	r3=r0*0.25
+	r2=r0*0.81
+	r4=r0*0.22
+	color=Color
+
+	p0=(X,Y)
+	p1=polar p0_x p0_y r0 200
+	p2=polar p0_x p0_y r1 215
+	p3=polar p0_x p0_y r2 225
+	p4=polar p0_x p0_y r2 250
+	p5=polar p2_x p2_y r3 275
+	p6=polar p5_x p5_y r4 30
+
+	polygon "p0_x p1_x p2_x p5_x  p6_x p4_x" "p0_y p1_y p2_y p5_y  p6_y p4_y" "gray" 50
+
+	
+edef

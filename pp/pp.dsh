@@ -1,9 +1,16 @@
 deck
 	import "plane.dsh"
+	import "coord.dsh"
+	import "shadowp.dsh"
 	slide
 		plane 85 90 80 "steelblue"
-		plane 20 90 10 "red"
+		plane 30 90 10 "red"
 		plane 50 10 7  "black"
+	eslide
+
+	slide
+		plane 30 90 10 "red"
+		shadowp 30 60 5
 	eslide
 
 	slide
