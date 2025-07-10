@@ -1,0 +1,36 @@
+#!/bin/bash
+cw=1200
+ch=700
+# USA
+latmax=48; latmin=25
+longmax=-70; longmin="-125"
+latlong="-latmax $latmax -latmin $latmin -longmax $longmax -longmin $longmin"
+bgcolor="steelblue" # rgb(15,26,49)"
+eacolor="linen" # rgb(179,119,109)"
+dotcolor="red:50"
+dotsize="1.2"
+textcolor=$eacolor
+textsize="0.5"
+# combine map with locations
+(
+	echo '<deck>'
+    echo "<slide bg=\"$bgcolor\" fg=\"$textcolor\">"
+    echo "<text    xp=\"5\" yp=\"5\" sp=\"1\">The Travels of W.E.B Du Bois (1882-1961)</text>"
+    echo "<text    xp=\"5.5\" yp=\"3\" sp=\"0.5\">Place Visited</text>"
+    echo "<ellipse xp=\"5\" yp=\"3.3\" hr=\"100\" wp=\"0.5\" color=\"red\" opacity=\"50\"/>"
+    world    $latlong \
+             -fulldeck=f \
+             -style deck \
+             -shape fill \
+             -color "$eacolor"   world.kml
+	awk --csv '$5 == "US" {print $1, $2}' dubois-locations.csv | 
+	geodeck $latlong \
+            -fulldeck=f \
+            -style deck \
+            -shape dot  \
+            -color $dotcolor \
+            -shapesize $dotsize \
+            -autobbox=f 
+    echo '</slide>'
+    echo '</deck>'
+)  | pdfdeck -layers poly:ellipse:line:text -pagesize ${cw}x${ch} -stdout - > f.pdf

@@ -1,0 +1,31 @@
+#!/bin/bash
+cw=600
+ch=150
+latmax=60
+latmin="0"
+longmax=160
+longmin="-160"
+latlong="-latmax $latmax -latmin $latmin -longmax $longmax -longmin $longmin"
+bgcolor="darkblue" # "rgb(15,26,49)"
+eacolor="linen" # rgb(179,119,109)"
+dotcolor="red:60"
+dotsize="0.75"
+textcolor="gray"
+textsize="0.5"
+world $latlong -fulldeck=f -style deck -shape fill -color "$eacolor" world.kml > world.xml
+
+(
+	echo '<deck>'
+	for i in 188 189 190 191 192 193 194 195 196
+	do
+		echo "<slide bg=\"$bgcolor\" fg=\"$eacolor\">"
+			cat world.xml
+			echo "<text xp=\"5\" yp=\"20\" sp=\"1\">W.E.B Du Bois Travels</text>"
+			echo "<text xp=\"5\" yp=\"14\" sp=\"1.5\">${i}0s</text>"
+			grep ${i} dubois-locations.csv | 
+			awk --csv '{print $1, $2}' | 
+			geodeck $latlong -fulldeck=f -style deck -shape dot -color $dotcolor -shapesize $dotsize -autobbox=f
+    	echo '</slide>'
+	done
+	echo '</deck>'
+) | pdfdeck -layers poly:ellipse:text -pagesize ${cw}x${ch} -stdout - > dubois-travels.pdf

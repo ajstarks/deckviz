@@ -1,0 +1,6 @@
+<deck>
+<slide bg="" fg="">
+<text    xp="5" yp="5" sp="1">The Travels of W.E.B Du Bois (1882-1961)</text>
+<text    xp="5.5" yp="3" sp="0.5">Place Visited</text>
+<ellipse xp="5" yp="3.3" hr="100" wp="0.5" color="red" opacity="50"/>
+

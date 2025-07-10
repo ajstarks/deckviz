@@ -1,0 +1,3 @@
+#!/bin/bash
+# convert data records scraped from https://dartmouth.maps.arcgis.com/apps/webappviewer/index.html?id=e2ff339527d94ed49a0be203b2b858aa to csv
+awk -F$'\t' 'BEGIN { print "lat,long,date,city,country,row"} {printf "%s,%s,%s,\"%s\",\"%s\",%s\n", $12,$11,substr($7,7,4),$4,$6,$3}' $*

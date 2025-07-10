@@ -1,0 +1,24 @@
+# convert data records scraped from https://dartmouth.maps.arcgis.com/apps/webappviewer/index.html?id=e2ff339527d94ed49a0be203b2b858aa to csv
+BEGIN { print "lat,long,date,city,country,row"}
+$1 ~ /city/ { 
+	if (NF > 2) {
+		city=$2 " " $3
+	} else {
+		city=$2
+	}
+}
+$1 ~ /country/ {
+	if (NF > 2) {
+		country=$2 " " $3
+	} else {
+		country=$2
+	}
+}
+$1 ~ /row/ {
+	row=$2
+}
+$1 ~ /display_ye/ { 
+	date=substr($2,7,4) 
+}
+$1 ~ /lon/ { long=$2 }
+$1 ~ /lat/ { lat=$2; printf "%s,%s,%s,\"%s\",\"%s\",%s\n", lat, long, date, city, country,row  }

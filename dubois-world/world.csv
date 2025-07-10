@@ -1,0 +1,376 @@
+lat,long,city,country,row
+42.21,-73.34,Great Barrington,US,1
+41.17,-73.20,Bridgeport,US,5
+41.76,-72.69,Hartford,US,6
+41.82,-71.41,Providence,US,7
+41.64,-70.93,New Bedford,US,8
+41.39,-70.62,Martha's Vineyard,US,9
+41.82,-71.41,Providence,US,10
+42.10,-72.59,Springfield,US,11
+42.21,-73.34,Great Barrington,US,13
+36.16,-86.77,Nashville,US,15
+36.16,-86.77,Nashville,US,16
+36.16,-86.77,Nashville,US,19
+36.08,-86.03,Alexandria,US,20
+36.16,-86.77,Nashville,US,21
+36.16,-86.77,Nashville,US,22
+44.91,-93.63,Lake Minetonka,US,23
+44.98,-93.27,Minneapolis,US,24
+44.95,-93.09,St. Paul,US,25
+43.07,-89.38,Madison,US,26
+43.03,-87.92,Milwaukee,US,27
+41.88,-87.62,Chicago,US,28
+42.38,-71.11,Cambridge,US,29
+42.21,-73.34,Great Barrington,US,32
+42.38,-71.11,Cambridge,US,33
+42.65,-73.75,Albany,US,35
+42.38,-71.11,Cambridge,US,36
+42.51,-71.07,Wakefield,US,37
+42.30,-73.39,West Stockbridge,US,38
+42.45,-73.26,Pittsfield,US,39
+42.36,-71.06,Boston,US,40
+42.38,-71.11,Cambridge,US,41
+38.90,-77.04,Washington,US,42
+42.38,-71.11,Cambridge,US,43
+42.37,-72.51,Amherst,US,44
+42.38,-71.11,Cambridge,US,45
+40.71,-74.01,New York,US,46
+42.38,-71.11,Cambridge,US,47
+40.71,-74.01,New York,US,48
+51.92,4.48,Rotterdam,Netherlands,49
+52.37,4.89,Amsterdam,Netherlands,50
+52.08,4.31,The Hague,Netherlands,51
+51.23,6.78,Düsseldorf,Germany,52
+50.94,6.96,Cologne,Germany,53
+50.00,8.28,Mainz,Germany,54
+50.11,8.68,Frankfurt,Germany,55
+50.97,10.32,Eisenach,Germany,56
+50.98,11.33,Weimar,Germany,57
+51.34,12.37,Leipzig,Germany,58
+52.52,13.39,Berlin,Germany,59
+52.52,13.39,Berlin,Germany,60
+50.98,11.33,Weimar,Germany,61
+50.11,8.68,Frankfurt,Germany,63
+49.49,8.47,Mannheim,Germany,64
+49.41,8.69,Heidelberg,Germany,65
+53.82,13.37,Pfalz,Germany,66
+49.35,8.14,Neustadt,Germany,67
+48.78,9.18,Stuttgart,Germany,69
+48.40,9.99,Ulm,Germany,70
+48.14,11.58,Munich,Germany,71
+52.52,13.39,Berlin,Germany,83
+52.40,13.06,Potsdam,Germany,84
+53.87,10.68,Lübeck,Germany,85
+53.55,10.00,Hamburg,Germany,86
+53.08,8.81,Bremen,Germany,87
+51.32,9.49,Kassel,Germany,88
+50.47,7.86,Boden,Germany,89
+52.37,9.74,Hanover,Germany,90
+52.52,13.39,Berlin,Germany,92
+41.89,12.48,Rome,Italy,99
+40.84,14.25,Naples,Italy,100
+45.44,12.33,Venice,Italy,101
+48.21,16.37,Vienna,Austria,102
+47.50,19.04,Budapest,Hungary,103
+50.06,19.94,Krakow,Poland,106
+51.05,13.74,Dresden,Germany,108
+52.52,13.39,Berlin,Germany,110
+51.90,11.05,Halberstadt,Germany,112
+52.52,13.39,Berlin,Germany,113
+48.86,2.32,Paris,France,114
+40.71,-74.01,New York,US,116
+42.21,-73.34,Great Barrington,US,117
+39.71,-83.88,Wilberforce,US,118
+39.71,-83.88,Wilberforce,US,119
+39.71,-83.88,Wilberforce,US,121
+39.95,-75.16,Philadelphia,US,123
+38.90,-77.04,Washington,US,124
+39.95,-75.16,Philadelphia,US,125
+39.95,-75.16,Philadelphia,US,126
+37.30,-78.39,Farmville,US,127
+36.84,-76.29,Norfolk,US,128
+37.30,-78.39,Farmville,US,129
+39.95,-75.16,Philadelphia,US,130
+42.21,-73.34,Great Barrington,US,131
+39.95,-75.16,Philadelphia,US,132
+39.95,-75.16,Philadelphia,US,133
+33.75,-84.39,Atlanta,US,134
+39.71,-83.88,Wilberforce,US,135
+36.16,-86.77,Nashville,US,136
+33.75,-84.39,Atlanta,US,137
+42.36,-71.06,Boston,US,138
+33.75,-84.39,Atlanta,US,139
+33.75,-84.39,Atlanta,US,140
+37.03,-76.35,Hampton,US,141
+33.75,-84.39,Atlanta,US,142
+42.21,-73.34,Great Barrington,US,143
+33.75,-84.39,Atlanta,US,144
+41.88,-87.62,Chicago,US,145
+33.75,-84.39,Atlanta,US,146
+38.90,-77.04,Washington,US,147
+32.42,-85.69,Tuskegee,US,148
+33.75,-84.39,Atlanta,US,149
+38.90,-77.04,Washington,US,150
+33.75,-84.39,Atlanta,US,151
+32.06,-81.10,Savannah,US,152
+33.75,-84.39,Atlanta,US,153
+40.71,-74.01,New York,US,154
+48.86,2.32,Paris,France,155
+33.75,-84.39,Atlanta,US,157
+32.42,-85.69,Tuskegee,US,158
+33.75,-84.39,Atlanta,US,159
+40.71,-74.01,New York,US,161
+33.75,-84.39,Atlanta,US,162
+40.71,-74.01,New York,US,163
+33.75,-84.39,Atlanta,US,164
+32.42,-85.69,Tuskegee,US,165
+42.36,-71.06,Boston,US,166
+44.39,-68.20,Bar Harbor,US,167
+33.75,-84.39,Atlanta,US,168
+40.71,-74.01,New York,US,169
+42.36,-71.06,Boston,US,170
+33.75,-84.39,Atlanta,US,171
+40.71,-74.01,New York,US,172
+33.75,-84.39,Atlanta,US,173
+41.59,-93.60,Des Moines,US,174
+33.75,-84.39,Atlanta,US,175
+42.91,-78.92,Fort Erie,Canada,176
+33.75,-84.39,Atlanta,US,177
+48.86,2.32,Paris,France,178
+37.03,-76.35,Hampton,US,179
+33.75,-84.39,Atlanta,US,182
+33.75,-84.39,Atlanta,US,184
+40.71,-74.01,New York,US,185
+41.88,-87.62,Chicago,US,186
+33.75,-84.39,Atlanta,US,187
+38.90,-77.04,Washington,US,188
+33.75,-84.39,Atlanta,US,189
+45.50,-73.57,Montreal,Canada,190
+42.36,-71.06,Boston,US,195
+33.75,-84.39,Atlanta,US,196
+40.71,-74.01,New York,US,197
+33.75,-84.39,Atlanta,US,198
+36.16,-86.77,Nashville,US,199
+41.88,-87.62,Chicago,US,200
+41.29,-82.22,Oberlin,US,201
+33.75,-84.39,Atlanta,US,202
+39.15,-74.69,Sea Isle City,US,203
+33.75,-84.39,Atlanta,US,204
+40.71,-74.01,New York,US,205
+33.75,-84.39,Atlanta,US,206
+40.71,-74.01,New York,US,207
+33.75,-84.39,Atlanta,US,208
+42.36,-71.06,Boston,US,209
+33.75,-84.39,Atlanta,US,210
+40.71,-74.01,New York,US,211
+40.71,-74.01,New York,US,213
+40.71,-74.01,New York,US,214
+37.78,-122.42,NA,US,216
+35.15,-90.05,Memphis,US,221
+34.05,-118.24,Los Angeles,US,222
+17.97,-76.79,Kingston,Jamaica,223
+42.36,-71.06,Boston,US,224
+38.90,-77.04,Washington,US,225
+43.00,-71.45,Manchester,US,226
+33.75,-84.39,Atlanta,US,228
+42.36,-71.06,Boston,US,229
+40.71,-74.01,New York,US,230
+39.95,-75.16,Philadelphia,US,231
+40.71,-74.01,New York,US,232
+39.15,-74.69,Sea Isle City,US,233
+40.71,-74.01,New York,US,235
+41.85,-73.56,Amenia,US,236
+40.71,-74.01,New York,US,237
+33.75,-84.39,Atlanta,US,238
+33.47,-81.97,Augusta,US,239
+35.05,-85.31,Chattanooga,US,240
+32.79,-79.94,Charleston,US,241
+38.63,-90.24,St. Louis,US,242
+40.71,-74.01,New York,US,243
+38.90,-77.04,Washington,US,247
+48.86,2.32,Paris,France,250
+40.71,-74.01,New York,US,251
+33.75,-84.39,Atlanta,US,252
+48.86,2.32,Paris,France,253
+50.85,4.35,Brussels,Belgium,255
+48.86,2.32,Paris,France,256
+46.20,6.15,Geneva,Switzerland,257
+45.92,6.87,Chamonix-Mont Blanc,France,258
+40.71,-74.01,New York,US,259
+41.65,-83.54,Toledo,US,260
+39.94,-82.01,Zanesville,US,261
+41.88,-87.62,Chicago,US,262
+39.77,-86.16,Indianapolis,US,263
+39.74,-104.98,Denver,US,264
+45.52,-122.67,Portland,US,265
+44.05,-123.10,Eugene,US,266
+38.58,-121.49,Sacramento,US,267
+37.78,-122.42,San Francisco,US,268
+37.80,-122.27,Oakland,US,269
+34.05,-118.24,Los Angeles,US,270
+32.72,-117.16,San Diego,US,271
+36.16,-86.77,Nashville,US,272
+51.53,-0.10,London,England,273
+45.44,4.39,St. Etienne,France,274
+47.07,3.00,Marseilles,France,275
+43.21,2.35,Carcassonne,France,276
+40.42,-3.70,Madrid,Spain,277
+38.71,-9.14,Lisbon,Portugal,278
+28.29,-16.80,Tenerife,Canary Islands,279
+6.33,-10.80,Monrovia,Liberia,280
+8.40,-16.34,NA,Sierra Leone,281
+14.69,-17.45,Dakar,Senegal,282
+34.05,-118.24,Los Angeles,US,283
+40.71,-74.01,New York,US,284
+40.71,-74.01,New York,US,285
+36.16,-86.77,Nashville,US,286
+39.95,-75.16,Philadephia,US,287
+41.88,-87.62,Chicago,US,288
+40.71,-74.01,New York,US,289
+50.12,8.36,Franfurt,Germany,291
+52.52,13.39,Berlin,Germany,292
+53.43,14.55,Szczecin,Poland,293
+59.99,29.77,Kronstadt,Russia,294
+55.75,37.62,Moscow,Russia,296
+56.33,44.01,Nizhni Novgorod,Russia,297
+50.45,30.52,Kiev,Ukraine,298
+46.48,30.73,Odessa,Ukraine,299
+41.01,28.97,Istanbul,Turkey,300
+37.98,23.73,Athens,Greece,301
+35.41,-83.72,NA,Italy,302
+40.71,-74.01,New York,US,303
+38.90,-77.04,Washington,US,304
+34.05,-118.24,Los Angeles,US,305
+40.71,-74.01,New York,US,306
+40.71,-74.01,New York,US,307
+41.88,-87.62,Chicago,US,308
+34.05,-118.24,Los Angeles,US,309
+37.23,-77.40,Petersburg,US,310
+38.71,-93.23,Sedalia,US,311
+35.78,-78.64,Raleigh,US,312
+36.06,-94.16,Fayetteville,US,313
+35.23,-80.84,Charlotte,US,314
+32.79,-79.94,Charleston,US,315
+29.21,-81.02,Daytona Beach,US,316
+30.33,-81.66,Jacksonville,US,317
+33.47,-81.97,Augusta,US,318
+35.41,-83.72,Tuskeegee,US,319
+33.43,-86.17,Talledega,US,320
+40.71,-74.01,New York,US,322
+38.90,-77.04,Washington,US,323
+39.29,-76.61,Baltimore,US,324
+40.71,-74.01,New York,US,325
+33.75,-84.39,Atlanta,US,326
+40.71,-74.01,New York,US,327
+33.75,-84.39,Atlanta,US,328
+38.90,-77.04,Washington,US,329
+36.16,-86.77,Nashville,US,330
+33.75,-84.39,Atlanta,US,331
+40.71,-74.01,New York,US,332
+41.85,-73.56,Amenia,US,333
+40.71,-74.01,New York,US,334
+38.90,-77.04,Washington,US,336
+40.85,-73.88,Bronx,US,337
+40.71,-74.01,New York,US,338
+40.71,-74.01,New York,US,339
+36.16,-86.77,Nashville,US,340
+33.75,-84.39,Atlanta,US,341
+38.25,-85.76,Louisville,US,342
+40.71,-74.01,New York,US,343
+50.91,-1.54,Southampton,England,344
+51.53,-0.66,London,England,345
+50.85,4.35,Brussels,Belgium,346
+52.52,13.39,Berlin,Germany,347
+48.86,2.32,Paris,France,348
+48.83,6.91,Bavaria,Germany,349
+52.52,13.39,Berlin,Germany,350
+48.21,16.37,Vienna,Austria,351
+55.75,37.62,Moscow,Russia,352
+39.91,116.39,Beijing,China,355
+31.23,121.47,Shanghai,China,356
+32.75,129.88,Nagasaki,Japan,357
+34.69,135.19,Kobe,Japan,358
+34.69,135.50,Osaka,Japan,359
+34.68,135.80,Nara,Japan,360
+35.02,135.76,Kyoto,Japan,361
+35.68,139.76,Tokyo,Japan,362
+35.45,139.31,Yokahama,Japan,363
+19.06,-155.59,NA,US,364
+33.75,-84.39,Atlanta,US,365
+41.88,-87.62,Chicago,US,366
+42.33,-83.05,Detroit,US,368
+41.88,-87.62,Chicago,US,369
+40.06,-80.72,Wheeling,US,370
+33.75,-84.39,Atlanta,US,371
+30.94,-91.40,NA,US,372
+26.17,-98.05,NA,US,373
+41.88,-87.62,Chicago,US,374
+40.71,-74.01,New York,US,375
+39.29,-76.61,Baltimore,US,377
+23.14,-82.36,Havana,Cuba,378
+20.02,-75.90,Santiago,Cuba,379
+24.56,-81.77,Key West,US,380
+41.71,-73.93,Poughkeepsie,US,381
+41.31,-72.93,New Haven,US,382
+40.71,-74.01,New York,US,383
+36.00,-78.90,Durham,US,384
+33.75,-84.39,Atlanta,US,385
+33.75,-84.39,Atlanta,US,386
+40.71,-74.01,New York,US,387
+40.71,-74.01,New York,US,388
+40.71,-74.01,New York,US,390
+40.71,-74.01,New York,US,391
+38.90,-77.04,Washington,US,392
+40.71,-74.01,New York,US,401
+38.90,-77.04,Washington,US,402
+50.32,-4.80,London,England,404
+34.00,-81.03,Columbia,US,405
+48.86,2.32,Paris,France,408
+40.71,-74.01,New York,US,410
+50.06,14.19,Prague,Czechoslovakia,411
+47.94,17.59,NA,Slovakia,412
+53.03,18.69,NA,Poland,413
+40.71,-74.01,New York,US,415
+42.21,-73.34,Great Barrington,US,417
+47.94,17.59,NA,Slovakia,422
+48.86,2.32,Paris,France,423
+40.71,-74.01,New York,US,424
+40.71,-74.01,New York,US,425
+38.90,-77.04,Washington,US,426
+40.71,-74.01,New York,US,427
+40.71,-74.01,New York,US,428
+41.88,-87.62,Chicago,US,445
+40.71,-74.01,New York,US,447
+50.32,-4.80,London,England,448
+52.37,4.89,Amsterdam,Netherlands,449
+48.86,2.32,Paris,France,450
+55.78,49.12,Kazan,Russia,451
+50.06,14.19,Prague,Czechoslovakia,453
+47.07,15.01,NA,Hungary,454
+39.91,116.39,Beijing,China,456
+30.60,114.30,Wuhan,China,457
+34.13,116.12,Shanghai,China,458
+34.13,116.12,Hankou,China,459
+23.13,113.26,Guangzhou,China,460
+29.56,106.55,Chongqing,China,461
+30.66,104.06,Chengdu,China,462
+24.88,102.83,Kunming,China,463
+32.06,118.79,Nanjing,China,464
+55.75,37.62,Moscow,Russia,465
+59.33,18.07,Stockholm,Sweden,466
+52.52,13.39,Berlin,Germany,467
+50.32,-4.80,London,England,468
+40.71,-74.01,New York,US,469
+50.85,4.35,Brussels,Belgium,471
+41.89,12.48,Rome,Italy,473
+5.56,-0.20,Accra,Ghana,474
+40.71,-74.01,New York,US,475
+6.46,3.39,Lagos,Nigeria,476
+40.71,-74.01,New York,US,477
+5.56,-0.20,Accra,Ghana,478
+5.56,-0.20,Accra,Ghana,479
+44.44,26.10,Bucharest,Romania,480
+50.32,-4.80,London,UK,481
+46.95,7.45,NA,Switzerland,482
+5.56,-0.20,Accra,Ghana,483
+5.56,-0.20,Accra,Ghana,484
