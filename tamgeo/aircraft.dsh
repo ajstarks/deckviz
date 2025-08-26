@@ -1,0 +1,14 @@
+def aircraft X Y TS Scale
+	airscale=Scale
+	p1=(X-5,Y-14)
+	p2=(X,Y-4)
+	p3=(X+5,Y-12)
+	p4=(X+2,Y-22)
+	capsize=TS*0.6
+
+	ctext  "Aircraft Flown by the Tuskegee Airmen" X Y TS
+	cimage "images/lol.png" 		 "Lollipoop, P-51D" 			p1_x p1_y airscale 0 100 "http://www.americanairmuseum.com/aircraft/21444" capsize
+	cimage "images/ina.png"			 "Ina the Macon Belle, P-51C"	p2_x p2_y airscale 0 100 "https://en.wikipedia.org/wiki/Lee_Archer_(pilot)" capsize
+	cimage "images/peirson-p-47.png" "Lt. Peirson, P47D"			p3_x p3_y airscale 0 100 "https://www.bravobravoaviation.com/en/republic-p-47-thunderbolt/252-p-47d-thunderbolt-1lt-gwynne-peirson-302nd-fs-332nd-fg-tuskegee-airmen-italy-1944.html" capsize
+	cimage "images/nona.png"		 "Nona II, P-40"				p4_x p4_y airscale 0 100 "http://www.americanairmuseum.com/aircraft/21444" capsize
+edef

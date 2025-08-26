@@ -1,0 +1,62 @@
+deck
+	
+	canvas 1400 600
+	latmax=55
+    latmin=9
+    longmax=25
+    longmin=0-130
+
+
+	bgcolor="white"
+	eacolor="rgb(250,240,240)"
+	txcolor="black"
+	pathcolor="blue"
+	pathsize=0.1
+	pathop=5
+	markop=40
+	ts=3
+	ty=92
+	sy=ty-4
+	curvecolor="rgb(207,54,7)"
+
+	import "unitorg.dsh"
+	import "unithonors.dsh"
+	import "aircraft.dsh"
+	import "operations.dsh"
+
+	slide bgcolor txcolor
+		//ruler 5 "gray"   
+		text "THE TUSKEGEE AIRMEN" 5 ty ts
+		text "“Red-tailed Angels Spit Fire”" 5 sy 0.75 "sans" curvecolor
+		include "geo.dsh"
+	    
+	    origin="The Tuskegee Airmen orginated from all over the United States (40 of 48 states and D.C.). They trained at Moton Field in Alabama"
+	    carib="Three airmen orginiated in the Caribbean (Haiti, Virgin Is. and Trinidad)"
+	    bases="Initially based in  Morocco, the groups moved to Sicily and on to Ramitelli, Italy."
+	    action="The group operated in Italy, France, Germany, and Austria, scored 121 aerial victories and performed 79 bomber escort missions with a low 3.9% mission loss rate."
+	    
+	    text "Origins" 5 73 1
+	    textblock origin	5 70 8  0.6
+	    textblock carib		37 17 5 0.6
+	    
+	    circle 2 50 0.5 "blue" 30
+	    text  "Originating States" 2.5 49.5 0.6
+
+		textblock bases		80 45 7 0.6
+
+	    circle 82 97 0.5 "red" 30
+	    text "Sites of Aeiral Victories" 82.5 96.5 0.6
+
+	    aircraft 			60 ty 1 7
+	    unitorg				80 35 1 4
+	    unithonors			10 35 1
+	    operations action	50 35 1
+		
+		etext "Anthony Starks, @ajstarks" 				99 3 0.5 "sans" curvecolor 100 "https://speakerdeck.com/ajstarks"
+		etext "Aircraft Illustrations by Gaëtan Marie"	99 1 0.5 "sans" "gray" 100 "http://www.gaetanmarie.com"
+
+	eslide
+edeck
+
+
+

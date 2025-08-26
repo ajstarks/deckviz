@@ -1,0 +1,12 @@
+def operations Text X Y TS
+	text "Operations"   X Y TS
+	capsize=TS*0.6
+	opy=Y-3
+	textblock Text X opy 10 capsize
+	opimx=X+5
+	opimy=Y+5
+	image  "images/b17-483.png"	opimx opimy 6 0
+	opimx+=5
+	opimy+=5
+	image  "images/lol.png"		opimx opimy 2 0
+edef

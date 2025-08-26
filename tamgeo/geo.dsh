@@ -1,0 +1,184 @@
+		// Ramitelli - ETO Base of the Tuskegee Airmen
+		ram="geo:41.9439278,15.0483306	Ramitelli"
+
+		// Morocco, first deployment
+		mor="geo:31.7917,-7.0926	Morocco"
+		tun="geo:33.8869,9.53750	Tunisia"
+		sly="geo:37.3979,14.6588	Sicily"
+
+		// Moton Field - training site for the Tuskegee Airmen
+		mot="geo:32.4586,-85.6814	Moton Field"
+
+		// States
+		al="geo:32.806671,-86.791130	Alabama"
+		ak="geo:61.370716,-152.404419	Alaska"
+		az="geo:33.729759,-111.431221	Arizona"
+		ar="geo:34.969704,-92.373123	Arkansas"
+		ca="geo:36.116203,-119.681564	California"
+		co="geo:39.059811,-105.311104	Colorado"
+		ct="geo:41.597782,-72.755371	Connecticut"
+		de="geo:39.318523,-75.507141	Delaware"
+		dc="geo:38.897438,-77.026817	District of Columbia"
+		fl="geo:27.766279,-81.686783	Florida"
+		ga="geo:33.040619,-83.643074	Georgia"
+		id="geo:44.240459,-114.478828	Idaho"
+		il="geo:40.349457,-88.986137	Illinois"
+		in="geo:39.849426,-86.258278	Indiana"
+		ia="geo:42.011539,-93.210526	Iowa"
+		ks="geo:38.526600,-96.726486	Kansas"
+		ky="geo:37.668140,-84.670067	Kentucky"
+		la="geo:31.169546,-91.867805	Louisiana"
+		me="geo:44.693947,-69.381927	Maine"
+		md="geo:39.063946,-76.802101	Maryland"
+		ma="geo:42.230171,-71.530106	Massachusetts"
+		mi="geo:43.326618,-84.536095	Michigan"
+		mn="geo:45.694454,-93.900192	Minnesota"
+		ms="geo:32.741646,-89.678696	Mississippi"
+		mo="geo:38.456085,-92.288368	Missouri"
+		mt="geo:46.921925,-110.454353	Montana"
+		ne="geo:41.125370,-98.268082	Nebraska"
+		nv="geo:38.313515,-117.055374	Nevada"
+		nh="geo:43.452492,-71.563896	New Hampshire"
+		nj="geo:40.298904,-74.521011	New Jersey"
+		nm="geo:34.840515,-106.248482	New Mexico"
+		ny="geo:42.165726,-74.948051	New York"
+		nc="geo:35.630066,-79.806419	North Carolina"
+		nd="geo:47.528912,-99.784012	North Dakota"
+		oh="geo:40.388783,-82.764915	Ohio"
+		ok="geo:35.565342,-96.928917	Oklahoma"
+		or="geo:44.572021,-122.070938	Oregon"
+		pa="geo:40.590752,-77.209755	Pennsylvania"
+		ri="geo:41.680893,-71.511780	Rhode Island"
+		sc="geo:33.856892,-80.945007	South Carolina"
+		tn="geo:35.747845,-86.692345	Tennessee"
+		tx="geo:31.054487,-97.563461	Texas"
+		ut="geo:40.150032,-111.862434	Utah"
+		vt="geo:44.045876,-72.710686	Vermont"
+		va="geo:37.769337,-78.169968	Virginia"
+		wa="geo:47.400902,-121.490494	Washington"
+		wv="geo:38.491226,-80.954453	West Virginia"
+		wi="geo:44.268543,-89.616508	Wisconsin"
+		wy="geo:42.755966,-107.302490	Wyoming"
+
+		// Caribbean
+		tr="geo:10.50000,-61.3000000	Trinidad"
+		ha="geo:19.00000,-72.4166670	Haiti"
+		vi="geo:18.200000,-64.8000000	Virgin Islands"
+
+		georegion	"africa.kml"			latmin latmax longmin longmax eacolor
+		georegion	"na.kml"				latmin latmax longmin longmax eacolor
+		georegion	"europe.kml"			latmin latmax longmin longmax eacolor
+		georegion	"asia.kml"				latmin latmax longmin longmax eacolor
+		georegion	"south-america.kml"		latmin latmax longmin longmax eacolor
+		georegion	"central-america.kml"	latmin latmax longmin longmax eacolor
+		georegion	"caribbean.kml"			latmin latmax longmin longmax eacolor
+		geolabel	ram 					latmin latmax longmin longmax 1.2
+		
+		geolabel	mor						latmin latmax longmin longmax 1
+		geoloc      mot						latmin latmax longmin longmax "b" 0.75
+		geolabel	tun						latmin latmax longmin longmax 1
+		geolabel	sly						latmin latmax longmin longmax 1
+		geomark		"origins.d"				latmin latmax longmin longmax 0.5 "blue" markop
+		geomark		"battle-locations"		latmin latmax longmin longmax 0.5 "red"  markop
+		geopath		mor tun					latmin latmax longmin longmax 0.4 "red" 20
+		geopath		tun sly					latmin latmax longmin longmax 0.4 "red" 20
+		geopath		sly ram					latmin latmax longmin longmax 0.4 "red" 20
+		
+ 		dest=mor
+		geopath az dest latmin latmax longmin longmax pathsize pathcolor pathop
+		geopath ar dest latmin latmax longmin longmax pathsize pathcolor pathop
+		geopath ca dest latmin latmax longmin longmax pathsize pathcolor pathop
+		geopath co dest latmin latmax longmin longmax pathsize pathcolor pathop
+		geopath ct dest latmin latmax longmin longmax pathsize pathcolor pathop
+		geopath de dest latmin latmax longmin longmax pathsize pathcolor pathop
+		geopath dc dest latmin latmax longmin longmax pathsize pathcolor pathop
+		geopath fl dest latmin latmax longmin longmax pathsize pathcolor pathop
+		geopath ga dest latmin latmax longmin longmax pathsize pathcolor pathop
+		geopath il dest latmin latmax longmin longmax pathsize pathcolor pathop
+		geopath in dest latmin latmax longmin longmax pathsize pathcolor pathop
+		geopath ia dest latmin latmax longmin longmax pathsize pathcolor pathop
+		geopath ks dest latmin latmax longmin longmax pathsize pathcolor pathop
+		geopath ky dest latmin latmax longmin longmax pathsize pathcolor pathop
+		geopath la dest latmin latmax longmin longmax pathsize pathcolor pathop
+		geopath md dest latmin latmax longmin longmax pathsize pathcolor pathop
+		geopath ma dest latmin latmax longmin longmax pathsize pathcolor pathop
+		geopath mi dest latmin latmax longmin longmax pathsize pathcolor pathop
+		geopath mn dest latmin latmax longmin longmax pathsize pathcolor pathop
+		geopath ms dest latmin latmax longmin longmax pathsize pathcolor pathop
+		geopath mo dest latmin latmax longmin longmax pathsize pathcolor pathop
+		geopath mt dest latmin latmax longmin longmax pathsize pathcolor pathop
+		geopath ne dest latmin latmax longmin longmax pathsize pathcolor pathop
+		geopath nh dest latmin latmax longmin longmax pathsize pathcolor pathop
+		geopath nj dest latmin latmax longmin longmax pathsize pathcolor pathop
+		geopath ny dest latmin latmax longmin longmax pathsize pathcolor pathop
+		geopath nc dest latmin latmax longmin longmax pathsize pathcolor pathop
+		geopath sc dest latmin latmax longmin longmax pathsize pathcolor pathop
+		geopath oh dest latmin latmax longmin longmax pathsize pathcolor pathop
+		geopath ok dest latmin latmax longmin longmax pathsize pathcolor pathop
+		geopath or dest latmin latmax longmin longmax pathsize pathcolor pathop
+		geopath pa dest latmin latmax longmin longmax pathsize pathcolor pathop
+		geopath sc dest latmin latmax longmin longmax pathsize pathcolor pathop
+		geopath tn dest latmin latmax longmin longmax pathsize pathcolor pathop
+		geopath tx dest latmin latmax longmin longmax pathsize pathcolor pathop
+		geopath vt dest latmin latmax longmin longmax pathsize pathcolor pathop
+		geopath va dest latmin latmax longmin longmax pathsize pathcolor pathop
+		geopath wa dest latmin latmax longmin longmax pathsize pathcolor pathop
+		geopath wv dest latmin latmax longmin longmax pathsize pathcolor pathop
+		geopath wi dest latmin latmax longmin longmax pathsize pathcolor pathop
+		geopath wy dest latmin latmax longmin longmax pathsize pathcolor pathop
+		geopath tr dest latmin latmax longmin longmax pathsize pathcolor pathop
+		geopath ha dest latmin latmax longmin longmax pathsize pathcolor pathop
+		geopath vi dest latmin latmax longmin longmax pathsize pathcolor pathop
+
+		// Battle locations
+		cas="geo:37.683333,12.793056	Castelvetrano"
+		sly="geo:37.500000,14.000000	Sicily"
+		anz="geo:41.443022,12.624979	Anzio"
+		mun="geo:48.137500,11.575000	Munich"
+		udi="geo:46.066667,13.233333	Udine"
+		nim="geo:43.838333,4.3597220	Nimes"
+		vie="geo:48.208333,16.372500	Vienna"
+		avi="geo:43.950000,4.8075000	Avignon"
+		mem="geo:47.987778,10.181111	Memmingen"
+		tre="geo:45.666667,12.250000	Treviso"
+		fri="geo:47.650000,9.4833330	Friedrichshafen"
+		liz="geo:48.305833,14.286389	Linz"
+		maa="geo:47.132028,13.695861	Markendorf airdrome"
+		bud="geo:47.492500,19.051389	Budapest"
+		tou="geo:43.125833,5.9305560	Toulon"
+		mrk="geo:51.133333,14.883333	Markersdorf"
+		par="geo:50.038611,15.779167	Pardubice"
+		tap="geo:46.882778,17.408056	Tapolca"
+		met="geo:48.266667,12.466667	Mettenheim"
+		ber="geo:52.520000,13.405000	Berlin"
+		stp="geo:48.200000,15.616667	St. Polten"
+		wel="geo:48.150000,14.016667	Wels"
+
+		src=ram
+		pathcolor="red"
+
+		geolabel ber latmin latmax longmin longmax 0.6
+		geolabel tap latmin latmax longmin longmax 0.6 // Lee Archer's three in one day
+		geolabel tou latmin latmax longmin longmax 0.6
+		showlines=0
+
+		if showlines == 1
+			geopath src cas latmin latmax longmin longmax pathsize pathcolor pathop
+			geopath src sly latmin latmax longmin longmax pathsize pathcolor pathop
+			geopath src anz latmin latmax longmin longmax pathsize pathcolor pathop
+			geopath src mun latmin latmax longmin longmax pathsize pathcolor pathop
+			geopath src udi latmin latmax longmin longmax pathsize pathcolor pathop
+			geopath src nim latmin latmax longmin longmax pathsize pathcolor pathop
+			geopath src vie latmin latmax longmin longmax pathsize pathcolor pathop
+			geopath src avi latmin latmax longmin longmax pathsize pathcolor pathop
+			geopath src mem latmin latmax longmin longmax pathsize pathcolor pathop
+			geopath src tre latmin latmax longmin longmax pathsize pathcolor pathop
+			geopath src fri latmin latmax longmin longmax pathsize pathcolor pathop
+			geopath src liz latmin latmax longmin longmax pathsize pathcolor pathop
+			geopath src maa latmin latmax longmin longmax pathsize pathcolor pathop
+			geopath src bud latmin latmax longmin longmax pathsize pathcolor pathop
+			geopath src ber latmin latmax longmin longmax pathsize pathcolor pathop
+			geopath src mrk latmin latmax longmin longmax pathsize pathcolor pathop
+			geopath src par latmin latmax longmin longmax pathsize pathcolor pathop
+			geopath src tap latmin latmax longmin longmax pathsize pathcolor pathop
+		eif

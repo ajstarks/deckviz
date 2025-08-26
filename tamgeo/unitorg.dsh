@@ -1,0 +1,19 @@
+def unitorg X Y	TS Scale
+	unitscale=Scale
+	uy=Y-7
+	capsize=TS*0.75
+	ctext "Unit Organization" X Y TS
+	cimage "images/332-FG.png"	"332nd Fighter Group"	X uy unitscale 0 100 "" 0.75
+	unitscale-=2
+	uy-=13
+	g1=X-6
+	g2=g1+4
+	g3=g2+4
+	g4=g3+4
+	cimage "images/99th-FS.png"	"99th"			g1 uy unitscale 0 100 "" capsize
+	cimage "images/100th-FS.png" "100th"		g2 uy unitscale 0 100 "" capsize
+	cimage "images/301st-FS.png" "301st"		g3 uy unitscale 0 100 "" capsize
+	cimage "images/302nd-FS.png" "302nd"		g4 uy unitscale 0 100 "" capsize
+	uy-=8
+	ctext "Squadrons" X uy capsize
+edef

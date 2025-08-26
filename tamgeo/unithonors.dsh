@@ -1,0 +1,52 @@
+def unithonors X Y TS
+	capleft=X-6
+	imcx=capleft+6
+
+	imx=capleft
+	imy=Y-11
+	hs=4
+	hy=imy+7
+	imw=2
+
+	capsize=TS*0.6
+	ctext "Military Honors Awarded" X Y TS
+	ctext "8"   imx hy TS
+	image "images/purple-heart.png"	imx imy imw 0  //"https://en.wikipedia.org/wiki/Purple_Heart"
+	imx+=hs
+	ctext "14" imx hy TS
+	image "images/bs.png"	imx imy imw 0 //"https://en.wikipedia.org/wiki/Bronze_Star_Medal"
+	imx+=hs
+	ctext "96" imx hy TS
+	image "images/dfc.png"			imx imy imw 0 //"https://en.wikipedia.org/wiki/Distinguished_Flying_Cross_(United_States)"
+	imx+=hs
+	ctext "744" imx hy TS
+	image "images/air-medal.png"	imx imy imw 0 //"https://en.wikipedia.org/wiki/Air_Medal"
+	capx=capleft
+	capy=imy-8
+	clist capx capy capsize "sans" "" 100 1.2
+	        li "Purple"
+	        li "Hearts"
+	elist
+	capx+=hs
+	clist capx capy capsize "sans" "" 100 1.2
+	        li "Bronze"
+	        li "Stars"
+	elist
+	capx+=hs
+	clist capx capy capsize "sans" "" 100 1.2
+	        li "Distinguished"
+	        li "Flying Crosses"
+	elist
+	capx+=hs
+	clist capx capy capsize "sans" "" 100 1.2
+	        li "Air"
+	        li "Medals"
+	elist
+
+	capy -= 6
+	ctext "3" imcx capy 1
+	capy -= 3
+	image "images/duc.jpg"	imcx capy 5 0
+	capy -= 4
+	ctext "Distinguished Unit Citations" imcx capy capsize
+edef
