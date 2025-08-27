@@ -1,0 +1,48 @@
+// US States
+geo:32.806671,-86.791130	Alabama
+geo:33.729759,-111.431221	Arizona
+geo:34.969704,-92.373123	Arkansas
+geo:36.116203,-119.681564	California
+geo:39.059811,-105.311104	Colorado
+geo:41.597782,-72.755371	Connecticut
+geo:39.318523,-75.507141	Delaware
+geo:38.897438,-77.026817	District of Columbia
+geo:27.766279,-81.686783	Florida
+geo:33.040619,-83.643074	Georgia
+geo:40.349457,-88.986137	Illinois
+geo:39.849426,-86.258278	Indiana
+geo:42.011539,-93.210526	Iowa
+geo:38.526600,-96.726486	Kansas
+geo:37.668140,-84.670067	Kentucky
+geo:31.169546,-91.867805	Louisiana
+geo:39.063946,-76.802101	Maryland
+geo:42.230171,-71.530106	Massachusetts
+geo:43.326618,-84.536095	Michigan
+geo:45.694454,-93.900192	Minnesota
+geo:32.741646,-89.678696	Mississippi
+geo:38.456085,-92.288368	Missouri
+geo:46.921925,-110.454353	Montana
+geo:41.125370,-98.268082	Nebraska
+geo:43.452492,-71.563896	New Hampshire
+geo:40.298904,-74.521011	New Jersey
+geo:42.165726,-74.948051	New York
+geo:35.630066,-79.806419	North Carolina
+geo:40.388783,-82.764915	Ohio
+geo:35.565342,-96.928917	Oklahoma
+geo:44.572021,-122.070938	Oregon
+geo:40.590752,-77.209755	Pennsylvania
+geo:41.680893,-71.511780	Rhode Island
+geo:33.856892,-80.945007	South Carolina
+geo:44.299782,-99.438828	South Dakota
+geo:35.747845,-86.692345	Tennessee
+geo:31.054487,-97.563461	Texas
+geo:44.045876,-72.710686	Vermont
+geo:37.769337,-78.169968	Virginia
+geo:47.400902,-121.490494	Washington
+geo:38.491226,-80.954453	West Virginia
+geo:44.268543,-89.616508	Wisconsin
+geo:42.755966,-107.302490	Wyoming
+// Caribbean
+geo:10.50000,-61.3000000	Trinidad
+geo:19.00000,-72.4166670	Haiti
+geo:18.200000,-64.8000000	Virgin Islands

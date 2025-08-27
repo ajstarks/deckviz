@@ -1,0 +1,2 @@
+#!/bin/bash
+decksh tamgeo.dsh | pdf -layers=poly:image:line:curve:ellipse:text:rect:list -pagesize=1500x600
