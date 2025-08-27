@@ -14,6 +14,6 @@ def scorechart Title Aname Hname Ascore Hscore Alogo Hlogo Acolor Hcolor Afile H
 	dchart opts  -yaxis -yrange=0,125,25 -grid  -color Hcolor Hfile
 	dchart opts                                 -color Acolor Afile
 
-	dopts="-bounds=10,90,65,50   -textsize=1 -vol -volop 50 -line -bar=f -xlabel=0 -min=-40 -max=40 -lcolor=white -vcolor=gray"
+	dopts="-bounds=10,90,65,50   -textsize=0.8 -vol -volop 50 -line -bar=f -xlabel=0 -min=-40 -max=40 -lcolor=white -vcolor=gray"
 	dchart dopts  -color Wcolor Winner
 edef

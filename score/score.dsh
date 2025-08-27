@@ -1,9 +1,9 @@
 // NBA scoring
 // data format
 //away\thome
-//.
-//.
-//.
+//
+//
+//
 // ./mkdata input awayname homename
 
 deck
@@ -36,6 +36,22 @@ deck
 	dalname="Dallas Mavericks"
 	dallogo="dal.png"
 	dalcolor="#1563ad"
+
+	clename="Cleveland Cavaliers"
+	clelogo="cle.png"
+	clecolor="#73203a"
+
+	denname="Denver Nuggets"
+	denlogo="den.png"
+	dencolor="#0d2240"
+
+	okcname="Oklahoma City Thunder"
+	okclogo="okc.png"
+	okccolor="#f05133"
+
+	gswname="Golden State Warriors"
+	gswlogo="gsw.png"
+	gswcolor="#1d428a"
 
 	slide
 		scorechart "Eastern Conference Semi-Finals, Game 4" nykname indname "89" "121" nyklogo indlogo nykcolor indcolor "nyk-g4.d" "ind-g4.d" "ind-g4-diff.d" indcolor
@@ -86,7 +102,34 @@ deck
 	eslide
 
 	slide
-		scorechart "2024 Olympics Basketball Gold Medal Game"			franame usaname	"87" "98"	fralogo usalogo fracolor usacolor	"usa-gold.d" "fra-gold.d" "fra-gold-diff.d" usacolor
+		scorechart "2024 Olympics Basketball Gold Medal Game" franame usaname	"87" "98"	fralogo usalogo fracolor usacolor	"usa-gold.d" "fra-gold.d" "fra-gold-diff.d" usacolor
 	eslide
 
+	slide
+		scorechart "NBA Eastern Conference Semi-Finals, 2025, Game 5"	indname clename "114" "105"		indlogo clelogo indcolor clecolor	"2025-ind-g5.d" "2025-cle-g5.d" "2025-ind-g5-diff.d" indcolor
+	eslide
+
+	slide
+		scorechart "NBA Western Conference Semi-Finals, 2025, Game 5"	denname okcname "105" "112"		denlogo okclogo dencolor okccolor	"2025-den-g5.d" "2025-okc-g5.d" "2025-okc-g5-diff.d" okccolor
+	eslide
+
+	slide
+		scorechart "NBA Western Conference Semi-Finals, 2025, Game 5"	gswname minname "110" "121"		gswlogo minlogo gswcolor mincolor	"2025-gsw-g5.d" "2025-min-g5.d" "2025-min-g5-diff.d" mincolor
+	eslide
+
+	slide
+		scorechart "NBA Eastern Conference Semi-Finals, 2025, Game 5"	nykname bosname "102" "127"		nyklogo boslogo nykcolor boscolor	"2025-nyk-g5.d" "2025-bos-g5.d" "2025-bos-g5-diff.d" boscolor
+	eslide
+
+	slide
+		scorechart "NBA Eastern Conference Semi-Finals, 2025, Game 6"	bosname nykname "81" "119"		boslogo nyklogo boscolor nykcolor	"2025-bos-g6.d" "2025-nyk-g6.d" "2025-nyk-g6-diff.d" nykcolor
+	eslide
+
+	slide
+		scorechart "NBA Western Conference Semi-Finals, 2025, Game 7"	denname okcname "93" "125"		denlogo okclogo dencolor okccolor	"2025-den-g7.d" "2025-okc-g7.d" "2025-okc-g7-diff.d" okccolor
+	eslide
+
+	slide
+		scorechart "2025 NBA Final, Game 7"                             indname okcname "91" "103"      indlogo okclogo indcolor okccolor   "2025-ind-final-g7.d" "2025-okc-final-g7.d" "2025-okc-final-g7-diff.d" okccolor
+	eslide
 edeck

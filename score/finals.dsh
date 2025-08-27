@@ -1,0 +1,12 @@
+deck
+	slide "lightsteelblue"
+		r1=70
+		r2=r1-33
+		ims=32
+		image "g1.png" 17 r1 ims 0
+		image "g2.png" 50 r1 ims 0
+		image "g3.png" 83 r1 ims 0
+		image "g4.png" 17 r2 ims 0
+		image "g5.png" 50 r2 ims 0
+	eslide
+edeck

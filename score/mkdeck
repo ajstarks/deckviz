@@ -1,0 +1,2 @@
+#!/bin/bash
+decksh score.dsh | pdfdeck -stdout - > f.pdf
