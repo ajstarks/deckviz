@@ -33,7 +33,7 @@ deck
 	    origin="The Tuskegee Airmen orginated from all over the United States (40 of 48 states and D.C.). They trained at Moton Field in Alabama"
 	    carib="Three airmen orginiated in the Caribbean (Haiti, Virgin Is. and Trinidad)"
 	    bases="Initially based in  Morocco, the groups moved to Sicily and on to Ramitelli, Italy."
-	    action="The group operated in Italy, France, Germany, and Austria, scored 121 aerial victories and performed 79 bomber escort missions with a low 3.9% mission loss rate."
+	    action="The group operated in Italy, France, Germany, Austria, Hungary and Czechoslovakia and scored 121 aerial victories and performed 79 bomber escort missions with a low 3.9% mission loss rate."
 	    
 	    text "Origins" 5 73 1
 	    textblock origin	5 70 8  0.6

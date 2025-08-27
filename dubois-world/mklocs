@@ -1,0 +1,11 @@
+#!/bin/bash
+# make data files for each decade
+awk --csv '$3 ~ /188/ {printf "geo:%s,%s\t%s\n", $1, $2, $4}' dubois-locations.csv >1880loc.d
+awk --csv '$3 ~ /189/ {printf "geo:%s,%s\t%s\n", $1, $2, $4}' dubois-locations.csv >1890loc.d
+awk --csv '$3 ~ /190/ {printf "geo:%s,%s\t%s\n", $1, $2, $4}' dubois-locations.csv >1900loc.d
+awk --csv '$3 ~ /191/ {printf "geo:%s,%s\t%s\n", $1, $2, $4}' dubois-locations.csv >1910loc.d
+awk --csv '$3 ~ /192/ {printf "geo:%s,%s\t%s\n", $1, $2, $4}' dubois-locations.csv >1920loc.d
+awk --csv '$3 ~ /193/ {printf "geo:%s,%s\t%s\n", $1, $2, $4}' dubois-locations.csv >1930loc.d
+awk --csv '$3 ~ /194/ {printf "geo:%s,%s\t%s\n", $1, $2, $4}' dubois-locations.csv >1940loc.d
+awk --csv '$3 ~ /195/ {printf "geo:%s,%s\t%s\n", $1, $2, $4}' dubois-locations.csv >1950loc.d
+awk --csv '$3 ~ /196/ {printf "geo:%s,%s\t%s\n", $1, $2, $4}' dubois-locations.csv >1960loc.d

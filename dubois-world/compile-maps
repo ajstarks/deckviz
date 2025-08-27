@@ -1,0 +1,11 @@
+#!/bin/bash
+latmax=65
+latmin=0
+longmax=180
+longmin=-180
+cv="usa.kml rus.kml gbr.kml fra.kml prt.kml esp.kml fra.kml deu.kml ita.kml jpn.kml sen.kml gha.kml nga.kml chn.kml swe.kml lbr.kml tur.kml grc.kml hun.kml pol.kml ukr.kml rou.kml cze.kml jam.kml cub.kml"
+canvas="-xmin=0 -xmax=100 -ymin=0 -ymax=100"
+ll="-latmax=$latmax -latmin=$latmin -longmin=$longmin -longmax=$longmax"
+opts="-fulldeck=f -style=decksh -shape=polygon"
+world $canvas $ll $opts -color=linen    world.kml > maploc-compiled.dsh
+world $canvas $ll $opts -color=skyblue  $cv >> maploc-compiled.dsh

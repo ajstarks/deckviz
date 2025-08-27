@@ -1,0 +1,89 @@
+geo:42.36,-71.06	Boston
+geo:42.38,-71.11	Cambridge
+geo:38.90,-77.04	Washington
+geo:42.38,-71.11	Cambridge
+geo:42.37,-72.51	Amherst
+geo:42.38,-71.11	Cambridge
+geo:40.71,-74.01	New York
+geo:42.38,-71.11	Cambridge
+geo:40.71,-74.01	New York
+geo:51.92,4.48	Rotterdam
+geo:52.37,4.89	Amsterdam
+geo:52.08,4.31	The Hague
+geo:51.23,6.78	Düsseldorf
+geo:50.94,6.96	Cologne
+geo:50.00,8.28	Mainz
+geo:50.11,8.68	Frankfurt
+geo:50.97,10.32	Eisenach
+geo:50.98,11.33	Weimar
+geo:51.34,12.37	Leipzig
+geo:52.52,13.39	Berlin
+geo:52.52,13.39	Berlin
+geo:50.98,11.33	Weimar
+geo:50.11,8.68	Frankfurt
+geo:49.49,8.47	Mannheim
+geo:49.41,8.69	Heidelberg
+geo:53.82,13.37	Pfalz
+geo:49.35,8.14	Neustadt
+geo:48.78,9.18	Stuttgart
+geo:48.40,9.99	Ulm
+geo:48.14,11.58	Munich
+geo:52.52,13.39	Berlin
+geo:52.40,13.06	Potsdam
+geo:53.87,10.68	Lübeck
+geo:53.55,10.00	Hamburg
+geo:53.08,8.81	Bremen
+geo:51.32,9.49	Kassel
+geo:50.47,7.86	Boden
+geo:52.37,9.74	Hanover
+geo:52.52,13.39	Berlin
+geo:41.89,12.48	Rome
+geo:40.84,14.25	Naples
+geo:45.44,12.33	Venice
+geo:48.21,16.37	Vienna
+geo:47.50,19.04	Budapest
+geo:50.06,19.94	Krakow
+geo:51.05,13.74	Dresden
+geo:52.52,13.39	Berlin
+geo:51.90,11.05	Halberstadt
+geo:52.52,13.39	Berlin
+geo:48.86,2.32	Paris
+geo:40.71,-74.01	New York
+geo:42.21,-73.34	Great Barrington
+geo:39.71,-83.88	Wilberforce
+geo:39.71,-83.88	Wilberforce
+geo:39.71,-83.88	Wilberforce
+geo:39.95,-75.16	Philadelphia
+geo:38.90,-77.04	Washington
+geo:39.95,-75.16	Philadelphia
+geo:39.95,-75.16	Philadelphia
+geo:37.30,-78.39	Farmville
+geo:36.84,-76.29	Norfolk
+geo:37.30,-78.39	Farmville
+geo:39.95,-75.16	Philadelphia
+geo:42.21,-73.34	Great Barrington
+geo:39.95,-75.16	Philadelphia
+geo:39.95,-75.16	Philadelphia
+geo:33.75,-84.39	Atlanta
+geo:39.71,-83.88	Wilberforce
+geo:36.16,-86.77	Nashville
+geo:33.75,-84.39	Atlanta
+geo:42.36,-71.06	Boston
+geo:33.75,-84.39	Atlanta
+geo:33.75,-84.39	Atlanta
+geo:37.03,-76.35	Hampton
+geo:33.75,-84.39	Atlanta
+geo:42.21,-73.34	Great Barrington
+geo:33.75,-84.39	Atlanta
+geo:41.88,-87.62	Chicago
+geo:33.75,-84.39	Atlanta
+geo:38.90,-77.04	Washington
+geo:32.42,-85.69	Tuskegee
+geo:33.75,-84.39	Atlanta
+geo:38.90,-77.04	Washington
+geo:33.75,-84.39	Atlanta
+geo:32.06,-81.10	Savannah
+geo:33.75,-84.39	Atlanta
+geo:40.71,-74.01	New York
+geo:48.86,2.32	Paris
+geo:33.75,-84.39	Atlanta

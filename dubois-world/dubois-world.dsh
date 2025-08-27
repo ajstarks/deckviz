@@ -1,0 +1,91 @@
+deck
+	latmax=65
+	latmin=0
+	lonmax=180
+	lonmin=0-180
+
+	bgcolor="steelblue"
+	txcolor="white"
+
+	eacolor="linen"
+	visitcolor="skyblue"
+	markcolor="red"
+
+	basemarksize=1
+	markop=50
+
+	import "dbloc.dsh"
+
+	slide bgcolor txcolor
+		text "The Travels of W.E.B. Du Bois (1882-1961)" 2.5 20 1
+		text "Place visited" 3 15 0.5
+		circle 2.5 16 0.75 "white"
+		circle 2.5 16 0.5 markcolor markop
+
+		hei="+49.410	8.690	Heidelberg"
+		nyc="geo:40.710,-74.010	New York"
+		par="geo:48.860,2.320	Paris"
+		ber="geo:52.520,13.390	Berlin"
+		atl="geo:33.750,-84.390	Atlanta"
+		gba="geo:42.210,-73.340	Great Barrington"
+		acc="geo:5.560,-0.200	Accra"
+
+		geoloc gba latmin latmax lonmin lonmax "e" 0.5 "sans" "black"
+		geoloc par latmin latmax lonmin lonmax "b" 0.5 "sans" "black"
+		geoloc atl latmin latmax lonmin lonmax "e" 0.5 "sans" "black"
+		geoloc ber latmin latmax lonmin lonmax "b" 0.5 "sans" "black"
+		geoloc acc latmin latmax lonmin lonmax "e" 0.5 "sans" "black"
+		geoloc nyc latmin latmax lonmin lonmax "c" 0.5 "sans" "black"
+
+		include "maploc-compiled.dsh"
+		
+		marksize = basemarksize
+		geomark	"geoloc.d"	latmin latmax lonmin lonmax marksize eacolor
+		marksize *= 0.7
+		geomark	"geoloc.d"	latmin latmax lonmin lonmax marksize markcolor markop
+		marksize *= 0.4
+
+		geomark gba    latmin latmax lonmin lonmax  marksize "white"
+		geomark par    latmin latmax lonmin lonmax  marksize "white"
+		geomark atl    latmin latmax lonmin lonmax  marksize "white"
+		geomark ber    latmin latmax lonmin lonmax  marksize "white"
+		geomark acc    latmin latmax lonmin lonmax  marksize "white"
+		geomark nyc    latmin latmax lonmin lonmax  marksize "white"
+	eslide
+
+	slide bgcolor txcolor
+		dbloc 1880
+	eslide
+
+	slide bgcolor txcolor
+		dbloc 1890
+	eslide
+
+	slide bgcolor txcolor
+		dbloc 1900
+	eslide
+
+	slide bgcolor txcolor
+		dbloc 1910
+	eslide
+
+	slide bgcolor txcolor
+		dbloc 1920
+	eslide
+
+	slide bgcolor txcolor
+		dbloc 1930
+	eslide
+
+	slide bgcolor txcolor
+		dbloc 1940
+	eslide
+
+	slide bgcolor txcolor
+		dbloc 1950
+	eslide
+
+	slide bgcolor txcolor
+		dbloc 1960
+	eslide
+edeck

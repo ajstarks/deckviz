@@ -1,0 +1,14 @@
+def dbloc Decade
+	title=format "The Travels of W.E.B. Du Bois (%4.0fs)" Decade
+	datafile=format "%4.0floc.d" Decade
+	text title 2.5 20 1
+	text "Place visited" 3 15 0.5
+	circle 2.5 16 0.75 "white"
+	circle 2.5 16 0.5 markcolor markop
+
+	include "maploc-compiled.dsh"
+	marksize = basemarksize
+	geomark	datafile latmin latmax lonmin lonmax marksize eacolor
+	marksize *= 0.7
+	geomark	datafile latmin latmax lonmin lonmax marksize markcolor markop
+edef

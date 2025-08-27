@@ -1,0 +1,83 @@
+deck
+//	slide
+//		USlatMax=49.5
+//		USlatMin=24
+//		USlonMax=0-66
+//		USlonMin=0-130
+//		georegion "usa.kml"    USlatMin USlatMax USlonMin USlonMax "lightsteelblue"
+//		geoloc    "dubois-locations.d" USlatMin USlatMax USlonMin USlonMax "e" 1
+//	eslide
+
+
+	slide "skyblue"
+		south=2
+		north=65
+		west=0-85
+		east=20
+		nyc="40.71000	-74.01000	New York"
+		acc="5.56000	-0.20000	Accra"
+		atl="33.75000	-84.39000	Atlanta"
+
+		mar="47.07000	3.00000	Marseilles"
+		bud="47.50000	19.04000	Budapest"
+		na1="47.94000	17.59000	NA"
+		mun="48.14000	11.58000	Munich"
+		vie="48.21000	16.37000	Vienna"
+		ulm="48.40000	9.99000	Ulm"
+		stu="48.78000	9.18000	Stuttgart"
+		bav="48.83000	6.91000	Bavaria"
+		par="48.86000	2.32000	Paris"
+		neu="49.35000	8.14000	Neustadt"
+		hei="49.41000	8.69000	Heidelberg"
+		man="49.49000	8.47000	Mannheim"
+		mai="50.00000	8.28000	Mainz"
+		pra="50.06000	14.19000	Prague"
+		kra="50.06000	19.94000	Krakow"
+		fra="50.11000	8.68000	Frankfurt"
+		lon="50.32000	-4.80000	London"
+		kie="50.45000	30.52000	Kiev"
+		bod="50.47000	7.86000	Boden"
+		bru="50.85000	4.35000	Brussels"
+		sou="50.91000	-1.54000	Southampton"
+		col="50.94000	6.96000	Cologne"
+		eis="50.97000	10.32000	Eisenach"
+		wei="50.98000	11.33000	Weimar"
+		dre="51.05000	13.74000	Dresden"
+		dus="51.23000	6.78000	Düsseldorf"
+		kas="51.32000	9.49000	Kassel"
+		lei="51.34000	12.37000	Leipzig"
+		hal="51.90000	11.05000	Halberstadt"
+		rot="51.92000	4.48000	Rotterdam"
+		hag="52.08000	4.31000	The Hague"
+		ams="52.37000	4.89000	Amsterdam"
+		han="52.37000	9.74000	Hanover"
+		pot="52.40000	13.06000	Potsdam"
+		ber="52.52000	13.39000	Berlin"
+		na2="53.03000	18.69000	NA"
+		bre="53.08000	8.81000	Bremen"
+		ls=0.5
+		ps=ls/2
+		georegion	"world.kml" south north west east "linen"
+		geomark		"dubois-locations.d" south north west east  ls "red" 40
+		geopath nyc acc south north west east ps "blue" 40
+		geoarc atl par south north west east ps "blue" 40
+		geoarc atl hei south north west east ps "blue" 40
+
+		geoarc nyc bre south north west east ps "blue" 40
+		geoarc nyc na2 south north west east ps "blue" 40
+		geoarc nyc pot south north west east ps "blue" 40
+		geoarc nyc han south north west east ps "blue" 40
+		geoarc nyc ams south north west east ps "blue" 40
+		geoarc nyc hag south north west east ps "blue" 40
+		geoarc nyc rot south north west east ps "blue" 40
+		geoarc nyc hal south north west east ps "blue" 40
+		geoarc nyc lei south north west east ps "blue" 40
+		geoarc nyc kas south north west east ps "blue" 40
+		geoarc nyc dus south north west east ps "blue" 40
+		geoarc nyc dre south north west east ps "blue" 40
+		geoarc nyc wei south north west east ps "blue" 40
+		
+
+	eslide
+
+edeck

@@ -62,6 +62,7 @@
 * stolen -- The Stolen Series
 * swd -- Examples from "Storytelling with Data"
 * t3 -- Dieter Rams T3 Radio (1958)
+* tamgeo -- Overview of the Tuskegee Airmen with maps
 * tailscale -- TailScale style diagrams
 * thomas -- Iris, Tulips, Jonquils, and Crocuses, 1969, Alma Thomas
 * toni -- Toni Morrison quote from Charlie Rose Interview, 1993
