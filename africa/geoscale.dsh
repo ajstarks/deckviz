@@ -1,0 +1,7 @@
+def geoscale Kml Xp Yp Width Height Color
+	geoXmin=Xp
+	geoXmax=geoXmin+Width
+	geoYmin=Yp
+	geoYmax=geoYmin+Height
+	georegion Kml Color
+edef

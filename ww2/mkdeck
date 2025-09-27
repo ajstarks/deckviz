@@ -1,0 +1,3 @@
+#!/bin/bash
+decksh ww2.dsh | pdf -sans Inconsolata-Medium -layers=poly:line:curve:ellipse:text:rect:list -pagesize 1000x800
+decksh torch.dsh | pdf -pagesize 1500x500 -layers=poly:rect:text:ellipse:image

@@ -65,70 +65,70 @@
 		ha="geo:19.00000,-72.4166670	Haiti"
 		vi="geo:18.200000,-64.8000000	Virgin Islands"
 
-		georegion	"africa.kml"			latmin latmax longmin longmax eacolor
-		georegion	"na.kml"				latmin latmax longmin longmax eacolor
-		georegion	"europe.kml"			latmin latmax longmin longmax eacolor
-		georegion	"asia.kml"				latmin latmax longmin longmax eacolor
-		georegion	"south-america.kml"		latmin latmax longmin longmax eacolor
-		georegion	"central-america.kml"	latmin latmax longmin longmax eacolor
-		georegion	"caribbean.kml"			latmin latmax longmin longmax eacolor
-		geolabel	ram 					latmin latmax longmin longmax 1.2
+		georegion	"africa.kml"			eacolor
+		georegion	"na.kml"				eacolor
+		georegion	"europe.kml"			eacolor
+		georegion	"asia.kml"				eacolor
+		georegion	"south-america.kml"		eacolor
+		georegion	"central-america.kml"	eacolor
+		georegion	"caribbean.kml"			eacolor
+		geolabel	ram 					1.2
 		
-		geolabel	mor						latmin latmax longmin longmax 1
-		geoloc      mot						latmin latmax longmin longmax "b" 0.75
-		geolabel	tun						latmin latmax longmin longmax 1
-		geolabel	sly						latmin latmax longmin longmax 1
-		geomark		"origins.d"				latmin latmax longmin longmax 0.5 "blue" markop
-		geomark		"battle-locations"		latmin latmax longmin longmax 0.5 "red"  markop
-		geopath		mor tun					latmin latmax longmin longmax 0.4 "red" 20
-		geopath		tun sly					latmin latmax longmin longmax 0.4 "red" 20
-		geopath		sly ram					latmin latmax longmin longmax 0.4 "red" 20
+		geolabel	mor						1
+		geoloc      mot						"b" 0.75
+		geolabel	tun						1
+		geolabel	sly						1
+		geomark		"origins.d"				0.5 "blue" markop
+		geomark		"battle-locations"		0.5 "red"  markop
+		geopath		mor tun					0.4 "red" 20
+		geopath		tun sly					0.4 "red" 20
+		geopath		sly ram					0.4 "red" 20
 		
  		dest=mor
-		geopath az dest latmin latmax longmin longmax pathsize pathcolor pathop
-		geopath ar dest latmin latmax longmin longmax pathsize pathcolor pathop
-		geopath ca dest latmin latmax longmin longmax pathsize pathcolor pathop
-		geopath co dest latmin latmax longmin longmax pathsize pathcolor pathop
-		geopath ct dest latmin latmax longmin longmax pathsize pathcolor pathop
-		geopath de dest latmin latmax longmin longmax pathsize pathcolor pathop
-		geopath dc dest latmin latmax longmin longmax pathsize pathcolor pathop
-		geopath fl dest latmin latmax longmin longmax pathsize pathcolor pathop
-		geopath ga dest latmin latmax longmin longmax pathsize pathcolor pathop
-		geopath il dest latmin latmax longmin longmax pathsize pathcolor pathop
-		geopath in dest latmin latmax longmin longmax pathsize pathcolor pathop
-		geopath ia dest latmin latmax longmin longmax pathsize pathcolor pathop
-		geopath ks dest latmin latmax longmin longmax pathsize pathcolor pathop
-		geopath ky dest latmin latmax longmin longmax pathsize pathcolor pathop
-		geopath la dest latmin latmax longmin longmax pathsize pathcolor pathop
-		geopath md dest latmin latmax longmin longmax pathsize pathcolor pathop
-		geopath ma dest latmin latmax longmin longmax pathsize pathcolor pathop
-		geopath mi dest latmin latmax longmin longmax pathsize pathcolor pathop
-		geopath mn dest latmin latmax longmin longmax pathsize pathcolor pathop
-		geopath ms dest latmin latmax longmin longmax pathsize pathcolor pathop
-		geopath mo dest latmin latmax longmin longmax pathsize pathcolor pathop
-		geopath mt dest latmin latmax longmin longmax pathsize pathcolor pathop
-		geopath ne dest latmin latmax longmin longmax pathsize pathcolor pathop
-		geopath nh dest latmin latmax longmin longmax pathsize pathcolor pathop
-		geopath nj dest latmin latmax longmin longmax pathsize pathcolor pathop
-		geopath ny dest latmin latmax longmin longmax pathsize pathcolor pathop
-		geopath nc dest latmin latmax longmin longmax pathsize pathcolor pathop
-		geopath sc dest latmin latmax longmin longmax pathsize pathcolor pathop
-		geopath oh dest latmin latmax longmin longmax pathsize pathcolor pathop
-		geopath ok dest latmin latmax longmin longmax pathsize pathcolor pathop
-		geopath or dest latmin latmax longmin longmax pathsize pathcolor pathop
-		geopath pa dest latmin latmax longmin longmax pathsize pathcolor pathop
-		geopath sc dest latmin latmax longmin longmax pathsize pathcolor pathop
-		geopath tn dest latmin latmax longmin longmax pathsize pathcolor pathop
-		geopath tx dest latmin latmax longmin longmax pathsize pathcolor pathop
-		geopath vt dest latmin latmax longmin longmax pathsize pathcolor pathop
-		geopath va dest latmin latmax longmin longmax pathsize pathcolor pathop
-		geopath wa dest latmin latmax longmin longmax pathsize pathcolor pathop
-		geopath wv dest latmin latmax longmin longmax pathsize pathcolor pathop
-		geopath wi dest latmin latmax longmin longmax pathsize pathcolor pathop
-		geopath wy dest latmin latmax longmin longmax pathsize pathcolor pathop
-		geopath tr dest latmin latmax longmin longmax pathsize pathcolor pathop
-		geopath ha dest latmin latmax longmin longmax pathsize pathcolor pathop
-		geopath vi dest latmin latmax longmin longmax pathsize pathcolor pathop
+		geopath az dest pathsize pathcolor pathop
+		geopath ar dest pathsize pathcolor pathop
+		geopath ca dest pathsize pathcolor pathop
+		geopath co dest pathsize pathcolor pathop
+		geopath ct dest pathsize pathcolor pathop
+		geopath de dest pathsize pathcolor pathop
+		geopath dc dest pathsize pathcolor pathop
+		geopath fl dest pathsize pathcolor pathop
+		geopath ga dest pathsize pathcolor pathop
+		geopath il dest pathsize pathcolor pathop
+		geopath in dest pathsize pathcolor pathop
+		geopath ia dest pathsize pathcolor pathop
+		geopath ks dest pathsize pathcolor pathop
+		geopath ky dest pathsize pathcolor pathop
+		geopath la dest pathsize pathcolor pathop
+		geopath md dest pathsize pathcolor pathop
+		geopath ma dest pathsize pathcolor pathop
+		geopath mi dest pathsize pathcolor pathop
+		geopath mn dest pathsize pathcolor pathop
+		geopath ms dest pathsize pathcolor pathop
+		geopath mo dest pathsize pathcolor pathop
+		geopath mt dest pathsize pathcolor pathop
+		geopath ne dest pathsize pathcolor pathop
+		geopath nh dest pathsize pathcolor pathop
+		geopath nj dest pathsize pathcolor pathop
+		geopath ny dest pathsize pathcolor pathop
+		geopath nc dest pathsize pathcolor pathop
+		geopath sc dest pathsize pathcolor pathop
+		geopath oh dest pathsize pathcolor pathop
+		geopath ok dest pathsize pathcolor pathop
+		geopath or dest pathsize pathcolor pathop
+		geopath pa dest pathsize pathcolor pathop
+		geopath sc dest pathsize pathcolor pathop
+		geopath tn dest pathsize pathcolor pathop
+		geopath tx dest pathsize pathcolor pathop
+		geopath vt dest pathsize pathcolor pathop
+		geopath va dest pathsize pathcolor pathop
+		geopath wa dest pathsize pathcolor pathop
+		geopath wv dest pathsize pathcolor pathop
+		geopath wi dest pathsize pathcolor pathop
+		geopath wy dest pathsize pathcolor pathop
+		geopath tr dest pathsize pathcolor pathop
+		geopath ha dest pathsize pathcolor pathop
+		geopath vi dest pathsize pathcolor pathop
 
 		// Battle locations
 		cas="geo:37.683333,12.793056	Castelvetrano"
@@ -157,28 +157,28 @@
 		src=ram
 		pathcolor="red"
 
-		geolabel ber latmin latmax longmin longmax 0.6
-		geolabel tap latmin latmax longmin longmax 0.6 // Lee Archer's three in one day
-		geolabel tou latmin latmax longmin longmax 0.6
+		geolabel ber 0.6
+		geolabel tap 0.6 // Lee Archer's three in one day
+		geolabel tou 0.6
 		showlines=0
 
 		if showlines == 1
-			geopath src cas latmin latmax longmin longmax pathsize pathcolor pathop
-			geopath src sly latmin latmax longmin longmax pathsize pathcolor pathop
-			geopath src anz latmin latmax longmin longmax pathsize pathcolor pathop
-			geopath src mun latmin latmax longmin longmax pathsize pathcolor pathop
-			geopath src udi latmin latmax longmin longmax pathsize pathcolor pathop
-			geopath src nim latmin latmax longmin longmax pathsize pathcolor pathop
-			geopath src vie latmin latmax longmin longmax pathsize pathcolor pathop
-			geopath src avi latmin latmax longmin longmax pathsize pathcolor pathop
-			geopath src mem latmin latmax longmin longmax pathsize pathcolor pathop
-			geopath src tre latmin latmax longmin longmax pathsize pathcolor pathop
-			geopath src fri latmin latmax longmin longmax pathsize pathcolor pathop
-			geopath src liz latmin latmax longmin longmax pathsize pathcolor pathop
-			geopath src maa latmin latmax longmin longmax pathsize pathcolor pathop
-			geopath src bud latmin latmax longmin longmax pathsize pathcolor pathop
-			geopath src ber latmin latmax longmin longmax pathsize pathcolor pathop
-			geopath src mrk latmin latmax longmin longmax pathsize pathcolor pathop
-			geopath src par latmin latmax longmin longmax pathsize pathcolor pathop
-			geopath src tap latmin latmax longmin longmax pathsize pathcolor pathop
+			geopath src cas pathsize pathcolor pathop
+			geopath src sly pathsize pathcolor pathop
+			geopath src anz pathsize pathcolor pathop
+			geopath src mun pathsize pathcolor pathop
+			geopath src udi pathsize pathcolor pathop
+			geopath src nim pathsize pathcolor pathop
+			geopath src vie pathsize pathcolor pathop
+			geopath src avi pathsize pathcolor pathop
+			geopath src mem pathsize pathcolor pathop
+			geopath src tre pathsize pathcolor pathop
+			geopath src fri pathsize pathcolor pathop
+			geopath src liz pathsize pathcolor pathop
+			geopath src maa pathsize pathcolor pathop
+			geopath src bud pathsize pathcolor pathop
+			geopath src ber pathsize pathcolor pathop
+			geopath src mrk pathsize pathcolor pathop
+			geopath src par pathsize pathcolor pathop
+			geopath src tap pathsize pathcolor pathop
 		eif

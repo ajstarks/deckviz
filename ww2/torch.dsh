@@ -1,0 +1,43 @@
+deck
+	geoLatMax=39
+	geoLatMin=28
+	geoLongMax=37
+	geoLongMin=0-11
+	eacolor="#eec4b4" // "#C19A6B"
+	txcolor="black"
+	bgcolor="skyblue" // "#bdddf4" // skyblue
+	bordercolor="gray"
+	natsize=1.5
+	locsize=natsize*0.7
+
+	slide bgcolor txcolor
+		//ruler
+		lp=(8,10)
+		rect lp_x lp_y 15 12 "white"
+		ctext "Operation Torch, Nov. 1942" lp_x lp_y 1
+		georegion "europe.kml"   eacolor
+		georegion "africa.kml"   eacolor
+		georegion "asia.kml"     eacolor
+
+		geoborder "mar.kml"   0.1 bordercolor
+		geoborder "dza.kml"   0.1 bordercolor
+		geoborder "lby.kml"   0.1 bordercolor
+		geoborder "egy.kml"   0.1 bordercolor
+
+		ims=3
+		geoimage  "geo:30.833333,28.950000	explosion.png"  ims 0 // El Alemien
+		geoimage  "geo:35.259600,8.7424000	explosion.png"  ims 0 // Kasserline
+		ims=2
+		geoimage "geo:36.7325,3.087222000	explosion.png"  ims 0
+		geoimage "geo:32.283333,-9.233333	explosion.png"  ims 0
+		geoimage "geo:33.533333,-7.583333	explosion.png"  ims 0
+		geoimage "geo:34.2558333333,-6.6755555556	explosion.png"  ims 0
+		geoimage "geo:35.696944,-0.633056	explosion.png"  ims 0
+
+		
+		geolabel  "torch-nations.d"  natsize "mono" "rgb(100,100,100)"
+		geoloc	  "torch-locations.d"  "b" locsize "serif" "maroon"
+	eslide
+
+	
+edeck

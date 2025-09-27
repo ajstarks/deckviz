@@ -25,6 +25,11 @@ deck
 		geow=geoXmax-geoXmin
 		geoh=geoYmax-geoYmin
 
+		geoLatMin=south
+		geoLatMax=north
+		geoLonMin=west
+		geoLonMax=east
+
 		rect 50 50 geow geoh bgcolor
 
 		rtext		"Latitude"  		48 		geoYmin 90	1.5 "sans" latcolor
@@ -32,52 +37,52 @@ deck
 		rtext		"Prime Meridian"	48		72		90 	1.2 "sans" latcolor
 		ctext		"Equator"			55		48 			1.2 "sans" loncolor
 
-		georegion	"world.kml"						south north west east eacolor
-		geolabel	"lat.d" 						south north west east rs "mono" 
-		geopath		"geo:-90,0"		"geo:90,0"		south north west east plw latcolor 20 // prime meridian
+		georegion	"world.kml"						 eacolor // south north west east eacolor
+		geolabel	"lat.d" 						 rs "mono" 
+		geopath		"geo:-90,0"		"geo:90,0"		 plw latcolor 20 // prime meridian
 		// east
-		geopath		"geo:-90,20"	"geo:90,20"		south north west east lw rulecolor 50
-		geopath		"geo:-90,40"	"geo:90,40"		south north west east lw rulecolor 50
-		geopath		"geo:-90,60"	"geo:90,60"		south north west east lw rulecolor 50
-		geopath		"geo:-90,80"	"geo:90,80"		south north west east lw rulecolor 50
-		geopath		"geo:-90,100"	"geo:90,100"	south north west east lw rulecolor 50
-		geopath		"geo:-90,120"	"geo:90,120"	south north west east lw rulecolor 50
-		geopath		"geo:-90,140"	"geo:90,140"	south north west east lw rulecolor 50
-		geopath		"geo:-90,160"	"geo:90,160"	south north west east lw rulecolor 50
-		geopath		"geo:-90,180"	"geo:90,180"	south north west east lw rulecolor 50
+		geopath		"geo:-90,20"	"geo:90,20"		 lw rulecolor 50
+		geopath		"geo:-90,40"	"geo:90,40"		 lw rulecolor 50
+		geopath		"geo:-90,60"	"geo:90,60"		 lw rulecolor 50
+		geopath		"geo:-90,80"	"geo:90,80"		 lw rulecolor 50
+		geopath		"geo:-90,100"	"geo:90,100"	 lw rulecolor 50
+		geopath		"geo:-90,120"	"geo:90,120"	 lw rulecolor 50
+		geopath		"geo:-90,140"	"geo:90,140"	 lw rulecolor 50
+		geopath		"geo:-90,160"	"geo:90,160"	 lw rulecolor 50
+		geopath		"geo:-90,180"	"geo:90,180"	 lw rulecolor 50
 		// west
-		geopath		"geo:-90,-20"	"geo:90,-20"	south north west east lw rulecolor 50
-		geopath		"geo:-90,-40"	"geo:90,-40"	south north west east lw rulecolor 50
-		geopath		"geo:-90,-60"	"geo:90,-60"	south north west east lw rulecolor 50
-		geopath		"geo:-90,-80"	"geo:90,-80"	south north west east lw rulecolor 50
-		geopath		"geo:-90,-100"	"geo:90,-100"	south north west east lw rulecolor 50
-		geopath		"geo:-90,-120"	"geo:90,-120"	south north west east lw rulecolor 50
-		geopath		"geo:-90,-140"	"geo:90,-140"	south north west east lw rulecolor 50
-		geopath		"geo:-90,-160"	"geo:90,-160"	south north west east lw rulecolor 50
-		geopath		"geo:-90,-180"	"geo:90,-180"	south north west east lw rulecolor 50
+		geopath		"geo:-90,-20"	"geo:90,-20"	 lw rulecolor 50
+		geopath		"geo:-90,-40"	"geo:90,-40"	 lw rulecolor 50
+		geopath		"geo:-90,-60"	"geo:90,-60"	 lw rulecolor 50
+		geopath		"geo:-90,-80"	"geo:90,-80"	 lw rulecolor 50
+		geopath		"geo:-90,-100"	"geo:90,-100"	 lw rulecolor 50
+		geopath		"geo:-90,-120"	"geo:90,-120"	 lw rulecolor 50
+		geopath		"geo:-90,-140"	"geo:90,-140"	 lw rulecolor 50
+		geopath		"geo:-90,-160"	"geo:90,-160"	 lw rulecolor 50
+		geopath		"geo:-90,-180"	"geo:90,-180"	 lw rulecolor 50
 		
-		geolabel	"lon.d" 						south north west east rs"mono"
-		geopath		"geo:0,-180"	"geo:0,180" 	south north west east plw loncolor 20 // equator
+		geolabel	"lon.d" 						 rs"mono"
+		geopath		"geo:0,-180"	"geo:0,180" 	 plw loncolor 20 // equator
 		// north
-		geopath		"geo:10,-180"	"geo:10,180"	south north west east lw rulecolor 50
-		geopath		"geo:20,-180"	"geo:20,180"	south north west east lw rulecolor 50
-		geopath		"geo:30,-180"	"geo:30,180"	south north west east lw rulecolor 50
-		geopath		"geo:40,-180"	"geo:40,180"	south north west east lw rulecolor 50
-		geopath		"geo:50,-180"	"geo:50,180"	south north west east lw rulecolor 50
-		geopath		"geo:60,-180"	"geo:60,180"	south north west east lw rulecolor 50
-		geopath		"geo:70,-180"	"geo:70,180"	south north west east lw rulecolor 50
-		geopath		"geo:80,-180"	"geo:80,180"	south north west east lw rulecolor 50
-		geopath		"geo:90,-180"	"geo:90,180"	south north west east lw rulecolor 50
+		geopath		"geo:10,-180"	"geo:10,180"	 lw rulecolor 50
+		geopath		"geo:20,-180"	"geo:20,180"	 lw rulecolor 50
+		geopath		"geo:30,-180"	"geo:30,180"	 lw rulecolor 50
+		geopath		"geo:40,-180"	"geo:40,180"	 lw rulecolor 50
+		geopath		"geo:50,-180"	"geo:50,180"	 lw rulecolor 50
+		geopath		"geo:60,-180"	"geo:60,180"	 lw rulecolor 50
+		geopath		"geo:70,-180"	"geo:70,180"	 lw rulecolor 50
+		geopath		"geo:80,-180"	"geo:80,180"	 lw rulecolor 50
+		geopath		"geo:90,-180"	"geo:90,180"	 lw rulecolor 50
 		// south
-		geopath		"geo:-10,-180"	"geo:-10,180"	south north west east lw rulecolor 50
-		geopath		"geo:-20,-180"	"geo:-20,180"	south north west east lw rulecolor 50
-		geopath		"geo:-30,-180"	"geo:-30,180"	south north west east lw rulecolor 50
-		geopath		"geo:-40,-180"	"geo:-40,180"	south north west east lw rulecolor 50
-		geopath		"geo:-50,-180"	"geo:-50,180"	south north west east lw rulecolor 50
-		geopath		"geo:-60,-180"	"geo:-60,180"	south north west east lw rulecolor 50
-		geopath		"geo:-70,-180"	"geo:-70,180"	south north west east lw rulecolor 50
-		geopath		"geo:-80,-180"	"geo:-80,180"	south north west east lw rulecolor 50
-		geopath		"geo:-90,-180"	"geo:-90,180"	south north west east lw rulecolor 50
+		geopath		"geo:-10,-180"	"geo:-10,180"	 lw rulecolor 50
+		geopath		"geo:-20,-180"	"geo:-20,180"	 lw rulecolor 50
+		geopath		"geo:-30,-180"	"geo:-30,180"	 lw rulecolor 50
+		geopath		"geo:-40,-180"	"geo:-40,180"	 lw rulecolor 50
+		geopath		"geo:-50,-180"	"geo:-50,180"	 lw rulecolor 50
+		geopath		"geo:-60,-180"	"geo:-60,180"	 lw rulecolor 50
+		geopath		"geo:-70,-180"	"geo:-70,180"	 lw rulecolor 50
+		geopath		"geo:-80,-180"	"geo:-80,180"	 lw rulecolor 50
+		geopath		"geo:-90,-180"	"geo:-90,180"	 lw rulecolor 50
 
 	eslide
 

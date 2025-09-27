@@ -1,0 +1,55 @@
+deck
+	import "geoscale.dsh"
+	slide "skyblue"
+		geoLatMin=0-40
+		geoLatMax=50
+		geoLongMin=0-30
+		geoLongMax=60
+		geoline		"africa.kml"			 0.05 "white"
+		geopoly		"africa.kml"			  "tan"
+		geopoly		"europe.kml"			 "linen"
+		geopoly		"asia.kml"				 "linen"
+		geolabel	"afll.d"				 1.8 "mono" "brown"
+	eslide
+
+	slide "skyblue" "white"
+		//ruler
+		aspect=5/4.6
+
+		// Africa boundaries
+		geoLatMax=37.346983   // geo:37.346983,9.754608	Ras ben Sakka
+		geoLatMin=0-34.833222 // geo:-34.833222,20	Cape Angulhas
+		geoLongMax=51.266667    // geo:10.416667,51.266667	Ras Hafun
+		geoLongMin=0-17.520278  // geo:14.744722,-17.520278	Cape Verde
+
+		rasbensakka="geo:37.346983,9.754608	Ras ben Sakka"
+		capeang="geo:-34.833222,20	Cape Angulhas"
+		rashafun="geo:10.416667,51.266667	Ras Hafun"
+		capeverde="geo:14.744722,-17.520278	Cape Verde"
+		afcenter="geo:0,26.121	Equatorial Central Point"
+		gcenter="geo:3,34"
+
+		xlen=80
+		ylen=xlen*aspect
+		ls=2
+		geoscale  "africa.kml" 10 5 xlen ylen "rgb(50,50,50)"
+		georegion "europe.kml"	 "rgb(230,230,230)"
+		georegion "asia.kml"	 "rgb(230,230,230)"
+		geoloc capeverde			"b" ls
+		geoloc rasbensakka			"u" ls
+		geoloc rashafun				"e" ls
+		geoloc capeang				"e" ls
+		geoloc gcenter				"c" 1.5
+		geopath "geo:0,-180" "geo:0,180"  0.5 "white" 50
+	eslide
+
+	slide
+
+		xlen=5
+		ylen=xlen*aspect
+		for x=10 80 10
+			geoscale "africa.kml" x 50 xlen ylen  "red"
+		efor
+
+	eslide
+edeck

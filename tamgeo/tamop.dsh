@@ -1,0 +1,25 @@
+deck
+	geoLatMax=55
+    geoLatMin=35
+    geoLongMax=20
+    geoLongMin=0-5
+    geoXmin=15
+    geoXmax=85
+    eacolor="silver"
+    txcolor="white"
+    bgcolor="white"
+    ram="geo:41.9439278,15.0483306	Ramitelli"
+	slide bgcolor
+		georegion "europe.kml"  eacolor
+		georegion "ita.kml"     "steelblue"
+		georegion "africa.kml"  eacolor
+		georegion "fra.kml"     "red"
+		georegion "aut.kml"     "red"
+		georegion "deu.kml"     "red"
+		georegion "cze.kml"     "red"
+		georegion "hun.kml"     "red"
+		geomark   "battle-locations"  0.5 "black"
+		geolabel  "battle-locations"  1
+		geolabel  ram   2 "sans"
+	eslide
+edeck

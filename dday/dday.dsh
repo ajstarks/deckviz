@@ -1,0 +1,55 @@
+deck
+	slide "skyblue"
+		geoLatMin=49
+		geoLatMax=50
+		geoLongMin=0-2
+		geoLongMax=0.2
+		nationcolor="linen"
+
+		georegion  "fra.kml"		  nationcolor
+		georegion  "gbr.kml"		  "steelblue"
+		geolabel   "landings.d"		  2
+		geoimage   "ilandings.d"     3 0
+		geoloc  	"orne.d"		 "c" 2
+	eslide
+
+	slide // "#b9e0f3"
+		geoLatMin=47
+		geoLatMax=51.5
+		geoLongMin=0-5
+		geoLongMax=7
+		nationcolor="lightsteelblue"
+
+		latdist=geoLatMax-geoLatMin
+		longdist=geoLongMax-geoLongMin
+
+		distlabel=format "%.3f x %.3f" longdist latdist
+		lor="geo:49.20000,5.900000000	Lorraine"
+		bri="geo:48.00000,-3.00000000	Brittany"
+		nor="geo:48.44000,0.170000000	Normandy"
+		lon="geo:51.2,-0.1277653	gbr.png"
+		boc="geo:49.1813403,-0.3635615	bocage.jpg"
+		ff="geo:50,2.32	free-fra.png"
+		etext distlabel 95 5 2
+		
+		georegion   "fra.kml"	nationcolor
+		geoborder   "gbr.kml"	0.1  "steelblue"
+		geoborder   "bel.kml"	0.1 "red"
+		geoborder   "deu.kml"	0.1 "red"
+		geoborder   "nld.kml"	0.1 "red"
+		geoborder   "lux.kml"	0.1 "red"
+
+		geolabel 	nor 	 2.5
+		geolabel 	bri 	 2.5
+		geolabel 	lor 	 2.5
+
+		geopathfile  "seine.d"		 0.2 "blue" 20
+		geoimage    "iplaces.d"  	 5 0
+		geoimage     ff		 10 0
+		geoimage     lon	 10 0
+		
+
+		ts=1.2
+		geoloc "places.d"  "b" ts
+	eslide
+edeck
