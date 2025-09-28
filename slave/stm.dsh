@@ -1,0 +1,9 @@
+deck
+	slide "lightskyblue"
+		opts="-textsize=1 -xlabel=50 -left=45 -right=65 -bottom=80 -top=95 -vol -color=crimson  -line=f -bar=f -val=f -yaxis -volop=80 -yrange=0,80000,20000"
+		dchart opts arr.d
+		ctext "Gambia to Charleston" 25 90 1.5
+		include "stmap.dsh"
+		include "stroutes.dsh"
+	eslide
+edeck

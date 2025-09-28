@@ -1,0 +1,27 @@
+deck
+	slide "black" "white"
+		text "The Transatlantic Slave Trade" 10 90 4
+		dotsize=0.75
+		slcolor="crimson"
+		opts="-xlabel=20 -bottom=10 -vol -color=crimson -lcolor=rgb(245,245,245) -line=f -bar=f -val=f -yaxis -volop=80 -yrange=0,80000,20000"
+		dchart opts arr.d
+		text     "Peak Year: 1829, 79,472" 80 80 1
+		image    "Blue_Marble_Western_Hemisphere.jpg" 30 60 45 0
+		text     "5,063,299 People Stolen" 45 40 2.5 //"serif"
+		textbox  "mainly from West Africa, destined for Brazil, the Caribbean, and the Southern US" 45 35 15 1.2
+
+		// plot the major transatlantic slave routes west Africa to Brazil, the Carribean, and US
+		waf=(44,40) // west Africa, Gold Coast, Luana
+		bra=(31,30) // Brazil
+		usa=(20,60) // US
+		car=(18,52) // Carribean
+		curve waf_x waf_y  37 30   bra_x bra_y 0.2  slcolor   
+		curve waf_x waf_y  27 45   usa_x usa_y 0.2  slcolor
+		curve waf_x waf_y  27 45   car_x car_y 0.2  slcolor
+
+		circle waf_x waf_y dotsize slcolor
+		circle car_x car_y dotsize slcolor
+		circle bra_x bra_y dotsize slcolor
+		circle usa_x usa_y dotsize slcolor
+	eslide
+edeck

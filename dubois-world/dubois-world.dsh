@@ -1,8 +1,7 @@
 deck
-	latmax=65
-	latmin=0
-	lonmax=180
-	lonmin=0-180
+	geoLatMax=65
+	geoLatMin=0
+	
 
 	bgcolor="steelblue"
 	txcolor="white"
@@ -30,27 +29,27 @@ deck
 		gba="geo:42.210,-73.340	Great Barrington"
 		acc="geo:5.560,-0.200	Accra"
 
-		geoloc gba latmin latmax lonmin lonmax "e" 0.5 "sans" "black"
-		geoloc par latmin latmax lonmin lonmax "b" 0.5 "sans" "black"
-		geoloc atl latmin latmax lonmin lonmax "e" 0.5 "sans" "black"
-		geoloc ber latmin latmax lonmin lonmax "b" 0.5 "sans" "black"
-		geoloc acc latmin latmax lonmin lonmax "e" 0.5 "sans" "black"
-		geoloc nyc latmin latmax lonmin lonmax "c" 0.5 "sans" "black"
+		geoloc gba  "e" 0.5 "sans" "black"
+		geoloc par  "b" 0.5 "sans" "black"
+		geoloc atl  "e" 0.5 "sans" "black"
+		geoloc ber  "b" 0.5 "sans" "black"
+		geoloc acc  "e" 0.5 "sans" "black"
+		geoloc nyc  "c" 0.5 "sans" "black"
 
 		include "maploc-compiled.dsh"
 		
 		marksize = basemarksize
-		geomark	"geoloc.d"	latmin latmax lonmin lonmax marksize eacolor
+		geomark	"geoloc.d"	 marksize eacolor
 		marksize *= 0.7
-		geomark	"geoloc.d"	latmin latmax lonmin lonmax marksize markcolor markop
+		geomark	"geoloc.d"	 marksize markcolor markop
 		marksize *= 0.4
 
-		geomark gba    latmin latmax lonmin lonmax  marksize "white"
-		geomark par    latmin latmax lonmin lonmax  marksize "white"
-		geomark atl    latmin latmax lonmin lonmax  marksize "white"
-		geomark ber    latmin latmax lonmin lonmax  marksize "white"
-		geomark acc    latmin latmax lonmin lonmax  marksize "white"
-		geomark nyc    latmin latmax lonmin lonmax  marksize "white"
+		geomark gba      marksize "white"
+		geomark par      marksize "white"
+		geomark atl      marksize "white"
+		geomark ber      marksize "white"
+		geomark acc      marksize "white"
+		geomark nyc      marksize "white"
 	eslide
 
 	slide bgcolor txcolor

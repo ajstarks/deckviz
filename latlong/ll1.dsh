@@ -1,0 +1,5 @@
+deck
+	slide "blue"
+		include "worldpoly.dsh"
+	eslide
+edeck

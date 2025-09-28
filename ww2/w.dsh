@@ -1,0 +1,117 @@
+deck
+	bgcolor="silver"
+	txcolor="black"
+	slide bgcolor txcolor
+		geoLatMin=30
+		geoLatMax=70
+		geoLongMin=0-12
+		geoLongMax=45
+
+		capcolor="black"
+		contcolor="linen"
+		seacolor="black"
+		bordecolor="gray"
+		locolor="black"
+
+		axiscolor="pink"
+		alliedcolor="steelblue"
+		neucolor="slategray"
+
+		sitesize=1
+		capsize=sitesize*1.2
+		seasize=sitesize*1.5
+
+		latdist=geoLatMax-geoLatMin
+		longdist=geoLongMax-geoLongMin
+		distlabel=format "%.3f x %.3f" longdist latdist
+		etext distlabel 95 5 sitesize
+
+		list 12 92.5 1.2 "sans" txcolor 100 1.3
+			li "Neutral"   
+			li "Axis"     
+			li "Allies"    
+			li "Contested"
+		elist
+
+		square 10 93 1.2 neucolor
+		square 10 91 1.2 axiscolor
+		square 10 89 1.2 alliedcolor
+		square 10 87 1.2 contcolor
+
+		medsea="geo:34.0000,18.0000	Mediterranean\nSea"
+		northsea="geo:54.0000,3.0000	North Sea"
+		atlantic="geo:45.0000,-7.000	Atlantic Ocean"
+		blacksea="geo:42.70000,35.0000	Black Sea"
+		balticsea="geo:55,18.5	Baltic Sea"
+
+		berlin="+52.52000	13.405000	Berlin"
+		paris="+48.8588897	2.32004100	Paris"
+		london="+51.5074456	-0.1277653	London"
+		moscow="+55.755833	37.617778	Moscow"
+		warsaw="+52.230000	21.011111	Warsaw"
+		cassino="+41.490000	13.813889	Casino"
+		rome="+41.893333	12.482778	Rome"
+		anzio="+41.443022	12.624979	Anzio"
+		caen="+49.1813403	-0.3635615	Caen"
+		einh="+51.433333	5.4833330	Eindhoven"
+		mars="geo:43.2964,5.37	Marseille"
+		tou="geo:43.125833,5.930556	Toulon"
+
+		// Seas and Oceans
+		geolabel  medsea	 seasize "sans" seacolor
+		geolabel  northsea	 seasize "sans" seacolor
+		geolabel  atlantic	 seasize "sans" seacolor
+		geolabel  blacksea	 seasize "sans" seacolor
+		geolabel  balticsea	 seasize "sans" seacolor
+
+		// Continents
+		geopoly	  "europe.kml"		 contcolor
+		geopoly   "africa.kml"		 contcolor
+		geopoly   "asia.kml"		 contcolor
+
+		// Neutral
+		geopoly   "esp.kml"	  neucolor
+		geopoly   "prt.kml"	  neucolor
+		geopoly   "che.kml"	  neucolor
+		geopoly   "swe.kml"	  neucolor
+		geopoly   "tur.kml"	  neucolor
+		geopoly   "cyp.kml"	  neucolor
+		geopoly   "irl.kml"	  neucolor
+
+		// Allies
+		geopoly   "gbr.kml"	  alliedcolor
+		geopoly   "fra.kml"	  alliedcolor
+		geopoly   "rus.kml"	  alliedcolor
+		geopoly   "ukr.kml"	  alliedcolor
+		geopoly   "mda.kml"	  alliedcolor
+
+		// Axis
+		geopoly   "deu.kml"	  axiscolor
+		geopoly   "ita.kml"	  axiscolor
+		geopoly   "aut.kml"	  axiscolor
+		geopoly   "hun.kml"	  axiscolor
+		geopoly   "rou.kml"	  axiscolor
+		geopoly   "bgr.kml"	  axiscolor
+		geopoly   "svk.kml"	  axiscolor
+		geopoly   "hrv.kml"	  axiscolor
+		geopoly   "fin.kml"	  axiscolor
+		
+		// Capitals
+		geoloc    berlin	  "e" capsize "sans" capcolor
+		geoloc    london	  "e" capsize "sans" capcolor
+		geoloc    paris		  "c" capsize "sans" capcolor
+		geoloc    moscow	  "e" capsize "sans" capcolor
+		geoloc    rome 		  "e" capsize "sans" capcolor
+		geoloc    warsaw 	  "e" capsize "sans" capcolor
+
+		// Notable sites
+		geoloc    "ww2places.d"	     "e" sitesize "sans" locolor
+		geoloc    caen		 "b" sitesize "sans" locolor
+		geoloc    cassino 	 "b" sitesize "sans" locolor
+		geoloc    anzio 	 "e" sitesize "sans" locolor
+		geoloc    einh	 	 "c" sitesize "sans" locolor
+		geoloc    mars	 	 "c" sitesize "sans" locolor
+		geoloc    tou	 	 "b" sitesize "sans" locolor
+		geoloc    einh	 	 "c" sitesize "sans" locolor
+	eslide
+edeck

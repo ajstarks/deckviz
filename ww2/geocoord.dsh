@@ -1,0 +1,6 @@
+def geocoord Lat Long South North West East
+	xp = vmap Long West  East   0 100
+	yp = vmap Lat  South North  0 100
+	l = format "(%.2f, %.2f)" xp yp
+	text l 50 50 5
+edef

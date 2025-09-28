@@ -8,7 +8,7 @@ def dbloc Decade
 
 	include "maploc-compiled.dsh"
 	marksize = basemarksize
-	geomark	datafile latmin latmax lonmin lonmax marksize eacolor
+	geomark	datafile marksize eacolor
 	marksize *= 0.7
-	geomark	datafile latmin latmax lonmin lonmax marksize markcolor markop
+	geomark	datafile marksize markcolor markop
 edef

@@ -1,0 +1,136 @@
+deck
+	wcolor="white"
+	gcolor="lightsteelblue"
+	bgcolor="white"
+	txcolor="black"
+	geoLatMin=0-60
+	ts=1.2
+	lw=1
+
+	slide bgcolor txcolor
+		include		"worldpoly.dsh" // geoborder  "world.kml"		lw 0.1 "black"
+	eslide
+
+	slide bgcolor txcolor
+		include		"worldborder.dsh" // georegion  "world.kml"		lw gcolor
+	eslide
+
+	slide bgcolor txcolor
+		include		"worldpoly.dsh" // georegion  "world.kml"		lw gcolor
+		geolabel	"continents.d"	2
+	eslide
+
+	slide bgcolor txcolor
+		include		"worldpoly.dsh" // georegion  "world.kml"		lw gcolor
+		geopathfile	"continents.d"	0.5
+	eslide
+
+	slide bgcolor txcolor
+		include		"worldpoly.dsh" // georegion "world.kml"		lw gcolor
+		geomark		"geocoords.d"		ts txcolor
+	eslide
+
+
+	slide bgcolor txcolor
+		include		"worldpoly.dsh" // georegion "world.kml"		lw gcolor
+		geoloc 		"geocoords.d"	"c" ts
+	eslide
+
+
+	slide bgcolor txcolor
+		
+		lw=0.5
+		aop=20
+		acolor="red"
+
+		rom="geo:+41.8967,12.48220	Rome (41.90°, 12.48°)"
+		ant="geo:-18.91368,47.53613	Antananarivo (-18.91°,47.54°)"
+		syd="geo:-33.8559,151.2067	Sydney (-33.86°,151.21°)"
+		nyc="geo:+40.7167,-74.4000	New York (40.72°, -74.40)"
+		rey="geo:+64.145833,-21.9425	Reykjavík (64.15°, -21.94°)"
+		rio="geo:-22.90278,-43.2075	Rio De Janerio (-22.90°, -43.20°)"
+		mos="geo:+55.755833,37.617778	Moscow (55.76°, 37.62°)"
+		mum="geo:19.076111,72.8775	Mumbai (19.08°, 72.88°)"
+		lag="geo:+6.455027,3.384082	Lagos (6.46°, 3.38°)"
+		pap="geo:-6.00000,147.000000	Papua (-6.00°, 147.00°)"
+		tok="geo:+35.689722,139.692222	Tokyo (35.69°,139.69°)"
+		lim="geo:-12.0600,-77.0375	Lima (-12.06°, -77.04°)"
+		san="geo:-33.4375,-70.65000	Santiago (-33.44°, -70.65°)"
+		los="geo:+34.05000,-118.25000	Los Angeles (34.05°, -118.25°)"
+		lon="geo:51.507222,-0.1275	London (51.51°, -0.13°)"
+		dc="geo:38.904722,-77.016389	Washington D.C."
+		hon="geo:21.3,-157.85	Honolulu (21.30°, -157.86°)"
+
+		include	"worldpoly.dsh" // geopoly	"world.kml"	lw gcolor
+
+		origin=lag
+
+		geoarc		origin syd	lw acolor aop
+		geoarc		origin rey	lw acolor aop
+		geoarc		origin ant	lw acolor aop
+		geoarc		origin rio	lw acolor aop
+		geoarc		origin mos	lw acolor aop
+		geoarc		origin pap	lw acolor aop
+		geoarc		origin lim	lw acolor aop
+		geoarc		origin san	lw acolor aop
+		geoarc		origin tok	lw acolor aop
+		geoarc		origin mum	lw acolor aop
+		geoarc		origin nyc	lw acolor aop
+		geoarc		origin los	lw acolor aop
+		geoarc		origin rom	lw acolor aop
+		geoarc		origin lon	lw acolor aop
+		geoloc   	rom	"c" ts
+		geoloc   	ant	"c" ts
+		geoloc   	syd	"c" ts
+		geoloc  	tok	"c" ts
+		geoloc  	nyc	"c" ts
+		geoloc  	rio	"c" ts
+		geoloc  	mos	"c" ts
+		geoloc  	lag	"c" ts
+		geoloc  	mum	"c" ts
+		geoloc  	san	"c" ts
+		geoloc  	rey	"c" ts
+		geoloc  	lim	"c" ts
+		geoloc  	pap	"c" ts
+		geoloc  	los	"c" ts
+		geoloc  	lon	"c" ts
+	eslide
+
+	slide bgcolor txcolor
+
+		include	"worldpoly.dsh" // geopoly "world.kml"	lw gcolor
+
+		origin=lag
+
+		geopath		origin syd	lw acolor aop
+		geopath		origin rey	lw acolor aop
+		geopath		origin ant	lw acolor aop
+		geopath		origin rio	lw acolor aop
+		geopath		origin mos	lw acolor aop
+		geopath		origin pap	lw acolor aop
+		geopath		origin lim	lw acolor aop
+		geopath		origin san	lw acolor aop
+		geopath		origin tok	lw acolor aop
+		geopath		origin mum	lw acolor aop
+		geopath		origin nyc	lw acolor aop
+		geopath		origin los	lw acolor aop
+		geopath		origin rom	lw acolor aop
+		geopath		origin lon	lw acolor aop
+		geoloc   	rom	"c" ts
+		geoloc   	ant	"c" ts
+		geoloc   	syd	"c" ts
+		geoloc  	tok	"c" ts
+		geoloc  	nyc	"c" ts
+		geoloc  	rio	"c" ts
+		geoloc  	mos	"c" ts
+		geoloc  	lag	"c" ts
+		geoloc  	mum	"c" ts
+		geoloc  	san	"c" ts
+		geoloc  	rey	"c" ts
+		geoloc  	lim	"c" ts
+		geoloc  	pap	"c" ts
+		geoloc  	los	"c" ts
+		geoloc  	lon	"c" ts
+	eslide
+
+edeck

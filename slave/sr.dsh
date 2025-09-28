@@ -1,0 +1,68 @@
+deck
+	bgcolor="lightblue"
+	txcolor="white"
+	lcolor="brown"
+	ncolor="rgb(200,200,200)"
+	ocolor="green"
+	scolor="red"
+	rcolor="black"
+	slide bgcolor txcolor
+		geoLatMin=0-35
+		geoLatMax=60
+		geoLongMin=0-106
+		geoLongMax=32
+		legx=5
+		legy=10
+		legs=1.5
+
+		ctext "Transatlantic Slave Trade" 50 90 3 "sans" rcolor
+
+		legend "Slave Trading Nations" legx legy legs "sans" scolor
+		legy-=3
+		legend "Slave Holding Regions" legx legy legs "sans" rcolor
+		legy-=3
+		legend "Slave Origin Nations"  legx legy legs "sans" ocolor
+
+
+		geoloc   "locs.d"			 "b" 0.75 "sans" "white"
+		geolabel "countries.d"		 1
+
+		geopoly "africa.kml"		 ncolor
+		geopoly "europe.kml"		 ncolor
+		geopoly "americas.kml"		 ncolor
+
+		// Slave holding nations
+		geopoly "caribbean.kml"		 rcolor
+		geopoly "usa.kml"			 rcolor
+		geopoly "mex.kml"			 rcolor
+		geopoly "brazil.kml"		 rcolor
+		geopoly "suriname.kml"		 rcolor
+		geopoly "guyana.kml"		 rcolor
+		geopoly "guiana.kml"		 rcolor
+
+		// Slave origin nations
+		geopoly "ghana.kml"			 ocolor
+		geopoly "nigeria.kml"		 ocolor
+		geopoly "sierra-leone.kml"	 ocolor
+		geopoly "congo.kml"			 ocolor
+		geopoly "cameroon.kml"		 ocolor
+		geopoly "benin.kml"			 ocolor
+		geopoly "cog.kml"			 ocolor
+		geopoly "gabon.kml"			 ocolor
+		geopoly "sen.kml"			 ocolor
+		geopoly "gmb.kml"			 ocolor
+		geopoly "civ.kml"			 ocolor
+		geopoly "gin.kml"			 ocolor
+		geopoly "togo.kml"			 ocolor
+		geopoly "lbr.kml"			 ocolor
+
+		// Slave trading nations
+		geopoly "portugal.kml"		 scolor
+		geopoly "gbr.kml"			 scolor
+		geopoly "france.kml"		 scolor
+		geopoly "spain.kml"			 scolor
+		geopoly "denmark.kml"		 scolor
+		geopoly "netherlands.kml"	 scolor
+		
+	eslide
+edeck
