@@ -1,0 +1,2 @@
+#!/bin/bash
+decksh afmigration.dsh|pdfdeck -layers image:poly:text:line -stdout -serif Charter-Italic -pagesize 1000x1000 - > afmigration.pdf

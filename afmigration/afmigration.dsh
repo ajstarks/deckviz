@@ -1,0 +1,55 @@
+deck
+	canvas 1000 1000
+
+	geoLatMin=0
+	geoLatMax=45
+	geoLongMin=0-17
+	geoLongMax=25
+
+	geoXmin=10
+	geoXmax=90
+	geoYmin=5
+	geoYmax=95
+
+	ts=1.3
+	mcolor="sienna"
+	ccolor="#eeeeee"
+	mop=70
+	lw=0.05
+
+	slide "lightskyblue"
+		textbox "African Migration to Europe" 20 50 20 3
+
+		gha="geo:8.03,-1.08		Ghana"
+		ner="geo:16.00,8.00		Niger"
+		bfa="geo:12.33,-1.50	Burkina-Faso"
+		lby="geo:27.00,17.00	Libya"
+		ita="geo:43.00,12.00	Italy"
+		tun="geo:34.50,9.50		Tunisia"
+		med="geo:34.70,17.50	unhcrrra.jpg"
+
+		geoimage med 25 0
+		georegion "africa.kml" ccolor
+		georegion "europe.kml" ccolor
+		
+		georegion "gha.kml" mcolor mop
+		georegion "bfa.kml" mcolor mop
+		georegion "ner.kml" mcolor mop
+		georegion "lby.kml" mcolor mop
+		georegion "tun.kml" mcolor mop
+		georegion "ita.kml" mcolor mop
+
+		geoborder "gha.kml" lw "white" mop
+		geoborder "bfa.kml" lw "white" mop
+		geoborder "ner.kml" lw "white" mop
+		geoborder "lby.kml" lw "white" mop
+		geoborder "tun.kml" lw "white" mop
+		
+	    geolabel gha ts "serif" "white"
+	    geolabel ner ts "serif" "white"
+	    geolabel bfa ts "serif" "white"
+	    geolabel lby ts "serif" "white"
+	    geolabel tun ts "serif" "white"
+	    geolabel ita ts "serif" "white"
+    eslide
+edeck
