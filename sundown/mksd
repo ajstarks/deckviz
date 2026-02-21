@@ -1,0 +1,4 @@
+#!/bin/sh
+csvread -headskip 2  < sundown.csv | sort | uniq -c | sort -nr | awk 'BEGIN {print "# Sundown Town Incidents by US State"} length($2) > 0 {print $2 "\t" $1}' > sdi.d
+dchart -hbar -textsize=1.2 -top 92 -ls 1.5 -pct     sdi.d | pdfdeck -stdout - > sd-hbar.pdf; open sd-hbar.pdf
+dchart -bar  -textsize=1.2 -yrange=0,360,60 -barwidth=2 -yaxis -grid -val=f           sdi.d | pdfdeck -stdout - > sd-bar.pdf ; open sd-bar.pdf

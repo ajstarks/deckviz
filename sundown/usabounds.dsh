@@ -1,0 +1,10 @@
+		geoLatMin=24.45
+		geoLatMax=49
+		geoLongMin=0-124.75
+		geoLongMax=0-66.95
+		uswidth=80
+		usheight=40
+		geoXmin=10
+		geoXmax=geoXmin+uswidth
+		geoYmin=35
+		geoYmax=geoYmin+usheight

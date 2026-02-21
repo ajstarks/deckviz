@@ -1,0 +1,63 @@
+deck
+	bgcolor="black"
+	fgcolor="white"
+	slide bgcolor fgcolor
+		//ruler 5 "white"
+		title="Sundown Town Sightings by State"
+		subtitle="“Nigger, don't be caught here after the sun goes down”"
+		footer="Source: Loewen, J. (2005) Sundown towns: A hidden dimension of American racism. The New Press."
+		catext="This is from California"
+		altext="“I was born in Mobile in 1931...The sign read: Nigger, don't be caught here after the sun goes down”"
+		intext="One Indiana resident remembers that Tipton, Elwood and Alexandria, all on State Road 28, each had the Sundown signs at the city limits"
+		mobile="geo:30.6675,-88.101111	Mobile"
+		elwood="geo:40.2770,-85.8419	Elwood"
+		tx=50
+		ty=92
+		sy=ty-4
+		ts=5
+		ss=ts*0.6
+		
+		ctext  title    tx ty ts
+		ctext  subtitle tx sy ss "serif" "crimson"
+		include "usabounds.dsh"
+		geoloc elwood "c" 1 "sans" bgcolor
+		geoloc mobile "c" 1 "sans" bgcolor
+
+		keyc1=15
+		keyc2=keyc1+5
+		keyc3=keyc1+40
+		keyc4=keyc3+5
+		keysize=2.5
+		//geoborder "contustates.json" 0.05 bgcolor 50
+		include "sdiregions.dsh"
+		text footer 15 5 1.5
+		textblock altext 52 40 12 1.2 "serif"
+		textblock intext 65 80 15 1.2 "serif"
+		//textblock catext 15 45 15 1.5 "serif"
+	eslide
+
+	slide bgcolor fgcolor
+		tx=60
+		ty=70
+		sy=ty-3
+		ts=3
+		ss=ts*0.6
+		ctext  title    tx ty ts
+		ctext  subtitle tx sy ss "serif" "crimson"
+		//image "sundown-sign.png" tx 80 15 0
+		uswidth=60
+		usheight=30
+		geoXmin=35
+		geoXmax=geoXmin+uswidth
+		geoYmin=35
+		geoYmax=geoYmin+usheight
+		keyc1=geoXmin
+		keyc2=keyc1+5
+		keyc3=keyc1+40
+		keyc4=keyc3+5
+		//geoborder "contustates.json" 0.05 bgcolor
+		include "sdiregions.dsh"
+		text footer 15 5 1.5
+		dchart -title=f -vcolor=white -lcolor=white -hbar -left=5 -color=crimson -textsize=1.3 -top 95 -ls 1.5 -pct  sdi.d
+	eslide
+edeck

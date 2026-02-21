@@ -1,0 +1,3 @@
+#!/bin/sh
+./mkregions sdi.csv > sdiregions.dsh
+decksh sundown.dsh | pdfdeck -layers=poly:ellipse:text:line:rect:image -sans $duboisans -serif Charter-Regular -pagesize 1584x2016 -stdout - > sundown.pdf; open sundown.pdf

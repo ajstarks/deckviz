@@ -1,0 +1,2 @@
+#!/bin/sh
+awk  '$0 ~ /"Feature"/{ filename=sprintf("%s.json", substr($7,9,4)); printf "{\"type\": \"FeatureCollection\", \"features\": [\n%s\n]}\n", $0 > filename  }' contustates.json
