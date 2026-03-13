@@ -1,3 +1,10 @@
 #!/bin/sh
 ./mkregions sdi.csv > sdiregions.dsh
-decksh sundown.dsh | pdfdeck -layers=poly:ellipse:text:line:rect:image -sans $duboisans -serif Charter-Regular -pagesize 1584x2016 -stdout - > sundown.pdf; open sundown.pdf
+decksh sundown.dsh | 
+pdfdeck -layers=poly:ellipse:text:line:rect:image \
+-author "Anthony Starks" \
+-title "Sundown Town Sightings by State" \
+-sans $duboisans \
+-serif Charter-Italic \
+-pagesize 1584x2016 \
+-stdout - > sundown.pdf; open sundown.pdf

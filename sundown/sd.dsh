@@ -1,0 +1,95 @@
+deck
+	bgcolor="black"
+	fgcolor="white"
+	tx=50
+	ty=95
+	sy=ty-4
+	ts=5
+	qs=ts*0.20
+	ss=ts*0.6
+	slide bgcolor fgcolor
+		ruler 5 "white"
+		title="Sundown Towns Sightings by State"
+		subtitle="“Nigger, don't be caught here after the sun goes down”"
+		textblockfile "sundown-desc.txt" 20 87 60 1.5
+		footer="Source: Loewen, J. (2005) Sundown towns: A hidden dimension of American racism. The New Press."
+		legtext="Sundown Town Sightings"
+		catext="Several long time residents tell of a sign reading “Nigger, Don't Let The Sun Set On You in Oildale”."
+		altext="“I was born in Mobile in 1931...The sign read: Nigger, don't be caught here after the sun goes down”."
+		intext="One Indiana resident remembers that Tipton, Elwood and Alexandria, all on State Road 28, each had the Sundown signs at the city limits."
+		iamstext="A thick band of sundown counties and towns were located on both sides of Iowa-Missouri border."
+		rocktext="On September 2, 1885, in Rock Springs, about 150 white miners and railroad workers, most of them armed, gave the Chinese, “one hour to pack their belongings and leave town”."
+		oretext="A string of towns along what is now Interstate 5 in western Oregon — including Eugene, Umpqua, Grants Pass, Eagle Point, and others — primarily excluded African Americans."
+		vatext="When the Seatack area of Virginia Beach was established, its founders excluded the Black community from its boundaries to maintain a “whites-only” image typical of sundown towns."
+
+		mobile="geo:30.6675,-88.101111	Mobile"
+		elwood="geo:40.2770,-85.8419	Elwood"
+		parlier="geo:36.611667,-119.526944	Parlier"
+		oildale="geo:35.419722,-119.019444	Oildale"
+		rocksprings="geo:41.590833,-109.2225	Rock Springs"
+		pitts="geo:40.439722,-79.976389	Pittsburgh"
+		eugene="geo:44.056389,-123.1175	Eugene"
+		vabeach="geo:36.85,-75.977778	Virginia Beach"
+		
+		// titles
+		ctext  title    tx ty ts
+		ctext  subtitle tx sy ss "serif" "crimson"
+		
+		// map
+		uswidth=80
+        usheight=40
+		geobound 24.45 49 -124.75 -66.95
+		geocanvas 15 95 30 70 
+		geoloc elwood "c" 1.5 "sans" bgcolor
+		geoloc mobile "c" 1.5 "sans" bgcolor
+		geoloc oildale "c" 1.5 "sans" bgcolor
+		geoloc rocksprings "c" 1.5 "sans" bgcolor
+		geoloc eugene "b" 1.5 "sans" bgcolor
+		geoloc vabeach "e" 1.5 "sans" "black"
+		geomark vabeach 0.75 "red"
+
+		// annotations
+		textblock altext 55 35 12 qs "serif"
+		textblock intext 60 75 15 qs "serif"
+		textblock catext 10  45 10 qs "serif"
+		textblock rocktext 30 65 15 qs "serif" "black"
+		textblock oretext  4 62 8 qs "serif"
+		textblock vatext  85 50 10 qs "serif"
+
+		// legend
+		keyc1=15
+		keyc2=keyc1+5
+		keyc3=keyc1+40
+		keyc4=keyc3+5
+		keysize=2.5
+		
+		text legtext keyc1 30 2 "sans" "red"
+		//geoborder "contustates.json" 0.02 bgcolor
+		include "sdiregions.dsh"
+		text footer 15 5 1.5
+		
+	eslide
+
+	slide bgcolor fgcolor
+		//ruler 5 "white"
+		tx=65
+		ty=70
+		sy=ty-3
+		ts=3
+		ss=ts*0.6
+		ctext  title    tx ty ts
+		ctext  subtitle tx sy ss "serif" "crimson"
+		uswidth=60
+		usheight=30
+		geocanvas 35 95 35 65
+		keyc1=geoXmin
+		keyc2=keyc1+5
+		keyc3=keyc1+40
+		keyc4=keyc3+5
+		//geoborder "contustates.json" 0.02 bgcolor
+		text legtext keyc1 30 2 "sans" "red"
+		include "sdiregions.dsh"
+		text footer 15 5 1.5
+		dchart -title=f -vcolor=white -lcolor=white -hbar -left=5 -color=crimson -textsize=1.3 -top 95 -ls 1.5 -pct  sdi.d
+	eslide
+edeck
