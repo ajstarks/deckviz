@@ -1,0 +1,21 @@
+geo:40.643900,-74.07360000	St. George Terminal
+geo:40.635800,-74.07540000	Tompkinsville
+geo:40.627300,-74.07630000	Stapleton
+geo:40.619200,-74.07720000	Clifton
+geo:40.609400,-74.08470000	Grasmere
+geo:40.601000,-74.09060000	Old Town
+geo:40.589000,-74.09590000	Dongan Hills
+geo:40.582800,-74.10420000	Jefferson Avenue
+geo:40.578600,-74.11050000	Grant City
+geo:40.573600,-74.11710000	New Dorp
+geo:40.564700,-74.12690000	Oakwood Heights
+geo:40.5565800,-74.1366300	Bay Terrace
+geo:40.55157700,-74.150943	Great Kills
+geo:40.54443500,-74.165234	Eltingville
+geo:40.54065200,-74.177658	Annadale
+geo:40.533600,-74.19190000	Huguenot
+geo:40.52527300,-74.200768	Prince's Bay
+geo:40.522400,-74.21790000	Pleasant Plains
+geo:40.521800,-74.22520000	Richmond Valley
+geo:40.516800,-74.24160000	Arthur Kill
+geo:40.512500,-74.25230000	Tottenville

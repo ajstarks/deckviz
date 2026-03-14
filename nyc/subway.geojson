@@ -1,0 +1,6585 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+        -74.00030814706818,
+        40.73225482557368
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.1",
+        "description": "W 4th St - Washington Sq (Lower)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+        -73.83256899924741,
+        40.84681033168122
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.2",
+        "description": "Buhre Ave"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+        -73.97192000013298,
+        40.75710733221505
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.3",
+        "description": "51st St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9762179981134,
+          40.78864433311557
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.4",
+        "description": "86th St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.00413100111692,
+          40.71306533205108
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.5",
+        "description": "Brooklyn Bridge - City Hall"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.98207600124918,
+          40.746081331224474
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.6",
+        "description": "33rd St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.96796700066434,
+          40.762526332958515
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.7",
+        "description": "Lexington Ave - 59th St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.85736239433538,
+          40.89314357412857
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.8",
+        "description": "233rd St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.98220900041206,
+          40.77344033329821
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.9",
+        "description": "66th St - Lincoln Ctr"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.89054899975379,
+          40.82094833093279
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.10",
+        "description": "Hunts Point Ave"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.0062770002375,
+          40.722854330406015
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.11",
+        "description": "Canal St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.83632199732645,
+          40.843863333740046
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.12",
+        "description": "Middletown Rd"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.98659900183969,
+          40.7398643326176
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.13",
+        "description": "23rd St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.94526400065328,
+          40.747023330930325
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.14",
+        "description": "45th Rd - Court House Sq"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.99106999895497,
+          40.73005433283627
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.15",
+        "description": "Astor Pl"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.98192900168252,
+          40.768247333004325
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.16",
+        "description": "59th St - Columbus Circle"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.94891600116063,
+          40.742216332328546
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.17",
+        "description": "Hunters Point Ave"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.95107000070676,
+          40.785672332551975
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.18",
+        "description": "96th St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.8456249978671,
+          40.75462233152458
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.19",
+        "description": "Mets - Willets Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.99565700196472,
+          40.74408133195095
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.20",
+        "description": "23rd St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.00536700184284,
+          40.72825133267478
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.21",
+        "description": "Houston St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.92613800022268,
+          40.8104763336079
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.22",
+        "description": "3rd Ave - 138th St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.8470359980454,
+          40.83648833272933
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.23",
+        "description": "Zerega Ave"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.83768299993733,
+          40.68171133326988
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.24",
+        "description": "104th St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.99467467829565,
+          40.72593123729625
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.25",
+        "description": "Bleecker St (Downtown)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.8512219992089,
+          40.834255330898564
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.26",
+        "description": "Castle Hill Ave"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.81583268677736,
+          40.608402513049555
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.27",
+        "description": "Broad Channel"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.96850100000474,
+          40.57631199964582
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.28",
+        "description": "Ocean Pkwy"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.98384899991835,
+          40.76172833214784
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.29",
+        "description": "50th St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.95358099881997,
+          40.74262633163821
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.30",
+        "description": "Vernon Blvd - Jackson Ave"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.96387000148654,
+          40.76814133297075
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.31",
+        "description": "68th St - Hunter College"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.94016353439736,
+          40.7506359834478
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.32",
+        "description": "Queensboro Plz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.84385299711742,
+          40.68042933241755
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.33",
+        "description": "Rockaway Blvd"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.98995099886982,
+          40.734673333627924
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.34",
+        "description": "Union Sq - 14th St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.86952699979645,
+          40.74914533179798
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.35",
+        "description": "Junction Blvd"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.95999000126952,
+          40.68888933274359
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.36",
+        "description": "Classon Ave"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9535219998761,
+          40.689627333980575
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.37",
+        "description": "Bedford - Nostrand Aves"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.97973580607693,
+          40.66003602075277
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.38",
+        "description": "15th St - Prospect Park"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.98025117886922,
+          40.66624502275791
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.39",
+        "description": "7th Ave"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.97577599885986,
+          40.65078200005558
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.40",
+        "description": "Ft Hamilton Pkwy"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.97972116167192,
+          40.64427233253345
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.41",
+        "description": "Church Ave"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.96435779549273,
+          40.643904930723345
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.42",
+        "description": "Beverly Rd"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.96288246144861,
+          40.650493578943035
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.43",
+        "description": "Church Ave"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.96269486847967,
+          40.63514226946216
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.44",
+        "description": "Newkirk Ave"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.96145344000777,
+          40.6550733737844
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.45",
+        "description": "Parkside Ave"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.96203130451707,
+          40.66163378723865
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.46",
+        "description": "Prospect Park"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9709563314429,
+          40.67529502790966
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.47",
+        "description": "Grand Army Plaza"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.97499915098906,
+          40.6808624695201
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.48",
+        "description": "Bergen St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.97754993550326,
+          40.68442049760116
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.49",
+        "description": "Atlantic Ave"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.91194599727311,
+          40.67834033230831
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.50",
+        "description": "Rockaway Ave"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.97537499873906,
+          40.687119331724965
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.51",
+        "description": "Fulton St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.96679599830857,
+          40.68809433365578
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.52",
+        "description": "Clinton - Washington Aves"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.97285279146307,
+          40.67710251195426
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.53",
+        "description": "7th Ave"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.97678343931099,
+          40.684488655503536
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.54",
+        "description": "Atlantic Ave"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.98310999931775,
+          40.67731599952716
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.55",
+        "description": "Union St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.97880999934853,
+          40.683665999547046
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.56",
+        "description": "Atlantic Av - Pacific St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.99015100058308,
+          40.69240433216812
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.57",
+        "description": "Borough Hall"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.83591899879404,
+          40.67209733137274
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.58",
+        "description": "Aqueduct Racetrack (To Manh Only)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.98182400036208,
+          40.69063499940642
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.59",
+        "description": "DeKalb Ave"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.86049499998195,
+          40.85436433176652
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.60",
+        "description": "Morris Park"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.85535900005986,
+          40.858985332005616
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.61",
+        "description": "Pelham Pkwy"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.95042600048538,
+          40.68043833217454
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.62",
+        "description": "Nostrand Ave"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.98040679867194,
+          40.68831091217309
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.63",
+        "description": "Nevins St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.96422203701742,
+          40.67203256799286
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.64",
+        "description": "Eastern Pkwy - Bklyn Museum"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.95809973659006,
+          40.67076548552516
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.65",
+        "description": "Franklin Ave"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.94884798335569,
+          40.6451238517239
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.66",
+        "description": "Beverly Rd"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.94945514032194,
+          40.6508610197765
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.67",
+        "description": "Church Ave"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.94829990753223,
+          40.639991575097845
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.68",
+        "description": "Newkirk Ave"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.94754120719476,
+          40.63284273953496
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.69",
+        "description": "Brooklyn College - Flatbush Ave"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.95007934541682,
+          40.65665964657179
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.70",
+        "description": "Winthrop St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.950728911504,
+          40.66277332605742
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.71",
+        "description": "Sterling St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.93293256066342,
+          40.66897864343386
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.72",
+        "description": "Crown Hts - Utica Ave"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.94215978326197,
+          40.66948178067157
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.73",
+        "description": "Kingston Ave"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.94085899839123,
+          40.679919331981246
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.74",
+        "description": "Kingston - Throop Aves"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.95118299979697,
+          40.724480330250536
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.75",
+        "description": "Nassau Ave"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.95442500175069,
+          40.73126733179012
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.76",
+        "description": "Greenpoint Ave"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9578319999985,
+          40.70838333267716
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.77",
+        "description": "Marcy Ave"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.95348800040833,
+          40.70689033028504
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.78",
+        "description": "Hewes St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.98740940233351,
+          40.71830638815251
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.79",
+        "description": "Essex St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.92984899948112,
+          40.81322433186519
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.80",
+        "description": "138th St - Grand Concourse"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.97524850466023,
+          40.76008716502786
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.81",
+        "description": "5th Ave - 53rd St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.96907237417732,
+          40.75746864063934
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.82",
+        "description": "Lexington Ave - 53rd St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9886980006626,
+          40.74545433237612
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.83",
+        "description": "28th St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.98793683324297,
+          40.74964489214577
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.84",
+        "description": "Herald Sq - 34th St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.98168087509049,
+          40.73097530782765
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.85",
+        "description": "1st Ave"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.97918900000727,
+          40.75276899923941
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.86",
+        "description": "Grand Central - 42nd St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.98622899993683,
+          40.75598333254976
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.87",
+        "description": "Times Sq - 42nd St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.98459099839894,
+          40.754184333696514
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.88",
+        "description": "42nd St - Bryant Pk"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.98676800202695,
+          40.75461233129769
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.89",
+        "description": "Times Sq - 42nd St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.95142399956141,
+          40.712774333337066
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.90",
+        "description": "Metropolitan Ave"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.94049699898227,
+          40.711576332884036
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.91",
+        "description": "Grand St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.94394399788152,
+          40.71457633056673
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.92",
+        "description": "Graham Ave"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.95024800019324,
+          40.714072333239244
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.93",
+        "description": "Lorimer St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.95666499837016,
+          40.71717433138076
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.94",
+        "description": "Bedford Ave"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9503122559598,
+          40.70612690890773
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.95",
+        "description": "Broadway"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.94735499813582,
+          40.70384433286068
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.96",
+        "description": "Lorimer St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.93979284651327,
+          40.707391396319544
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.97",
+        "description": "Montrose Ave"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.94605470270496,
+          40.747768453861696
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.98",
+        "description": "23rd St - Ely Av"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.94381559557154,
+          40.746305366128915
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.99",
+        "description": "Long Island City - Court Sq"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.94959999937967,
+          40.744128999080004
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.100",
+        "description": "21st St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.93285137606902,
+          40.75276339362628
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.101",
+        "description": "39th Ave"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9298619983323,
+          40.75644233250436
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.102",
+        "description": "36th Ave"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.95035999809502,
+          40.82655133184121
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.103",
+        "description": "145th St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.94488999874271,
+          40.834041332610305
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.104",
+        "description": "157th St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.97232299948288,
+          40.79391933348525
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.105",
+        "description": "96th St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.96837899924822,
+          40.799446333013954
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.106",
+        "description": "103rd St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.95182200107372,
+          40.79907533190775
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.107",
+        "description": "Central Park North (110th St)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9613700821618,
+          40.796061072629186
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.108",
+        "description": "103rd St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.95806670664342,
+          40.80058189065227
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.109",
+        "description": "Cathedral Pkwy (110th St)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.98197000104184,
+          40.7784533330184
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.110",
+        "description": "72nd St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.97633657548647,
+          40.77551973010138
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.111",
+        "description": "72nd St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.97209794941422,
+          40.781346416791116
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.112",
+        "description": "81st St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.83692369317717,
+          40.71804498613583
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.113",
+        "description": "75th Ave"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.830370270175,
+          40.71403515200448
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.114",
+        "description": "Kew Gardens - Union Tpke"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.968828494562,
+          40.78582337871821
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.115",
+        "description": "86th St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.96460245655108,
+          40.7916191303148
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.116",
+        "description": "96th St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.96684700014316,
+          40.80396733208352
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.117",
+        "description": "Cathedral Pkwy (110th St)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.96410999793571,
+          40.807722333328456
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.118",
+        "description": "116th St - Columbia University"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.94549500019211,
+          40.80775433190706
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.119",
+        "description": "125th St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.94077000029486,
+          40.814229332544315
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.120",
+        "description": "135th St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.92738475430812,
+          40.818303775913265
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.121",
+        "description": "149th St - Grand Concourse"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.94962500105143,
+          40.80209833161256
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.122",
+        "description": "116th St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.90522700088012,
+          40.850410332254484
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.123",
+        "description": "Tremont Ave"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.90074099926741,
+          40.85609333094426
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.124",
+        "description": "182nd-183rd Sts"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.95367600034146,
+          40.82200833171166
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.125",
+        "description": "137th St - City College"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.93624499890737,
+          40.82042133204534
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.126",
+        "description": "145th St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.91179399805142,
+          40.848480333300515
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.127",
+        "description": "176th St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.90768400066491,
+          40.85345333349509
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.128",
+        "description": "Burnside Ave"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.91339999796044,
+          40.839306332395175
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.129",
+        "description": "170th St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.91013600003971,
+          40.845900332638486
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.130",
+        "description": "174th-175th Sts"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.940132998897,
+          40.84055633192146
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.131",
+        "description": "168th St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9335959998164,
+          40.849505332362504
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.132",
+        "description": "181st St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.93956099987888,
+          40.84071933253172
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.133",
+        "description": "168th St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.92941199761114,
+          40.855225334075584
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.134",
+        "description": "191st St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9397039967383,
+          40.84739133302042
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.135",
+        "description": "175th St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.77601299886844,
+          40.59294333169343
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.136",
+        "description": "Beach 44th St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.78852199717775,
+          40.5923743336834
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.137",
+        "description": "Beach 60th St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.82758074931658,
+          40.58326877004643
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.138",
+        "description": "Beach 105th St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.8205205887206,
+          40.58538602332184
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.139",
+        "description": "Beach 98th St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.83559008596315,
+          40.58095619823413
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.140",
+        "description": "Rockaway Park - Beach 116 St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.81365140294545,
+          40.58809189674864
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.141",
+        "description": "Beach 90th St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.76817499792803,
+          40.59539833362945
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.142",
+        "description": "Beach 36th St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.7613529967363,
+          40.60006633328723
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.143",
+        "description": "Beach 25th St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.80328899878045,
+          40.7075723323415
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.144",
+        "description": "Parsons Blvd"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.79347419781818,
+          40.71051783545284
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.145",
+        "description": "169th St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.86269999706153,
+          40.74986533336835
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.146",
+        "description": "103rd St - Corona Plaza"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.85533399729219,
+          40.75173033206642
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.147",
+        "description": "111th St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.86161820029051,
+          40.72976430453871
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.148",
+        "description": "63rd Dr - Rego Park"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.86504999808707,
+          40.67704433291963
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.149",
+        "description": "Grant Ave"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.97991700040637,
+          40.783934331807515
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.150",
+        "description": "79th St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.90309699915747,
+          40.675344998510326
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.151",
+        "description": "Atlantic Ave"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.00290599889694,
+          40.73342233304197
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.152",
+        "description": "Christopher St - Sheridan Sq"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9040979979671,
+          40.81211833080464
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.153",
+        "description": "E 149th St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.82579799839583,
+          40.68595133106681
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.154",
+        "description": "Ozone Park - Lefferts Blvd"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.98769099765994,
+          40.75547733405752
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.155",
+        "description": "Times Sq - 42nd St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.95987399807251,
+          40.773620333081745
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.156",
+        "description": "77th St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.90298400085231,
+          40.74563033308078
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.157",
+        "description": "Woodside - 61st St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.83216299793182,
+          40.68433133249258
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.158",
+        "description": "111th St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.83003000183336,
+          40.75960033143994
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.159",
+        "description": "Flushing - Main St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9759578740407,
+          40.57603415026776
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.160",
+        "description": "W 8th St - NY Aquarium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9933650013927,
+          40.74721533142343
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.161",
+        "description": "28th St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.98426400149614,
+          40.743070331894835
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.162",
+        "description": "28th St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.82812099995712,
+          40.852462332212276
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.163",
+        "description": "Pelham Bay Park"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.84295199835398,
+          40.839892333464185
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.164",
+        "description": "Westchester Sq - E Tremont Ave"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.99787100112229,
+          40.74104033203364
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.165",
+        "description": "18th St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.97671329936158,
+          40.75180776218185
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.166",
+        "description": "Grand Central - 42nd St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.97604100119781,
+          40.75143133258379
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.167",
+        "description": "Grand Central - 42nd St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.00019299900349,
+          40.718803333794426
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.168",
+        "description": "Canal St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.79692399899518,
+          40.59092733335806
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.169",
+        "description": "Beach 67th St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.00049500225539,
+          40.73233833044847
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.170",
+        "description": "W 4th St - Washington Sq (Upper)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.85286048368059,
+          40.72650580841375
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.171",
+        "description": "67th Ave"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.86008699933825,
+          40.69242733211075
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.172",
+        "description": "85th St - Forest Pky"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.85205199698797,
+          40.69370433161678
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.173",
+        "description": "Woodhaven Blvd"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.83679338316995,
+          40.69711514348883
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.174",
+        "description": "111th St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.82834899922639,
+          40.70048233074198
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.175",
+        "description": "121st St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.80800471916437,
+          40.70038275659072
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.176",
+        "description": "Sutphin Blvd - Archer Av"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.90393400047107,
+          40.69551833354902
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.177",
+        "description": "Halsey St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.91097571780212,
+          40.69947139440521
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.178",
+        "description": "Myrtle Ave"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.88411070786465,
+          40.66631526464169
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.179",
+        "description": "New Lots Ave"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.88940491629889,
+          40.66551829573673
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.180",
+        "description": "Van Siclen Ave"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.89488591124227,
+          40.664714783421225
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.181",
+        "description": "Pennsylvania Ave"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.89035799977013,
+          40.672710331191254
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.182",
+        "description": "Van Siclen Ave"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.89165772599061,
+          40.678028547200945
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.183",
+        "description": "Van Siclen Ave"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.88519400124282,
+          40.679778331367174
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.184",
+        "description": "Cleveland St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9005623715631,
+          40.66405760324956
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.185",
+        "description": "Livonia Ave"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.90191599959428,
+          40.66914533281994
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.186",
+        "description": "Sutter Ave"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.90244864097306,
+          40.66358933397658
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.187",
+        "description": "Junius St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.90895833563903,
+          40.662617820098795
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.188",
+        "description": "Rockaway Ave"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.90184999993393,
+          40.64665399951288
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.189",
+        "description": "Canarsie - Rockaway Pkwy"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.89954769314156,
+          40.6504691174794
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.190",
+        "description": "E 105th St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.91633024966036,
+          40.66153012228152
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.191",
+        "description": "Saratoga Ave"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.92252118506696,
+          40.6647671212749
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.192",
+        "description": "Sutter Ave - Rutland Road"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.89927796012275,
+          40.65891510595766
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.193",
+        "description": "New Lots Ave"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.75540499789503,
+          40.603995333787914
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.194",
+        "description": "Far Rockaway - Mott Ave"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.91038356930939,
+          40.6828516335617
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.195",
+        "description": "Chauncey St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.90428999742534,
+          40.67936633364182
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.196",
+        "description": "Broadway Junction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9166388839509,
+          40.6864156035108
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.197",
+        "description": "Halsey St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.89852600099037,
+          40.67699833266829
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.198",
+        "description": "Alabama Ave"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.88074999710291,
+          40.67413033392656
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.199",
+        "description": "Shepherd Ave"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.87962599833818,
+          40.68152033296197
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.200",
+        "description": "Norwood Ave"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.873929251904,
+          40.683152989546045
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.201",
+        "description": "Crescent St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.87332199828751,
+          40.68961633326342
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.202",
+        "description": "Cypress Hills"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.86728799875733,
+          40.69129033368883
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.203",
+        "description": "75th St - Eldert Ln"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.89640299838601,
+          40.74632533189121
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.204",
+        "description": "69th St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.89120512838272,
+          40.74686790647675
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.205",
+        "description": "74th St - Broadway"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.8987883776696,
+          40.74971986177836
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.206",
+        "description": "65th St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.86943208499198,
+          40.73309770621733
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.207",
+        "description": "Woodhaven Blvd - Queens Mall"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9121789987563,
+          40.699454333715686
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.208",
+        "description": "Wyckoff Ave"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.90758199842973,
+          40.70291933169435
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.209",
+        "description": "Seneca Ave"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.91823200153037,
+          40.703693331635726
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.210",
+        "description": "DeKalb Ave"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.91254899814017,
+          40.744149333416985
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.211",
+        "description": "52nd St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9135217500592,
+          40.756317285064846
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.212",
+        "description": "46th St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.90606508028188,
+          40.752825162029055
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.213",
+        "description": "Northern Blvd"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.91843500055467,
+          40.74313233319539
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.214",
+        "description": "46th St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.88369699986343,
+          40.74765933226925
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.215",
+        "description": "82nd St - Jackson Hts"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.87661299894197,
+          40.74840833306977
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.216",
+        "description": "90th St - Elmhurst Av"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.87722085593695,
+          40.73681375027579
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.217",
+        "description": "Grand Ave - Newtown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.88203474588964,
+          40.74237041207057
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.218",
+        "description": "Elmhurst Ave"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.83030099930426,
+          40.66047633219049
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.219",
+        "description": "Howard Beach - JFK Airport"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.83405799882615,
+          40.66823433364754
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.220",
+        "description": "Aqueduct - North Conduit Av"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.84443499900188,
+          40.695166330956006
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.221",
+        "description": "104th-102nd Sts"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.82069263553899,
+          40.70916214793041
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.222",
+        "description": "Briarwood - Van Wyck Blvd"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.84451671920684,
+          40.72159464200387
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.223",
+        "description": "Forest Hills - 71st Av"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.81083299827162,
+          40.70541833159709
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.224",
+        "description": "Sutphin Blvd"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.81701287026026,
+          40.70289888566535
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.225",
+        "description": "Jamaica - Van Wyck"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.80109632198105,
+          40.70206770831371
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.226",
+        "description": "Jamaica Ctr - Parsons / Archer"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.89306639471828,
+          40.82397717392752
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.227",
+        "description": "Simpson St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.89175225285321,
+          40.82998777901178
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.228",
+        "description": "Freeman St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.86021461686789,
+          40.888028590641945
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.229",
+        "description": "225th St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.87915899781719,
+          40.828584333639306
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.230",
+        "description": "Elder Ave"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.87451599884416,
+          40.829521334164745
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.231",
+        "description": "Morrison Av - Soundview"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.89643499864893,
+          40.81610433270999
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.232",
+        "description": "Longwood Ave"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.91809500082114,
+          40.77003733158411
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.233",
+        "description": "Astoria Blvd"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.91203400018497,
+          40.775035998745246
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.234",
+        "description": "Astoria - Ditmars Blvd"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.90770193853464,
+          40.81643779887532
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.235",
+        "description": "Jackson Ave"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.90177778624373,
+          40.81948759687329
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.236",
+        "description": "Prospect Ave"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9140419994168,
+          40.805368333418464
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.237",
+        "description": "Cypress Ave"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.88628299832425,
+          40.82652533286839
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.238",
+        "description": "Whitlock Ave"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.896617383584,
+          40.822142463491446
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.239",
+        "description": "Intervale Ave"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.88769359751677,
+          40.837195882379646
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.240",
+        "description": "174th St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.86748067761883,
+          40.85719274156798
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.241",
+        "description": "Pelham Pkwy"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.86723422776343,
+          40.865483710642366
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.242",
+        "description": "Allerton Ave"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.90765699883941,
+          40.808719333203044
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.243",
+        "description": "E 143rd St - St Mary's St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.89717400101904,
+          40.86776033281104
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.244",
+        "description": "Kingsbridge Rd"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.89006400056147,
+          40.87341233175917
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.245",
+        "description": "Bedford Park Blvd - Lehman College"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.93646999991864,
+          40.823880333142384
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.246",
+        "description": "Harlem - 148 St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.91468499864921,
+          40.8444343328997
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.247",
+        "description": "Mt Eden Ave"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.89774900076844,
+          40.861296330886695
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.248",
+        "description": "Fordham Rd"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.91779099709349,
+          40.8400753319014
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.249",
+        "description": "170th St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.8935090000309,
+          40.86697833238542
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.250",
+        "description": "Kingsbridge Rd"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.88713799869907,
+          40.87324433078602
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.251",
+        "description": "Bedford Park Blvd"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.90983099891767,
+          40.87456133181964
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.252",
+        "description": "Marble Hill - 225th St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9048340004263,
+          40.87885633094057
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.253",
+        "description": "231st St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.91527899930836,
+          40.869444331971195
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.254",
+        "description": "215th St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.91881900072035,
+          40.86461433278033
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.255",
+        "description": "207th St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.91989900076257,
+          40.868072332331586
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.256",
+        "description": "Inwood - 207th St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.90086999936254,
+          40.88466733339259
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.257",
+        "description": "238th St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.89858299979805,
+          40.88924833251641
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.258",
+        "description": "Van Cortlandt Park - 242nd St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.87996127809551,
+          40.84020796450718
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.259",
+        "description": "West Farms Sq - E Tremont Av"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.86761799826297,
+          40.83150933313622
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.260",
+        "description": "St Lawrence Ave"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.868356091237,
+          40.84876899887755
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.261",
+        "description": "Bronx Park East"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.86613410422366,
+          40.87783971778193
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.262",
+        "description": "Gun Hill Rd"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.86250970748023,
+          40.88388830660065
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.263",
+        "description": "219th St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.88465499988875,
+          40.879750332035385
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.264",
+        "description": "Mosholu Pkwy"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.87885499849911,
+          40.87481133274861
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.265",
+        "description": "Norwood - 205th St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.86705361677082,
+          40.8712591346807
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.266",
+        "description": "Burke Ave"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.83859099777185,
+          40.87866333281152
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.267",
+        "description": "Baychester Ave"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.83083400082735,
+          40.8883003315566
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.268",
+        "description": "Eastchester - Dyre Ave"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.78381700044146,
+          40.712645999008004
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.269",
+        "description": "Jamaica - 179th St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.85061999835266,
+          40.90312533314965
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.270",
+        "description": "Wakefield - 241st St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9592449997529,
+          40.67034299904337
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.271",
+        "description": "Botanic Garden"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.90526176227324,
+          40.68286095755838
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.272",
+        "description": "Bushwick - Aberdeen"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.90395860493139,
+          40.68886687439795
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.273",
+        "description": "Wilson Ave"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9031175784343,
+          40.67845658110124
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.274",
+        "description": "Broadway Junction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.84638400102965,
+          40.869526331954305
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.275",
+        "description": "Gun Hill Rd"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.87334609435001,
+          40.84186337356547
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.276",
+        "description": "E 180th St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.92553599977494,
+          40.860531333640004
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.277",
+        "description": "Dyckman St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.95837200092971,
+          40.81558133199305
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.278",
+        "description": "125th St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.957624000331,
+          40.674771998954476
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.279",
+        "description": "Park Pl"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.95582700108791,
+          40.680595998495264
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.280",
+        "description": "Franklin Ave - Fulton St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.85431530997909,
+          40.898286848184306
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.281",
+        "description": "Nereid Ave (238 St)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.92672247457743,
+          40.818330476177714
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.282",
+        "description": "149th St - Grand Concourse"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.91779152703786,
+          40.81602958477588
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.283",
+        "description": "3rd Ave - 149th St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.92569199495196,
+          40.82823065970236
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.284",
+        "description": "161st St - Yankee Stadium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.92139999756643,
+          40.835537332087874
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.285",
+        "description": "167th St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.91923999817342,
+          40.80756633231699
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.286",
+        "description": "Brook Ave"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9309969987384,
+          40.74458733265962
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.287",
+        "description": "33rd St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.92401599806122,
+          40.74378133376432
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.288",
+        "description": "40th St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.94408792835772,
+          40.82476669313109
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.289",
+        "description": "145th St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.93820899809948,
+          40.83013533228224
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.290",
+        "description": "155th St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.92565099751468,
+          40.827905331479776
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.291",
+        "description": "161st St - Yankee Stadium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.91843200077074,
+          40.83376933112564
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.292",
+        "description": "167th St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.92078599919039,
+          40.67882233359086
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.293",
+        "description": "Ralph Ave"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.93072899845316,
+          40.67936433208371
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.294",
+        "description": "Utica Ave"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.92901818470378,
+          40.75196037654921
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.295",
+        "description": "36th St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.92052647104087,
+          40.75698769179131
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.296",
+        "description": "Steinway St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.92850899856911,
+          40.693172333304105
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.297",
+        "description": "Kosciuszko St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.92215600058695,
+          40.68958433163534
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.298",
+        "description": "Gates Ave"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.92724299829534,
+          40.69787333245757
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.299",
+        "description": "Central Ave"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.91972000097107,
+          40.69866033384
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.300",
+        "description": "Knickerbocker Ave"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.92582299856421,
+          40.761432331091726
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.301",
+        "description": "Broadway"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.92147900005986,
+          40.76677899879946
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.302",
+        "description": "30th Ave"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9229129995305,
+          40.706606998427034
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.303",
+        "description": "Jefferson St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.93314699998827,
+          40.70615199916679
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.304",
+        "description": "Morgan Ave"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.93713823926093,
+          40.748918052195435
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.305",
+        "description": "Queens Plz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.97697099987745,
+          40.629754999184065
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.306",
+        "description": "18th Ave"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.97817199992703,
+          40.63611899886778
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.307",
+        "description": "Ditmas Ave"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.02550999958471,
+          40.62974199921923
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.308",
+        "description": "77th St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.02337699924082,
+          40.63496699934776
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.309",
+        "description": "Bay Ridge Ave"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.99534882553111,
+          40.63147909345306
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.310",
+        "description": "55th St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.99465878009647,
+          40.636261223451385
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.311",
+        "description": "50th St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.0053510007241,
+          40.631385999211595
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.312",
+        "description": "Ft Hamilton Pkwy"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.01151599735906,
+          40.63497133190368
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.313",
+        "description": "8th Ave"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.98682900016435,
+          40.59770399923523
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.314",
+        "description": "25th Ave"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.99367619973995,
+          40.6019507942803
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.315",
+        "description": "Bay Pky"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.98452199841235,
+          40.6171093320831
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.316",
+        "description": "20th Ave"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.99045399859847,
+          40.620687330316166
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.317",
+        "description": "18th Ave"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.03087600063023,
+          40.61662199967881
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.318",
+        "description": "Bay Ridge - 95th St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.02839800028353,
+          40.62268699939043
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.319",
+        "description": "86th St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.00058287394693,
+          40.613159258412
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.320",
+        "description": "79th St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.99884094905444,
+          40.61925904207569
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.321",
+        "description": "71st St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9981743210267,
+          40.60467733012288
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.322",
+        "description": "20th Ave"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.00159259254066,
+          40.607736064277006
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.323",
+        "description": "18th Ave"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.99685725051661,
+          40.62622479517215
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.324",
+        "description": "62nd St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9963530004669,
+          40.62484199926125
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.325",
+        "description": "New Utrecht Ave"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9733764190409,
+          40.595925158219494
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.326",
+        "description": "Ave U"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.97235530833724,
+          40.60325873790103
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.327",
+        "description": "Kings Hwy"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9613537857206,
+          40.57771052883522
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.328",
+        "description": "Brighton Beach"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9540579118221,
+          40.5865478791191
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.329",
+        "description": "Sheepshead Bay"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.95581122321062,
+          40.599309283625495
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.330",
+        "description": "Ave U"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.95760873539075,
+          40.60863897749212
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.331",
+        "description": "Kings Hwy"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.97908400087039,
+          40.5972363327117
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.332",
+        "description": "Ave U"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.98037300212548,
+          40.60405933243509
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.333",
+        "description": "Kings Hwy"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.97459272802229,
+          40.58073909058934
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.334",
+        "description": "Neptune Ave"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9742659993022,
+          40.58944999891466
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.335",
+        "description": "Ave X"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9837650002573,
+          40.58884099893263
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.336",
+        "description": "Bay 50th St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.97818899976662,
+          40.59246533297025
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.337",
+        "description": "Gravesend - 86th St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.97300281528898,
+          40.60884314164611
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.338",
+        "description": "Ave P"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.97404850907509,
+          40.61435704436209
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.339",
+        "description": "Ave N"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9752569775524,
+          40.62073195527381
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.340",
+        "description": "Bay Pky"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.95924310477635,
+          40.61739807725093
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.341",
+        "description": "Ave M"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.98178001024027,
+          40.61145612205187
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.342",
+        "description": "Bay Pky"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.97606933193556,
+          40.6250177725522
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.343",
+        "description": "Ave I"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.96069316246769,
+          40.62502315197316
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.344",
+        "description": "Ave J"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.96151793874006,
+          40.62920870959159
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.345",
+        "description": "Ave H"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.95507827446245,
+          40.59532202364403
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.346",
+        "description": "Neck Rd"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9419376138154,
+          40.753739603051464
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.347",
+        "description": "21st St - Queensbridge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.98598399999045,
+          40.762456331700854
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.348",
+        "description": "50th St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.98169782381278,
+          40.76297048455733
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.349",
+        "description": "7th Ave"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.98133100211903,
+          40.75864133373238
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.350",
+        "description": "47th-50th Sts - Rockefeller Ctr"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9773680013077,
+          40.76408533296917
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.351",
+        "description": "57th St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.96608964340207,
+          40.76461842721756
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.352",
+        "description": "Lexington Ave - 63rd St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9532350000272,
+          40.75917233237673
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.353",
+        "description": "Roosevelt Island - Main St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.98164872336672,
+          40.76824986405002
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.354",
+        "description": "59th St - Columbus Circle"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.98420956580884,
+          40.759802306100454
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.355",
+        "description": "49th St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.98072973313595,
+          40.76456585757549
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.356",
+        "description": "57th St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.97334700018423,
+          40.76481133181859
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.357",
+        "description": "5th Ave - 59th St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.96737501664441,
+          40.76270918781066
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.358",
+        "description": "Lexington Ave - 59th St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.99105699933408,
+          40.750373332643896
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.359",
+        "description": "34th St - Penn Station"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.98749500043357,
+          40.75529033223394
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.360",
+        "description": "Times Sq - 42nd St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.00762309342785,
+          40.71016249778872
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.361",
+        "description": "Broadway - Nassau St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.00858473606803,
+          40.71411133321603
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.362",
+        "description": "Chambers St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.98973500043807,
+          40.757308330874906
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.363",
+        "description": "42nd St - Port Authority Bus Term"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.94906699828148,
+          40.694619331634556
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.364",
+        "description": "Myrtle-Willoughby Aves"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.95023400050613,
+          40.70037699858555
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.365",
+        "description": "Flushing Ave"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.99276500454653,
+          40.742954649954534
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.366",
+        "description": "23rd St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.98777189015537,
+          40.749789732015216
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.367",
+        "description": "Herald Sq - 34th St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.98503623995641,
+          40.68840880854297
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.368",
+        "description": "Hoyt - Schermerhorn Sts"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.98721815311175,
+          40.69247096951185
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.369",
+        "description": "Jay St - Borough Hall"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.99017700117358,
+          40.71385533315342
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.370",
+        "description": "East Broadway"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.98807806837894,
+          40.7186810747252
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.371",
+        "description": "Delancey St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.98993799949142,
+          40.7234019985678
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.372",
+        "description": "Lower East Side - 2nd Ave"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.94137734825625,
+          40.70040473580167
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.373",
+        "description": "Flushing Ave"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.93562300040666,
+          40.69719533267945
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.374",
+        "description": "Myrtle Ave"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.98977899967628,
+          40.67027199964862
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.375",
+        "description": "4th Ave"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.99589172757457,
+          40.673641393676355
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.376",
+        "description": "Smith - 9th Sts"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9907564955075,
+          40.68611088004987
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.377",
+        "description": "Bergen St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.98605667829871,
+          40.69225572843644
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.378",
+        "description": "Lawrence St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.99181830913476,
+          40.69419681318785
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.379",
+        "description": "Court St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.99053886168421,
+          40.73587259966802
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.380",
+        "description": "Union Sq - 14th St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9893440004543,
+          40.741302999235565
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.381",
+        "description": "23rd St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.99287200058954,
+          40.66541399916061
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.382",
+        "description": "Prospect Ave"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.98830199970392,
+          40.67084699929032
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.383",
+        "description": "9th St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.98575000098687,
+          40.73269133168614
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.384",
+        "description": "3rd Ave"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.99066976943077,
+          40.73476364459351
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.385",
+        "description": "Union Sq - 14th St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.8965480007524,
+          40.67454233193614
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.386",
+        "description": "Liberty Ave"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.90531600029097,
+          40.678333998894786
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.387",
+        "description": "Broadway Junction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.01788099968466,
+          40.64136199850979
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.388",
+        "description": "59th St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.01000600035947,
+          40.64893899894614
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.389",
+        "description": "45th St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.00354899956918,
+          40.655143998818986
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.390",
+        "description": "36th St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.99444874408539,
+          40.6464844099138
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.391",
+        "description": "9th Ave"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.01403400049041,
+          40.64506899957638
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.392",
+        "description": "53rd St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.99420223752821,
+          40.640913043659836
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.393",
+        "description": "Ft Hamilton Pkwy"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.99809099983278,
+          40.660396999388546
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.394",
+        "description": "25th St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9949469798202,
+          40.68027368376412
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.395",
+        "description": "Carroll St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.00373899872895,
+          40.72622733401917
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.396",
+        "description": "Spring St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.93796900163547,
+          40.85169533172883
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.397",
+        "description": "181st St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.93417999937546,
+          40.859022331286745
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.398",
+        "description": "190th St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.95479778092773,
+          40.80505846617425
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.399",
+        "description": "116th St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.95224799754354,
+          40.81107200539482
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.400",
+        "description": "125th St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.99770200007187,
+          40.72432899829275
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.401",
+        "description": "Prince St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.99250799890923,
+          40.73046533105735
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.402",
+        "description": "8th St - NYU"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.00657100024904,
+          40.70941633136059
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.403",
+        "description": "Fulton St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.00881099987157,
+          40.71305133126757
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.404",
+        "description": "Park Pl"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.00926600172441,
+          40.7154783322407
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.405",
+        "description": "Chambers St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.98506379611648,
+          40.69054451751926
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.406",
+        "description": "Hoyt St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.98999799906528,
+          40.69321933172708
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.407",
+        "description": "Borough Hall"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.90387900070533,
+          40.858407332558244
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.408",
+        "description": "183rd St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9010339983319,
+          40.86280333227336
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.409",
+        "description": "Fordham Rd"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.00974461478481,
+          40.71256425917418
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.410",
+        "description": "World Trade Center"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.00522900191187,
+          40.720824332145696
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.411",
+        "description": "Canal St - Holland Tunnel"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.94151400028578,
+          40.83051833207483
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.412",
+        "description": "155th St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.93989200159308,
+          40.83601333167216
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.413",
+        "description": "163rd St - Amsterdam Av"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.00793800087732,
+          40.710022998677935
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.414",
+        "description": "Fulton St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.00340673089002,
+          40.713234121799836
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.415",
+        "description": "Chambers St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.99982638555139,
+          40.7181742090284
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.416",
+        "description": "Canal St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.0069858179477,
+          40.71327266359828
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.417",
+        "description": "City Hall"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.00182599973184,
+          40.7194653338443
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.418",
+        "description": "Canal St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.01316895983929,
+          40.701730840020005
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.419",
+        "description": "South Ferry"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.01400799848192,
+          40.70491433156353
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.420",
+        "description": "Bowling Green"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.01186199920531,
+          40.70755733342955
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.421",
+        "description": "Wall St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.01300723736428,
+          40.703142706426924
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.422",
+        "description": "Whitehall St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.01297456237405,
+          40.70774508901753
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.423",
+        "description": "Rector St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.89589800086408,
+          40.70622633104967
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.424",
+        "description": "Fresh Pond Rd"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.88957722978758,
+          40.711431637346294
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.425",
+        "description": "Middle Village - Metropolitan Ave"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.01378300080624,
+          40.70751333210902
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.426",
+        "description": "Rector St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.01218800069748,
+          40.711835333592205
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.427",
+        "description": "Cortlandt St (Temporarily Closed)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.00950899874383,
+          40.710368330997916
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.428",
+        "description": "Fulton St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.01105600048916,
+          40.70647633318466
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.429",
+        "description": "Broad St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.01113196483963,
+          40.71051331673736
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.430",
+        "description": "Cortlandt St (NB only)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.0090999989945,
+          40.70682133185746
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.431",
+        "description": "Wall St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9272709991317,
+          40.86549133160925
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.432",
+        "description": "Dyckman St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.99375299925889,
+          40.71826733199076
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.433",
+        "description": "Grand St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9962039984028,
+          40.72529733136624
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.434",
+        "description": "Broadway - Lafayette St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.99380690672804,
+          40.72024721580506
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.435",
+        "description": "Bowery"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.00105471253049,
+          40.718814595889654
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.436",
+        "description": "Canal St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.99804100061169,
+          40.74590633203089
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.437",
+        "description": "23rd St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.99339099930405,
+          40.75228733319803
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.438",
+        "description": "34th St - Penn Station"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.89129866498952,
+          40.74654002355199
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.439",
+        "description": "Jackson Hts - Roosevelt Av"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.00020100059415,
+          40.73782633237534
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.440",
+        "description": "14th St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.94753480832394,
+          40.81790589117516
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.441",
+        "description": "135th St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9962089989117,
+          40.738228331950566
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.442",
+        "description": "14th St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.99775078872285,
+          40.73774180217906
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.443",
+        "description": "6th Ave"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.00257800047764,
+          40.73977699918822
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.444",
+        "description": "8th Ave"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.00168999943747,
+          40.74089333270543
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.445",
+        "description": "14th St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.95042624893817,
+          40.66993848305493
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.446",
+        "description": "Nostrand Ave"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.99308599832653,
+          40.69746633205194
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.447",
+        "description": "Clark St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.95684799980506,
+          40.68137999882649
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.448",
+        "description": "Franklin Ave"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.96583799868547,
+          40.683263331942776
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.449",
+        "description": "Clinton - Washington Aves"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.90307499994638,
+          40.70441233309539
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.450",
+        "description": "Forest Ave"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.94424999696709,
+          40.79502033259065
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.451",
+        "description": "110th St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.95558899978448,
+          40.77949233083758
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.452",
+        "description": "86th St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.98688499982445,
+          40.69974299998894
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.453",
+        "description": "York St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9905310009556,
+          40.699337331804976
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.454",
+        "description": "High St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.97394599824156,
+          40.686113332368286
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.455",
+        "description": "Lafayette Ave"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.95058920055882,
+          40.66788393563946
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.456",
+        "description": "President St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.87875099890873,
+          40.886037332211195
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.457",
+        "description": "Woodlawn"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.99465900013318,
+          40.725914998796796
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.458",
+        "description": "Bleecker St (Uptown)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.94747800151535,
+          40.79060033204227
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.459",
+        "description": "103rd St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.87210599994202,
+          40.675377331000455
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.460",
+        "description": "Euclid Ave"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.85146999893553,
+          40.67984333345851
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.461",
+        "description": "88th St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.96379005494857,
+          40.640940497787355
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.462",
+        "description": "Cortelyou Rd"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.94161699828473,
+          40.798629332912505
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.463",
+        "description": "116th St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.86081599995802,
+          40.8332263312468
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.464",
+        "description": "Parkchester"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.00688600226547,
+          40.71931833327351
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.465",
+        "description": "Franklin St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.85899200121284,
+          40.67937133363779
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.466",
+        "description": "80th St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.98196299871366,
+          40.75382133266057
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.467",
+        "description": "5th Ave - Bryant Pk"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9971409995061,
+          40.72230133238419
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.468",
+        "description": "Spring St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.93759400019057,
+          40.80413833309592
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.469",
+        "description": "125th St"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.98123599855967,
+          40.577281332511674
+        ]
+      },
+      "properties": {
+        "name": "geo_arq3-7z49-1.470",
+        "description": "Coney Island - Stillwell Av"
+      }
+    }
+  ]
+}
