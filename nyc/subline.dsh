@@ -1,0 +1,6 @@
+def subline Name Ss Color Sop 
+	Ls=Ss
+	Lop=Sop/2
+	geomark     Name Ss Color Sop
+	geopathfile Name Ls Color Lop
+edef

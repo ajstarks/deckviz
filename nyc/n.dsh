@@ -1,50 +1,122 @@
 deck
+	// boundaries
+	nyc1         = "geo:40.497607,-74.265763;crs=wgs84;u=0"
+	nyc2         = "geo:40.923012,-73.666246;crs=wgs84;u=0"
+	m1_3d        = "geo:40.695,-74.030"
+	m2_3d        = "geo:40.885,-73.905"
+	p1           = "geo:40.87935410591781, -73.85087014845207	P1"
+	p2           = "geo:40.69167374208983, -74.0432587660038	P2"
+	mh1          = "geo:40.89625641679896, -73.84533611232264	MH1"
+	mh2          = "geo:40.69020004057522, -74.05007172433632	MH2"
 
-//	slide "black" "white"
-//		ts           = 1.5
-		nyc1         = "geo:40.497607,-74.265763;crs=wgs84;u=0"
-		nyc2         = "geo:40.923012,-73.666246;crs=wgs84;u=0"
-//		Manhattan    = "geo:40.7831,-73.9712	Manhattan"
-//		Brooklyn     = "geo:40.6782,-73.9442	Brooklyn"
-//		Queens       = "geo:40.7282,-73.7949	Queens"
-//		Bronx        = "geo:40.8448,-73.8648	The\nBronx"
-//		StatenIsland = "geo:40.5795,-74.1502	Staten\nIsland"
-//		geobbox      nyc1 nyc2
-//		geocanvas    0 100 0 100
-//		geolabel     Manhattan ts "sans"
-//		geolabel     Brooklyn ts "sans"
-//		geolabel     Queens ts "sans"
-//		geolabel     Bronx ts "sans"
-//		geolabel     StatenIsland ts "sans"
-//
-//		geoline      "new-york.kml"      0.05 "rgb(200,200,200)" 15
-//		geoline      "husdon.geojson"    0.05 "rgb(200,200,200)"
-//		geoline      "bergen.geojson"    0.05 "red"
-//		geoline      "middlesex.geojson" 0.2 "purple"
-//		geoline      "union.geojson"     0.05 "orange"
-//		georegion    "borough.geojson" "lightsteelblue"
-//		geoline      "borough.geojson" 0.1 "steelblue"
-//		geoline      "/Users/ajstarks/Downloads/nyc-streets.geojson" 0.05 "black"
-//	eslide
+	// Places
+	gwb          = "geo:40.8510,-73.9450	George Washington\nBridge"
+	timesq       = "geo:40.7589,-73.9851	Times\nSquare"
+	centralPark  = "geo:40.7850,-73.9680	Central Park"
+	Manhattan    = "geo:40.7831,-73.9712	Manhattan"
+	Brooklyn     = "geo:40.6782,-73.9442	Brooklyn"
+	Queens       = "geo:40.7282,-73.7949	Queens"
+	Bronx        = "geo:40.8448,-73.8648	The\nBronx"
+	StatenIsland = "geo:40.5795,-74.1502	Staten\nIsland"
+	
+	slide "black" "white"
+		ts                     = 1.2
+		substationSize         = 0.5
+		sublineSize            = substationSize
+		subop        = 100
+		lineop       = subop-50
+		labelcolor   = "gray"
+		bordercolor  = "lightsteelblue"
+		linecolor    = "rgb(200,200,200)"
+		regioncolor  = "tan"
+		streetcolor  = "gray"
+		hscolor      = "red"
+		stationcolor = "orange"
 
-	slide "rgb(144,218,238)"
-		m1_3d="geo:40.695,-74.030"
-		m2_3d="geo:40.885,-73.905"
-		gwb="geo:40.851,-73.945	George Washington\nBridge"
-		timesquare="geo:40.7589,-73.9851	Times\nSquare"
-		centralpark="geo:40.785,-73.968	Central Park"
+		ind8thColor= 		"#0039a6"
+		ind6thColor= 		"#ff6319"
+		indcrosstownColor=	"#6cbe45"
+		bmtcanarsieColor=	"#a7a9ac"
+		bmtnassauColor=		"#996633"
+		bmtbroadwayColor=   "#fccc0a"
+		irtbroadwayColor=	"#ee352e"
+		irtlexingtonColor=  "#00933c"
+		irtflushingColor= 	"#b933ad"
+		ind2ndColor=        "#00add0"
+		sirColor=    		"#08179c"
 
-		p1="geo:40.87935410591781, -73.85087014845207	P1"
-		p2="geo:40.69167374208983, -74.0432587660038	P2"	
+		// geometry
+		geobbox      nyc1 nyc2 // mh1 mh2 // nyc1 nyc2
+		geocanvas    0 100 0 100
 
-		geobbox m1_3d m2_3d
-		geoloc p1 "c" 3
-		geoloc p2 "c" 3
-		geoline   "bergen.geojson"  0.1  "black"
-		georegion "bergen.geojson"        "white"
-		geoline   "hudson.geojson"  0.1   "black"
-		georegion "husdon.geojson"        "rgb(204,204,204)"
-		georegion "manhattan.geojson" "white"
-		geoline   "nyc-streets.geojson" 0.05 "gray"
+		// labels
+		geolabel     Manhattan ts "sans" labelcolor
+		geolabel     Brooklyn ts "sans" labelcolor
+		geolabel     Queens ts "sans" labelcolor
+		geolabel     Bronx ts "sans" labelcolor
+		geolabel     StatenIsland ts "sans" labelcolor
+
+		// regions
+		geoline      "husdon.geojson" 0.05 bordercolor
+		geoline      "bergen.geojson" 0.05 bordercolor
+		geoline      "middlesex.geojson" 0.2 bordercolor
+		geoline      "union.geojson" 0.02 bordercolor
+		georegion    "borough.geojson" "linen"
+
+		// features
+		//geomark      "hotspots.d"  0.25 hscolor 50
+		//geomark      "subway.d" 1 "black" 60
+
+		// subway lines
+		geomark      "ind-8th.d" 		substationSize ind8thColor subop
+		geopathfile  "ind-8th.d" 		sublineSize ind8thColor lineop
+
+		geomark      "ind-6th.d" 		substationSize ind6thColor subop
+		geopathfile  "ind-6th.d" 		sublineSize ind6thColor lineop
+
+		geomark      "ind-crosstown.d"	substationSize indcrosstownColor subop
+		geopathfile  "ind-crosstown.d"	sublineSize indcrosstownColor lineop
+
+		geomark      "bmt-canarsie.d"	substationSize bmtcanarsieColor subop
+		geopathfile  "bmt-canarsie.d"	sublineSize bmtcanarsieColor lineop
+
+		geomark      "bmt-nassau.d"		substationSize bmtnassauColor subop
+		geopathfile  "bmt-nassau.d"		sublineSize bmtnassauColor lineop
+
+		geomark      "bmt-broadway.d"   substationSize bmtbroadwayColor subop
+		geopathfile  "bmt-broadway.d"   sublineSize bmtbroadwayColor lineop
+
+		geomark      "irt-broadway.d"	substationSize irtbroadwayColor subop
+		//geopathfile  "irt-broadway.d"	sublineSize    irtbroadwayColor lineop
+
+		geomark      "irt-lexington.d"  substationSize irtlexingtonColor subop
+		geopathfile  "irt-lexington.d"  sublineSize irtlexingtonColor lineop
+
+		geomark      "irt-flushing.d" 	substationSize irtflushingColor subop
+		geopathfile  "irt-flushing.d"   sublineSize irtflushingColor lineop
+
+		geomark      "ind-2nd.d"        substationSize ind2ndColor subop
+		geopathfile  "ind-2nd.d"        sublineSize ind2ndColor subop
+
+		geomark      "sir.d"    		substationSize sirColor subop
+		geopathfile  "sir.d"            sublineSize sirColor lineop
+		
+		//geoline      "nyc-streets.geojson" 0.05 streetcolor
+		//geoline      "staten-island-roads.geojson" 0.05 streetcolor
+		text         "The Streets of New York City" 2 90 4 "sans"
 	eslide
+
+//	slide "black"
+//		geobbox      m1_3d m2_3d
+//		geoline      "bergen.geojson" 0.02 "black"
+//		georegion    "bergen.geojson" "white"
+//		geoline      "husdon.geojson" 0.02 "black"
+//		georegion    "husdon.geojson" "white"
+//		geoline      "ny-counties.geojson" 0.1 "white"
+//		geomark      "hotspots.d"  0.5 "red" 50
+//		geomark      "subway.d" 0.5 stationcolor
+//		geoline      "nyc-streets.geojson" 0.05 "gray"
+//		geoline      "staten-island-roads.geojson" 0.05 "gray"
+//		text         "The Streets of New York City" 5 90 4 "sans" "black"
+//	eslide
 edeck
