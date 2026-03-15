@@ -1,0 +1,6 @@
+def trainline Name Size Color Op
+	marksize=Size
+	pathsize=Size
+	geopathfile Name pathsize Color Op
+	geomark     Name marksize Color
+edef

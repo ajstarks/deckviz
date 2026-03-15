@@ -1,0 +1,20 @@
+list listc listop 1 "sans" mabcolor 100 lspacing
+  li `Suffern`
+  li `Mahwah`
+  li `Rte 17 Ramsey`
+  li `Ramsey`
+  li `Allendale`
+  li `Waldwick`
+  li `Ho-Ho-Kus`
+  li `Ridgewood`
+  li `Glen Rock-Boro Hall`
+  li `Hawthorne`
+  li `Paterson`
+  li `Clifton`
+  li `Passaic`
+  li `Delawanna`
+  li `Lyndhurst`
+  li `Kingsland`
+  li `Secaucus Junction`
+  li `Hoboken Terminal`
+elist

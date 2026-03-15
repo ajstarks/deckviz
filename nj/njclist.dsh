@@ -1,0 +1,28 @@
+list listc listop 1 "sans" njccolor 100 lspacing
+  li `Bay Head`
+  li `Point Pleasant`
+  li `Manasquan`
+  li `Spring Lake`
+  li `Belmar`
+  li `Bradley Beach`
+  li `Asbury Park`
+  li `Allenhurst`
+  li `Elberon`
+  li `Long Branch`
+  li `Monmouth Park`
+  li `Little Silver`
+  li `Red Bank`
+  li `Middletown`
+  li `Hazlet`
+  li `Aberdeen-Matawan`
+  li `South Amboy`
+  li `Perth Amboy`
+  li `Woodbridge`
+  li `Avenel`
+  li `Rahway`
+  li `Linden`
+  li `Elizabeth`
+  li `North Elizabeth`
+  li `Newark Airport`
+  li `Newark Penn Station`
+elist

@@ -1,0 +1,11 @@
+list listc listop 1 "sans" atccolor 100 lspacing
+  li `30th Street Station`
+  li `Pennsauken Transit Center`
+  li `Cherry Hill`
+  li `Lindenwold`
+  li `Atco`
+  li `Hammonton`
+  li `Egg Harbor City`
+  li `Absecon`
+  li `Atlantic City`
+elist

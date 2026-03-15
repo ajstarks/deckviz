@@ -1,0 +1,11 @@
+ss*=2
+circle X Y ss rvlcolor
+circle X Y ss njccolor
+circle X Y ss neccolor
+circle X Y ss mobocolor
+circle X Y ss mbcolor
+circle X Y ss accolor
+circle X Y ss pavcolor
+circle X Y ss motcolor
+circle X Y ss gscolor
+circle X Y ss pascolor

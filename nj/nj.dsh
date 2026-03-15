@@ -1,54 +1,74 @@
 deck
-	slide //"black"
-		nj1="geo:38.928212038110374,-75.56031536375363"
-		nj2="geo:41.357632843118424,-73.8948829510295"
-		geoLongMax=0-73.8948829510295
-		geoLongMin=0-75.56031536375363
-		geoLatMin=38.928212038110374
-		geoLatMax=41.357632843118424
-		ss=0.5
+	import "trainline.dsh"
+	slide // "rgb(180,180,180)"
+		//ruler
+		nj1="geo:41.357632843118424,-73.8948829510295"
+		nj2="geo:38.928212038110374,-75.56031536375363"
+
 		rvlcolor="#f28500"
 		njccolor="#05a5E4"
 		neccolor="#bb3841"
 		pascolor="#a11a8c"
-		mobocolor="#e76c5b"
-		mbcolor="#fece0a"
-		accolor="#005caa"
+		mobcolor="#e76c5b"
+		mabcolor="#fece0a"
+		atccolor="#005caa"
 		pavcolor="#8e258d"
 		motcolor="#00a94f"
-		gscolor="#a2d5ae"
-		pathop=50
-		geocanvas 25 70 5 95
+		gstcolor="#a2d5ae"
+		bercolor="#a3b6d1"
+		ss=0.6
+		pathop=40
 
-		image "njt-logo.png" 15 90 20 0
+		geobbox nj1 nj2
+		geocanvas 15 55 5 95
+
+		image "njt-logo.png" 15 94 20 0
+
+		// list of lines
+		grid "ngrid.dsh" 5 95 30 5 0
+
+		// Routes on a map
 		georegion "NJ_Counties.geojson" "linen"
+		trainline "rvl.d" ss rvlcolor pathop
+		trainline "njc.d" ss njccolor pathop
+		trainline "nec.d" ss neccolor pathop
+		trainline "mob.d" ss mobcolor pathop
+		trainline "ber.d" ss bercolor pathop
+		trainline "mab.d" ss mabcolor pathop
+		trainline "atc.d" ss atccolor pathop
+		trainline "pav.d" ss pavcolor pathop
+		trainline "mot.d" ss motcolor pathop
+		trainline "gst.d" ss gstcolor pathop
 
-		geopathfile "rvl.d" ss rvlcolor pathop
-		geomark     "rvl.d" ss rvlcolor
+		lt=98        // list top
+		ll=57        // list left
+		listsize=0.75 // list text size
+		lspacing=1.15 // list spacing
 
-		geopathfile "njc.d" ss njccolor pathop
-		geomark     "njc.d" ss njccolor
-
-		geopathfile "nec.d" ss neccolor pathop
-		geomark     "nec.d" ss neccolor
-
-		geopathfile "mobo.d" ss mobocolor pathop
-		geomark     "mobo.d" ss mobocolor
-
-		geopathfile "mb.d" ss mbcolor pathop
-		geomark     "mb.d" ss mbcolor
-
-		geopathfile "ac.d" ss accolor pathop
-		geomark     "ac.d" ss accolor
-
-		geopathfile "pav.d" ss pavcolor pathop
-		geomark     "pav.d" ss pavcolor
-
-		geopathfile "mot.d" ss motcolor pathop
-		geomark     "mot.d" ss motcolor
-
-		geopathfile "gs.d" ss gscolor pathop
-		geomark     "gs.d" ss gscolor
+		// list of stations
+		listop=lt
+		listc=ll
+		include "rvllist.dsh"
+		listop-=31
+		include "njclist.dsh"
+		listop-=42
+		include "neclist.dsh"
+		listc+=12
+		listop=lt
+		include "moblist.dsh"
+		listop-=43
+		include "berlist.dsh"
+		listop-=28
+		include "mablist.dsh"
+		listop=lt
+		listc+=14
+		include "pavlist.dsh"
+		listop-=30
+		include "motlist.dsh"
+		listop-=27
+		include "gstlist.dsh"
+		listop-=20
+		include "atclist.dsh"
 		
 	eslide
 edeck

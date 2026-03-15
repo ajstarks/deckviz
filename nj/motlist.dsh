@@ -1,0 +1,18 @@
+list listc listop 1 "sans" motcolor 100 lspacing
+  li `Mount Tabor`
+  li `Morris Plains`
+  li `Morristown`
+  li `Convent Station`
+  li `Madison`
+  li `Chatham`
+  li `Summit`
+  li `Short Hills`
+  li `Millburn`
+  li `Maplewood`
+  li `South Orange`
+  li `Mountain Station`
+  li `Highland Avenue`
+  li `Orange`
+  li `Brick Church`
+  li `East Orange`
+elist

@@ -18,4 +18,3 @@ geo:40.65557,-74.30288	Cranford
 geo:40.66711,-74.2664	Roselle Park
 geo:40.68377,-74.23843	Union
 geo:40.73426,-74.16454	Newark Penn Station	NEC / NJCL / RVL
-

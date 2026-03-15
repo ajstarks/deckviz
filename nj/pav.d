@@ -15,3 +15,5 @@ geo:40.89446,-74.04378	Anderson Street-Hackensack
 geo:40.879,-74.05188	Essex Street-Hackensack
 geo:40.86489,-74.06265	Teterboro-Williams Ave
 geo:40.84387,-74.07879	Wood-Ridge
+geo:40.76119,-74.07582	Secaucus Junction
+geo:40.73485,-74.02804	Hoboken Terminal

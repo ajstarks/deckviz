@@ -1,2 +1,2 @@
 #!/bin/sh
-decksh nj.dsh|pdfr -layers=poly:text:line:ellipse:image
+decksh nj.dsh|pdfr -sans NotoSans-Regular -layers=poly:text:line:ellipse:image:list

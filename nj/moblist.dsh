@@ -1,0 +1,29 @@
+list listc listop 1 "sans" mobcolor 100 lspacing
+  li `Hackettstown`
+  li `Mount Olive`
+  li `Netcong`
+  li `Lake Hopatcong`
+  li `Mt Arlington`
+  li `Dover`
+  li `Denville`
+  li `Mountain Lakes`
+  li `Boonton`
+  li `Towaco`
+  li `Lincoln Park`
+  li `Mountain View-Wayne`
+  li `Wayne Route 23`
+  li `Little Falls`
+  li `Montclair St Univ`
+  li `Montclair Heights`
+  li `Mountain Avenue`
+  li `Upper Montclair`
+  li `Watchung Avenue`
+  li `Walnut Street`
+  li `Bay Street-Montclair`
+  li `Glen Ridge`
+  li `Bloomfield`
+  li `Watsessing`
+  li `Newark Broad Street`
+  li `Secaucus Junction`
+  li `Hoboken Terminal`
+elist

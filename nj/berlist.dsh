@@ -1,0 +1,19 @@
+list listc listop 1 "sans" bercolor 100 lspacing
+  li `Suffern`
+  li `Mahwah`
+  li `Rte 17 Ramsey`
+  li `Ramsey`
+  li `Allendale`
+  li `Waldwick`
+  li `Ho-Ho-Kus`
+  li `Ridgewood`
+  li `Glen Rock-Main`
+  li `Radburn`
+  li `Broadway`
+  li `Plauderville`
+  li `Garfield`
+  li `Westmore`
+  li `Rutherford`
+  li `Secaucus Junction`
+  li `Hoboken Terminal`
+elist

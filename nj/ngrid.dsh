@@ -1,0 +1,11 @@
+labelsize=2
+legend "Raritan Valley"  X Y  labelsize  "sans" rvlcolor
+legend "New Jersey Coast" X Y  labelsize "sans" njccolor
+legend "Northeast Corridor" X Y  labelsize "sans" neccolor
+legend "Monclair-Boonton" X Y  labelsize "sans" mobcolor
+legend "Bergen County" X Y labelsize "sans" bercolor
+legend "Main/Bergen" X Y  labelsize "sans" mabcolor
+legend "Pascack Valley" X Y  labelsize "sans" pavcolor
+legend "Morristown" X Y  labelsize "sans" motcolor
+legend "Gladstone" X Y  labelsize "sans" gstcolor
+legend "Atlantic Coast" X Y  labelsize "sans" atccolor

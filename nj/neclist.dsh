@@ -1,0 +1,17 @@
+list listc listop 1 "sans" neccolor 100 lspacing
+  li `Trenton`
+  li `Hamilton`
+  li `Princeton`
+  li `Princeton Jct.`
+  li `Jersey Avenue`
+  li `New Brunswick`
+  li `Edison`
+  li `Metuchen`
+  li `Metropark`
+  li `Rahway`
+  li `Linden`
+  li `Elizabeth`
+  li `North Elizabeth`
+  li `Newark Airport`
+  li `Newark Penn Station`
+elist
