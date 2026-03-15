@@ -1,0 +1,54 @@
+deck
+	slide //"black"
+		nj1="geo:38.928212038110374,-75.56031536375363"
+		nj2="geo:41.357632843118424,-73.8948829510295"
+		geoLongMax=0-73.8948829510295
+		geoLongMin=0-75.56031536375363
+		geoLatMin=38.928212038110374
+		geoLatMax=41.357632843118424
+		ss=0.5
+		rvlcolor="#f28500"
+		njccolor="#05a5E4"
+		neccolor="#bb3841"
+		pascolor="#a11a8c"
+		mobocolor="#e76c5b"
+		mbcolor="#fece0a"
+		accolor="#005caa"
+		pavcolor="#8e258d"
+		motcolor="#00a94f"
+		gscolor="#a2d5ae"
+		pathop=50
+		geocanvas 25 70 5 95
+
+		image "njt-logo.png" 15 90 20 0
+		georegion "NJ_Counties.geojson" "linen"
+
+		geopathfile "rvl.d" ss rvlcolor pathop
+		geomark     "rvl.d" ss rvlcolor
+
+		geopathfile "njc.d" ss njccolor pathop
+		geomark     "njc.d" ss njccolor
+
+		geopathfile "nec.d" ss neccolor pathop
+		geomark     "nec.d" ss neccolor
+
+		geopathfile "mobo.d" ss mobocolor pathop
+		geomark     "mobo.d" ss mobocolor
+
+		geopathfile "mb.d" ss mbcolor pathop
+		geomark     "mb.d" ss mbcolor
+
+		geopathfile "ac.d" ss accolor pathop
+		geomark     "ac.d" ss accolor
+
+		geopathfile "pav.d" ss pavcolor pathop
+		geomark     "pav.d" ss pavcolor
+
+		geopathfile "mot.d" ss motcolor pathop
+		geomark     "mot.d" ss motcolor
+
+		geopathfile "gs.d" ss gscolor pathop
+		geomark     "gs.d" ss gscolor
+		
+	eslide
+edeck

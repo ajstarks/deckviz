@@ -1,0 +1,17 @@
+# Morristown #00494f
+geo:40.76104,-74.21096	East Orange
+geo:40.76549,-74.21927	Brick Church
+geo:40.77189,-74.23313	Orange
+geo:40.76688,-74.24372	Highland Avenue
+geo:40.75542,-74.25299	Mountain Station
+geo:40.7459,-74.26058	South Orange
+geo:40.73116,-74.2754	Maplewood
+geo:40.72563,-74.30381	Millburn
+geo:40.72526,-74.3238	Short Hills
+geo:40.71654,-74.35775	Summit
+geo:40.74019,-74.38496	Chatham
+geo:40.75707,-74.41513	Madison
+geo:40.77903,-74.4434	Convent Station
+geo:40.79722,-74.47416	Morristown
+geo:40.82872,-74.4782	Morris Plains
+geo:40.87587,-74.48193	Mount Tabor
