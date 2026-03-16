@@ -1,4 +1,4 @@
-list listc listop 1 "sans" pavcolor 100 lspacing
+list listc listop listsize "sans" pavcolor 100 lspacing
   li `Spring Valley`
   li `Nanuet`
   li `Pearl River`

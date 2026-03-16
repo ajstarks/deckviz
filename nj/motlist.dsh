@@ -1,4 +1,4 @@
-list listc listop 1 "sans" motcolor 100 lspacing
+list listc listop listsize "sans" motcolor 100 lspacing
   li `Mount Tabor`
   li `Morris Plains`
   li `Morristown`
@@ -15,4 +15,6 @@ list listc listop 1 "sans" motcolor 100 lspacing
   li `Orange`
   li `Brick Church`
   li `East Orange`
+  li `Newark Broad`
+  li `Secaucus Junction`
 elist

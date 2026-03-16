@@ -1,4 +1,4 @@
-list listc listop 1 "sans" njccolor 100 lspacing
+list listc listop listsize "sans" njccolor 100 lspacing
   li `Bay Head`
   li `Point Pleasant`
   li `Manasquan`
@@ -25,4 +25,5 @@ list listc listop 1 "sans" njccolor 100 lspacing
   li `North Elizabeth`
   li `Newark Airport`
   li `Newark Penn Station`
+  li `Secaucus Junction`
 elist

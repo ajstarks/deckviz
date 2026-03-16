@@ -1,4 +1,4 @@
-list listc listop 1 "sans" atccolor 100 lspacing
+list listc listop listsize "sans" atccolor 100 lspacing
   li `30th Street Station`
   li `Pennsauken Transit Center`
   li `Cherry Hill`

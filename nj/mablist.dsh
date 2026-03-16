@@ -1,4 +1,4 @@
-list listc listop 1 "sans" mabcolor 100 lspacing
+list listc listop listsize "sans" mabcolor 100 lspacing
   li `Suffern`
   li `Mahwah`
   li `Rte 17 Ramsey`

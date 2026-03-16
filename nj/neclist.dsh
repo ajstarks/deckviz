@@ -1,4 +1,4 @@
-list listc listop 1 "sans" neccolor 100 lspacing
+list listc listop listsize "sans" neccolor 100 lspacing
   li `Trenton`
   li `Hamilton`
   li `Princeton`
@@ -14,4 +14,6 @@ list listc listop 1 "sans" neccolor 100 lspacing
   li `North Elizabeth`
   li `Newark Airport`
   li `Newark Penn Station`
+  li `Secaucus Junction`
+  li ``
 elist

@@ -16,10 +16,12 @@ deck
 		motcolor="#00a94f"
 		gstcolor="#a2d5ae"
 		bercolor="#a3b6d1"
-		ss=0.6
-		pathop=40
 
-		geobbox nj1 nj2
+		ss=0.75
+		ends=0.7
+		pathop=20
+
+		geobbox   nj1 nj2
 		geocanvas 15 55 5 95
 
 		image "njt-logo.png" 15 94 20 0
@@ -29,6 +31,7 @@ deck
 
 		// Routes on a map
 		georegion "NJ_Counties.geojson" "linen"
+		geoloc    "endpoints.d" "b" ends
 		trainline "rvl.d" ss rvlcolor pathop
 		trainline "njc.d" ss njccolor pathop
 		trainline "nec.d" ss neccolor pathop
@@ -39,36 +42,35 @@ deck
 		trainline "pav.d" ss pavcolor pathop
 		trainline "mot.d" ss motcolor pathop
 		trainline "gst.d" ss gstcolor pathop
-
-		lt=98        // list top
-		ll=57        // list left
-		listsize=0.75 // list text size
+		
+		lt=95         // list top
+		ll=60         // list left
+		listsize=1.0 // list text size
 		lspacing=1.15 // list spacing
 
 		// list of stations
 		listop=lt
 		listc=ll
 		include "rvllist.dsh"
-		listop-=31
+		listop-=29
 		include "njclist.dsh"
-		listop-=42
+		listop-=41
 		include "neclist.dsh"
 		listc+=12
 		listop=lt
 		include "moblist.dsh"
-		listop-=43
+		listop-=41
 		include "berlist.dsh"
-		listop-=28
+		listop-=26
 		include "mablist.dsh"
 		listop=lt
 		listc+=14
 		include "pavlist.dsh"
-		listop-=30
+		listop-=28
 		include "motlist.dsh"
-		listop-=27
+		listop-=28
 		include "gstlist.dsh"
-		listop-=20
+		listop-=19
 		include "atclist.dsh"
-		
 	eslide
 edeck

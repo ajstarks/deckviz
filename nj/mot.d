@@ -15,3 +15,5 @@ geo:40.76688,-74.24372	Highland Avenue
 geo:40.77189,-74.23313	Orange
 geo:40.76549,-74.21927	Brick Church
 geo:40.76104,-74.21096	East Orange
+geo:40.74762,-74.1719	Newark Broad
+geo:40.76119,-74.07582	Secaucus Junction

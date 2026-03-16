@@ -1,5 +1,5 @@
 #!/bin/sh
 for i in rvl njc nec mob ber mab atc pav mot gst
 do
-	awk -v color=${i}color -F\t 'BEGIN { printf "list listc listop 1 \"sans\" %s 100 lspacing\n", color} NR > 1 {printf "  li `%s`\n", $NF} END {print "elist"}' ${i}.d > ${i}list.dsh
+	awk -v color=${i}color -F\t 'BEGIN { printf "list listc listop listsize \"sans\" %s 100 lspacing\n", color} NR > 1 {printf "  li `%s`\n", $NF} END {print "elist"}' ${i}.d > ${i}list.dsh
 done

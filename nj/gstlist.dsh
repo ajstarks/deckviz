@@ -1,4 +1,4 @@
-list listc listop 1 "sans" gstcolor 100 lspacing
+list listc listop listsize "sans" gstcolor 100 lspacing
   li `Gladstone`
   li `Peapack`
   li `Far Hills`
@@ -11,4 +11,5 @@ list listc listop 1 "sans" gstcolor 100 lspacing
   li `Berkeley Heights`
   li `Murray Hill`
   li `New Providence`
+  li ``
 elist

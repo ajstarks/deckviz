@@ -1,4 +1,4 @@
-list listc listop 1 "sans" rvlcolor 100 lspacing
+list listc listop listsize "sans" rvlcolor 100 lspacing
   li `High Bridge`
   li `Annandale`
   li `Lebanon`
@@ -17,5 +17,5 @@ list listc listop 1 "sans" rvlcolor 100 lspacing
   li `Cranford`
   li `Roselle Park`
   li `Union`
-  li `NEC / NJCL / RVL`
+  li `Newark Penn Station`
 elist

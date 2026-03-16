@@ -1,4 +1,4 @@
-list listc listop 1 "sans" mobcolor 100 lspacing
+list listc listop listsize "sans" mobcolor 100 lspacing
   li `Hackettstown`
   li `Mount Olive`
   li `Netcong`

@@ -14,3 +14,5 @@ geo:40.66786,-74.21517	Elizabeth
 geo:40.68027,-74.20616	North Elizabeth
 geo:40.70442,-74.19071	Newark Airport
 geo:40.73426,-74.16454	Newark Penn Station
+geo:40.76119,-74.07582	Secaucus Junction
+
