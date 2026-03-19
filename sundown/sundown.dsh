@@ -16,8 +16,11 @@ deck
 
 		author1       = "Conception and Research: Leia Belt (lbelt@ucmerced.edu)"
 		author2       = "Visual Engineering: Anthony Starks (ajstarks@ajstarks.org)"
+
+		sstext        = "Sundown towns spanned the U.S., with a strong concentration in the Midwest, exposing an often overlooked legacy of racism."
 		
 		footer        = "Source: Loewen, J. (2005) Sundown towns: A hidden dimension of American racism. The New Press."
+		footer2       = "Sundown towns spanned the U.S., with a strong concentration in the Midwest, exposing an often overlooked legacy of racism."
 		legtext       = "Sundown Town Sightings"
 		catext        = "Several long time residents tell of a sign reading “Nigger, Don't Let The Sun Set On You in Oildale”."
 		altext        = "“I was born in Mobile in 1931...The sign read: Nigger, don't be caught here after the sun goes down”."
@@ -39,12 +42,12 @@ deck
 	// titles
 		ctext         title              tx ty ts
 		ctext         subtitle           tx sy ss "serif"
-	    textblockfile "sundown-desc.txt" 20 87 60 1.5
+	    textblockfile "sundown-desc0.txt" 20 87 60 1.5
 	// map
 		uswidth       = 80
 		usheight      = 40
 		geobound      24.45 49 -124.75 -66.95
-		geocanvas     15 95 30 70
+		geocanvas     15 95 30 68
 		geoloc        elwood 		"c" ls "sans" bgcolor
 		geoloc        mobile 		"c" 1.5 "sans" "bgcolor"
 		geoloc        oildale 		"c" 1.5 "sans" bgcolor
@@ -55,7 +58,7 @@ deck
 
 	// annotations
 		textblock     altext             57 36 12 qs "serif"
-		textblock     intext             62 73 15 qs "serif"
+		textblock     intext             62 72 15 qs "serif"
 		textblock     catext              7 47 10 qs "serif"
 		textblock     rocktext           30 65 15 qs "serif" "black"
 		textblock     oretext             4 62  8 qs "serif"
@@ -68,7 +71,7 @@ deck
 		keyc4         = keyc3 + 5
 		keysize       = 2.5
 
-		text          legtext            keyc1 30 2 "sans" "red"
+		text          legtext            keyc1 30 2 "sans" //"red"
 		include       "sdiregions.dsh"
 		text          footer             15 5 ls
 		text          author1 3  1 as
@@ -93,9 +96,9 @@ deck
 		keyc3         = keyc1 + 40
 		keyc4         = keyc3 + 5
 
-		text          legtext            keyc1 30 2 "sans" "red"
+		text          legtext            keyc1 30 2 "sans" //"red"
 		include       "sdiregions.dsh"
-		text          footer             15 5 1.5
+		textblock     footer2             keyc1 10 50 1.5
 		chartbbox 5 90 95 5
 		chartTextSize = 1.3
 		chartPercent = 1
