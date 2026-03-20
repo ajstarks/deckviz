@@ -1,0 +1,2 @@
+#!/bin/sh
+decksh silkroad.dsh|pdfr -layers poly:line:arc:ellipse:text -pagesize 1000x600 -sans NotoSans-Regular

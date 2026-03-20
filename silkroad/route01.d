@@ -1,0 +1,12 @@
+geo:41.0082,28.9784	Constantinople
+geo:35.5910,51.4538	Rey
+geo:37.6622,62.1589	Merv
+geo:39.6542,66.9597	Samarkand
+geo:41.2995,69.2401	Tashkent
+geo:39.4677,75.9937	Kashgar
+geo:38.3909,77.2232	Yarkland
+geo:37.1142,79.9221	Khotan
+geo:39.2200,88.9700	Miran
+geo:40.14110,94.66388	Dunghuang
+geo:34.3416,108.9398	Chang'an
+geo:34.6197,112.4539	Luoyang

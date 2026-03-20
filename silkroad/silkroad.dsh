@@ -1,0 +1,30 @@
+deck
+	regioncolor="#D7C2AD"
+	oceancolor="lightblue"
+	slide "lightblue"
+		text "The Silk Road" 50 92 3
+		//include "silkroad-locations.dsh"
+
+		geobbox  -2 50 20 116
+		geopathfile "route01.d" 0.5 "red" 30
+		geopathfile "route02.d" 0.5 "blue" 30
+		geopathfile "route03.d" 0.5 "green" 30
+		geopathfile "route04.d" 0.5 "purple" 30
+		geopathfile "route05.d" 0.5 "blue" 30
+		geopathfile "route06.d" 0.5 "blue" 30
+
+		geoloc "route01.d" "e" 1 "sans" "black"
+		geoloc "route02.d" "e" 0.75 "sans" "black"
+		geoloc "route03.d" "e" 0.75 "sans" "black"
+		geoloc "route04.d" "e" 0.75 "sans" "black"
+		geoloc "route06.d" "c"
+		geoloc "route05.d" "c"
+
+
+		georegion "asia.json" regioncolor
+		geoline   "asia.json" 0.05 "gray"
+		georegion "europe.json" "gray" 20
+		georegion "africa.json" "gray" 20
+		//geoline  "world.kml" 0.1 "red"
+	eslide
+edeck
