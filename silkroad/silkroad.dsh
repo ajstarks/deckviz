@@ -1,28 +1,61 @@
 deck
+	import "pointline.dsh"
+	import "dotpoint.dsh"
+
 	regioncolor="#D7C2AD"
 	oceancolor="lightblue"
 	slide "lightblue"
-		text "The Silk Road" 50 92 3
+		ruler
+		lw=0.25
+		lop=35
+		ls=0.75
+		ctext "The Silk Road" 50 5 3
 		//include "silkroad-locations.dsh"
 
+		hanoi="geo:21,105.85	Hanoi"
+		guangzhou="geo:23.13,113.26	Guangzhou"
+
 		geobbox  -2 50 20 116
-		geopathfile "route01.d" 0.5 "red" 30
-		geopathfile "route02.d" 0.5 "blue" 30
-		geopathfile "route03.d" 0.5 "green" 30
-		geopathfile "route04.d" 0.5 "purple" 30
-		geopathfile "route05.d" 0.5 "blue" 30
-		geopathfile "route06.d" 0.5 "blue" 30
+		geopathfile "route01.d" lw "red"	lop
+		geopathfile "route02.d" lw "blue"	lop
+		geopathfile "route03.d" lw "green"	lop
+		geopathfile "route04.d" lw "purple"	lop
+		geopathfile "route05.d" lw "green"	lop
+		geopathfile "route06.d" lw "blue"	lop
+		
+		include "route06.dsh"
+//		dotsize=0.5
+//		dotint=1
+//		dotcolor="blue"
+//		dotpoint r06_01 r06_02 dotsize dotint dotcolor
+//		dotpoint r06_02 r06_03 dotsize 1.2 dotcolor
+//		dotpoint r06_03 r06_04 dotsize dotint dotcolor
+//		dotpoint r06_04 r06_05 dotsize dotint dotcolor
+//		dotpoint r06_05 r06_06 dotsize dotint dotcolor
+//		dotpoint r06_06 r06_07 dotsize dotint dotcolor
+//		dotpoint r06_07 r06_08 dotsize dotint dotcolor
+//		dotpoint r06_08 r06_09 dotsize dotint dotcolor
+//		dotpoint r06_09 r06_10 dotsize dotint dotcolor
+//		dotpoint r06_10 r06_11 dotsize dotint dotcolor
+//		dotpoint r06_11 r06_12 dotsize 0.1 dotcolor
+//		dotpoint r06_12 r06_13 dotsize dotint dotcolor
+//		dotpoint r06_13 r06_14 dotsize dotint dotcolor
+//		dotpoint r06_14 r06_15 dotsize dotint dotcolor
+
 
 		geoloc "route01.d" "e" 1 "sans" "black"
-		geoloc "route02.d" "e" 0.75 "sans" "black"
-		geoloc "route03.d" "e" 0.75 "sans" "black"
-		geoloc "route04.d" "e" 0.75 "sans" "black"
-		geoloc "route06.d" "c"
-		geoloc "route05.d" "c"
+		geoloc "route02.d" "e" ls "sans" "black"
+		geoloc "route03.d" "e" ls "sans" "black"
+		geoloc "route04.d" "e" ls "sans" "black"
+		//geoloc "route06.d" "c"
+		//geoloc "route05.d" "c"
+		geoloc hanoi "c" 1.0 "sans" "black"
+		geoloc guangzhou "c" 1.0 "sans" "black"
 
+			
 
 		georegion "asia.json" regioncolor
-		geoline   "asia.json" 0.05 "gray"
+		//geoline   "asia.json" 0.05 "gray"
 		georegion "europe.json" "gray" 20
 		georegion "africa.json" "gray" 20
 		//geoline  "world.kml" 0.1 "red"

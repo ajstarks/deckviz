@@ -1,0 +1,11 @@
+// put a circle at points along a line
+// put this in a loop that varies X
+def pointline X1 Y1 X2 Y2 X Size Color
+	xdiff = X2-X1
+	ydiff = Y2-Y1
+	m = ydiff / xdiff
+	xd = X - X1
+	yp = m * xd
+	yp += Y1
+	circle X yp Size Color
+edef

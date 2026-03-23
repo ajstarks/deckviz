@@ -1,0 +1,14 @@
+// put dots along a line
+def dotpoint Loc1 Loc2 Size Interval Color
+	L1=geocoord Loc1
+	L2=geocoord Loc2
+	begx=L1_x
+	endx=L2_x
+	if begx > endx
+		begx=L2_x
+		endx=L1_x
+	eif
+	for x=begx endx Interval
+		pointline L1_x L1_y L2_x L2_y x Size Color
+	efor
+edef

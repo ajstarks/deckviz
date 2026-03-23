@@ -77,6 +77,7 @@ geo:42.8746,74.5698	Bishkek
 geo:40.5139,72.8161	Osh
 geo:38.3909,77.2232	Yarkland
 # South Asia & India
+geo:24.86,67.01	Karachi
 geo:36.7581,66.8967	Bactra
 geo:34.3529,62.2040	Herat
 geo:31.6289,65.7372	Kandahar
@@ -148,3 +149,5 @@ geo:34.5800,105.7200	Tianshui
 geo:34.3600,107.2300	Baoji
 geo:34.3416,108.9398	Chang'an
 geo:34.6197,112.4539	Luoyang
+geo:21,105.85	Hanoi
+geo:23.13,113.26	Guangzhou
