@@ -1,5 +1,5 @@
 deck
-	bgcolor       = "#1f2b4d" // "#1f2b4b/orangered/80" // 
+	bgcolor       = "#1f2b4b" // "#1f2b4b/orangered/80"
 	fgcolor       = "white"
 	tx            = 50
 	ty            = 95
@@ -21,7 +21,7 @@ deck
 		
 		footer        = "Source: Loewen, J. (2005) Sundown towns: A hidden dimension of American racism. The New Press."
 		footer2       = "Sundown towns spanned the U.S., with a strong concentration in the Midwest, exposing an often overlooked legacy of racism."
-		legtext       = "Sundown Town Sightings"
+		legtext       = "Number of Unique Sites"
 		catext        = "Several long time residents tell of a sign reading “Nigger, Don't Let The Sun Set On You in Oildale”."
 		altext        = "“I was born in Mobile in 1931...The sign read: Nigger, don't be caught here after the sun goes down”."
 		intext        = "One Indiana resident remembers that Tipton, Elwood and Alexandria, all on State Road 28, each had the Sundown signs at the city limits."
@@ -48,21 +48,37 @@ deck
 		usheight      = 40
 		geobound      24.45 49 -124.75 -66.95
 		geocanvas     15 95 30 68
+		
 		geoloc        elwood 		"c" ls "sans" bgcolor
 		geoloc        mobile 		"c" 1.5 "sans" "bgcolor"
 		geoloc        oildale 		"c" 1.5 "sans" bgcolor
 		geoloc        rocksprings 	"c" 1.5 "sans" bgcolor
 		geoloc        eugene 		"b" 1.5 "sans" bgcolor
 		geoloc        vabeach 		"e" 1.5 "sans" "black"
-		geomark       vabeach 0.75 "red"
+		geomark       vabeach       0.75 "red"
 
 	// annotations
 		textblock     altext             57 36 12 qs "serif"
-		textblock     intext             62 72 15 qs "serif"
-		textblock     catext              7 47 10 qs "serif"
+		textblock     intext             69 69 15 qs "serif"
+		textblock     catext              6 48 10 qs "serif"
 		textblock     rocktext           30 65 15 qs "serif" "black"
 		textblock     oretext             4 62  8 qs "serif"
 		textblock     vatext             85 50 10 qs "serif"
+
+		dotsize=0.25
+		dotgap=dotsize*2
+		elc = geocoord elwood
+		dline elc_x elc_y 69 65        dotsize dotgap fgcolor
+		mobc = geocoord mobile
+		dline mobc_x mobc_y mobc_x 37  dotsize dotgap fgcolor
+		vac = geocoord vabeach
+		dline vac_x vac_y 85 vac_y     dotsize dotgap fgcolor
+		euc = geocoord eugene
+		dline euc_x euc_y 13 euc_y     dotsize dotgap fgcolor
+		oilc = geocoord oildale
+		dline oilc_x oilc_y 19 oilc_y  dotsize dotgap fgcolor
+		rcc = geocoord rocksprings
+		dline rcc_x rcc_y rcc_x 60     dotsize dotgap "black"
 
 	// legend
 		keyc1         = geoXmin + 5
@@ -76,7 +92,6 @@ deck
 		text          footer             15 5 ls
 		text          author1 3  1 as
 		etext         author2 97 1 as
-
 	eslide
 
 	slide bgcolor fgcolor
