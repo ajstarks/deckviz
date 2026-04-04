@@ -4,7 +4,7 @@ def moonpoint X Y R Angle Size A1 A2 C1 C2 C3 Orbit
 	//Label=format "%.1f" Angle
 	//ctext Label P_x P_y 1 "mono"
 	circle P_x P_y Size C1 10
-	arc    P_x P_y W W A1 A2 W C2 40
+	arc    P_x P_y W W A1 A2 W C2 20
 
 	if Orbit == 1
 		os=Size*0.4

@@ -1,0 +1,8 @@
+def radial Xp Yp Radius Theta Lw LColor
+	R2=Radius*0.4
+	Rp=polar Xp Yp Radius Theta
+	TLabel=format "%v" Theta
+	Lp=polar Xp Yp R2 Theta
+	line Xp Yp Rp_x Rp_y Lw LColor
+	ctext TLabel Lp_x Lp_y 1 "mono" LColor
+edef
