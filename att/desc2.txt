@@ -1,0 +1,10 @@
+Periodically, during the translunar coast phase, mid-course correction
+may be performed to maintain a circumlunar trajectory and ensure
+that the spacecraft will remain within a 60 nautical mile orbit
+above the moon. This orbit will be maintained by the Command
+Service Module (CSM) throughout the Lunar Module (LM) landing and
+lift-off phases. Midcourse corrections, if required, during the
+transearth coast phase will enable the spacecraft to approach the
+atmosphere at a proper velocity and angle for a safe re-entry.
+Elapsed time to flight from the translunar injection point is
+indicated during the translunar and transearth coast phases.

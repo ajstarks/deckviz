@@ -1,0 +1,8 @@
+This chart displays a polar view of the lunar mission
+profile for July 16, 1969. Translunar injection occurs
+over the Pacific Ocean in the vicinity of the Solomon
+Islands during the second revolution.  The profile is
+typical of the Apollo 11 mission planned for July and
+August 1969.  Each month contains three possible launch
+days with each day targeted to a specific Apollo landing
+site.

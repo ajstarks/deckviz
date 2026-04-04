@@ -1,0 +1,4 @@
+def moonote NoteText X Y R Angle Width Size Color
+	Np=polar X Y R Angle
+	etext NoteText Np_x Np_y Size  "sans" Color
+edef

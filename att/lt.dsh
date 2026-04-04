@@ -1,0 +1,218 @@
+deck
+	canvas 1200 1200
+	import "moonpoint.dsh"
+	import "moonote.dsh"
+	slide
+		title="APOLLO TRANSLUNAR / TRANSEARTH TRAJECTORY PLOTTING CHART"
+		//ruler 2 "silver"
+		ctext  title 50 97 2.5
+
+		// Orbital illustration
+
+		// Center point (Earth)
+		cx=50
+		cy=50
+
+		// phase colors
+		teicolor="green"
+		tlicolor="blue"
+		
+		// note text sizes
+		ns=0.8
+		ns2=ns*1.5
+
+		// key locations
+		loi  = polar  cx cy 39.5   60
+		tei  = polar  cx cy 41.5   96
+		tei2 = polar  cx cy 20.0   97
+		tli  = polar  cx cy 4     220
+		lnd  = polar  cx cy 38.5   73
+		llo  = polar  cx cy 41     85
+		spl  = polar  cx cy 3     200
+		mid  = polar  cx cy 30     80
+
+
+		
+		// earth with orbit
+		circle cx cy 8 "blue" 10
+		image "globe0.png" cx cy 7 0
+
+
+		// events
+		etext "Translunar Injection (Jul 16)"        tli_x tli_y ns "sans" tlicolor
+		btext "Lunar Orbit Insertion (Jul 19)"       loi_x loi_y ns "sans" tlicolor
+		etext "Transearth Injection (Jul 22)"        tei_x tei_y ns "sans" teicolor
+		etext "Lunar Landing (Jul 20)"       lnd_x lnd_y ns "sans" tlicolor
+		btext "Lunar Lift-off (Jul 21)"      llo_x llo_y ns "sans" teicolor
+		etext "Splashdown"   spl_x spl_y ns "sans" teicolor
+
+		curve tli_x tli_y     57.5 36  loi_x  loi_y  0.1 tlicolor
+		curve tei_x tei_y     50.0 91  tei2_x tei2_y 0.1 teicolor
+		curve tei2_x tei2_y   44.0 48  spl_x  spl_y  0.1 teicolor
+		circle tli_x tli_y 0.5 tlicolor 50
+		circle loi_x loi_y 0.5 tlicolor 50
+		circle lnd_x lnd_y 0.5 tlicolor 50
+		circle tei_x tei_y 0.5 teicolor 50
+		circle spl_x spl_y 0.5 teicolor 50
+		rtext "TRANSLUNAR COAST" 61 62 69 ns "sans" tlicolor
+		rtext "TRANSEARTH COAST" 48 60 83 ns "sans" teicolor
+
+	
+		moonote "Position at Launch (Jul 16)" cx cy  46  25 5 ns "black"
+		moonote "Jul 23"   cx cy  42 114 5 ns "black"
+		moonote "Jul 24"   cx cy  42 128 5 ns "black"
+		moonote "Jul 25"   cx cy  42 144 5 ns "black"
+		moonote "Jul 26"   cx cy  42 157 5 ns "black"
+		moonote "Jul 27"   cx cy  42 173 5 ns "black"
+		moonote "Jul 28"   cx cy  42 190 5 ns "black"
+		moonote "Jul 29"   cx cy  42 205 5 ns "black"
+		moonote "Jul 30"   cx cy  42 220 5 ns "black"
+		moonote "Jul 31"   cx cy  42 234 5 ns "black"
+		moonote "Aug  1"   cx cy  42 248 5 ns "black"
+		moonote "Aug  2"   cx cy  42 263 5 ns "black"
+		moonote "Aug  3"   cx cy  42 276 5 ns "black"
+
+
+		// Distance markers
+		for r = 20 80 20 // 50, 100, 150, 200,000 nautical miles
+			circle cx cy r "gray" 7
+		efor
+
+		t1=polar cx cy 10 270
+		t2=polar cx cy 20 270
+		t3=polar cx cy 30 270
+		t4=polar cx cy 40 270
+		//t5=polar cx cy 50 270
+
+		ctext "50,000"   t1_x t1_y ns2
+		ctext "100,000"  t2_x t2_y ns2
+		ctext "150,000"  t3_x t3_y ns2
+		ctext "200,000"  t4_x t4_y ns2
+		//ctext "250,000"  t5_x t5_y ns2
+
+		ny=t1_y-1.5
+		ctext "(nautical miles)" t1_x ny ns
+		
+		ms=2
+		ma1=100
+		ma2=280
+		mcolor1="black"
+		mcolor2="black"
+		obcolor="blue"
+
+		moonpoint cx cy 46  2 ms ma1 ma2 mcolor1 mcolor2 obcolor 0
+		moonpoint cx cy 45 13 ms ma1 ma2 mcolor1 mcolor2 obcolor 0
+		moonpoint cx cy 44 25 ms ma1 ma2 mcolor1 mcolor2 obcolor 0
+		moonpoint cx cy 43 36 ms ma1 ma2 mcolor1 mcolor2 obcolor 0
+		moonpoint cx cy 42 47 ms ma1 ma2 mcolor1 mcolor2 obcolor 0
+		moonpoint cx cy 41 60 ms ma1 ma2 mcolor1 mcolor2 obcolor 1
+		moonpoint cx cy 40 73 ms ma1 ma2 mcolor1 mcolor2 obcolor 1
+		moonpoint cx cy 40 85 ms ma1 ma2 mcolor1 mcolor2 obcolor 1
+		moonpoint cx cy 40 97 ms ma1 ma2 mcolor1 mcolor2 teicolor 1
+
+		
+		
+
+		for v = (114 128 144 157 173 190 205 220 234 248 263 276) //  276 289 301 313 325 335 346 350 )
+			moonpoint cx cy 40 v ms ma1 ma2 mcolor1 mcolor2 "white" 0
+		efor
+//	
+//		moonpoint cx cy 41 289 ms ma1 ma2 mcolor1 mcolor2
+//		moonpoint cx cy 42 301 ms ma1 ma2 mcolor1 mcolor2
+//		moonpoint cx cy 43 313 ms ma1 ma2 mcolor1 mcolor2
+//		moonpoint cx cy 44 325 ms ma1 ma2 mcolor1 mcolor2
+//		moonpoint cx cy 45 335 ms ma1 ma2 mcolor1 mcolor2
+//		moonpoint cx cy 45 346 ms ma1 ma2 mcolor1 mcolor2
+//		moonpoint cx cy 45 350 ms ma1 ma2 mcolor1 mcolor2
+
+
+		// Annotations
+		ttop=22
+		tleft=3
+		tw=14
+		lt=ttop
+		ls=0.6
+		hs=ls*4.5
+		vs=ls*12
+		lc=tleft
+
+		// Left annotation
+		textblockfile "desc1.txt"  tleft lt tw ls
+		lt-=vs
+		
+		list lc lt ls "sans" "" 100 1.4
+			li "Launch Dates"
+			li "July 16"
+			li "July 18"
+			li "July 21"
+		elist
+		lc+=hs
+		list lc lt ls "sans" "" 100 1.4
+			li ""
+			li "Aug 14"
+			li "Aug 16"
+			li "Aug 20"
+		elist
+		lc+=hs
+		list lc lt ls "sans" "" 100 1.4
+			li "Site No."
+			li "2"
+			li "3"
+			li "5"
+		elist
+		lc+=hs
+		list lc lt ls "sans" "" 100 1.4
+			li "Site Coordinates"
+			li "0°42.8'N"
+			li "0°21.2'N"
+			li "1°40.7'N"
+		elist
+		lc+=hs
+		list lc lt ls "sans" "" 100 1.4
+			li ""
+			li "23°42.5'E"
+			li "1°18.0'W"
+			li "41°54.0'W"
+		elist
+		lt-=4.5
+		textblockfile "desc2.txt"  tleft lt tw ls
+		
+		// Right annotation
+		lt=ttop
+		textblock "Approximate flight time for a July 16, 1969 launch date is as follows:" 80 lt 15 ls
+
+		lt-=2
+		list 80 lt ls "sans" "" 100 1.4
+			li ""
+			li "Launch to Translunar Injection"
+			li "Translunar Injection to Lunar Orbit Insertion"
+			li "Lunar Orbit Insertion to Transearth Injection"
+			li "Transearth Injection to Entry Interface"
+			li "Entry Interface to Pacific Ocean Touchdown"
+			li ""
+			li "Total Flight Time"
+		elist
+		list 94 lt ls "sans" "" 100 1.4
+			li "hrs"
+			li "2"
+			li "73"
+			li "59"
+			li "59"
+			li "0"
+			li ""
+			li "195"
+		elist
+		list 96 lt ls "sans" "" 100 1.4
+			li "min"
+			li "44"
+			li "16"
+			li "24"
+			li "37"
+			li "14"
+			li ""
+			li "15"
+		elist
+
+
+	eslide
+edeck
