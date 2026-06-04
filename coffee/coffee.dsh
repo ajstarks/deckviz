@@ -1,0 +1,60 @@
+deck
+	ts=3
+	ls=ts/2
+	coffeeColor="brown"
+	cpuTempColor="orangered"
+	cpuPctColor="steelblue"
+	title="75 Minute Operational and Temperature Analysis of a Coffee Maker Computer (CoffeeMatic PC)"
+	slide
+
+		opts="-bar=f  -line -noteloc=l -val=f -min=0 -max=100 -yrange=0,100,20 -yaxis -grid"
+		
+		textblock title 10 90 75 ts
+		rtext "°C and CPU Usage %" 3 50 90 1.5
+		dchart opts -xlabel=10 -color coffeeColor    "mct.d"
+		dchart opts -xlabel=0 -color cpuTempColor   "med-cpu-temp.txt"
+		dchart opts -xlabel=0  -color cpuPctColor    "med-cpu-pct.txt"
+
+		legend "Median Coffee Temp (°C)" 10 15 ls "sans" coffeeColor
+		legend "Median CPU Temp (°C)"    45 15 ls "sans" cpuTempColor
+		legend "Median CPU Usage %"      75 15 ls "sans" cpuPctColor
+	eslide
+
+	slide
+		opts="-bar=f -vol -volop=30  -noteloc=l -val=f -min=0 -max=100 -yrange=0,100,20 -yaxis -grid"
+		
+		textblock title 10 90 60 ts
+		rtext "°C and CPU Usage %" 3 50 90 1.5
+		dchart opts -xlabel=10 -color coffeeColor    "med-coffee-temp.txt"
+		dchart opts -xlabel=0 -color cpuTempColor   "med-cpu-temp.txt"
+		dchart opts -xlabel=0  -color cpuPctColor    "med-cpu-pct.txt"
+
+		legend "Median Coffee Temp (°C)" 10 15 ls "sans" coffeeColor
+		legend "Median CPU Temp (°C)"    45 15 ls "sans" cpuTempColor
+		legend "Median CPU Usage %"      75 15 ls "sans" cpuPctColor
+	eslide
+
+
+	slide
+		textblock title 10 90 60 ts
+		chartXLabel=10
+		chartVal=false
+		chartGrid=true
+		chartVolOp=25
+		chartYRange="0,100,20"
+
+		areachart "med-coffee-temp.txt" coffeeColor
+		
+		chartGrid=false
+		chartXLabel=0
+
+		areachart "med-cpu-temp.txt"    cpuTempColor
+		areachart "med-cpu-pct.txt"     cpuPctColor
+
+		legend "Median Coffee Temp (°C)" 10 15 ls "sans" coffeeColor
+		legend "Median CPU Temp (°C)"    45 15 ls "sans" cpuTempColor
+		legend "Median CPU Usage %"      75 15 ls "sans" cpuPctColor
+	eslide
+
+
+edeck
