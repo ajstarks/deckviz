@@ -1,0 +1,53 @@
+deck
+	op=90
+	ts=1.1
+	iscolor="steelblue"
+	contcolor="linen"
+	geobound  24.45 50 -124.75 -66.95
+	geocanvas 0 100 5 90
+
+	slide
+		ctext "US Intersate Highway System" 50 92 3
+		geolabel "is-cities.d" ts
+		georegion "usa.kml" contcolor op
+	eslide
+
+	slide
+		ctext "US Intersate Highway System" 50 92 3
+		geolabel "is-cities.d" ts
+		georegion "usa.kml" contcolor op
+		geoborder "USA_Freeway_System.geojson" 0.075 "gray"
+	eslide
+
+	slide
+		ctext "US Intersate Highway System" 50 92 3
+		geolabel "is-cities.d" ts
+		georegion "usa.kml" contcolor op
+		geoborder "east-west.json" 0.1 "red"
+		
+	eslide
+
+	slide
+		ctext "US Intersate Highway System" 50 92 3
+		geolabel "is-cities.d" ts
+		georegion "usa.kml" contcolor op
+		geoborder "north-south.json" 0.1 "green"
+	eslide
+
+	slide
+		ctext "US Intersate Highway System" 50 92 3
+		geolabel "is-cities.d" ts
+		georegion "usa.kml" contcolor op
+		geoborder "east-west.json" 0.1 "red"
+		geoborder "north-south.json" 0.1 "green"
+	eslide
+
+	slide
+		ctext "US Intersate Highway System" 50 92 3
+		geolabel "is-cities.d" ts
+		georegion "usa.kml" contcolor op
+		geoborder "USA_Freeway_System.geojson" 0.075 "gray"
+		geoborder "east-west.json" 0.1 "red"
+		geoborder "north-south.json" 0.1 "green"
+	eslide
+edeck
