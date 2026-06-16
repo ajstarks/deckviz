@@ -7,7 +7,7 @@ deck
 	geocanvas 0 100 5 90
 
 	slide
-		ctext "US Intersate Highway System" 50 92 3
+		ctext "US Intersate Highway System (hub cities)" 50 92 3
 		geolabel "is-cities.d" ts
 		georegion "usa.kml" contcolor op
 	eslide
@@ -20,7 +20,7 @@ deck
 	eslide
 
 	slide
-		ctext "US Intersate Highway System" 50 92 3
+		ctext "US Intersate Highway System (Major East-West Interstates)" 50 92 3
 		geolabel "is-cities.d" ts
 		georegion "usa.kml" contcolor op
 		geoborder "east-west.json" 0.1 "red"
@@ -28,14 +28,14 @@ deck
 	eslide
 
 	slide
-		ctext "US Intersate Highway System" 50 92 3
+		ctext "US Intersate Highway System (Major North-South Interstates)" 50 92 3
 		geolabel "is-cities.d" ts
 		georegion "usa.kml" contcolor op
 		geoborder "north-south.json" 0.1 "green"
 	eslide
 
 	slide
-		ctext "US Intersate Highway System" 50 92 3
+		ctext "US Intersate Highway System (East-West, North-South)" 50 92 3
 		geolabel "is-cities.d" ts
 		georegion "usa.kml" contcolor op
 		geoborder "east-west.json" 0.1 "red"
@@ -43,7 +43,7 @@ deck
 	eslide
 
 	slide
-		ctext "US Intersate Highway System" 50 92 3
+		ctext "US Intersate Highway System (complete)" 50 92 3
 		geolabel "is-cities.d" ts
 		georegion "usa.kml" contcolor op
 		geoborder "USA_Freeway_System.geojson" 0.075 "gray"
