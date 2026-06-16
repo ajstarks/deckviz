@@ -1,0 +1,69 @@
+deck
+	slide "skyblue"
+		usa="geo:39,-98	United\nStates"
+		rus="geo:66.755,93.85	Russia"
+		chn="geo:35,103	China"
+		ind="geo:21.918297,78.01215	India"
+		gbr="geo:54.003644,-2.547859	United Kingdom"
+		sau="geo:24,45	Saudi\nArabia"
+		fra="geo:46.8194,2.4561	France"
+		deu="geo:51,9	Germany"
+		jpn="geo:36,138	Japan"
+		ukr="geo:49.032,31.505	Ukraine"
+
+		basecolor="hsv(0,100,100)"
+		wcolor="gray"
+
+		uscolor="hsv(0,100,100)"
+		chcolor="hsv(0,32,100)"
+		rucolor="hsv(0,12,100)"
+		incolor="hsv(0,9,100)"
+		sacolor="hsv(0,8,100)"
+		ukcolor="hsv(0,8,100)"
+		decolor="hsv(0,7,100)"
+		urcolor="hsv(0,7,100)"
+		frcolor="hsv(0,7,100)"
+		jpcolor="hsv(0,6,100)"
+
+		geocanvas 10 90 20 90
+		georegion "world.kml" wcolor 70
+		georegion "usa.kml" uscolor
+		georegion "chn.kml" chcolor
+		georegion "rus.kml" rucolor
+		georegion "ind.kml" incolor
+		georegion "sau.kml" sacolor
+		georegion "gbr.kml" ukcolor
+		georegion "deu.kml" decolor
+		georegion "ukr.kml" urcolor
+		georegion "fra.kml" frcolor
+		georegion "jpn.kml" jpcolor
+
+		ls=0.75
+		geolabel usa ls
+		geolabel rus ls
+		geolabel ind ls
+		geolabel chn ls
+		geolabel gbr ls
+		geolabel fra ls
+		geolabel sau ls
+		geolabel deu ls
+		geolabel jpn ls
+		geolabel ukr ls
+
+		ctext "Top Military Spending (Billion USD)" 50 92 3
+		chartwidth=30
+		chartheight=20
+
+		chartTextSize=1.3
+		chartTop=30
+		chartLeft=40
+		chartRight=chartLeft+chartwidth
+		chartBottom=chartTop-chartheight
+		chartLineSpacing=1.5
+		chartPercent=1
+		chartBarWidth=1
+		chartDataFmt="%.2f"
+		chartShowTitle=0
+		wbarchart "mil-spend.d" "steelblue" // uscolor
+	eslide	
+edeck
