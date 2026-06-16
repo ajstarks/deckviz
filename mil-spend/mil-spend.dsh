@@ -1,16 +1,5 @@
 deck
 	slide "skyblue"
-		usa="geo:39,-98	United\nStates"
-		rus="geo:66.755,93.85	Russia"
-		chn="geo:35,103	China"
-		ind="geo:21.918297,78.01215	India"
-		gbr="geo:54.003644,-2.547859	United Kingdom"
-		sau="geo:24,45	Saudi\nArabia"
-		fra="geo:46.8194,2.4561	France"
-		deu="geo:51,9	Germany"
-		jpn="geo:36,138	Japan"
-		ukr="geo:49.032,31.505	Ukraine"
-
 		basecolor="hsv(0,100,100)"
 		wcolor="gray"
 
@@ -39,17 +28,7 @@ deck
 		georegion "jpn.kml" jpcolor
 
 		ls=0.75
-		geolabel usa ls
-		geolabel rus ls
-		geolabel ind ls
-		geolabel chn ls
-		geolabel gbr ls
-		geolabel fra ls
-		geolabel sau ls
-		geolabel deu ls
-		geolabel jpn ls
-		geolabel ukr ls
-
+		geolabel "countries.d" ls
 		ctext "Top Military Spending (Billion USD)" 50 92 3
 		chartwidth=30
 		chartheight=20
