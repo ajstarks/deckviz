@@ -1,53 +1,89 @@
 deck
-	op=90
+	op=20
 	ts=1.1
+	ims=2
+	bs=0.05
 	iscolor="steelblue"
 	contcolor="linen"
+	bordcolor="lightgray"
+	ewcolor="rgb(128,0,0)"
+	nscolor="rgb(0,128,0)"
+	hwsize=0.2
+
 	geobound  24.45 50 -124.75 -66.95
 	geocanvas 0 100 5 90
 
 	slide
-		ctext "US Intersate Highway System (hub cities)" 50 92 3
-		geolabel "is-cities.d" ts
-		georegion "usa.kml" contcolor op
-	eslide
-
-	slide
 		ctext "US Intersate Highway System" 50 92 3
 		geolabel "is-cities.d" ts
-		georegion "usa.kml" contcolor op
+		georegion "ustates20.json" contcolor
 		geoborder "USA_Freeway_System.geojson" 0.075 "gray"
 	eslide
 
 	slide
-		ctext "US Intersate Highway System (Major East-West Interstates)" 50 92 3
+		i10loc="geo:30.5,-100	i10.png"
+		i30loc="geo:32.5,-100	i30.png"
+		i40loc="geo:35.2,-100	i40.png"
+		i70loc="geo:39.0,-100	i70.png"
+		i90loc="geo:43.7,-100	i90.png"
+		i80loc="geo:41.0,-100	i80.png"
+		ctext "US Intersate Highway System (Major East-West Routes)" 50 92 3
+		geoimage i10loc ims 0
+		geoimage i30loc ims 0
+		geoimage i40loc ims 0
+		geoimage i70loc ims 0
+		geoimage i80loc ims 0
+		geoimage i90loc ims 0
 		geolabel "is-cities.d" ts
-		georegion "usa.kml" contcolor op
-		geoborder "east-west.json" 0.1 "red"
-		
+		georegion "ustates20.json" contcolor
+		geoborder "ustates20.json" bs bordcolor
+		geoborder "east-west.json" hwsize ewcolor
 	eslide
 
 	slide
-		ctext "US Intersate Highway System (Major North-South Interstates)" 50 92 3
+		i5loc="geo:42.5,-123.0	i5.png"
+		i15loc="geo:42.5,-112.0	i15.png"
+		i25loc="geo:42.5,-105.0	i25.png"
+		i35loc="geo:42.5,-93.5	i35.png"
+		i45loc="geo:30.6,-95.5	i45.png"
+		i55loc="geo:37.5,-90.0	i55.png"
+		i65loc="geo:37.5,-86.0	i65.png"
+		i75loc="geo:43.5,-83.5	i75.png"
+		i85loc="geo:35.0,-82.0	i85.png"
+		i95loc="geo:42.0,-71.5	i95.png"
+		ctext "US Intersate Highway System (Major North-South Routes)" 50 92 3
 		geolabel "is-cities.d" ts
-		georegion "usa.kml" contcolor op
-		geoborder "north-south.json" 0.1 "green"
+		geoimage i5loc ims 0
+		geoimage i15loc ims 0
+		geoimage i25loc ims 0
+		geoimage i35loc ims 0
+		geoimage i45loc ims 0
+		geoimage i55loc ims 0
+		geoimage i65loc ims 0
+		geoimage i75loc ims 0
+		geoimage i85loc ims 0
+		geoimage i95loc ims 0
+		georegion "ustates20.json" contcolor
+		geoborder "ustates20.json" bs bordcolor
+		geoborder "north-south.json" hwsize nscolor
 	eslide
 
 	slide
-		ctext "US Intersate Highway System (East-West, North-South)" 50 92 3
+		ctext "US Intersate Highway System (East-West, North-South Routes)" 50 92 3
 		geolabel "is-cities.d" ts
-		georegion "usa.kml" contcolor op
-		geoborder "east-west.json" 0.1 "red"
-		geoborder "north-south.json" 0.1 "green"
+		georegion "ustates20.json" contcolor
+		geoborder "ustates20.json" bs bordcolor
+		geoborder "east-west.json" hwsize ewcolor
+		geoborder "north-south.json" hwsize nscolor
 	eslide
 
 	slide
 		ctext "US Intersate Highway System (complete)" 50 92 3
 		geolabel "is-cities.d" ts
-		georegion "usa.kml" contcolor op
+		georegion "ustates20.json" contcolor
+		geoborder "ustates20.json" bs bordcolor
 		geoborder "USA_Freeway_System.geojson" 0.075 "gray"
-		geoborder "east-west.json" 0.1 "red"
-		geoborder "north-south.json" 0.1 "green"
+		geoborder "east-west.json" hwsize ewcolor
+		geoborder "north-south.json" hwsize nscolor
 	eslide
 edeck

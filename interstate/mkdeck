@@ -1,2 +1,2 @@
 #!/bin/sh
-decksh is.dsh|pdfdeck -layers=rect:poly:line:text -stdout - > f.pdf
+decksh is.dsh|pdfdeck -layers=rect:poly:line:text:ellipse:image -stdout - > f.pdf

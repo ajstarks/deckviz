@@ -40,6 +40,3 @@ geo:30.471,-91.147	Baton Rouge
 geo:34.7465,-92.2896	Little Rock
 geo:32.2535,-110.9118	Tucson
 geo:32.32659,-106.77544	Las Cruces
-
-
-
