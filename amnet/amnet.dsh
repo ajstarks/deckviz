@@ -1,0 +1,89 @@
+// American networks
+deck
+	geobbox 24 50 -125 -67
+	geocanvas   0 100 10 90
+	tx          = 50
+	ty          = 93
+	ts          = 3
+	ps          = 0.35
+	psh         = ps / 2
+	rop         = 60
+	contcop     = 60
+	rcolor      = "crimson"
+	contcolor   = "gray"
+	iscolor     = "rgb(50,50,50)"
+	
+	rivercolor  = "blue"
+	citysize    = 1
+	contsize    = 0.05
+	riversize   = 0.10
+
+	bgcolor     = "white"
+	txcolor     = "black"
+
+
+	slide bgcolor txcolor
+		ctext "US Major Rivers" tx ty ts
+		geoloc "river-cities.d"
+		geoline "us-outline.json" contsize contcolor contop
+		geoline "us-major-rivers-national.shp" riversize rivercolor
+	eslide
+
+	slide bgcolor txcolor
+		ctext       "Amtrak Routes and Stations" tx ty ts
+		geoloc      "amtrak-cities.d" "c" citysize
+		geoborder   "us-outline.json" contsize contcolor contop
+
+		geopathfile "northeast-regional.d"    ps rcolor rop
+		geopathfile "empire-builder.d"        ps rcolor rop
+		geopathfile "eb01.d"                  ps rcolor rop
+		geopathfile "eb02.d"                  ps rcolor rop
+		geopathfile "floridian.d"             ps rcolor rop
+		geopathfile "texas-eagle.d"           ps rcolor rop
+		geopathfile "california-zephyr.d"     ps rcolor rop
+		geopathfile "southwest-chief.d"       ps rcolor rop
+		geopathfile "crescent.d"              ps rcolor rop
+		geopathfile "city-of-new-orleans.d"   ps rcolor rop
+		geopathfile "cardinal.d"              ps rcolor rop
+		geopathfile "coast-starlight.d"       ps rcolor rop
+		geopathfile "sunset-limited.d"        ps rcolor rop
+		geoborder   "amtrak-stations.geojson" ps rcolor
+		geoborder   "amtrak-stations.geojson" psh bgcolor
+	eslide
+
+	slide bgcolor txcolor
+		ctext "US Intersate Highway System" tx ty ts
+		geolabel "is-cities.d" citysize
+		geoborder "us-outline.json" contsize contcolor contop
+		geoborder "USA_Freeway_System.geojson" 0.075 iscolor
+	eslide
+
+	slide
+		geocanvas  27.5 77.5 50 90
+		georegion "contus.geojson" "gray" 10
+		geoline "us-major-rivers-national.shp" riversize rivercolor
+
+		geocanvas 2.5 47.5 5 45
+		georegion "contus.geojson" "gray" 10
+		geoborder "USA_Freeway_System.geojson" 0.075 iscolor
+
+		ps *= 0.75
+		geocanvas 52.5 97.5 5 45
+		georegion "contus.geojson" "gray" 10
+		geopathfile "northeast-regional.d"    ps rcolor rop
+		geopathfile "empire-builder.d"        ps rcolor rop
+		geopathfile "eb01.d"                  ps rcolor rop
+		geopathfile "eb02.d"                  ps rcolor rop
+		geopathfile "floridian.d"             ps rcolor rop
+		geopathfile "texas-eagle.d"           ps rcolor rop
+		geopathfile "california-zephyr.d"     ps rcolor rop
+		geopathfile "southwest-chief.d"       ps rcolor rop
+		geopathfile "crescent.d"              ps rcolor rop
+		geopathfile "city-of-new-orleans.d"   ps rcolor rop
+		geopathfile "cardinal.d"              ps rcolor rop
+		geopathfile "coast-starlight.d"       ps rcolor rop
+		geopathfile "sunset-limited.d"        ps rcolor rop
+
+	eslide
+
+edeck
