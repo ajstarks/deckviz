@@ -1,0 +1,13 @@
+deck
+	slide
+		tx=50
+		ts=5
+		saying="We need all hands on deck"
+		line                  tx 0 tx 100
+		btext "Beginning"     tx 90    ts "sans"
+		ctext "Centered"      tx 80    ts "serif" "red"
+		etext "Ending"        tx 70    ts "mono" "blue" 40
+		rtext "Rotate 20°"    tx 60 20 ts
+		textblock saying      tx 40 20 ts
+	eslide
+edeck

@@ -1,0 +1,17 @@
+<deck>
+<slide>
+<ellipse xp="10" yp="50" wp="5" hr="100"/>
+<ellipse xp="20" yp="50" wp="10" hp="5" color="red"/>
+<rect xp="30" yp="50" wp="5" hr="100" color="green"/>
+<rect xp="40" yp="50" wp="10" hp="15" color="blue"/>
+<ellipse xp="50" yp="57.5" wp="5" hr="100" color="orange"/>
+<ellipse xp="60" yp="57.5" wp="5" hr="100" color="orange"/>
+<ellipse xp="50" yp="42.5" wp="5" hr="100" color="orange"/>
+<ellipse xp="60" yp="42.5" wp="5" hr="100" color="orange"/>
+<line xp1="50" yp1="57.5" xp2="60" yp2="57.5" sp="5" color="orange"/>
+<line xp1="50" yp1="42.5" xp2="60" yp2="42.5" sp="5" color="orange"/>
+<rect xp="55" yp="50" wp="15" hp="15" color="orange"/>
+<polygon xc="55.00 53.10 51.47 56.18 60.71 55.00 49.29 53.82 58.53 56.90" yc="57.76 50.80 43.72 47.91 52.40 52.59 52.40 47.91 43.72 50.80" color="blue"/>
+<polygon xc="65 85 95" yc="50 60 50" color="purple" opacity="50"/>
+</slide>
+</deck>

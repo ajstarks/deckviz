@@ -1,0 +1,12 @@
+deck
+	slide
+		s="hello"
+		x=5
+		y=50
+		ts=5
+		text s x y ts
+		x=x+30
+		ts+=15
+		text s x y ts
+	eslide
+edeck

@@ -1,0 +1,8 @@
+deck
+	slide
+		ruler 10
+		text "Hello" 20 30 5
+		circle 50 80 5 "red"
+		line 60 10 90 60
+	eslide
+edeck

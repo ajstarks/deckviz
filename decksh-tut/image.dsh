@@ -1,0 +1,6 @@
+deck
+	slide
+		image  "follow.jpg"                      25 50 45 0
+		cimage "cloudy.jpg" "Head in the clouds" 75 50 45 0
+	eslide
+edeck

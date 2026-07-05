@@ -1,0 +1,19 @@
+#!/bin/sh
+decksh first.dsh      > first.xml;     pngdeck first.xml
+decksh vars.dsh       > vars.xml;      pngdeck vars.xml
+decksh coord.dsh      > coord.xml;     pngdeck coord.xml
+decksh coord.dsh      > coord.xml;     pngdeck coord.xml
+decksh colors.dsh     > colors.xml;    pngdeck colors.xml
+decksh text.dsh       > text.xml;      pngdeck text.xml
+decksh image.dsh      > image.xml;     pngdeck image.xml
+decksh graphics.dsh   > graphics.xml;  pngdeck graphics.xml
+decksh fgraphics.dsh  > fgraphics.xml; pngdeck fgraphics.xml
+decksh list.dsh       > list.xml;      pngdeck list.xml
+decksh chart.dsh      > chart.xml;     pngdeck chart.xml
+decksh geo.dsh        > geo.xml;       pngdeck -layers="poly:image:ellipse:text:line:rect" geo.xml
+decksh tut.dsh |
+pdfdeck -sw \
+ -stdout \
+ -sans PublicSans-Regular \
+ -mono Inconsolata-Medium \
+ -serif Charter-Regular - > tut.pdf

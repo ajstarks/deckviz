@@ -1,0 +1,10 @@
+<deck>
+<slide>
+<line xp1="50" yp1="0" xp2="50" yp2="100"/>
+<text xp="50" yp="90" sp="5" font="sans">Beginning</text>
+<text align="c" xp="50" yp="80" sp="5" font="serif" color="red">Centered</text>
+<text align="e" xp="50" yp="70" sp="5" font="mono" color="blue" opacity="40">Ending</text>
+<text xp="50" yp="60" rotation="20" sp="5" >Rotate 20°</text>
+<text type="block" xp="50" yp="40" wp="20" sp="5" >We need all hands on deck</text>
+</slide>
+</deck>

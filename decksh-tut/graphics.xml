@@ -1,0 +1,31 @@
+<deck>
+<slide>
+<line xp1="10" yp1="50" xp2="20" yp2="40"/>
+<line xp1="25" yp1="50" xp2="35" yp2="50" sp="0.8"/>
+<line xp1="40" yp1="50" xp2="40" yp2="60" sp="0.8" color="red"/>
+<arc xp="55" yp="50" wp="15" hp="15" a1="180" a2="360" sp="0.8" color="blue"/>
+<line xp1="70" yp1="50" xp2="85" yp2="40" />
+<line xp1="85" yp1="40" xp2="95" yp2="50" />
+<line xp1="70" yp1="50" xp2="95" yp2="50" />
+<curve xp1="0" yp1="50" xp2="100" yp2="100" xp3="100" yp3="50" sp="0.8" color="green"/>
+<ellipse xp="5.000" yp="30.000" wp="0.800" hr="100" color="gray" opacity="100.000"/>
+<ellipse xp="10.000" yp="30.000" wp="0.800" hr="100" color="gray" opacity="100.000"/>
+<ellipse xp="15.000" yp="30.000" wp="0.800" hr="100" color="gray" opacity="100.000"/>
+<ellipse xp="20.000" yp="30.000" wp="0.800" hr="100" color="gray" opacity="100.000"/>
+<ellipse xp="25.000" yp="30.000" wp="0.800" hr="100" color="gray" opacity="100.000"/>
+<ellipse xp="30.000" yp="30.000" wp="0.800" hr="100" color="gray" opacity="100.000"/>
+<ellipse xp="35.000" yp="30.000" wp="0.800" hr="100" color="gray" opacity="100.000"/>
+<ellipse xp="40.000" yp="30.000" wp="0.800" hr="100" color="gray" opacity="100.000"/>
+<ellipse xp="45.000" yp="30.000" wp="0.800" hr="100" color="gray" opacity="100.000"/>
+<ellipse xp="50.000" yp="30.000" wp="0.800" hr="100" color="gray" opacity="100.000"/>
+<ellipse xp="55.000" yp="30.000" wp="0.800" hr="100" color="gray" opacity="100.000"/>
+<ellipse xp="60.000" yp="30.000" wp="0.800" hr="100" color="gray" opacity="100.000"/>
+<ellipse xp="65.000" yp="30.000" wp="0.800" hr="100" color="gray" opacity="100.000"/>
+<ellipse xp="70.000" yp="30.000" wp="0.800" hr="100" color="gray" opacity="100.000"/>
+<ellipse xp="75.000" yp="30.000" wp="0.800" hr="100" color="gray" opacity="100.000"/>
+<ellipse xp="80.000" yp="30.000" wp="0.800" hr="100" color="gray" opacity="100.000"/>
+<ellipse xp="85.000" yp="30.000" wp="0.800" hr="100" color="gray" opacity="100.000"/>
+<ellipse xp="90.000" yp="30.000" wp="0.800" hr="100" color="gray" opacity="100.000"/>
+<ellipse xp="95.000" yp="30.000" wp="0.800" hr="100" color="gray" opacity="100.000"/>
+</slide>
+</deck>

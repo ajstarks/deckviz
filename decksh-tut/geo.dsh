@@ -1,0 +1,12 @@
+deck
+	slide
+		geobound -34.83 37.34 -17.52 51.266 // boundary of Africa
+		geocanvas 10 90
+		cairo="geo:30.04440,31.235700	Cairo"
+		accra="geo:5.614818,-0.205874	Accra"
+		geoloc    cairo "c" 4
+		geoloc    accra "c" 4
+		georegion "africa.kml" "tan"
+		geopath   accra cairo 0.5 "red"
+	eslide
+edeck

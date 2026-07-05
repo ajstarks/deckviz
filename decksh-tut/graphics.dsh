@@ -1,0 +1,13 @@
+deck
+	slide
+		base=50
+		lw=0.8
+		line     10 base 20 40
+		hline    25 base 10 lw
+		vline    40 base 10 lw "red"
+		arc      55 base 15 15 180 360 lw "blue"
+		polyline "70 85 95" "base 40 base"
+		curve     0 base 100 100 100 base lw "green"
+		dline     5 30 95 30 lw 5
+	eslide
+edeck

@@ -1,0 +1,19 @@
+<deck>
+<slide>
+<list xp="10" yp="80" sp="3" >
+<li>first row</li>
+<li>second row</li>
+<li>third row</li>
+</list>
+<list xp="35" yp="80" sp="3" >
+<li>more things</li>
+<li>yet more things</li>
+<li>last row</li>
+</list>
+<list xp="65" yp="80" sp="3" >
+<li>The last column</li>
+<li>almost done</li>
+<li>really done</li>
+</list>
+</slide>
+</deck>

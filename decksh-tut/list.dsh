@@ -1,0 +1,26 @@
+deck
+	slide
+		ls=3
+		ly=95
+		list 0 ly ls
+			li "First"
+			li "Second"
+			li "Third and Last"
+		elist
+		blist 25 ly ls
+			li "First"
+			li "Second"
+			li "Third and Last"
+		elist
+		nlist 55 ly ls
+			li "First"
+			li "Second"
+			li "Third and Last"
+		elist
+		clist 90 ly ls
+			li "First"
+			li "Second"
+			li "Third and Last"
+		elist
+	eslide
+edeck
