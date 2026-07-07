@@ -1,4 +1,4 @@
-An image is the welcome companion to text when making decks.
+An image is the welcome companion to text and graphics when making decks.
 \n
 To place an image, you specify its name (JPEG, PNG, and GIF image formats are supported), location, and dimensions. The general syntax
 is:

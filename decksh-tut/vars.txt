@@ -6,11 +6,11 @@ Use the '=' after the name to assign the value of variable.  The general syntax 
 \n
 name = value
 \n
-In the example, (1) the value of "hello" is assigned to s, (2) 5 and 50 to the variables x and y and (3) ts is assigned the value of 5. Next you can use the variables: 
+In the example, (1) the value of "hello" is assigned to s, (2) 5 and 50 to the variables x and y and (3) ts is assigned the value of 5. Next, use the variables: 
 \n
 text s x y ts
 \n
-which is  is equivalent to
+which is equivalent to:
 \n
 text "hello" 5 50 5
 \n

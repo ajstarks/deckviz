@@ -1,7 +1,7 @@
 cimage "first-00001.png"     "Your First Deck"       X Y secims 0
 cimage "coord-00001.png"     "The Coordinate System" X Y secims 0
 cimage "vars-00001.png"      "Variables"             X Y secims 0
-cimage "colors-00001.png"    "Colors"                X Y secims 0
+cimage "colors-00001.png"    "Using Color"           X Y secims 0
 cimage "text-00001.png"      "Working with Text"     X Y secims 0
 cimage "graphics-00001.png"  "Stroked Graphics"      X Y secims 0
 cimage "fgraphics-00001.png" "Filled Shapes"         X Y secims 0

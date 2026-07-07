@@ -4,18 +4,20 @@ the coordinates are passed as arguments as a pair of numbers, x first, then y.
 \n
 The origin (0,0), is at the lower-left, with the x coordinate increasing from left to right, with the y coordinate increasing bottom to top. The middle of the canvas is (50,50): half-way from the left and half-way up from the bottom.
 \n
-For example, to place the text "Hello" left-aligned at 20% from the left, and 30% up (20,30), and the text size at 5% of the canvas width, use:
+Other measures like the size of text or other objects are represented by the percent of the side width.
 \n
-text "Hello" 20 30 5
+For example, to place the text "Red Ball" left-aligned at 10% from the left, and 30% up (10,30), and the text size at 10% of the canvas width, use:
 \n
-Other elements like lines and circles may also be placed. For example
+text "Red Ball" 10 30 10
 \n
-circle 50 80 5 "red"
+Other elements like circles and lines may also be placed. For example:
 \n
-places a red circle at (50,80), the size of the circle is 5% of the canvas width.
+circle 90 60 10 "red"
 \n
-To draw a line from (60,10) to (90,60)
+places a red circle at (90,60), the size of the circle is 10% of the canvas width.
 \n
-line 60 10 90 60
+To draw a line from (50,35) to (90,60):
 \n
-Finally, note the `ruler' keyword, which makes a convenient scale.
+line 50 35 90 60
+\n
+Finally, note the 'ruler' keyword, which makes a convenient scale.

@@ -36,8 +36,8 @@
 <line xp1="0.00" yp1="90.00" xp2="100.00" yp2="90.00" sp="0.05" color="black" opacity="70"/>
 <text align="c" xp="90.00" yp="2" sp="1.2" color="black" opacity="75" font="mono">90</text>
 <text align="c" xp="2" yp="90.00" sp="1.2" color="black" opacity="75" font="mono">90</text>
-<text xp="20" yp="30" sp="5" >Hello</text>
-<ellipse xp="50" yp="80" wp="5" hr="100" color="red"/>
-<line xp1="60" yp1="10" xp2="90" yp2="60"/>
+<text xp="10" yp="30" sp="10" >Red Ball</text>
+<ellipse xp="90" yp="60" wp="10" hr="100" color="red"/>
+<line xp1="50" yp1="35" xp2="90" yp2="60"/>
 </slide>
 </deck>

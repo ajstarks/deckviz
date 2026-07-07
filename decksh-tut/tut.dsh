@@ -2,7 +2,7 @@ deck
 	import "title.dsh"
 	import "footer.dsh"
 	pagestart=(5,88)
-	parawidth=33
+	parawidth=35
 	pagebottom=3
 	pagenum=1
 	bodysize=1.5
@@ -44,7 +44,7 @@ deck
 
 	slide bgcolor txcolor
 		//ruler
-		title "Variables and Assignments"
+		title "Variables"
 		textblockfile	"vars.txt" pagestart_x pagestart_y parawidth bodysize "serif"
 		image 			"vars-00001.png" imx imy imw 0
 		textcode		"vars.dsh" codex codey codewidth codesize
@@ -73,7 +73,7 @@ deck
 		textblockfile  "graphics.txt" pagestart_x pagestart_y parawidth bodysize "serif"
 		image          "graphics-00001.png" imx imy imw 0
 		textcode       "graphics.dsh" codex codey codewidth codesize
-		footer "You have the draw the line somewhere."
+		footer "You have to draw the line somewhere."
 	eslide
 
 	slide bgcolor txcolor

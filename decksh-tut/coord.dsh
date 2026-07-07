@@ -1,8 +1,8 @@
 deck
 	slide
 		ruler 10
-		text "Hello" 20 30 5
-		circle 50 80 5 "red"
-		line 60 10 90 60
+		text "Red Ball" 10 30 10
+		circle 90 60 10 "red"
+		line 50 35 90 60
 	eslide
 edeck
