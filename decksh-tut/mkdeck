@@ -1,17 +1,16 @@
-#!/bin/sh
-decksh first.dsh      > first.xml;     pngdeck first.xml
-decksh vars.dsh       > vars.xml;      pngdeck vars.xml
-decksh coord.dsh      > coord.xml;     pngdeck coord.xml
-decksh coord.dsh      > coord.xml;     pngdeck coord.xml
-decksh colors.dsh     > colors.xml;    pngdeck colors.xml
-decksh text.dsh       > text.xml;      pngdeck text.xml
-decksh image.dsh      > image.xml;     pngdeck image.xml
-decksh graphics.dsh   > graphics.xml;  pngdeck graphics.xml
-decksh fgraphics.dsh  > fgraphics.xml; pngdeck fgraphics.xml
-decksh list.dsh       > list.xml;      pngdeck list.xml
-decksh chart.dsh      > chart.xml;     pngdeck chart.xml
-decksh loop.dsh       > loop.xml;      pngdeck loop.xml
-decksh geo.dsh        > geo.xml;       pngdeck -layers="poly:image:ellipse:text:line:rect" geo.xml
+#!/bin/bash
+./mkpage first
+./mkpage vars
+./mkpage coord
+./mkpage colors
+./mkpage text
+./mkpage image
+./mkpage graphics
+./mkpage fgraphics
+./mkpage list
+./mkpage chart
+./mkpage loop
+./mkpage geo -layers="poly:image:ellipse:text:line:rect"
 decksh tut.dsh |
 pdfdeck -sw \
  -stdout \

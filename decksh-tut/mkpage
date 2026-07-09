@@ -1,0 +1,5 @@
+#!/bin/sh
+if  [ $1.dsh -nt $1-00001.png ]
+then
+	decksh $1.dsh > $1.xml && pngdeck $2 $1.xml && rm $1.xml
+fi
