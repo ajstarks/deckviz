@@ -1,0 +1,18 @@
+Loops allow you repeat decksh operations in a contolled way.
+\n
+A loop is defined as statements bounded by the 'for' and 'efor' keywords.
+The 'for' keyword arguments define the beginning, ending, and optional increment.
+This defines how many times the statements between 'for' and 'efor' are executed.
+The variable specified in the 'for' statement is substituted in the these statements.
+For example:
+\n
+for v=10 50
+\n
+assigns the value 'v' from 10 to 50, with an increment of 1.
+\n
+for v=10 50 10
+\n
+counts from 10 to 50 by 10 (10, 20, 30, 40, 50).
+\n
+In the example on the right, a loop assigns 'v' from 10 to 80 by 5, and 
+draws horizontal lines, circles stars, and squares using the value of v.

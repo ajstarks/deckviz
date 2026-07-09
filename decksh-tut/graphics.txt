@@ -18,6 +18,6 @@ For arcs, specify the center of the arc, its width and height, and start and end
 \n
 arc 50 50 10 10 0 90
 \n
-Polygons use two string arguments: the first are list of x coordinates, and the second are the y coordinates.
+Polygons use two string arguments: the first is a list of x coordinates, and the second is the y coordinates.
 \n
 Quadradic Bezier curves take three pairs of coordinates: the beginning point, the control point, and the end point.

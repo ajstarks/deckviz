@@ -13,9 +13,9 @@ image "name" x y canvas-width 0
 \n
 For example:
 \n
-image "follow.jpg" 50 50 50 0
+image "follow.jpg" 50 50 30 0
 \n
-Places the JPEG image in the middle of the slide, scaled at 50% of the canvas width.
+Places the JPEG image in the middle of the slide, scaled at 30% of the canvas width.
 \n
 To add an image caption, use the 'cimage' keyword. The syntax is similar, but an additional
 caption argument is used:

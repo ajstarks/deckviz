@@ -4,7 +4,7 @@ Most text keywords use this pattern:
 keyword "text" x y size [font] [color] [op]
 \n
 Text may be aligned (begin, end, and centered) relative to a specific point.
-The corresponding keywords are 'text' (and its synomym 'btext') 'etext' and 'ctext'.
+The corresponding keywords are 'text' (and its synonym 'btext') 'etext' and 'ctext'.
 The point is specified by the x and y coordinate, the size of the text is the third
 'size' argument (a percentage relative to the width of the canvas)
 \n

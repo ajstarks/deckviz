@@ -10,6 +10,7 @@ decksh graphics.dsh   > graphics.xml;  pngdeck graphics.xml
 decksh fgraphics.dsh  > fgraphics.xml; pngdeck fgraphics.xml
 decksh list.dsh       > list.xml;      pngdeck list.xml
 decksh chart.dsh      > chart.xml;     pngdeck chart.xml
+decksh loop.dsh       > loop.xml;      pngdeck loop.xml
 decksh geo.dsh        > geo.xml;       pngdeck -layers="poly:image:ellipse:text:line:rect" geo.xml
 decksh tut.dsh |
 pdfdeck -sw \

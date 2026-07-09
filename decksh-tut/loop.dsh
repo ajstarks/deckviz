@@ -1,0 +1,10 @@
+deck
+	slide
+		for v=20 80 5
+			hline  20 v 50 0.1
+			circle 20 v 2        "green"
+			star   45 v 5 1 0.4  "red"
+			square 70 v 2        "blue"
+		efor
+	eslide
+edeck

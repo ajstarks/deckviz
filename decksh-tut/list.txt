@@ -13,7 +13,7 @@ list 20 40 3
 Following the list type is any number of list items (li "item name"),
 one per line. The list ends with "elist" on a line by itself.
 \n
-Decksh does not have native support for tables, but you can construct tables using "parallel lists", by aligning a series of plain lists to a set of columns.
+You can construct tables using "parallel lists"; aligning a series of plain lists to a set of columns.
 
 
 

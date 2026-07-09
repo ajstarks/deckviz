@@ -24,4 +24,4 @@ a = x + y  // a gets the sum of x and y
 \n
 You can also use 'assignment operations' on a single variable, for example to add 10 to an existing variable x, use:
 \n
-x *= 10
+x += 10

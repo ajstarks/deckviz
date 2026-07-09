@@ -29,7 +29,7 @@ deck
 		title "Your First Deck"
 		textblockfile	"first.txt" pagestart_x pagestart_y parawidth bodysize "serif"
 		image			"first-00001.png" imx imy imw 0
-		textcode		"first.dsh"       codex 30 codewidth codesize
+		textcode		"first.dsh"       codex codey codewidth codesize
 		footer "Think of a deck as a series of pages; the building blocks of your story."
 	eslide
 
@@ -90,6 +90,14 @@ deck
 		image          "image-00001.png" imx imy imw 0
 		textcode       "image.dsh" codex codey codewidth codesize
 		footer "The artful arrangement of pictures help illuminate your deck."
+	eslide
+
+	slide bgcolor txcolor
+		title "Loops"
+		textblockfile  "loop.txt" pagestart_x pagestart_y parawidth bodysize "serif"
+		image          "loop-00001.png" imx imy imw 0
+		textcode       "loop.dsh" codex codey codewidth codesize
+		footer "'Round and 'round we go. I'll stop when you tell me so."
 	eslide
 
 	slide bgcolor txcolor

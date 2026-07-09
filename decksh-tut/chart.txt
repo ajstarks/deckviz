@@ -10,7 +10,7 @@ linechart "foo.d" [color] [label-color] [value-color]
 Special variable names control the placement and other aspects of the chart.
 The variables 'chartTop', 'chartBottom', 'chartLeft', and 'chartRight' define the chart boundaries.  If these are not set, the default values are: chartTop=80, chartBottom=30, chartLeft=10, and chartRight=90.
 \n
-Other variables control items visibility of values (chartVal), text size (charTextSize) and X-axis label interval (chartXLabel).
+Other variables control items the visibility of values (chartVal), text size (charTextSize) and X-axis label interval (chartXLabel).
 \n
 Chart legends are set with the 'legend' keyword using this syntax:
 \n
