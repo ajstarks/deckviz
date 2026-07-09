@@ -1,0 +1,27 @@
+Variables provide a method for attaching a name to an object
+so that the name may be used for other operations.
+
+Variables may refer to either numbers, or text strings (data defined between " characters).
+Use the '=' after the name to assign the value of variable.  The general syntax is:
+
+name = value
+
+In the example, (1) the value of "hello" is assigned to s, (2) 5 and 50 to the variables x and y and (3) ts is assigned the value of 5. Next, use the variables: 
+
+text s x y ts
+
+which is equivalent to:
+
+text "hello" 5 50 5
+
+When using variables that contain numbers, you can also perform binary operations:
+add (+), 
+subtract (-), 
+multiply (*),
+divide (/), and modulo (%). For example,
+
+a = x + y  // a gets the sum of x and y
+
+You can also use 'assignment operations' on a single variable, for example to add 10 to an existing variable x, use:
+
+x += 10

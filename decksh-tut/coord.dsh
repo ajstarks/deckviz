@@ -1,6 +1,6 @@
 deck
 	slide
-		ruler 10
+		ruler
 		text "Red Ball" 10 30 10
 		circle 90 60 10 "red"
 		line 50 35 90 60

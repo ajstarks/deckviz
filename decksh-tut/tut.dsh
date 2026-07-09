@@ -7,16 +7,17 @@ deck
 	pagenum=1
 	bodysize=1.5
 	titlesize=bodysize*2.5
-	codesize=1.4
+	codesize=1.3
 	codewidth=50
 	codex=46
 	codey=35
 	imx=70
-	imy=64
+	imy=65
 	imw=50
 	
 	bgcolor="rgb(255,255,255)"
 	txcolor="black"
+	rulecolor="rgb(0,0,200)"
 
 	secims=20
 	slide bgcolor txcolor
@@ -39,6 +40,15 @@ deck
 		textblockfile	"coord.txt" pagestart_x pagestart_y parawidth bodysize "serif"
 		image			"coord-00001.png" imx imy imw 0
 		textcode		"coord.dsh" codex codey codewidth codesize
+		ctext "(0,0)"     45 40 1 "mono" rulecolor
+		ctext "(100,0)"   95 40 1 "mono" rulecolor
+		ctext "(0,100)"   45 90 1 "mono" rulecolor
+		ctext "(100,100)" 95 90 1 "mono" rulecolor
+		ctext "(50,50)"   70 65 1 "mono" rulecolor
+		vline 45 40 50 0.1 rulecolor 20
+		vline 95 40 50 0.1 rulecolor 20
+		hline 45 40 50 0.1 rulecolor 20
+		hline 45 90 50 0.1 rulecolor 20
 		footer "Place anything, anywhere with precision and consistency."
 	eslide
 
@@ -97,7 +107,7 @@ deck
 		textblockfile  "loop.txt" pagestart_x pagestart_y parawidth bodysize "serif"
 		image          "loop-00001.png" imx imy imw 0
 		textcode       "loop.dsh" codex codey codewidth codesize
-		footer "'Round and 'round we go. I'll stop when you tell me so."
+		footer "Round and round we go. I'll stop when you tell me so."
 	eslide
 
 	slide bgcolor txcolor

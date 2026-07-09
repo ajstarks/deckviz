@@ -1,8 +1,0 @@
-<deck>
-<slide bg="papayawhip">
-<ellipse xp="20" yp="50" wp="10" hr="100" color="red"/>
-<ellipse xp="40" yp="50" wp="10" hr="100" color="rgb(255,0,0)"/>
-<ellipse xp="60" yp="50" wp="10" hr="100" color="#ff0000"/>
-<ellipse xp="80" yp="50" wp="10" hr="100" color="hsv(0,100,100)"/>
-</slide>
-</deck>
