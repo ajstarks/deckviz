@@ -1,4 +1,4 @@
-decksh can read shapefiles, KML, or geoJSON encoded data to produce geometric regions, borders and paths. Plain and labeled locations are also supported.
+decksh can read shapefiles, KML, or geoJSON encoded data to produce geographic regions, borders and paths. Plain and labeled locations are also supported.
 \n
 The keywords for geo functions include 'geoborder' (geographic borders), 'georegion' (regions; useful for countries and continents), 'geopath' (paths between locations), 'geolabel' (a simple label at a location), 'geoloc' (aligned labels ("begin", "center", "end") at a location), and 'geomark' (placing a dot at a location).
 \n
