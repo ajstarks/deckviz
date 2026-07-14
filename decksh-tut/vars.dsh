@@ -1,12 +1,15 @@
 deck
 	slide
-		s="hello"
-		x=5
-		y=50
-		ts=5
-		text s x y ts
-		x=x+30
-		ts+=15
-		text s x y ts
+		s="hello"       // s: string to print
+		x=5             // x: x coordinate
+		y=50            // y: y coordinate
+		ts=2.5          // ts: text size
+		text s x y ts   // use vars
+		x=x+10          // increase x by 30
+		ts+=10          // add 15 to text size
+		text s x y ts   // use updated vars
+		x+=35           // increase x by 35
+		ts*=1.5         // text size 1.5
+		text s x y ts   // repeat
 	eslide
 edeck

@@ -6,8 +6,11 @@ is:
 image "name" x y width height
 \n
 The specified coordinate refers to the middle of the image, and the width and height 
-refer to its dimensions (in pixels).  An alternative (and recommended) syntax scales
-the image to the width of the canvas:
+refer to its dimensions (in pixels).  
+\n
+An alternative (and recommended) syntax scales
+the image as a percentage of the slide width, preserving the aspect ratio, and you don't have to concerned
+with the  image dimensions:
 \n
 image "name" x y canvas-width 0
 \n

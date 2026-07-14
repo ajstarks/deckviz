@@ -1,26 +1,32 @@
 deck
 	slide
-		ls=3
-		ly=95
-		list 0 ly ls
+		ls=2.5               // list text size
+		ly=95                // top of the list
+		colsize=30           // spacing between lists
+		x=0                  // initial list x coordinate
+
+		list x ly ls         // plain
 			li "First"
 			li "Second"
-			li "Third and Last"
+			li "The last item"
 		elist
-		blist 25 ly ls
+		x+=colsize
+		blist x ly ls        // bulleted
 			li "First"
 			li "Second"
-			li "Third and Last"
+			li "The last item"
 		elist
-		nlist 55 ly ls
+		x+=colsize	
+		nlist x ly ls        // numbered
 			li "First"
 			li "Second"
-			li "Third and Last"
+			li "The last item"
 		elist
-		clist 90 ly ls
+		x+=colsize
+		clist x ly ls        // centered
 			li "First"
 			li "Second"
-			li "Third and Last"
+			li "The last item"
 		elist
 	eslide
 edeck

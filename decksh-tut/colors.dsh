@@ -4,6 +4,8 @@ deck
 		c2="rgb(255,0,0)"   // rgb
 		c3="#ff0000"        // hex rgb
 		c4="hsv(0,100,100)" // hue, saturation, value
+
+		// Four circles with defined colors
 		circle 20 50 10 c1
 		circle 40 50 10 c2
 		circle 60 50 10 c3

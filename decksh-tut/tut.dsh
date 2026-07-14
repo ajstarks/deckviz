@@ -21,7 +21,7 @@ deck
 
 	secims=20
 	slide bgcolor txcolor
-		title "The decksh Tutorial"
+		title "Learn decksh"
 		grid  "sections.dsh" 15 78 23 30 90
 	eslide
 
@@ -114,7 +114,7 @@ deck
 		title          "Lists"
 		textblockfile  "list.txt" pagestart_x pagestart_y parawidth bodysize "serif"
 		image          "list-00001.png" imx imy imw 0
-		textcode       "list.dsh" codex 70 codewidth codesize
+		textcode       "list.dsh" codex 76 codewidth codesize
 		footer         "Make a list and check it twice."
 	eslide
 
