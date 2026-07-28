@@ -1,7 +1,6 @@
-// First deck
 deck
-	slide "black" "white"              // black background, white text
-		ctext "hello, world" 50 50 15  // say it loud
-		image "earth.jpg"    50 0 80 0 // image at the bottom
+	slide "black" "white"                    // black background, white text
+		ctext "hello, world" 50 70 10        // say it loud
+		image "earth.jpg"   100 0 1000 1000  // image in the corner
 	eslide
 edeck

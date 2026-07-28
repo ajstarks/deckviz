@@ -7,9 +7,9 @@ deck
 	pagenum=1
 	bodysize=1.5
 	titlesize=bodysize*2.5
-	codesize=1.3
-	codewidth=50
-	codex=46
+	codesize=1.2
+	codewidth=codesize*40
+	codex=45
 	codey=35
 	imx=70
 	imy=65

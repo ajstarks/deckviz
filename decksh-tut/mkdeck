@@ -11,9 +11,12 @@
 ./mkpage chart
 ./mkpage loop
 ./mkpage geo -layers="poly:image:ellipse:text:line:rect"
+sans=PublicSans-Regular # IBMPlexSans-Regular # PublicSans-Regular # IBMPlexSans-Regular
+mono=Inconsolata-Medium # FiraCode-Regular # Go-Mono # IntelOneMono-Regular # MartianMonoCondensed-Regular # OldTimeyMono # VictorMono-Thin # SF-Mono-Regular # Inconsolata-Medium # IBMPlexMono-Text
+serif=Charter-Regular
 decksh tut.dsh |
 pdfdeck -sw \
  -stdout \
- -sans PublicSans-Regular \
- -mono Inconsolata-Medium \
- -serif Charter-Regular - > tut.pdf
+ -sans $sans \
+ -mono $mono \
+ -serif $serif - > tut.pdf
