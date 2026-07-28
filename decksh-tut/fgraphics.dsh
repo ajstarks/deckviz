@@ -1,6 +1,6 @@
 deck
 	slide
-		base=50 // alignment point (y axis)
+		base=50                                       // alignment point
 		circle  10 base 5                             // default circle
 		ellipse 20 base 10 5              "red"       // red ellipse
 		square  30 base 5                 "green"     // blue square

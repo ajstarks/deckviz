@@ -20,4 +20,4 @@ To draw a line from (50,35) to (90,60):
 
 line 50 35 90 60
 
-Finally, note the 'ruler' keyword, which makes a convenient scale.
+Finally, note the ‘ruler’ keyword, which makes a convenient scale.

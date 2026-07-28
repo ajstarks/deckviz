@@ -1,8 +1,8 @@
 With decksh you can make many kinds of lists:
 plain, bulleted, numbered, centered.
 \n
-The type of list is specified by the keyword: 'list' for plain,
-'blist' for bulleted, 'nlist' for numbered, 'clist' for centered.
+The type of list is specified by the keyword: ‘list’ for plain,
+‘blist’ for bulleted, ‘nlist’ for numbered, ‘clist’ for centered.
 \n
 The arguments for lists include the x and y location and the text size of the list.
 \n

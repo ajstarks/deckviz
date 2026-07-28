@@ -1,12 +1,13 @@
 Variables provide a method for attaching a name to an object
 so that the name may be used for other operations.
 
-Variables may refer to either numbers, or text strings (data defined between " characters).
-Use the '=' after the name to assign the value of variable.  The general syntax is:
+Variables may refer to either numbers, or strings (text between " characters).
+Use the ‘=’ after the name to assign the value of variable.  The general syntax is:
 
 name = value
 
-In the example, (1) the value of "hello" is assigned to s, (2) 5 and 50 to the variables x and y and (3) ts is assigned the value of 5. Next, use the variables: 
+In the example, (1) the value of "hello" is assigned to s, (2) 5 and 50 to the variables x and y and (3) ts is assigned the value of 5.
+Next, use the variables: 
 
 text s x y ts
 

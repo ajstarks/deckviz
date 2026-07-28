@@ -20,7 +20,7 @@ image "follow.jpg" 50 50 30 0
 \n
 Places the JPEG image in the middle of the slide, scaled at 30% of the canvas width.
 \n
-To add an image caption, use the 'cimage' keyword. The syntax is similar, but an additional
+To add an image caption, use the ‘cimage’ keyword. The syntax is similar, but an additional
 caption argument is used:
 \n
 cimage "cloudy.jpg" "Cloudy Day" 50 50 50 0
