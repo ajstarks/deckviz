@@ -1,4 +1,5 @@
 #!/bin/bash
+./mkpage tools
 ./mkpage first
 ./mkpage vars
 ./mkpage coord

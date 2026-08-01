@@ -8,25 +8,36 @@ deck
 	bodysize=1.5
 	titlesize=bodysize*2.5
 	codesize=1.2
-	codewidth=codesize*40
-	codex=45
+	codewidth=codesize*42
+	codex=45.5
 	codey=35
 	imx=70
 	imy=65
 	imw=50
 	
-	bgcolor="rgb(255,255,255)"
+	bgcolor="white" // linen" // rgb(255,255,255)"
 	txcolor="black"
 	rulecolor="rgb(0,0,200)"
 
 	secims=20
+
+	slide bgcolor txcolor
+		ctext "Learning decksh" 50 80 10
+		image "toc.png" 50 50 50 0
+	eslide
+
+	slide bgcolor txcolor
+		title           "Gather your tools"
+		textblockfile   "tools.txt" pagestart_x pagestart_y parawidth bodysize "serif"
+		image           "tool-run2.png"  imx 50 imw 0
+	eslide
+
 	slide bgcolor txcolor
 		title "Learn decksh"
 		grid  "sections.dsh" 15 78 23 30 90
 	eslide
 
 	slide bgcolor txcolor
-		//ruler
 		title           "Your First Deck"
 		textblockfile	"first.txt" pagestart_x pagestart_y parawidth bodysize "serif"
 		image			"first-00001.png" imx imy imw 0
@@ -35,7 +46,6 @@ deck
 	eslide
 
 	slide bgcolor txcolor
-		//ruler
 		title           "The Coordinate System"
 		textblockfile	"coord.txt" pagestart_x pagestart_y parawidth bodysize "serif"
 		image			"coord-00001.png" imx imy imw 0
@@ -53,7 +63,6 @@ deck
 	eslide
 
 	slide bgcolor txcolor
-		//ruler
 		title           "Variables"
 		textblockfile	"vars.txt" pagestart_x pagestart_y parawidth bodysize "serif"
 		image 			"vars-00001.png" imx imy imw 0
@@ -62,7 +71,6 @@ deck
 	eslide
 
 	slide bgcolor txcolor
-		//ruler
 		title          "Colors"
 		textblockfile  "colors.txt" pagestart_x pagestart_y parawidth bodysize "serif"
 		image          "colors-00001.png" imx imy imw 0
@@ -132,5 +140,17 @@ deck
 		image          "geo-00001.png" imx imy imw 0
 		textcode       "geo.dsh" codex codey codewidth codesize
 		footer         "A map shows the way."
+	eslide
+
+	slide bgcolor txcolor
+		rx=5
+		rs=2
+		refcolor="darkblue"
+		title "References"
+		text  "[1] Installing and Running decksh/pdfdeck"  rx 85 rs "sans" refcolor 100 "https://speakerdeck.com/ajstarks/pdfdeck"
+		text  "[2] decksh Object Reference"                rx 80 rs "sans" refcolor 100 "https://speakerdeck.com/ajstarks/decksh-object-reference"
+		text  "[3] decksh Keywords"                        rx 75 rs "sans" refcolor 100 "https://speakerdeck.com/ajstarks/decksh-keywords"
+		text  "[4] decksh Visualizations Repository"       rx 70 rs "sans" refcolor 100 "https://github.com/ajstarks/deckviz"
+		text  "[5] decksh Code Repository"                 rx 65 rs "sans" refcolor 100 "https://github.com/ajstarks/decksh"
 	eslide
 edeck
