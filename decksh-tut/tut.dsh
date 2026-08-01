@@ -19,22 +19,24 @@ deck
 	txcolor="black"
 	rulecolor="rgb(0,0,200)"
 
-	secims=20
+	secims=15
+
+	slide "rgb(0,0,0)" "white"
+		ctext "Learning decksh" 50 80 10
+		image "first-00001.png" 50 40 60 0
+		rect  50 40 62 62 "white" 
+	eslide
 
 	slide bgcolor txcolor
-		ctext "Learning decksh" 50 80 10
-		image "toc.png" 50 50 50 0
+		title "Sections"
+		grid  "sections.dsh" 10 78 20 30 95
 	eslide
 
 	slide bgcolor txcolor
 		title           "Gather your tools"
 		textblockfile   "tools.txt" pagestart_x pagestart_y parawidth bodysize "serif"
 		image           "tool-run2.png"  imx 50 imw 0
-	eslide
-
-	slide bgcolor txcolor
-		title "Learn decksh"
-		grid  "sections.dsh" 15 78 23 30 90
+		footer          "We become what we behold. We shape our tools, and thereafter our tools shape us."
 	eslide
 
 	slide bgcolor txcolor
