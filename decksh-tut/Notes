@@ -1,0 +1,272 @@
+
+
+
+
+tut(2).pdf
+PDF
+please review the latest decksh tutorial: I've added a title page, a tool / set up section, a reference section and restyled the code comments to be more regular and comprehensive
+
+Overall, I think this version is a substantial improvement over the earlier drafts. It now reads like a genuine tutorial rather than a lightly annotated reference. The additions you mentioned—the title page, tools/setup section, references, and more systematic code comments—all move it in the right direction.
+
+Here's my assessment.
+
+What has improved
+The opening is much stronger
+
+The title page gives the document a clear identity. Previously the tutorial began abruptly; now it feels like a book rather than a collection of examples.
+
+The "Gather your tools" section is exactly the right addition
+
+One of the biggest gaps in previous drafts was that readers didn't know how to get started. Now they immediately learn:
+
+what software they need
+
+the basic workflow
+
+how decksh fits together with pdfdeck
+
+what an edit/build/view cycle looks like
+
+That significantly lowers the barrier to entry.
+
+I especially like that you present the workflow before showing any language syntax.
+
+The code comments are much more consistent
+
+The earlier tutorial had comments that were sometimes explanatory and sometimes decorative.
+
+Now the comments generally answer why the line exists.
+
+For example
+
+circle 20 y size "green" // circles
+is much easier to scan than having no explanation.
+
+The comments also make it easier for readers to compare the rendered slide with the source.
+
+The reference page finishes the tutorial nicely
+
+Ending with
+
+installation
+
+object reference
+
+keyword list
+
+visualization repository
+
+source repository
+
+gives readers somewhere to go next instead of leaving them stranded.
+
+That makes the tutorial feel complete.
+
+The organization now feels natural
+The progression is good:
+
+tools
+
+first deck
+
+coordinates
+
+variables
+
+colors
+
+text
+
+graphics
+
+images
+
+loops
+
+lists
+
+charts
+
+maps
+
+references
+
+That's almost exactly the order I'd teach the language.
+
+Each chapter builds on the previous one.
+
+Things I'd still improve
+1. Make the very first page explain what decksh is
+The title page is attractive, but it misses an opportunity.
+
+I'd add one short sentence underneath the title.
+
+Something like
+
+A scripting language for creating presentation slides.
+
+or
+
+Create presentation decks using plain text.
+
+That immediately answers the reader's first question.
+
+2. Add an explicit "How to read this tutorial"
+Right after the Tools page, one paragraph could explain the philosophy.
+
+For example:
+
+Each section introduces one feature of decksh. Read the explanation, study the example, then modify it yourself. Every example is a complete working deck that can be copied directly into a .dsh file.
+
+That sets expectations.
+
+3. Mention that examples are complete programs
+One thing I like is that every listing is a full deck.
+
+I'd actually point that out explicitly.
+
+Many tutorials show snippets.
+
+Showing complete programs is one of this tutorial's strengths.
+
+4. The charts section feels slightly compressed
+Everything else introduces one concept at a time.
+
+The chart section introduces:
+
+data files
+
+variables
+
+chart types
+
+legends
+
+axis control
+
+colors
+
+all on one page.
+
+That is a lot.
+
+If the document grows to 20 pages, this is the first place I'd split.
+
+5. Maps deserve one more sentence
+The GIS section assumes readers already know what KML, GeoJSON, and shapefiles are.
+
+Even one sentence would help:
+
+decksh reads existing GIS datasets rather than requiring you to draw maps manually.
+
+6. References could distinguish learning resources
+Instead of one flat list, consider grouping them.
+
+For example
+
+Learn
+------
+Installing and Running
+Object Reference
+Keyword Reference
+
+Examples
+--------
+Visualization Repository
+
+Source
+------
+GitHub Repository
+That makes navigation easier.
+
+Minor wording suggestions
+A few small edits stood out.
+
+Tools page
+
+a viewer to see the results
+
+I'd say
+
+a PDF viewer to view the generated presentation
+
+since that's really what's happening.
+
+Workflow
+
+Instead of
+
+invoke the command to make the result
+
+I'd write
+
+run decksh to generate the intermediate XML, then pdfdeck to produce the PDF.
+
+That's slightly more concrete.
+
+Coordinates
+
+Other measures like the size of text...
+
+I'd write
+
+Sizes such as text height and circle radius are also expressed as percentages of the slide width.
+
+A little smoother.
+
+Variables
+
+Variables provide a method for attaching a name...
+
+I'd simplify to
+
+Variables assign names to values so they can be reused throughout the deck.
+
+Images
+
+welcome companion
+
+Nice phrase, although
+
+Images complement text and graphics
+
+is a little more technical and matches the style of the rest of the document.
+
+One feature I'd still like to see
+The tutorial currently teaches syntax very well.
+
+What it doesn't yet teach is design.
+
+Even a single page near the end could cover ideas like:
+
+use a grid while laying out a slide
+
+align related objects
+
+leave generous whitespace
+
+use one or two fonts
+
+don't overuse colors
+
+keep text sizes consistent
+
+build slides incrementally
+
+That would be unique among DSL tutorials because it teaches presentation design, not just language features.
+
+Overall assessment
+I'd rate this version approximately:
+
+Aspect	Rating
+Organization	9.5/10
+Clarity	9/10
+Progressive learning	9.5/10
+Code examples	10/10
+Visual design	9/10
+Completeness	9/10
+I think this has evolved from "documentation with examples" into a tutorial that a new user could realistically follow from beginning to end. At this point, the biggest remaining opportunity isn't adding more language features—it's adding a bit more guidance on workflow and presentation design to help readers become effective deck authors rather than just competent decksh users.
+
+
+https://chatgpt.com/share/6a7221f7-91e4-83ea-ab99-84060699a5ac
+

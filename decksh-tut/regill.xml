@@ -1,0 +1,89 @@
+<deck>
+<slide>
+<line xp1="5.00" yp1="0.00" xp2="5.00" yp2="100.00" sp="0.05" color="black" opacity="70"/>
+<line xp1="0.00" yp1="5.00" xp2="100.00" yp2="5.00" sp="0.05" color="black" opacity="70"/>
+<text align="c" xp="5.00" yp="2" sp="1.2" color="black" opacity="75" font="mono">5</text>
+<text align="c" xp="2" yp="5.00" sp="1.2" color="black" opacity="75" font="mono">5</text>
+<line xp1="10.00" yp1="0.00" xp2="10.00" yp2="100.00" sp="0.05" color="black" opacity="70"/>
+<line xp1="0.00" yp1="10.00" xp2="100.00" yp2="10.00" sp="0.05" color="black" opacity="70"/>
+<text align="c" xp="10.00" yp="2" sp="1.2" color="black" opacity="75" font="mono">10</text>
+<text align="c" xp="2" yp="10.00" sp="1.2" color="black" opacity="75" font="mono">10</text>
+<line xp1="15.00" yp1="0.00" xp2="15.00" yp2="100.00" sp="0.05" color="black" opacity="70"/>
+<line xp1="0.00" yp1="15.00" xp2="100.00" yp2="15.00" sp="0.05" color="black" opacity="70"/>
+<text align="c" xp="15.00" yp="2" sp="1.2" color="black" opacity="75" font="mono">15</text>
+<text align="c" xp="2" yp="15.00" sp="1.2" color="black" opacity="75" font="mono">15</text>
+<line xp1="20.00" yp1="0.00" xp2="20.00" yp2="100.00" sp="0.05" color="black" opacity="70"/>
+<line xp1="0.00" yp1="20.00" xp2="100.00" yp2="20.00" sp="0.05" color="black" opacity="70"/>
+<text align="c" xp="20.00" yp="2" sp="1.2" color="black" opacity="75" font="mono">20</text>
+<text align="c" xp="2" yp="20.00" sp="1.2" color="black" opacity="75" font="mono">20</text>
+<line xp1="25.00" yp1="0.00" xp2="25.00" yp2="100.00" sp="0.05" color="black" opacity="70"/>
+<line xp1="0.00" yp1="25.00" xp2="100.00" yp2="25.00" sp="0.05" color="black" opacity="70"/>
+<text align="c" xp="25.00" yp="2" sp="1.2" color="black" opacity="75" font="mono">25</text>
+<text align="c" xp="2" yp="25.00" sp="1.2" color="black" opacity="75" font="mono">25</text>
+<line xp1="30.00" yp1="0.00" xp2="30.00" yp2="100.00" sp="0.05" color="black" opacity="70"/>
+<line xp1="0.00" yp1="30.00" xp2="100.00" yp2="30.00" sp="0.05" color="black" opacity="70"/>
+<text align="c" xp="30.00" yp="2" sp="1.2" color="black" opacity="75" font="mono">30</text>
+<text align="c" xp="2" yp="30.00" sp="1.2" color="black" opacity="75" font="mono">30</text>
+<line xp1="35.00" yp1="0.00" xp2="35.00" yp2="100.00" sp="0.05" color="black" opacity="70"/>
+<line xp1="0.00" yp1="35.00" xp2="100.00" yp2="35.00" sp="0.05" color="black" opacity="70"/>
+<text align="c" xp="35.00" yp="2" sp="1.2" color="black" opacity="75" font="mono">35</text>
+<text align="c" xp="2" yp="35.00" sp="1.2" color="black" opacity="75" font="mono">35</text>
+<line xp1="40.00" yp1="0.00" xp2="40.00" yp2="100.00" sp="0.05" color="black" opacity="70"/>
+<line xp1="0.00" yp1="40.00" xp2="100.00" yp2="40.00" sp="0.05" color="black" opacity="70"/>
+<text align="c" xp="40.00" yp="2" sp="1.2" color="black" opacity="75" font="mono">40</text>
+<text align="c" xp="2" yp="40.00" sp="1.2" color="black" opacity="75" font="mono">40</text>
+<line xp1="45.00" yp1="0.00" xp2="45.00" yp2="100.00" sp="0.05" color="black" opacity="70"/>
+<line xp1="0.00" yp1="45.00" xp2="100.00" yp2="45.00" sp="0.05" color="black" opacity="70"/>
+<text align="c" xp="45.00" yp="2" sp="1.2" color="black" opacity="75" font="mono">45</text>
+<text align="c" xp="2" yp="45.00" sp="1.2" color="black" opacity="75" font="mono">45</text>
+<line xp1="50.00" yp1="0.00" xp2="50.00" yp2="100.00" sp="0.05" color="black" opacity="70"/>
+<line xp1="0.00" yp1="50.00" xp2="100.00" yp2="50.00" sp="0.05" color="black" opacity="70"/>
+<text align="c" xp="50.00" yp="2" sp="1.2" color="black" opacity="75" font="mono">50</text>
+<text align="c" xp="2" yp="50.00" sp="1.2" color="black" opacity="75" font="mono">50</text>
+<line xp1="55.00" yp1="0.00" xp2="55.00" yp2="100.00" sp="0.05" color="black" opacity="70"/>
+<line xp1="0.00" yp1="55.00" xp2="100.00" yp2="55.00" sp="0.05" color="black" opacity="70"/>
+<text align="c" xp="55.00" yp="2" sp="1.2" color="black" opacity="75" font="mono">55</text>
+<text align="c" xp="2" yp="55.00" sp="1.2" color="black" opacity="75" font="mono">55</text>
+<line xp1="60.00" yp1="0.00" xp2="60.00" yp2="100.00" sp="0.05" color="black" opacity="70"/>
+<line xp1="0.00" yp1="60.00" xp2="100.00" yp2="60.00" sp="0.05" color="black" opacity="70"/>
+<text align="c" xp="60.00" yp="2" sp="1.2" color="black" opacity="75" font="mono">60</text>
+<text align="c" xp="2" yp="60.00" sp="1.2" color="black" opacity="75" font="mono">60</text>
+<line xp1="65.00" yp1="0.00" xp2="65.00" yp2="100.00" sp="0.05" color="black" opacity="70"/>
+<line xp1="0.00" yp1="65.00" xp2="100.00" yp2="65.00" sp="0.05" color="black" opacity="70"/>
+<text align="c" xp="65.00" yp="2" sp="1.2" color="black" opacity="75" font="mono">65</text>
+<text align="c" xp="2" yp="65.00" sp="1.2" color="black" opacity="75" font="mono">65</text>
+<line xp1="70.00" yp1="0.00" xp2="70.00" yp2="100.00" sp="0.05" color="black" opacity="70"/>
+<line xp1="0.00" yp1="70.00" xp2="100.00" yp2="70.00" sp="0.05" color="black" opacity="70"/>
+<text align="c" xp="70.00" yp="2" sp="1.2" color="black" opacity="75" font="mono">70</text>
+<text align="c" xp="2" yp="70.00" sp="1.2" color="black" opacity="75" font="mono">70</text>
+<line xp1="75.00" yp1="0.00" xp2="75.00" yp2="100.00" sp="0.05" color="black" opacity="70"/>
+<line xp1="0.00" yp1="75.00" xp2="100.00" yp2="75.00" sp="0.05" color="black" opacity="70"/>
+<text align="c" xp="75.00" yp="2" sp="1.2" color="black" opacity="75" font="mono">75</text>
+<text align="c" xp="2" yp="75.00" sp="1.2" color="black" opacity="75" font="mono">75</text>
+<line xp1="80.00" yp1="0.00" xp2="80.00" yp2="100.00" sp="0.05" color="black" opacity="70"/>
+<line xp1="0.00" yp1="80.00" xp2="100.00" yp2="80.00" sp="0.05" color="black" opacity="70"/>
+<text align="c" xp="80.00" yp="2" sp="1.2" color="black" opacity="75" font="mono">80</text>
+<text align="c" xp="2" yp="80.00" sp="1.2" color="black" opacity="75" font="mono">80</text>
+<line xp1="85.00" yp1="0.00" xp2="85.00" yp2="100.00" sp="0.05" color="black" opacity="70"/>
+<line xp1="0.00" yp1="85.00" xp2="100.00" yp2="85.00" sp="0.05" color="black" opacity="70"/>
+<text align="c" xp="85.00" yp="2" sp="1.2" color="black" opacity="75" font="mono">85</text>
+<text align="c" xp="2" yp="85.00" sp="1.2" color="black" opacity="75" font="mono">85</text>
+<line xp1="90.00" yp1="0.00" xp2="90.00" yp2="100.00" sp="0.05" color="black" opacity="70"/>
+<line xp1="0.00" yp1="90.00" xp2="100.00" yp2="90.00" sp="0.05" color="black" opacity="70"/>
+<text align="c" xp="90.00" yp="2" sp="1.2" color="black" opacity="75" font="mono">90</text>
+<text align="c" xp="2" yp="90.00" sp="1.2" color="black" opacity="75" font="mono">90</text>
+<line xp1="95.00" yp1="0.00" xp2="95.00" yp2="100.00" sp="0.05" color="black" opacity="70"/>
+<line xp1="0.00" yp1="95.00" xp2="100.00" yp2="95.00" sp="0.05" color="black" opacity="70"/>
+<text align="c" xp="95.00" yp="2" sp="1.2" color="black" opacity="75" font="mono">95</text>
+<text align="c" xp="2" yp="95.00" sp="1.2" color="black" opacity="75" font="mono">95</text>
+<rect xp="20" yp="95" wp="40" hp="20" color="blue" opacity="20"/>
+<rect xp="20" yp="50" wp="40" hp="100" color="green" opacity="20"/>
+<rect xp="70" yp="50" wp="60" hp="100" color="orange" opacity="20"/>
+<ellipse xp="20" yp="90" wp="2" hr="100" color="red" opacity="25"/>
+<ellipse xp="5" yp="80" wp="2" hr="100" color="red" opacity="25"/>
+<ellipse xp="70" yp="50" wp="2" hr="100" color="red" opacity="25"/>
+<text align="c" xp="20" yp="90" sp="3.5" >Title</text>
+<text align="c" xp="20" yp="50" sp="3.5" >Text area</text>
+<text align="c" xp="70" yp="50" sp="3.5" >Illustration</text>
+</slide>
+</deck>

@@ -1,4 +1,4 @@
-Decksh uses the traditional Cartesian coordinate system
+decksh uses the traditional Cartesian coordinate system
 to place elements on the canvas.  The x, y coordinates represent percentages ranging from 0-100;
 the coordinates are passed as arguments as a pair of numbers, x first, then y.
 \n
@@ -6,7 +6,8 @@ The origin (0,0), is at the lower-left, with the x coordinate increasing from le
 \n
 Other measures like the size of text or other objects are represented by the percent of the side width.
 \n
-For example, to place the text "Red Ball" left-aligned at 10% from the left, and 30% up (10,30), and the text size at 10% of the canvas width, use:
+For example, to place the text "Red Ball" left-aligned at 10% from the left, and 30% up (10,30), 
+and the text size at 10% of the canvas width, use:
 \n
 text "Red Ball" 10 30 10
 \n

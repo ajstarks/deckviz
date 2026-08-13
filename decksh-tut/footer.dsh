@@ -3,7 +3,7 @@ def footer F
 	pgs=1.5
 	pgx=5
 	pgy=pagebottom+1.5
-	etext pgn 99 pagebottom pgs "mono"
-	textblock F pgx pgy parawidth bodysize "mono"
+	etext pgn 99 pagebottom pgs "mono" "rgb(0,0,0)"
+	textblock F pgx pgy parawidth bodysize "mono" "rgb(0,0,0)"
 	pagenum+=1
 edef

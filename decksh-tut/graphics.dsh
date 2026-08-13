@@ -7,7 +7,7 @@ deck
 		vline    40 base 10 lw "red"                 // vertical line
 		arc      55 base 15 15 180 360 lw "blue"     // arc
 		polyline "70 85 95" "base 60 base"           // polyline
-		curve     0 base 100 100 100 base lw "green" // quadradic bezier
+		curve     0 base 100 100 100 base lw "green" // quadratic bezier
 		dline     5 30 95 30 lw 5                    // dotted line
 	eslide
 edeck

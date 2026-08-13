@@ -1,4 +1,4 @@
-Loops allow you repeat decksh operations in a contolled way.
+Loops allow you repeat decksh operations in a controlled way.
 \n
 A loop is defined as statements bounded by the ‘for’ and ‘efor’ keywords.
 The ‘for’ arguments define the beginning, ending, and optional increment, which

@@ -1,11 +1,16 @@
 deck
 	import "title.dsh"
 	import "footer.dsh"
+	import "randpic.dsh"
+	author="Anthony Starks"
+	date="2026-08-07"
 	pagestart=(5,88)
 	parawidth=35
+	pw2=parawidth*2.2
 	pagebottom=3
 	pagenum=1
 	bodysize=1.5
+	introsize=bodysize*1.2
 	titlesize=bodysize*2.5
 	codesize=1.2
 	codewidth=codesize*42
@@ -21,15 +26,44 @@ deck
 
 	secims=15
 
-	slide "rgb(0,0,0)" "white"
-		ctext "Learning decksh" 50 80 10
-		image "first-00001.png" 50 40 60 0
-		rect  50 40 62 62 "white" 
+
+	slide bgcolor txcolor
+		//ruler
+		timx=50
+		timy=50
+		tims=50
+		ctext "Learning decksh" 50 90 6 "serif"
+		image "first-00001.png" timx timy tims 0
+		ctext "A scripting language for presentations" 50 10 3 "serif"
+		//text author  5 5 1
+		ctext date   50 2.5 1
+		//clist 50 3 1.1 "sans" "" 100 1.2
+		//	li author
+		//	li date
+		//elist
 	eslide
 
 	slide bgcolor txcolor
-		title "Sections"
-		grid  "sections.dsh" 10 78 20 30 95
+		//ruler
+		title "Introduction"
+		textblockfile "intro.txt" pagestart_x pagestart_y pw2 introsize "serif"
+		rect 50 15 100 13 "#eeeeee"
+		image "first-00001.png"     11 15 10 0
+		image "coord-00001.png"     22 15 10 0
+		image "vars-00001.png"      33 15 10 0
+		image "colors-00001.png"    44 15 10 0
+		image "image-00001.png"     55 15 10 0
+		image "fgraphics-00001.png" 66 15 10 0
+		image "chart-00001.png"     77 15 10 0
+		image "geo-00001.png"       88 15 10 0
+		footer        "Program your presentations with clean design and precision."
+
+	eslide
+
+	slide bgcolor txcolor
+		title           "Sections"
+		grid            "sections.dsh" 10 78 20 25 95
+		footer          "You have to learn to look at the whole of something, not just the parts."
 	eslide
 
 	slide bgcolor txcolor
@@ -37,6 +71,13 @@ deck
 		textblockfile   "tools.txt" pagestart_x pagestart_y parawidth bodysize "serif"
 		image           "tool-run2.png"  imx 50 imw 0
 		footer          "We become what we behold. We shape our tools, and thereafter our tools shape us."
+	eslide
+
+	slide bgcolor txcolor
+		title          "The Slide Canvas"
+		textblockfile  "canvas.txt" pagestart_x pagestart_y parawidth bodysize "serif"
+		image          "canvas-00001.png" imx imy imw 0
+		footer         "Use the flexible canvas to your advantage."
 	eslide
 
 	slide bgcolor txcolor
@@ -48,15 +89,16 @@ deck
 	eslide
 
 	slide bgcolor txcolor
+		lcs=1.3
 		title           "The Coordinate System"
 		textblockfile	"coord.txt" pagestart_x pagestart_y parawidth bodysize "serif"
 		image			"coord-00001.png" imx imy imw 0
 		textcode		"coord.dsh" codex codey codewidth codesize
-		ctext "(0,0)"     45 40 1 "mono" rulecolor
-		ctext "(100,0)"   95 40 1 "mono" rulecolor
-		ctext "(0,100)"   45 90 1 "mono" rulecolor
-		ctext "(100,100)" 95 90 1 "mono" rulecolor
-		ctext "(50,50)"   70 65 1 "mono" rulecolor
+		ctext "(0,0)"     45 40 lcs "mono" rulecolor
+		ctext "(100,0)"   95 40 lcs "mono" rulecolor
+		ctext "(0,100)"   45 90 lcs "mono" rulecolor
+		ctext "(100,100)" 95 90 lcs "mono" rulecolor
+		ctext "(50,50)"   70 65 lcs "mono" rulecolor
 		vline 45 40 50 0.1 rulecolor 20
 		vline 95 40 50 0.1 rulecolor 20
 		hline 45 40 50 0.1 rulecolor 20
@@ -145,14 +187,34 @@ deck
 	eslide
 
 	slide bgcolor txcolor
+		title         "Designing with regions"
+		textblockfile "region.txt" pagestart_x pagestart_y parawidth bodysize "serif"
+		image         "regill-00001.png" 22 30 40 0
+		image         "region-00001.png" imx imy imw 0
+		textcode      "region.dsh" codex 52 codewidth codesize
+		footer        "Using regions ties the deck together."
+	eslide
+
+	slide bgcolor txcolor
 		rx=5
+		ry=80
 		rs=2
 		refcolor="darkblue"
 		title "References"
-		text  "[1] Installing and Running decksh/pdfdeck"  rx 85 rs "sans" refcolor 100 "https://speakerdeck.com/ajstarks/pdfdeck"
-		text  "[2] decksh Object Reference"                rx 80 rs "sans" refcolor 100 "https://speakerdeck.com/ajstarks/decksh-object-reference"
-		text  "[3] decksh Keywords"                        rx 75 rs "sans" refcolor 100 "https://speakerdeck.com/ajstarks/decksh-keywords"
-		text  "[4] decksh Visualizations Repository"       rx 70 rs "sans" refcolor 100 "https://github.com/ajstarks/deckviz"
-		text  "[5] decksh Code Repository"                 rx 65 rs "sans" refcolor 100 "https://github.com/ajstarks/decksh"
+			text  "Installing and Running decksh/pdfdeck" rx 80 rs "serif" refcolor 100 "https://speakerdeck.com/ajstarks/pdfdeck"
+			text  "decksh Object Reference"               rx 75 rs "serif" refcolor 100 "https://speakerdeck.com/ajstarks/decksh-object-reference"
+			text  "decksh Keywords"                       rx 70 rs "serif" refcolor 100 "https://speakerdeck.com/ajstarks/decksh-keywords"
+			text  "decksh Visualizations Repository"      rx 65 rs "serif" refcolor 100 "https://github.com/ajstarks/deckviz"
+			text  "decksh Code Repository"                rx 60 rs "serif" refcolor 100 "https://github.com/ajstarks/decksh"
+			rx+=40
+			list rx ry rs "serif" "rgb(50,50,50)" 100 2
+				li "How to set up your environment"
+				li "The definitive decksh language reference"
+				li "All the keywords and their usage"
+				li "Repo of decksh examples to learn from"
+				li "The code for decksh and associated tools and documents"
+			elist
+
+		footer "Look it up (and click on the blue text)"
 	eslide
 edeck

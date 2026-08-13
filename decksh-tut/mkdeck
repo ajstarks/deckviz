@@ -1,5 +1,7 @@
 #!/bin/bash
+./mkpage intro
 ./mkpage tools
+./mkpage canvas
 ./mkpage first
 ./mkpage vars
 ./mkpage coord
@@ -11,13 +13,16 @@
 ./mkpage list
 ./mkpage chart
 ./mkpage loop
-./mkpage geo -layers="rect:image:poly:ellipse:text:line"
+./mkpage geo -layers="rect:image:poly:ellipse:text:line:list"
+./mkpage region
+./mkpage refs
 sans=PublicSans-Regular # IBMPlexSans-Regular # PublicSans-Regular # IBMPlexSans-Regular
 mono=Inconsolata-Medium # FiraCode-Regular # Go-Mono # IntelOneMono-Regular # MartianMonoCondensed-Regular # OldTimeyMono # VictorMono-Thin # SF-Mono-Regular # Inconsolata-Medium # IBMPlexMono-Text
 serif=Charter-Regular
 decksh tut.dsh |
 pdfdeck -sw \
- -layers="rect:image:poly:ellipse:text:line" \
+ -pagesize Letter \
+ -layers="rect:image:poly:ellipse:text:line:list" \
  -stdout \
  -sans $sans \
  -mono $mono \
