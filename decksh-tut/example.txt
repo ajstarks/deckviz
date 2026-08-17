@@ -11,7 +11,7 @@ images and a map, and an image with explanatory text.
 \n
 The initial code defines a set of variables
 to be referenced later in the deck.  These variables
-make define the relationship between positions and sizes
+define the relationship between positions and sizes
 used in the deck.
 \n
 For example the hero text is set and the title and

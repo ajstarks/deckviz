@@ -3,7 +3,7 @@ deck
 	import "footer.dsh"
 	import "randpic.dsh"
 	author="Anthony Starks"
-	date="2026-08-16"
+	date="2026-08-17"
 	pagestart=(5,88)
 	parawidth=35
 	pw2=parawidth*2.2
@@ -149,7 +149,7 @@ deck
 		textblockfile  "image.txt" pagestart_x pagestart_y parawidth bodysize "serif"
 		image          "image-00001.png" imx imy imw 0
 		textcode       "image.dsh" codex codey codewidth codesize
-		footer         "The artful arrangement of pictures help illuminate your deck."
+		footer         "The artful arrangement of pictures illuminate your deck."
 	eslide
 
 	slide bgcolor txcolor

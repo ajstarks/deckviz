@@ -1,7 +1,7 @@
 This slide is defined by a 2x2 array of images
 along with their locations on a map.
 
-the bounds of the map (upper left (nw) and 
+The bounds of the map (upper left (nw) and 
 lower right (se) lat/long pairs) are defined using geo:URL variables, 
 and the image locations (obtained from the image metadata) are also defined.
 
