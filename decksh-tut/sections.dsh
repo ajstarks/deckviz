@@ -13,3 +13,5 @@ cimage "list-00001.png"      "Lists"                 X Y secims 0
 cimage "chart-00001.png"     "Charts"                X Y secims 0
 cimage "geo-00001.png"       "Maps"                  X Y secims 0
 cimage "regill-00001.png"    "Regions"               X Y secims 0
+cimage "example-00001.png"   "Example"               X Y secims 0
+cimage "lamp-00001.png"      "Bonus"                 X Y secims 0

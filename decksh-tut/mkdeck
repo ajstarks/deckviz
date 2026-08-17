@@ -20,6 +20,9 @@
 ./mkpage hero
 ./mkpage twoup
 ./mkpage fourup
+./mkpage imt
+./mkpage plain
+./mkpage lamp
 sans=PublicSans-Regular
 mono=Inconsolata-Medium
 serif=Charter-Regular
