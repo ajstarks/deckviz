@@ -1,0 +1,8 @@
+deck
+	include "exvars.dsh"
+	include "hsect.dsh"
+	include "twoup.dsh"
+	include "fourupmap.dsh"
+	include "imgtext.dsh"
+	include "pf.dsh"
+edeck

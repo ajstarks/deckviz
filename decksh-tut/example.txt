@@ -1,0 +1,17 @@
+Now that you understand the fundamentals of making 
+a presentation with decksh, your next step is to
+exercise your knowledge by making your own deck.
+\n
+In this example, we will build a presentation on 
+art works in an urban environment.
+\n
+The deck is structured to contain title and section pages,
+pages that contain two images, pages with an array of 
+images and a map, and image with explanatory text.
+\n
+Given the design of the deck, the ‘Widescreen’ (16x9in)
+canvas size is used, along with a “dark mode” color scheme:
+black background and white text.
+\n
+The initial code defines a set of variables
+to be referenced later in the deck.

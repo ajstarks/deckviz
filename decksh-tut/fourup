@@ -1,0 +1,11 @@
+This slide is defined by a 2x2 array of images
+along with their locations on a map.
+
+the bounds of the map (upper left and lower right coordinates)
+are defined using geo:URL variables, and the image locations
+(obtained from the image metadata) are also defined.
+
+Next, the slide title is set and the geographic elements
+are shown.
+
+Finally, the image array is set.

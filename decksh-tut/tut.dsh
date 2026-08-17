@@ -3,7 +3,7 @@ deck
 	import "footer.dsh"
 	import "randpic.dsh"
 	author="Anthony Starks"
-	date="2026-08-07"
+	date="2026-08-16"
 	pagestart=(5,88)
 	parawidth=35
 	pw2=parawidth*2.2
@@ -35,12 +35,7 @@ deck
 		ctext "Learning decksh" 50 90 6 "serif"
 		image "first-00001.png" timx timy tims 0
 		ctext "A scripting language for presentations" 50 10 3 "serif"
-		//text author  5 5 1
 		ctext date   50 2.5 1
-		//clist 50 3 1.1 "sans" "" 100 1.2
-		//	li author
-		//	li date
-		//elist
 	eslide
 
 	slide bgcolor txcolor
@@ -48,14 +43,16 @@ deck
 		title "Introduction"
 		textblockfile "intro.txt" pagestart_x pagestart_y pw2 introsize "serif"
 		rect 50 15 100 13 "#eeeeee"
-		image "first-00001.png"     11 15 10 0
-		image "coord-00001.png"     22 15 10 0
-		image "vars-00001.png"      33 15 10 0
-		image "colors-00001.png"    44 15 10 0
-		image "image-00001.png"     55 15 10 0
-		image "fgraphics-00001.png" 66 15 10 0
-		image "chart-00001.png"     77 15 10 0
-		image "geo-00001.png"       88 15 10 0
+		indy=15
+		indims=10
+		image "first-00001.png"     11 indy indims 0
+		image "coord-00001.png"     22 indy indims 0
+		image "vars-00001.png"      33 indy indims 0
+		image "colors-00001.png"    44 indy indims 0
+		image "image-00001.png"     55 indy indims 0
+		image "fgraphics-00001.png" 66 indy indims 0
+		image "chart-00001.png"     77 indy indims 0
+		image "geo-00001.png"       88 indy indims 0
 		footer        "Program your presentations with clean design and precision."
 
 	eslide
@@ -193,6 +190,53 @@ deck
 		image         "region-00001.png" imx imy imw 0
 		textcode      "region.dsh" codex 52 codewidth codesize
 		footer        "Using regions ties the deck together."
+	eslide
+
+	slide bgcolor txcolor
+		rect 50 15 100 13 "#eeeeee"
+		title "Building an Example Deck"
+		textblockfile "example.txt" pagestart_x pagestart_y parawidth bodysize "serif"
+		textcode      "exvars.dsh" codex pagestart_y codewidth codesize
+		exy=15
+		exims=10
+		image "example-00001.png"  6  exy exims 0
+		image "example-00002.png"  17 exy exims 0
+		image "example-00003.png"  28 exy exims 0
+		image "example-00004.png"  39 exy exims 0
+		image "example-00005.png"  50 exy exims 0
+		image "example-00006.png"  61 exy exims 0
+		image "example-00007.png"  72 exy exims 0
+		image "example-00008.png"  83 exy exims 0
+		image "example-00009.png"  94 exy exims 0
+		footer "Few things are harder to put up with than the annoyance of a good example."
+	eslide
+
+	slide bgcolor txcolor
+		title "Hero and Section"
+		textblockfile "hero.txt" pagestart_x pagestart_y parawidth bodysize "serif"
+		textcode      "hsect.dsh" codex 20 codewidth codesize
+		image         "example-00001.png" imx 80 imw 0
+		image         "example-00002.png" imx 42 imw 0
+	eslide
+
+	slide bgcolor txcolor
+		title        "Two-Up Slides"
+		textcode     "twoup.dsh" codex 20 codewidth codesize
+		image        "example-00003.png" imx 80 imw 0
+		image        "example-00004.png" imx 42 imw 0
+	eslide
+
+	slide bgcolor txcolor
+		title        "Four Up and Map"
+		textblockfile "fourup.txt" pagestart_x pagestart_y parawidth bodysize "serif"
+		textcode     "fourupmap.dsh" codex 58 codewidth codesize
+		image        "example-00005.png" imx 80 imw 0
+	eslide
+
+	slide bgcolor txcolor
+		title "Image and Textblock"
+		textcode     "imgtext.dsh" codex codey codewidth codesize
+		image        "example-00006.png" imx imy imw 0
 	eslide
 
 	slide bgcolor txcolor

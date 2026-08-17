@@ -16,8 +16,12 @@
 ./mkpage geo -layers="rect:image:poly:ellipse:text:line:list"
 ./mkpage region
 ./mkpage refs
-sans=PublicSans-Regular # IBMPlexSans-Regular # PublicSans-Regular # IBMPlexSans-Regular
-mono=Inconsolata-Medium # FiraCode-Regular # Go-Mono # IntelOneMono-Regular # MartianMonoCondensed-Regular # OldTimeyMono # VictorMono-Thin # SF-Mono-Regular # Inconsolata-Medium # IBMPlexMono-Text
+./mkpage example -pagesize=Widescreen
+./mkpage hero
+./mkpage twoup
+./mkpage fourup
+sans=PublicSans-Regular
+mono=Inconsolata-Medium
 serif=Charter-Regular
 decksh tut.dsh |
 pdfdeck -sw \
@@ -27,3 +31,4 @@ pdfdeck -sw \
  -sans $sans \
  -mono $mono \
  -serif $serif - > tut.pdf
+open tut.pdf
