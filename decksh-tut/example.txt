@@ -15,7 +15,7 @@ define the relationship between positions and sizes
 used in the deck.
 \n
 For example the hero text is set and the title and
-section text sizes are 75 and 50% of that size.
+section text sizes are 50% and 75% of that size.
 \n
 Given the design of the deck, the ‘Widescreen’ (16x9in)
 canvas size is used, along with a “dark mode” color scheme:

@@ -248,14 +248,14 @@ deck
 
 	slide bgcolor txcolor
 		imx3=70
-		imy3=25
+		imy3=60
 		imw3=30
 		title "Continue the Design"
 		textblockfile  "plain.txt" pagestart_x pagestart_y parawidth bodysize "serif"
 		image         "example-00007.png" 18 imy3 imw3 0
 		image         "example-00008.png" 50 imy3 imw3 0
 		image         "example-00009.png" 82 imy3 imw3 0
-		textcode      "pf.dsh" codex pagestart_y codewidth codesize
+		textcode      "pf.dsh" codex codey codewidth codesize
 		footer        "Continue the story with style."       
 	eslide
 
