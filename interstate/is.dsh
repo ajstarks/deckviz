@@ -10,13 +10,13 @@ deck
 	nscolor="rgb(0,128,0)"
 	hwsize=0.2
 
-	geobound  24.45 50 -124.75 -66.95
-	geocanvas 0 100 5 90
+	geobound 24 50 -125 -67
+	geocanvas 0 100 10 90
 
 	slide
 		ctext "US Intersate Highway System" 50 92 3
 		geolabel "is-cities.d" ts
-		georegion "ustates20.json" contcolor
+		geoborder "us-outline.json" 0.1 "black" // contcolor
 		geoborder "USA_Freeway_System.geojson" 0.075 "gray"
 	eslide
 
@@ -80,8 +80,9 @@ deck
 	slide
 		ctext "US Intersate Highway System (complete)" 50 92 3
 		geolabel "is-cities.d" ts
-		georegion "ustates20.json" contcolor
-		geoborder "ustates20.json" bs bordcolor
+		//georegion "ustates20.json" contcolor
+		//geoborder "ustates20.json" bs bordcolor
+		geoborder "us-outline.json" 0.1 "black"
 		geoborder "USA_Freeway_System.geojson" 0.075 "gray"
 		geoborder "east-west.json" hwsize ewcolor
 		geoborder "north-south.json" hwsize nscolor

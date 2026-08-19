@@ -53,6 +53,18 @@ deck
 	gswlogo="gsw.png"
 	gswcolor="#1d428a"
 
+
+	illogo="ill-logo.png"
+	uconnlogo="husky.png"
+	illcolor="#ed681b"
+	uconncolor="#00251b"
+
+	michlogo="michigan-logo.png"
+	michcolor="#ffcb03"
+	azlogo="arizona-logo.png"
+	azcolor="#ab0520"
+
+
 	slide
 		scorechart "Eastern Conference Semi-Finals, Game 4" nykname indname "89" "121" nyklogo indlogo nykcolor indcolor "nyk-g4.d" "ind-g4.d" "ind-g4-diff.d" indcolor
 	eslide
@@ -132,4 +144,17 @@ deck
 	slide
 		scorechart "2025 NBA Final, Game 7"                             indname okcname "91" "103"      indlogo okclogo indcolor okccolor   "2025-ind-final-g7.d" "2025-okc-final-g7.d" "2025-okc-final-g7-diff.d" okccolor
 	eslide
+
+	slide
+		scorechart " 2026 NCAA Men's Basketball Final Four" "Illinois" "Connecticut" "62" "71" illogo uconnlogo illcolor uconncolor "illinois.d" "uconn.d" "uconn-diff.d" uconncolor
+	eslide
+
+	slide
+		scorechart " 2026 NCAA Men's Basketball Final Four" "Michigan" "Arizona" "91" "73" michlogo azlogo michcolor azcolor "mich.d" "arizona.d" "mich-diff.d" michcolor
+	eslide
+
+	slide
+		scorechart "2026 NCAA Men's Basketball Championship " "Connecticut" "Michigan" "63" "69" uconnlogo michlogo uconncolor michcolor "uconn-champ.d" "mich-champ.d" "mich-champ-diff.d" michcolor
+	eslide
+
 edeck

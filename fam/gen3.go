@@ -117,10 +117,10 @@ const (
 	childDotSize      = 1.2
 	childImageX       = parentBraceX + 4
 	grandX            = childX + 10.5
-	grandSize         = 1.2
+	grandSize         = childSize * 0.75
 	grandSpacing      = grandSize * 1.8
 	ggrandSize        = grandSize * 0.75
-	treeMinX          = 7.0
+	treeMinX          = 10.0
 	treeMaxX          = 100 - treeMinX
 	minFanAngle       = 30.0
 	maxFanAngle       = 150.0
@@ -199,6 +199,7 @@ func scale(w io.Writer, x, y float64, min, max, interval int) {
 func famtree(w io.Writer, data Family) {
 	var gencolors = map[string]string{"m": "blue", "f": "#FF69B4"}
 	ctext(w, midx, parentFooterY, familySize, data.Name, "sans", "")
+	//rtext(w, midx, parentFooterY-4, 90, familySize/2, data.Name, "sans", "")
 	text(w, treeMinX, 100-parentFooterY, parentSize, data.Parent.Husband, "sans", "")
 	ctext(w, midx, 100-parentFooterY, parentSize*0.75, "m. "+data.Parent.Married, "sans", yearcolor)
 	etext(w, treeMaxX, 100-parentFooterY, parentSize, data.Parent.Wife, "sans", "")
@@ -287,7 +288,8 @@ func counts(w io.Writer, data Family) {
 func drawChildren(w io.Writer, data Family) {
 	children := data.Parent.Children
 	childy := childTop
-	//childSpacing := familyHeight / float64(len(children))
+	childSpacing := familyHeight / float64(len(children)-1)
+	var cs float64
 	for _, c := range children {
 		etext(w, childX, childy, childSize, c.Name, "sans", "")
 		etext(w, childDateX, childy, childSize, "("+c.Birth+")", "sans", yearcolor)
@@ -306,11 +308,16 @@ func drawChildren(w io.Writer, data Family) {
 			text(w, grandX, gy, grandSize, g.Name, "sans", grandcolor)
 			text(w, grandX+8, gy, grandSize, "("+g.Birth+")", "sans", yearcolor)
 			if len(g.Grands) > 0 {
-				text(w, grandX+13, gy, ggrandSize, ggstring(g.Grands), "sans", ggcolor)
+				text(w, grandX+13, gy, grandSize, ggstring(g.Grands), "sans", ggcolor)
 			}
 			gy -= grandSpacing
 		}
-		childy -= (gh + 4.5) // childSpacing
+		if lc == 0 {
+			cs = childSpacing * 0.6
+		} else {
+			cs = childSpacing
+		}
+		childy -= cs // childSpacing // (gh + 3.2)
 	}
 	counts(w, data)
 }

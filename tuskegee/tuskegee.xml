@@ -86,6 +86,32 @@
 <text align="e" xp="95" yp="93" sp="4" font="serif">THE TUSKEGEE AIRMEN</text>
 <image name="images/creamers-dream.jpg" xp="15" yp="93" width="331" height="152"/>
 <line xp1="23" yp1="94" xp2="103" yp2="94" sp="3" color="#cc252c" opacity="20"/>
+<text xp="34.08" yp="73.18" rotation="350.00" sp="1.2" font="mono">R</text>
+<text xp="34.84" yp="73.07" rotation="348.12" sp="1.2" font="mono">e</text>
+<text xp="35.59" yp="72.94" rotation="346.25" sp="1.2" font="mono">d</text>
+<text xp="36.33" yp="72.78" rotation="344.38" sp="1.2" font="mono"> </text>
+<text xp="37.07" yp="72.61" rotation="342.50" sp="1.2" font="mono">T</text>
+<text xp="37.80" yp="72.42" rotation="340.62" sp="1.2" font="mono">a</text>
+<text xp="38.52" yp="72.21" rotation="338.75" sp="1.2" font="mono">i</text>
+<text xp="39.23" yp="71.98" rotation="336.88" sp="1.2" font="mono">l</text>
+<text xp="39.93" yp="71.73" rotation="335.00" sp="1.2" font="mono">e</text>
+<text xp="40.62" yp="71.47" rotation="333.12" sp="1.2" font="mono">d</text>
+<text xp="41.30" yp="71.19" rotation="331.25" sp="1.2" font="mono">-</text>
+<text xp="41.97" yp="70.89" rotation="329.38" sp="1.2" font="mono">A</text>
+<text xp="42.63" yp="70.57" rotation="327.50" sp="1.2" font="mono">n</text>
+<text xp="43.27" yp="70.24" rotation="325.62" sp="1.2" font="mono">g</text>
+<text xp="43.90" yp="69.89" rotation="323.75" sp="1.2" font="mono">e</text>
+<text xp="44.51" yp="69.53" rotation="321.88" sp="1.2" font="mono">l</text>
+<text xp="45.11" yp="69.14" rotation="320.00" sp="1.2" font="mono">s</text>
+<text xp="54.89" yp="69.14" rotation="400.00" sp="1.2" font="mono">S</text>
+<text xp="55.69" yp="69.65" rotation="397.50" sp="1.2" font="mono">p</text>
+<text xp="56.52" yp="70.13" rotation="395.00" sp="1.2" font="mono">i</text>
+<text xp="57.37" yp="70.57" rotation="392.50" sp="1.2" font="mono">t</text>
+<text xp="58.25" yp="70.99" rotation="390.00" sp="1.2" font="mono"> </text>
+<text xp="59.15" yp="71.38" rotation="387.50" sp="1.2" font="mono">F</text>
+<text xp="60.07" yp="71.73" rotation="385.00" sp="1.2" font="mono">i</text>
+<text xp="61.01" yp="72.06" rotation="382.50" sp="1.2" font="mono">r</text>
+<text xp="61.96" yp="72.35" rotation="380.00" sp="1.2" font="mono">e</text>
 <image name="images/west-brown.png" xp="30" yp="55" width="1200" height="1200" scale="90"/>
 <image name="images/east-brown.png" xp="70" yp="55" width="1200" height="1200" scale="90"/>
 <text type="block" xp="15" yp="81" wp="70" sp="1.8" >The Tuskegee Airmen came from all over the country—forty of forty-eight states plus the District of Columbia (Over 85%) were represented.</text>
@@ -222,6 +248,32 @@
 <text align="e" xp="95" yp="93" sp="4" font="serif">THE TUSKEGEE AIRMEN</text>
 <image name="images/creamers-dream.jpg" xp="15" yp="93" width="331" height="152"/>
 <line xp1="23" yp1="94" xp2="103" yp2="94" sp="3" color="#cc252c" opacity="20"/>
+<text xp="34.08" yp="73.18" rotation="350.00" sp="1.2" font="mono">R</text>
+<text xp="34.84" yp="73.07" rotation="348.12" sp="1.2" font="mono">e</text>
+<text xp="35.59" yp="72.94" rotation="346.25" sp="1.2" font="mono">d</text>
+<text xp="36.33" yp="72.78" rotation="344.38" sp="1.2" font="mono"> </text>
+<text xp="37.07" yp="72.61" rotation="342.50" sp="1.2" font="mono">T</text>
+<text xp="37.80" yp="72.42" rotation="340.62" sp="1.2" font="mono">a</text>
+<text xp="38.52" yp="72.21" rotation="338.75" sp="1.2" font="mono">i</text>
+<text xp="39.23" yp="71.98" rotation="336.88" sp="1.2" font="mono">l</text>
+<text xp="39.93" yp="71.73" rotation="335.00" sp="1.2" font="mono">e</text>
+<text xp="40.62" yp="71.47" rotation="333.12" sp="1.2" font="mono">d</text>
+<text xp="41.30" yp="71.19" rotation="331.25" sp="1.2" font="mono">-</text>
+<text xp="41.97" yp="70.89" rotation="329.38" sp="1.2" font="mono">A</text>
+<text xp="42.63" yp="70.57" rotation="327.50" sp="1.2" font="mono">n</text>
+<text xp="43.27" yp="70.24" rotation="325.62" sp="1.2" font="mono">g</text>
+<text xp="43.90" yp="69.89" rotation="323.75" sp="1.2" font="mono">e</text>
+<text xp="44.51" yp="69.53" rotation="321.88" sp="1.2" font="mono">l</text>
+<text xp="45.11" yp="69.14" rotation="320.00" sp="1.2" font="mono">s</text>
+<text xp="54.89" yp="69.14" rotation="400.00" sp="1.2" font="mono">S</text>
+<text xp="55.69" yp="69.65" rotation="397.50" sp="1.2" font="mono">p</text>
+<text xp="56.52" yp="70.13" rotation="395.00" sp="1.2" font="mono">i</text>
+<text xp="57.37" yp="70.57" rotation="392.50" sp="1.2" font="mono">t</text>
+<text xp="58.25" yp="70.99" rotation="390.00" sp="1.2" font="mono"> </text>
+<text xp="59.15" yp="71.38" rotation="387.50" sp="1.2" font="mono">F</text>
+<text xp="60.07" yp="71.73" rotation="385.00" sp="1.2" font="mono">i</text>
+<text xp="61.01" yp="72.06" rotation="382.50" sp="1.2" font="mono">r</text>
+<text xp="61.96" yp="72.35" rotation="380.00" sp="1.2" font="mono">e</text>
 <image name="images/west-brown.png" xp="30" yp="55" width="1200" height="1200" scale="90"/>
 <image name="images/east-brown.png" xp="70" yp="55" width="1200" height="1200" scale="90"/>
 <text type="block" xp="15" yp="81" wp="70" sp="1.8" >The Tuskegee Airmen came from all over the country—forty of forty-eight states plus the District of Columbia (Over 85%) were represented.</text>

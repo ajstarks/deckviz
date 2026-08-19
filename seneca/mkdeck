@@ -1,4 +1,4 @@
 #!/bin/bash
-decksh seneca.dsh       | pdfdeck -stdout -sans Baskervville-Italic  - > seneca.pdf
+decksh  seneca.dsh      | pdfdeck -grid 0 -stdout -sans Baskervville-Italic  - > seneca.pdf
 decksh pop.dsh          | pdfdeck -stdout                            - >  pop.pdf
-decksh weeksville.dsh   | pdfdeck -stdout -sans Baskervville-Italic  - > weeksville.pdf
+decksh weeksville.dsh   | pdfdeck -stdout -sans PublicSans-Medium -serif Baskervville-Italic  - > weeksville.pdf

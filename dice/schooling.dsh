@@ -70,7 +70,6 @@ deck
 			dice x y dicesize dotsize
 		efor
 		dice2 80 y dicesize dotsize
-
 		y-=vskip
 
 		// TX
@@ -91,9 +90,7 @@ deck
 			dice x y dicesize dotsize
 		efor
 		dice3 75 y dicesize dotsize
-
 		y-=vskip
-
 		// AL
 		text "ALABAMA"			tleft y ts
 		ctext "27" 62 y ts
@@ -103,7 +100,6 @@ deck
 		efor
 		dice2 60 y dicesize dotsize
 		y-=vskip
-
 		// SC
 		text "SOUTH CAROLINA"	tleft y ts
 		ctext "26" 62 y ts
@@ -113,7 +109,6 @@ deck
 		efor
 		dice1 60 y dicesize dotsize
 		y-=vskip
-
 		// LA
 		text "LOUISIANA"		tleft y ts
 		ctext "23" 60 y ts

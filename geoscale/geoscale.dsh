@@ -5,7 +5,7 @@ deck
 	rulecolor="black"
 	loncolor="rgb(128,0,0)"
 	latcolor="rgb(0,0,128)"
-	slide "rgb(220,220,220)" //bgcolor txcolor
+	slide bgcolor // "rgb(220,220,220)" //bgcolor txcolor
 		
 		// geographic bounds
 		z=0
@@ -85,5 +85,95 @@ deck
 		geopath		"geo:-90,-180"	"geo:-90,180"	 lw rulecolor 50
 
 	eslide
+
+	slide "skyblue"
+		geoLatMax=37.346983
+        geoLatMin=0-34.833222
+        geoLongMax=51.266667
+        geoLongMin=0-17.520278
+
+        geoXmin=40
+        geoYmin=30
+        geoXmax=70
+        geoYmax=70
+
+        p0=(geoXmin,geoYmin)
+        p1=(geoXmin,geoXmax)
+        p3=(geoXmax,geoXmax)
+        p4=(geoXmax,geoYmin)
+
+		georegion "africa.kml" "white"
+
+		circle geoXmin geoYmin 0.5
+		circle geoXmax geoYmax 0.5
+		hline geoXmin geoYmin 
+
+		gwidth=geoXmax-geoXmin
+		gheight=geoYmax-geoYmin
+
+		gw=gwidth/2
+		gh=gheight/2
+		gw=geoXmin+gw
+		gh=geoYmin+gh
+		rect gw gh gwidth gheight "steelblue" 15
+		latmint=format "geoLatMin (%.3f)" geoLatMin
+		latmaxt=format "geoLatMax (%.3f)" geoLatMax
+		longmint=format "geoLongMin (%.3f)" geoLongMin
+		longmaxt=format "geoLongMax (%.3f)" geoLongMax
+
+		ctext latmint gw geoYmin 1.5 "mono"
+		ctext latmaxt gw geoYmax 1.5 "mono"
+		etext longmint geoXmin gh 1.5 "mono"
+		btext longmaxt geoXmax gh 1.5 "mono"
+
+		etext "(geoXmin, geoYmin)" geoXmin geoYmin 1.5 "mono"
+		btext "(geoXmax, geoYmax)" geoXmax geoYmax 1.5 "mono"
+	eslide
+
+	slide
+		ruler
+
+        geoLatMax=37.346983
+        geoLatMin=0-34.833222
+        geoLongMax=51.266667
+        geoLongMin=0-17.520278
+
+        geoXmin=70
+        geoYmax=20
+        geoYmin=5
+        geoXmax=80
+        georegion "africa.kml" "gray"
+        gwidth=geoXmax-geoXmin
+		gheight=geoYmax-geoYmin
+
+		gw=gwidth/2
+		gh=gheight/2
+		gw=geoXmin+gw
+		gh=geoYmin+gh
+
+		lab1=format "geoXmin=%v geoXmax=%v geoYmin=%v geoYmax=%v" geoXmin geoXmax geoYmin geoYmax
+		lab2=format "geoLatMin=%.2f geoLatMax-%.2f geoLongMin=%.2f geoLongMax=%.2f" geoLatMin geoLatMax geoLongMin geoLongMax
+		ctext lab1 75 25 1.2 "mono"
+		ctext lab2 75 22 1.2 "mono"
+		rect gw gh gwidth gheight "steelblue" 30
+
+
+		geoXmin=0
+		geoYmin=10
+		geoXmax=100
+		geoYmax=90
+		geoLatMax=north
+		geoLatMin=south
+        geoLongMax=east
+        geoLongMin=west
+
+        georegion "world.kml" "black"
+        georegion "africa.kml" "gray"
+        rect 55 50.5 19 32 "steelblue" 30
+
+
+	eslide
+
+
 
 edeck

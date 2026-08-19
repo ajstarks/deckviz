@@ -5,11 +5,11 @@ deck
 	shapecolor="white"
 	slide bgcolor
 
-		top=100
 		bottom=0
+		top=100
 		left=0
 		right=100
-		half=50
+		half=top/2
 		fourth=half/2
 		threefourths=fourth*3
 

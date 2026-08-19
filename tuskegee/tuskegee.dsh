@@ -1,10 +1,13 @@
+// Tuskegee Airmen
+//
+// Data: https://docs.google.com/spreadsheets/d/1LdyphRt2-CAPCVuk1YbpywkiMH82iVAmogxSa4WCpqU/edit#gid=1871050828
+// photo source: https://www.loc.gov/search/?fa=partof:lot+12447
+//
+// Aircraft source:
+// http://www.gaetanmarie.com
+// http://ghostgrey.gaetanmarie.com/articles/2012/Nine%20Myths/Nine%20Myths%20about%20the%20Tuskegee%20Airmen.htm
+// standard crop for Frissel photos: gift -crop 35,35,935,990
 deck
-	// Tuskegee Airmen
-	// Data: https://docs.google.com/spreadsheets/d/1LdyphRt2-CAPCVuk1YbpywkiMH82iVAmogxSa4WCpqU/edit#gid=1871050828
-	// photo source: https://www.loc.gov/search/?fa=partof:lot+12447
-	// http://www.gaetanmarie.com"
-	// http://ghostgrey.gaetanmarie.com/articles/2012/Nine%20Myths/Nine%20Myths%20about%20the%20Tuskegee%20Airmen.htm
-	// standard crop for Frissel photos: gift -crop 35,35,935,990 
 	canvas 1584 2016
 
 	slide
@@ -25,5 +28,4 @@ deck
  		include "awards.dsh"
  		include "credits.dsh"
  	eslide
-
 edeck

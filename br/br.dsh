@@ -1,9 +1,9 @@
-// Black Reconstruction, The Price of Disaster, ppg 371-372
+// Black Reconstruction, The Price of Disaster, pp. 371-372
 deck
 	import "pmap.dsh"
 	import "twolabel.dsh"
 
-	footnote="From Black Reconstruction, The Price of Disaster, ppg 371-372"
+	footnote="From Black Reconstruction, The Price of Disaster, pp. 371-372"
 	fnx=50
 	fny=5
 	fns=2

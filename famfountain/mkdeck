@@ -1,2 +1,2 @@
 #!/bin/sh
-decksh famfountain.dsh | pdfr -pagesize 1500x1200 -mono  et-book-roman-old-style-figures -serif Charter-Regular
+decksh famfountain.dsh | pdfdeck -stdout  -pagesize 1500x1200 -mono  et-book-roman-old-style-figures -serif Charter-Regular - > f.pdf

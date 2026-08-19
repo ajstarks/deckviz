@@ -2,13 +2,13 @@ deck
 	import "subline.dsh"
 
 	// layer controls
-	pov = "nyc"
-	showboro = 0
-	shownj = 0
-	showlines = 0
-	showallsub = 0
+	pov = "mh"
+	showboro = 1
+	shownj = 1
+	showlines = 1
+	showallsub = 1
 	showhs = 1
-	showstreets = 0
+	showstreets = 1
 
 	// boundaries
 	nyc1              = "geo:40.490,-74.265763	NYC1"
@@ -74,25 +74,20 @@ deck
 		text              "New York City" tx 90 4 "sans"
 
 		// geometry
-
 		if pov == "nyc"
 			geobbox nyc1 nyc2
 		eif
-
 		if pov == "mh"
 			geobbox mh1 mh2
 		eif
-
 		if pov == "flat"
 			geobbox m1_3d m2_3d
 		eif
-
 		// streets
 		if showstreets > 0
 			geoline      "nyc-streets.geojson" 0.05 streetcolor
 			geoline      "staten-island-roads.geojson" 0.05 streetcolor
 		eif
-
 		// region and labels
 		if showboro > 0
 			georegion         "borough.geojson" "linen"
@@ -102,7 +97,6 @@ deck
 			geolabel          Bronx ts "sans" labelcolor
 			geolabel          StatenIsland ts "sans" labelcolor
 		eif
-
 		// regions
 		if shownj > 0
 			geoline           "husdon.geojson" 0.05 bordercolor
@@ -110,7 +104,6 @@ deck
 			geoline           "middlesex.geojson" 0.2 bordercolor
 			geoline           "union.geojson" 0.02 bordercolor
 		eif
-		
 		// hotspots
 		if showhs > 0
 			hsx=lsx+10
@@ -121,7 +114,6 @@ deck
 			circle hsx hsy lss hscolor
 			text  "WiFi Hot Spots" hsx2 hsy2 lss
 		eif
-
 		// all subway stations
 		if showallsub > 0
 			geomark      "subway.d" subss2 stationcolor stationop
@@ -133,7 +125,6 @@ deck
 			circle lsx ally lss stationcolor stationop
 			text    "Other Stations" lsx2 ally2 lss
 		eif
-
 		// subway lines
 		if showlines > 0
 			subline "ind-8th.d" subss ind8thColor subop

@@ -21,9 +21,6 @@ deck
 		retroy1=moty2
 		retroy2=retroy1-4
 
-		//arc 50 capy 30 30 0 220
-		//arc 50 capy 30 30 320 359
-
 		circle 50 capy 30 "gray" 30
 		circle 41 tanky 5 "green"
 		circle 44 tanky 5 "green"

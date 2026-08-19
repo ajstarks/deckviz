@@ -14,6 +14,18 @@ deck
 
 	slide // "black" "white"
 
+		bezosvalue=186.7
+		gatesvalue=120.1
+		zuckvalue=101.5
+		muskvalue=153.5
+		buffetvalue=85.0
+		ballmervalue=74.1
+		brinvalue=74.1
+		ellisonvalue=71.2
+		pagevalue=76.3
+		waltonvalue=68.1
+
+
 		text "Top 10 US Billionaires Net Worth (December 2020)" 5 97 1.7
 		cmin=0.1
 		cmax=200
@@ -75,10 +87,10 @@ deck
 		// scale for height
 		boty=5
 		topy=90
-		by=vmap   186.7e9 0 200e9 boty topy
+		by=vmap   184.0e9 0 200e9 boty topy
 		gy=vmap   120.1e9 0 200e9 boty topy
 		zy=vmap   101.5e9 0 200e9 boty topy
-		my=vmap   153.5e9 0 200e9 boty topy
+		my=vmap   190.0e9 0 200e9 boty topy
 		buy=vmap   85.0e9 0 200e9 boty topy
 		bay=vmap   74.1e9 0 200e9 boty topy
 		ely=vmap   88.5e9 0 200e9 boty topy
@@ -191,6 +203,7 @@ deck
 		amy=by+5
 		line imx boty imx ly lw bezoscolor 10
 		ctext "Bezos" imx boty 2
+
 		ctext "186.7" imx amy 2 "sans" bcolor
 		imx += hskip
 

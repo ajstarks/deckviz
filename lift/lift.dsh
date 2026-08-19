@@ -33,7 +33,6 @@ deck
 		etext " Negro National Anthem  —   James Weldon Johnson   —  1900"                            91 y 3 "serif" tcolor
 
 		// stars
-	
 		for i=1 4
 			include "starow.dsh"
 		efor

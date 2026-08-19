@@ -1,3 +1,3 @@
-read ajs.jpg
-pixelate 20
+read fruit.jpg
+pixelate 30
 sobel

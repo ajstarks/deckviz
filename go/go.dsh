@@ -1,6 +1,6 @@
 deck
 	x=40
-	y=50
+	y=55
 	y2=y-15
 	w=20
 	
@@ -15,7 +15,7 @@ deck
 	ba1=180
 	ba2=360
 
-	slide
+	slide "black"
 		arc     x  y w w  ta1 ta2 lw  "blue"   op
 		arc     x  y w w  ba1 ba2 lw  "red"    op
 		vline  xl y2 ll lw            "green"  op

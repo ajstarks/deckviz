@@ -28,9 +28,9 @@ deck
 	canvas 500 500
 
 	// reference image: https://www.artsy.net/artwork/alma-thomas-iris-tulips-jonquils-and-crocuses
-	slide
-		image "thomas-ref.png" 50 50 2013 1908 25
-	eslide
+	//slide
+	//	image "thomas-ref.png" 50 50 2013 1908 25
+	//eslide
 
 	slide
 		bottom=10
@@ -38,7 +38,6 @@ deck
 		wincr=width*1.2
 		height=width*1.5
 		hincr=height*1.2
-
 
 		df=0.05
 		wfactor=width*df
@@ -64,7 +63,27 @@ deck
 		efor
 		for y=yy 75 hincr
 			func "chip.dsh" x y width height wfactor hfactor green2 op
+			yy+=hincr
 		efor
+		for y=yy 90 hincr
+			func "chip.dsh" x y width height wfactor hfactor blue4 op
+		efor
+
+		exw=width*10
+		exh=height*10
+		wf=ew*df
+		hf=eh*df
+		rect 50 50 exw exh "black" 10
+		func "chip.dsh" 50 50 exw exh wf hf red1 30
+
+		ctext "(x,y)" 50 50 2
+		ctext "w" 50 65 2
+		ubrace 50 64 exw 1 1 0.2
+		ctext "h" 62 50 2
+		rbrace 60 50 exh 1 1 0.2
+		arrow 50 30 50 45 0.1 1 1
+		ctext "chip" 50 28 2
+		arrow 15 51 40 51 0.2 1 1
 	eslide
 
 

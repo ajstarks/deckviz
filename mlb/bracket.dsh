@@ -2,40 +2,40 @@ deck
 	bg="black"
 	fg="white"
 	slide bg fg
-		include "scenario1.dsh"
+		include "current.dsh"
 		include "mlb.dsh"
 	eslide
-	slide bg fg
-		include "scenario2.dsh"
-		include "mlb.dsh"
-	eslide
-	slide bg fg
-		include "scenario3.dsh"
-		include "mlb.dsh"
-	eslide
+	// slide bg fg
+	// 	include "scenario2.dsh"
+	// 	include "mlb.dsh"
+	// eslide
+	// slide bg fg
+	// 	include "scenario3.dsh"
+	// 	include "mlb.dsh"
+	// eslide
 
-	slide bg fg
-		include "scenario4.dsh"
-		include "mlb.dsh"
-	eslide
+	// slide bg fg
+	// 	include "scenario4.dsh"
+	// 	include "mlb.dsh"
+	// eslide
 
-	slide bg fg
-		include "scenario5.dsh"
-		include "mlb.dsh"
-	eslide
+	// slide bg fg
+	// 	include "scenario5.dsh"
+	// 	include "mlb.dsh"
+	// eslide
 
-	slide bg fg
-		include "scenario6.dsh"
-		include "mlb.dsh"
-	eslide
+	// slide bg fg
+	// 	include "scenario6.dsh"
+	// 	include "mlb.dsh"
+	// eslide
 
-	slide bg fg
-		include "scenario7.dsh"
-		include "mlb.dsh"
-	eslide
+	// slide bg fg
+	// 	include "scenario7.dsh"
+	// 	include "mlb.dsh"
+	// eslide
 
-	slide bg fg
-		include "scenario8.dsh"
-		include "mlb.dsh"
-	eslide
+	// slide bg fg
+	// 	include "scenario8.dsh"
+	// 	include "mlb.dsh"
+	// eslide
 edeck

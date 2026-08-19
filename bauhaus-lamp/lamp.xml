@@ -1,5 +1,12 @@
 <deck>
 <slide>
+<text align="c" xp="10" yp="85" sp="5" >B</text>
+<text align="c" xp="10" yp="75" sp="5" >A</text>
+<text align="c" xp="10" yp="65" sp="5" >U</text>
+<text align="c" xp="10" yp="55" sp="5" >H</text>
+<text align="c" xp="10" yp="45" sp="5" >A</text>
+<text align="c" xp="10" yp="35" sp="5" >U</text>
+<text align="c" xp="10" yp="25" sp="5" >S</text>
 <arc xp="50" yp="70" wp="40" hp="40" a1="0" a2="200"/>
 <arc xp="50" yp="70" wp="40" hp="40" a1="340" a2="360"/>
 <line xp1="31" yp1="60" xp2="69" yp2="60" sp="1.5" color="silver"/>

@@ -1,6 +1,6 @@
 <deck>
-<slide bg="black" fg="white">
-<text align="c" xp="30" yp="50" sp="1.5" >Hue</text>
+<slide bg="rgb(30,30,30)" fg="white">
+<text align="c" xp="30" yp="50" sp="2" >Hue</text>
 <ellipse xp="50" yp="50" wp="3" hr="100" color="hsv(0,100,100)"/>
 <text align="c" xp="55" yp="50" sp="1.5" >0</text>
 <line xp1="50" yp1="50" xp2="55" yp2="50" sp="0.75" color="hsv(0,100,100)" opacity="50"/>
@@ -111,6 +111,9 @@
 <line xp1="49.696155060244166" yp1="45.50557657803239" xp2="54.62019382530521" yp2="44.38197072254049" sp="0.75" color="hsv(350,100,100)" opacity="50"/>
 <text align="c" xp="70" yp="97.5" sp="1.5" >Saturation</text>
 <text align="c" xp="90" yp="97.5" sp="1.5" >Value</text>
+<text align="c" xp="80" yp="4.5" sp="1.5" >5</text>
+<ellipse xp="70" yp="5" wp="2" hr="100" color="hsv(0,5,100)"/>
+<ellipse xp="90" yp="5" wp="2" hr="100" color="hsv(0,100,5)"/>
 <text align="c" xp="80" yp="9.5" sp="1.5" >10</text>
 <ellipse xp="70" yp="10" wp="2" hr="100" color="hsv(0,10,100)"/>
 <ellipse xp="90" yp="10" wp="2" hr="100" color="hsv(0,100,10)"/>
@@ -162,13 +165,8 @@
 <text align="c" xp="80" yp="89.5" sp="1.5" >90</text>
 <ellipse xp="70" yp="90" wp="2" hr="100" color="hsv(0,90,100)"/>
 <ellipse xp="90" yp="90" wp="2" hr="100" color="hsv(0,100,90)"/>
-</slide>
-<slide>
-<rect xp="20" yp="80" wp="20" hr="100" color="hsv(0,100,100)"/>
-<rect xp="50" yp="80" wp="20" hr="100" color="hsv(0,50,100)"/>
-<rect xp="80" yp="80" wp="20" hr="100" color="hsv(0,20,100)"/>
-<rect xp="20" yp="40" wp="20" hr="100" color="rgb(255,0,0)"/>
-<rect xp="50" yp="40" wp="20" hr="100" color="rgb(255,0,0)" opacity="50"/>
-<rect xp="80" yp="40" wp="20" hr="100" color="rgb(255,0,0)" opacity="20"/>
+<text align="c" xp="80" yp="94.5" sp="1.5" >95</text>
+<ellipse xp="70" yp="95" wp="2" hr="100" color="hsv(0,95,100)"/>
+<ellipse xp="90" yp="95" wp="2" hr="100" color="hsv(0,100,95)"/>
 </slide>
 </deck>

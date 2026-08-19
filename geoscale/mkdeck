@@ -1,2 +1,2 @@
 #!/bin/sh
-decksh geoscale.dsh | pdfdeck -pagesize=1200x900 -layers=rect:poly:line:text:ellipse -stdout - > f.pdf
+decksh geoscale.dsh | pdfdeck -pagesize=1200x900 -layers poly:text:line -stdout - > f.pdf

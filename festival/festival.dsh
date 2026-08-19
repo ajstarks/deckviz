@@ -3,14 +3,14 @@ deck
 	bgcolor="#9a7a49"   // "#a9843e"
 	yellow="#dbdc5c"
 	red="#c82e2c"
-	orange= "#eda344" // "#ebb84d"
+	orange= "#eda344"
 	lorange="#dab968"
 	green="#4c6d2c"
 	lgreen="#b8c887"
 	blue="#95a2d6"
 	tan="#cc9c5a"
-	lcolor="white"
-	lop=100
+	fcolor="white"
+	fop=100
 	cw=1600
 	ch=900
 	
@@ -18,19 +18,30 @@ deck
 	slide bgcolor
 		//image "i.png" 50 50 1600 900
 
-		// The FESTIVAL word is generally a series of polygons for each letter
-		polygon "26 28 30 30 32 32 30 30 33.2 34"                  "72 50 50 58 58 62.5 62.5 67 67.5 73"         lcolor lop // F
-		polygon "32 39.5 39.1 35 35 37 37 34.5 34.6 37.2 36.6 33"  "48 50 54 53 55 56 59.1 59 62 62.5 66 65"     lcolor lop // E
-		curve    38 59  48 55  42 66 2.1                                                                         lcolor lop // S
-		curve    42.2 65.8  35 76  44 72 2.1                                                                     lcolor lop
-		polygon "46 49.3 49 51 51 45 44.5 47"                       "55 54 68 68 72 72 67 67"                    lcolor lop // T
-		polygon "51 51 53 54"                                       "52 66 67 52"                                lcolor lop // I
-		circle   51.6 76 3.2 lcolor lop
-		polygon "53 56.5 62.5 60 57 56.5"                           "72.5 48 76 78 60 73"                        lcolor lop // V
-		polygon "62 58.5 60.2 63.5"                                 "70 52 51 70"                                lcolor lop // A
-		polygon "62 64.5 67 64"                                     "70 52 53 70"                                lcolor lop
-		hline    61 60 3 1.5 lcolor lop
-		polygon "66 68 73 74.5 70 70"                               "71 51 49 54 55.5 72"                        lcolor lop // L
+		// The word 'FESTIVAL' is generally a series of polygons for each letter
+		polygon "26 28 30 30 32 32 30 30 33.2 34"                  "72 50 50 58 58 62.5 62.5 67 67.5 73"         fcolor fop // F
+		polygon "32 39.5 39.1 35 35 37 37 34.5 34.6 37.2 36.6 33"  "48 50 54 53 55 56 59.1 59 62 62.5 66 65"     fcolor fop // E
+		curve    38 59  48 55  42 66 2.1                                                                         fcolor fop // S
+		curve    42.2 65.8  35 76  44 72 2.1                                                                     fcolor fop
+		//curve    38.0  60.0    47.5 52.0    42.0 67.0 2.3     fcolor fop  // lower loop of 'S'
+		//curve    42.0  66.8    35.4 76.0    44.0 73.0 2.3     fcolor fop
+		//polygon "38.2 37 40 42 42 40" "64 57 55.7 55.6 59.5 60.6"  fcolor fop  // tail of 'S'
+		//arc 40.7 71 2 1.5 90 270 2 fcolor fop                                  // left upper curve of 'S'
+		//arc 41.3 72 3 2  0 180 2 fcolor fop                                    // top of 'S'
+
+		//curve 43.8 71.0   42.0 78.0   39.0 70.8 2.3 fcolor fop // top od S
+		//curve 39.3 72.0   39.0 70.0   41.0 68.0 2.3 fcolor fop // mid 1
+		//curve 41.0 57.0   47.0 62.0   41.0 68.0 2.3 fcolor fop // mid 2
+		//curve 41.5 57.3   39.0 56.0   38.0 60.0 2.3 fcolor fop // bottom
+
+		polygon "46 49.3 49 51 51 45 44.5 47"                       "55 54 68 68 72 72 67 67"                    fcolor fop // T
+		polygon "51 51 53 54"                                       "52 66 67 52"                                fcolor fop // I
+		circle   51.6 76 3.2 fcolor fop
+		polygon "53 56.5 62.5 60 57 56.5"                           "72.5 48 76 78 60 73"                        fcolor fop // V
+		polygon "62 58.5 60.2 63.5"                                 "70 52 51 70"                                fcolor fop // A
+		polygon "62 64.5 67 64"                                     "70 52 53 70"                                fcolor fop
+		hline    61 60 3 1.5 fcolor fop
+		polygon "66 68 73 74.5 70 70"                               "71 51 49 54 55.5 72"                        fcolor fop // L
 
 		// A series of shapes (rects and polygons, numbered 1 - 57, counting roughly row-wise
 		vline 3.6 85.5 11.3 3.2  orange                            // 1
@@ -38,7 +49,7 @@ deck
 		vline 4.4 41.5 10.2 5.3 red                                // 3
 		polygon "2 2 10 10 15.3 15.3" "39 18 18 29 29 39" blue     // 4
 		hline 2 15 8.4 2  red                                      // 5
-		hline 4 6 8.5 6   lgreen                                         // 6
+		hline 4 6 8.5 6   lgreen                                   // 6
 		vline 10 84 12.5 7 yellow                                  // 7
 		vline 11 70 10.6 5.5 lorange                               // 8
 		vline 11 44 22.0 5.5 tan                                   // 9
@@ -46,7 +57,7 @@ deck
 		polygon "16 16 29 29 25 25" "56 84 84 74 74 56" green      // 11
 		vline 19.5 31 22 6.2 orange                                // 12
 		hline 12 21.5  11 6 lorange                                // 13
-		vline 15.5 1 12.5 4  yellow                                      // 14
+		vline 15.5 1 12.5 4  yellow                                // 14
 		vline 22.9 0 14 7 orange                                   // 15
 		polygon "21 21 37 37 30 30" "86 97 97 76 76 86" lgreen     // 16
 		polygon "24 24 30 30 38 38" "16 46 46 28 28 16" lgreen     // 17

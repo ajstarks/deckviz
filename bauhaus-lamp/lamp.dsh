@@ -2,6 +2,17 @@
 deck
 	lcolor="silver"
 	slide
+		ts=5
+		tx=10
+		ctext "B" tx 85 ts
+		ctext "A" tx 75 ts
+		ctext "U" tx 65 ts
+		ctext "H" tx 55 ts
+		ctext "A" tx 45 ts
+		ctext "U" tx 35 ts
+		ctext "S" tx 25 ts
+		//ruler
+		//ctext "BAUHAUS" 50 2.5 2
 		// dome	
 		arc		50 70 40 40 0 200 
 		arc		50 70 40 40 340 360 

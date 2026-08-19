@@ -1,8 +1,8 @@
 // "The Crisis", May 1927"
 deck
-	//slide "black" "white"
-	//	image "the-crisis-may-1927.jpg" 50 50 100 0
-	//eslide
+	slide "black" "white"
+		image "the-crisis-may-1927.jpg" 50 50 100 0
+	eslide
 
 	bgcolor="#304b6b"
 	fgcolor="#cec4ba"
@@ -11,7 +11,7 @@ deck
 	slide bgcolor fgcolor
 		// top sawtooth
 		polygon  sawtoothX  sawtoothY fgcolor
-		ctext "THE CRISIS" 50 87 14
+		//ctext "THE CRISIS" 50 87 14
 
 		// center
 		polygon "25 75 55 50 45" 								"82 82 45 50 45"				fgcolor

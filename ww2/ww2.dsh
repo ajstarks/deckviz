@@ -2,10 +2,9 @@ deck
 	bgcolor="silver"
 	txcolor="black"
 	slide bgcolor txcolor
-		geoLatMin=30
-		geoLatMax=70
-		geoLongMin=0-12
-		geoLongMax=45
+		
+		geocanvas 10 90 10 90
+		geobbox   30 70 -12 45
 
 		capcolor="black"
 		contcolor="linen"
@@ -13,7 +12,7 @@ deck
 		bordecolor="gray"
 		locolor="black"
 
-		axiscolor="pink"
+		axiscolor="red"
 		alliedcolor="steelblue"
 		neucolor="slategray"
 

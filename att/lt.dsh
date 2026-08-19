@@ -6,6 +6,9 @@ deck
 	slide
 		title="APOLLO 11 TRANSLUNAR / TRANSEARTH TRAJECTORY PLOTTING CHART"
 		//ruler 2 "silver"
+		//for v=0 359 5
+		//	radial cx cy 100 v 0.05 "silver"
+		//efor
 
 		ctext  title 50 95 2.5
 
@@ -13,22 +16,17 @@ deck
 		// Orbital illustration
 		//
 
-
 		// Center point (Earth)
 		cx=50
 		cy=55
-
-		//for v=0 359 5
-		//	radial cx cy 100 v 0.05 "silver"
-		//efor
 
 		// phase colors
 		teicolor="green"
 		tlicolor="blue"
 		
 		// note text sizes
-		ns=0.8
-		ns2=ns*1.5
+		ns=1
+		ns2=ns*1.2
 
 		// earth with orbit
 		circle cx cy 8 "blue" 10
@@ -237,10 +235,10 @@ deck
 		vs *= 0.6
 		lt-=vs
 		textblockfile "desc2.txt"  tleft lt tw ls
-
+		//vline 50 0 100 0.1 "red"
 		// Mission Events
 		lt=ttop
-		list 43 lt ns "sans" tlicolor 100 1.3
+		list 38 lt ns2 "sans" tlicolor 100 1.3
 			li "Event" "" "black"
 			li ""
 			li "Launch"
@@ -256,7 +254,7 @@ deck
 			li "Splashdown"				"" teicolor
 		elist
 
-		list 53 lt ns "sans" tlicolor 100 1.3
+		list 53 lt ns2 "sans" tlicolor 100 1.3
 			li "Time (EDT)" "" "black"
 			li ""
 			li "July 16 9:32"

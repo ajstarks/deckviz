@@ -352,6 +352,7 @@ func main() {
 	flag.StringVar(&bgcolor, "bg", "white", "background color")
 	flag.StringVar(&brushtype, "brush", "c", "brush type (c for chip, b for blob")
 	flag.BoolVar(&note, "note", false, "show notes")
+
 	flag.Parse()
 
 	rand.Seed(int64(time.Now().Unix()))

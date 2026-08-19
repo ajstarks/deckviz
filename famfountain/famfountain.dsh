@@ -73,7 +73,7 @@ deck
 		min=1955
 		max=1975
 
-		for v=min max 5
+		for v=min max 2
 			vscale lx v min max dmin dmax ys
 		efor
 
@@ -204,98 +204,109 @@ deck
 	eslide
 
 	slide
-		ctext "Starks" 50 80 5 "serif"
-		yy=60
+		ctext "Starks" 50 90 5 "serif"
+		yy=65
 		yearmin=1955
 		yearmax=2025
-		dmin=10
-		dmax=90
+		dmin=5
+		dmax=95
 		dist=dmax-dmin
-
-	
+		dotsize=2
+		malecolor="blue"
+		femalecolor="maroon"
 
 		for v=yearmin yearmax 5
 			hscale yy v yearmin yearmax dmin dmax ys
 		efor
 
 		ajs=vmap 1958 yearmin yearmax dmin dmax
-		circle ajs yy 1 "blue" 30
+		circle ajs yy dotsize malecolor 30
 		mds=vmap 1981 yearmin yearmax dmin dmax
-		circle mds yy 1 "red" 30
+		circle mds yy dotsize femalecolor 30
 		ajs2=vmap 1983 yearmin yearmax dmin dmax
-		circle ajs2 yy 1 "blue" 30
+		circle ajs2 yy dotsize malecolor 30
 		cas=vmap 1986 yearmin yearmax dmin dmax
-		circle cas yy 1 "red" 30
+		circle cas yy dotsize femalecolor 30
 		ajs3=vmap 1988 yearmin yearmax dmin dmax
-		circle ajs3 yy 1 "blue" 30
+		circle ajs3 yy dotsize malecolor 30
 
-		lw=0.2
-		cy=yy+20
-		curve ajs yy 30 cy mds   yy lw "red"  20
-		curve ajs yy 30 cy ajs2  yy lw "blue" 20
-		curve ajs yy 30 cy cas   yy lw "red"  20
-		curve ajs yy 30 cy ajs3  yy lw "blue" 20
+		lw=0.5
+		cy=yy+35
+		curve ajs yy 30 cy mds   yy lw femalecolor  20
+		curve ajs yy 30 cy ajs2  yy lw malecolor 20
+		curve ajs yy 30 cy cas   yy lw femalecolor  20
+		curve ajs yy 30 cy ajs3  yy lw malecolor 20
 
 		mia=vmap 2007 yearmin yearmax dmin dmax
-		circle mia yy 1 "red" 30
+		circle mia yy dotsize femalecolor 30
 		ltl=vmap 2015 yearmin yearmax dmin dmax
-		circle ltl yy 1 "blue" 30
+		circle ltl yy dotsize malecolor 30
 		ej=vmap 2019 yearmin yearmax dmin dmax
-		circle ej yy 1 "blue" 30
+		circle ej yy dotsize malecolor 30
 		vio=vmap 2020 yearmin yearmax dmin dmax
-		circle vio yy 1 "red" 30
+		circle vio yy dotsize femalecolor 30
+		mor=vmap 2024 yearmin yearmax dmin dmax
+		circle mor yy dotsize femalecolor 30
 
-		curve ajs2 yy 60 cy mia yy lw "red"  20
-		curve ajs2 yy 60 cy vio yy lw "red"  20
+		curve ajs2 yy 60 cy mia yy lw femalecolor  20
+		curve ajs2 yy 60 cy vio yy lw femalecolor  20
+		curve ajs2 yy 60 cy mor yy lw femalecolor  20
 
-		curve mds yy  60 cy ltl yy lw "blue" 20
-		curve cas yy  60 cy ej  yy lw "blue" 20
+		curve mds yy  60 cy ltl yy lw malecolor 20
+		curve cas yy  60 cy ej  yy lw malecolor 20
 
 		ny=yy-10
-
+		vskip=4
 		ndist=yy-ny
-		vline ajs ny ndist
+		nlw=0.075
+		lcolor="gray"
+		vline ajs ny ndist nlw lcolor
 		etext "Anthony"    ajs  ny ls "serif"
-		ny-=5
+		ny-=vskip
 
 		ndist=yy-ny
-		vline mds ny ndist
+		vline mds ny ndist nlw lcolor
 		etext "Monica"     mds  ny ls "serif"
-		ny-=5
+		ny-=vskip
 
 		ndist=yy-ny
-		vline ajs2 ny ndist
+		vline ajs2 ny ndist nlw lcolor
 		etext "Tony"       ajs2 ny ls "serif"
 
-		ny-=5
+		ny-=vskip
 		ndist=yy-ny
-		vline cas ny ndist
+		vline cas ny ndist nlw lcolor
 		etext "Christina"  cas  ny ls "serif"
 		
-		ny-=5
+		ny-=vskip
 		ndist=yy-ny
-		vline ajs3 ny ndist
+		vline ajs3 ny ndist nlw lcolor
 		etext "Andrew"  ajs3  ny ls "serif"
 
-		ny-=5
+		ny-=vskip
 		ndist=yy-ny
-		vline mia ny ndist
+		vline mia ny ndist nlw lcolor
 		etext "Mia"        mia  ny ls "serif"
 
-		ny-=5
+		ny-=vskip
 		ndist=yy-ny
-		vline ltl ny ndist
+		vline ltl ny ndist nlw lcolor
 		etext "Landon"        ltl  ny ls "serif"
 
-		ny-=5
+		ny-=vskip
 		ndist=yy-ny
-		vline ej ny ndist
+		vline ej ny ndist nlw lcolor
 		etext "Emanuel, Jr"        ej  ny ls "serif"
 
-		ny-=5
+		ny-=vskip
 		ndist=yy-ny
-		vline vio ny ndist
+		vline vio ny ndist nlw lcolor
 		etext "Violet"        vio  ny ls "serif"
+
+		ny-=vskip
+		ndist=yy-ny
+		vline mor ny ndist nlw lcolor
+		etext "Moriah"        mor  ny ls "serif"
 	eslide
 
 edeck

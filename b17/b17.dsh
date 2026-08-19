@@ -1,25 +1,46 @@
 deck
 	slide
-		ls=1.5
+		ls=1.3
 		kcolor="rgb(255,0,0)"
 		wcolor="rgb(0,0,255)"
+		shcolor="rgb(75,75,75)"
 		opts="-pmap -left=5 -right=95 -val=f"
-		text "B-17 Casuality Rates by Position" 5 92 3
+		text "B-17/B-24 Casuality Rates by Position" 5 92 3
 
-		text "Wounded in Action" 5 85 2 "sans" "gray"
+		text "Wounded in Action" 5 85 2 "sans" shcolor
 		dchart opts -top=75  -color wcolor wia.d
 
-		text "Killed in Action" 5 60 2 "sans" "gray"
+		text "Killed in Action" 5 60 2 "sans" shcolor
 		dchart opts -top=50 -color kcolor kia.d
-		image "iza-vailable.png" 50 25 825 254 80
 
-		ctext "Bombardier"		90 13 ls
-		ctext "Navigator"		83 10 ls
-		ctext "Pilot/Co-Pilot"	80 25 ls
-		ctext "Top Turret"		71 27 ls
-		ctext "Radio Op."		55 25 ls
-		ctext "Ball Turret"		52 8 ls
-		ctext "Waist Gunner"	42 12 ls
-		ctext "Tail Gunner"		17 15 ls
+		image "iza-vailable.png"	25 25 815 246 40
+		image "ole-tomato.png"		75 24 649 180 42
+
+		ctext "Boeing B-17 “Flying Fortress”"	25 35 2 "sans" shcolor
+		ctext "Consolidated B-24 “Liberator”"	75 35 2 "sans" shcolor
+
+		text  "Bombardier"		45 20 ls
+		text  "Bombardier"		91 20 ls
+
+		ctext "Navigator"		42 17 ls
+		ctext "Navigator"		88 18 ls
+
+		ctext "Pilot/Co-Pilot"	42 25 ls
+		ctext "Pilot/Co-Pilot"	89 25.5 ls
+
+		ctext "Top Turret"		36 27 ls
+		ctext "Top Turret"		82 27 ls
+
+		ctext "Radio Op."		30 26 ls
+		ctext "Radio Op."		82 17 ls
+
+		ctext "Ball Turret"		27 16 ls
+		ctext "Ball Turret"		71 16 ls
+
+		ctext "Waist Gunner"	21 26 ls
+		ctext "Waist Gunner"	69 27 ls
+
+		ctext "Tail Gunner"		10 19 ls
+		ctext "Tail Gunner"		60 20 ls
 	eslide
 edeck

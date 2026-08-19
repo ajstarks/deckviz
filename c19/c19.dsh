@@ -1,9 +1,10 @@
 deck
 	// C19 json data returned by https://coronavirus.projectpage.app/.json?period=0
 	// curl --silent https://coronavirus.projectpage.app/.json?period=0 | ./j2csv > c19.csv
-	opts="-right=90 -csv -fulldeck=f -val=f -textsize=1.5 -grid=f -bar -title=f -vol -yaxis -xlabel=5 -line -linewidth=0.1 -note=f"
-	crange="-max=2000000 -yrange=0,2000000,500000"
-	drange="-max=120000 -yrange=0,120000,40000"
+	opts="-frame -framecolor=red -right=90 -csv -val=f -textsize=1.5 -bar -title=f -vol -yaxis -xlabel=5 -line -linewidth=0.1 -note=f"
+	crange="-max=3000000 -yrange=0,3000000,500000"
+	drange="-max=200000  -yrange=0,200000,40000"
+
 	casecolor="gray"
 	deathcolor="orangered"
 	labelcolor="rgb(80,80,80)"

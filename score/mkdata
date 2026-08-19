@@ -7,7 +7,7 @@ fi
 input=$1
 away=$2
 home=$3
-awk '{print ++n "\t" $1}' 		$input > $away.d
-awk '{print ++n "\t" $2}' 		$input > $home.d
-awk '{print ++n "\t" $1-$2}' 	$input > $away-diff.d
-awk '{print ++n "\t" $2-$1}' 	$input > $home-diff.d
+awk 'NF == 2 {print ++n "\t" $1}' 		$input > $away.d
+awk 'NF == 2 {print ++n "\t" $2}' 		$input > $home.d
+awk 'NF == 2 {print ++n "\t" $1-$2}' 	$input > $away-diff.d
+awk 'NF == 2 {print ++n "\t" $2-$1}' 	$input > $home-diff.d

@@ -1,6 +1,8 @@
 deck
 	slide
-		rect 50 50 100 100 "crimson"
+		rect 50 50 100 100 "crimson" // background
+
+		// left side
 		mid=25
 		ts=16
 		ts2=ts*1.2
@@ -9,6 +11,7 @@ deck
 		ctext "LYNCHED"   mid 46 ts2   "sans" "white"
 		ctext "YESTERDAY" mid 25 ts    "sans" "white"
 		
+		// right side
 		ts=15
 		mid+=50
 		lx=mid-1
@@ -18,5 +21,9 @@ deck
 		ctext "A"        mid 45 ts
 		ctext "MAN"      mid 15 ts
 
+	eslide
+
+	slide
+		textfile "diptych.dsh" 10 90 1.6 "mono"
 	eslide
 edeck

@@ -1,2 +1,2 @@
 #!/bin/bash
-decksh tamgeo.dsh | pdf -layers=poly:image:line:curve:ellipse:text:rect:list -pagesize=1500x600
+decksh tamgeo.dsh | pdfdeck -stdout  -author "Anthony Starks" -title "The Tuskegee Airmen: Origins and Operations" -layers=poly:image:line:curve:ellipse:text:rect:list -pagesize=1500x600 - > f.pdf

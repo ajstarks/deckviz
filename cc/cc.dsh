@@ -5,10 +5,7 @@ deck
 
 
 	slide "black"
-
 		cstep=1
-		
-
 		r=10
 		c=1
 		step=20
@@ -53,57 +50,57 @@ deck
 
 		r+=8
 		p=polar 50 50 r 0
-		planet p_x p_y 5 7 1 "red" "orange"
+		planet p_x p_y 5 7 1 "hsv(10,100,100)", "hsv(38,100,100)"
 
 		p=polar 50 50 r 20
-		planet p_x p_y 5 7 1 "red" "orange" 
+		planet p_x p_y 5 7 1 "hsv(10,100,100)", "hsv(38,100,100)" 
 
 		p=polar 50 50 r 40
-		planet p_x p_y 5 7 1 "red" "orange"
+		planet p_x p_y 5 7 1 "hsv(10,100,100)", "hsv(38,100,100)"
 
 		p=polar 50 50 r 60
-		planet p_x p_y 5 7 1 "red" "orange" 
+		planet p_x p_y 5 7 1 "hsv(10,100,100)", "hsv(38,100,100)" 
 
 		p=polar 50 50 r 80
-		planet p_x p_y 5 7 1 "red" "orange"
+		planet p_x p_y 5 7 1 "hsv(10,100,100)", "hsv(38,100,100)"
 
 		p=polar 50 50 r 100
-		planet p_x p_y 5 7 1 "red" "orange" 
+		planet p_x p_y 5 7 1 "hsv(10,100,100)", "hsv(38,100,100)" 
 
 		p=polar 50 50 r 120
-		planet p_x p_y 5 7 1 "red" "orange"
+		planet p_x p_y 5 7 1 "hsv(10,100,100)", "hsv(38,100,100)"
 
 		p=polar 50 50 r 140
-		planet p_x p_y 5 7 1 "red" "orange" 
+		planet p_x p_y 5 7 1 "hsv(10,100,100)", "hsv(38,100,100)" 
 
 		p=polar 50 50 r 160
-		planet p_x p_y 5 7 1 "red" "orange"
+		planet p_x p_y 5 7 1 "hsv(10,100,100)", "hsv(38,100,100)"
 
 		p=polar 50 50 r 180
-		planet p_x p_y 5 7 1 "red" "orange"
+		planet p_x p_y 5 7 1 "hsv(10,100,100)", "hsv(38,100,100)"
 
 		p=polar 50 50 r 200
-		planet p_x p_y 5 7 1 "red" "orange"
+		planet p_x p_y 5 7 1 "hsv(10,100,100)", "hsv(38,100,100)"
 
 		p=polar 50 50 r 220
-		planet p_x p_y 5 7 1 "red" "orange"
+		planet p_x p_y 5 7 1 "hsv(10,100,100)", "hsv(38,100,100)"
 
 		p=polar 50 50 r 240
-		planet p_x p_y 5 7 1 "red" "orange"
+		planet p_x p_y 5 7 1 "hsv(10,100,100)", "hsv(38,100,100)"
 
 		p=polar 50 50 r 260
-		planet p_x p_y 5 7 1 "red" "orange"
+		planet p_x p_y 5 7 1 "hsv(10,100,100)", "hsv(38,100,100)"
 
 		p=polar 50 50 r 280
-		planet p_x p_y 5 7 1 "red" "orange"
+		planet p_x p_y 5 7 1 "hsv(10,100,100)", "hsv(38,100,100)"
 
 		p=polar 50 50 r 300
-		planet p_x p_y 5 7 1 "red" "orange"
+		planet p_x p_y 5 7 1 "hsv(10,100,100)", "hsv(38,100,100)"
 
 		p=polar 50 50 r 320
-		planet p_x p_y 5 7 1 "red" "orange"
+		planet p_x p_y 5 7 1 "hsv(10,100,100)", "hsv(38,100,100)"
 
 		p=polar 50 50 r 340
-		planet p_x p_y 5 7 1 "red" "orange"
+		planet p_x p_y 5 7 1 "hsv(10,100,100)", "hsv(38,100,100)"
 	eslide
 edeck

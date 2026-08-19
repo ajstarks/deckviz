@@ -11,4 +11,7 @@
 <text align="c" xp="75" yp="45" sp="15" >A</text>
 <text align="c" xp="75" yp="15" sp="15" >MAN</text>
 </slide>
+<slide>
+<text file="diptych.dsh" xp="10" yp="90" sp="1.6" font="mono"/>
+</slide>
 </deck>

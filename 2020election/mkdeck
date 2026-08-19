@@ -1,4 +1,6 @@
 #!/bin/sh
-decksh usmap.dsh > 2020election.xml
-decksh usmap.dsh | pdfdeck -symbol stateface -pagesize 1600,900 2020election.xml
-decksh usmap.dsh | pngdeck -symbol stateface -pagesize 1600,900 2020election.xml 
+# decksh elections.dsh | pdfdeck -sans PublicSans-Regular -pagesize 1200,900 -stdout - > elections0.pdf
+# 538 layout
+go run elections.go [1-2]???.d              |decksh|pdfdeck -pagesize 1200,900 -sans PublicSans-Regular -stdout - > 538-elections.pdf
+# nyt layout
+go run elections.go -left=15 nyt-[1-2]???.d |decksh|pdfdeck -pagesize 1200,900 -sans PublicSans-Regular -stdout - > nyt-elections.pdf

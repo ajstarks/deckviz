@@ -1,1 +1,2 @@
-decksh crisis.dsh|pdfr -pagesize 3500x4625
+#!/bin/sh
+decksh crisis.dsh|pdfr -sans FreeSansBold -pagesize 3500x4625

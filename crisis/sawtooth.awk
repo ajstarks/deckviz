@@ -10,9 +10,9 @@ BEGIN {
 	bottom = top - height
 	for (x=left; x < right; x+=width) {
 		if (n % 2 == 0) {
-			y = top
-		} else {
 			y = bottom
+		} else {
+			y = top
 		}
 		xp[n] = x
 		yp[n] = y

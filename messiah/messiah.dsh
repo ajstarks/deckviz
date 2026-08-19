@@ -1,35 +1,47 @@
 deck
 	canvas 700 1400
 	ts=3
-	lw=0.60
+	lw=0.5
 	lcolor="gray"
 	opts="-left=20 -title=f -right=80 -volop=90 -bottom=80 -top=90 --line -val=f -bar=f -xlabel=0"
 	slide
-
-		ctext "every valley"     25 74 ts "serif" 
+		ctext "every valley" 25 74 ts "serif" 
 		ctext "shall be exalted" 75 92 ts "serif" "maroon"
 
 		// valiey, exalted
 		dchart opts -linewidth lw -color lcolor cos2.d
 
-		ctext "the crooked"      50 47 ts "serif"
-		ctext "straight"         50 32 ts "serif" "maroon"
+		ctext "the crooked" 50 47 ts "serif"
+		ctext "straight" 50 32 ts "serif" "maroon"
 
 		// crooked
-		line 20 55 25 50 lw lcolor
-		line 25 50 30 52 lw lcolor
-		line 30 52 35 51 lw lcolor
-		line 35 51 45 55 lw lcolor
-		line 45 55 55 50 lw lcolor
-		line 55 50 65 53 lw lcolor
-		line 65 53 75 52 lw lcolor
-		line 75 52 80 55 lw lcolor
+//		line 20 55 25 50 lw lcolor
+//		line 25 50 30 52 lw lcolor
+//		line 30 52 35 51 lw lcolor
+//		line 35 51 45 55 lw lcolor
+//		line 45 55 55 50 lw lcolor	`
+//		line 55 50 65 53 lw lcolor
+//		line 65 53 75 52 lw lcolor
+//		line 75 52 80 55 lw lcolor
+
+		// crooked (machine generated)
+		line 20.000 55.000 25.000 53.028 lw lcolor
+		line 25.000 53.028 30.000 56.826 lw lcolor
+		line 30.000 56.826 35.000 55.366 lw lcolor
+		line 35.000 55.366 40.000 52.074 lw lcolor
+		line 40.000 52.074 45.000 52.338 lw lcolor
+		line 45.000 52.338 50.000 54.082 lw lcolor
+		line 50.000 54.082 55.000 55.374 lw lcolor
+		line 55.000 55.374 60.000 54.028 lw lcolor
+		line 60.000 54.028 65.000 57.284 lw lcolor
+		line 65.000 57.284 70.000 55.860 lw lcolor
+		line 70.000 55.860 75.000 55.368 lw lcolor
 
 		// straight
 		hline 20 35 60 lw lcolor
 
-		ctext "rough places"     25 7  ts "serif"
-		ctext "plain"            75 7  ts "serif" "maroon"
+		ctext "rough places" 25 7  ts "serif"
+		ctext "plain" 75 7  ts "serif" "maroon"
 
 		// rough places
 		func "mount.dsh" 20 10 20 5.0 lw lcolor
@@ -41,9 +53,8 @@ deck
 		func "mount.dsh" 38 10 16 2.5 lw lcolor
 
 		// plain
-		line 70 10 80 10 lw lcolor
-		line 65 11 85 11 lw lcolor
-		line 55 12 95 12 lw lcolor
-
+		hline 70 10 10 lw lcolor
+		hline 65 11 20 lw lcolor
+		hline 55 12 40 lw lcolor
 	eslide
 edeck

@@ -5,8 +5,8 @@ deck
 		geoLatMax=50
 		geoLongMin=0-30
 		geoLongMax=60
-		geoline		"africa.kml"			 0.05 "white"
-		geopoly		"africa.kml"			  "tan"
+		geoline		"africa.shp"			 0.05 "white"
+		geopoly		"africa.shp"			  "tan"
 		geopoly		"europe.kml"			 "linen"
 		geopoly		"asia.kml"				 "linen"
 		geolabel	"afll.d"				 1.8 "mono" "brown"
@@ -32,7 +32,7 @@ deck
 		xlen=80
 		ylen=xlen*aspect
 		ls=2
-		geoscale  "africa.kml" 10 5 xlen ylen "rgb(50,50,50)"
+		geoscale  "africa.shp" 10 5 xlen ylen "rgb(50,50,50)"
 		georegion "europe.kml"	 "rgb(230,230,230)"
 		georegion "asia.kml"	 "rgb(230,230,230)"
 		geoloc capeverde			"b" ls
@@ -48,7 +48,7 @@ deck
 		xlen=5
 		ylen=xlen*aspect
 		for x=10 80 10
-			geoscale "africa.kml" x 50 xlen ylen  "red"
+			geoscale "africa.shp" x 50 xlen ylen  "red"
 		efor
 
 	eslide

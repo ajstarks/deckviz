@@ -59,6 +59,7 @@ deck
 	eslide
 
 	slide
+		riversize *= 0.75
 		geocanvas  27.5 77.5 50 90
 		georegion "contus.geojson" "gray" 10
 		geoline "us-major-rivers-national.shp" riversize rivercolor

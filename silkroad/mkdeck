@@ -1,2 +1,3 @@
 #!/bin/sh
-decksh silkroad.dsh|pdfr -layers poly:line:arc:ellipse:text -pagesize 1000x600 -sans NotoSans-Regular
+#decksh silkroad.dsh|pdfdeck -stdout  -layers poly:line:arc:ellipse:text -pagesize 1000x600  -sans NotoSans-Regular - > silkroad.pdf # && open silkroad.pdf
+decksh sasa.dsh    |pdfdeck -stdout  -layers poly:line:arc:ellipse:text -pagesize 1000x1000 -sans NotoSans-Regular - > sasa.pdf && open sasa.pdf

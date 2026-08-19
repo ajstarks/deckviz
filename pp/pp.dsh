@@ -2,6 +2,7 @@ deck
 	import "plane.dsh"
 	import "coord.dsh"
 	import "shadowp.dsh"
+	
 	slide
 		plane 85 90 80 "steelblue"
 		plane 30 90 10 "red"
@@ -20,5 +21,13 @@ deck
 			plane x 30 10 "blue" 
 		efor
 	eslide
+
+	slide
+		px=random 40 80
+		py=random 40 80
+		ps=random 10 20
+		plane px py ps "red"
+	eslide
+
 
 edeck

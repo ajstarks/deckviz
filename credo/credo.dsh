@@ -83,37 +83,37 @@ deck
 	epatience=substr patienceh 22 -
 	// three per page
 	slide "linen" "black"
-		c1=15
-		c2=c1+25
-		textblock godh         c1 88 10 3 cfont hlcolor
+		c1=5
+		c2=c1+35
+		textblock godh         c1 88 20 3 cfont hlcolor
 		textblock god1         c2 92 40 2 cfont
 
-		textblock negroh       c1 56 10 3 cfont hlcolor
+		textblock negroh       c1 56 20 3 cfont hlcolor
 		textblock negro1       c2 55 40 2 cfont
 
-		textblock prideh       c1 20 10 3 cfont hlcolor
+		textblock prideh       c1 20 20 3 cfont hlcolor
 		textblock pride1       c2 25 40 2 cfont
 	eslide
 
 	slide "linen" "black"
-		textblock serviceh     c1 84 10 3 cfont hlcolor
+		textblock serviceh     c1 84 20 3 cfont hlcolor
 		textblock service1     c2 92 40 2 cfont
 
-		textblock devilh       c1 50 10 3 cfont hlcolor
+		textblock devilh       c1 50 20 3 cfont hlcolor
 		textblock devil1       c2 55 40 2 cfont
 
-		textblock peaceh       c1 22 10 3 cfont hlcolor
+		textblock peaceh       c1 22 20 3 cfont hlcolor
 		textblock peace1       c2 25 40 2 cfont
 	eslide
 
 	slide "linen" "black"
-		textblock libertyh     c1 89 10 3 cfont hlcolor
+		textblock libertyh     c1 89 20 3 cfont hlcolor
 		textblock liberty1     c2 92 40 2 cfont
 
-		textblock trainh       c1 52 10 3 cfont hlcolor
+		textblock trainh       c1 52 20 3 cfont hlcolor
 		textblock train1       c2 55 40 2 cfont
 
-		textblock patienceh    c1 25 10 3 cfont hlcolor
+		textblock patienceh    c1 25 20 3 cfont hlcolor
 		textblock patience1    c2 25 40 2 cfont
 	eslide
 

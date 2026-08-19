@@ -1,2 +1,2 @@
 #!/bin/sh
-decksh gift-women.dsh|pdfdeck -sans $decksans -serif $deckserif  -mono $deckmono -stdout -grid 0  - > f.pdf && pkill -HUP mupdf
+decksh gift-women.dsh|pdfdeck -sans $decksans -serif $deckserif  -mono $deckmono -stdout -grid 0 $@  - > f.pdf && pkill -HUP mupdf
