@@ -9,7 +9,7 @@ slide bgcolor txcolor  // 2up page
 eslide
 
 slide bgcolor txcolor // image + text page
-	plh="There is a home located at Richmond and North Avenue in Plainfield, NJ, whose entire facade has been turned into the canvas for a mural."
+	plh="The facade of the home located at Richmond and North Avenue in Plainfield NJ, has been turned into the canvas for a mural."
 	ctext     "Urban Murals"        tx ty ts
 	image     "images/pfh.jpg"  limx imy imss 0
 	textblock plh tbx tby tbw tbs "serif"

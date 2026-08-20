@@ -3,9 +3,10 @@ deck
 	import "footer.dsh"
 	import "randpic.dsh"
 	author="Anthony Starks"
-	date="2026-08-17"
+	date="2026-08-19"
 	pagestart=(5,88)
 	parawidth=35
+	lparawidth=parawidth*2
 	pw2=parawidth*2.2
 	pagebottom=3
 	pagenum=1
@@ -18,24 +19,21 @@ deck
 	codey=37 //35
 	imx=70
 	imy=65
+	imy2=55
 	imw=50
-	
+	imw2=45
 
-	
 	bgcolor="white" // linen" // rgb(255,255,255)"
 	txcolor="black"
 	rulecolor="rgb(0,0,200)"
 
-
-
-	slide bgcolor txcolor
-		//ruler
+	slide "#f0f0f0" "black" // bgcolor txcolor
 		timx=50
 		timy=50
 		tims=50
 		ctext "Learning decksh" 50 90 6 "serif"
 		image "first-00001.png" timx timy tims 0
-		ctext "A scripting language for presentations" 50 10 3 "serif"
+		ctext "A scripting language for presentations" 50 10 3 "mono"
 		ctext date   50 2.5 1
 	eslide
 
@@ -53,8 +51,7 @@ deck
 		image "fgraphics-00001.png" 66 indy indims 0
 		image "chart-00001.png"     77 indy indims 0
 		image "geo-00001.png"       88 indy indims 0
-		footer        "Program your presentations with clean design and precision."
-
+		footer          "Program your presentations with clean design and precision."
 	eslide
 
 	slide bgcolor txcolor
@@ -187,7 +184,7 @@ deck
 	slide bgcolor txcolor
 		title         "Designing with regions"
 		textblockfile "region.txt" pagestart_x pagestart_y parawidth bodysize "serif"
-		image         "regill-00001.png" 22 30 40 0
+		image         "regill-00001.png" 22 33.5 40 0
 		image         "region-00001.png" imx imy imw 0
 		textcode      "region.dsh" codex 52 codewidth codesize
 		footer        "Using regions ties the deck together."
@@ -213,57 +210,58 @@ deck
 	eslide
 
 	slide bgcolor txcolor
-		title "Title and Section"
-		textblockfile "hero.txt" pagestart_x pagestart_y parawidth bodysize "serif"
-		textcode      "hsect.dsh" codex 20 codewidth codesize
-		image         "example-00001.png" imx 80 imw 0
-		image         "example-00002.png" imx 42 imw 0
+		title         "Title and Section"
+		textblockfile "hero.txt" pagestart_x pagestart_y lparawidth bodysize "serif"
+		textcode      "hsect.dsh" 30 30 codewidth codesize
+		image         "example-00001.png" 25 imy2 imw2 0
+		image         "example-00002.png" 75 imy2 imw2 0
 		footer        "The cover should grab your attention."
 	eslide
 
 	slide bgcolor txcolor
 		title        "Two-Up Slides"
-		textblockfile "twoup.txt" pagestart_x pagestart_y parawidth bodysize "serif"
-		textcode      "twoupslide.dsh" codex 20 codewidth codesize
-		image         "example-00003.png" imx 80 imw 0
-		image         "example-00004.png" imx 42 imw 0
+		textblockfile "twoup.txt" pagestart_x pagestart_y lparawidth bodysize "serif"
+		textcode      "twoupslide.dsh" 30 30 codewidth codesize
+		image         "example-00003.png" 25  imy2 imw2 0
+		image         "example-00004.png" 75  imy2 imw2 0
 		footer        "Two pictures are better than one."
 	eslide
 
 	slide bgcolor txcolor
 		title         "Four Up and Map"
-		textblockfile "fourup.txt" pagestart_x pagestart_y parawidth bodysize "serif"
-		textcode      "fourupmap.dsh" codex 58 codewidth codesize
-		image         "example-00005.png" imx 80 imw 0
+		textblockfile "fourup.txt" pagestart_x pagestart_y lparawidth bodysize "serif"
+		textcode      "fourupmap.dsh"     50 70 codewidth codesize
+		image         "example-00005.png" 25 imy2 imw2 0
 		footer        "Show the art and where it lives."
 	eslide
 
 	slide bgcolor txcolor
-		title "Image and Textblock"
-		textblockfile  "imt.txt" pagestart_x pagestart_y parawidth bodysize "serif"
-		textcode       "imgtext.dsh" codex codey codewidth codesize
-		image          "example-00006.png" imx imy imw 0
+		title "Image and Text Block"
+		textblockfile  "imt.txt" pagestart_x pagestart_y lparawidth bodysize "serif"
+		textcode       "imgtext.dsh"       50 70 codewidth codesize
+		image          "example-00006.png" 25 imy2 imw2 0
 		footer         "Image and text work together to tell the story."
 	eslide
 
 	slide bgcolor txcolor
+		ruler
 		imx3=70
-		imy3=60
+		imy3=imy2+5
 		imw3=30
 		title "Continue the Design"
-		textblockfile  "plain.txt" pagestart_x pagestart_y parawidth bodysize "serif"
+		textblockfile  "plain.txt" pagestart_x pagestart_y lparawidth bodysize "serif"
 		image         "example-00007.png" 18 imy3 imw3 0
 		image         "example-00008.png" 50 imy3 imw3 0
 		image         "example-00009.png" 82 imy3 imw3 0
-		textcode      "pf.dsh" codex codey codewidth codesize
+		textcode      "pf.dsh" 28 42 codewidth codesize
 		footer        "Continue the story with style."       
 	eslide
 
 	slide bgcolor txcolor
 		title "One more thing …"
-		textblockfile "lamp.txt" pagestart_x pagestart_y parawidth bodysize "serif"
-		textcode      "lamp.dsh" pagestart_x 70 33 codesize
-		image         "lamp-00001.png" imx 50 imw 0
+		textblockfile "lamp.txt" pagestart_x pagestart_y lparawidth bodysize "serif"
+		textcode      "lamp.dsh"       50 70 33 codesize
+		image         "lamp-00001.png" 25 50 imw 0
 		footer        "Use a lamp to light the way."
 	eslide
 
