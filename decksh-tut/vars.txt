@@ -1,4 +1,4 @@
-Variables provide a method for attaching a name to an object
+Variables provide a method for attaching a name to an value
 so that the name may be used for other operations.
 \n
 Variables may refer to either numbers, or strings (text between " characters).
