@@ -3,7 +3,7 @@ deck
 	import "footer.dsh"
 	import "randpic.dsh"
 	author="Anthony Starks"
-	date="2026-08-19"
+	date="2026-08-21"
 	pagestart=(5,88)
 	parawidth=35
 	lparawidth=parawidth*2
