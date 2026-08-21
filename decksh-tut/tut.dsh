@@ -291,8 +291,11 @@ deck
 			text  "Typography for presentations"                         rx ry rs "serif" refcolor 100 "https://www.verdanabold.com/post/presentation-fonts-101-best-fonts-for-presentations"
 			ry-=ls
 			text  "GIS File formats"                                     rx ry rs "serif" refcolor 100 "https://maparz.com/blog/gis-file-formats-guide/"
+			ry-=ls
+			text  "geo URI"                                              rx ry rs "serif" refcolor 100 "https://www.rfc-editor.org/info/rfc5870/"
+			ry-=ls
 
-			rx+=40
+			rx+=37
 			list rx rtop rs "serif" "" 100 2.7
 				li "How to set up your environment"
 				li "The definitive decksh language reference"
@@ -303,9 +306,10 @@ deck
 				li "An interactive color picker using RGB, Hex, and HSV"
 				li "Presentation Typography 101: Font Basics for Better Slides"
 				li "GIS file formats explained: Shapefile, GeoJSON, KML …"
+				li "A Uniform Resource Identifier for Geographic Locations"
 			elist
 
-			ry2=ry+54
+			ry2=ry+68
 			rs2=rs*0.5
 			list rx ry2 rs2 "mono" "gray" 100 5.4
 				li "https://speakerdeck.com/ajstarks/pdfdeck"
@@ -317,6 +321,7 @@ deck
 				li "https://htmlcolorcodes.com/color-picker/"
 				li "https://www.verdanabold.com/post/presentation-fonts-101-best-fonts-for-presentations"
 				li "https://maparz.com/blog/gis-file-formats-guide/"
+				li "https://www.rfc-editor.org/info/rfc5870/"
 			elist
 			
 

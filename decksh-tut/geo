@@ -6,7 +6,7 @@ To place a map using GIS data in KML format:
 
 georegion "africa.kml"
 
-Geographic locations may be assigned to variables using geo URL syntax (geo:latitude,longitude), followed by an optional label. For example Los Angeles is defined as:
+Geographic locations may be assigned to variables using geo URI syntax (geo:latitude,longitude), followed by an optional label. For example Los Angeles is defined as:
 
 la="geo:34.05,-118.25<tab>Los Angeles"
 

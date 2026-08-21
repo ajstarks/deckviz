@@ -1,9 +1,9 @@
-Loops allow you repeat decksh operations in a controlled way.
+Loops allow you to repeat decksh operations in a controlled way.
 \n
 A loop is defined as statements bounded by the ‘for’ and ‘efor’ keywords.
 The ‘for’ arguments define the beginning, ending, and optional increment, which
 define how many times the statements between ‘for’ and ‘efor’ are executed.
-The variable specified in the ‘for’ is substituted in the these statements.
+The variable specified in the ‘for’ is substituted in these statements.
 For example:
 \n
 for v=10 50
