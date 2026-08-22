@@ -3,7 +3,7 @@ deck
 	import "footer.dsh"
 	import "randpic.dsh"
 	author="Anthony Starks"
-	date="2026-08-21"
+	date="2026-08-22"
 	pagestart=(5,88)
 	parawidth=35
 	lparawidth=parawidth*2
@@ -252,7 +252,7 @@ deck
 		image         "example-00007.png" 18 imy3 imw3 0
 		image         "example-00008.png" 50 imy3 imw3 0
 		image         "example-00009.png" 82 imy3 imw3 0
-		textcode      "pf.dsh" 28 42 codewidth codesize
+		textcode      "pf.dsh" 10 42 83 codesize
 		footer        "Continue the story with style."       
 	eslide
 
@@ -260,73 +260,55 @@ deck
 		title "One more thing …"
 		textblockfile "lamp.txt" pagestart_x pagestart_y lparawidth bodysize "serif"
 		textcode      "lamp.dsh"       50 70 33 codesize
-		image         "lamp-00001.png" 25 50 imw 0
+		image         "lamp-00001.png" 25 46 imw 0
 		footer        "Use a lamp to light the way."
 	eslide
 
 	slide bgcolor txcolor
 		//ruler
-		rtop=85
-		rleft=5
+		rleft=pagestart_x
+		rtop=pagestart_y-3
 		rx=rleft
 		ry=rtop
 		rs=2
-		ls=7
+		ls=rs*3.5
 		refcolor="darkblue"
 		title "References"
-			text  "Installing and Running decksh/pdfdeck"                rx ry rs "serif" refcolor 100 "https://speakerdeck.com/ajstarks/pdfdeck"
-			ry-=ls
-			text  "decksh Object Reference"                              rx ry rs "serif" refcolor 100 "https://speakerdeck.com/ajstarks/decksh-object-reference"
-			ry-=ls
-			text  "decksh Keywords"                                      rx ry rs "serif" refcolor 100 "https://speakerdeck.com/ajstarks/decksh-keywords"
-			ry-=ls
-			text  "decksh Visualizations Repository"                     rx ry rs "serif" refcolor 100 "https://github.com/ajstarks/deckviz"
-			ry-=ls
-			text  "decksh Code Repository"                               rx ry rs "serif" refcolor 100 "https://github.com/ajstarks/decksh"
-			ry-=ls
-			text  "Paper Sizes and Formats"                              rx ry rs "serif" refcolor 100 "https://www.papersizes.org/"
-			ry-=ls
-			text  "Color Picker"                                         rx ry rs "serif" refcolor 100 "https://htmlcolorcodes.com/color-picker/"
-			ry-=ls
-			text  "Typography for presentations"                         rx ry rs "serif" refcolor 100 "https://www.verdanabold.com/post/presentation-fonts-101-best-fonts-for-presentations"
-			ry-=ls
-			text  "GIS File formats"                                     rx ry rs "serif" refcolor 100 "https://maparz.com/blog/gis-file-formats-guide/"
-			ry-=ls
-			text  "geo URI"                                              rx ry rs "serif" refcolor 100 "https://www.rfc-editor.org/info/rfc5870/"
-			ry-=ls
+		text  "Installing and Running decksh/pdfdeck"                       rx ry rs "serif" refcolor 100 "https://speakerdeck.com/ajstarks/pdfdeck"
+		ry-=ls
+		text  "The definitive decksh language reference"                    rx ry rs "serif" refcolor 100 "https://speakerdeck.com/ajstarks/decksh-object-reference"
+		ry-=ls
+		text  "decksh keyword reference"                                    rx ry rs "serif" refcolor 100 "https://speakerdeck.com/ajstarks/decksh-keywords"
+		ry-=ls
+		text  "Repository of decksh examples to learn from"                 rx ry rs "serif" refcolor 100 "https://github.com/ajstarks/deckviz"
+		ry-=ls
+		text  "The code for decksh and associated tools and documents"      rx ry rs "serif" refcolor 100 "https://github.com/ajstarks/decksh"
+		ry-=ls
+		text  "International Paper Sizes and Formats With Dimensions"       rx ry rs "serif" refcolor 100 "https://www.papersizes.org/"
+		ry-=ls
+		text  "An interactive color picker using RGB, Hex, and HSV"         rx ry rs "serif" refcolor 100 "https://htmlcolorcodes.com/color-picker/"
+		ry-=ls
+		text  "Presentation Typography 101: Font Basics for Better Slides"  rx ry rs "serif" refcolor 100 "https://www.verdanabold.com/post/presentation-fonts-101-best-fonts-for-presentations"
+		ry-=ls
+		text  "GIS file formats explained: Shapefile, GeoJSON, KML …"       rx ry rs "serif" refcolor 100 "https://maparz.com/blog/gis-file-formats-guide/"
+		ry-=ls
+		text  "A Uniform Resource Identifier for Geographic Locations ('geo' URI)"      rx ry rs "serif" refcolor 100 "https://www.rfc-editor.org/info/rfc5870/"
+		ry-=ls
 
-			rx+=37
-			list rx rtop rs "serif" "" 100 2.7
-				li "How to set up your environment"
-				li "The definitive decksh language reference"
-				li "All the keywords and their usage"
-				li "Repo of decksh examples to learn from"
-				li "The code for decksh and associated tools and documents"
-				li "International Paper Sizes and Formats With Dimensions"
-				li "An interactive color picker using RGB, Hex, and HSV"
-				li "Presentation Typography 101: Font Basics for Better Slides"
-				li "GIS file formats explained: Shapefile, GeoJSON, KML …"
-				li "A Uniform Resource Identifier for Geographic Locations"
-			elist
-
-			ry2=ry+68
-			rs2=rs*0.5
-			list rx ry2 rs2 "mono" "gray" 100 5.4
-				li "https://speakerdeck.com/ajstarks/pdfdeck"
-				li "https://speakerdeck.com/ajstarks/decksh-object-reference"
-				li "https://speakerdeck.com/ajstarks/decksh-keywords"
-				li "https://github.com/ajstarks/deckviz"
-				li "https://github.com/ajstarks/decksh"
-				li "https://www.papersizes.org/"
-				li "https://htmlcolorcodes.com/color-picker/"
-				li "https://www.verdanabold.com/post/presentation-fonts-101-best-fonts-for-presentations"
-				li "https://maparz.com/blog/gis-file-formats-guide/"
-				li "https://www.rfc-editor.org/info/rfc5870/"
-			elist
-			
-
-			
-
+		ry2=rtop-3
+		rs2=rs*0.6
+		list rx ry2 rs2 "mono" "gray" 100 4.5
+			li "https://speakerdeck.com/ajstarks/pdfdeck"
+			li "https://speakerdeck.com/ajstarks/decksh-object-reference"
+			li "https://speakerdeck.com/ajstarks/decksh-keywords"
+			li "https://github.com/ajstarks/deckviz"
+			li "https://github.com/ajstarks/decksh"
+			li "https://www.papersizes.org/"
+			li "https://htmlcolorcodes.com/color-picker/"
+			li "https://www.verdanabold.com/post/presentation-fonts-101-best-fonts-for-presentations"
+			li "https://maparz.com/blog/gis-file-formats-guide/"
+			li "https://www.rfc-editor.org/info/rfc5870/"
+		elist
 		footer "Look it up"
 	eslide
 edeck
