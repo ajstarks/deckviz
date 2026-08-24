@@ -4,7 +4,26 @@ deck
 	import "randpic.dsh"
 	author="Anthony Starks"
 	date="2026-08-22"
-	pagestart=(5,88)
+	tleft=1
+	pleft=5
+	pagestart_y=88
+	if tleft == 0
+		pagestart_x=pleft
+		codex=45.5
+		imx=70
+		coox1=45
+		coox2=95
+		coox3=70
+		rillx=22
+	else
+		pagestart_x=pleft+55
+		codex=pagestart_x-55
+		imx=30
+		coox1=5
+		coox2=55
+		coox3=30
+		rillx=77
+	eif
 	parawidth=35
 	lparawidth=parawidth*2
 	pw2=parawidth*2.2
@@ -15,9 +34,9 @@ deck
 	titlesize=bodysize*2.5
 	codesize=1.2
 	codewidth=codesize*42
-	codex=45.5
+	
 	codey=37 //35
-	imx=70
+	
 	imy=65
 	imy2=55
 	imw=50
@@ -39,7 +58,7 @@ deck
 
 	slide bgcolor txcolor
 		title "Introduction"
-		textblockfile "intro.txt" pagestart_x pagestart_y pw2 introsize "serif"
+		textblockfile "intro.txt" pleft pagestart_y pw2 introsize "serif"
 		rect 50 15 100 13 "#eeeeee"
 		indy=15
 		indims=10
@@ -89,15 +108,16 @@ deck
 		textblockfile	"coord.txt" pagestart_x pagestart_y parawidth bodysize "serif"
 		image			"coord-00001.png" imx imy imw 0
 		textcode		"coord.dsh" codex codey codewidth codesize
-		ctext "(0,0)"     45 40 lcs "mono" rulecolor
-		ctext "(100,0)"   95 40 lcs "mono" rulecolor
-		ctext "(0,100)"   45 90 lcs "mono" rulecolor
-		ctext "(100,100)" 95 90 lcs "mono" rulecolor
-		ctext "(50,50)"   70 65 lcs "mono" rulecolor
-		vline 45 40 50 0.1 rulecolor 20
-		vline 95 40 50 0.1 rulecolor 20
-		hline 45 40 50 0.1 rulecolor 20
-		hline 45 90 50 0.1 rulecolor 20
+
+		ctext "(0,0)"     coox1 40 lcs "mono" rulecolor
+		ctext "(100,0)"   coox2 40 lcs "mono" rulecolor
+		ctext "(0,100)"   coox1 90 lcs "mono" rulecolor
+		ctext "(100,100)" coox2 90 lcs "mono" rulecolor
+		ctext "(50,50)"   coox3 65 lcs "mono" rulecolor
+		vline coox1  40 50 0.1 rulecolor 20
+		vline coox2  40 50 0.1 rulecolor 20
+		hline coox1  40 50 0.1 rulecolor 20
+		hline coox1  90 50 0.1 rulecolor 20
 		footer         "Place anything, anywhere with precision and consistency."
 	eslide
 
@@ -184,9 +204,9 @@ deck
 	slide bgcolor txcolor
 		title         "Designing with regions"
 		textblockfile "region.txt" pagestart_x pagestart_y parawidth bodysize "serif"
-		image         "regill-00001.png" 22 33.5 40 0
 		image         "region-00001.png" imx imy imw 0
 		textcode      "region.dsh" codex 52 codewidth codesize
+		image         "regill-00001.png" rillx 33.5 40 0
 		footer        "Using regions ties the deck together."
 	eslide
 
@@ -211,7 +231,7 @@ deck
 
 	slide bgcolor txcolor
 		title         "Title and Section"
-		textblockfile "hero.txt" pagestart_x pagestart_y lparawidth bodysize "serif"
+		textblockfile "hero.txt" pleft pagestart_y lparawidth bodysize "serif"
 		textcode      "hsect.dsh" 30 30 codewidth codesize
 		image         "example-00001.png" 25 imy2 imw2 0
 		image         "example-00002.png" 75 imy2 imw2 0
@@ -220,7 +240,7 @@ deck
 
 	slide bgcolor txcolor
 		title        "Two-Up Slides"
-		textblockfile "twoup.txt" pagestart_x pagestart_y lparawidth bodysize "serif"
+		textblockfile "twoup.txt" pleft pagestart_y lparawidth bodysize "serif"
 		textcode      "twoupslide.dsh" 30 30 codewidth codesize
 		image         "example-00003.png" 25  imy2 imw2 0
 		image         "example-00004.png" 75  imy2 imw2 0
@@ -229,7 +249,7 @@ deck
 
 	slide bgcolor txcolor
 		title         "Four Up and Map"
-		textblockfile "fourup.txt" pagestart_x pagestart_y lparawidth bodysize "serif"
+		textblockfile "fourup.txt" pleft pagestart_y lparawidth bodysize "serif"
 		textcode      "fourupmap.dsh"     50 70 codewidth codesize
 		image         "example-00005.png" 25 imy2 imw2 0
 		footer        "Show the art and where it lives."
@@ -237,7 +257,7 @@ deck
 
 	slide bgcolor txcolor
 		title "Image and Text Block"
-		textblockfile  "imt.txt" pagestart_x pagestart_y lparawidth bodysize "serif"
+		textblockfile  "imt.txt" pleft pagestart_y lparawidth bodysize "serif"
 		textcode       "imgtext.dsh"       50 70 codewidth codesize
 		image          "example-00006.png" 25 imy2 imw2 0
 		footer         "Image and text work together to tell the story."
@@ -248,7 +268,7 @@ deck
 		imy3=imy2+5
 		imw3=30
 		title "Continue the Design"
-		textblockfile  "plain.txt" pagestart_x pagestart_y lparawidth bodysize "serif"
+		textblockfile  "plain.txt" pleft pagestart_y lparawidth bodysize "serif"
 		image         "example-00007.png" 18 imy3 imw3 0
 		image         "example-00008.png" 50 imy3 imw3 0
 		image         "example-00009.png" 82 imy3 imw3 0
@@ -258,7 +278,7 @@ deck
 
 	slide bgcolor txcolor
 		title "One more thing …"
-		textblockfile "lamp.txt" pagestart_x pagestart_y lparawidth bodysize "serif"
+		textblockfile "lamp.txt" pleft pagestart_y lparawidth bodysize "serif"
 		textcode      "lamp.dsh"       50 70 33 codesize
 		image         "lamp-00001.png" 25 46 imw 0
 		footer        "Use a lamp to light the way."
@@ -266,9 +286,8 @@ deck
 
 	slide bgcolor txcolor
 		//ruler
-		rleft=pagestart_x
 		rtop=pagestart_y-3
-		rx=rleft
+		rx=pleft
 		ry=rtop
 		rs=2
 		ls=rs*3.5
