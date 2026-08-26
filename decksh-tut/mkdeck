@@ -1,4 +1,10 @@
 #!/bin/bash
+if test $# -eq 1
+then
+	tleft=$1
+else
+	tleft="1"
+fi
 ./mkpage intro
 ./mkpage tools
 ./mkpage canvas
@@ -27,7 +33,7 @@ sans=PublicSans-Regular
 mono=Inconsolata-Medium
 serif=Charter-Regular
 # set tleft=1 for text on the left, 0 for text on the right
-decksh -var tleft=1 tut.dsh |
+decksh -var tleft=$tleft tut.dsh |
 pdfdeck -sw \
  -pagesize Letter \
  -layers="rect:image:poly:ellipse:text:line:list" \
