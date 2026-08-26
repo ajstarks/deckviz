@@ -3,10 +3,11 @@ deck
 	import "footer.dsh"
 	import "randpic.dsh"
 	author="Anthony Starks"
-	date="2026-08-22"
-	tleft=1
+	date="2026-08-26"
 	pleft=5
 	pagestart_y=88
+	// conditional left or right layout of text, set on the command line
+	// via decksh -var tleft=<value>
 	if tleft == 0
 		pagestart_x=pleft
 		codex=45.5
@@ -17,7 +18,7 @@ deck
 		rillx=22
 	else
 		pagestart_x=pleft+55
-		codex=pagestart_x-55
+		codex=pagestart_x-54
 		imx=30
 		coox1=5
 		coox2=55
@@ -27,7 +28,7 @@ deck
 	parawidth=35
 	lparawidth=parawidth*2
 	pw2=parawidth*2.2
-	pagebottom=3
+	pagebottom=2
 	pagenum=1
 	bodysize=1.5
 	introsize=bodysize*1.2
@@ -35,14 +36,14 @@ deck
 	codesize=1.2
 	codewidth=codesize*42
 	
-	codey=37 //35
+	codey=37
 	
 	imy=65
 	imy2=55
 	imw=50
 	imw2=45
 
-	bgcolor="white" // linen" // rgb(255,255,255)"
+	bgcolor="white"
 	txcolor="black"
 	rulecolor="rgb(0,0,200)"
 
@@ -82,7 +83,7 @@ deck
 
 	slide bgcolor txcolor
 		title           "Gather your tools"
-		textblockfile   "tools.txt" pagestart_x pagestart_y parawidth bodysize "serif"
+		textblockfile   "tools.txt" pagestart_x pagestart_y parawidth bodysize "serif" "" 100 "https://speakerdeck.com/ajstarks/pdfdeck"
 		image           "tool-run2.png"  imx 50 imw 0
 		footer          "We become what we behold. We shape our tools, and thereafter our tools shape us."
 	eslide
@@ -205,8 +206,8 @@ deck
 		title         "Designing with regions"
 		textblockfile "region.txt" pagestart_x pagestart_y parawidth bodysize "serif"
 		image         "region-00001.png" imx imy imw 0
-		textcode      "region.dsh" codex 52 codewidth codesize
-		image         "regill-00001.png" rillx 33.5 40 0
+		textcode      "region.dsh" codex 53 codewidth codesize
+		image         "regill-00001.png" rillx 34.5 40 0
 		footer        "Using regions ties the deck together."
 	eslide
 

@@ -26,12 +26,13 @@
 sans=PublicSans-Regular
 mono=Inconsolata-Medium
 serif=Charter-Regular
-decksh tut.dsh |
+# set tleft=1 for text on the left, 0 for text on the right
+decksh -var tleft=1 tut.dsh |
 pdfdeck -sw \
  -pagesize Letter \
  -layers="rect:image:poly:ellipse:text:line:list" \
  -stdout \
- -sans $sans \
- -mono $mono \
+ -sans  $sans \
+ -mono  $mono \
  -serif $serif - > tut.pdf
 open tut.pdf
