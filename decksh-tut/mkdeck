@@ -24,7 +24,6 @@ fi
 ./mkpage refs
 ./mkpage example -pagesize=Widescreen
 ./mkpage hero
-./mkpage twoup
 ./mkpage fourup
 ./mkpage imt
 ./mkpage plain
